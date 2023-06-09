@@ -6,11 +6,13 @@
 
 * [Agency Whitelabelling](portal/agency-whitelabelling.md)
 
+
 ## Pages
 
 * [Accessing Page Data](pages/accessing-page-data.md)
 * [Page Templates](pages/page-templates.md)
 * [Pagination Layouts](pages/pagination-layouts.md)
+
 
 ## Forms
 
@@ -33,11 +35,18 @@
 
 ## Company Information
 
+* [Company Information](company-information/company-information.md)
+
 
 ## Site Search
 
+* [Site Search](site-search/site-search.md)
+
 
 ## Public API/Zapier
+
+* [Public API/Zapier Changelog](public-api/changelog.md)
+* [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
 
 
 ## Modules
