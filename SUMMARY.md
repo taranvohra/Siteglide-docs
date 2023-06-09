@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Top top](README.md)
+* [Table of contents?](README.md)
+* [Top top](top-top/README.md)
   * [Top sub 1](top-top/top-sub-1.md)
   * [Siteglide Admin](https://admin.siteglide.com)
 * [Top level 2](top-level-2/README.md)
