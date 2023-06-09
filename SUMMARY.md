@@ -1,12 +1,76 @@
 # Introduction
 
 * [Introduction](README.md)
-* [top-top](top-top/README.md)
-  * [Top sub 1](top-top/top-sub-1.md)
-  * [Siteglide Admin](https://admin.siteglide.com)
-* [Top level 2](top-level-2/README.md)
-  * [Sub 2](top-level-2/sub-2.md)
 
 ## Portal
 
 * [Agency Whitelabelling](portal/agency-whitelabelling.md)
+
+## Pages
+
+* [Accessing Page Data](pages/accessing-page-data.md)
+* [Page Templates](pages/page-templates.md)
+* [Pagination Layouts](pages/pagination-layouts.md)
+
+## Forms
+
+* [Form Confirmation Pages](forms/form-confirmation-pages.md)
+* [Adding a Progress Bar](forms/adding-a-progress-bar.md)
+* [Adding Custom CSS To Show Form Submit Process](forms/adding-custom-css-to-show-form-submit-process.md)
+* [Dynamic Content in Workflow and Autoresponder Emails](forms/dynamic-content-in-workflow-and-autoresponder-emails.md)
+* [How to output Custom Field Set fields in a Form's Custom Layout](forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
+* [Custom JavaScript Validation for Forms](forms/custom-javascript-validation-for-forms.md)
+* [File Upload Previews](forms/file-upload-previews.md)
+* [FAQ](forms/faq.md)
+  * [How to add a custom redirect to my Form](forms/faq/how-to-add-a-custom-redirect-to-my-form.md)
+  * [How to add a CSS Spinner to a Form during submission?](forms/faq/how-to-add-a-css-spinner-to-a-form-during-submission.md)
+  * [How to have separate field for first name and surname in a Form](forms/faq/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
+  * [Shared Devices](forms/faq/shared-devices.md)
+
+
+## Categories
+
+
+## Company Information
+
+
+## Site Search
+
+
+## Public API/Zapier
+
+
+## Modules
+
+
+## Data Structures
+
+
+## WebApps
+
+
+## CRM
+
+
+## CLI
+
+
+## Liquid
+
+
+## GraphQL
+
+
+## Best Practice and Performance
+
+
+## Includes
+
+
+## FAQ
+
+* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
+* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
+* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
+* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
+
