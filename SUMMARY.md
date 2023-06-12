@@ -69,6 +69,13 @@
 
 ## CRM
 
+* [User Details](crm/user-details.md)
+* [User Secure Zones](crm/user-secure-zones.md)
+* [Storing User's Favourite WebApp / Module Items](crm/storing-users-favourite-webapp-module-items.md)
+* [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
+* [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
+* [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+
 
 ## CLI
 
