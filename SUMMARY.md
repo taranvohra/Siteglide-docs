@@ -32,6 +32,12 @@
 
 ## Categories
 
+* [Filtering WebApps and Modules by Categories](categories/filtering-webapps-and-modules-by-categories.md)
+* [Outputting Categories on WebApp / Module / eCommerce Layouts](categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
+* [Outputting Category Fields in any Location](categories/outputting-category-fields-in-any-location.md)
+* [Category Detail Layouts](categories/category-detail-layouts.md)
+* [How to check whether a Category has children](categories/how-to-check-whether-a-category-has-children.md)
+
 
 ## Company Information
 
