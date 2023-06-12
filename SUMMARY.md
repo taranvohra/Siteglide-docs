@@ -102,6 +102,9 @@
 
 ## Best Practice and Performance
 
+* [Module/WebApp Caching](best-practice/module-webapp-caching.md)
+* [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
+
 
 ## Includes
 
