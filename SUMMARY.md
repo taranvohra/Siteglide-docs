@@ -108,6 +108,8 @@
 
 ## Includes
 
+* [ecommerce/checkout_standard](includes/ecommerce-checkout-standard.md)
+
 
 ## FAQ
 
