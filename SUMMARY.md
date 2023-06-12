@@ -113,8 +113,6 @@
 
 ## FAQ
 
-* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
-* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
-* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
-* [Adding Custom CSS To Show Form Submit Process](pages/pagination-layouts.md)
-
+* [Using Liquid Logic to Check if a field exists, or is empty on the Front End](faq/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+* [How do I learn more about Liquid?](faq/how-do-i-learn-more-about-liquid.md)
+* [How to setup a multi domain start page](faq/how-to-setup-a-multi-domain-start-page.md)
