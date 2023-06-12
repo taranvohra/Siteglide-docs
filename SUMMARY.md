@@ -60,6 +60,9 @@
 
 ## Data Structures
 
+* [Creating WebApps from the CLI](data-structures/creating-webapps-from-the-cli.md)
+* [Field Types](data-structures/field-types.md)
+
 
 ## WebApps
 
