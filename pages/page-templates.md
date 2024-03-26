@@ -1,24 +1,27 @@
+# Page Templates
+
 Page Templates are used for organising the repeatable content you will want to display on multiple pages, including Headers and Footers
 
-# Introduction
+## Introduction
 
 [Page Templates](https://help.siteglide.com/article/218-templates-getting-started) are used to easily and consistently apply the same global content to pages, such as: Headers, Footers, Global Stylesheets and Analytics Tracking Scripts.
 
-# Adding Page Templates
+## Adding Page Templates
 
 You can create a new page template by navigating to `CMS / Templates` and clicking the blue “+ Add new template” button. New Templates are automatically added to the drop down in Pages once created.
 
-# Editing Page Templates
+## Editing Page Templates
 
 You can edit existing Templates by clicking the edit button next to each, while looking at the list of templates.
 
-# An Example Page Template
+## An Example Page Template
 
 Page content will be outputted where the liquid tag `{{content_for_layout}}` is located within your Template.
 
 Here is how a generic Page Template file should be structured:
 
-```html
+```liquid
+{% raw %}
 {% include 'site/constants' -%}
 <!doctype html><html lang="en">
   <head>
@@ -38,10 +41,10 @@ Here is how a generic Page Template file should be structured:
     </main>
     {% include 'footer', template: "1" -%}
     {% include 'site/visualEditor' type: 'js'-%}
+{% endraw %}
   </body>
 </html>
 ```
-
 
 While editing a Page, you can assign a Template using the Page Template drop down and then clicking Save.
 
