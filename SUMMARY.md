@@ -23,7 +23,6 @@
 * [Form Confirmation Pages](forms/form-confirmation-pages.md)
 * [FAQ](forms/faq/README.md)
   * [How to add a custom redirect to my Form](forms/faq/how-to-add-a-custom-redirect-to-my-form.md)
-  * [How to add a CSS Spinner to a Form during submission?](forms/faq/how-to-add-a-css-spinner-to-a-form-during-submission.md)
   * [How to have separate field for first name and surname in a Form](forms/faq/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
   * [Shared Devices](forms/faq/shared-devices.md)
 
