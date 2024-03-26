@@ -1,3 +1,9 @@
+---
+description: >-
+  Currently a form needs a value of "s_name" to submit properly. Lets take a
+  look at how we can include two separate fields into "s_name".
+---
+
 # How to have separate field for first name and surname in a Form
 
 Currently a form needs a value of "s\_name" to submit properly. Lets take a look at how we can include two separate fields into "s\_name".
@@ -10,32 +16,30 @@ When a [Form is created](https://help.siteglide.com/article/99-forms-getting-sta
 
 Firstly we'll need to create/ locate the form we need to add custom fields to. Head over to your sites admin, from here click "CMS" and find "Forms" within there. From here you can choose to create or edit a Form (as seen in red highlights):
 
-![](https://downloads.intercomcdn.com/i/o/189102033/d1b3de120e62d205e1a55b09/Image+2020-03-02+at+4.09.00+PM.png)
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-26 153411.png" alt=""><figcaption></figcaption></figure>
 
-Firstly we must create two separate form fields for First name and Last name, to do this click "Add new Field" and name them accordingly:
-
-![](https://downloads.intercomcdn.com/i/o/189118476/4490f080ee3ebe7497bb28df/cloudchange.png)
+Firstly we must create two separate form fields for First name and Last name, to do this click "Add Fields" and name them accordingly:
 
 These must be set to 'required' as they're being inserted into the name field (which will prevent the Form from submitting without a value).
 
-We will be building upon the "default" Form layout as it automatically creates all the correct fields the Form needs to submit. Go to "Site Manager/ Code Editor/ Forms/ 'Your Form'/ default.liquid". Copy the code inside this file. Create a new file in Code Editor\ Layouts\ Forms- right click the form we've created to make a new file, mines named "MembershipSignup".
+We will be building upon the "default" Form layout as it automatically creates all the correct fields the Form needs to submit. Go to code editor:
 
-:::hint{type="warning"}
+`layouts/forms/form_1/default.liquid` (replace form\_1 with the ID of your form).
 
-### Note
+Copy the code inside this file. Create a new file in Code Editor and paste the content inside:
 
-The file name must be followed by .liquid. :::
+`layouts/forms/form_1/first_and_last_name.liquid`
 
 ### Create a custom Layout:
 
-Now we'll need to create a custom layout. Right click the Form we're working on and select "Create File":
+Now we'll need to create a custom layout. Right click the Form we're working on and select "Create File".
 
-![](https://downloads.intercomcdn.com/i/o/189107722/c4250ea1f6f2deab3414035b/image.png)
-
-Copy the code from the default layout into here (we'll be using this as a starting point). You'll notice that the full name field has a type of "text", this will need to be replaced with "hidden" (this field is just for the database- users don't need to see it!). Remove "Name" from the label element as it will still display otherwise. Here's what it should look like:
+Copy the code from the default layout into here (we'll be using this as a starting point). You'll notice that the full name field has a `type` of "text", this will need to be replaced with "hidden" (this field is just for the database- users don't need to see it!). Remove the label element as it will still display otherwise. Here's what it should look like:
 
 ```html
-<label for="s_name"></label>
+{% raw %}
+{% comment %}<label for="s_name"></label>{% endcomment %}
+{% endraw %}
 <input
     class="form-control required"
     name="{{ form_builder.fields.properties.name.name }}"
@@ -116,9 +120,9 @@ Lastly we must combine both the fields by adding some Java Script below all of o
 </script>
 ```
 
-That's everything! Your form will now include the First name and Last name within s\_name:
+That's everything!&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/183037118/2e6dfd754e22c03eaa022bf0/image.png)
+Your form will store the first name and last name within the appropriate fields, but it will also store full name in the required system field.&#x20;
 
 ## Related Articles:&#x20;
 
