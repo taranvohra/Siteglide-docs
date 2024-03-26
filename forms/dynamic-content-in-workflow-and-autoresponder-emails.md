@@ -1,12 +1,16 @@
-# Dynamic Content in Workflow and Autoresponder Emails
+---
+description: >-
+  Emails are Liquid files, so they can include WebApp or Module List Views. You
+  can also output fields that were submitted in the Form.
+---
+
+# Dynamic Content in Workflow and Autoresponder Email Automations
 
 Emails are Liquid files, so they can include WebApp or Module List Views. You can also output fields that were submitted in the Form.
 
 ## Introduction
 
 Emails are Liquid files, so they can include WebApp or Module List Views. They can also include Liquid filters, logic and loops.
-
-![](https://downloads.intercomcdn.com/i/o/166272400/412acd207399781addf3d2de/image.png)
 
 ## Outputting Form Fields - submitted in the Form which triggered the Email
 
@@ -24,18 +28,20 @@ Visit the related Articles below for reference on the Liquid tags needed to outp
 
 To make sure that the Email can access the dynamic ID of custom content you want to display, you can create a custom field in the Form.&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/166265732/fff1397765284577d55dd591/image.png)
+This would probably either need to be hidden from the User, or be a datasource type field to allow the user to select an item.
 
-This would need to be hidden from the User, so you could add the HTML "hidden" parameter in the Form Layout (If this is not enough due to CSS rules, you may also want to wrap it in a `<div>` element with `style="display: none"`.
+If you prefer the hidden option, you could add the HTML "hidden" parameter in the Form Layout (If this is not enough due to CSS rules, you may also want to wrap it in a `<div>` element with `style="display: none"`.
 
 Note- the first line of the next example has been left as a generic assign (which should work on a Starter Site). You could replace the first line of the example with a ID from a more dynamic source e.g. if the form is outputted within a WebApp List Layout item.layout file, you could use `this.id` .
 
 _E.g. in the Form Layout:_
 
-```html
-
-<div data-gb-custom-block data-tag="assign" data-my_dynamic_webapp_id='98657'></div>
-
+{% tabs %}
+{% tab title="Form Layout Liquid" %}
+```liquid
+{% raw %}
+{% assign my_dynamic_webapp_id = "98657" %}
+{% endraw %}
 <div style="display: none;">
   <input 
     hidden class="form-control" 
@@ -46,12 +52,13 @@ _E.g. in the Form Layout:_
   />
 </div>
 ```
+{% endtab %}
 
-\*In the Email: \*
-
-```html
-
-<div data-gb-custom-block data-tag="assign" data-0='2' data-1='2' data-2='2' data-3='2' data-4='2' data-5='2' data-6='2' data-7='2' data-8='2' data-9='2' data-10='2' data-11='2' data-12='2' data-13='2' data-14='2' data-15='2' data-16='2' data-17='2' data-18='2' data-19='2' data-20='2' data-21='2' data-22='2' data-23='2' data-24='2' data-25='2' data-26='2' data-27='2' data-28='2' data-29='2' data-30='2' data-31='2' data-32='2' data-33='2' data-34='2' data-35='2' data-36='2' data-37='2' data-38='2' data-39='2' data-40='2' data-41='2' data-42='2' data-43='2' data-44='2' data-45='2' data-46='2' data-47='2' data-48='2' data-49='2' data-50='2' data-51='1' data-52='1'></div>
+{% tab title="Email Automation Liquid" %}
+```python
+{% raw %}
+{% assign my_dynamic_webapp_id = form.properties.form_field_2_1 %}
+{% endraw %}
 
 {%- include 'webapp'
     id: '1' 
@@ -62,6 +69,8 @@ _E.g. in the Form Layout:_
     sort_order: 'asc' 
 -%}
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Related Articles
 
