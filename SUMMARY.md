@@ -1,4 +1,4 @@
-# Introduction
+# Table of contents
 
 * [Introduction](README.md)
 
@@ -6,13 +6,11 @@
 
 * [Agency Whitelabelling](portal/agency-whitelabelling.md)
 
-
 ## Pages
 
 * [Accessing Page Data](pages/accessing-page-data.md)
 * [Page Templates](pages/page-templates.md)
 * [Pagination Layouts](pages/pagination-layouts.md)
-
 
 ## Forms
 
@@ -23,12 +21,11 @@
 * [How to output Custom Field Set fields in a Form's Custom Layout](forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 * [Custom JavaScript Validation for Forms](forms/custom-javascript-validation-for-forms.md)
 * [File Upload Previews](forms/file-upload-previews.md)
-* [FAQ](forms/faq.md)
+* [FAQ](forms/faq/README.md)
   * [How to add a custom redirect to my Form](forms/faq/how-to-add-a-custom-redirect-to-my-form.md)
   * [How to add a CSS Spinner to a Form during submission?](forms/faq/how-to-add-a-css-spinner-to-a-form-during-submission.md)
   * [How to have separate field for first name and surname in a Form](forms/faq/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
   * [Shared Devices](forms/faq/shared-devices.md)
-
 
 ## Categories
 
@@ -38,34 +35,23 @@
 * [Category Detail Layouts](categories/category-detail-layouts.md)
 * [How to check whether a Category has children](categories/how-to-check-whether-a-category-has-children.md)
 
-
 ## Company Information
 
 * [Company Information](company-information/company-information.md)
 
-
 ## Site Search
 
 * [Site Search](site-search/site-search.md)
-
 
 ## Public API/Zapier
 
 * [Public API/Zapier Changelog](public-api/changelog.md)
 * [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
 
-
-## Modules
-
-
 ## Data Structures
 
 * [Creating WebApps from the CLI](data-structures/creating-webapps-from-the-cli.md)
 * [Field Types](data-structures/field-types.md)
-
-
-## WebApps
-
 
 ## CRM
 
@@ -75,13 +61,6 @@
 * [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
 * [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
 * [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
-
-
-## CLI
-
-
-## Liquid
-
 
 ## GraphQL
 
@@ -99,17 +78,14 @@
 * [Tutorial 7 - Sorting](graphql/tutorial-7-sorting.md)
 * [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
 
-
 ## Best Practice and Performance
 
 * [Module/WebApp Caching](best-practice/module-webapp-caching.md)
 * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
 
-
 ## Includes
 
-* [ecommerce/checkout_standard](includes/ecommerce-checkout-standard.md)
-
+* [ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
 
 ## FAQ
 
