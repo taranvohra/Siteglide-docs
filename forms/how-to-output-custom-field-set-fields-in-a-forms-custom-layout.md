@@ -120,7 +120,7 @@ The same applies to a `radio` field.&#x20;
 
 ### Dropdown
 
-The `data-cfs` attribute should go on the \<select> element itself, not on options.
+The `data-cfs` attribute should go on the `<select>` element itself, not on `<option>`s.
 
 ```html
 <select 
