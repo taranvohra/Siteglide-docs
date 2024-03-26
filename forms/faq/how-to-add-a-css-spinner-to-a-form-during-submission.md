@@ -1,32 +1,34 @@
+# How to add a CSS Spinner to a Form during submission?
+
 A practical example of how to use our .form\_submitting class to build better User Experience for your Forms
 
-# Introduction
+## Introduction
 
 When you submit a [Siteglide Form](https://help.siteglide.com/article/99-forms-getting-started), we apply two classes to the \<form> element:
 
-*   `.form_submitting `
-
-*   `.form_x_submitting` - where x is the ID of your Form in Admin.
+* `.form_submitting`
+* `.form_x_submitting` - where x is the ID of your Form in Admin.
 
 If the Form fails validation, both classes will be removed.
 
-This Article explains how you can use this feature as a starting point to build more complex User Experiences with your Forms, for example, adding a Spinner while the Form is submitting to give Users confidence it is working as expected.&#x20;
+This Article explains how you can use this feature as a starting point to build more complex User Experiences with your Forms, for example, adding a Spinner while the Form is submitting to give Users confidence it is working as expected.
 
 These code snippets are intended as examples only and are not Siteglide Features in themselves. Feel free to use and adapt them in your own Sites, but front-end code is not covered by our [Support Policy](https://help.siteglide.com/article/62-siteglide-support-policy).
 
-# Answer
+## Answer
 
-In this example, we'll show you how to add an SVG spinner icon using SVG animation.
-We'll then use the Siteglide classes to show the spinner only when needed.
+In this example, we'll show you how to add an SVG spinner icon using SVG animation. We'll then use the Siteglide classes to show the spinner only when needed.
 
-## Add HTML & CSS
+### Add HTML & CSS
 
-This adds an SVG spinner within a container that centres the content.  In this example, we nest the HTML inside the {% form %} tag (effectively inside the \<form> HTML tag) so that we can centre the spinner inside the Form, however, you could add the spinner wherever you wish.&#x20;
+This adds an SVG spinner within a container that centres the content. In this example, we nest the HTML inside the
+
+tag (effectively inside the \<form> HTML tag) so that we can centre the spinner inside the Form, however, you could add the spinner wherever you wish.
 
 Note the most important part of this CSS example is the use of the Siteglide .form\_submitting class. Only when the class is present, we add the styling needed to display and animate the spinner. You can of course change the CSS in any way you like.
 
-{% tabs %}
-{% tab title="CSS" %}
+
+
 ```css
 /* Set the Form as position relative so the absolute positioned spinner centres inside it */
 form.form {
@@ -82,11 +84,13 @@ form.form.form_submitting {
 }
 
 ```
-{% tabs %}
 
+{% tabs %}
 {% tab title="HTML" %}
 ```html
-{% form %}
+
+<div data-gb-custom-block data-tag="form">
+
   <!-- Main Form content here -->
   <div id="loadingSpinnerContainer">
     <svg id="loadingSpinner" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> 
@@ -111,8 +115,9 @@ form.form.form_submitting {
       <circle id="spinnerRing" cx="50" cy="50" r="40"/>
     </svg>
   </div>
-{% endform %}
+
+</div>
+
 ```
 {% endtab %}
 {% endtabs %}
-

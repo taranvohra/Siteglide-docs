@@ -1,3 +1,5 @@
+# How to setup a multi domain start page
+
 The following code example can be added to a Page Template and applied to the home/start page of a site to load a different start page for different domains added to the site.
 
 This method does however remove some of the ease of editing for the client, as they will not be able to use Visual Editor to manage the pages that are setup this way. We'll look at adding a smoother point and click version to Admin later.
@@ -5,42 +7,68 @@ This method does however remove some of the ease of editing for the client, as t
 One use case for this approach would be where a client has a small chain of businesses that each have their own domain to target the area closest to them. Each of the sites are very small and the website structure is reasonably similar, and so it makes sense for the client to be able to manage all of them from the same Admin.
 
 ```html
-{% assign domain = context.location.host -%}
 
-{% case domain %}
+<div data-gb-custom-block data-tag="assign"></div>
 
-{% when 'www.domainone.com' or 'domainone.com'  -%}
+<div data-gb-custom-block data-tag="case">
 
-  {% content_for siteglide_head_scripts -%}
+<div data-gb-custom-block data-tag="when" data-0='www.domainone.com' data-1='domainone.com'></div>
+
+  
+
+<div data-gb-custom-block data-tag="content_for">
+
     <title>Home - Domain One</title>
-  {% endcontent_for -%}
-  {%- include 'content_section', id: '17', name: 'Domain One Page' -%}
+  
 
-{% when 'www.domaintwo.com' or 'domaintwo.com' -%}
+</div>
 
-  {% content_for siteglide_head_scripts -%}
+  
+
+<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='17' data-3='17' data-4='Domain One Page'></div>
+
+<div data-gb-custom-block data-tag="when" data-0='www.domaintwo.com' data-1='domaintwo.com'></div>
+
+  
+
+<div data-gb-custom-block data-tag="content_for">
+
     <title>Home - Domain Two</title>
-  {% endcontent_for -%}
-  {%- include 'content_section', id: '15', name: 'Domain Two Page' -%}
+  
 
-{% else -%}
+</div>
 
-  {% content_for siteglide_head_scripts -%}
+  
+
+<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='15' data-3='15' data-4='Domain Two Page'></div>
+
+<div data-gb-custom-block data-tag="else"></div>
+
+  
+
+<div data-gb-custom-block data-tag="content_for">
+
     <title>Home - Other Domain</title>
-  {% endcontent_for -%}
-  {%- include 'content_section', id: '16', name: 'Other Domain Page' -%}
-{% endcase -%}
+  
+
+</div>
+
+  
+
+<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='16' data-3='16' data-4='Other Domain Page'></div>
+
+</div>
 ```
 
-I'll now explain the code snippet above and how it works. 
+I'll now explain the code snippet above and how it works.&#x20;
 
 On the first line we get the current domain (`context.location.host` ) when the page loads and assign it so that it has a name of `domain` .
 
-Next, we open a `case` to check the result of `domain` . 
+Next, we open a `case` to check the result of `domain` .&#x20;
 
-For each of the alternate domains we would like to check for, we create a `when` within the `case` . We include two versions of the domain to catch the majority of users. One that includes the [www](). and another that does not.
+For each of the alternate domains we would like to check for, we create a `when` within the `case` . We include two versions of the domain to catch the majority of users. One that includes the [www](how-to-setup-a-multi-domain-start-page.md). and another that does not.
 
-Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](https://help.siteglide.com/article/224-siteglide-scripts)).
+Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](https://help.siteglide.com/article/224-siteglide-scripts)).
 
 We then add an `else` at the end of the `case` to cover the default domain e.g. "if neither of these alternate domains are used, then do this" which acts somewhat like a catch all.
 

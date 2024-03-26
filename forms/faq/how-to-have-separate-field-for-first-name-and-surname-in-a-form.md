@@ -1,10 +1,12 @@
+# How to have separate field for first name and surname in a Form
+
 Currently a form needs a value of "s\_name" to submit properly. Lets take a look at how we can include two separate fields into "s\_name".
 
-# Introduction
+## Introduction
 
 When a [Form is created](https://help.siteglide.com/article/99-forms-getting-started) you'll notice two standard field that are always required; Name and Email. These two fields must have a value when a user submits the Form or it will fail (as the required fields haven't been given). If two separate fields are required for both first name and last name there is a way of getting round this!
 
-## Separate Name Fields
+### Separate Name Fields
 
 Firstly we'll need to create/ locate the form we need to add custom fields to. Head over to your sites admin, from here click "CMS" and find "Forms" within there. From here you can choose to create or edit a Form (as seen in red highlights):
 
@@ -14,17 +16,17 @@ Firstly we must create two separate form fields for First name and Last name, to
 
 ![](https://downloads.intercomcdn.com/i/o/189118476/4490f080ee3ebe7497bb28df/cloudchange.png)
 
-These must be set to 'required' as they're being inserted into the name field (which will prevent the Form from submitting without a value).&#x20;
+These must be set to 'required' as they're being inserted into the name field (which will prevent the Form from submitting without a value).
 
 We will be building upon the "default" Form layout as it automatically creates all the correct fields the Form needs to submit. Go to "Site Manager/ Code Editor/ Forms/ 'Your Form'/ default.liquid". Copy the code inside this file. Create a new file in Code Editor\ Layouts\ Forms- right click the form we've created to make a new file, mines named "MembershipSignup".
 
 :::hint{type="warning"}
-## Note
 
-The file name must be followed by .liquid.&#x20;
-:::
+### Note
 
-## Create a custom Layout:
+The file name must be followed by .liquid. :::
+
+### Create a custom Layout:
 
 Now we'll need to create a custom layout. Right click the Form we're working on and select "Create File":
 
@@ -42,7 +44,7 @@ Copy the code from the default layout into here (we'll be using this as a starti
 />
 ```
 
-## Add IDs to custom fields:
+### Add IDs to custom fields:
 
 Next we must add unique ids to our custom fields, we will use these to combine the two fields later on.
 
@@ -65,9 +67,9 @@ Update each field to include id="lastName" and id="firstName" after the name val
 />
 ```
 
-## Include handleNames() function:
+### Include handleNames() function:
 
-Next, we must look at the submit button. Normally it uses the onClick attribute to fire Siteglide's form submit function- but we want it to wait until we've handled the name fields. 
+Next, we must look at the submit button. Normally it uses the onClick attribute to fire Siteglide's form submit function- but we want it to wait until we've handled the name fields.&#x20;
 
 ```html
 <button
@@ -91,7 +93,7 @@ So we switch it to run my `handle_names(this)` function instead, we'll also need
 </button>
 ```
 
-## Add the handleNames() function:
+### Add the handleNames() function:
 
 Lastly we must combine both the fields by adding some Java Script below all of our form fields. This will run the user clicks the "Submit" button, it combines the firstName and lastName fields before submitting the form!
 
@@ -118,13 +120,6 @@ That's everything! Your form will now include the First name and Last name withi
 
 ![](https://downloads.intercomcdn.com/i/o/183037118/2e6dfd754e22c03eaa022bf0/image.png)
 
-# Related Articles: 
+## Related Articles:&#x20;
 
-*   [Creating Forms](https://help.siteglide.com/article/99-forms-getting-started#2-creating-and-editing-forms)
-
-
-
-
-
-
-
+* [Creating Forms](https://help.siteglide.com/article/99-forms-getting-started#2-creating-and-editing-forms)

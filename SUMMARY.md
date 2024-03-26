@@ -61,10 +61,6 @@
 * [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
 * [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
 
-## Modules
-
-## WebApps
-
 ## Pagination
 
 * [Pagination on Liquid Tags](pagination/why-pagination.md)

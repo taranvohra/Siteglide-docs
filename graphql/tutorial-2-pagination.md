@@ -1,20 +1,21 @@
+# Tutorial 2 - Pagination
+
 Turning the Page! In tutorial 2, we'll control how many items Graph returns on each Page of results and retrieve specific Pages.
 
-# Prerequisites
+## Prerequisites
 
-*   You have completed the [first Learning GraphQL tutorial](https://developers.siteglide.com/tutorial-1-your-first-query).
+* You have completed the [first Learning GraphQL tutorial](https://developers.siteglide.com/tutorial-1-your-first-query).
+* [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
 
-*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+## Introduction
 
-# Introduction
+When GraphQL returns results, it will organise them into pages.
 
-When GraphQL returns results, it will organise them into pages.&#x20;
-
-This allows it to be more efficient, as it only returns the data that is needed straight away. At the same time, the rest of the pages are organised ready for the next request. 
+This allows it to be more efficient, as it only returns the data that is needed straight away. At the same time, the rest of the pages are organised ready for the next request.&#x20;
 
 You'll always need to think about Pagination when using GraphQL, even you only want to retrieve the first Page of results.
 
-# Per Page
+## Per Page
 
 `per page` is an argument used to define the number of results that will be returned on each page.
 
@@ -34,35 +35,26 @@ query get_all_models {
 }
 ```
 
-
-Experiment by changing the integer in the argument from `20` to another value. Observe the difference. It's recommended to keep the per\_page number as low as possible- for efficiency and performance.
+Experiment by changing the integer in the argument from `20` to another value. Observe the difference. It's recommended to keep the per\_page number as low as possible- for efficiency and performance.
 
 Let's consider a few situations:
 
-*   You want to display 3 items - Set `per_page` to 3- only the three items you need will be retrieved.
+* You want to display 3 items - Set `per_page` to 3- only the three items you need will be retrieved.
+* You want to display 20 items at a time, but allow the user to view the next 20 when they've finished reading - Set `per_page` to 20
+* If you want the user to be able to change `per_page` dynamically, we'll cover this when we look at variables in a future tutorial.
+* If you think you need to display more than 2000 items at a time (perhaps to provide data to a JavaScript plugin), speak to us and we'll give you some advice. (For example, you might need to use an XHR (Ajax) request to fetch each page when you need it.) There is no official limit to how much data you can retrieve, but you will most likely start to experience problems which we won't be able to support.
 
-*   You want to display 20 items at a time, but allow the user to view the next 20 when they've finished reading - Set `per_page` to 20
-
-*   If you want the user to be able to change `per_page` dynamically, we'll cover this when we look at variables in a future tutorial.
-
-*   If you think you need to display more than 2000 items at a time (perhaps to provide data to a JavaScript plugin), speak to us and we'll give you some advice. (For example, you might need to use an XHR (Ajax) request to fetch each page when you need it.) There is no official limit to how much data you can retrieve, but you will most likely start to experience problems which we won't be able to support.
-
-# Returning Pagination Metadata
+## Returning Pagination Metadata
 
 You can return pagination metadata alongside your query results:
 
-*   `current_page` - Returns the number of the current page.
+* `current_page` - Returns the number of the current page.
+* `per_page` - Returns the number of items on every page.
+* `has_previous_page`  - A boolean which is true if there is a page before the current page.
+* `has_next_page` - A boolean which is true if there is a page after the current page.
+* `total_pages` - Returns an integer representing the total number of pages in these results.
 
-*   `per_page` - Returns the number of items on every page.
-
-*   `has_previous_page`  - A boolean which is true if there is a page before the current page.
-
-*   `has_next_page` - A boolean which is true if there is a page after the current page.
-
-*   `total_pages` - Returns an integer representing the total number of pages in these results.
-
-These optional properties can be requested alongside `total_entries` and your `results` object, like in the example below. Try them out.
-Code:
+These optional properties can be requested alongside `total_entries` and your `results` object, like in the example below. Try them out. Code:
 
 ```graphql
 query get_all_models {
@@ -85,15 +77,14 @@ query get_all_models {
 
 Notes:
 
-*   Properties like `has_next_page` and `has_previous_page` are most useful for adding pagination buttons of your own. 
-
-*   You can see that by default, we get the first page of results- so `page` returns `1`.
+* Properties like `has_next_page` and `has_previous_page` are most useful for adding pagination buttons of your own.&#x20;
+* You can see that by default, we get the first page of results- so `page` returns `1`.
 
 Explorer:
 
 ![](https://downloads.intercomcdn.com/i/o/206698566/8c116463b7435ba381babb1f/image.png)
 
-# Changing the Page
+## Changing the Page
 
 You can view other pages by setting the `page` argument to the page of results you'd like to see.
 
@@ -115,16 +106,14 @@ query get_all_models {
 }
 ```
 
-
 Explorer:
 
 ![](https://downloads.intercomcdn.com/i/o/206699176/03286bbcbeb9f976c1d615b5/image.png)
 
-# Next time
+## Next time
 
-In the next Article, we'll look at how to filter results.&#x20;
+In the next Article, we'll look at how to filter results.
 
 For example, we'll learn how to return items from only a specific WebApp.
 
 **Let's go!**
-
