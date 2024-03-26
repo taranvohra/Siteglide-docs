@@ -14,8 +14,8 @@ You may also be interested to read about how you can use a custom validation fun
 
 When you submit a Form, the HTML Form element has two class names added to it:
 
-* "form\_submitting"
-* "form\_x\_submitting" where x represents the ID of the Form in Admin
+* `form_submitting`
+* `form_x_submitting` where x represents the ID of the Form in Admin
 
 These classes should be removed if the Form is interrupted by a valid error, e.g. validation errors, so targeting one of these classes should tell you that the Form is busy submitting and the User should wait for completion. &#x20;
 
