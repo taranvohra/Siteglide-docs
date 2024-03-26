@@ -10,7 +10,6 @@
 
 * [Accessing Page Data](pages/accessing-page-data.md)
 * [Page Templates](pages/page-templates.md)
-* [Pagination Layouts](pages/pagination-layouts.md)
 
 ## Forms
 
@@ -61,6 +60,15 @@
 * [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
 * [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
 * [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+
+## Modules
+
+## WebApps
+
+## Pagination
+
+* [Pagination on Liquid Tags](pagination/why-pagination.md)
+* [Custom Pagination Layouts](pagination/pagination-layouts.md)
 
 ## GraphQL
 
