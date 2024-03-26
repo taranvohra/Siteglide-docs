@@ -1,9 +1,11 @@
-You can now fully customise your Pagination controls, by building a Pagination Layout. Change Page with style.
-
+---
+description: >-
+  You can now fully customise your Pagination controls, by building a Pagination Layout. Change Page with style.
+---
 # Introduction
 
-Pagination is a catch-all term for the website User's ability to navigate through "pages" of results.&#x20;
-It's available on all List Views including WebApps, Modules and Categories.&#x20;
+Pagination is a catch-all term for the website User's ability to navigate through "pages" of results.
+It's available on all List Views including WebApps, Modules and Categories.
 
 ## Custom Pagination Layouts are now available on most Features
 
@@ -18,52 +20,6 @@ Furthermore, we provide you with Liquid variables detailing for example:
 *   Whether a previous or next page exists
 
 This can help you build more advanced designs which adapt dynamically depending on the data available. Examples of Pagination Layouts will soon become available on the Layout Library.
-
-# Outputting Pagination - A Recap
-
-## Default Pagination
-
-When you output a List Layout it will fetch results based on the parameters you've given it. 
-
-The parameter `per_page` will decide how many items will initially display in the List. By default, this value will be 20.
-
- If more results were fetched than the `per_page` value,  Pagination controls will be added to allow the User to change page and view the rest of the data.
-
-## How to remove Pagination Controls
-
-Set the parameter  `show_pagination: 'false'` to remove pagination controls.
-
-## How to move Pagination Controls
-
-Firstly remove the default Pagination controls, as above. 
-Secondly, add the following Liquid where you'd like the controls to sit within your HTML structure: `{%- include 'modules/siteglide_system/get/get_pagination' -%}`
-
-# Specifying a Pagination Layout
-
-## Choose Your Layout File
-
-Layouts for Pagination should be stored in Code Editor at the following path: `layouts/pagination/my_pagination_layout_name.liquid`
-
-## Add a Pagination Layout to a WebApp or Module "include" tag
-
-```html
-{%- include 'webapp'
-    id: '3'
-    layout: 'default'
-    per_page: '20'
-    sort_type: 'properties.name'
-    sort_order: 'asc'
-    pagination_layout: 'my_pagination_layout_name'
--%}
-```
-
-## Add a Pagination Layout to a Pagination "include" tag
-
-```html
-{%- include 'modules/siteglide_system/get/get_pagination'
-    pagination_layout: 'my_pagination_layout_name' 
--%}
-```
 
 # Developing a Pagination Layout
 
