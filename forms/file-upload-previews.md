@@ -8,11 +8,11 @@ When a User uploads a File as part of a [Form](https://help.siteglide.com/articl
 
 We've aimed for maximum flexibility- you create the preview element with any HTML structure you like. Set the correct HTML attributes and we'll use your element to display an image preview as soon as one is available.
 
-![](https://downloads.intercomcdn.com/i/o/210372390/c35bc7809e62199cdcd5d483/image.png)
+![](./../.gitbook/assets/image-preview.png)
 
 ## Syntax
 
-In these examples, we have a Form with a single upload field. In these examples the field's ID in the database is "form\_field\_11\_1".
+In these examples, we have a Form with a single upload field. In these examples the field's ID in the database is `form_field_11_1`.
 
 ```html
 <div class="input-group"> 
@@ -59,26 +59,26 @@ Full code for this input:
 
 ```html
 <div class="input-group">
-     <label for="form_field_11_1">File</label>
-     <input
-          class="form-control"
-          name="{{ form_builder.fields.properties.form_field_11_1.name }}"
-          type="hidden"
-     />
-     <input
-          class="form-control"
-          id="form_field_11_1_file"
-          type="file"
-     />
-     <img data-file-preview="form_field_11_1_file" height="100" width="100" />
+  <label for="form_field_11_1">File</label>
+  <input
+    class="form-control"
+    name="{{ form_builder.fields.properties.form_field_11_1.name }}"
+    type="hidden"
+  />
+  <input
+    class="form-control"
+    id="form_field_11_1_file"
+    type="file"
+  />
+  <img data-file-preview="form_field_11_1_file" height="100" width="100" />
 </div>
 ```
 
-### _Background Images_
+### Background Images
 
 Here's an example `<div>` element designed to use `background-image` to display the preview:
 
-`<div data-file-preview="form_field_11_1_file"></div>`&#x20;
+`<div data-file-preview="form_field_11_1_file"></div>`
 
 Full code for this input:
 
