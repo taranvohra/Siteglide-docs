@@ -25,7 +25,8 @@ This adds an SVG spinner within a container that centres the content.  In this e
 
 Note the most important part of this CSS example is the use of the Siteglide .form\_submitting class. Only when the class is present, we add the styling needed to display and animate the spinner. You can of course change the CSS in any way you like.
 
-:::codeblocktabs
+{% tabs %}
+{% tab title="CSS" %}
 ```css
 /* Set the Form as position relative so the absolute positioned spinner centres inside it */
 form.form {
@@ -81,7 +82,9 @@ form.form.form_submitting {
 }
 
 ```
+{% tabs %}
 
+{% tab title="HTML" %}
 ```html
 {% form %}
   <!-- Main Form content here -->
@@ -110,5 +113,6 @@ form.form.form_submitting {
   </div>
 {% endform %}
 ```
-:::
+{% endtab %}
+{% endtabs %}
 
