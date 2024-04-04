@@ -34,7 +34,7 @@ We'll include some examples here of how the `{{this.id}}` variable can be used s
 
 For example, the following code will output Products on the Category Detail Page, filtered by that Category:
 
-```html
+```liquid
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: this.id
@@ -46,7 +46,7 @@ For example, the following code will output Products on the Category Detail Page
 
 Change the ID to fetch different WebApps.
 
-```html
+```liquid
 {%- include 'webapp'
     id: '1'
     layout: "my_layout"
@@ -59,7 +59,7 @@ Change the ID to fetch different WebApps.
 
 Module 3 refers to the Blog; you can change the ID to fetch different Modules.
 
-```html
+```liquid
 {%- include 'module'
     id: '3'
     layout: "my_layout"
@@ -72,11 +72,11 @@ Module 3 refers to the Blog; you can change the ID to fetch different Modules.
 
 The following tags are available within the advanced category layouts:
 
-| **Field Name** | **Liquid Tag**          | **Description**      |
-| -------------- | ----------------------- | -------------------- |
-| Category Name  | \{{ this.name \}}       | Name of the category |
-| Category URL   | \{{ this.full\_slug \}} | URL of the category  |
-| Category ID    | \{{ this.id \}}         | ID of the cateogory  |
+| **Field Name** | **Liquid Tag**         | **Description**      |
+| -------------- | ---------------------- | -------------------- |
+| Category Name  | `{{ this.name }}`      | Name of the category |
+| Category URL   | `{{ this.full_slug }}` | URL of the category  |
+| Category ID    | `{{ this.id }}`        | ID of the cateogory  |
 
 ## Folder Structure
 

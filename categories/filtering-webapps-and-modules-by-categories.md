@@ -1,16 +1,18 @@
+# Filtering WebApps and Modules by Categories
+
 This Article shows how to filter WebApp and Module Items using their category\_ids parameter.
 
-# Introduction
+## Introduction
 
-In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](https://help.siteglide.com/article/123-categories-getting-started) on the Front End.&#x20;
+In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](https://help.siteglide.com/article/123-categories-getting-started) on the Front End.
 
 You can use Category IDs to filter WebApp, Module or eCommerce Product Items when including a List View in the Page.
 
-# Filtering by a Single Category or Multiple Categories
+## Filtering by a Single Category or Multiple Categories
 
 You can filter by a single Category using category\_ids:
 
-```html
+```liquid
 {% include 'module'
    id: '3'
    layout: 'default'
@@ -23,7 +25,7 @@ You can filter by a single Category using category\_ids:
 
 You can filter by multiple Categories using comma-separated values in the category\_ids parameter:
 
-```html
+```liquid
 {% include 'module'
    id: '3'
    layout: 'default'
@@ -34,13 +36,13 @@ You can filter by multiple Categories using comma-separated values in the catego
 %}
 ```
 
-# WebApps and Modules
+## WebApps and Modules
 
 This parameter works whether you're filtering WebApps or Modules!
 
-### WebApp
+#### WebApp
 
-```html
+```liquid
 {% include 'webapp'
    id: '3'
    layout: 'default'
@@ -51,9 +53,9 @@ This parameter works whether you're filtering WebApps or Modules!
 %}
 ```
 
-### Module
+#### Module
 
-```html
+```liquid
 {% include 'mdoule'
    id: '3'
    layout: 'default'
@@ -64,9 +66,9 @@ This parameter works whether you're filtering WebApps or Modules!
 %}
 ```
 
-### eCommerce Products
+#### eCommerce Products
 
-```html
+```liquid
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: '1,2'
@@ -74,13 +76,8 @@ This parameter works whether you're filtering WebApps or Modules!
 -%}
 ```
 
-# Nested Categories
+## Nested Categories
 
-If you filter by a Category which contains sub-Categories, the results will include all Items belonging to the Sub-Categories.&#x20;
+If you filter by a Category which contains sub-Categories, the results will include all Items belonging to the Sub-Categories.
 
 E.g. If you have a Products Category containing Merchandise and Music, filtering by the ID of the Products Category will return all Items belonging to Products, Merchandise and Music.
-
-
-
-
-
