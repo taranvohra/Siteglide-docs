@@ -4,14 +4,14 @@ A list of field types available on Siteglide and the corresponding platformOS da
 
 | Name                     | Siteglide Type    | platformOS Type |
 | ------------------------ | ----------------- | --------------- |
-| Text (String)            | input\_text       | string          |
-| Text (Multiline)         | textarea          | string          |
+| Text (String)            | input\_text       | string          |
+| Text (Multiline)         | textarea          | string          |
 | Checkbox                 | input\_checkbox   | array           |
-| Radio Button             | input\_radio      | string          |
-| Dropdown (Single Item)   | select            | string          |
-| Dropdown (Multi Item)    | select\_multi     | array           |
-| Datasource (Single Item) | datasource&#xD;   | integer         |
-| Datasource (Multi Item)  | datasource\_multi | array           |
+| Radio Button             | input\_radio      | string          |
+| Dropdown (Single Item)   | select            | string          |
+| Dropdown (Multi Item)    | select\_multi     | array           |
+| Datasource (Single Item) | datasource&#xD;   | integer         |
+| Datasource (Multi Item)  | datasource\_multi | array           |
 | Image (Single)           | image&#xD;        | string          |
 | Image (Array)            | image\_array      | array           |
 | File                     | file&#xD;         | string          |
@@ -20,7 +20,7 @@ A list of field types available on Siteglide and the corresponding platformOS da
 | Number (Integer)         | number\_integer   | integer         |
 | Number (Float)           | number\_float     | float           |
 | Boolean                  | boolean           | boolean         |
-| Custom Array             | array\_custom     | array           |
+| Custom Array             | array\_custom     | array           |
 
 # Where are these field types available to use as Custom Fields?
 
@@ -32,9 +32,9 @@ A list of field types available on Siteglide and the corresponding platformOS da
 
 *   **CRM Users** - All field types
 
-*   **Forms** - All field types *except Custom Array*
+*   **Forms** - All field types *except Custom Array*
 
-*   **Custom Field Sets** - All field types *except Custom Array*
+*   **Custom Field Sets** - All field types *except Custom Array*
 
 # Form Configuration metadata options
 

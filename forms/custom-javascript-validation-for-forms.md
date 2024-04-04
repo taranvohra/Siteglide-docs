@@ -55,12 +55,12 @@ where `error` is the name of your function. e.g.
 ```javascript
 <button onClick="s_form_submit_v2(this,'form_12',error);">
 
-<script> 
+<script> 
   function error(error) { 
     //Sanitize the error message 
     error = s_error_formatter(error);    
-    //Display the error message 
-    alert(error);   
+    //Display the error message 
+    alert(error);   
   }
 </script>
 ```

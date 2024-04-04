@@ -132,7 +132,7 @@ query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
 ```
 
 I'll use the following Liquid to run this query when the endpoint Page is accessed:
-`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
+`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
 
 Note- I'll be using - before and after my closing Liquid tags to remove unnecessary whitespace from the results- this is optional.&#x20;
 

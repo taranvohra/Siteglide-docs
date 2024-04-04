@@ -18,7 +18,7 @@ Allow Users to keep track of their communication history with your Client by out
 
 ## Syntax
 
-`{% include 'user_form_submissions', layout: 'default' %}`
+`{% include 'user_form_submissions', layout: 'default' %}`
 
 Parameters:&#x20;
 

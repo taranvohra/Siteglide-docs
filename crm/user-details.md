@@ -21,7 +21,7 @@ As such, it can be useful (though it is optional) to use this Layout as the cont
 
 # Syntax
 
-`{% include 'user_details', layout: 'default' %}`
+`{% include 'user_details', layout: 'default' %}`
 
 &#x20;Parameters:
 

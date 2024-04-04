@@ -38,15 +38,15 @@ When your client needs to update some key information about their company, they 
 
 Social Field Example:
 
-```html
+```liquid
 {% if context.exports.company_information.properties.twitter_account == blank -%}
     <a 
-        title="Twitter"
-        rel="nofollow"
-        href="https://twitter.com/{{context.exports.company_information.properties.twitter_account}}"
-        target="_blank"
+      title="Twitter"
+      rel="nofollow"
+      href="https://twitter.com/{{context.exports.company_information.properties.twitter_account}}"
+      target="_blank"
     >
-        <i class="fab fa-2x fa-twitter"></i>
+      <i class="fab fa-2x fa-twitter"></i>
     </a>
 {% endif -%}
 ```

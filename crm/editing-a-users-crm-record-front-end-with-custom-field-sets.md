@@ -88,7 +88,7 @@ To achieve this, you'll need to combine two Siteglide Features by nesting a Site
 
 **Step 1) User Details Contain the existing CFS Data**
 To fetch the existing CFS data for the Current User, you'll need a [User Details](https://developers.siteglide.com/user-details) Layout.
-`{% include 'user_details', layout: 'user_details_edit_form_container' %}`
+`{% include 'user_details', layout: 'user_details_edit_form_container' %}`
 
 Parameters:
 
@@ -97,7 +97,7 @@ Parameters:
 **Step 2) Place the Form inside User Details&#x20;
 **The User Details Layout has direct access to Custom Field Set data, but normally the Form does not. In order to achieve this, we place the Form inside the `user_details` Layout. Due to Liquid inheritance, the Custom Field Set data will then be available inside the Form.
 
-Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g. `{% include 'form', id: '10', layout: 'custom' %}`
+Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g. `{% include 'form', id: '10', layout: 'custom' %}`
 
 **Step 3) Use Liquid to prefill the HTML values
 **This will allow you to access the existing User data and their related Custom Field Sets within the Form. &#x20;

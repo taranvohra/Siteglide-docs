@@ -18,7 +18,7 @@ Outputting a User's Secure Zones can help them to keep track of services they're
 
 # Syntax
 
-`{% include 'user_secure_zones', layout: 'default' %}`
+`{% include 'user_secure_zones', layout: 'default' %}`
 
 Parameters:&#x20;
 

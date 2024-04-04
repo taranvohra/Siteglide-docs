@@ -32,7 +32,7 @@ This Layout will allow the User to add or remove an Item from their favourites.
 The User Favourites Toggle Layout will only work within an item.liquid file (for Modules) or a WebApp Layout file that has access to {{this.id}}.
 :::
 
-Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: `{% include 'user_favourites_toggle', layout: 'default' -%}`
+Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: `{% include 'user_favourites_toggle', layout: 'default' -%}`
 
 `is_favourite` - you can use this within `user_favourites_toggle` layouts to determine if the Module/ Webapp item is already added to the Users favourites like so: &#x20;
 
@@ -136,13 +136,13 @@ Add to favourites
 ## Hiding add/ remove buttons if User isn't logged into Secure Zone
 
 You may want to hide the add/ remove buttons from the User if they aren't logged into a Secure Zone you could do so by wrapping your user\_favourites Layout within this IF statement:
-`{% if context.current_user %} {% endif %}`
+`{% if context.current_user %} {% endif %}`
 
 # Syntax - Outputting User's Favourite Module/ Webapp items
 
 Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](https://developers.siteglide.com/user-details)&#x20;
 
-You can include the user\_details Layout like so: `{% include 'user_details', layout: 'my_layout' -%}`
+You can include the user\_details Layout like so: `{% include 'user_details', layout: 'my_layout' -%}`
 
 Layouts for user\_details are stored under the following path:
 `site Manager/code Editor/layouts/modules>module_5/user_details/my_layout.liquid `&#x20;
@@ -155,12 +155,12 @@ Next within the "user\_details" Layout, you can use the following Liquid variabl
 
 ### Outputting Webapp favourite items
 
-`{%- include 'webapp', id: '1', layout: 'my_layout', item_ids: favourite_items_string -%}`
+`{%- include 'webapp', id: '1', layout: 'my_layout', item_ids: favourite_items_string -%}`
 
 ### Outputting favourite Products
 
-`{%- include 'ecommerce/products', layout: 'default', item_ids: favourite_items_string -%}`
+`{%- include 'ecommerce/products', layout: 'default', item_ids: favourite_items_string -%}`
 
 ### Outputting favourite Blog Posts (Modules)
 
-`{%- include 'module', id: '3', layout: 'my_layout', item_ids: favourite_items_string -%}`
+`{%- include 'module', id: '3', layout: 'my_layout', item_ids: favourite_items_string -%}`
