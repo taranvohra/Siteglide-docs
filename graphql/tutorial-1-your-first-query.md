@@ -54,8 +54,6 @@ If you want to save time and skip the step of opening the link, add the flag -o 
 
 Your First Look at the GraphiQL Sandbox
 
-
-
 ![](https://downloads.intercomcdn.com/i/o/180529609/798287616944808153c596e5/image.png)
 
 To start with a few important features are hidden. Click and drag up the `QUERY VARIABLES` panel from the bottom left and click the `< Docs` button in the top right. We'll come back to these later.
@@ -87,7 +85,6 @@ This is where you'll be able to simulate dynamic variable inputs when testing va
 
 ![](https://downloads.intercomcdn.com/i/o/206678240/23bcd258b16236c49f884999/image.png)
 
-
 We'll cover this in a later Article.
 
 *Explorer Panel \*NEW\**
@@ -95,17 +92,13 @@ This displays the GraphQL schema in the form of a "wizard". Tick the options you
 
 ![](https://downloads.intercomcdn.com/i/o/206678384/19a4ae63a807d44821e24d15/image.png)
 
-
-
 The other limitation is that it doesn't currently support older deprecated query and mutation types, if you have a need to use those.
 
 *Documentation Explorer Panel*
 
-
 This displays the available GraphQL schema as documentation. It works with nested levels, so each time you choose an option you can "click through" to the next level of options you can include.
 
 ![](https://downloads.intercomcdn.com/i/o/206678616/6d8d4808512c16632f1e3d17/image.png)
-
 
 This is less user-friendly than the new "Explorer" panel above, but can still be useful:
 
@@ -155,8 +148,6 @@ Explorer:&#x20;
 The "Explorer" wizard will add this for you if you type out a name here:
 
 ![](https://downloads.intercomcdn.com/i/o/206685851/f4715210070ca6c376035e98/image.png)
-
-
 
 ## Step 2) Choose a Query type
 
