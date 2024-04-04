@@ -14,19 +14,19 @@ We've aimed for maximum flexibility- you create the preview element with any HTM
 
 In these examples, we have a Form with a single upload field. In these examples the field's ID in the database is `form_field_11_1`.
 
-```html
+```liquid
 <div class="input-group"> 
-    <label for="form_field_11_1">File</label>
-    <input 
-        class="form-control" 
-        name="{{ form_builder.fields.properties.form_field_11_1.name }}"  
-        type="hidden"
-    />
-    <input 
-        class="form-control" 
-        id="form_field_11_1_file" 
-        type="file"
-    /> 
+  <label for="form_field_11_1">File</label>
+  <input 
+    class="form-control" 
+    name="{{ form_builder.fields.properties.form_field_11_1.name }}"  
+    type="hidden"
+  />
+  <input 
+    class="form-control" 
+    id="form_field_11_1_file" 
+    type="file"
+  /> 
 </div>
 ```
 
@@ -57,7 +57,7 @@ Here's an example `img` preview element:
 
 Full code for this input:
 
-```html
+```liquid
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -82,7 +82,7 @@ Here's an example `<div>` element designed to use `background-image` to display 
 
 Full code for this input:
 
-```html
+```liquid
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -107,12 +107,10 @@ We will however, still set the `data-preview-file-type` attribute to the value o
 
 For example:
 
-```html
-<style>
-    [data-preview-file-type=application/pdf] {
-        //set CSS rules for PDF File preview here 
-    }
-</style>
+```css
+  [data-preview-file-type=application/pdf] {
+    //set CSS rules for PDF File preview here 
+  }
 ```
 
 ### CSS

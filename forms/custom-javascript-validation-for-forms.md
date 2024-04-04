@@ -15,12 +15,12 @@ For most errors, we'll provide a single error message which can be displayed. Fo
 
 Fields must be marked as "required" in the Admin, and in the HTML of your Form Layout, in order for them to trigger the validation process.
 
-```html
+```liquid
 <input 
-    class="form-control required" 
-    id="{{ form_builder.fields.properties.form_field_4_1.name }}" 
-    name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
-    type="text"
+  class="form-control required" 
+  id="{{ form_builder.fields.properties.form_field_4_1.name }}" 
+  name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
+  type="text"
 >
 ```
 
@@ -85,33 +85,31 @@ The example below demonstrates the following:
 
 _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for this example, let's invent a data-attribute `data-custom-msg` to store custom error messages against the field we want to display them for:
 
-```html
+```liquid
 <input 
-    data-custom-msg="You forgot the question field!!!" 
-    class="form-control required" 
-    id="{{ form_builder.fields.properties.form_field_4_1.name }}" 
-    name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
-    type="text"
+  data-custom-msg="You forgot the question field!!!" 
+  class="form-control required" 
+  id="{{ form_builder.fields.properties.form_field_4_1.name }}" 
+  name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
+  type="text"
 >
 ```
 
 \*\*\* Step 3) Add CSS\*\*\* The CSS plays a visual role here, but also a functional one- as the boxes displaying the errors should be hidden when the Form is submitting and the Siteglide class can be used to select for this.
 
-```html
-<style> 
-   #errorSummary {
-      max-height: 100%;
-      opacity: 100; 
-   }  
-   [class*="_submitting"] #errorSummary {
-      max-height: 0;
-      opacity: 0; 
-   } 
-   [class*="_submitting"] #errorSummary * {
-      display: none;
-      opacity: none;  
-   }
-</style>
+```css
+  #errorSummary {
+    max-height: 100%;
+    opacity: 100; 
+  }  
+  [class*="_submitting"] #errorSummary {
+    max-height: 0;
+    opacity: 0; 
+  } 
+  [class*="_submitting"] #errorSummary * {
+    display: none;
+    opacity: none;  
+  }
 ```
 
 \*\*\*Step 4) Add JavaScript \*\*\*The first part of the function:

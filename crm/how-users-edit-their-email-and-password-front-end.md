@@ -52,7 +52,6 @@ In this step we'll be adding fields to the Form Layout which will allow the User
 
 ```html
 <label for="s_email_edit">New Email Address</label>
-
 <input class="form-control" id="s_email_edit" type="email" >
 ```
 
@@ -60,7 +59,6 @@ In this step we'll be adding fields to the Form Layout which will allow the User
 
 ```html
 <label for="s_password_edit">New Password</label>
-
 <input class="form-control" id="s_password_edit" type="password" >
 ```
 
@@ -92,21 +90,17 @@ In this step then, we make sure we are giving the User the opportunity to re-ent
 
 ```html
 <div class="row mt-4">
-
   <div class="col">
-
     <label for="s_password">Current Password</label>
     <input class="form-control required" id="s_password" type="password">
-
   </div>
-
 </div>
 ```
 
 The Form Default Layout already includes this Field- however it is hidden from Users who are logged in.&#x20;
 The simplest way to complete the step is to remove the logic:
 
-```html
+```liquid
 {% unless context.exports.is_logged_in.data -%}
   
 {% endif %}
@@ -164,8 +158,7 @@ To help the User's browser to understand the difference between current and new 
 
 <!-- New Password Confirmation -->
 <label for="s_password_edit_confirm">Confirm New Password</label>
-<input class="form-control" id="s_password_edit_confirm" type="password" 
-       autocomplete="new-password">
+<input class="form-control" id="s_password_edit_confirm" type="password" autocomplete="new-password">
 ```
 
 # Next

@@ -31,21 +31,17 @@ You can include dynamic content in your cache key- a really useful thing to do i
 
 You can use the Cache tag to wrap the block of Liquid code that is slowing your Page down. You can wrap languages like JavaScript too, but it will have no effect on performance, as they will run on the Browser - long after the Cache has loaded.
 
-```html
-
-<div data-gb-custom-block data-tag="cache" data-0='60' data-1='60' data-2='60' data-3='60' data-4='60' data-5='60' data-6='60' data-7='60' data-8='60' data-9='60'>
-
+```liquid
+{% cache category_cache_key, expire: 60 %}
    <!-- code here -->
-
-</div>
-
+{% endcache %}
 ```
 
 #### The Expire Parameter:
 
-Getting this right is a fine art. It really depends on your Site and what you are trying to achieve. An integer is needed to determine the number of **minutes** a Cache will be active for before it expires and a new Cache is made.
+Getting this right is a fine art. It really depends on your Site and what you are trying to achieve. An integer is needed to determine the number of **seconds** a Cache will be active for before it expires and a new Cache is made.
 
-Set this as a large number of minutes (e.g. a day 300000) if:
+Set this as a large number of seconds (e.g. a day 86400) if:
 
 * Performance is essential to your Page's purpose
 * Content is not updated regularly

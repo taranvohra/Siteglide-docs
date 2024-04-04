@@ -6,58 +6,25 @@ This method does however remove some of the ease of editing for the client, as t
 
 One use case for this approach would be where a client has a small chain of businesses that each have their own domain to target the area closest to them. Each of the sites are very small and the website structure is reasonably similar, and so it makes sense for the client to be able to manage all of them from the same Admin.
 
-```html
-
-<div data-gb-custom-block data-tag="assign"></div>
-
-<div data-gb-custom-block data-tag="case">
-
-<div data-gb-custom-block data-tag="when" data-0='www.domainone.com' data-1='domainone.com'></div>
-
-  
-
-<div data-gb-custom-block data-tag="content_for">
-
+```liquid
+{% assign domain = context.location.host -%}
+{% case domain %}
+{% when 'www.domainone.com' or 'domainone.com'  -%}
+  {% content_for siteglide_head_scripts -%}
     <title>Home - Domain One</title>
-  
-
-</div>
-
-  
-
-<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='17' data-3='17' data-4='Domain One Page'></div>
-
-<div data-gb-custom-block data-tag="when" data-0='www.domaintwo.com' data-1='domaintwo.com'></div>
-
-  
-
-<div data-gb-custom-block data-tag="content_for">
-
+  {% endcontent_for -%}
+  {%- include 'content_section', id: '17', name: 'Domain One Page' -%}
+{% when 'www.domaintwo.com' or 'domaintwo.com' -%}
+  {% content_for siteglide_head_scripts -%}
     <title>Home - Domain Two</title>
-  
-
-</div>
-
-  
-
-<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='15' data-3='15' data-4='Domain Two Page'></div>
-
-<div data-gb-custom-block data-tag="else"></div>
-
-  
-
-<div data-gb-custom-block data-tag="content_for">
-
+  {% endcontent_for -%}
+  {%- include 'content_section', id: '15', name: 'Domain Two Page' -%}
+{% else -%}
+  {% content_for siteglide_head_scripts -%}
     <title>Home - Other Domain</title>
-  
-
-</div>
-
-  
-
-<div data-gb-custom-block data-tag="-" data-0='content_section' data-1=', id: ' data-2='16' data-3='16' data-4='Other Domain Page'></div>
-
-</div>
+  {% endcontent_for -%}
+  {%- include 'content_section', id: '16', name: 'Other Domain Page' -%}
+{% endcase -%}
 ```
 
 I'll now explain the code snippet above and how it works.&#x20;

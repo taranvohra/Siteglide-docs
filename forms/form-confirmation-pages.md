@@ -66,22 +66,17 @@ Note- you will not currently be able to use the `{{this}}` variable inside an Em
 
 _Using`{{this}}`_
 
-```html
+```liquid
 <h1>Thanks for getting in touch!</h1>
-
 <p>Nice to meet you {{this.name}}!</p>
-
 <p>We'll get back to your query as soon as possible.</p>
-
 ```
 
 _Using `{{form.properites}}` in a Layout copied from an Email Notification_
 
-```html
+```liquid
 <h1>Thanks for getting in touch!</h1> 
-
 <p>Nice to meet you {{form.properties.name}}!</p> 
-
 <p>We'll get back to your query as soon as possible.</p> 
 ```
 

@@ -10,7 +10,7 @@ You should include this on a checkout form.
 
 ### Outputting 1 payment gateway option
 
-```html
+```liquid
 {%- include 'ecommerce/checkout_standard' -%}
 ```
 
@@ -18,10 +18,10 @@ This will output the Payment Gateway that you most recently updated in Siteglide
 
 ### Outputting multiple payment gateway options
 
-```html
+```liquid
 {%- include 'ecommerce/checkout_standard'
-    id: '123'
-    default: 'true'
+  id: '123'
+  default: 'true'
 -%}
 ```
 

@@ -7,7 +7,7 @@ However if a Page is not the homepage, rather than `is_homepage` being set to `f
 
 Say I wanted to run some code on every Page that isn't the homepage, I'd write something like this:
 
-```html
+```liquid
 {% if context.page.metadata.is_homepage == false %}
    output content.
 {% else %}
@@ -21,11 +21,11 @@ Now lets look at the Liquid keyword "blank". This refers to having a value of ei
 
 If I now check "is\_homepage" like so:
 
-```html
+```liquid
 {% if context.page.metadata.is_homepage == blank %}
-    output content.
+  {% comment %}output content.{% endcomment %}
 {% else %}
-   output homepage content.
+  {% comment %}output homepage content.{% endcomment %}
 {% endif %}
 ```
 

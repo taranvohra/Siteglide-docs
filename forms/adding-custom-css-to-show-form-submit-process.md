@@ -33,28 +33,34 @@ In this example, we'll use CSS to select all Forms that are busy submitting glob
 
 ### A More Complex Example
 
-In this example, a spinner icon has been added to the Form Layout in advance: `<i class="fas fa-spinner fa-5x"></i>`
+In this example, a spinner icon has been added to the Form Layout.
 
 The CSS demonstrates how Front-End CSS is used to achieve a different effect:
-
+{% tabs %}
+{% tab title="HTML" %}
 ```html
-<style>
-  .fa-spinner {
-    display: none;
-  }
-  form.form_submitting {
-    opacity: 0.3;
-  }
-  form.form_submitting .fa-spinner {
-    display: block;
-    animation: spin 5s infinite;
-  }
-  @keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(359deg);}
-  }
-</style>
+<i class="fas fa-spinner fa-5x"></i>
 ```
+{% endtab %}
+{% tab title="CSS" %}
+```css
+.fa-spinner {
+  display: none;
+}
+form.form_submitting {
+  opacity: 0.3;
+}
+form.form_submitting .fa-spinner {
+  display: block;
+  animation: spin 5s infinite;
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Validation
 

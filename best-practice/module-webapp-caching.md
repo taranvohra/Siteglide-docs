@@ -6,7 +6,7 @@ You can improve performance of your website by implementing caching on your Modu
 
 Add a new parameter to your Module/WebApp include of `cache: 'true'`
 
-```html
+```liquid
 {%-
     include 'webapp'
     id: '9'

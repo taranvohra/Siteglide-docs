@@ -41,12 +41,12 @@ E.g. `data-cfs="5-1-input_text"`&#x20;
 
 A text input should have the `data-cfs` attribute inside the `<input>` element.&#x20;
 
-```html
+```liquid
 <input
-    class="form-control"
-    name="{{ form_builder.fields.properties.form_field_13_1.name }}"
-    data-cfs="5-1-input_text"
-    type="text"
+  class="form-control"
+  name="{{ form_builder.fields.properties.form_field_13_1.name }}"
+  data-cfs="5-1-input_text"
+  type="text"
 />
 ```
 
@@ -54,21 +54,22 @@ A text input should have the `data-cfs` attribute inside the `<input>` element.&
 
 The same applies for textarea inputs.
 
-```html
+```liquid
 <textarea
-    class="form-control"
-    name="{{ form_builder.fields.properties.form_field_13_6.name }}"
-    data-cfs="5-4-textarea"
-    rows="5"
-    cols="30"
-></textarea>
+  class="form-control"
+  name="{{ form_builder.fields.properties.form_field_13_6.name }}"
+  data-cfs="5-4-textarea"
+  rows="5"
+  cols="30"
+>
+</textarea>
 ```
 
 ### Checkbox
 
 A Checkbox group should have the `data-cfs` attribute on the container for the entire group. `<input>` elements should be the grandchildren of this group.&#x20;
 
-```html
+```liquid
 <div class="checkbox-container" data-cfs="6-1-input_checkbox">
   <div class="checkbox">
     <input
@@ -95,7 +96,7 @@ A Checkbox group should have the `data-cfs` attribute on the container for the e
 
 The same applies to a `radio` field.&#x20;
 
-```html
+```liquid
 <div class="radio-container" data-cfs="5-3-input_radio">
   <div class="radio">
     <input
@@ -122,7 +123,7 @@ The same applies to a `radio` field.&#x20;
 
 The `data-cfs` attribute should go on the `<select>` element itself, not on `<option>`s.
 
-```html
+```liquid
 <select 
   class=""
   name="{{ form_builder.fields.properties.form_field_14_5.name }}"
@@ -137,7 +138,7 @@ The `data-cfs` attribute should go on the `<select>` element itself, not on `<op
 
 The `data-cfs` attribute is on the hidden field, not on the element with `type="file"`.
 
-```html
+```liquid
 <label for="form_field_14_6">File</label>
 <input
     class="form-control"

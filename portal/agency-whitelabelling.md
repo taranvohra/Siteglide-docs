@@ -24,7 +24,7 @@ You'll need the code below as a minimum. You can then add your own HTML/CSS/JS d
 
 {% tabs %}
 {% tab title="HTML" %}
-```html
+```liquid
 <script src="{{ 'js/s_login.js' | asset_url }}"></script>
 <form onsubmit="s_login(this)">
 	Email <input type="text" name="email" />
@@ -35,7 +35,7 @@ You'll need the code below as a minimum. You can then add your own HTML/CSS/JS d
 {% endtab %}
 
 {% tab title="JavaScript" %}
-```python
+```javascript
 function s_login(el){
 	event.preventDefault();
 	let form = el.closest('form');

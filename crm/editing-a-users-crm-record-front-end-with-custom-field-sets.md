@@ -56,20 +56,15 @@ If you use a default Form Layout, then attaching the Custom Field Set to the For
 
 Here is an example of a Custom Field Set field added to the Layout:&#x20;
 
-```html
+```liquid
 <div class="row mt-4 input_text">
-
   <div class="col">
-
     <label for="form_field_13_3">Favourite Colour</label>
-
     <input class="form-control" 
            name="{{ form_builder.fields.properties.form_field_13_3.name }}" 
            data-cfs="3-3-input_text" 
            type="text">
-
   </div>
-
 </div>
 ```
 
@@ -109,7 +104,7 @@ Output your Form by writing the code for the Form inside this `user_details` Lay
 
 In this example, we have a Custom Field Set "Checkout Address" with a "Profile Picture", a Favourite Colour and a Country field:
 
-```html
+```liquid
 {{this.custom_field_sets['Checkout Address']['Favourite Colour']}} 
 
 <!-- Red-->
@@ -125,67 +120,58 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
 
 &#x20;As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
 
-```html
-<input class="form-control" 
-       name="{{ form_builder.fields.properties.form_field_13_3.name }}" 
-       data-cfs="3-3-input_text" 
-       type="text" 
-       value="">
-
+```liquid
+<input 
+  class="form-control" 
+  name="{{ form_builder.fields.properties.form_field_13_3.name }}" 
+  data-cfs="3-3-input_text" 
+  type="text" 
+  value=""
+>
 ```
 
 &#x20;Values can also be added to \<select> elements:
 
-```html
+```liquid
 <div class="row mt-4 select">
-
   <div class="col">
-
     <label for="form_field_13_1">Country</label>
-
-    <select class="" 
-            name="{{ form_builder.fields.properties.form_field_13_1.name }}" 
-            data-cfs="3-1-select" 
-            value="{{this.custom_field_sets['Checkout Address']['Country']}}"> 
+    <select 
+      class="" 
+      name="{{ form_builder.fields.properties.form_field_13_1.name }}" 
+      data-cfs="3-1-select" 
+      value="{{this.custom_field_sets['Checkout Address']['Country']}}"
+    >
       <option value="UK">UK</option>
-
       <option value="USA">USA</option>
-
       <option value="Canada">Canada</option>
-
       <option value="Australia">Australia</option>
-
       <option value="New Zealand">New Zealand</option>
-
     </select>
-
   </div>
-
 </div>
-
 ```
 
 File and Image fields are more complex, each has two elements- a `type="file"` and a `type="hidden"` field. If you wish the File upload to have validation, both the `value` attribute and `.required` class should be added to the `type="hidden"` input. This is because this is the field that actually has a `name` attribute and sends to the database.
 
-```html
+```liquid
 <label for="form_field_3_6">Profile Picture</label> 
-
-<input class="form-control required" 
-       name="{{ form_builder.fields.properties.form_field_3_6.name }}" 
-       data-cfs="1-6-image" 
-       type="hidden"
-       value="{{this.custom_field_sets['Checkout Address']['Profile Picture']}}">
-
+<input 
+  class="form-control required" 
+  name="{{ form_builder.fields.properties.form_field_3_6.name }}" 
+  data-cfs="1-6-image" 
+  type="hidden"
+  value="{{this.custom_field_sets['Checkout Address']['Profile Picture']}}"
+>
 <input class="form-control" id="form_field_3_6_file" type="file">
 ```
 
 &#x20;This adds the value to the field, but for the Profile Picture, I may also want to show a larger preview of the image outside the field. You can use the same Liquid to display the image, using the `asset_url` filter to complete the path:
 
-```html
-<div id="profile_pic" 
-     data-file-preview="form_field_10_1_file" 
-     style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');">
-     </div>
+```liquid
+<div id="profile_pic" data-file-preview="form_field_10_1_file" style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');">
+
+</div>
 ```
 
 Attributes:
