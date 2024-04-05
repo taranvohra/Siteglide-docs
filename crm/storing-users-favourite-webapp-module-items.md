@@ -26,11 +26,10 @@ Possible Use Cases for this feature include:
 
 This Layout will allow the User to add or remove an Item from their favourites.
 
-:::hint{type="warning"}
-## Note
+{% hint type="warning" %}
 
 The User Favourites Toggle Layout will only work within an item.liquid file (for Modules) or a WebApp Layout file that has access to {{this.id}}.
-:::
+{% endhint %}
 
 Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: `{% include 'user_favourites_toggle', layout: 'default' -%}`
 
