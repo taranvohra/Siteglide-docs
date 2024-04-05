@@ -39,15 +39,16 @@ When your client needs to update some key information about their company, they 
 Social Field Example:
 
 ```liquid
+{% comment %}Test{% endcomment %}
 {% if context.exports.company_information.properties.twitter_account == blank -%}
-    <a 
-      title="Twitter"
-      rel="nofollow"
-      href="https://twitter.com/{{context.exports.company_information.properties.twitter_account}}"
-      target="_blank"
-    >
-      <i class="fab fa-2x fa-twitter"></i>
-    </a>
+  <a 
+    title="Twitter"
+    rel="nofollow"
+    href="https://twitter.com/{{context.exports.company_information.properties.twitter_account}}"
+    target="_blank"
+  >
+    <i class="fab fa-2x fa-twitter"></i>
+  </a>
 {% endif -%}
 ```
 
