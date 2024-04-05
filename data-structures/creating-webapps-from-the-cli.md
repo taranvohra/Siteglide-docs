@@ -1,28 +1,27 @@
-:::hint{type="info"}
-We are using `99` as an example WebApp ID in this doc. Depending on the WebApp ID that you'd like to use, replace `99` with the correct ID.  Keep in mind that if you already have WebApps in the site you are working on then then some WebApp IDs may already be reserved.
-:::
+# Creating WebApps from the CLI
+
+{% hint style="info" %}
+We are using `99` as an example WebApp ID in this doc. Depending on the WebApp ID that you'd like to use, replace `99` with the correct ID. Keep in mind that if you already have WebApps in the site you are working on then then some WebApp IDs may already be reserved.
+{% endhint %}
 
 WebApps in Siteglide rely on 3 different files to work correctly.
 
-1.  **JSON Structure** - Used by Siteglide Admin and front-end to define structure of the WebApp with user-friendly names, and other UI metadata.
-
-2.  **Schema** - Used to define the database structure itself
-
-3.  **Form Configuration** - Used when submitting WebApp items front-end
+1. **JSON Structure** - Used by Siteglide Admin and front-end to define structure of the WebApp with user-friendly names, and other UI metadata.
+2. **Schema** - Used to define the database structure itself
+3. **Form Configuration** - Used when submitting WebApp items front-end
 
 There are 2 ways to create/edit a WebApp via CLI.
 
-1.  *Safest* - Create/Edit the JSON structure file (`marketplace_builder/views/partials/tables/webapps/99.liquid`), and then in Siteglide Admin simply click 'Save' in the Table Builder view. This will generate a matching Form Configuration and Schema file.
+1. _Safest_ - Create/Edit the JSON structure file (`marketplace_builder/views/partials/tables/webapps/99.liquid`), and then in Siteglide Admin simply click 'Save' in the Table Builder view. This will generate a matching Form Configuration and Schema file. We recommend then using CLI to pull the saved files immediately afterwards, otherwise you may accidentally overwrite them.
+2. _Most flexible_ - Create/Edit each of the 3 files manually. However, this relies on you keeping all 3 files in sync.
 
-2.  *Most flexible* - Create/Edit each of the 3 files manually. However, this relies on you keeping all 3 files in sync.
-
-### JSON Structure
+#### JSON Structure
 
 This is used by Siteglide Admin to output WebApp field data with user-friendly names and other UI options (order, field type, etc.)
 
 Location: `marketplace_builder/views/partials/tables/webapps/99.liquid`
 
-Contents:&#x20;
+Contents:
 
 ```json
 {
@@ -201,11 +200,11 @@ Contents:&#x20;
 
 Please see the [Field Types](https://developers.siteglide.com/field-types) document for all the relevant types.
 
-### Schema File
+#### YML Schema File
 
 This is what defines the database table structure, and how data will be stored.
 
-Location: `marketplace_builder/custom_model_types/webapps/webapp_99.yml`&#x20;
+Location: `marketplace_builder/custom_model_types/webapps/webapp_99.yml`
 
 Contents:
 
@@ -254,14 +253,13 @@ properties:
 ---
 ```
 
-The above are all the default fields that are needed, the last field is an example of a standard text field.  Please see the [Field Types](https://developers.siteglide.com/field-types) document for all the relevant types.
+The above are all the default fields that are needed, the last field is an example of a standard text field. Please see the [Field Types](https://developers.siteglide.com/field-types) document for all the relevant types.
 
-### Form Configuration
+#### Form Configuration
 
-This is used when submitting a WebApp item front-end.
-This file was also previously used to output WebApp structure data in Siteglide Admin, but that is now the job of the JSON structure file.
+This is used when submitting a WebApp item front-end and if you are using SiteBuilder, to power dynamic form layouts. This file was also previously used to output WebApp structure data in Siteglide Admin, but that is now the job of the JSON structure file.
 
-Location: `marketplace_builder/form_configurations/webapps/webapp_99.liquid`&#x20;
+Location: `marketplace_builder/form_configurations/webapps/webapp_99.liquid`
 
 Contents:
 
@@ -376,17 +374,19 @@ configuration:
       required: false
       validation: {}
 ---
-{%- capture form_layout -%}layouts/webapps/webapp_99/form/{{_layout}}{%- endcapture -%}
-{%- include form_layout -%}
+
+<div data-gb-custom-block data-tag="-"></div>layouts/webapps/webapp_99/form/{{_layout}}<div data-gb-custom-block data-tag="-"></div>
+
+<div data-gb-custom-block data-tag="-"></div>
 ```
 
-After both the above files are synced you will then need to refresh Siteglide Admin and your WebApp will appear under WebApps in the sites left hand menu&#x20;
+After both the above files are synced you will then need to refresh Siteglide Admin and your WebApp will appear under WebApps in the sites left hand menu
 
-### Layouts
+#### Layouts
 
 If you need layouts for your WebApp, these will be saved to:
 
-`marketplace_builder/views/partials/layouts/webapps/webapp_99/detail/default.liquid`&#x20;
+`marketplace_builder/views/partials/layouts/webapps/webapp_99/detail/default.liquid`
 
 `marketplace_builder/views/partials/layouts/webapps/webapp_99/list/default.liquid`
 
