@@ -151,6 +151,10 @@
 ## eCommerce Module
 
 * [Payment Gateways](./eCommerce/basic-payments/README.md)
+  * [Switching Payment Gateway](./eCommerce/payment-gateways/switching-gateway.md)
+  * [Building a Custom Payment Gateway](./eCommerce/payment-gateways/building-a-custom-payment-gateway.md)
+  * [Paypal Custom Parameters](./eCommerce/payment-gateways/paypal-custom-params.md)
+  * [Styling Stripe Card Elements](./eCommerce/payment-gateways/styling-stripe-card-elements.md)
 * [Basic Payments](./eCommerce/basic-payments/README.md)
   * [Basic Payments - Introduction](./eCommerce/basic-payments/basic-payments.md)
   * [Basic Payments - Payment Confirmation](./eCommerce/basic-payments/payment-confirmation.md)
