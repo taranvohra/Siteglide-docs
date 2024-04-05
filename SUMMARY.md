@@ -81,6 +81,10 @@
 * [Tutorial 6 - (Answers)](graphql/tutorial-6-answers.md)
 * [Tutorial 7 - Sorting](graphql/tutorial-7-sorting.md)
 * [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
+* [Tutorial 9 - Using Mutations to Create New Records](graphql/tutorial-9-using-mutations-to-create-new-records.md)
+* [Tutorial 10 - Using Mutations to Edit a Record](graphql/tutorial-10-using-mutations-to-edit-a-record.md)
+* [Tutorial 11 - Using Mutations to Delete an Item](graphql/tutorial-11-using-mutations-to-delete-an-item.md)
+* [Tutorial 12 - Related Records and Datasources](graphql/tutorial-12-related-records-and-datasources.md)
 
 ## Best Practice and Performance
 
