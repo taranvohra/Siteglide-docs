@@ -66,6 +66,11 @@
 * [Pagination on Liquid Tags](pagination/why-pagination.md)
 * [Custom Pagination Layouts](pagination/pagination-layouts.md)
 
+## Liquid
+
+* [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
+* [Using Liquid Logic to Check if a field exists, or is empty on the Front End](liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+
 ## GraphQL
 
 * [Tutorial Overview](graphql/tutorial-overview.md)
@@ -94,9 +99,13 @@
 ## Includes
 
 * [ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
+* [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
+* [ecommerce/constants\_json](includes/ecommerce-constants-json.md)
 
-## FAQ
+## Domains
 
-* [Using Liquid Logic to Check if a field exists, or is empty on the Front End](faq/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
-* [How do I learn more about Liquid?](faq/how-do-i-learn-more-about-liquid.md)
-* [How to setup a multi domain start page](faq/how-to-setup-a-multi-domain-start-page.md)
+* [How to setup a multi domain start page](domains/how-to-setup-a-multi-domain-start-page.md)
+
+## Timezones
+
+* [Timezones in the Siteglide Admin and on the front-end of your Site](timezones/how-do-i-control-timezones.md)

@@ -29,11 +29,11 @@ One use case for this approach would be where a client has a small chain of busi
 {% endraw %}
 ```
 
-I'll now explain the code snippet above and how it works.&#x20;
+I'll now explain the code snippet above and how it works.
 
 On the first line we get the current domain (`context.location.host` ) when the page loads and assign it so that it has a name of `domain` .
 
-Next, we open a `case` to check the result of `domain` .&#x20;
+Next, we open a `case` to check the result of `domain` .
 
 For each of the alternate domains we would like to check for, we create a `when` within the `case` . We include two versions of the domain to catch the majority of users. One that includes the [www](how-to-setup-a-multi-domain-start-page.md). and another that does not.
 
