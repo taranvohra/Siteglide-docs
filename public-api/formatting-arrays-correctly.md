@@ -8,8 +8,9 @@ To convert these two data types, use the screenshots and code below.  In this ex
 
 ![Finding an individual user and retrieving their data](./../.gitbook/assets/archbee_uploads/-AMxd0CRDYGkCslIGDgoD_Screen%20Shot%202021-01-07%20at%2021.05.08.png) 
 
+![Finding an individual user and retrieving their data](./../.gitbook/assets/archbee_uploads/-AM) 
 
-![Pass that data into a "Run Javascript" action and run the following JavaScript](./../.gitbook/assets/archbee_uploads/25cf_DyWZf2jAkaFVBRcj_Screen%20Shot%202021-01-07%20at%2021.04.53.png) 
+![Pass that data into a "Run Javascript" action and run the following JavaScript](./../.gitbook/assets/archbee_uploads/-AMxd0CRDYGkCslIGDgoD_Screen%20Shot%202021-01-07%20at%2021.05.08.png) 
 
 
 ```javascript
