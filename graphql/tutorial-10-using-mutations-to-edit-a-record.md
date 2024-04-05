@@ -35,13 +35,13 @@ mutation editItem {
 }
 ```
 
-![record_update in explorer](../../assets/WyXL88rOzhIXMnluS9vjT_image.png)
+![record_update in explorer](./../.gitbook/assets/archbee_uploads/WyXL88rOzhIXMnluS9vjT_image.png)
 
 ### Step 3) Add the ID of the Record which should be updated
 
 In this example, we'll add the ID as a variable:
 
-![](../../assets/YSPaqqc0krnx2_8HAp332_image.png)
+![](./../.gitbook/assets/archbee_uploads/YSPaqqc0krnx2_8HAp332_image.png)
 
 ```graphql
 mutation editItem($id: ID!) {
@@ -82,7 +82,7 @@ As in our last tutorial, it is possible to pass in properties as a single large 
 
 As in the last tutorial, it is required to add something to the object which returns with the results of the mutation. This can be useful to confirm results and show you what has changed. However, if you don't need many details, the best performing option is just to ask for `id`.
 
-![As with queries, explorer colours results in dark blue, and the mutation arguments in purple.](../../assets/kwXEvRZEULGovBFGw7xMV_image.png)
+![As with queries, explorer colours results in dark blue, and the mutation arguments in purple.](./../.gitbook/assets/archbee_uploads/kwXEvRZEULGovBFGw7xMV_image.png)
 
 ```graphql
 mutation MyMutation($id: ID!) {
@@ -133,7 +133,7 @@ If both automations check the current count at the same time, they will both rea
 
 It is to combat this scenario that `record_update` contains the following special operations:
 
-![](../../assets/Bo3sIeh28w_wYdXjZETo__image.png)
+![](./../.gitbook/assets/archbee_uploads/Bo3sIeh28w_wYdXjZETo__image.png)
 
 1.  array\_append will push the provided value to the end of an existing array stored in a property.
 

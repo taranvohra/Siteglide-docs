@@ -31,7 +31,7 @@ Change directory into your project folder (create a folder first if you don't ha
 
 Then add your Site as an environment - the quickest way to do this is to copy the CLI command from your site in the Portal- or you can replace the --url and --email flags with your own. Add your Siteglide Admin password when prompted:
 
-![Finding the CLI add command in Portal](../../assets/5EeZeVWyDatmSDbw3m_QE_image.png)
+![Finding the CLI add command in Portal](./../.gitbook/assets/archbee_uploads/5EeZeVWyDatmSDbw3m_QE_image.png)
 
 ![Entering the add environment command in CLI](https://downloads.intercomcdn.com/i/o/180528133/86e344294e3ff1476b8b463d/image.png)
 

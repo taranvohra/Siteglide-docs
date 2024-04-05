@@ -109,13 +109,13 @@ query findBlogAndAuthorProperties {
 
 In the Siteglide Admin, we can check that some of the Blogs already have authors set in the `datasource` field, in this case this Blog item has an Author ID of `100 `in the field:
 
-![](../../assets/evgRNmT8_vPrVj3LFkRMj_image.png)
+![](./../.gitbook/assets/archbee_uploads/evgRNmT8_vPrVj3LFkRMj_image.png)
 
 ## Step 3) Add related\_records inside results
 
 To start with, look inside results in explorer: `related_record` and `related_records` appear as possible results. By including these special objects inside the results object, we can define a branching tree of related results.
 
-![](../../assets/XS1E-AqyXEMjjg9DITVoo_image.png)
+![](./../.gitbook/assets/archbee_uploads/XS1E-AqyXEMjjg9DITVoo_image.png)
 
 The two options are similar but have one key difference:
 

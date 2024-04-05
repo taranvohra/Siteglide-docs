@@ -36,7 +36,7 @@ mutation nameMyMutation {
 
 If using explorer, click the dropdown to select mutation instead of query, to unlock different options:
 
-![](../../assets/k9tpG-xPVBl-WmABctwCQ_image.png)
+![](./../.gitbook/assets/archbee_uploads/k9tpG-xPVBl-WmABctwCQ_image.png)
 
 ## Step 2) Select the "record\_create" mutation type
 
@@ -53,7 +53,7 @@ mutation createWebAppItem{
 
 ```
 
-![record_create in explorer](../../assets/19bxi8ogGsFwBSGESU5Uq_image.png)
+![record_create in explorer](./../.gitbook/assets/archbee_uploads/19bxi8ogGsFwBSGESU5Uq_image.png)
 
 ## Step 3 - use the record object to define the new record
 
@@ -106,7 +106,7 @@ mutation createBlogItem{
 
 As with queries, the explorer UI cannot handle multiple properties in a mutation. You can use the explorer to figure out which individual property types are possible and then add the code manually. `properties` itself can be written as an array with each object inside the array defining a property to set.&#x20;
 
-![Property types in explorer](../../assets/ZwiBT-QSsA6KNIuSoZu-__image.png)
+![Property types in explorer](./../.gitbook/assets/archbee_uploads/ZwiBT-QSsA6KNIuSoZu-__image.png)
 
 ### Data Types
 
@@ -329,7 +329,7 @@ Note, the structure of the JSON we are passing in the previous example is simila
 
 Using explorer to turn properties into a variable is a quick way to reference the required type for the complex variable `[PropertyInputType]`:
 
-![](../../assets/Zxm-5CFz7rdj-Wf9yAXRz_image.png)
+![](./../.gitbook/assets/archbee_uploads/Zxm-5CFz7rdj-Wf9yAXRz_image.png)
 
 # Conclusion
 

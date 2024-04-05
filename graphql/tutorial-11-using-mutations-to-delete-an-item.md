@@ -85,7 +85,7 @@ If you want to extend the amount of time the record stays in soft-deleted state,
 
 # Deleting a Record
 
-![Building a record_delete mutation in explorer](../../assets/RpUauUIHHJsnz0a2sUhqt_image.png)
+![Building a record_delete mutation in explorer](./../.gitbook/assets/archbee_uploads/RpUauUIHHJsnz0a2sUhqt_image.png)
 
 ## Step 1) Find the ID of the Record you wish to Delete
 
