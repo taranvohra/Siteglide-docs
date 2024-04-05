@@ -42,6 +42,12 @@
 ## Building Custom Marketplace Modules
 
 * [Module Setup](/modules/module-setup.md)
+* [Create Folder Structure](/modules/create-folder-structure.md)
+* [Updating Modules](./modules/updating-existing-modules.md)
+* [Submit Module for Approval](./modules/submit-module-for-approval.md)
+* [Adding Payment to a Module](./modules/adding-payment-to-a-module.md)
+* [Theme Module Example](./modules/theme-module-example.md)
+* [Data & UI Module Example](./modules/data-and-ui-module-example.md)
 
 ## Using Custom Marketplace Modules
 
@@ -70,6 +76,7 @@
 * [Events - Map List View](/events/event-list-map.md)
 
 ## eCommerce Module
+
 
 
 
