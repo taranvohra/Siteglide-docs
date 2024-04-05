@@ -9,7 +9,7 @@ Following on from the previous tutorial, we'll look at more advanced filtering o
 
 # Introduction
 
-In the last tutorial, we looked at how to filter your results so that only items from `webapp_1` were returned. We also challenged you to see if you could adjust the query so that it returned all WebApp items. 
+In the last tutorial, we looked at how to filter your results so that only items from `webapp_1` were returned. We also challenged you to see if you could adjust the query so that it returned all WebApp items. 
 
 This time, we'll look at:
 
@@ -31,7 +31,7 @@ For example, `release_date` is not a custom field in the Siteglide Admin, but it
 
 A brief note on `name` . You'll see the term `name` available in the schema- but this is a deprecated way of referring to the `table`e.g. `webapp_1`. To fetch the name of the item in the Siteglide Admin, you'll need `properties.name`.
 
-In our next example query, we'll demonstrate this. Let's search for items with a `properties.name` that contains the string "music". 
+In our next example query, we'll demonstrate this. Let's search for items with a `properties.name` that contains the string "music". 
 
 Code:
 
@@ -59,14 +59,14 @@ Notes:
 
 *   See that properties uses a colon : and then curly braces `{ }` as we have usually used so far. Properties can instead be used to store an array of filter objects, but we'll look at this later.
 
-*   Note that we have to specify inside the curly braces both the `name` of the property we want to filter by (which happens here to also be called `name`, but it could also have been something else like `release_date`) and the method we'll be matching the value by, in this case `contains: music`. 
+*   Note that we have to specify inside the curly braces both the `name` of the property we want to filter by (which happens here to also be called `name`, but it could also have been something else like `release_date`) and the method we'll be matching the value by, in this case `contains: music`. 
 
 Explorer:
 Adding a single filter to properties can be done with the Explorer wizard. However, if you want to be able to filter by an array of different properties, Explorer has no support for this yet, but it is possible by writing in the query manually.&#x20;
 
 ![](https://downloads.intercomcdn.com/i/o/206719259/963aa78169eb77996bf16138/image.png)
 
-# Filtering Data Types Other than Strings 
+# Filtering Data Types Other than Strings 
 
 In the examples so far, we've only filtered by strings- or in other words, groups of letters or characters. Next we'll look at some other data types:
 
@@ -144,12 +144,11 @@ Notes:
 
 *   `value_int` works the same as `value_boolean` but is designed to handle the different type of data more efficiently.
 
-*   Be aware that running this query yourself on a Starter Site may produce no results. This is the correct result, because Starter Site does not at the time of writing ship with any weightings set. If you add a weighting of `1` in the Admin, you'll see it appear in the results. 
+*   Be aware that running this query yourself on a Starter Site may produce no results. This is the correct result, because Starter Site does not at the time of writing ship with any weightings set. If you add a weighting of `1` in the Admin, you'll see it appear in the results. 
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206727192/ef1365e490c66dc4547aed03/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/206727192/ef1365e490c66dc4547aed03/image.png) 
 
 
 ### Filtering for integer properties which fall inside a range
@@ -158,7 +157,7 @@ Explorer:
 
 The dates are stored in Epoch Timestamp format, which is an integer storing the number of seconds which have elapsed since the Epoch. You can convert a date of your choice to this format here: <https://www.epochconverter.com/>
 
-In this example, I'll use the time at the current time of writing: `1582108820`. Let's query for all items which have already been released. In other words, the value stored in `release_date` should be less than, or equal to, the current timestamp.  When you're thinking about dates, you can think of "less than" as meaning "before" and "greater than" as meaning "after". So here we're asking for "items with a release\_date before now".
+In this example, I'll use the time at the current time of writing: `1582108820`. Let's query for all items which have already been released. In other words, the value stored in `release_date` should be less than, or equal to, the current timestamp.  When you're thinking about dates, you can think of "less than" as meaning "before" and "greater than" as meaning "after". So here we're asking for "items with a release\_date before now".
 
 Code:
 
@@ -182,11 +181,11 @@ query items_already_released {
 }
 ```
 
-Notes: 
+Notes: 
 
 *   The range filter requires you create a new object `{ }` containing some logical comparison operators. You can choose between the operators in the documentation panel- see below.
 
-Documentation Panel: 
+Documentation Panel: 
 
 *   Available operators can be seen under `RangeFilter`. They are short for `Greater Than` , `Greater Than or Equal` , `Less Than` and `Less Than or Equal`.
 
@@ -222,11 +221,11 @@ query mens_clothing {
 }
 ```
 
-Notes: 
+Notes: 
 
-*   `value_in` is special to fields which have an array data type. 
+*   `value_in` is special to fields which have an array data type. 
 
-*   It takes an array of strings `["string_1", "string_2"]` as its value. Here we are just using one category ID as an example. You could experiment with combinations of category\_ids. 
+*   It takes an array of strings `["string_1", "string_2"]` as its value. Here we are just using one category ID as an example. You could experiment with combinations of category\_ids. 
 
 Explorer:
 Only *partial support* is currently available in Explorer for this. It's not so good at handling arrays. So you can select the property in Explorer, but you'll need to add the value manually into your query.
@@ -267,11 +266,11 @@ query released_mens_clothing_products {
 
 Notes:
 
-*   In this example, `table`and properties are both chosen as filter options. 
+*   In this example, `table`and properties are both chosen as filter options. 
 
 *   `properties` takes an array (denoted by square brackets `[ ]` ) of objects (denoted by curly braces `{ }`
 
-*   Each pair of curly braces `{ }`  inside `properties` should contain the `name` of the property and an independent filtering method e.g. `range` or `value` which will be used.
+*   Each pair of curly braces `{ }`  inside `properties` should contain the `name` of the property and an independent filtering method e.g. `range` or `value` which will be used.
 
 *   Using a combination of filters in this way generally follows AND logic. Items must pass all of the filtering tests you choose before they are returned.
 
@@ -280,7 +279,7 @@ Unfortunately, arrays are not currently supported in Explorer, so you'll have to
 
 # Filtering by whether a Property Exists - or doesn't exist!
 
-You can also find items where a property does, or doesn't exist. 
+You can also find items where a property does, or doesn't exist. 
 
 In this example, we're looking for WebApps where a `meta_title` was not added.&#x20;
 

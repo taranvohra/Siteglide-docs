@@ -66,8 +66,7 @@ You've now set up your GraphiQL sandbox!&#x20;
 
 ![](https://downloads.intercomcdn.com/i/o/206666353/08fadb604e7db05b329b2cd1/image.png)
 
-# What does each panel in the GraphiQL Sandbox do?
-
+# What does each panel in the GraphiQL Sandbox do? 
 
 *The Central Panel*
 
@@ -216,8 +215,7 @@ Explorer:
 
 You can press the "play" button to test your query:
 
-![](https://downloads.intercomcdn.com/i/o/180538499/48ea0d31c60849777af1abb8/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/180538499/48ea0d31c60849777af1abb8/image.png) 
 
  Ours is not quite ready, and the error message in the middle-right Results Panel will tell us why:
 

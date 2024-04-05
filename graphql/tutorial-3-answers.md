@@ -9,7 +9,7 @@ We look at a possible answer to Tutorial 3's challenge. This shows how to write 
 
 # Challenge Answers
 
-The trick here was to examine the `tables`and spot the common patterns in their values. 
+The trick here was to examine the `tables`and spot the common patterns in their values. 
 
 The two types of `records`we wanted had these `tables `beginning with "webapp\_":
 
@@ -25,7 +25,7 @@ The types of `records `we don't want have `table `values without "webapp\_", for
 
 *   `form_1` - Newsletter Sign Up Form Submissions
 
-So, in order to filter for the `records`we do want and not the `records`we don't want, we need `records`which start with the string `webapp_`. 
+So, in order to filter for the `records`we do want and not the `records`we don't want, we need `records`which start with the string `webapp_`. 
 
 Code:
 
@@ -57,7 +57,7 @@ Explorer:
 
 ![](https://downloads.intercomcdn.com/i/o/206709413/5f5a3592d2e2a3911903ec4f/image.png)
 
-This is just one possible answer, you may have found a different method. 
+This is just one possible answer, you may have found a different method. 
 
 Try and make sure you choose the best method for your use case. You should always be looking out for a more efficient way of doing things.
 

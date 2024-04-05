@@ -133,7 +133,7 @@ query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
 ```
 
 I'll use the following Liquid to run this query when the endpoint Page is accessed:
-`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
+`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
 
 Note- I'll be using - before and after my closing Liquid tags to remove unnecessary whitespace from the results- this is optional.&#x20;
 
@@ -153,7 +153,7 @@ I'll be storing the page I want to request from the endpoint in query parameters
 
 You can now use `context.params`\`to read the URL on the endpoint Page and dynamically access each query parameter. I'll store each in a variable before I feed these into the query, in case there is any type coercion to carry out first.
 
-```html
+```liquid
 {%- assign page = context.params.page -%}
 {%- assign per_page = context.params.per_page -%}
 ```
@@ -162,14 +162,14 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 
 Accessing these values via the above method tends to set them as String values in the variable. For this example we'll need to change the type to integer- as that's what the query expects. You can refresh your knowledge on changing the type of variable in Liquid in [tutorial 6.](https://developers.siteglide.com/tutorial-6-variables)
 
-```html
+```liquid
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
 ```
 
 We can then add them to the query.&#x20;
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
@@ -178,7 +178,7 @@ We can then add them to the query.&#x20;
 
 If the query expects variables to be Strings you can actually add them straight to the query without assigning as variables first:
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
@@ -193,7 +193,7 @@ Results are accessible via the variable name you defined in the `graphql` tag, b
 
 If you decided in step 2 that you didn't want to change the Page format, you should now build the required HTML structure you'd like to send back (this would probably be inserted as it is into a Page via JavaScript).
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
@@ -214,7 +214,7 @@ If you decided in step 2 to change the format of the Page, you'll need to use Li
 
 As GraphQL already outputs in JSON format, this is easy:
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
@@ -229,7 +229,7 @@ For something like CSV, you'll need to use logic to output the data in the corre
 
 We use `{%` rather than `{%-` in this example, because we want to preserve new lines to make sure each row of the CSV displays correctly.&#x20;
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
@@ -316,7 +316,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
 
 *   If the User has been logged in (to any Secure Zone), you can check this on the Endpoint Page Authorization policy.
 
-```html
+```liquid
 {%- if context.current_user.id -%}
   true
 {%- endif -%}
@@ -324,7 +324,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
 
 *   To check that the request comes from an authorized Page/ Site, you can check this with context:
 
-```html
+```liquid
 {%- if context.headers.HTTP_REFERER contains "expected-URL" -%}
   true
 {%- endif -%}
@@ -342,7 +342,7 @@ This basic example will request data from the example earlier and console log th
 
 The if statement logic checks if a 2xx response code is received (meaning any authorization policies have passed) and that there is no HTML tag containing a 401 code from a Secure Zone check failure. See Step 8) for more details.&#x20;
 
-```html
+```liquid
 <script>
   var xReq = new XMLHttpRequest();
   xReq.onload = function () {
@@ -375,7 +375,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 *   It then loops over the Items and appends each WebApp Name to the HTML DOM.
 
 :::codeblocktabs
-```html
+```liquid
 <section class="form form-01">
   <div class="container">
     <form>
@@ -441,7 +441,7 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
 
 **Build HTML on the Endpoint Page**
 
-```html
+```liquid
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
@@ -457,7 +457,7 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
 
 **Fetch HTML on the Front End Page**
 
-```html
+```liquid
 <div class="webapp_1">
 </div>
 

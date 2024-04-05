@@ -13,7 +13,7 @@ You've now used the GraphQL playground to write queries which fetch data. Now yo
 
 # Introduction
 
-Last time, we looked at how to use `filter` to refine your queries so that they only return results matching particular criteria. 
+Last time, we looked at how to use `filter` to refine your queries so that they only return results matching particular criteria. 
 
 So far we've been working in GraphiQL, the interative playground. This time, we'll run a GraphQL query on your Starter Site. We'll also take a quick look at how to handle the results- but you can learn more about this by following our Documentation on [Dot Notation](https://developers.siteglide.com/liquid-dot-notation) and [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial).
 
@@ -35,10 +35,9 @@ We need to add a GraphQL query inside a specific folder in order to refer to it 
 
 In terminal, you'll need to change directory to the Project Folder.
 
-If you've not already, run a pull command in terminal to pull down the current file structure: `siteglide-cli pull my_environment_name`
+If you've not already, run a pull command in terminal to pull down the current file structure: `siteglide-cli pull my_environment_name`
 
-![](https://downloads.intercomcdn.com/i/o/186131363/bf00e1887e8063033aaa5850/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/186131363/bf00e1887e8063033aaa5850/image.png) 
 
 If you want to refresh your memory on using the Siteglide-CLI, you can learn more** here**.
 
@@ -50,7 +49,7 @@ I'll be using Microsoft Visual Studio Code in this example. Other Editors are av
 
 All the folders and files that can be synced with your Site are in the `marketplace_builder` folder.
 
-## Step 4) Add a new folder called `graph_queries `
+## Step 4) Add a new folder called `graph_queries `
 
 &#x20;Open up the `marketplace_builder` folder. If you've not already got a folder inside this called `graph_queries` , create one now.
 
@@ -69,9 +68,9 @@ The file should have the extension `.graphql`.
 
 So that file now exists on your device, but not yet on your Site. You'll need to either `sync` or `deploy` the file to your Site.
 
-The choice of command is up to you. `sync` will watch for changes in the `marketplace_builder` folder, so you'll need to make a change in the file after running the command before your file is uploaded. The `sync` command will continue to watch and sync files until you cancel it. `deploy` will simply `deploy` all your local files to the Site as a one off command. 
+The choice of command is up to you. `sync` will watch for changes in the `marketplace_builder` folder, so you'll need to make a change in the file after running the command before your file is uploaded. The `sync` command will continue to watch and sync files until you cancel it. `deploy` will simply `deploy` all your local files to the Site as a one off command. 
 
-Here, I'll use sync: 
+Here, I'll use sync: 
 
 ![](https://downloads.intercomcdn.com/i/o/186142126/81f74c0d437505c8735342d0/image.png)
 
@@ -81,7 +80,7 @@ If you wanted to check if the file has synced correctly, you can turn off `sync`
 
 # Adding the GraphQL Liquid Tag
 
-We'll use the `graphql` Liquid tag provided by platformOS.  You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: `{% graphql my_results = "get_items_with_musical_names" %}`
+We'll use the `graphql` Liquid tag provided by platformOS.  You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: `{% graphql my_results = "get_items_with_musical_names" %}`
 
 Notes:
 
@@ -95,7 +94,7 @@ Notes:
 
 You can output all of your results on the Page, using Liquid output syntax `{{ }}` to output the variable we defined earlier.
 
-```html
+```liquid
 {% graphql my_results = "get_items_with_musical_names" %}
 {{my_results}}
 ```
@@ -110,9 +109,9 @@ The results will output in Hash format. You can use dot notation to access speci
 
 # Looping over the Results
 
-This example uses dot notation. 
+This example uses dot notation. 
 
-It is possible to use your Query to rename the keys in your Results- doing this would require different dot notation. We'll look at this later. 
+It is possible to use your Query to rename the keys in your Results- doing this would require different dot notation. We'll look at this later. 
 
 For now, we'll be using the query below, which does not rename any keys. I've set `per_page` to 2, in order to make the example data Object shorter and easier to read.
 
@@ -159,18 +158,18 @@ The structure of the results here matches the results we see in the GraphQL play
 
 The dot notation to reach the results is:
 
-```html
+```liquid
 {% graphql my_results = "get_items_with_musical_names" %}
 {{my_results.records.results}}
 ```
 
-Alternatively, you can always run your query in the GraphiQL Playground and work out the dot notation needed from the results shown in the middle-right panel. You'll just need to ignore the very top key in the results `data`:  and use the variable from your `graphql`  tag instead e.g. `my_results` :
+Alternatively, you can always run your query in the GraphiQL Playground and work out the dot notation needed from the results shown in the middle-right panel. You'll just need to ignore the very top key in the results `data`:  and use the variable from your `graphql`  tag instead e.g. `my_results` :
 
 ![](https://downloads.intercomcdn.com/i/o/186385217/c383f21a11baa8cc9887b3f2/image.png)
 
 ## Step 3) Implement a Liquid For Loop to loop over the results
 
-```html
+```liquid
 {% graphql my_results = "get_items_with_musical_names" %}
 {% for this in my_results.records.results %}
   
@@ -191,7 +190,7 @@ In this example, we'll output:
 
 We can now also bring in other Front End languages. I'll add some common HTML tags.
 
-```html
+```liquid
 {% graphql my_results = "get_items_with_musical_names" %}
 {% for this in my_results.records.results %}
   <h1>{{this.table}}</h1>
@@ -206,13 +205,13 @@ This gets me the following Results on the Page:
 
 # Outputting Layouts
 
-You can use a Liquid `include` tag to output a Layout to display your results. The trick is to make sure that the data fits the same format as the layout is expecting. 
+You can use a Liquid `include` tag to output a Layout to display your results. The trick is to make sure that the data fits the same format as the layout is expecting. 
 
 You can learn more about this topic [here](https://developers.siteglide.com/using-webapp-collections-tutorial), as it works in the same way as displaying Collection Results in a Layout.&#x20;
 
 # Congratulations
 
-You've reached the end of the first collection of our Learning GraphQL tutorials. 
+You've reached the end of the first collection of our Learning GraphQL tutorials. 
 
 By now, you should be able to:
 
@@ -228,7 +227,7 @@ New Tutorials will be added soon!
 
 # Next Time
 
-There's no official challenge for this tutorial, because you probably want to experiment with adding queries to your Site. 
+There's no official challenge for this tutorial, because you probably want to experiment with adding queries to your Site. 
 
 In the next Tutorial, we'll look at using variables in your Queries to make them more dynamic. We'll look at how you can use variables:
 

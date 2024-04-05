@@ -52,8 +52,7 @@ Inside this folder, a single Liquid file can be created to act as your Layout. T
 
 *   `{{this['Company']}}` - An array of Companies this User is connected to&#x20;
 
-*   `{{this['Address']}}` - An array of Addresses stored against this User&#x20;
-
+*   `{{this['Address']}}` - An array of Addresses stored against this User&#x20; 
 
 ## Accessing Custom CRM Fields
 
@@ -81,6 +80,5 @@ You may find it more helpful to output your available fields as JSON and use thi
 
 Outputting `{{this}}` will fetch the data as JSON, e.g.
 
-![](https://downloads.intercomcdn.com/i/o/227273759/92c84c54244ab1b07bc88455/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/227273759/92c84c54244ab1b07bc88455/image.png) 
 

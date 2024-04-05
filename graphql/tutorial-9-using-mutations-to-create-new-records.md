@@ -1,12 +1,10 @@
-
-
+ 
 
 # Introduction
 
 So far, these tutorials have used GraphQL queries; in this article we're going to start looking at mutations.
 
-The difference between queries and mutations is that:
-
+The difference between queries and mutations is that: 
 
 *   Queries "read" data from the database
 
@@ -277,7 +275,7 @@ mutation createBlogItem($title: String!, $description: String!, $categories: [St
 }
 ```
 
-```html
+```liquid
 {% assign description = "Lorem Ipsum" %}
 {% graphql createBlogItem = "create_blog_item", title: "The newest Blog Post", description: description %}
 ```
@@ -302,7 +300,7 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
 
 ```
 
-```html
+```liquid
 {% parse_json properties %}
   [
     {

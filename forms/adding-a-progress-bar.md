@@ -82,7 +82,6 @@ The following example displays a progress bar which increments with each submiss
 </div>
 ```
 {% endtab %}
-{% endtabs %}
-
+{% endtabs %} 
 
 

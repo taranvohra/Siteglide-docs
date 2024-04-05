@@ -11,17 +11,13 @@ If you would like to run some alternative JavaScript on the Front-End instead, y
     //Do something.
   }
 </script>
-```
+``` 
 
+ 
 
+ 
 
-
-
-
-
-
-
-
+ 
 
 
 

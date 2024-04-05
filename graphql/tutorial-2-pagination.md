@@ -11,7 +11,7 @@ Turning the Page! In tutorial 2, we'll control how many items Graph returns on e
 
 When GraphQL returns results, it will organise them into pages.&#x20;
 
-This allows it to be more efficient, as it only returns the data that is needed straight away. At the same time, the rest of the pages are organised ready for the next request. 
+This allows it to be more efficient, as it only returns the data that is needed straight away. At the same time, the rest of the pages are organised ready for the next request. 
 
 You'll always need to think about Pagination when using GraphQL, even you only want to retrieve the first Page of results.
 
@@ -33,10 +33,9 @@ query get_all_records {
     }
   }
 }
-```
+``` 
 
-
-Experiment by changing the integer in the argument from `20` to another value, e.g. `1`. Observe the difference. It's recommended to keep the per\_page number as low as possible- for efficiency and performance.
+Experiment by changing the integer in the argument from `20` to another value, e.g. `1`. Observe the difference. It's recommended to keep the per\_page number as low as possible- for efficiency and performance.
 
 Let's consider a few situations:
 
@@ -56,7 +55,7 @@ You can return pagination metadata alongside your query results:
 
 *   `per_page` - Returns the number of items on every page.
 
-*   `has_previous_page`  - A boolean which is true if there is a page before the current page.
+*   `has_previous_page`  - A boolean which is true if there is a page before the current page.
 
 *   `has_next_page` - A boolean which is true if there is a page after the current page.
 
@@ -86,7 +85,7 @@ query get_all_records {
 
 Notes:
 
-*   Properties like `has_next_page` and `has_previous_page` are most useful for adding pagination buttons of your own. 
+*   Properties like `has_next_page` and `has_previous_page` are most useful for adding pagination buttons of your own. 
 
 *   You can see that by default, we get the first page of results- so `page` returns `1`.
 
@@ -114,8 +113,7 @@ query get_all_records {
     }
   }
 }
-```
-
+``` 
 
 Explorer:
 

@@ -306,7 +306,7 @@ The results in JSON may look like the below (we've minimised Blog properties whi
 
 As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot Notation](<../Siteglide Developer Documentation/Liquid Dot Notation.md>) or [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](docId:2Sc1gj360B5yVDj22V4pK)) to access the results, until you get to an array. Since we only asked for a single author, we can use dot notation inside the blog record to access the author. We still need to loop over the blog results as always:
 
-```html
+```liquid
 {% graphql blogs_with_authors = "blogsWithAuthors" %}
 {% for blog in blogs_with_authors.records.results %}
   <h2>{{blog.properties.module_field_3_1}}</h2>
@@ -451,7 +451,7 @@ query AuthorsAndTheirArticles { #renamed
 
 ## Step 7) Liquid example
 
-```html
+```liquid
 {% graphql authors_and_their_articles = "AuthorsAndTheirArticles" %}
 {% for author in authors_and_their_articles.records.results %}
   <h2>{{author.properties.name}}</h2>
@@ -476,4 +476,6 @@ Next, you could experiment with some of these options:
 
 *   using `related_users` an alternative to `related_records `which fetches CRM users with a relationship to your record. You don't need to specify a table, but join and foreign properties work the same.
 
-*   Additional nesting. Inside your related\_records results, you can define related\_records again. This allows you to build a complex results tree containing as many layers of related results as you like, for example adding to our example above- you could return the categories of each Blog the Author had published- and display a list of category names.
+*   Additional nesting. Inside your related\_records results, you can define related\_records again. This allows you to build a complex results tree containing as many layers of related results as you like, for example adding to our example above- you could return the categories of each Blog the Author had published- and display a list of category names. 
+
+

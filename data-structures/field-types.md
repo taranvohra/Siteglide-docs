@@ -48,8 +48,7 @@ All field types have the following metadata options:
 | hidden   | boolean | Determines whether or not the field is shown in Siteglide Admin UI                                |
 | order    | integer | The position the field is shown in Siteglide Admin UI and Import CSVs                             |
 | editable | boolean | Determines whether you can edit this metadata in the Siteglide Admin UI builder views             |
-| required | boolean | Determines whether it is required to fill in this field in Siteglide Admin UI and front-end forms |
-
+| required | boolean | Determines whether it is required to fill in this field in Siteglide Admin UI and front-end forms | 
 
 
 Some other metadata options are available to specific field types:
@@ -62,13 +61,10 @@ Some other metadata options are available to specific field types:
 | num\_min       | string  | number\_integer&#xA;number\_float                             | The minimum value this number field will allow the user to select.                                                                      |
 | num\_max       | string  | number\_integer&#xA;number\_float                             | The maximum value this number field will allow the user to select.                                                                      |
 | num\_step      | string  | number\_integer&#xA;number\_float                             | The amount the number will change by using the number scroller in Siteglide Admin UI.                                                   |
-| num\_precision | string  | number\_integer&#xA;number\_float                             | The amount of decimal places shown in Siteglide Admin UI.                                                                               |
+| num\_precision | string  | number\_integer&#xA;number\_float                             | The amount of decimal places shown in Siteglide Admin UI.                                                                               | 
 
+ 
 
-
-
-
-
-
+ 
 
 

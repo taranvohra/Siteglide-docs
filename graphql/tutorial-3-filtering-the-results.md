@@ -17,15 +17,15 @@ You shall not pass! This time, we'll look at how you can use filters to only ret
 
 `records`in the database have a `table`which tells us which WebApp or Module they belong to.
 
-This time, we'll look at how you can use filters to only return results with a particular `table`, or with a `table `which matches a certain pattern. 
+This time, we'll look at how you can use filters to only return results with a particular `table`, or with a `table `which matches a certain pattern. 
 
 # Returning The Gallery WebApp
 
-The Starter Site comes packaged with a ready-built WebApp with the id of `1` and the name `webapp_1`. 
+The Starter Site comes packaged with a ready-built WebApp with the id of `1` and the name `webapp_1`. 
 
 ## Step 1: Load the previous query
 
-We'll return to our query from the previous tutorial, but this time, we'll rename it from `get_all_records`  to `get_webapp_1` to reflect the different purpose we intend for it. We'll also be wanting to look at `page 1` again.&#x20;
+We'll return to our query from the previous tutorial, but this time, we'll rename it from `get_all_records`  to `get_webapp_1` to reflect the different purpose we intend for it. We'll also be wanting to look at `page 1` again.&#x20;
 
 Code:
 
@@ -43,13 +43,11 @@ query get_webapp_1 {
     }
   }
 }
-```
-
+``` 
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206703771/4fc28e56aa305cc7246b14b5/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/206703771/4fc28e56aa305cc7246b14b5/image.png) 
 
 Step 2: Add the filter argument
 -------------------------------
@@ -83,12 +81,11 @@ Notes:
 
 *   Like the other arguments, `filter` is followed by a colon `:`
 
-*   We have more settings to choose next (`filter` is an object) so we add curly braces `{ }` 
+*   We have more settings to choose next (`filter` is an object) so we add curly braces `{ }` 
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206704320/bd8b3ad94a46a5ef7d75a6e1/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/206704320/bd8b3ad94a46a5ef7d75a6e1/image.png) 
 
 
 ## Step 3: Filter by the table
@@ -126,8 +123,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206704959/c902a03c3f1130a8e7d42bb5/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/206704959/c902a03c3f1130a8e7d42bb5/image.png) 
 
 
 ## Step 4: Define the filtering rule
@@ -158,13 +154,13 @@ query get_webapp_1 {
 }
 ```
 
-Notes: 
+Notes: 
 
-*   `value` is a key and is followed by a colon : 
+*   `value` is a key and is followed by a colon : 
 
 *   Our value `"webapp_1"` must be a String, so we wrap it in double quotes.
 
-Documentation panel: 
+Documentation panel: 
 
 *   Selecting RecordsFilterInput gives you options for different filtering rules you can apply:
 
@@ -205,14 +201,13 @@ query get_blog_module {
     }
   }
 }
-```
-
+``` 
 
 Explorer:
 
 ![](https://downloads.intercomcdn.com/i/o/206707131/e9fa3f76d39f4cd030187682/image.png)
 
-This should return Blog Posts from the Blog Module. 
+This should return Blog Posts from the Blog Module. 
 
 # Returning Form Submissions
 
@@ -238,35 +233,33 @@ query get_newsletter_signups {
     }
   }
 }
-```
-
+``` 
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206707418/074e81dd0ed77fc4e300216f/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/206707418/074e81dd0ed77fc4e300216f/image.png) 
 
 
 # Challenge!
 
 ## Introduction to GraphQL Challenges
 
-In order to learn GraphQL, you'll need to start experimenting with what you've picked up from this tutorials. 
+In order to learn GraphQL, you'll need to start experimenting with what you've picked up from this tutorials. 
 
-To help you do this, we'll now start to set you some challenges. These will ask you to tweak the examples we've given you so far and see if you can achieve the desired results. 
+To help you do this, we'll now start to set you some challenges. These will ask you to tweak the examples we've given you so far and see if you can achieve the desired results. 
 
-We'll always give you the answers to the challenge in the following Article, so don't worry if you get stuck. 
+We'll always give you the answers to the challenge in the following Article, so don't worry if you get stuck. 
 
 ## Your Challenge is to Write a Query which returns Items from all WebApps but not Module items
 
 To carry out this challenge, you will need to create a second WebApp and add a couple of items in the Admin.
 By experimenting with the options in the documentation panel, see if you can filter the results so that:
 
-*   your query returns all items with the `table`of `webapp_1` 
+*   your query returns all items with the `table`of `webapp_1` 
 
 *   your query returns all items with the `table`of `webapp_2`
 
-*   your query does not return items which start with `module_` 
+*   your query does not return items which start with `module_` 
 
 *   your query does not return Form submissions which start with `form_`
 

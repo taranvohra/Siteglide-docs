@@ -1,5 +1,4 @@
-# Tutorial 6 - Variables
-
+# Tutorial 6 - Variables 
 
 Adding variables to your query allows you to filter results based on User interaction - and re-use queries dynamically.
 
@@ -48,7 +47,7 @@ query find_items_with_category {
 }
 ```
 
-As you might have guessed, this query aims to find WebApp or Module items with a particular category assigned to them. 
+As you might have guessed, this query aims to find WebApp or Module items with a particular category assigned to them. 
 
 As it stands, the query is not very useful or repeatable. We want to be able to pass in the category we're interested in as a variable. This would allow different Pages to use the same query to view different categories - or allow the User to choose which category they wish to view.
 
@@ -129,9 +128,9 @@ query find_items_with_category($category: String) {
 }
 ```
 
-Notes: 
+Notes: 
 
-*   The variable name is again preceded with a dollar sign $. 
+*   The variable name is again preceded with a dollar sign $. 
 
 *   A colon : and an Title Case keyword are used to set the type. See below for more information on types.
 
@@ -195,28 +194,28 @@ If you require any other conversions, please request them on Intercom and we'll 
 *String to Int
 *Apply an integer filter:
 
-```html
+```liquid
 {% assign original_string = "123" %}
 {% assign new_int = original_string | plus: 0 %}
 ```
 
 *String to Float*
 
-```html
+```liquid
 {% assign original_string = "123" %}
 {% assign new_float = original_string | plus: 0.00 %}
 ```
 
 *String to \[String]*
 
-```html
+```liquid
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
 ```
 
 *String to Boolean*
 
-```html
+```liquid
 {% assign original_string = "true" %}
 {% if original_string == "true" %}
   {% assign new_boolean == true %}
@@ -227,7 +226,7 @@ If you require any other conversions, please request them on Intercom and we'll 
 
 *Boolean to String*
 
-```html
+```liquid
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
 ```
@@ -247,9 +246,9 @@ If you require any other conversions, please request them on Intercom and we'll 
 ```
 
 *Literal JSON object to HASH object*
-(Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value. 
+(Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value. 
 
-```html
+```liquid
 {% parse_json properties_object %}
   [
     { "name": "properties.webapp_field_1_1", exists: true },
@@ -260,7 +259,7 @@ If you require any other conversions, please request them on Intercom and we'll 
 
 # Passing in Variables using the Sandbox (Testing)
 
-You can test by entering values in JSON format in the panel in the bottom left. The panel may be hidden, in which case you'll need to click and drag it up. 
+You can test by entering values in JSON format in the panel in the bottom left. The panel may be hidden, in which case you'll need to click and drag it up. 
 
 Firstly, open a new JSON object:
 
@@ -284,7 +283,7 @@ And finally, define the value of your category. Make sure the data is in the typ
 
 *   Boolean - `true`
 
-*   \[String]  (Array of Strings) - `["Hello", "Hi"]` 
+*   \[String]  (Array of Strings) - `["Hello", "Hi"]` 
 
 In our example, we will need an array of Strings:
 
@@ -300,8 +299,7 @@ Notes:
 
 Our query is now finished:
 
-![](https://downloads.intercomcdn.com/i/o/192699146/9dc9b224fd52317d98011629/image.png)
-
+![](https://downloads.intercomcdn.com/i/o/192699146/9dc9b224fd52317d98011629/image.png) 
 
 
 
@@ -314,7 +312,7 @@ Okay, so now you can use the GraphiQL Sandbox to test your queries with variable
 
 Step 1) Add parameters to the graphql tag for each variable you've defined in the Query. Here, we'll continue with our example and add `category`
 
-```html
+```liquid
 {% graphql my_results = "find_items_with_category",
  category: 
  %}
@@ -326,13 +324,13 @@ Notes:
 
 *   You don't need to use a dollar sign $ before the name of your variable.
 
-*   You can add new lines to the inside of the tag to keep it tidy, or write the tag on one line, it's up to you. 
+*   You can add new lines to the inside of the tag to keep it tidy, or write the tag on one line, it's up to you. 
 
 Step 2) Next, add the value of the parameter.
 
 You can either hardcode the value:
 
-```html
+```liquid
 {% graphql my_results = "find_items_with_category",
  category: "98486"
  %}
@@ -340,7 +338,7 @@ You can either hardcode the value:
 
 Or, you can use a Liquid variable which you defined earlier:
 
-```html
+```liquid
 <!-- Create an empty array -->
 {% assign current_category_array = "" | split: "," %}
 <!-- Add Strings to the Array -->
@@ -355,7 +353,7 @@ Or, you can use a Liquid variable which you defined earlier:
 
 Or, you can use data from Siteglide that's already stored in a Liquid variable. In this case, let's say we're in an item.liquid file for a Product. We already have access to the Categories that this Product is assigned to - luckily, the data is already a Liquid Array. Let's use that data to find other records in the same Category.
 
-```html
+```liquid
 {% graphql my_results = "find_items_with_category",
  category: this.category_array
  %}
@@ -371,7 +369,7 @@ For this week's challenge, we'd like you to set up your own simple Pagination co
 
 On a new Page you create, the User should be able to see the first two Items in the Gallery WebApp. Then, when they press the Page 2 button, the Page should refresh and they should see the second Page of Results. See the gif above for a demonstration.
 
-In the Tips section, we'll give you the HTML and Liquid you need to get started, your challenge is to build the GraphQL query which will power the functionality. 
+In the Tips section, we'll give you the HTML and Liquid you need to get started, your challenge is to build the GraphQL query which will power the functionality. 
 
 ## Tips
 
@@ -380,7 +378,7 @@ Here are some snippets of code you can use to help you:
 *User Interaction
 *You can use anchors to allow the User to refresh the Page and change the Page Parameter in the URL.
 
-```html
+```liquid
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
@@ -389,15 +387,15 @@ Here are some snippets of code you can use to help you:
 ```
 
 *Reading URL parameters
-*You can use Liquid to read the Page parameter in the URL. You'll then need to work out how to feed this variable into your GraphQL query: `{% assign page = context.params.page | default: 1  | plus: 0 %}`
+*You can use Liquid to read the Page parameter in the URL. You'll then need to work out how to feed this variable into your GraphQL query: `{% assign page = context.params.page | default: 1  | plus: 0 %}`
 
-By the way- we're using the filters `| default` and `| plus: 0 ` to make sure the page defaults to 1 if no parameter exists, and that the data is converted to an integer.&#x20;
+By the way- we're using the filters `| default` and `| plus: 0 ` to make sure the page defaults to 1 if no parameter exists, and that the data is converted to an integer.&#x20;
 
 *Remembering Pagination in GraphQL
 *You may need to refer to [Tutorial 2](https://developers.siteglide.com/tutorial-2-pagination), to refresh your understanding of Pagination.
 
 # Next Time
 
-We'll look over the answers to our toughest challenge yet. 
+We'll look over the answers to our toughest challenge yet. 
 
 **Let's go!**
