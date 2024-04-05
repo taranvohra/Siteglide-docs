@@ -40,7 +40,8 @@
 
 ## Modules
 
-* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace) ![Test](/.gitbook/assets/image-preview.png)
+* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
+* 
 
 ## Company Information
 
