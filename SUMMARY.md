@@ -34,13 +34,9 @@
 * [Category Detail Layouts](categories/category-detail-layouts.md)
 * [How to check whether a Category has children](categories/how-to-check-whether-a-category-has-children.md)
 
-## WebApps
-
-
-
 ## Modules
 
-* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace) ![Test](/.gitbook/assets/image-preview.png)
+* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
 
 ## Company Information
 
@@ -106,9 +102,9 @@
 
 ## Includes
 
-* [ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
+* [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
 * [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
-* [ecommerce/constants\_json](includes/ecommerce-constants-json.md)
+* [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)
 
 ## Domains
 
