@@ -59,9 +59,11 @@ Within Pagination Layouts, the following variables will be available to give you
 For example, you might have a button which will take Users to the next Page, but it might be helpful to know whether or not a next page exists (otherwise, the User will see an error when they navigate). Using these variables and a Liquid if statement, you can disable the button when the user is on page 1. In this example, we also use a variable from the above list to set the button's `href`.
 
 ```liquid
+{% raw %}
 <li class="page-item <div data-gb-custom-block data-tag="if" data-0='false' data-1='false' data-2='false'>disabled</div>">
  <a class="page-link" href="{{next_path}}">Next</a>
 </li>
+{% endraw %}
 ```
 
 #### Looping

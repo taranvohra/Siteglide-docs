@@ -7,6 +7,7 @@ This method does however remove some of the ease of editing for the client, as t
 One use case for this approach would be where a client has a small chain of businesses that each have their own domain to target the area closest to them. Each of the sites are very small and the website structure is reasonably similar, and so it makes sense for the client to be able to manage all of them from the same Admin.
 
 ```liquid
+{% raw %}
 {% assign domain = context.location.host -%}
 {% case domain %}
 {% when 'www.domainone.com' or 'domainone.com'  -%}
@@ -25,6 +26,7 @@ One use case for this approach would be where a client has a small chain of busi
   {% endcontent_for -%}
   {%- include 'content_section', id: '16', name: 'Other Domain Page' -%}
 {% endcase -%}
+{% endraw %}
 ```
 
 I'll now explain the code snippet above and how it works.&#x20;

@@ -37,6 +37,7 @@ Now we'll need to create a custom layout. Right click the Form we're working on 
 Copy the code from the default layout into here (we'll be using this as a starting point). You'll notice that the full name field has a `type` of "text", this will need to be replaced with "hidden" (this field is just for the database- users don't need to see it!). Remove the label element as it will still display otherwise. Here's what it should look like:
 
 ```liquid
+{% raw %}
 {% comment %}<label for="s_name"></label>{% endcomment %}
 <input
   class="form-control required"
@@ -44,6 +45,7 @@ Copy the code from the default layout into here (we'll be using this as a starti
   id="s_name"
   type="hidden"
 />
+{% endraw %}
 ```
 
 ### Add IDs to custom fields:
@@ -53,6 +55,7 @@ Next we must add unique ids to our custom fields, we will use these to combine t
 Update each field to include id="lastName" and id="firstName" after the name value. These aren't normally required but will be used to refer to our fields in the following Java Script. Here's what the custom fields should look like:
 
 ```liquid
+{% raw %}
 <label for="form_field_2_4">First Name</label>
 <input
   class="form-control required"
@@ -67,6 +70,7 @@ Update each field to include id="lastName" and id="firstName" after the name val
   type="text"
   id="lastName"
 />
+{% endraw %}
 ```
 
 ### Include handleNames() function:

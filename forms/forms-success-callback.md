@@ -4,13 +4,15 @@ By default, Siteglide Forms will reload the page after submission.
 
 If you would like to run some alternative JavaScript on the Front-End instead, you can do so by passing in a callback function to the 4th argument:
 
-```Liquid
+```liquid
+{% raw %}
 <button onClick="s_form_submit_v2(this,'form_12',undefined,success_cb);">
 <script>
   function success_cb(redirect) {
     //Do something.
   }
 </script>
+{% endraw %}
 ``` 
 
  

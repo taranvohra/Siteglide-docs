@@ -37,11 +37,13 @@ Use this Liquid to include your User Favourites Layout, the only parameter that'
 `is_favourite` - you can use this within `user_favourites_toggle` layouts to determine if the Module/ Webapp item is already added to the Users favourites like so: &#x20;
 
 ```liquid
+{% raw %}
 {% if is_favourite != true  %}
   <!-- output add to favourites button -->
 {% else %}
   <!--  output remove from favourites button -->
 {% endif %}
+{% endraw %}
 ```
 
 ## Arguments&#x20;

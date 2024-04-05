@@ -44,6 +44,7 @@ Here is how a generic Page Template file should be structured:
 {% endraw %}
   </body>
 </html>
+{% endraw %}
 ```
 
 While editing a Page, you can assign a Template using the Page Template drop down and then clicking Save.

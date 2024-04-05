@@ -33,6 +33,7 @@ Layouts for Pagination should be stored in Code Editor at the following path: `l
 ### Add a Pagination Layout to a WebApp or Module "include" tag
 
 ```liquid
+{% raw %}
 {%- include 'webapp'
     id: '3'
     layout: 'default'
@@ -41,12 +42,15 @@ Layouts for Pagination should be stored in Code Editor at the following path: `l
     sort_order: 'asc'
     pagination_layout: 'my_pagination_layout_name'
 -%}
+{% endraw %}
 ```
 
 ### Add a Pagination Layout to a Pagination "include" tag
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_pagination', pagination_layout: 'my_pagination_layout_name' -%}
+{% endraw %}
 ```
 
 ## Customise the Layout

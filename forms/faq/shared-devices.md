@@ -13,9 +13,11 @@ Our default form layout for new or updated forms will set both 'email' and 'name
 You can also add your own message on page like this:
 
 ```liquid
+{% raw %}
 {%- if context.exports.is_logged_in.data == true -%}
   <p>Hi {{ session.current_user.name }}! <a href="/logout">(not you?)</a></p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ### 2 - How to allow updating of existing user data - Essentially a 'user update' form

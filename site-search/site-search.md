@@ -16,10 +16,12 @@ Both are available in [Toolbox](https://help.siteglide.com/article/100-pages-get
 ## Including the Search Input
 
 ```liquid
+{% raw %}
 {% include 'site_search_input'
   search_placeholder: 'Search'
   result_page_url: 'search-results'
 -%}
+{% endraw %}
 ```
 
 ### Parameters
@@ -37,11 +39,13 @@ If you're using a button to submit your Input Form and there are multiple Input 
 You'll need to add the `button_id` parameter to the include for Search Input and this must be unique for each Search Form:
 
 ```liquid
+{% raw %}
 {% include 'site_search_input'
   search_placeholder: 'Search'
   result_page_url: 'search-results'
   button_id: 'id_1' 
 -%}
+{% endraw %}
 ```
 
 Then add an ID to the button that submits your input, please match this to the ID within the `button_id` parameter, for example:`<button class="btn site_search_submit" id="id_1">Submit</button>`
@@ -49,10 +53,12 @@ Then add an ID to the button that submits your input, please match this to the I
 ## Including the Search Results
 
 ```liquid
+{% raw %}
 {% include 'site_search_results'
   layout: 'default'
   per_page: '20' 
 -%}
+{% endraw %}
 ```
 
 ### Parameters
@@ -82,10 +88,12 @@ You can add the parameter:  `allow_list_items: 'true'` and WebApp items without 
 We strongly recommend that if you use this parameter, you also update your Site Search Results Layout so that it hides links to the Detail Page if one does not exist. You can use the following Liquid if statement to achieve this:
 
 ```liquid
+{% raw %}
 {% include 'site_search_input'
   search_placeholder: 'Search'
   result_page_url: 'search-results'
 -%}
+{% endraw %}
 ```
 
 ## Custom Results Layouts
@@ -116,11 +124,13 @@ If your search covers more than one type, you may wish to only use output fields
 For example, if you have a Search Results Layout and you want to display the SEO Meta Title for Pages and WebApps, you can use logic to show whichever one is actually available:
 
 ```liquid
+{% raw %}
 {% if this.metadata.title %}
   <p>{{this.metadata.title}}</p>
 {% elsif this.properties.meta_title %}
   <p>{{this.properties.meta_title}}</p>
 {% endif %}
+{% endraw %}
 ```
 
 You can also use the default filter:   `<p>{{this.metadata.title | default: this.properties.meta_title }}</p>`

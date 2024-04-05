@@ -8,11 +8,13 @@ However if a Page is not the homepage, rather than `is_homepage` being set to `f
 Say I wanted to run some code on every Page that isn't the homepage, I'd write something like this:
 
 ```liquid
+{% raw %}
 {% if context.page.metadata.is_homepage == false %}
    output content.
 {% else %}
    output homepage content.
 {% endif %}
+{% endraw %}
 ```
 
 This would work fine if we were on the Homepage, as the variable's value would be true. However, on other Pages, it would not behave as expected, as is\_homepage would be undefined..
@@ -22,11 +24,13 @@ Now lets look at the Liquid keyword "blank". This refers to having a value of ei
 If I now check "is\_homepage" like so:
 
 ```liquid
+{% raw %}
 {% if context.page.metadata.is_homepage == blank %}
   {% comment %}output content.{% endcomment %}
 {% else %}
   {% comment %}output homepage content.{% endcomment %}
 {% endif %}
+{% endraw %}
 ```
 
 This will now work!

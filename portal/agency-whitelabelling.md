@@ -25,12 +25,14 @@ You'll need the code below as a minimum. You can then add your own HTML/CSS/JS d
 {% tabs %}
 {% tab title="HTML" %}
 ```liquid
+{% raw %}
 <script src="{{ 'js/s_login.js' | asset_url }}"></script>
 <form onsubmit="s_login(this)">
 	Email <input type="text" name="email" />
 	Password <input type="password" name="password" />
 	<input type="submit" value="Login" />
 </form>
+{% endraw %}
 ```
 {% endtab %}
 

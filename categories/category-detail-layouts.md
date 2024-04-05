@@ -35,11 +35,13 @@ We'll include some examples here of how the `{{this.id}}` variable can be used s
 For example, the following code will output Products on the Category Detail Page, filtered by that Category:
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: this.id
     type: 'list' 
 -%}
+{% endraw %}
 ```
 
 ### WebApps
@@ -47,12 +49,14 @@ For example, the following code will output Products on the Category Detail Page
 Change the ID to fetch different WebApps.
 
 ```liquid
+{% raw %}
 {%- include 'webapp'
     id: '1'
     layout: "my_layout"
     category_ids: this.id
     type: 'list' 
 -%}
+{% endraw %}
 ```
 
 ### Modules
@@ -60,12 +64,14 @@ Change the ID to fetch different WebApps.
 Module 3 refers to the Blog; you can change the ID to fetch different Modules.
 
 ```liquid
+{% raw %}
 {%- include 'module'
     id: '3'
     layout: "my_layout"
     category_ids: this.id
     type: 'list' 
 -%}
+{% endraw %}
 ```
 
 #### Default Fields

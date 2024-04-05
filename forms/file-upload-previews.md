@@ -15,6 +15,7 @@ We've aimed for maximum flexibility- you create the preview element with any HTM
 In these examples, we have a Form with a single upload field. In these examples the field's ID in the database is `form_field_11_1`.
 
 ```liquid
+{% raw %}
 <div class="input-group"> 
   <label for="form_field_11_1">File</label>
   <input 
@@ -28,6 +29,7 @@ In these examples, we have a Form with a single upload field. In these examples 
     type="file"
   /> 
 </div>
+{% endraw %}
 ```
 
 The upload field already consists of the following:
@@ -58,6 +60,7 @@ Here's an example `img` preview element:
 Full code for this input:
 
 ```liquid
+{% raw %}
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -72,6 +75,7 @@ Full code for this input:
   />
   <img data-file-preview="form_field_11_1_file" height="100" width="100" />
 </div>
+{% endraw %}
 ```
 
 ### Background Images
@@ -83,6 +87,7 @@ Here's an example `<div>` element designed to use `background-image` to display 
 Full code for this input:
 
 ```liquid
+{% raw %}
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -97,6 +102,7 @@ Full code for this input:
   />
   <div data-file-preview="form_field_11_1_file"></div>
 </div>
+{% endraw %}
 ```
 
 ### Other File Types

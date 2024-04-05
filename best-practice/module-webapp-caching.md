@@ -7,12 +7,14 @@ You can improve performance of your website by implementing caching on your Modu
 Add a new parameter to your Module/WebApp include of `cache: 'true'`
 
 ```liquid
+{% raw %}
 {%-
     include 'webapp'
     id: '9'
     layout: 'custom'
     cache: 'true'
 -%}
+{% endraw %}
 ```
 
 ### How does it work?

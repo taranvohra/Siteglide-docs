@@ -42,12 +42,14 @@ E.g. `data-cfs="5-1-input_text"`&#x20;
 A text input should have the `data-cfs` attribute inside the `<input>` element.&#x20;
 
 ```liquid
+{% raw %}
 <input
   class="form-control"
   name="{{ form_builder.fields.properties.form_field_13_1.name }}"
   data-cfs="5-1-input_text"
   type="text"
 />
+{% endraw %}
 ```
 
 ### Textarea
@@ -55,6 +57,7 @@ A text input should have the `data-cfs` attribute inside the `<input>` element.&
 The same applies for textarea inputs.
 
 ```liquid
+{% raw %}
 <textarea
   class="form-control"
   name="{{ form_builder.fields.properties.form_field_13_6.name }}"
@@ -63,6 +66,7 @@ The same applies for textarea inputs.
   cols="30"
 >
 </textarea>
+{% endraw %}
 ```
 
 ### Checkbox
@@ -70,6 +74,7 @@ The same applies for textarea inputs.
 A Checkbox group should have the `data-cfs` attribute on the container for the entire group. `<input>` elements should be the grandchildren of this group.&#x20;
 
 ```liquid
+{% raw %}
 <div class="checkbox-container" data-cfs="6-1-input_checkbox">
   <div class="checkbox">
     <input
@@ -90,6 +95,7 @@ A Checkbox group should have the `data-cfs` attribute on the container for the e
     <label for="form_field_13_3_medium">Medium</label>
   </div>
 </div>
+{% endraw %}
 ```
 
 ### Radio
@@ -97,6 +103,7 @@ A Checkbox group should have the `data-cfs` attribute on the container for the e
 The same applies to a `radio` field.&#x20;
 
 ```liquid
+{% raw %}
 <div class="radio-container" data-cfs="5-3-input_radio">
   <div class="radio">
     <input
@@ -117,6 +124,7 @@ The same applies to a `radio` field.&#x20;
     <label for="form_field_14_3_radio_2">Radio 2</label>
   </div>
 </div>
+{% endraw %}
 ```
 
 ### Dropdown
@@ -124,6 +132,7 @@ The same applies to a `radio` field.&#x20;
 The `data-cfs` attribute should go on the `<select>` element itself, not on `<option>`s.
 
 ```liquid
+{% raw %}
 <select 
   class=""
   name="{{ form_builder.fields.properties.form_field_14_5.name }}"
@@ -132,6 +141,7 @@ The `data-cfs` attribute should go on the `<select>` element itself, not on `<op
   <option value="Dropdown 1">Dropdown 1</option>
   <option value="Dropdown 2">Dropdown 2</option>
 </select>
+{% endraw %}
 ```
 
 ### File
@@ -139,6 +149,7 @@ The `data-cfs` attribute should go on the `<select>` element itself, not on `<op
 The `data-cfs` attribute is on the hidden field, not on the element with `type="file"`.
 
 ```liquid
+{% raw %}
 <label for="form_field_14_6">File</label>
 <input
     class="form-control"
@@ -151,4 +162,5 @@ The `data-cfs` attribute is on the hidden field, not on the element with `type="
     id="form_field_14_6_file"
     type="file"
 >
+{% endraw %}
 ```

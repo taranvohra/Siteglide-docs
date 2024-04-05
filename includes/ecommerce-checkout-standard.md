@@ -11,7 +11,9 @@ You should include this on a checkout form.
 ### Outputting 1 payment gateway option
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/checkout_standard' -%}
+{% endraw %}
 ```
 
 This will output the Payment Gateway that you most recently updated in Siteglide Admin.
@@ -19,10 +21,12 @@ This will output the Payment Gateway that you most recently updated in Siteglide
 ### Outputting multiple payment gateway options
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/checkout_standard'
   id: '123'
   default: 'true'
 -%}
+{% endraw %}
 ```
 
 This will output the Payment Gateway with the ID you select.

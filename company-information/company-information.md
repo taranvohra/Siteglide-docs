@@ -40,8 +40,6 @@ Social Field Example:
 
 ```liquid
 {% raw %}
-test2
-{% comment %}Test{% endcomment %}
 {% if context.exports.company_information.properties.twitter_account == blank -%}
   <a 
     title="Twitter"

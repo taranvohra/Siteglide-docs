@@ -40,18 +40,22 @@ You'll need to use a Liquid For Loop to loop over the records in this Layout.&#x
 One of the benefits of this is that you can rename the variable under which your fields are kept. If you like you can store the variables under the namespace "this".
 
 ```liquid
+{% raw %}
 {% for this in submissions %}
   <p>Form name: {{this.name}}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 Or, if you want to output the `form_submissions` layout inside a `user_details` Layout for example, you can store the variables under a different namespace e.g. `case` and continue to use `this` to refer to the `user_details` (Liquid variables are always inherited by Layouts included within them).
 
 ```liquid
+{% raw %}
 {% for case in submissions %}
   <p>User Name: {{this.name}}</p>
   <p>Form name: {{case.name}}</p>
 {% endfor %}
+{% endraw %}
 ```
 
 ## Available Fields (within the loop)

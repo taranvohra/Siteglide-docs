@@ -195,40 +195,50 @@ If you require any other conversions, please request them on Intercom and we'll 
 *Apply an integer filter:
 
 ```liquid
+{% raw %}
 {% assign original_string = "123" %}
 {% assign new_int = original_string | plus: 0 %}
+{% endraw %}
 ```
 
 *String to Float*
 
 ```liquid
+{% raw %}
 {% assign original_string = "123" %}
 {% assign new_float = original_string | plus: 0.00 %}
+{% endraw %}
 ```
 
 *String to \[String]*
 
 ```liquid
+{% raw %}
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
+{% endraw %}
 ```
 
 *String to Boolean*
 
 ```liquid
+{% raw %}
 {% assign original_string = "true" %}
 {% if original_string == "true" %}
   {% assign new_boolean == true %}
 {% elsif original_string  == "false" %}
   {% assign new_boolean == false %}
 {% endif %}
+{% endraw %}
 ```
 
 *Boolean to String*
 
 ```liquid
+{% raw %}
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
+{% endraw %}
 ```
 
 *Int to String*
@@ -249,12 +259,14 @@ If you require any other conversions, please request them on Intercom and we'll 
 (Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value. 
 
 ```liquid
+{% raw %}
 {% parse_json properties_object %}
   [
     { "name": "properties.webapp_field_1_1", exists: true },
     { "name": "properties.webapp_field_1_2", exists: true }
   ]
 {% endparse_json %}
+{% endraw %}
 ```
 
 # Passing in Variables using the Sandbox (Testing)
@@ -313,9 +325,11 @@ Okay, so now you can use the GraphiQL Sandbox to test your queries with variable
 Step 1) Add parameters to the graphql tag for each variable you've defined in the Query. Here, we'll continue with our example and add `category`
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: 
  %}
+{% endraw %}
 ```
 
 Notes:
@@ -331,14 +345,17 @@ Step 2) Next, add the value of the parameter.
 You can either hardcode the value:
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: "98486"
  %}
+{% endraw %}
 ```
 
 Or, you can use a Liquid variable which you defined earlier:
 
 ```liquid
+{% raw %}
 <!-- Create an empty array -->
 {% assign current_category_array = "" | split: "," %}
 <!-- Add Strings to the Array -->
@@ -349,14 +366,17 @@ Or, you can use a Liquid variable which you defined earlier:
 {% graphql my_results = "find_items_with_category",
  category: current_category_array
  %}
+{% endraw %}
 ```
 
 Or, you can use data from Siteglide that's already stored in a Liquid variable. In this case, let's say we're in an item.liquid file for a Product. We already have access to the Categories that this Product is assigned to - luckily, the data is already a Liquid Array. Let's use that data to find other records in the same Category.
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: this.category_array
  %}
+{% endraw %}
 ```
 
 # Challenge - Using Page as a Variable
@@ -379,11 +399,13 @@ Here are some snippets of code you can use to help you:
 *You can use anchors to allow the User to refresh the Page and change the Page Parameter in the URL.
 
 ```liquid
+{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
+{% endraw %}
 ```
 
 *Reading URL parameters

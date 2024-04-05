@@ -101,9 +101,11 @@ The Form Default Layout already includes this Field- however it is hidden from U
 The simplest way to complete the step is to remove the logic:
 
 ```liquid
+{% raw %}
 {% unless context.exports.is_logged_in.data -%}
   
 {% endif %}
+{% endraw %}
 ```
 
 *Things to Check*

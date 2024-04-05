@@ -57,6 +57,7 @@ If you use a default Form Layout, then attaching the Custom Field Set to the For
 Here is an example of a Custom Field Set field added to the Layout:&#x20;
 
 ```liquid
+{% raw %}
 <div class="row mt-4 input_text">
   <div class="col">
     <label for="form_field_13_3">Favourite Colour</label>
@@ -66,6 +67,7 @@ Here is an example of a Custom Field Set field added to the Layout:&#x20;
            type="text">
   </div>
 </div>
+{% endraw %}
 ```
 
 &#x20;Note the `data-cfs` attribute which gives you a clue this is a Custom Field Set Field and will therefore submit to the CRM record.
@@ -105,6 +107,7 @@ Output your Form by writing the code for the Form inside this `user_details` Lay
 In this example, we have a Custom Field Set "Checkout Address" with a "Profile Picture", a Favourite Colour and a Country field:
 
 ```liquid
+{% raw %}
 {{this.custom_field_sets['Checkout Address']['Favourite Colour']}} 
 
 <!-- Red-->
@@ -116,11 +119,13 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
 {{this.custom_field_sets['Checkout Address']['Profile Picture']}} 
 
 <!-- documents/form_uploads/form_3/profile-1603989579828.png -->
+{% endraw %}
 ```
 
 &#x20;As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
 
 ```liquid
+{% raw %}
 <input 
   class="form-control" 
   name="{{ form_builder.fields.properties.form_field_13_3.name }}" 
@@ -128,11 +133,13 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
   type="text" 
   value=""
 >
+{% endraw %}
 ```
 
 &#x20;Values can also be added to \<select> elements:
 
 ```liquid
+{% raw %}
 <div class="row mt-4 select">
   <div class="col">
     <label for="form_field_13_1">Country</label>
@@ -150,11 +157,13 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
     </select>
   </div>
 </div>
+{% endraw %}
 ```
 
 File and Image fields are more complex, each has two elements- a `type="file"` and a `type="hidden"` field. If you wish the File upload to have validation, both the `value` attribute and `.required` class should be added to the `type="hidden"` input. This is because this is the field that actually has a `name` attribute and sends to the database.
 
 ```liquid
+{% raw %}
 <label for="form_field_3_6">Profile Picture</label> 
 <input 
   class="form-control required" 
@@ -164,14 +173,17 @@ File and Image fields are more complex, each has two elements- a `type="file"` a
   value="{{this.custom_field_sets['Checkout Address']['Profile Picture']}}"
 >
 <input class="form-control" id="form_field_3_6_file" type="file">
+{% endraw %}
 ```
 
 &#x20;This adds the value to the field, but for the Profile Picture, I may also want to show a larger preview of the image outside the field. You can use the same Liquid to display the image, using the `asset_url` filter to complete the path:
 
 ```liquid
+{% raw %}
 <div id="profile_pic" data-file-preview="form_field_10_1_file" style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');">
 
 </div>
+{% endraw %}
 ```
 
 Attributes:

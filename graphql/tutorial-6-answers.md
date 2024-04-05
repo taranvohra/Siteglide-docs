@@ -65,11 +65,13 @@ Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liq
 We gave you these in the tips. You'll have needed to add them on a Page of your choice.
 
 ```liquid
+{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
+{% endraw %}
 ```
 
 Pressing one of the buttons will redirect us to the same Page, but will be adding a `page` query parameter to the URL. This is the easiest way to pass variables to Liquid- because Liquid runs before the Page loads, and the URL is one of the only available sources of dynamic information at this point.&#x20;
@@ -96,11 +98,13 @@ b) The query is expecting an integer, so let's apply an Integer filter that will
 c) Let's add the `graphql` tag with the variable parameter.
 
 ```liquid
+{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
+{% endraw %}
 ```
 
 # Step 6) Output the Results
@@ -108,6 +112,7 @@ page: current_page
 We can output the results using the variable name we defined in the `graphql` tag.
 
 ```liquid
+{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 
 {% graphql my_result = "gallery_by_page",
@@ -115,6 +120,7 @@ page: current_page
 %}
 
 {{my_result}}
+{% endraw %}
 ```
 
 If pressing the HTML anchors changes the results by fetching different "pages" of JSON results, you've been successful. Congratulations.
@@ -126,6 +132,7 @@ If you're having difficulty with any of these steps still, please don't hesitate
 *Liquid*
 
 ```liquid
+{% raw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -137,6 +144,7 @@ page: current_page
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
+{% endraw %}
 ```
 
 *GraphQL*
@@ -162,6 +170,7 @@ The next steps give you ideas for how to take this further. They are not part of
 These JSON results don't look great. Remember, you can use Liquid to pass the results into a Layout- if you can find that Layout's relative path in Code Editor. 
 
 ```liquid
+{% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 
 {% graphql my_result = "gallery_by_page",
@@ -173,6 +182,7 @@ page: current_page
 {% for this in result_array %}
   {% include 'layouts/webapps/webapp_1/list/my_layout_name', this: this %}
 {% endfor %}
+{% endraw %}
 ```
 
 However, you won't have access to the user-friendly names for fields in that Layout, because GraphQL will output the raw database IDs for fields. 
@@ -203,11 +213,13 @@ query gallery_by_page($page: Int) {
 You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
+{% raw %}
 <ul>
   {% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 # Next Time

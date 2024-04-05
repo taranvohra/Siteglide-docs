@@ -32,9 +32,11 @@ You can include dynamic content in your cache key- a really useful thing to do i
 You can use the Cache tag to wrap the block of Liquid code that is slowing your Page down. You can wrap languages like JavaScript too, but it will have no effect on performance, as they will run on the Browser - long after the Cache has loaded.
 
 ```liquid
+{% raw %}
 {% cache category_cache_key, expire: 60 %}
    <!-- code here -->
 {% endcache %}
+{% endraw %}
 ```
 
 #### The Expire Parameter:
