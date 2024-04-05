@@ -34,21 +34,44 @@
 * [Category Detail Layouts](categories/category-detail-layouts.md)
 * [How to check whether a Category has children](categories/how-to-check-whether-a-category-has-children.md)
 
+## About Siteglide Modules
+
+* [Reference for all Modules](/modules/reference.md)
+* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
+
+## Building Custom Marketplace Modules
+
+* [Module Setup](/modules/module-setup.md)
+
+## Using Custom Marketplace Modules
+
 ## Blog & Authors Module
 
-* [Blog & Authors Introduction](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog *Folder Structure*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog Liquid *Reference*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog Filter by Date *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog Filter by Category *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog Filter by Author *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Blog Keyword Search *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Authors List *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
-* [Authors Detail *Guide*](https://admin.siteglide.com/#/portal/community/marketplace)
+<!-- * [Blog & Authors Introduction](https://admin.siteglide.com/#/portal/community/marketplace.md) -->
+<!-- * [Blog Folder Structure](https://admin.siteglide.com/#/portal/community/marketplace.md) -->
+<!-- * [Blog Liquid Reference](https://admin.siteglide.com/#/portal/community/marketplace.md) -->
+* [Blog Filter by Date](/blog/blog-filter-by-date.md)
+* [Blog Filter by Category](/blog/blog-filter-by-category.md)
+* [Blog Filter by Author](/blog/blog-filter-by-author.md)
+* [Blog Search](/blog/blog-keyword-search.md)
+<!-- * [Authors List](https://admin.siteglide.com/#/portal/community/marketplace.md)
+* [Authors Detail](https://admin.siteglide.com/#/portal/community/marketplace.md) -->
+
+## Events Module
+
+* [Events - Introduction](/events/events-intro.md)
+* [Events - Getting Started with Event Filtering & Searching](/events/event-filtering.md)
+* [Events - Filter By Host (Author)](/events/event-filtering-author.md)
+* [Events - Datasourcing the Event Host](/events/event-host-datasource.md)
+* [Events - Filter by Event Dates](/events/event-filtering-dates.md)
+* [Events - Filter by Category](/events/event-filtering-category.md)
+* [Events - Search](/events/event-search.md)
+* [Events - Standard List View](/events/event-list.md)
+* [Events - Map List View](/events/event-list-map.md)
 
 ## eCommerce Module
 
-## Events Module
+
 
 ## Media Downloads Module
 
@@ -59,14 +82,6 @@
 ## Slider Module
 
 ## Testimonials Module
-
-## Custom Modules
-
-* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
-
-## Front-End Submit Forms for Modules
-
-* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
 
 ## WebApps - Fully flexible, customisable database tables
 

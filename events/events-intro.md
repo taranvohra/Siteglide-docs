@@ -1,0 +1,1 @@
+The Events Module is linked to eCommerce Module, to give you full functionality and flexibility when selling Tickets (or other Products) related to Events.
