@@ -39,6 +39,7 @@ When your client needs to update some key information about their company, they 
 Social Field Example:
 
 ```liquid
+{% raw %}
 test2
 {% comment %}Test{% endcomment %}
 {% if context.exports.company_information.properties.twitter_account == blank -%}
@@ -51,5 +52,6 @@ test2
     <i class="fab fa-2x fa-twitter"></i>
   </a>
 {% endif -%}
+{% endraw %}
 ```
 
