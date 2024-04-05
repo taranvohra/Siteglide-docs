@@ -1,3 +1,4 @@
+
 You can change the type and order of sorting. You can also sort by multiple properties at once.
 
 # Introduction
@@ -15,9 +16,9 @@ Code:
 
 ```graphql
 query sorted_categories {
-  models(per_page: 2000, filter: {model_schema_name: {contains: "category"}}) {
+  records(per_page: 2000, filter: {table: {contains: "category"}}) {
     results {
-      model_schema_name
+      table
       id
       properties
     }
@@ -32,11 +33,11 @@ Code:
 ```graphql
 query sorted_categories {
 
-  models(per_page: 2000, sort: {}) {
+  records(per_page: 2000, sort: {}) {
 
     results {
 
-      model_schema_name
+      table
 
       id
 
@@ -68,11 +69,11 @@ Code:
 ```graphql
 query sorted_categories {
 
-  models(per_page: 2000, sort: {created_at: {}}) {
+  records(per_page: 2000, sort: {created_at: {}}) {
 
     results {
 
-      model_schema_name
+      table
 
       id
 
@@ -98,11 +99,11 @@ Code:
 ```graphql
 query sorted_categories {
 
-  models(per_page: 2000, sort: {properties: {name: "weighting"}}) {
+  records(per_page: 2000, sort: {properties: {name: "weighting"}}) {
 
     results {
 
-      model_schema_name
+      table
 
       id
 
@@ -134,11 +135,11 @@ Code:
 ```graphql
 query sorted_categories {
 
-  models(per_page: 2000, sort: {properties: {name: "weighting", order: DESC}}) {
+  records(per_page: 2000, sort: {properties: {name: "weighting", order: DESC}}) {
 
     results {
 
-      model_schema_name
+      table
 
       id
 
@@ -168,7 +169,7 @@ Code:
 ```graphql
 query sorted_categories {
 
-  models(per_page: 2000, sort: {
+  records(per_page: 2000, sort: {
 
     properties: [
 
@@ -181,7 +182,7 @@ query sorted_categories {
 
     results {
 
-      model_schema_name
+      table
 
       id
 
@@ -206,4 +207,4 @@ Notes:&#x20;
 
 If you want to challenge yourself, you could choose to try making a query which uses variables to change the order and field by which results are sorted.
 
-Next time, we'll look at how to implement keyword searches in your query. To do this, we'll look at a new type of query "customizations" instead of "models".
+Next time, we'll look at how you use what you've learned so far to start to build your own Application Programming Interface (API). This will use GraphQL to query the database, Liquid to display the results on an endpoint Page and JavaScript to GET those results on the client side.

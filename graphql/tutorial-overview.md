@@ -1,4 +1,3 @@
-
 This is a brief overview of the GraphQL tutorials we currently provide and the topics we plan to cover in future.
 
 # Introduction
@@ -11,7 +10,7 @@ For a longer introduction to GraphQL and how it can be used with Siteglide, chec
 
 These GraphQL tutorials are organised by topic, but we'd recommend you work through them one by one.&#x20;
 
-This is because each tutorial will build upon the skills covered in previous ones. 
+This is because each tutorial will build upon the skills covered in previous ones. 
 
 We also include challenges- because when learning something like GraphQL it always helps to get hands-on experience exploring and applying the skills you've picked up. Don't worry if you can't quite manage the challenges straight away. Give them your best shot and then check the answer pages.
 
@@ -60,5 +59,7 @@ In the future, we intend to cover the following topics:
 *   Search for Results
 
 *   Use other types of Query e.g. `users`
+
+
 
 Please let us know if you'd like to see anything else included.

@@ -1,45 +1,48 @@
-# Tutorial 3 - (Answers)
 
 We look at a possible answer to Tutorial 3's challenge. This shows how to write a query which fetches all WebApp items, not Module items.
 
-## Prerequisites
+# Prerequisites
 
-* This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first](https://developers.siteglide.com/tutorial-3-filtering-the-results).
-* [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+*   This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first](https://developers.siteglide.com/tutorial-3-filtering-the-results).
 
-## Challenge Answers
+*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
 
-The trick here was to examine the `model_schema_names`  and spot the common patterns in their values.&#x20;
+# Challenge Answers
 
-The two types of `models` we wanted had these model\_schema\_names beginning with "webapp\_":
+The trick here was to examine the `tables`and spot the common patterns in their values. 
 
-* `webapp_1`
-* `webapp_2`
+The two types of `records`we wanted had these `tables `beginning with "webapp\_":
 
-The types of models we don't want have model\_schema\_name values without "webapp\_", for example:
+*   `webapp_1`
 
-* `module_3` - (Blog Module)
-* `module_14` - (eCommerce Module)
-* `form_1` - Newsletter Sign Up Form Submissions
+*   `webapp_2`
 
-So, in order to filter for the `models` we do want and not the `models` we don't want, we need `models` which start with the string `webapp_`.&#x20;
+The types of `records `we don't want have `table `values without "webapp\_", for example:
+
+*   `module_3` - (Blog Module)
+
+*   `module_14` - (eCommerce Module)
+
+*   `form_1` - Newsletter Sign Up Form Submissions
+
+So, in order to filter for the `records`we do want and not the `records`we don't want, we need `records`which start with the string `webapp_`. 
 
 Code:
 
 ```graphql
 query get_all_webapps {
-  models(
+  records(
     page: 1
     per_page: 20
     filter: {
-      model_schema_name: {
+      table: {
         starts_with: "webapp_"
       }
     }
   ) {
     total_pages
     results {
-      model_schema_name
+      table
       properties
     }
   }
@@ -48,22 +51,24 @@ query get_all_webapps {
 
 Notes:
 
-* In this method, there is no need to write one filter to include `webapp` items and another to remove `module` and `form` items from the Results. This is because the given rule efficiently achieves both at once.
+*   In this method, there is no need to write one filter to include `webapp` items and another to remove `module` and `form` items from the Results. This is because the given rule efficiently achieves both at once.
 
 Explorer:
 
 ![](https://downloads.intercomcdn.com/i/o/206709413/5f5a3592d2e2a3911903ec4f/image.png)
 
-This is just one possible answer, you may have found a different method.&#x20;
+This is just one possible answer, you may have found a different method. 
 
 Try and make sure you choose the best method for your use case. You should always be looking out for a more efficient way of doing things.
 
-## Next Time
+# Next Time
 
 We'll continue to look at filtering queries in more detail, including:
 
-* filtering by different fields, or properties
-* filtering with different kinds of rules
-* using more than one filter at once
+*   filtering by different fields, or properties
+
+*   filtering with different kinds of rules
+
+*   using more than one filter at once
 
 **Let's go!**

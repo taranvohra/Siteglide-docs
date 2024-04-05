@@ -1,3 +1,9 @@
+---
+title: About GraphQL
+slug: YSZ7-
+createdAt: Wed Feb 17 2021 12:37:36 GMT+0000 (Coordinated Universal Time)
+updatedAt: Wed Dec 27 2023 13:41:32 GMT+0000 (Coordinated Universal Time)
+---
 
 Although it can feel like a big leap at first, using custom GraphQL gives you ultimate control over dynamic data. We'll guide you through.
 
@@ -19,9 +25,9 @@ Although the language is open source, actual implementations of it can be quite 
 
 *   The Schema - this defines different types of Query you can use, which parameters you can add, and what sort of output you can request. It reflects, in part, the database structure that the Platform uses, so it varies from Platform to Platform. Siteglide runs on platformOS and we use [platformOS's implementation](https://documentation.platformos.com/api-reference/graphql/glossary) of GraphQL.
 
-*   The Query Language - This is the syntax for writing queries- it is exactly the same across platforms, but can feel very different when the Schema is different. 
+*   The Query Language - This is the syntax for writing queries- it is exactly the same across platforms, but can feel very different when the Schema is different. 
 
-If you've used GraphQL before with a different Schema, you will start to see lots of similarities. 
+If you've used GraphQL before with a different Schema, you will start to see lots of similarities. 
 
 # How do Liquid and GraphQL work together?
 
@@ -34,7 +40,7 @@ GraphQL files are stored inside the marketplace\_builder folder. They can be cal
 
 # How can I learn GraphQL?
 
-GraphQL can be tricky to get started with, but most of our Developers report that at a certain stage, it just 'clicks' for them. We want to help any Agency who wants to learn to get there. 
+GraphQL can be tricky to get started with, but most of our Developers report that at a certain stage, it just 'clicks' for them. We want to help any Agency who wants to learn to get there. 
 
 We'll provide a series of Tutorials, starting off simple and becoming progressively more challenging. As part of this, we'll aim to give you the skills you need to carry out further learning yourself- often this will mean learning to read the platformOS schema- finding the type of query you need, and experimenting with how to make it work.
 
@@ -74,8 +80,9 @@ Here are some examples of where some custom GraphQL could open some doors for yo
 
 *   **Update data without loading the Page**- When changing Page in WebApp results, you currently have to wait for the Page to reload. Using Siteglide-CLI and GraphQL you can build an XHR endpoint to get updated data after the Page has loaded. (Note: you can do this with CLI, without GraphQL- GraphQL just gives you more flexibility.)
 
-*   **Jump ahead of the Roadmap**- We're always updating our Roadmap with new functionality and Community requests. But what if you have that one Client that cannot wait? It'll take more time to Develop and may not be as re-usable as a fully tested official feature, but with GraphQL and Liquid understanding, you've got the power to build your own solutions. 
+*   **Jump ahead of the Roadmap**- We're always updating our Roadmap with new functionality and Community requests. But what if you have that one Client that cannot wait? It'll take more time to Develop and may not be as re-usable as a fully tested official feature, but with GraphQL and Liquid understanding, you've got the power to build your own solutions. 
 
 # Start Learning now!
 
 Our first tutorial will get you set up on the GraphQL playground/ sandbox which we make available through Siteglide-CLI.
+

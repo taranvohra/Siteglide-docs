@@ -1,4 +1,5 @@
-This article shows a different use-case for the skills you've already learned- using an XHR (sometimes called Ajax) request to run a query.
+
+This article shows a different use-case for the skills you've already learned- using a GET request to run a query.
 
 # Introduction
 
@@ -116,9 +117,9 @@ In this example, I'll use the following query to fetch data from webapp\_1 and c
 
 ```graphql
 query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
-  models(
+  records(
     filter: {
-      model_schema_name: { value: "webapp_1" }
+      table: { value: "webapp_1" }
     }
     page: $page
     per_page: $per_page
@@ -132,7 +133,7 @@ query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
 ```
 
 I'll use the following Liquid to run this query when the endpoint Page is accessed:
-`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
+`{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page"-%}`
 
 Note- I'll be using - before and after my closing Liquid tags to remove unnecessary whitespace from the results- this is optional.&#x20;
 
@@ -199,7 +200,7 @@ If you decided in step 2 that you didn't want to change the Page format, you sho
 -%}
 
 <div class="row">
-  {%- for item in fetch_webapp_1_by_page.models.results -%}
+  {%- for item in fetch_webapp_1_by_page.records.results -%}
     <div class="col">
       <h2>{{item.properties.name}}</h2>
     </div>
@@ -234,7 +235,7 @@ We use `{%` rather than `{%-` in this example, because we want to preserve new l
   per_page: per_page
 -%}
 Name,ID,Description
-{% for item in fetch_webapp_1_by_page.models.results %}{{item.properties.name}},{{item.id}},
+{% for item in fetch_webapp_1_by_page.records.results %}{{item.properties.name}},{{item.id}},
 {{item.properties.webapp_field_1_1}}
 {% endfor %}
 ```
@@ -246,7 +247,7 @@ In your browser, visit the endpoint Page URL and see if the data displays as exp
 A successful JSON endpoint will return valid JSON in the body, as in the example here (other formats should also be checked for valid formats).&#x20;
 
 ```json
-{"models":{"results":[
+{"records":{"results":[
     {"id":"220","properties":
     {"name":"We know guitar music"
      "slug":"we-know-guitar-music"
@@ -373,8 +374,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 
 *   It then loops over the Items and appends each WebApp Name to the HTML DOM.
 
-{% tabs %}
-{% tab title="HTML" %}
+:::codeblocktabs
 ```html
 <section class="form form-01">
   <div class="container">
@@ -399,8 +399,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
   </div>
 </section>
 ```
-{% endtab %}
-{% tab title="JavaScript" %}
+
 ```javascript
 <script>
   var page = document.querySelector('#page');
@@ -432,8 +431,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
   
 </script>
 ```
-{% endtab %}
-{% endtabs %}
+:::
 
 ### Example 9) b) Requesting Data From an HTML Page
 
@@ -449,7 +447,7 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   per_page: per_page
 -%}
 <div class="row"> 
-  {% for this in fetch_webapp_1_by_page.models.results %}
+  {% for this in fetch_webapp_1_by_page.records.results %}
     <div class="col-4">
        <h3>{{this.properties.name}}</h3>
     </div>
@@ -484,9 +482,12 @@ Your Liquid endpoint Page will be acting as an extra Layer between your request 
 
 # Related Articles
 
+*   SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: <https://www.sitegurus.io/documentation/sitebuilder/live_updates/introduction>
+
 *   The [Siteglide Support Policy](https://help.siteglide.com/article/62-siteglide-support-policy) explains how you can get support with planning projects and writing custom code.&#x20;
 
 *   MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: <https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest>
+    You can also use the modern <https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API> as an alternative.
 
 *   Those developers who prefer to use jQuery when writing JavaScript can read more about Ajax Requests here: <https://api.jquery.com/jquery.ajax/>&#x20;
 
