@@ -2,14 +2,26 @@
 
 * [Introduction](README.md)
 
-## Portal
+## Siteglide CLI
 
-* [Agency Whitelabelling](portal/agency-whitelabelling.md)
+* [Siteglide CLI Introduction](/cli/introduction.md)
+* [Siteglide CLI Changelog](/cli/cli-changelog.md)
+* [Siteglide CLI Migrate Command - Manual Forms](/cli/cli-migrate-command-manual-forms.md)
+* [Siteglide CLI Migrate Command - Converting Forms](/cli/cli-migrate-command-converting-forms.md)
 
 ## Pages
 
 * [Accessing Page Data](pages/accessing-page-data.md)
+* [Pages with Siteglide CLI](/pages/pages-with-siteglide-cli.md)
 * [Page Templates](pages/page-templates.md)
+* [Page Templates with Siteglide CLI](/pages/page-templates-with-cli.md)
+
+## Includes
+
+* [Includes with Siteglide CLI](/includes/includes-with-siteglide-cli.md)
+* [ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
+* [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
+* [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)
 
 ## Forms
 
@@ -26,6 +38,10 @@
   * [How to have separate field for first name and surname in a Form](forms/faq/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
   * [Shared Devices](forms/faq/shared-devices.md)
 
+## Emails and Automations
+
+* [Email Templates with Siteglide CLI](./emails/email-templates-with-cli.md)
+
 ## Categories
 
 * [Filtering WebApps and Modules by Categories](categories/filtering-webapps-and-modules-by-categories.md)
@@ -36,7 +52,6 @@
 
 ## About Siteglide Modules
 
-* [Reference for all Modules](modules/reference.md)
 * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
 
 ## Building Custom Marketplace Modules
@@ -55,98 +70,6 @@
 * [Blog Filter by Category](blog/blog-filter-by-category.md)
 * [Blog Filter by Author](blog/blog-filter-by-author.md)
 * [Blog Search](blog/blog-keyword-search.md)
-
-## Events Module
-
-* [Events - Introduction](events/events-intro.md)
-* [Events - Getting Started with Event Filtering & Searching](events/event-filtering.md)
-* [Events - Filter By Host (Author)](events/event-filtering-author.md)
-* [Events - Datasourcing the Event Host](events/event-host-datasource.md)
-* [Events - Filter by Event Dates](events/event-filtering-dates.md)
-* [Events - Filter by Category](events/event-filtering-category.md)
-* [Events - Search](events/event-search.md)
-* [Events - Standard List View](events/event-list.md)
-* [Events - Map List View](events/event-list-map.md)
-
-## WebApps - Fully flexible, customisable database tables
-
-* [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
-
-## Company Information
-
-* [Company Information](company-information/company-information.md)
-
-## Site Search
-
-* [Site Search](site-search/site-search.md)
-
-## Public API/Zapier
-
-* [Public API/Zapier Changelog](public-api/changelog.md)
-* [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
-
-## Data Structures
-
-* [Creating WebApps from the CLI](data-structures/creating-webapps-from-the-cli.md)
-* [Field Types](data-structures/field-types.md)
-
-## CRM
-
-* [User Details](crm/user-details.md)
-* [User Secure Zones](crm/user-secure-zones.md)
-* [Storing User's Favourite WebApp / Module Items](crm/storing-users-favourite-webapp-module-items.md)
-* [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
-* [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
-* [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
-
-## Pagination
-
-* [Pagination on Liquid Tags](pagination/why-pagination.md)
-* [Custom Pagination Layouts](pagination/pagination-layouts.md)
-
-## Liquid
-
-* [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
-* [Using Liquid Logic to Check if a field exists, or is empty on the Front End](liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
-
-## GraphQL
-
-* [Tutorial Overview](graphql/tutorial-overview.md)
-* [About GraphQL](graphql/about-graphql.md)
-* [Tutorial 1 - Your First Query](graphql/tutorial-1-your-first-query.md)
-* [Tutorial 2 - Pagination](graphql/tutorial-2-pagination.md)
-* [Tutorial 3 - Filtering the Results](graphql/tutorial-3-filtering-the-results.md)
-* [Tutorial 3 - (Answers)](graphql/tutorial-3-answers.md)
-* [Tutorial 4 - Advanced Filtering](graphql/tutorial-4-advanced-filtering.md)
-* [Tutorial 4 - (Answers)](graphql/tutorial-4-answers.md)
-* [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](graphql/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)
-* [Tutorial 6 - Variables](graphql/tutorial-6-variables.md)
-* [Tutorial 6 - (Answers)](graphql/tutorial-6-answers.md)
-* [Tutorial 7 - Sorting](graphql/tutorial-7-sorting.md)
-* [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
-* [Tutorial 9 - Using Mutations to Create New Records](graphql/tutorial-9-using-mutations-to-create-new-records.md)
-* [Tutorial 10 - Using Mutations to Edit a Record](graphql/tutorial-10-using-mutations-to-edit-a-record.md)
-* [Tutorial 11 - Using Mutations to Delete an Item](graphql/tutorial-11-using-mutations-to-delete-an-item.md)
-* [Tutorial 12 - Related Records and Datasources](graphql/tutorial-12-related-records-and-datasources.md)
-
-## Best Practice and Performance
-
-* [Module/WebApp Caching](best-practice/module-webapp-caching.md)
-* [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
-
-## Includes
-
-* [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
-* [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
-* [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)
-
-## Domains
-
-* [How to setup a multi domain start page](domains/how-to-setup-a-multi-domain-start-page.md)
-
-## Timezones
-
-* [Timezones in the Siteglide Admin and on the front-end of your Site](timezones/how-do-i-control-timezones.md)
 
 ## eCommerce Module
 
@@ -188,3 +111,134 @@
   * [Currency Changer](./eCommerce/currency-and-tax/currency-changer.md)
   * [Tax Code Changer](./eCommerce/currency-and-tax/tax-changer.md)
   * [Formatting Currency](./eCommerce/currency-and-tax/formatting-currencies.md)
+
+## Events Module
+
+* [Events - Introduction](events/events-intro.md)
+* [Events - Getting Started with Event Filtering & Searching](events/event-filtering.md)
+* [Events - Filter By Host (Author)](events/event-filtering-author.md)
+* [Events - Datasourcing the Event Host](events/event-host-datasource.md)
+* [Events - Filter by Event Dates](events/event-filtering-dates.md)
+* [Events - Filter by Category](events/event-filtering-category.md)
+* [Events - Search](events/event-search.md)
+* [Events - Standard List View](events/event-list.md)
+* [Events - Map List View](events/event-list-map.md)
+
+## Media Downloads Module
+
+* [Media Downloads Introduction](faq_module/introduction.md)
+
+## Menu Builder Module
+
+* [Menu Builder Introduction](./menu-builder/introduction.md)
+
+## Secure Zones Module
+
+* [Secure Zones Introduction](./secure-zones/introduction.md)
+* [Secure Zones with Siteglide CLI](./secure-zones/secure-zones-with-cli.md)
+* [Dynamically Assign a Secure Zone during Form Submission](./secure-zones/dynamically-assign-a-secure-zone-after-form-submission.md)
+* [Using the context.current\_user object](./secure-zones/using-the-context-current-user-object.md)
+
+## Slider Module
+
+* [Slider Module Introduction](./slider-module/introduction.md)
+
+## Testimonials Module
+
+* [Testimonials Module](./testimonials-module/introduction.md)
+
+## Website FAQs Module
+
+* [FAQs Module Liquid Reference](faq_module/reference.md)
+
+## WebApps - Fully flexible, customisable database tables
+
+* [WebApps Introduction](./webapps/introduction.md)
+* [WebApp Layouts](./webapps/layouts.md)
+* [WebApp - Front End Submit Forms - Create](./webapps/front-end-submit-forms-add.md)
+* [WebApp - Front End Submit Forms - Update](./webapps/front-end-submit-forms-edit.md)
+* [WebApp - Front End Submit Forms - Delete](./webapps/front-end-submit-forms-delete.md)
+* [WebApps Search and Filtering](./webapps/search-and-filtering.md)
+* [WebApp Custom Field Names and IDs](./webapps/custom-field-sets.md)
+* [WebApps - Alternatives to Storing Server-side Code in WebApp Fields](./webapps/alternatives-to-storing-server-side-code-in-fields.md)
+
+## Company Information
+
+* [Company Information](company-information/company-information.md)
+
+## Site Search
+
+* [Site Search](site-search/site-search.md)
+
+## Public API/Zapier
+
+* [Public API/Zapier Changelog](public-api/changelog.md)
+* [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
+
+## Data Structures
+
+* [Creating WebApps from the CLI](data-structures/creating-webapps-from-the-cli.md)
+* [Field Types](data-structures/field-types.md)
+
+## CRM
+
+* [User Details](crm/user-details.md)
+* [User Secure Zones](crm/user-secure-zones.md)
+* [Storing User's Favourite WebApp / Module Items](crm/storing-users-favourite-webapp-module-items.md)
+* [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
+* [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
+* [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+
+## Pagination
+
+* [Pagination on Liquid Tags](pagination/why-pagination.md)
+* [Custom Pagination Layouts](pagination/pagination-layouts.md)
+
+## The Siteglide Portal
+
+* [Agency Whitelabelling](portal/agency-whitelabelling.md)
+
+## Domains
+
+* [How to setup a multi domain start page](domains/how-to-setup-a-multi-domain-start-page.md)
+
+## Working with Dates and Timezones
+
+* [Timezones in the Siteglide Admin and on the front-end of your Site](timezones/how-do-i-control-timezones.md)
+* [Translating Dates](/timezones/translating-dates.md)
+
+## Liquid Templating Language
+
+* [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
+* [Linking to Assets](./liquid/linking-to-assets-front-end.md)
+* [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](./liquid/accessing-data-from-liquid-objects.md)
+* [Accessing Data in Liquid Variables - Tutorial 1 - Iterating over Arrays and Objects](./liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
+* [Accessing Data from the Global Context Variable](liquid/accessing-data-from-the-global-context-variable.md)
+* [Truthiness - Using Liquid to determine if a field is empty or blank](liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+* [Using Collections with WebApps and Modules](liquid/using-collections-with-webapps-and-modules.md)
+
+
+## GraphQL Query Language
+
+* [Tutorial Overview](graphql/tutorial-overview.md)
+* [About GraphQL](graphql/about-graphql.md)
+* [Tutorial 1 - Your First Query](graphql/tutorial-1-your-first-query.md)
+* [Tutorial 2 - Pagination](graphql/tutorial-2-pagination.md)
+* [Tutorial 3 - Filtering the Results](graphql/tutorial-3-filtering-the-results.md)
+* [Tutorial 3 - (Answers)](graphql/tutorial-3-answers.md)
+* [Tutorial 4 - Advanced Filtering](graphql/tutorial-4-advanced-filtering.md)
+* [Tutorial 4 - (Answers)](graphql/tutorial-4-answers.md)
+* [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](graphql/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)
+* [Tutorial 6 - Variables](graphql/tutorial-6-variables.md)
+* [Tutorial 6 - (Answers)](graphql/tutorial-6-answers.md)
+* [Tutorial 7 - Sorting](graphql/tutorial-7-sorting.md)
+* [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
+* [Tutorial 9 - Using Mutations to Create New Records](graphql/tutorial-9-using-mutations-to-create-new-records.md)
+* [Tutorial 10 - Using Mutations to Edit a Record](graphql/tutorial-10-using-mutations-to-edit-a-record.md)
+* [Tutorial 11 - Using Mutations to Delete an Item](graphql/tutorial-11-using-mutations-to-delete-an-item.md)
+* [Tutorial 12 - Related Records and Datasources](graphql/tutorial-12-related-records-and-datasources.md)
+
+## Best Practice and Performance
+
+* [Module/WebApp Caching](best-practice/module-webapp-caching.md)
+* [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
