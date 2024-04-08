@@ -1,0 +1,1 @@
+This section gives you a detailed understanding of the different cart, checkout, shipping and order options and functionality.
