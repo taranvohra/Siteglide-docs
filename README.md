@@ -1,13 +1,8 @@
 ---
-description: >-
-  Welcome to Developer Documentation for Siteglide  Siteglide allows developers
-  to take control over code and data via API, CLI or UI. With the right blend of
-  out-of-the-box tools and freedom to
+description: Welcome to Developer Documentation for Siteglide.
 ---
 
 # Introduction
-
-Welcome to Developer Documentation for [Siteglide](https://www.siteglide.com/)
 
 Siteglide allows developers to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 

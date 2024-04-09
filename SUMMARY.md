@@ -2,10 +2,6 @@
 
 * [Introduction](README.md)
 
-## Siteglide Admin
-
-
-
 ## Siteglide CLI
 
 * [Siteglide CLI Introduction](cli/introduction.md)
@@ -32,7 +28,7 @@
 * [💡 About Assets](assets/introduction.md)
 * [🪴 Assets File Structure](assets/file-structure.md)
 * [🔹 Linking to Assets](assets/linking-to-assets-front-end.md)
-* [ Migrating Assets](migrating-to-siteglide/migrating-assets.md)
+* [Migrating Assets](migrating-to-siteglide/migrating-assets.md)
 
 ## Forms
 
@@ -52,7 +48,6 @@
 
 * [Using Content from Form Submissions in the Subsequent Automation/ Email](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
-
 
 ## Categories
 
