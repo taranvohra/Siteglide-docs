@@ -31,7 +31,6 @@
 * [Forms Error Callback and Validation](forms/custom-javascript-validation-for-forms.md)
 * [Adding a Progress Bar](forms/adding-a-progress-bar.md)
 * [Adding Custom CSS To Show Form Submit Process](forms/adding-custom-css-to-show-form-submit-process.md)
-* [Dynamic Content in Workflow and Autoresponder Email Automations](forms/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [Form Confirmation Pages](forms/form-confirmation-pages.md)
 * [FAQ](forms/faq/README.md)
   * [How to add a custom redirect to my Form](forms/faq/how-to-add-a-custom-redirect-to-my-form.md)
@@ -40,7 +39,9 @@
 
 ## Emails and Automations
 
+* [Using Content from Form Submissions in the Subsequent Automation/ Email](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
+
 
 ## Categories
 
