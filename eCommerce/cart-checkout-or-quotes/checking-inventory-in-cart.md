@@ -38,11 +38,13 @@ Add the `s_e_cart_inventory_check({})` function - we'll document which Event Lis
 
 A common starting point would be to add the function to a button on a click event e.g.&#x20;
 
-```html
+```liquid
+{% raw %}
 <button class="btn btn-success" 
         onclick="s_e_cart_inventory_check({checkout_url: '/checkout'})">
         Confirm and Checkout
         </button>
+{% endraw %}
 ```
 
 ## Step 4) Set up an element to display a message when any Cart Items are no longer for sale
@@ -53,12 +55,14 @@ Adding the following data-attribute to an element will display a message explain
 
 Meanwhile you can use the following Liquid to fetch the same message. This is useful if the Page is refreshed after running the function and you wish to keep the message up:
 
-```html
+```liquid
+{% raw %}
 <p data-s-e-cart-has-removed-products>
     {% if context.session.cart_has_removed_products == true %}
         Sorry, some Products in your Cart have been removed because they are no longer for sale.
     {% endif %}
 </p>
+{% endraw %}
 ```
 
 You can clear the message from the session when you believe the User has had a chance to read it and it will no longer be relevant. (In most cases, you'd display this straight after the Liquid version of the message). We'll clear this automatically if the function is run again without removing any products. `{% session cart_has_removed_products = null %}`
@@ -87,10 +91,12 @@ Note that where two rows in the Cart list the same Product with different Attrib
 
 &#x20;The `s_e_cart_inventory_check` function accepts a single argument containing a settings object. For example:
 
-```html
+```liquid
+{% raw %}
 s_e_cart_inventory_check({checkout_url: '/checkout'
                                         item_cb: my_function_name
                                         success_cb: undefined });
+{% endraw %}
 ```
 
 &#x20;The table below details the available settings. Leave the setting `undefined` or remove the setting from the object if you desire to keep default behaviour:

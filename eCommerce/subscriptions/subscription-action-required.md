@@ -23,10 +23,12 @@ The purpose of this Email is to inform the User that the Subscription Order need
 
 You must add a link to the Landing Page where your customer can take action. You can use the Liquid below:
 
-```html
+```liquid
+{% raw %}
 {% include 'ecommerce/subscriptions/subscription_system_page_link'
    button_text: "Authorise payment details"
    button_id: "authorisePayment" %}
+{% endraw %}
 ```
 
 Parameters:
@@ -109,12 +111,14 @@ The other Price and Interval fields stored against the Subscription, could be us
 *Tip: Working with the Interval Fields*
 As you can see below, there are multiple fields involved in storing the Interval of charges, which you can use to display the Interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
 
-```html
+```liquid
+{% raw %}
 {% if this['Interval Count'] == "1" %}
 per {{this['Interval'] | pluralize: 1}}
 {% else %}
 (every {{this['Interval Count']}} {{this['Interval']}})
 {% endif %}
+{% endraw %}
 ```
 
 If the Interval Count is 1, it will use formatting like "per day".
@@ -135,10 +139,12 @@ This page may function very similarly to the standard Subscription Detail Page, 
 
 The following Liquid will include a Subscription Detail Layout for the Subscription referenced in the link from the above Email. Note, this is different from the usual Liquid for including a Layout, because Siteglide will in this case be setting some of the parameters for you automatically.&#x20;
 
-```html
+```liquid
+{% raw %}
 {% include "modules/siteglide_ecommerce/ecommerce/subscription_update_payment"
    subscription_detail_page_layout: 'default' 
 %}
+{% endraw %}
 ```
 
 Parameters:

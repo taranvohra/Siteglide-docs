@@ -55,7 +55,8 @@ Include your Custom Layout alongside my\_layout:
 
 Here's an example:
 
-```html
+```liquid
+{% raw %}
 <div class="form-group">
 	<select onchange="s_e_cart_shipping(this);">
 		<option value="">--Please select--</option>
@@ -67,6 +68,7 @@ Here's an example:
 		{%- endfor -%}
 	</select>
 </div>
+{% endraw %}
 ```
 
 
