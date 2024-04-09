@@ -2,6 +2,10 @@
 
 * [Introduction](README.md)
 
+## Siteglide Admin
+
+
+
 ## Siteglide CLI
 
 * [Siteglide CLI Introduction](cli/introduction.md)
@@ -22,6 +26,13 @@
 * [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
 * [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
 * [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)
+
+## Assets
+
+* [💡 About Assets](assets/introduction.md)
+* [🪴 Assets File Structure](assets/file-structure.md)
+* [🔹 Linking to Assets](assets/linking-to-assets-front-end.md)
+* [ Migrating Assets](migrating-to-siteglide/migrating-assets.md)
 
 ## Forms
 
@@ -211,7 +222,6 @@
 ## Liquid Templating Language
 
 * [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
-* [Linking to Assets](liquid/linking-to-assets-front-end.md)
 * [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid/accessing-data-from-liquid-objects.md)
 * [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
 * [Accessing Data from the Global Context Variable](liquid/accessing-data-from-the-global-context-variable.md)
