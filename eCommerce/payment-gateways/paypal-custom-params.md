@@ -9,9 +9,11 @@ PayPal allows you to include different parameters as part of the SDK such as dis
 
 To use these parameters add this code to top of your Form layout, containing the parameters you want:
 
-```markdown
+```liquid
+{% raw %}
 {%- capture data -%}&disable-funding=sofort{%- endcapture -%}
 {%- export data, namespace: "s_paypal_options" -%}
+{% endraw %}
 ```
 
 This specific example will stop Sofort being offered as a payment option.

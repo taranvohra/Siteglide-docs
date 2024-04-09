@@ -41,7 +41,6 @@ _E.g. in the Form Layout:_
 ```liquid
 {% raw %}
 {% assign my_dynamic_webapp_id = "98657" %}
-{% endraw %}
 <div style="display: none;">
   <input 
     hidden class="form-control" 
@@ -56,11 +55,9 @@ _E.g. in the Form Layout:_
 {% endtab %}
 
 {% tab title="Email Automation Liquid" %}
-```python
+```liquid
 {% raw %}
 {% assign my_dynamic_webapp_id = form.properties.form_field_2_1 %}
-{% endraw %}
-
 {%- include 'webapp'
     id: '1' 
     item_ids: my_dynamic_webapp_id
@@ -69,6 +66,7 @@ _E.g. in the Form Layout:_
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
+{% endraw %}
 ```
 {% endtab %}
 {% endtabs %}

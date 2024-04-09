@@ -394,7 +394,8 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 
 *   It then loops over the Items and appends each WebApp Name to the HTML DOM.
 
-:::codeblocktabs
+{% tabs %}
+{% tab title="Liquid" %}
 ```liquid
 {% raw %}
 <section class="form form-01">
@@ -421,7 +422,8 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 </section>
 {% endraw %}
 ```
-
+{% endtab %}
+{% tab title="JS" %}
 ```javascript
 <script>
   var page = document.querySelector('#page');
@@ -453,7 +455,8 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
   
 </script>
 ```
-:::
+{% endtab %}
+{% endtabs %}
 
 ### Example 9) b) Requesting Data From an HTML Page
 

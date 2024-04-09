@@ -27,14 +27,16 @@ Pass in the name of the Payment Gateway you wish to switch to as the only argume
 
 This can be applied to any action you like, such as clicking a radio button, or opening an accordion. e.g.
 
-:::codeblocktabs
+{% tabs %}
+{% tab title="liquid" %}
 ```liquid
 {% raw %}
 <input type="radio" name="paymentGateway" id="paymentGateway1" value="Stripe"><label for="paymentGateway1">Pay with Stripe</label>
 <input type="radio" name="paymentGateway" id="paymentGateway2" value="PayPal"><label for="paymentGateway2">Pay with PayPal</label>
 {% endraw %}
 ```
-
+{% endtab %}
+{% tab title="javascript" %}
 ```javascript
 const paymentGatewayCheckboxes = document.querySelectorAll('[name="paymentGateway"]');
 paymentGatewayCheckboxes.forEach(function(item) {
@@ -44,14 +46,7 @@ paymentGatewayCheckboxes.forEach(function(item) {
   });
 })
 ```
-:::
+{% endtab %}
+{% endtabs %}
 
 If the JS function is not called, the default payment gateway from the multiple available gteways will be used.
-
-
-
-
-
-
-
-

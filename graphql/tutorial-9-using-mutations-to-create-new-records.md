@@ -248,7 +248,8 @@ We covered variables in more detail in [Tutorial 6 - Variables](<../Siteglide De
 
 In the following example, variables are added to pass in data programatically to create the new Blog post:
 
-:::codeblocktabs
+{% tabs %}
+{% tab title="GraphQL" %}
 ```graphql
 mutation createBlogItem($title: String!, $description: String!, $categories: [String]) {
   record_create(
@@ -274,14 +275,16 @@ mutation createBlogItem($title: String!, $description: String!, $categories: [St
   }
 }
 ```
-
+{% endtab %}
+{% tab title="Liquid" %}
 ```liquid
 {% raw %}
 {% assign description = "Lorem Ipsum" %}
 {% graphql createBlogItem = "create_blog_item", title: "The newest Blog Post", description: description %}
 {% endraw %}
 ```
-:::
+{% endtab %}
+{% endtabs %}
 
 ### Advanced - Using variables to pass in entire objects in GraphQL rather than single properties
 
@@ -291,7 +294,8 @@ If you like, you can use a variable to represent the entire properties object an
 
 Note how the `parse_json `tag is used with literal square brackets to create a JSON array with nested objects defined by curly braces. The `category_array `property is an example of how you can pull in Liquid from different sources into these properies, though `this.id` would only contain a category ID in for example a category detail layout.
 
-:::codeblocktabs
+{% tabs %}
+{% tab title="GraphQL" %}
 ```graphql
 mutation createBlogItem($properties: [PropertyInputType!]!) {
   record_create(record: {table: "module_3", properties: $properties}) {
@@ -299,9 +303,10 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
     properties
   }
 }
-
 ```
+{% endtab %}
 
+{% tab title="Liquid" %}
 ```liquid
 {% raw %}
 {% parse_json properties %}
@@ -323,7 +328,8 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
 {% graphql createBlogItem = "create_blog_item", properties: properties %}
 {% endraw %}
 ```
-:::
+{% endtab %}
+{% endtabs %}
 
 Note, the structure of the JSON we are passing in the previous example is similar to the structure of properties in the mutation, but it is necessary in JSON to use double quotes around the keys like `name`:, while the GraphQL syntax needs no quotes.
 
