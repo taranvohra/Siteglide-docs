@@ -19,11 +19,11 @@ To give a User access to one or more Secure Zones,  you can attach Secure Zones 
 
 However, it is possible to change this behaviour using a hidden field on the Form Layout. This hidden field's value will by default contain all Secure Zones attached to the Form, but can be modified to contain only a sub-set of those Secure Zones.&#x20;
 
-:::hint{type="warning"}
+{% hint style="warning" %}
 ## Note
 
 The hidden field cannot contain a value of a Secure Zone unless it is also attached to the Form.
-:::
+{% endhint %}
 
 ## Continuing to Apply the Exact List of Secure Zones Attached to the Form
 
@@ -89,7 +89,8 @@ A quick tip for setting up the Custom Layout quickly is to start by copying and 
 
 &#x20;In the code from the default Layout that we've copied, we can see the dropdown field that my Users will use to select their location (and thanks to the code we will write now, their Secure Zone).&#x20;
 
-```html
+```liquid
+{% raw %}
 <div class="row mt-4 select">	
     <div class="col">
     		<label for="form_field_12_1">Location</label>
@@ -101,6 +102,7 @@ A quick tip for setting up the Custom Layout quickly is to start by copying and 
     		</select>
 	</div>
 </div>
+{% endraw %}
 ```
 
 

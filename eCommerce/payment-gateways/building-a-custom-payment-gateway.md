@@ -125,12 +125,16 @@ query(
 
 In the results of this query, you'll be able to verify the true minimum amount and currency. You can compare these to the s\_e\_amount value calculated on the Front-end. Depending on the result\_name you choose - the values from this example query of note are:
 
-```html
+```liquid
+{% raw %}
 {%- assign currency = form_configuration_data.result.items[0].configuration.properties.form_payment_currency.value | downcase -%}
+{% endraw %}
 ```
 
-```html
+```liquid
+{% raw %}
 {%- assign minimum_amount = form_configuration_data.result.items[0].configuration.properties.form_payment_amount.value | plus: 0 -%}
+{% endraw %}
 ```
 
 &#x20;On this endpoint, you'll have secure access to these values, so it might make sense to use this same endpoint to:

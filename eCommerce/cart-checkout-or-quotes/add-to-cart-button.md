@@ -56,12 +56,14 @@ Looking at the default layout, you can see that it has some key characteristics 
 
 You can use a Liquid If Statement to check if the Product is in stock.
 
-```html
+```liquid
+{% raw %}
 {% if this.inventory.id == blank or this.inventory.quantity != '0' -%}
   <!-- Product is in stock - or no inventory limit is set.-->
 {% else -%}
   <!-- Product is out of stock. -->
 {% endif -%}
+{% endraw %}
 ```
 
 ## Running the JavaScript Function

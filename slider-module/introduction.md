@@ -23,7 +23,8 @@ Once you've installed the Slider Module on your Site, you'll be able to find Sli
 
 ## Syntax
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '4'
     layout: 'default'
@@ -32,6 +33,7 @@ Once you've installed the Slider Module on your Site, you'll be able to find Sli
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
+{% endraw %}
 ```
 
 ## Parameters
@@ -94,7 +96,8 @@ Now copy the item/wrapper code into the List folder. Make sure to specify the La
 
 If you're using the same Slider Layout more then once on a Page you'll need to add a "Unique Slider ID" to your include:
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '4'
     layout: 'default'
@@ -102,6 +105,7 @@ If you're using the same Slider Layout more then once on a Page you'll need to a
     show_pagination: 'false'
     uniq_slider_id: '333' 
 -%}
+{% endraw %}
 ```
 
 If this is added we'll run some extra logic on the layouts to ensure JS is mounted to the correct layout.

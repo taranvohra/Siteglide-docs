@@ -105,9 +105,11 @@ As with Custom Field Sets, the syntax for adding CRM custom fields to your form 
 
 Here is an example of a CRM field added to the Layout:
 
-```html
+```liquid
+{% raw %}
 <label for="form_field_1_1">Shipping Address Line 1</label>
 <input class="form-control sg-form-control required" name="{{ form_builder.fields.properties['form_field_1_1'].name }}" data-crm="user_field_1" type="text">
+{% endraw %}
 ```
 
 Note the `data-crm` attribute which gives you a clue this is a Custom Field Set Field and will therefore submit to the CRM record. The ID in the data-attribute refers to the CRM field's ID in the CRM; it is different from the ID in the name attribute, which refers to the field's ID in the case.

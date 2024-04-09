@@ -55,15 +55,18 @@ Next loop over all of our Products categories, at each iteration we'll store the
 
 Note: "this" contains one of the Category IDs assigned to our Product, we then use that ID to find all of the Categories details in "`context.exports.categories.items`":
 
-```html
+```liquid
+{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
 {% endfor %}
+{% endraw %}
 ```
 
 &#x20;We've now created an array of all the individual "parameters" in our "full\_slug" field, next we'll loop over this and check none of the parameters equal "product-group"- if they do then we know that Category is being used for Product Grouping and store its ID. Add this code to the for loop above:
 
-```html
+```liquid
+{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
   {% for p in param %}
@@ -72,6 +75,7 @@ Note: "this" contains one of the Category IDs assigned to our Product, we then u
     {% endif %}
   {% endfor %}
 {% endfor %}
+{% endraw %}
 ```
 
 &#x20;This will check all of the parameters, make sure you replace "product-group" with whichever slug your wrapping Category is using. If it is a Product grouping Category, we store the ID in the variable "group\_category". We'll use this ID later to output our Related Products.&#x20;
@@ -100,7 +104,8 @@ We'll demonstrate how you can use method 3) b).
 
 &#x20;If you'd like to use a separate Layout to output your products, add this include to the Layout you're working in:
 
-```html
+```liquid
+{% raw %}
 {% for category in this.properties.category_array %} 
   {% assign full_slug = categories[category].full_slug | split: '/' %}
   {% for p in param %}
@@ -118,6 +123,7 @@ We'll demonstrate how you can use method 3) b).
     category_ids: group_category
     type: 'list' 
 -%}
+{% endraw %}
 ```
 
 ...where `group_category` contains the ID of the category containing the related Products.
@@ -129,7 +135,8 @@ Now we know which Products are related to one another, we can output them. For t
 
 To do this we'll use a Collection (read more here: [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial)) which will be filtered by the parameter "category\_id", meaning only items within the specified category are included (please follow step 1 for instructions on how we can do this dynamically).
 
-```html
+```liquid
+{% raw %}
 {%- include 'ecommerce/products'
     layout: 'default'
     per_page: '20'
@@ -140,6 +147,7 @@ To do this we'll use a Collection (read more here: [Collections](https://develop
     type: 'list'
     collection: 'true' 
 -%}
+{% endraw %}
 ```
 
 If you're in a Detail layout, make sure to include the `type: 'list'` parameter. Also, ensure `collection: 'true'` is added to the include, along with your Category ID.&#x20;
@@ -151,12 +159,14 @@ The Collection will call all the specified items into `{{context.exports}}`, to 
 
 Now loop over the object, at each iteration we'll check that the ID doesn't equal the ID of the Product being displayed on the Detail Page (this will stop the Product on the Detail page being displayed as related). We'll use `{{this.id}}` to do this:
 
-```html
+```liquid
+{% raw %}
 {% for item in items %}
   {% if item.id != this.id %}
     <!-- Add content relating to the Related Product here -->
   {% endif %}
 {% endfor %}
+{% endraw %}
 ```
 
 # Step 4) Optional - Output the Related Products within a dropdown

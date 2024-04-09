@@ -31,11 +31,11 @@ In an email notification, this will always be based on the Form that triggered t
 
 You can use an existing Layout, or create a new one in this File Structure: `layouts/modules/module_14/payment/my_layout.liquid`
 
-:::hint{type="info"}
+{% hint style="info" %}
 ## Note
 
 Unlike the similar Order Details Layout, Payment Details is simpler, so there are no wrapper and item files.
-:::
+{% endhint %}
 
 ### Developing the Layout
 

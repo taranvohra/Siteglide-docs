@@ -35,7 +35,8 @@ If you want to provide a Calendar and an Events List together on the Page for ex
 
 Each Events Navigation Article will explain how you can use Liquid Logic to dynamically show the currently applied filter.  Here, we'll show an example of some Logic that will check for any of the applied filters:&#x20;
 
-```html
+```liquid
+{% raw %}
 {% assign now = "now" | date: "%s" %}
 {% if context.params.range_type == "past" %}
   <h2>Past Events</h2>
@@ -62,6 +63,7 @@ Each Events Navigation Article will explain how you can use Liquid Logic to dyna
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">
     Past Events</a>
 {% endif %}
+{% endraw %}
 ```
 
 Of course, you can use this for inspiration and edit as you wish.&#x20;

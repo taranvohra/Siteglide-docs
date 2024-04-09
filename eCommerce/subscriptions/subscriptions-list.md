@@ -17,12 +17,14 @@ This is slightly different from the `user_subscriptions` List view in the Secure
 
 &#x20;You can use the type parameter to output a List Layout in most Liquid files:
 
-```html
+```liquid
+{% raw %}
 {% include "module", id: "14/subscription"
    item_ids: subscription_id
    type: "list"
    layout: 'my_layout' 
 %}
+{% endraw %}
 ```
 
 # File Structure
@@ -40,10 +42,12 @@ Within this folder, you can create a folder for each Layout. Each Layout folder 
 
 You must include the following Liquid, which will in turn loop over the Items and output the `item.liquid` file for each Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.&#x20;
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 ## Fields

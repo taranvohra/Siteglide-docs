@@ -61,7 +61,8 @@ To update the prices to be displayed on:
 &#x20;***To Update the Price on Attribute Select&#x20;
 ***To watch an Attribute for change, add the listener: `onchange="s_e_update_price()"`to the `<select>` element in your chosen Attributes Layout:
 
-```html
+```liquid
+{% raw %}
 <label for="{{attribute_name | slugify}}">{{name}}</label>
 <select name="attr1" 
         class="form-control" 
@@ -74,6 +75,7 @@ To update the prices to be displayed on:
 </option>
 {% endfor -%}
 </select>
+{% endraw %}
 ```
 
 # Usage Notes
@@ -92,11 +94,13 @@ To mark an element within the `item.liquid` file as being the element which will
 
 The value of these Attributes should be set using Liquid to the Product's initial price and currency:
 
-```html
+```liquid
+{% raw %}
 <p class="product-price" 
    data-price-control="{{this.price.price_charge}}" 
    data-currency-control="{{this.price.currency_symbol}}">
    {{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
+{% endraw %}
 ```
 
 &#x20;In this example above- we also add the initial Price to the text content of the element using Liquid on Page Load. Instead, you can run the function on Page Load to display the initial price, should you choose.&#x20;

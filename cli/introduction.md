@@ -43,9 +43,9 @@ These commands should be run from within the project folder.  Commands follow th
 
 Please note that some commands may fail if you run them in your users home directory.  We recommend a folder structure such as `siteglide/` and then give each project/site it's own folder.
 
-:::hint{type="info"}
+{% hint style="info" %}
 Command flags such as `<command>` `<env>` and `<flags>`  should be replaced with the relevant data. For example, `<env>`  should be replaced with the chosen name for the environment such as `production`.
-:::
+{% endhint %}
 
 ***
 
@@ -59,9 +59,9 @@ You must use the email of your Siteglide partner account to replace me\@mydomain
 
 After your site goes live, you will only be able to add the development domain to an environment, not your main user-facing domain.
 
-:::hint{type="warning"}
+{% hint style="warning" %}
 Replace with a chosen name for the environment, for example `production`. On larger projects you may have more than one environment to allow you to interact with both staging and production websites.
-:::
+{% endhint %}
 
 ***
 

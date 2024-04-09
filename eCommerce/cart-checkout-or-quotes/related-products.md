@@ -66,9 +66,11 @@ When you're ready, save the Product.
 
 Inside the item.liquid file, we can access the Custom Field by name:
 
-```html
+```liquid
+{% raw %}
 <h2>Related Products</h2><br><br>
 {{this['Related Products']}}<br><br>
+{% endraw %}
 ```
 
 &#x20;This outputs an array of the IDs of each of the related Products stored against our current Product. It should look something like this: `["55","75","147"]`
@@ -83,7 +85,8 @@ We can change the type by assigning a new variable:`{% assign related_products =
 
 &#x20;Next, we need to output a Product List, nested within our existing Product Detail Layout.&#x20;
 
-```html
+```liquid
+{% raw %}
 <h2>Related Products</h2>
 {% assign related_products = this['Related Products'] | join: "," %}
 {%- include 'ecommerce/products'
@@ -95,6 +98,7 @@ We can change the type by assigning a new variable:`{% assign related_products =
     datasource: 'true'
     item_ids: related_products 
 -%} 
+{% endraw %}
 ```
 
 ***Item Ids Parameter***
@@ -120,7 +124,8 @@ Another benefit of the `datasource: 'true'` parameter is that if no Related Prod
 &#x20;Optionally, you can add Liquid logic to only display the subtitle and Related Products content when the field is not empty.
 As the field contains an array, a safe way to check if it holds a value is to check its size (Liquid for the length of the array).&#x20;
 
-```html
+```liquid
+{% raw %}
 {% if this['Related Products'].size > 0  %}
   <h2>Related Products</h2>
   {% assign related_products = this['Related Products'] | join: "," %}
@@ -134,6 +139,7 @@ As the field contains an array, a safe way to check if it holds a value is to ch
       item_ids: related_products 
   -%} 
 {% endif %}
+{% endraw %}
 ```
 
 ## Step 7) Optional - Develop a Custom Layout for the Related Products

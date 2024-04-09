@@ -24,10 +24,12 @@ You can also add your own message on page like this:
 
 If you look at the email and name fields in your new default layout, you'll see this:
 
-```html
+```liquid
+{% raw %}
 {% if context.exports.is_logged_in.data -%}
     readonly value="{{ session.current_user.name }}"
 {% endif %}
+{% endraw %}
 ```
 
 Either remove 'readonly' to allow editing, or remove the entire IF statement if you also don't want it pre-populated.

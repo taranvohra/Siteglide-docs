@@ -76,10 +76,12 @@ Create a new file in the user\_orders folder and give it a name of your choice. 
 Your layout will have access to the "orders" object.
 You can loop over each order in the "Order" object with the following liquid (the "order" variable can be renamed to anything you like):
 
-```html
+```liquid
+{% raw %}
 {%- for order in orders -%}
 
 {%- endfor -%}
+{% endraw %}
 ```
 
 Inside this loop, you can access the following fields. (If you have renamed the order variable, make sure you also rename it when outputting the fields.)

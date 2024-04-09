@@ -17,7 +17,8 @@ This Article will show:
 
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Blog Posts, this can be added to the include for Blog List like so:
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '3'
     layout: 'default'
@@ -27,17 +28,20 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     sort_order: 'desc'
     use_adv_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 # To Include this Option
 
 Include the following liquid to dynamically get a list of available Blog Categories for the User to select:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_categories'
     categories_layout: 'default/categories'
     categories_layout_type: 'sidebar' 
 -%}
+{% endraw %}
 ```
 
 The parameters refers to layout which will be used to display the Category links. \<code>categories\_layout\</code>should be the root layout folder where your blog layout is contained.&#x20;
@@ -48,7 +52,8 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
 
 ## wrapper.liquid
 
-```html
+```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Categories</h2>
@@ -57,14 +62,17 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
     </ul>
   </div>
 </div>
+{% endraw %}
 ```
 
 ## item.liquid
 
-```html
+```liquid
+{% raw %}
 <li>
     <a href="{{context.location.pathname}}?category={{this.id}}">{{this.properties.name}}</a>
 </li>
+{% endraw %}
 ```
 
 The link should be the slug of your Blog List view followed by `?category={{this.id}}`. Siteglide will be able to read the Category id from the URL and populate the List View on refresh. In this example we use the context object to automatically get the slug of the current Blog Page.
@@ -73,9 +81,11 @@ The link should be the slug of your Blog List view followed by `?category={{this
 
 You may wish to give the User some feedback about the current filter/ search terms that are applied on the Blog list page. For Categories, you can use \<code>context.exports\</code> object to get the name of the category you are filtering by:
 
-```html
+```liquid
+{% raw %}
 {% if context.params.category %}
   Posts about {{context.exports.categories.data[context.params.category].name}}
 {% endif %}
+{% endraw %}
 ```
 

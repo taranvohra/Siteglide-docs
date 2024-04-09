@@ -88,7 +88,8 @@ You can also access the name of the Attribute this Layout is currently displayin
 
 As explained in the Attributes Layout Doc, we recommend you loop over the object and access the fields via the "option" liquid variable.
 
-```html
+```liquid
+{% raw %}
 <select name="attr1" 
         class="form-control" 
         data-attribute-control="{{product_attribute_id}}" 
@@ -100,6 +101,7 @@ As explained in the Attributes Layout Doc, we recommend you loop over the object
             </option>
   {% endfor %}
 </select>
+{% endraw %}
 ```
 
 Assuming the above example liquid forloop has been implemented, you can access the fields in the table below. Remember the "option" liquid variable can be renamed, so if you have done this, replace "option" with the name you have given the variable. The Object contains Attribute Options and each of these contains information on the Attribute it is linked with.

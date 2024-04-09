@@ -34,7 +34,8 @@ Basic List views will also work in workflow and auto-responder emails, but be aw
 
 Use the following Liquid Syntax to output an Events List view:
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1/list'
@@ -42,4 +43,5 @@ Use the following Liquid Syntax to output an Events List view:
     show_pagination: 'false'
     sub_model: 'true' 
 -%}
+{% endraw %}
 ```

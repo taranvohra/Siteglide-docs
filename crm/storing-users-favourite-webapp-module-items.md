@@ -84,11 +84,11 @@ If you need to modify them, you can split this into following the 4 items in the
 ]
 ```
 
-:::hint{type="warning"}
+{% hint style="warning" %}
 ## A note on security
 
 &#x20;Even if a malicious User submits a fraudulent User ID argument, we will double check on the server-side, so it won't be possible for them to change the favourites of other Users.&#x20;
-:::
+{% endhint %}
 
 ## Custom Callback Functions
 

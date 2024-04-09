@@ -13,11 +13,13 @@ As a User navigates to your Product Detail Page, Siteglide will load the Detail 
 
 In this example, you'd need to know the ID of a category you want to display; this can be found in Admin when you select a category. E.g. let's say we want to display something special when something has the category "Featured" and you know it has an ID of "111111":
 
-```html
+```liquid
+{% raw %}
 {% assign featured_id = "111111" %}
 {% for category_id in this.category_array -%}
   {% if category_id == featured_id %}
     <!-- Add Featured Content Here -->
   {% endif %}
 {% endfor %}
+{% endraw %}
 ```

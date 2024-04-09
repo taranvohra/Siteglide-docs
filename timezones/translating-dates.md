@@ -15,7 +15,8 @@ We can use Liquid to format our "raw" date integer to a formatted date. However,
 
 First, we will need to create an object of Months converted from English to whichever language you'd like:
 
-```html
+```liquid
+{% raw %}
 {% parse_json month_map %}  { 
 
   "fre": {
@@ -54,6 +55,7 @@ First, we will need to create an object of Months converted from English to whic
 
 
 }  {% endparse_json %}
+{% endraw %}
 ```
 
 Now we have an object called "months" storing all the translated Months, simply change "FRE" and the translation to whichever language you'd like.
@@ -76,11 +78,13 @@ Next, we'll use these two variables to search the "month\_map" and return the tr
 
 Now we've found the translated Month we'll need to format it into a complete date, and then store this so it can be outputted:
 
-```html
+```liquid
+{% raw %}
 {% assign date = this['release_date'] | date: "%d" %}
 {% assign year = this['release_date'] | date: "%y" %}
 {% assign date_complete = date | append: " " | append: translated_month  %}
 {% assign date_complete = date_complete | append: " " | append: year %}   
+{% endraw %}
 ```
 
 We assign the Date and Year, formatting them into integer dates using the "date" filter, then we append the finished date to the variable "date\_complete", you can output this like so: `{{date_complete}}`

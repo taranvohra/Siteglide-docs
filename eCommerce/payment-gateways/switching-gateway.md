@@ -28,9 +28,11 @@ Pass in the name of the Payment Gateway you wish to switch to as the only argume
 This can be applied to any action you like, such as clicking a radio button, or opening an accordion. e.g.
 
 :::codeblocktabs
-```html
+```liquid
+{% raw %}
 <input type="radio" name="paymentGateway" id="paymentGateway1" value="Stripe"><label for="paymentGateway1">Pay with Stripe</label>
 <input type="radio" name="paymentGateway" id="paymentGateway2" value="PayPal"><label for="paymentGateway2">Pay with PayPal</label>
+{% endraw %}
 ```
 
 ```javascript

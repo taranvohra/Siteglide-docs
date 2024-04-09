@@ -9,7 +9,8 @@ You can also allow the User to search for Events by keyword. This requires a sli
 
 Although all other Events Navigation options require you to set the `use_adv_search: 'true'` Liquid parameter, keyword search requires the `use_search` parameter. 
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1'
@@ -17,11 +18,13 @@ Although all other Events Navigation options require you to set the `use_adv_sea
     show_pagination: 'false'
     use_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 If you wish to use both types of Navigation for your Events, you can set both types of search parameter to 'true'.
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1'
@@ -30,13 +33,15 @@ If you wish to use both types of Navigation for your Events, you can set both ty
     use_search: 'true'
     use_adv_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 # HTML and JavaScript Syntax
 
 This code can be included in one of your Events Navigation Layouts. Keyword Search will be activated if you've set the Liquid parameter above and the JavaScript below sets the keyword parameter in the URL.
 
-```html
+```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Search Events by Keyword</h2>
@@ -68,6 +73,7 @@ You'll need to use the "use_search" and "use_adv_search" parameters in your Liqu
     location.assign(url_string);
   }
 </script>
+{% endraw %}
 ```
 
 # Searching and Filtering at the Same Time

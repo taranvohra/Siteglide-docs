@@ -142,11 +142,11 @@ Note- I'll be using - before and after my closing Liquid tags to remove unnecess
 &#x20;In the example, we'll pass inputs into the endpoint Page using query parameters on the end of the URL, for example, I already have the URL for accessing the endpoint Page:
 `/api/webapp-1.json`
 
-:::hint{type="warning"}
+{% hint style="warning" %}
 ## Remember
 
 The ".json" extension should be replaced with the "format" you chose in step 2.&#x20;
-:::
+{% endhint %}
 
 I'll be storing the page I want to request from the endpoint in query parameters like so:
 `/api/webapp-1.json?page=2&per_page=1`

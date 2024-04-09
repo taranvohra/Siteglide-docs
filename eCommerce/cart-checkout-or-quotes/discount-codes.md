@@ -39,10 +39,12 @@ The screenshot below shows how the Discount Code Layout can be nested inside the
 
 The following Liquid will add the Layout:
 
-```html
+```liquid
+{% raw %}
 {% include 'ecommerce/discount_code'
    layout: "cart/default" 
 %}
+{% endraw %}
 ```
 
 The only parameter you'll need will be `layout` which refers to the file name of the Layout. We'll look at where to create the Layout files in Step 2.&#x20;
@@ -53,10 +55,12 @@ In order to better support adding Discount Code Layouts on Forms, we've added th
 
 For now, you can add the data-attribute `data-s-e-refresh-layout-discount-code` to the element which serves as a wrapper for your Layout e.g.
 
-```html
+```liquid
+{% raw %}
 <div data-s-e-refresh-layout-discount-code>
 {% include 'ecommerce/discount_code', layout: "cart/default" %}
 </div>
+{% endraw %}
 ```
 
 &#x20;In a Cart Layout, you may also wish to set prices to automatically update when the discount code is added.&#x20;
@@ -69,12 +73,14 @@ You can add the following data-attributes:
 
 e.g.
 
-```html
+```liquid
+{% raw %}
 <p class="text-uppercase"><strong>TOTAL PRICE:</strong> 
 <span data-s-e-live-cart-currency></span>
 <span data-s-e-live-cart-total>
 {% include 'ecommerce/price_total'
             format_type: 'formatted' -%}</span></p>
+{% endraw %}
 ```
 
 ## Related Layout Development Docs
@@ -125,13 +131,15 @@ If you haven't already, make sure your layout parameter in the Liquid tag matche
 
 ## 3a - Add an \<input> element and \<label>
 
-```html
+```liquid
+{% raw %}
 <label class="mb-3" for="s_e_discount_code">Discount Code</label>
 <input class="form-control" 
        id="s_e_discount_code" 
        data-s-e-discount-code {% if discount_code != blank %} 
        value="{{discount_code}}" 
        readonly="true"{%- endif -%}>
+{% endraw %}
 ```
 
 *HTML Attributes Explained:*
@@ -192,11 +200,11 @@ When adding the 'Apply' button, you can customise how the JavaScript will behave
 
 ### Applying to a Subscription Layout:
 
-:::hint{type="info"}
+{% hint style="info" %}
 ## Note
 
 We recommend hiding the apply button after the Subscription Order has been created and the Discount Code has been redeemed. See Subscription Specific Instructions.
-:::
+{% endhint %}
 
 ```javascript
 <button class="btn btn-primary sg-btn sg-btn-primary" 
@@ -277,11 +285,11 @@ Although we check Discount Codes are valid when they are added, there are cases 
 
 Adding a "remove" button gives the User a clear way to solve any problems stopping them from completing their purchase.
 
-:::hint{type="info"}
+{% hint style="info" %}
 ## Note
 
 You cannot remove a Subscription Discount Code after the Subscription Order has been created and the Discount redeemed. See Subscription Specific Instructions.
-:::
+{% endhint %}
 
 # Step 5 - Add HTML and Liquid to give the customer feedback
 
@@ -295,7 +303,8 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 
 ### On Cart and Checkout Layouts:
 
-```html
+```liquid
+{% raw %}
 {% if discount_code != blank -%}
 <p>Discount: 
     <span style="color: red;">
@@ -305,11 +314,13 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
                      </span>
                      </p>
                      {% endif %}
+{% endraw %}
 ```
 
 ### On Basic Payment Layouts:
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank -%}
 <p>Discount: 
     <span style="color: red;">
@@ -320,6 +331,7 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
                                   </span>
                                   </p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ### On Subscription Layouts:
@@ -331,7 +343,8 @@ For both situations, we can use the fields inside the discount variable to acces
 *Before the Subscription Order is Created
 *At this stage, we can use general details of the discount which is applied, but not yet redeemed, from the `this` object.
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank -%}
   <p>Discount: 
   <span style="color: red;">
@@ -353,12 +366,14 @@ For both situations, we can use the fields inside the discount variable to acces
     {% endif %}
   </p>
 {%- endif -%}
+{% endraw %}
 ```
 
 *After the Subscription Order is Created and the Discount Redeemed
 *At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank -%}
   <p>Discount redeemed: 
     <span style="color: red;">
@@ -385,6 +400,7 @@ For both situations, we can use the fields inside the discount variable to acces
                  price_data: discount.total_remaining -%}
                  </p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ## 5b - Displaying the Minimum Spend
@@ -393,7 +409,8 @@ The following code can be used to display the minimum spend needed to keep using
 
 ### On Cart and Checkout Layouts:
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
 <p class="mt-4">
     This code will only be valid on Cart orders worth over: 
@@ -401,13 +418,15 @@ The following code can be used to display the minimum spend needed to keep using
     {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter'
                  price_data: discount_minimum -%}</p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ### On Basic Payment Layouts:
 
 The following code can be used to display the minimum spend needed to keep using the discount:
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
 <p class="mt-4">
     This code will only be valid on orders over: 
@@ -417,13 +436,15 @@ The following code can be used to display the minimum spend needed to keep using
                              price_data: discount_minimum -%}
                              </p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ### On Subscription Layouts
 
 &#x20;It's probably only really necessary to display the minimum spend before the Subscription Order is created and the Discount redeemed. Once the discount is redeemed, the amount spent will be fixed.&#x20;
 
-```html
+```liquid
+{% raw %}
 {%- if discount_code != blank and discount_minimum -%}
   <p class="mt-4">
     This code will only be valid on orders over: 
@@ -432,19 +453,22 @@ The following code can be used to display the minimum spend needed to keep using
                  price_data: discount_minimum -%}
                  </p>
 {%- endif -%}
+{% endraw %}
 ```
 
 ## 5c - Displaying a Message when the Discount Maximum is Reached on Basic Payment Forms, Cart and Checkout
 
 This code will display a message if the minimum spend is not set strictly enough and the resulting payment total is below that allowed by the Payment Gateway.
 
-```html
+```liquid
+{% raw %}
 {%- if discount_saving_maximum_reached == true -%}
 <!-- Message here -->
 <p class="mt-4">
     Minimum transaction value reached. 
     To make the most of your discount, try adding another item to your Cart.</p>
 {%- endif -%}
+{% endraw %}
 ```
 
 `discount_saving_maximum_reached` will always return false for Subscriptions and these allow any size of Discount (controlled only by the Partner and Client setting Minimum Spend values on each Discount Code in the Admin.) Therefore, it's not necessary to add this code to a Discount Code Layout for a Subscription.
@@ -576,28 +600,32 @@ Once you've created your function, use the `success_cb` option in step 3) b) and
 
 # Specific Instructions for Subscriptions
 
-:::hint{type="success"}
+{% hint style="success" %}
 ## Note
 
 We recommend for Subscriptions to add some logic checking whether a Subscription Order has already been created and if so, to hide the apply button. This is because once the Subscription Order is created- any Discount Code already applied will be redeemed.&#x20;
-:::
+{% endhint %}
 
 At this point it's not possible to apply or change the Discount Code, only display details of the Order that's active. The purpose of the Form at this point is actually to allow Users to edit their payment details only.&#x20;
 
-```html
+```liquid
+{% raw %}
 {% if subscription_discount_already_redeemed == true %}
 
 <!-- Insert code here - the Discount has already been redeemed against the Subscription Order-->
 {% endif %}
+{% endraw %}
 ```
 
 You could add this logic around the whole Layout (as in the default Layout), or just around individual components. For the sake of clarity, in the "subscription/default" Layout, we've opted to wrap the logic around the whole Layout, creating two distinctly separate blocks of Liquid for before and after redemption.&#x20;
 
 You can also add the statement to check if the Discount will apply to the next invoice or if the Discounted period of months is over.
 
-```html
+```liquid
+{% raw %}
 {% if rate_still_discounted == true %}
 {% endif %}
+{% endraw %}
 ```
 
 ## Related Articles

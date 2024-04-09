@@ -38,7 +38,8 @@ The button can be added in any Liquid Layout, but you'll need to have access to 
 
 In the User Orders Layout, the exact Liquid for the ID will depend on the variable you've set in the loop. In the following example, the variable assigned to each iteration of the loop is this. so the Order ID is available inside the loop as this.id.
 
-```html
+```liquid
+{% raw %}
 {% for this in orders %}
 
   {% include 'ecommerce/reorder_button'
@@ -47,14 +48,17 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
   %}
 
 {% endfor %}
+{% endraw %}
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
 
-```html
+```liquid
+{% raw %}
 {% if context.current_user.id %}
 <!-- Code only runs if User is logged in -->
 {% endif %}
+{% endraw %}
 ```
 
 ## The Button Layout
@@ -66,12 +70,14 @@ You can find the default Layout or create a custom Layout at the following path:
 ***The styling of the button is completely up to you.&#x20;
 To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
 
-```html
+```liquid
+{% raw %}
 onclick="s_e_reorder({ order_id: '{{order_id}}'
                         token: '{{token}}'
                         cart_url: '/cart'
                         error_cb: error
                         success_cb: success})"
+{% endraw %}
 ```
 
 The function takes a single argument containing an options object. The available arguments are as follows:
@@ -146,7 +152,8 @@ This example will, if an Order was successfully reordered -display a message to 
 If any Products were not available, these are displayed in a table.
 Finally, the session is cleared, so the User only sees this once.&#x20;
 
-```html
+```liquid
+{% raw %}
 {% if context.session.reorder_added_to_cart != blank %} 
   <div class="alert alert-warning">
 
@@ -186,6 +193,7 @@ Finally, the session is cleared, so the User only sees this once.&#x20;
   </div>
 
 {% endif %}
+{% endraw %}
 ```
 
 

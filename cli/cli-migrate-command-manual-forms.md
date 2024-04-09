@@ -7,11 +7,11 @@ updatedAt: 2023-03-03T08:11:19.000Z
 
 
 
-:::hint{type="info"}
+{% hint style="info" %}
 ## Note
 
 This is only necessary if you are not updating to a form built within Siteglide Admin before go live.
-:::
+{% endhint %}
 
 Depending on your system configuration, sometimes forms will not automatically convert during the migration process.  If this has happened then please follow the steps below to do this manually:
 

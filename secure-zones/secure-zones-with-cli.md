@@ -45,11 +45,11 @@ After running the mutation, you will see an ID returned in the output window of 
 
 ![](https://downloads.intercomcdn.com/i/o/253866153/ddefa467bdf9f6fd434eba6e/Screen+Shot+2020-10-08+at+16.12.25.png)
 
-:::hint{type="warning"}
+{% hint style="warning" %}
 ## Note
 
 If you already have Admin open you will need to refresh it to see the new Secure Zone.
-:::
+{% endhint %}
 
 
 

@@ -53,27 +53,32 @@ Within this layout we'll have access to the \`orders\` object, containing all of
 
 We can output the Products data like so
 
-```html
+```liquid
+{% raw %}
 {%- for this in orders -%}
 
   {{this.order_products[0].product.properties}}
 
 {%- endfor -%}
+{% endraw %}
 ```
 
 However, we just need the Media Download Item ID which can be outputted like so, if you have other Custom Fields you'll need to replace 'product\_1' with the field name&#x20;
 
-```html
+```liquid
+{% raw %}
 {%- for this in orders -%}
 
 {%- assign media_download_id = this.order_products[0].product.properties['module_field_custom_14/product_1'] -%}
 
 {%- endfor -%}
+{% endraw %}
 ```
 
 If there are multiple Products in one Order, we'll need to create an array of the Media Download Item IDs for each Product, we'll nest another loop within the loop above over {{orders}} - here's how this would look:
 
-```html
+```liquid
+{% raw %}
 {%- assign media_download_id = '[]' | parse_json -%}
 
 {%- for this in orders -%} 
@@ -87,16 +92,19 @@ If there are multiple Products in one Order, we'll need to create an array of th
   {%- assign media_download_id = media_download_id | join: ',' -%}
 
 {%- endfor -%}
+{% endraw %}
 ```
 
 &#x20;So no we've assigned all of our Media Download IDs to '`media_download_id`'- we'll use this within the 'item\_ids' parameter on our Media Download Layout include:
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '17'
     layout: 'my-layout'
     item_ids: media_download_id 
 -%}
+{% endraw %}
 ```
 
 Now, locate your Media Download layouts- these can be found under: Code Editor > Modules > Module\_17 (Media Downloads).&#x20;
@@ -105,10 +113,12 @@ From here you can either use an existing layout or copy the default layout struc
 
 We'll only need to include the Media Download Items within the 'wrapper' file, here's how this looks:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_media_downloads/get/get_items'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 Then within the 'item' layout, we'll add an anchor to allow the items to be downloaded- we'll also output the name of the Media Download Item as the anchor's text:

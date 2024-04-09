@@ -27,8 +27,10 @@ This will output the current user's first name, so you can say hello.
 
 You could also use an if statement to run logic using this. E.g. If I want to say hello to all users with a siteglide email address:
 
-```html
+```liquid
+{% raw %}
 {% if context.current_user.email contains "@siteglide.com" %}
   <p>Hello Siteglider!</p>
 {% endif %}
+{% endraw %}
 ```

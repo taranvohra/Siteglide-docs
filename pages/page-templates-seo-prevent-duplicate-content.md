@@ -28,11 +28,13 @@ In your Page Template in the \<head> you can set a recommendation that where que
 
 You can do this by setting the main part of the URL as the canonical URL. In this example, this will be applied to every Page which uses this [Page Template](https://help.siteglide.com/en/article/templates-getting-started-jbynlb/), but you may wish to use an if statement to only apply it on certain Pages.
 
-```html
+```liquid
+{% raw %}
 <head>
   <!-- Stops Search Engines treating the same page with different URL parameters as duplicate pages -->
   <link rel="canonical" href="{{context.headers.PATH_INFO}}">
 </head>
+{% endraw %}
 ```
 
 In the example, we use the "context.headers" object to read the URL of the page, specifically the "PATH\_INFO" which excludes query parameters, but includes slugs. This means you don't need to change this for each page- the liquid dynamically works out the current URL without query parameters. You can (and should) adjust this based on your site's structure and SEO needs.

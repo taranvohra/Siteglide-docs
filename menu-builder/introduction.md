@@ -11,12 +11,14 @@ Create a nested Menu Structure using the Pages you've built and customise its la
 
 ## Syntax
 
-```html
+```liquid
+{% raw %}
 {%- include 'menu'
     id:'6560'
     layout: 'default'
     name: 'Main Navigation' 
 -%}
+{% endraw %}
 ```
 
 ## Parameters
@@ -53,19 +55,22 @@ Within this module folder you will find the following layout folders:
 
 The wrapper file is used to wrap the menu item output and should contain the liquid for outputting the menu items. You can wrap your menu with any content you'd like, such as a plain \<ul> tag, or a section wrapper with a title.
 
-```html
+```liquid
+{% raw %}
 <ul>
 	{% include 'modules/siteglide_menu/get/get_items'
 		item_layout: 'item' 
 	-%}
 </ul>
+{% endraw %}
 ```
 
 ### Example - item.liquid
 
 The item file is the chosen output for our items. In this example we've got two cases being used.
 
-```html
+```liquid
+{% raw %}
 {% if this['is_parent'] -%}
   <li>
     <a href="{{this['link_url']}}">{{this['link_name']}}</a>
@@ -85,6 +90,7 @@ The item file is the chosen output for our items. In this example we've got two 
     <a href="{{this['link_url']}}">{{this['link_name']}}</a>
   </li>
 {% endif -%}
+{% endraw %}
 ```
 
 **1. The item is a parent, so has sub items.**

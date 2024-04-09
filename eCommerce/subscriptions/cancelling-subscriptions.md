@@ -21,10 +21,12 @@ The following Liquid can be added within a `user_subscriptions` List Layout:`{%-
 `
 You may wish to use logic to only show the button when it can be used.
 
-```html
+```liquid
+{% raw %}
 {%- if this.cancel_at_period_end != 'true' -%}
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {%- endif -%}
+{% endraw %}
 ```
 
 # Un-scheduling the Cancellation before it happens
@@ -33,20 +35,24 @@ Until that time, we'll allow Users to change their mind and choose not to cancel
 
 You may wish to use logic to only show the button when it can be used.
 
-```html
+```liquid
+{% raw %}
 {% if this.cancel_at_period_end == 'true' %}
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
+{% endraw %}
 ```
 
 Both buttons could be combined in the logic as follows:
 
-```html
+```liquid
+{% raw %}
 {%- if this.cancel_at_period_end != 'true' -%}
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {% elsif this.cancel_at_period_end == 'true' %}
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
+{% endraw %}
 ```
 
 # Cancelling Immediately

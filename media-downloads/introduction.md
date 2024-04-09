@@ -25,7 +25,8 @@ In it's first release, the Module allows you to:
 
 Like with other Modules, you will use a Liquid Tag to output a list of Module Items on a Page, Page Template, Email or Partial Liquid File of your choice.
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '17'
     layout: 'default'
@@ -34,6 +35,7 @@ Like with other Modules, you will use a Liquid Tag to output a list of Module It
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
+{% endraw %}
 ```
 
  You can use the following parameters:
@@ -76,10 +78,12 @@ You'll need to create a `list` folder in your layout folder and fill it with the
 
 Your `wrapper.liquid` file should contain the following Liquid which determines where the list of Items will go:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_media_downloads/get/get_items'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 ## Available Fields

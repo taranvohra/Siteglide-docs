@@ -9,18 +9,21 @@ You can also allow the User to search for Blog Posts by keyword. This requires a
 
 Although all other Blog Navigation options require you to set the `use_adv_search: 'true'` Liquid parameter, keyword search requires the `use_search: 'true'` parameter.&#x20;
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '3'
     layout: 'design_system/1'
     per_page: 20
     use_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 If you wish to use both types of Navigation for your Blog, you can set both types of search parameter to 'true'.
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '3'
     layout: 'design_system/1'
@@ -28,13 +31,15 @@ If you wish to use both types of Navigation for your Blog, you can set both type
     use_search: 'true'
     use_adv_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 # HTML and JavaScript Syntax
 
 This code can be included in one of your Blog Navigation Layouts. Keyword Search will be activated if you've set the Liquid parameter above and the JavaScript below sets the keyword parameter in the URL.
 
-```html
+```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Search Posts by Keyword</h2>
@@ -57,5 +62,6 @@ This code can be included in one of your Blog Navigation Layouts. Keyword Search
     location.assign(url_string);
   }
 </script>
+{% endraw %}
 ```
 

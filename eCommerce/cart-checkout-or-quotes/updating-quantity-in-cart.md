@@ -32,18 +32,22 @@ The function will queue a change to the Cart in your local storage, but will not
 
 This function is designed to work as a callback function to Events triggered on the element which controls the quantity of items in the currently viewed Cart e.g. it could be added to this element in the Cart Layout `item.liquid` file.
 
-```html
+```liquid
+{% raw %}
 <label for="quantity">Quantity</label>
 <input type="number" id="quantity" name="quantity" value="{{this.cart_data.quantity}}">
+{% endraw %}
 ```
 
 Like so:
 
-```html
+```liquid
+{% raw %}
 <label for="quantity">Quantity</label>
 <input type="number" id="quantity" name="quantity" value="{{this.cart_data.quantity}}" 
 onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}}
 '{{context.authenticity_token}}', false);">
+{% endraw %}
 ```
 
 ## Arguments and Usage

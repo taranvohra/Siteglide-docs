@@ -62,12 +62,14 @@ To create a new set of Product layouts- create your folder at the level of "name
 If you are making a layout where you know exactly which Attribute a Product has, you can include an Attribute layout to display an Attribute with a given name:
 `detail/item.liquid` (including a single Attribute)
 
-```html
+```liquid
+{% raw %}
 {% include 'ecommerce/product_attributes'
    name: attribute
    layout: 'demo_site_attributes'
    attribute_name: "Size" 
 -%}
+{% endraw %}
 ```
 
 # Looping Over Multiple Attributes
@@ -88,7 +90,8 @@ If your Products have multiple Attributes, or you want to write code which can d
 
 `detail/item.liquid` -- (looping over all Attributes linked to this Product)
 
-```html
+```liquid
+{% raw %}
 {% for attribute in this.product_attributes %}
   {% if attribute.properties.enabled == true %}
     {% include 'ecommerce/product_attributes'
@@ -97,6 +100,7 @@ If your Products have multiple Attributes, or you want to write code which can d
     -%} 
   {% endif %}
 {% endfor %}
+{% endraw %}
 ```
 
 # Attribute Layout Development
@@ -109,15 +113,18 @@ The following liquid outputs an array of the options that have been created for 
 
 You can loop over this array with the following liquid code, (where the example has the variable "option", you could choose any variable name):
 
-```html
+```liquid
+{% raw %}
 {% for option in product_attribute_options -%}
   {{option.name}} ({{this.price.currency_symbol}}{{option.price}})
 {% endfor %}
+{% endraw %}
 ```
 
 &#x20;To get the full benefits of Attribute functionality, including the user's choice of Attribute affecting what is added to the Cart, the data-attributes and function calls in the example should be included:
 
-```html
+```liquid
+{% raw %}
 <select name="attr1" class="form-control" data-attribute-control="{{product_attribute_id}}" onchange="s_e_update_price()">
   {% for option in product_attribute_options %}
     <option value="{{option.id}}" data-attribute-price-control="{{option.price_raw}}">
@@ -125,6 +132,7 @@ You can loop over this array with the following liquid code, (where the example 
     </option>
   {% endfor %}
 </select>
+{% endraw %}
 ```
 
 &#x20;As you can see in the example, inside the loop it is possible to access the specific Attribute Option in this iteration via the "option" variable you created when setting up the loop, but you can also still access the "this" object specific to the Detail Layout that wraps around and includes the Attribute Layout. See the [Product Layout Liquid Reference](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts) to see the fields available in the "this" object and those specific to Attributes and Attribute Options.

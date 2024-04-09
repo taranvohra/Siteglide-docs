@@ -25,7 +25,8 @@ This article will show:
 
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Event Items, this can be added to the include for Event List like so:
 
-```html
+```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'default'
@@ -35,6 +36,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     sort_order: 'desc'
     use_adv_search: 'true' 
 -%}
+{% endraw %}
 ```
 
 # Past Events and Future Events
@@ -49,23 +51,28 @@ If you just want to filter the List so it either shows Events that have already 
 
 ![](https://downloads.intercomcdn.com/i/o/203096602/7b027cbd23e44d9032958ec0/image.png)
 
-```html
+```liquid
+{% raw %}
 {% assign now = "now" | date: "%s" %}
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
+{% endraw %}
 ```
 
 ## Filter by Future Events
 
 ![](https://downloads.intercomcdn.com/i/o/203096442/877bf46b3b86c72c84d360df/image.png)
 
-```html
+```liquid
+{% raw %}
 {% assign now = "now" | date: "%s" %}
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
+{% endraw %}
 ```
 
 ## Using Liquid Logic to "Toggle" between Past and Future Events
 
-```html
+```liquid
+{% raw %}
 {% assign now = "now" | date: "%s" %}
 {% if context.params.range_type == "past" %}
   <h2>Past Events</h2>
@@ -77,17 +84,20 @@ If you just want to filter the List so it either shows Events that have already 
   <h2>All Events</h2>
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 {% endif %}
+{% endraw %}
 ```
 
 # Including the Archive Navigation Feature
 
 Firstly, you will need to provide the following Liquid to include your Archive layout:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
+{% endraw %}
 ```
 
 ## Parameters
@@ -100,29 +110,35 @@ In the `default/archive/` folder we have 3 different optional types of Archive L
 
 ***Include: Browse By Months***
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar" 
 -%}
+{% endraw %}
 ```
 
 ***Include: Browse By Months Under Years Header***
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years"
 -%}
+{% endraw %}
 ```
 
 ***Include: Search Events Between Two Dates***
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
+{% endraw %}
 ```
 
 # Events Archive Layouts
@@ -133,7 +149,8 @@ The following examples will take you through the different options:
 
 ![](https://downloads.intercomcdn.com/i/o/203097728/66141d6f7f41130389f473fc/image.png)
 
-```html
+```liquid
+{% raw %}
 <h2>Archive</h2>
 <ul>
   {% for month in events_archive_months %}
@@ -144,6 +161,7 @@ The following examples will take you through the different options:
     </li>
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 In this example, we use the `events_archive_months` object and loop over the array. For each iteration, a URL link is outputted which has three range parameters:
@@ -160,7 +178,8 @@ In this example, we use the `events_archive_months` object and loop over the arr
 
 This Layout does not just organise the Months available under the relevant Year Headers, it also will skip any Years without an Event.
 
-```html
+```liquid
+{% raw %}
 <h2>Archive by Years</h2>
 <ul>
   {% for year in events_archive_years %}
@@ -177,6 +196,7 @@ This Layout does not just organise the Months available under the relevant Year 
     </ul>
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 &#x20;This example uses the same links as the previous one. However, it also organises the links into the years in which they belong by first looping over the years in the events\_archive\_years and then using the group\_by liquid filter and another loop to output the month links grouped under the current iteration's year. Learn more about this Liquid at the pOS docs:
@@ -193,7 +213,8 @@ In the Default Layout, this Option also includes the Previous "Browse by Months 
 
  It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
 
-```html
+```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Archive by Years</h2>
@@ -251,6 +272,7 @@ Add your custom error message here- it can be renamed by changing its name in th
     alert("Please enter valid dates before searching.");
   }
 </script>
+{% endraw %}
 ```
 
 In this example a form is used to take user input. The Siteglide function automatically adds the dates to the URL parameters in the correct format. You can rewrite the error function to customise the way the form handles invalid dates entered.
@@ -266,20 +288,24 @@ Any Layouts included with the above Liquid will get access to the `events_archiv
 
 ***events\_archive\_years***
 
-```html
+```liquid
+{% raw %}
 {% for year in events_archive_years %}
   {{year.start}} <!-- Outputs Epoch time at start of Year -->
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
+{% endraw %}
 ```
 
 ***events\_archive\_months***
 
-```html
+```liquid
+{% raw %}
 {% for year in events_archive_years %}
   {{year.start}} <!-- Outputs Epoch time at start of Year -->
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
+{% endraw %}
 ```
 
 In order to filter the Events List by date, you need to refresh the Page URL with parameters in the [Unix Epoch time](https://www.unixtimestamp.com/index.php) format. 
@@ -310,7 +336,8 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 
 In the examples, you may notice another URL parameter is used: `range_type`. The `s_events_date_search` Siteglide function for filtering Events by user-inputted dates adds the parameter `range_type="between"`. This would allow the following liquid on the List Layout to identify that this search is between two dates:
 
-```html
+```liquid
+{% raw %}
 
 {% if context.params.range_type == "between" %}
 
@@ -321,17 +348,20 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
   {{context.params.range_lte | date: "%d-%b-%y"}}
 
 {% endif %}
+{% endraw %}
 ```
 
 Whereas, you could use another `range_type` to indicate that different feedback should be given to the User. e.g. the parameter `month` in this example changes the sentence structure from "Events between" to "Events in" to communicate the different kind of filtering that is now taking place.
 
-```html
+```liquid
+{% raw %}
 {% if context.params.range_type == "month" %}
 
   Events in {{context.params.range_gt | date: "%b-%y"}}
   {{context.params.range_gte | date: "%b-%y"}}
 
 {% endif %}
+{% endraw %}
 ```
 
 Note- in both of these examples- the `gte` and `gt`  dates are both outputted- this is because only one is expected to be available. The Layout is designed to accept either

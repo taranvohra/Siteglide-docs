@@ -60,12 +60,14 @@ e.g. Let's say a User has decided to opt-in to a particular non-essential featur
 
 You can then use logic to only show these features to Users who have opted-in.
 
-```html
+```liquid
+{% raw %}
 {% if context.session.agency_optional_features == 'true' %}
 <script>
   //My optional feature script
 </script>
 {% endif %}
+{% endraw %}
 ```
 
 ***Removing Session Fields

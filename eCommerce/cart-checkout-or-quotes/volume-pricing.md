@@ -46,7 +46,8 @@ When looping over an object like `this['Volume Pricing']`, `.first` allows you t
 
 &#x20;First though, we use logic in the first line to check if the pricing has been enabled- to avoid confusion and disappointment.
 
-```html
+```liquid
+{% raw %}
 {% if this.['Volume Pricing Enabled'] == true %}
   <h3>Volume Pricing Options Available</h3>
   <ul>
@@ -58,6 +59,7 @@ When looping over an object like `this['Volume Pricing']`, `.first` allows you t
     {% endfor %}
   </ul>
 {% endif %}
+{% endraw %}
 ```
 
 # Accessing Volume Prices in the Order Confirmation Email
@@ -75,7 +77,8 @@ Inside the Order Confirmation Email, you'll have access to the following relevan
 
 The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
 
-```html
+```liquid
+{% raw %}
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
   {% if product.volume_pricing_threshold_reached != blank %}
     <span style="color: red; text-decoration: line-through;">
@@ -85,6 +88,7 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
     {{ product.currency_symbol }}{{ product.price }}
   {% endif %}
 </td>
+{% endraw %}
 ```
 
 See the [Order Confirmation Email](https://developers.siteglide.com/order-confirmation-emails) documentation for more.

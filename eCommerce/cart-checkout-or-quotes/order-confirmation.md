@@ -51,10 +51,12 @@ Inside your  `order_details`  layout you'll find an `item.liquid` and `wrapper.l
 
 You can use the `wrapper.liquid` file to build the main HTML structure of your Layout. When you're ready to include the Order Details, use the following Liquid to include the `item.liquid` file:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_order_details'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 ### Item
@@ -68,10 +70,12 @@ When developing a custom layout, it may be helpful to refer to the default Layou
 *Looping over Products*
 This loop will find any Products in the Order and loop over them.
 
-```html
+```liquid
+{% raw %}
 {%- for product in this.order_products -%}
     <!-- Output {{product}} -->
 {% endfor %}
+{% endraw %}
 ```
 
 *Looping over Products and accessing Fields
@@ -89,13 +93,15 @@ This loop will find any Products in the Order and loop over them.
 
 *Looping over Products, then looping over Attributes*
 
-```html
+```liquid
+{% raw %}
 {%- for product in this.order_products -%}
     <!-- Output {{product}} -->
     {% for attribute in product.order_product_attributes -%}
          <!-- Output {{attribute }} -->
     {% endfor %}
 {% endfor %}
+{% endraw %}
 ```
 
 *Outputting Shipping Method*
@@ -111,13 +117,15 @@ The following fields are available relating to the Shipping Method:
 
 Example of only including Shipping Information if it was set:
 
-```html
+```liquid
+{% raw %}
 {% if this['Shipping Method Name'] != blank %}
      {{this['Shipping Method Name']}}
      {{ this['Currency Symbol'] }}
      {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter'   
                  price_data: this['Shipping Method Price'] -%}
 {% endif %}
+{% endraw %}
 ```
 
 *Outputting Totals*

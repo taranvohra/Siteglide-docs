@@ -31,23 +31,27 @@ To create a new layout, right-click on the product folder to add a folder with t
 
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 ## Hiding the Cart when Empty
 
 It's strongly recommended to hide the Cart using Liquid logic when it is empty. This logic can either go inside your `wrapper.liquid` file, or directly in the Page.&#x20;
 
-```html
+```liquid
+{% raw %}
 {% assign cart_parsed = context.session.cart | parse_json %}
 {% if cart_parsed.size > 0 %}
   <!-- Your Layout here -->
 {% else %}
   <!-- Message to say Cart is empty -->
 {% endif %}
+{% endraw %}
 ```
 
 ## Empty the Cart
@@ -104,13 +108,15 @@ You can optionally pass in a callback function to the third argument to be calle
 
 See the full Article on [updating Product quantities here](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart).
 
-```html
+```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
+{% endraw %}
 ```
 
 Note that, after updating this input field, the User will also have to click the "Update Cart" button, though this is covered in the wrapper.liquid file- as it covers the whole Page.
@@ -123,15 +129,18 @@ Note that, after updating this input field, the User will also have to click the
 
 In order to make sure Users do not increase the quantity of items in their Cart, when the Product is out of stock, you could use a liquid if  statement:
 
-```html
+```liquid
+{% raw %}
 {% if this.inventory.id != blank and this.inventory.quantity == '0' -%}
   <!-- Code here -->
 {% endif %}
+{% endraw %}
 ```
 
 To improve this so that the User cannot increase the value by a greater number than is allowed by the stock level, you could add a "max" attribute to the quantity input:
 
-```html
+```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
@@ -139,4 +148,5 @@ To improve this so that the User cannot increase the value by a greater number t
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
+{% endraw %}
 ```

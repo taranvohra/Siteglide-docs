@@ -16,7 +16,8 @@ When a User selects a Product Attribute, the Price changes, but what if you want
 
 *Step 2) Liquid - Make sure the Attributes are correctly outputted on the Product Detail Page, then inside the \<option> element in the Layout, add a data-attribute containing the field you want to use to update the Name. *
 
-```html
+```liquid
+{% raw %}
 <!-- Add data-option-name="{{option.name}}" -->
 
 <option value="{{option.id}}" 
@@ -27,6 +28,7 @@ When a User selects a Product Attribute, the Price changes, but what if you want
         ({{this.price.currency_symbol}}{{option.price}})
         {% endunless %}
         </option>
+{% endraw %}
 ```
 
 For a reminder on how to output Attribute Layouts correctly, check out the doc [here](https://developers.siteglide.com/attribute-layouts)

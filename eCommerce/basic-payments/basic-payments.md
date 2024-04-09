@@ -129,7 +129,8 @@ We'll give you an example of how this JavaScript may work here. You can adapt th
 
 &#x20;The following example allows the User to enter an amount of their choice into an input in the Form. Our function changes the format, then sets the value of the hidden field. Note that the entire example should sit inside a Liquid {% form %} tag.&#x20;
 
-```html
+```liquid
+{% raw %}
 <div class="row mt-4">
 
   <div class="col">
@@ -167,6 +168,7 @@ We'll give you an example of how this JavaScript may work here. You can adapt th
   </div>
 
 </div>
+{% endraw %}
 ```
 
 ## Example - Using URL parameters to change the value of s\_e\_amount

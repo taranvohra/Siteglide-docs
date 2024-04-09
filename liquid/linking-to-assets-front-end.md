@@ -72,9 +72,11 @@ If you cannot see the asset on your page then you can check the following common
 
 e.g. these will **fail** because the "/" or "assets/" beginning of the path will end up being added twice.
 
-```html
+```liquid
+{% raw %}
 {{'assets/images/SG-Logo-White.svg' | asset_url }}
 {{'/images/SG-Logo-White.svg' | asset_url }}
+{% endraw %}
 ```
 
 *   Check the file manager or code editor shows the correct path for your asset, including any folders.

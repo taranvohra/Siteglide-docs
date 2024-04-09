@@ -51,20 +51,24 @@ Note that straight after the key, we give the index number of the value we want 
 
 We can access all values in the Array using a Liquid For Loop:
 
-```html
+```liquid
+{% raw %}
 {% for item in this.category_array %}
 
   {{item}}<br><br>
 
 {% endfor %}
+{% endraw %}
 ```
 
 This outputs:
 
-```html
+```liquid
+{% raw %}
 98479
 
 111111
+{% endraw %}
 ```
 
 # Finding the Length of an Array
@@ -78,7 +82,8 @@ As well as arrays, you might come across a map of data. Here is an example which
 
 It outputs something like this (but I've shortened it here!):
 
-```html
+```liquid
+{% raw %}
 {"items":
   {
     "98490":
@@ -112,6 +117,7 @@ It outputs something like this (but I've shortened it here!):
              "full_slug":"/our-products/merch/clothes/men"}
   }
 }
+{% endraw %}
 ```
 
 A map is used to store data when you know the ID of an item and want to fetch it using it's ID as a key. In Siteglide we use them for performance reasons. You can tell this is a map, because the key `items` contains several comma-separated objects instead of a single value. Each of these has a key representing an ID, instead of the name of a property. 
@@ -123,10 +129,12 @@ This outputs: `Women`
 
 This sounds odd, but it's the name of the eCommerce Category we wanted! You can achieve the same if you have the ID stored as a variable:
 
-```html
+```liquid
+{% raw %}
 {% assign my_example_category_id = 98490 %}
 
 {{context.exports.categories.items[my_example_category_id].name}}
+{% endraw %}
 ```
 
 ## Looping over a Map
@@ -135,12 +143,14 @@ You can loop over all keys in a key map using a Liquid FOR loop. Inside the loop
 
 In this example, we'll loop over all Categories in `context.exports.categories.data` and see what data is available to output:
 
-```html
+```liquid
+{% raw %}
 {% for item in context.exports.categories.data %}
   {{item[0]}} <!-- Outputs the key, which in this case is the ID of the category -->
   {{item[1]}} <!-- Outputs the value, which in this case is an object containing this category's fields. You can see all available fields by outputting it. -->
   {{item[1].name}} <!-- Outputs the name of the Category in this iteration of the loop. -->
 {% endfor %}
+{% endraw %}
 ```
 
 # Using what you've learned so far

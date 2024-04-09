@@ -33,7 +33,8 @@ Setting collection to `'true'` makes the data from the behind-the-scenes query a
 
 In the following example, we show the difference between a WebApp list which does use Collection and one which doesn't:
 
-```html
+```liquid
+{% raw %}
 <div class="container">
 
   <h2>Here we have an ordinary WebApp</h2>
@@ -60,6 +61,7 @@ In the following example, we show the difference between a WebApp list which doe
   {{context.exports.webapp_1.data | json}}
   
 </div>
+{% endraw %}
 ```
 
 This outputs:
@@ -82,7 +84,8 @@ You could use the `{% include 'webapp' %}` tag twice to achieve this, with diffe
 
 Alternatively, you could include the webapp just once as a collection, then use Liquid to display the items you want in the way you want:
 
-```html
+```liquid
+{% raw %}
 <div class="container">
 
   {%- include 'webapp'
@@ -105,6 +108,7 @@ Alternatively, you could include the webapp just once as a collection, then use 
   {% endfor %}
   
 </div>
+{% endraw %}
 ```
 
 This outputs:
@@ -117,7 +121,8 @@ Great! Only one query needed behind the scenes and we've nearly met the objectiv
 
 We can use the `offset` parameter on our loop tag to start the loop at a different index. Let's skip the first index when we loop, as this item has already been displayed.
 
-```html
+```liquid
+{% raw %}
 <div class="container">
 
   {%- include 'webapp'
@@ -140,6 +145,7 @@ We can use the `offset` parameter on our loop tag to start the loop at a differe
   {% endfor %}
   
 </div>
+{% endraw %}
 ```
 
 You can do a lot with loops. Offset is just one of your options. Head to the pOS documentation to learn more about loops in Liquid: <https://documentation.platformos.com/api-reference/liquid/loops>

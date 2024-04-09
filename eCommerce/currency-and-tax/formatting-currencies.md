@@ -11,10 +11,12 @@ In the eCommerce Module, a formatted price is generated so partners can quickly 
 
 Instead, we can include `price_formatter`, which will convert the price from cents to dollars (or your currency's equivalent)
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter'
     price_data: my_price_variable 
 -%}
+{% endraw %}
 ```
 
 Here `my_price_variable` is the variable containing a price you'd like to format. This will then output the formatted price.

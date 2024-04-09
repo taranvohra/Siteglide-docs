@@ -33,11 +33,13 @@ Here you can set up Detail Pages by:
 
 &#x20;You can use the `type` parameter to output a Detail Layout in most Liquid files:
 
-```html
+```liquid
+{% raw %}
 {% include "module", id: "14/subscription"
    item_ids: subscription_id
    type: "detail", layout: 'my_layout'
 %}
+{% endraw %}
 ```
 
 Parameters:
@@ -69,7 +71,8 @@ Bear in mind that Forms will not work properly inside Emails, so if displaying a
 
 We provide an example of some logic you can use to explain to logged in Users what the Form will do:
 
-```html
+```liquid
+{% raw %}
 {% if context.params.slug == "subscription-action-required" %} 
     
     {% comment %} Content to display when customer is responding to an email notification which asked them to update or authorise payment details. {% endcomment %} 
@@ -87,6 +90,7 @@ We provide an example of some logic you can use to explain to logged in Users wh
     {% comment %} Content to display when the User is not logged in or has not yet signed up to this subscription. {% endcomment %} 
 				
 {%- endif -%}
+{% endraw %}
 ```
 
 &#x20;In the case where the User is not currently logged in and is not responding to an email, the logic won't be able to determine the exact status straight away. &#x20;
@@ -120,10 +124,12 @@ Parameters:
 
 You must include the following Liquid, which will output the `item.liquid` file for the Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.&#x20;
 
-```html
+```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 ### Step 5 - Available Fields
@@ -172,11 +178,13 @@ On the Subscription Detail View, we provide you with fields relating to the Subs
 
 To determine this, you can use Liquid Logic to hide an entire block of code in which you use these fields:
 
-```html
+```liquid
+{% raw %}
 {% if subscription_order != blank %}
   {% comment %}Content here can safely include subscription_order fields- 
   or will be hidden if none is available.{% endcomment %}
 {% endif %}
+{% endraw %}
 ```
 
 Fields:
@@ -218,29 +226,35 @@ For these Users (if they are logged in) there will be two sets of fields availab
 
 You can use logic to display a different price to Users in this situation.&#x20;
 
-```html
+```liquid
+{% raw %}
 {% if subscription_order['Plan Chargeable Price'] != blank %}
   <p>{{subscription_order['Plan Chargeable Price']}}</p>
 {% else %}
   <p>{{this.price.price_charge}}</p>
 {% endif %}
+{% endraw %}
 ```
 
 Or alternatively, you can use the default filter:&#x20;
 
-```html
+```liquid
+{% raw %}
 <p>{{subscription_order['Plan Chargeable Price'] | default: this.price.price_charge}}</p>
+{% endraw %}
 ```
 
 *Tip: Working with the interval*
 As you can see above, there are multiple fields involved in storing the interval of charges, which you can use to display the interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
 
-```html
+```liquid
+{% raw %}
 {% if this['Interval Count'] == "1" %}
   per {{this['Interval'] | pluralize: 1}}
 {% else %}
   (every {{this['Interval Count']}} {{this['Interval']}})
 {% endif %}
+{% endraw %}
 ```
 
 If the Interval Count is 1, it will use formatting like "per day".
