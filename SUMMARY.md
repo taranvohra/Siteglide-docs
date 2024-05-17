@@ -29,7 +29,7 @@
 * [👀 Assets Reference](assets/assets-reference.md)
 * [🪴 Assets File Structure](assets/file-structure.md)
 * [🔹 Linking to Assets Explained](assets/linking-to-assets-front-end.md)
-* [🔹 siteglide\_head\_scripts and siteglide\_footer\_scripts explained](assets/siteglide\_head\_scripts-and-siteglide\_footer\_scripts-explained.md)
+* [🔹 siteglide\_head\_scripts and siteglide\_footer\_scripts Explained](assets/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
 * [✔️ How to Optimise Images on the Fly with Cloudinary](assets/how-to-optimise-images-on-the-fly-with-cloudinary.md)
 * [💻 Assets with CLI](assets/assets-with-cli.md)
 * [🔼 Migrating Assets](migrating-to-siteglide/migrating-assets.md)

@@ -4,7 +4,7 @@ description: >-
   siteglide_footer_scripts or using context.exports to avoid duplicates
 ---
 
-# 🔹 Fetching Assets only when needed and Avoiding Duplicates
+# 🔹 siteglide\_head\_scripts and siteglide\_footer\_scripts Explained
 
 ### Introduction
 
