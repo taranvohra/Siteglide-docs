@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Welcome](README.md)
+* [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 
 ## Siteglide CLI
 
