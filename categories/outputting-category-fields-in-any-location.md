@@ -51,12 +51,12 @@ If you wish to display all the Categories on the Site, you can loop over them al
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
 {% endraw %}
+
 ```
 
 If you want to skip any Categories, you can use Liquid if statements and the `continue` tag to do this:
 
 ```liquid
-{% raw %}
 
 {% raw %}
 {% for category in context.exports.categories.data %}

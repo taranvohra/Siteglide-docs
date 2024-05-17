@@ -24,13 +24,13 @@ Here are a few useful highlights:
 
 * `{{context.location.pathname}}` - outputs the full url path such as "/first-part/second-part"
 * `{{context.params.slug}}` - outputs the first part of your url path such as "/first-part"
-* `{{context.params.slug2}}`  - outputs the second part of your url path such as "/second-part"
-* `{{context.params.myparam}}`  - outputs the value of ?myparam=true
+* `{{context.params.slug2}}` - outputs the second part of your url path such as "/second-part"
+* `{{context.params.myparam}}` - outputs the value of ?myparam=true
 
 ### Page Data
 
 * `{{context | json}}` - outputs the full array of page data
-* `{{context.page.metadata}}`  - outputs the metadata of the page, though meta fields are usually automatically outputted for you.
+* `{{context.page.metadata}}` - outputs the metadata of the page, though meta fields are usually automatically outputted for you.
 * `{{context.page.metadata.name}}` - outputs the Name field of the page
 
 ## Example Page Header:
@@ -38,7 +38,6 @@ Here are a few useful highlights:
 In this example, we check to see if the page name exists or not, as WebApp pages output their name differently. If there is a page name, it will display it, if not it will output the WebApp name instead.
 
 ```liquid
-{% raw %}
 
 {% raw %}
 {% if context.page.metadata.name != undefined %}
@@ -48,7 +47,8 @@ In this example, we check to see if the page name exists or not, as WebApp pages
 {% endif %}
 {% endraw %}
 
-{% endraw %}
+
+</div>
 ```
 
 ## Example of URL based breadcrumbs:
@@ -76,7 +76,9 @@ This takes the URL path of the page, splits it based on / and titleizes the item
         {% endif %}
     {% endfor %}
 {% endraw %}
+
+
 </ul>
 
-{% endraw %}
+</div>
 ```

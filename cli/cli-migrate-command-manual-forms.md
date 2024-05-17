@@ -5,29 +5,29 @@ createdAt: 2021-04-09T13:11:37.000Z
 updatedAt: 2023-03-03T08:11:19.000Z
 ---
 
-
+# Siteglide CLI Migrate Command - Manual Forms
 
 {% hint style="info" %}
-## Note
+### Note
 
 This is only necessary if you are not updating to a form built within Siteglide Admin before go live.
 {% endhint %}
 
-Depending on your system configuration, sometimes forms will not automatically convert during the migration process.  If this has happened then please follow the steps below to do this manually:
+Depending on your system configuration, sometimes forms will not automatically convert during the migration process. If this has happened then please follow the steps below to do this manually:
 
-## Download the Form files
+### Download the Form files
 
-Download the files from this release on Github - <https://github.com/Siteglide/migration-form/releases/tag/1.0.0>  You should use the "Source Code (Zip)" link under assets.
+Download the files from this release on Github - [https://github.com/Siteglide/migration-form/releases/tag/1.0.0](https://github.com/Siteglide/migration-form/releases/tag/1.0.0) You should use the "Source Code (Zip)" link under assets.
 
-## Unpack the files
+### Unpack the files
 
-Now that you have the zip, they need to be put into the correct place.  Drag the `modules` folder from the zip alongside the `marketplace_builder` folder in the migration that you have just triggered.  It should look like the following:
+Now that you have the zip, they need to be put into the correct place. Drag the `modules` folder from the zip alongside the `marketplace_builder` folder in the migration that you have just triggered. It should look like the following:
 
-![](https://archbee-doc-uploads.s3.amazonaws.com/rFmCA7ykprxhu_FeyERLM/OJxT6QYeamxHr9BLQ8vIk_screen-shot-2021-04-09-at-141534.png)
+![](https://archbee-doc-uploads.s3.amazonaws.com/rFmCA7ykprxhu\_FeyERLM/OJxT6QYeamxHr9BLQ8vIk\_screen-shot-2021-04-09-at-141534.png)
 
-## Edit the files
+### Edit the files
 
-The only line the needs to be edited are in `modules/simpleform/public/notifications/email_notifications/form.liquid` In this file replace line 2 where the `to:` field exists.  Simply replace `admin.email@example.com` with the email address where you would like to receive the workflow notifications.  After that has happened, the file should look like the below:
+The only line the needs to be edited are in `modules/simpleform/public/notifications/email_notifications/form.liquid` In this file replace line 2 where the `to:` field exists. Simply replace `admin.email@example.com` with the email address where you would like to receive the workflow notifications. After that has happened, the file should look like the below:
 
 ```yaml
 ---
@@ -72,14 +72,25 @@ subject: "New form submission! [{{ context.location.host }}]"
                           <tr>
                             <td class="attributes_content">
                               <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                {% for d in data %}
+                                
+
+<div data-gb-custom-block data-tag="for">
+
                                   <tr>
-                                    {% unless d[0] == "slug" or d[0] == "format" %}
+                                    
+
+<div data-gb-custom-block data-tag="unless" data-0='0' data-1='0' data-2='0' data-3='slug' data-4=' or d[0] == ' data-5='format'>
+
                                       <td class="attributes_item"> {{ d[0] }} </td>
                                       <td class="attributes_item"> {{ d[1] }} </td>
-                                    {% endunless %}
+                                    
+
+</div>
+
                                   </tr>
-                                {% endfor %}
+                                
+
+</div>
                               </table>
                             </td>
                           </tr>
@@ -98,10 +109,10 @@ subject: "New form submission! [{{ context.location.host }}]"
 </html>
 ```
 
-## Sync the files
+### Sync the files
 
 Turn on `siteglide-cli sync` and save both the `modules/simpleform/public/notifications/email_notifications/form.liquid` and the `modules/simpleform/public/views/pages/form.html.liquid` You will see confirmation in your terminal that the files have uploaded.
 
-## Test a form
+### Test a form
 
 Find a form on your website and fill it in, you should then receive a workflow notification to your email address entered above

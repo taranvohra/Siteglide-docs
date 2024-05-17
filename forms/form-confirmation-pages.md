@@ -34,12 +34,13 @@ Step 3) Fill in the \`\`Redirect To\`\` field with the URL of your Confirmation 
 
 ## Including the Confirmation Message
 
-In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirmation with this Liquid tag:&#x20;
+In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirmation with this Liquid tag:
 
 ```liquid
 {% raw %}
 {% include 'form_confirmation', layout: 'default' %}
 {% endraw %}
+
 ```
 
 The Layout parameter takes the name of the Layout File you wish to use, without the `.liquid` extension.
@@ -67,21 +68,19 @@ Note- you will not currently be able to use the `{{this}}` variable inside an Em
 _Using`{{this}}`_
 
 ```liquid
-{% raw %}
 <h1>Thanks for getting in touch!</h1>
 <p>Nice to meet you {{this.name}}!</p>
 <p>We'll get back to your query as soon as possible.</p>
-{% endraw %}
+
 ```
 
 _Using `{{form.properites}}` in a Layout copied from an Email Notification_
 
 ```liquid
-{% raw %}
 <h1>Thanks for getting in touch!</h1> 
 <p>Nice to meet you {{form.properties.name}}!</p> 
 <p>We'll get back to your query as soon as possible.</p> 
-{% endraw %}
+
 ```
 
 #### Outputting Fields Dynamically
@@ -89,12 +88,12 @@ _Using `{{form.properites}}` in a Layout copied from an Email Notification_
 You can choose to re-use the same confirmation message for multiple Forms. Here is an example which will list the submitted fields (whatever they may be!) in an HTML table. Be aware, depending on the Form, it may always need some adjustments to cover more unusual field types e.g. Checkboxes:
 
 ```liquid
-{% raw %}
 <p>In the meantime, please double check the information you provided us below:</p>
 <div class="responsive-table-container">
     <table>
         <tbody>
-            {% raw %}
+            
+{% raw %}
 {% for field in this %}
                 {% comment %}Use the following unless condition to List fields you'd like to leave out of the message.{% endcomment %}
                 {% unless field[0] == "properties" or field[0] == "user_id" or field[1] == blank %}
@@ -105,11 +104,15 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
                 {% endunless %} 
             {% endfor %}
 {% endraw %}
+
+
         </tbody>
         <tr>
     </table>
  </div>
-{% endraw %}
+
+</div>
+
 ```
 
 If you're interested to read more about using Liquid to loop over the properties of an object, as we've done in this example, see more in this advanced tutorial:
@@ -118,7 +121,9 @@ If you're interested to read more about using Liquid to loop over the properties
 
 You output Details about any eCommerce Order that was made using the Form Submission. You may be familiar doing this already within an email automation.
 
-We've included an `{% if %}` statement in the example, because this will only work properly if a `form.properties.`order\_id field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
+We've included an \`
+
+\` statement in the example, because this will only work properly if a \`form.properties.\`order\\\_id field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
 
 ```liquid
 {% raw %}
@@ -128,6 +133,7 @@ We've included an `{% if %}` statement in the example, because this will only wo
   <p>Looks like you've not ordered anything with us this time. We hope to see you again soon!</p>
 {% endif %}
 {% endraw %}
+
 ```
 
 ## How to make sure the Confirmation Message is only Displayed Once

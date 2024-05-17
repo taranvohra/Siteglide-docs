@@ -1,32 +1,28 @@
- 
+# Tutorial 9 - Using Mutations to Create New Records
 
-# Introduction
+## Introduction
 
 So far, these tutorials have used GraphQL queries; in this article we're going to start looking at mutations.
 
-The difference between queries and mutations is that: 
+The difference between queries and mutations is that:
 
-*   Queries "read" data from the database
-
-*   Mutations "create", "update" or "delete" data.
+* Queries "read" data from the database
+* Mutations "create", "update" or "delete" data.
 
 Keeping these types of operations separate is helpful, as it means you can be confident that running a query will not endanger the database on a live site.
 
-# "With Great Power Comes Great Responsibility"
+## "With Great Power Comes Great Responsibility"
 
-*   When learning and testing GraphQL mutations, we strongly recommend you do so on a staging site.&#x20;
+* When learning and testing GraphQL mutations, we strongly recommend you do so on a staging site.
+* If you need to test with real data, we recommend using the Siteglide Portal's Site Copy feature to create a staging site clone of a production site with a copy of the database.
+* Siteglide may not be able to recover the exact state of data as it was before running a mutation which modifies that data.
+* See [Tutorial 11 - Using Mutations to Delete an Item](../Siteglide%20Developer%20Documentation/Tutorial%2011%20-%20Using%20Mutations%20to%20Delete%20an%20Item.md) for more tips on what to do if you accidentally delete data you didn't mean to. (This won't help if you accidentally _change the properties!)_
 
-*   If you need to test with real data, we recommend using the Siteglide Portal's Site Copy feature to create a staging site clone of a production site with a copy of the database.
+## Steps for Creating a New Record
 
-*   Siteglide may not be able to recover the exact state of data as it was before running a mutation which modifies that data.
+### Step 1 - Start with the Mutation Keyword
 
-*   See [Tutorial 11 - Using Mutations to Delete an Item](<../Siteglide Developer Documentation/Tutorial 11 - Using Mutations to Delete an Item.md>) for more tips on what to do if you accidentally delete data you didn't mean to. (This won't help if you accidentally *change the properties!)*
-
-# Steps for Creating a New Record
-
-## Step 1 - Start with the Mutation Keyword
-
-All queries started with the `query` keyword; mutations start with the `mutation `keyword.&#x20;
+All queries started with the `query` keyword; mutations start with the `mutation` keyword.
 
 ```graphql
 mutation nameMyMutation {
@@ -36,9 +32,9 @@ mutation nameMyMutation {
 
 If using explorer, click the dropdown to select mutation instead of query, to unlock different options:
 
-![](./../.gitbook/assets/archbee_uploads/k9tpG-xPVBl-WmABctwCQ_image.png)
+![](../.gitbook/assets/archbee\_uploads/k9tpG-xPVBl-WmABctwCQ\_image.png)
 
-## Step 2) Select the "record\_create" mutation type
+### Step 2) Select the "record\_create" mutation type
 
 This will create a new record (or user\_create to create a new CRM user.)
 
@@ -53,11 +49,11 @@ mutation createWebAppItem{
 
 ```
 
-![record_create in explorer](./../.gitbook/assets/archbee_uploads/19bxi8ogGsFwBSGESU5Uq_image.png)
+![record\_create in explorer](../.gitbook/assets/archbee\_uploads/19bxi8ogGsFwBSGESU5Uq\_image.png)
 
-## Step 3 - use the record object to define the new record
+### Step 3 - use the record object to define the new record
 
-The required `record `object allows you to define both the properties of the new record and which table it should belong to.&#x20;
+The required `record` object allows you to define both the properties of the new record and which table it should belong to.
 
 Setting the table allows you to define which module or webapp it will belong to:
 
@@ -104,15 +100,15 @@ mutation createBlogItem{
 }
 ```
 
-As with queries, the explorer UI cannot handle multiple properties in a mutation. You can use the explorer to figure out which individual property types are possible and then add the code manually. `properties` itself can be written as an array with each object inside the array defining a property to set.&#x20;
+As with queries, the explorer UI cannot handle multiple properties in a mutation. You can use the explorer to figure out which individual property types are possible and then add the code manually. `properties` itself can be written as an array with each object inside the array defining a property to set.
 
-![Property types in explorer](./../.gitbook/assets/archbee_uploads/ZwiBT-QSsA6KNIuSoZu-__image.png)
+![Property types in explorer](../.gitbook/assets/archbee\_uploads/ZwiBT-QSsA6KNIuSoZu-\_\_image.png)
 
-### Data Types
+#### Data Types
 
-Each property must have a name which matches the ID of the field or custom field in Siteglide. When setting a value, you need to select a property value, value\_array, value\_boolean etc. depending on the platformOS type of data the field expects.&#x20;
+Each property must have a name which matches the ID of the field or custom field in Siteglide. When setting a value, you need to select a property value, value\_array, value\_boolean etc. depending on the platformOS type of data the field expects.
 
-To figure out the correct one, you can reference this page [Field Types](<../Siteglide Developer Documentation/Field Types.md>) which will show which platformOS types are used by each Siteglide type.&#x20;
+To figure out the correct one, you can reference this page [Field Types](../Siteglide%20Developer%20Documentation/Field%20Types.md) which will show which platformOS types are used by each Siteglide type.
 
 To find out which Siteglide types your table uses for each field, go to the corresponding WebApp or Module in the Siteglide Admin, or you can use this query to see each field's ID and Siteglide types together (you can also change the filter and properties to see which other tables are available):
 
@@ -134,11 +130,11 @@ value_booelan: true,
 value_float: 3.456
 ```
 
-## Step 4 - add results
+### Step 4 - add results
 
 While results are generally less useful in a mutation than in a query, having at least one result is generally required and your mutation won't work properly without it. The idea is simply to give you information about the record in the database after the mutation to confirm that the mutation was successful - even if this is simply an ID.
 
-Mutations which affect multiple records at once often have a `count `result which only returns the number of records created.
+Mutations which affect multiple records at once often have a `count` result which only returns the number of records created.
 
 You can add the results you need in the curly braces after the round brackets which follow `record_create`
 
@@ -242,14 +238,12 @@ If you have an error, the error information will display instead of the results.
 }
 ```
 
-# Step 5 - Pass in variables
+## Step 5 - Pass in variables
 
-We covered variables in more detail in [Tutorial 6 - Variables](<../Siteglide Developer Documentation/Tutorial 6 - Variables.md>) but they are just as useful in mutations!
+We covered variables in more detail in [Tutorial 6 - Variables](../Siteglide%20Developer%20Documentation/Tutorial%206%20-%20Variables.md) but they are just as useful in mutations!
 
 In the following example, variables are added to pass in data programatically to create the new Blog post:
 
-{% tabs %}
-{% tab title="GraphQL" %}
 ```graphql
 mutation createBlogItem($title: String!, $description: String!, $categories: [String]) {
   record_create(
@@ -275,16 +269,16 @@ mutation createBlogItem($title: String!, $description: String!, $categories: [St
   }
 }
 ```
-{% endtab %}
-{% tab title="Liquid" %}
-```liquid
-{% raw %}
-{% assign description = "Lorem Ipsum" %}
-{% graphql createBlogItem = "create_blog_item", title: "The newest Blog Post", description: description %}
-{% endraw %}
-```
-{% endtab %}
-{% endtabs %}
+
+
+
+\`\`\`liquid \{% assign description = "Lorem Ipsum" %\} \{% graphql createBlogItem = "create\_blog\_item", title: "The newest Blog Post", description: description %\}
+
+````
+
+</div>
+
+</div>
 
 ### Advanced - Using variables to pass in entire objects in GraphQL rather than single properties
 
@@ -294,8 +288,10 @@ If you like, you can use a variable to represent the entire properties object an
 
 Note how the `parse_json `tag is used with literal square brackets to create a JSON array with nested objects defined by curly braces. The `category_array `property is an example of how you can pull in Liquid from different sources into these properies, though `this.id` would only contain a category ID in for example a category detail layout.
 
-{% tabs %}
-{% tab title="GraphQL" %}
+<div data-gb-custom-block data-tag="tabs"></div>
+
+<div data-gb-custom-block data-tag="tab" data-title='GraphQL'>
+
 ```graphql
 mutation createBlogItem($properties: [PropertyInputType!]!) {
   record_create(record: {table: "module_3", properties: $properties}) {
@@ -303,33 +299,17 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
     properties
   }
 }
-```
-{% endtab %}
+````
 
-{% tab title="Liquid" %}
-```liquid
-{% raw %}
-{% parse_json properties %}
-  [
-    {
-      "name": "webapp_field_3_1",
-      "value": "Blog Title"
-    },
-    {
-      "name": "webapp_field_3_3",
-      "value": "Lorem Ipsum"
-    },
-    {
-      "name": "category_array",
-      "value_array": [{{this.id}}]
-    }
-  ]
-{% endparse_json %}
-{% graphql createBlogItem = "create_blog_item", properties: properties %}
-{% endraw %}
+
+
+\`\`\`liquid \{% parse\_json properties %\} \[ { "name": "webapp\_field\_3\_1", "value": "Blog Title" }, { "name": "webapp\_field\_3\_3", "value": "Lorem Ipsum" }, { "name": "category\_array", "value\_array": \[\{{this.id\}}] } ] \{% endparse\_json %\} \{% graphql createBlogItem = "create\_blog\_item", properties: properties %\}
+
 ```
-{% endtab %}
-{% endtabs %}
+
+</div>
+
+</div>
 
 Note, the structure of the JSON we are passing in the previous example is similar to the structure of properties in the mutation, but it is necessary in JSON to use double quotes around the keys like `name`:, while the GraphQL syntax needs no quotes.
 
@@ -350,3 +330,4 @@ You could experiment with the `user_create` mutation to create users. Instead of
 # Next Time
 
 In the next tutorial, we'll look at more examples of mutations, including mutations to update and delete records.
+```

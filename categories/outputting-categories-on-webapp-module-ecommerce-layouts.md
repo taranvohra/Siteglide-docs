@@ -36,6 +36,7 @@ To loop over all these Category IDs you can use a Liquid For Loop:
   {{category}} <!-- outputs the ID of the Category -->
 {% endfor %}
 {% endraw %}
+
 ```
 
 Once you have the Category ID, you can use the Categories data object to access any other Category fields, e.g. the name:
@@ -47,6 +48,7 @@ Once you have the Category ID, you can use the Categories data object to access 
   {{context.exports.categories.data[category].name}} <!-- outputs this Category name -->
 {% endfor %}
 {% endraw %}
+
 ```
 
 ## Displaying the first, last or nth Category which belongs to the current Item
@@ -66,13 +68,15 @@ You can use the following to only output the name of the last category assigned 
 You can use the following to only output the name of a specifc category assigned to the Item, by its zeroed-index, where 0 is the first and 1 is the second:
 
 ```liquid
-{% raw %}
 <!-- Fetch second Category name -->
 {% raw %}
 {% assign categoryID == this.category_array[1] %}
 {% endraw %}
+
+
 {{context.exports.categories.data[categoryID].name}}
-{% endraw %}
+
+</div>
 ```
 
 ## Check if an Item has an Nth Category assigned to it
@@ -80,7 +84,6 @@ You can use the following to only output the name of a specifc category assigned
 If you want to make sure the category item in the array you are calling exists first, then you should do the following: First category in the array:
 
 ```liquid
-{% raw %}
 
 {% raw %}
 {% if this.category_array[0] != blank %}
@@ -88,13 +91,13 @@ If you want to make sure the category item in the array you are calling exists f
 {% endif %}
 {% endraw %}
 
-{% endraw %}
+
+</div>
 ```
 
 Second category in the array (and so on):
 
 ```liquid
-{% raw %}
 
 {% raw %}
 {% if this.category_array[1] != blank %}

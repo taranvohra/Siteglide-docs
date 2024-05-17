@@ -1,32 +1,28 @@
+# Events - Filter By Host (Author)
 
 This Option Lets you filter Events by Host
 
 ![](https://downloads.intercomcdn.com/i/o/203113631/71658f1f3e7c25f78cc26d27/image.png)
 
-# Prerequisites
+## Prerequisites
 
-*   You have installed the Events Module
+* You have installed the Events Module
+* You have installed the Authors Module
+* You have added at least one Author as an Event Host
 
-*   You have installed the Authors Module
-
-*   You have added at least one Author as an Event Host
-
-# Introduction
+## Introduction
 
 This article explains:
 
-*   How to include the Browse by Host (Author) Option when including a Blog List
+* How to include the Browse by Host (Author) Option when including a Blog List
+* Default Layout Examples
+* How to give feedback to the User about their results e.g. in the screenshot "Events hosted by Regina Alexander"
 
-*   Default Layout Examples
-
-*   How to give feedback to the User about their results e.g. in the screenshot "Events hosted by Regina Alexander"
-
-# Add "use\_adv\_search" parameter to include for Event List View
+## Add "use\_adv\_search" parameter to include for Event List View
 
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Event Items, this can be added to the include for Event List like so:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'default'
@@ -36,70 +32,70 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     sort_order: 'desc'
     use_adv_search: 'true' 
 -%}
-{% endraw %}
+
 ```
 
-# To Include this Option
+## To Include this Option
 
 Include the following liquid to dynamically get a list of available Event Hosts for the User to select.
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_authors/get/get_authors'
     author_layout: 'design_system/1/author'
     author_layout_type: 'list'
     author_field: 'module_field_12_4' 
 -%}
-{% endraw %}
+
 ```
 
 The `author_field` will be `module_field_12_4` if you are using Siteglide's Authors Module. The layouts are structured in the same way as Category Layouts in the previous section.
 
-# Default Layout Examples with Explanation
+## Default Layout Examples with Explanation
 
-### wrapper.liquid
+#### wrapper.liquid
 
 ```liquid
-{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+      {% raw %}
+{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+{% endraw %}
     </ul>
   </div>
 </div>
-{% endraw %}
+
 ```
 
-### item.liquid
+#### item.liquid
 
 ```liquid
-{% raw %}
 <a
   class="authorAnchorSidebar" 
   href="{{context.location.pathname}}?module_field_12_4={{this.id}}&author_name={{this.name | url_encode}}"
 >
-  {% if this['Image'] -%}
+  {% raw %}
+{% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
+{% endraw %}
   <li>{{this['name']}}</li>
 </a>
-{% endraw %}
+
 ```
 
 To filter the Blog List View, you need a link to the Blog List View slug, followed by `"?module_field_12_4={{this.id}}"`. Siteglide will be able to read the URL and filter the list.
 
-# User Feedback - Displaying the currently applied filter
+## User Feedback - Displaying the currently applied filter
 
 ![](https://downloads.intercomcdn.com/i/o/203114241/3ac8c19e758992cd83ca0b89/image.png)
 
 To make it easier to give feedback to the User, you can optionally include the Host's name in the URL:
 
 ```liquid
-{% raw %}
 href="{{context.location.pathname}}?module_field_12_4={{this.id}}&host_name={{this.name | url_encode}}"
-{% endraw %}
+
 ```
 
 On the List view, you can then include the following liquid to read the URL and decode the Author name you are currently filtering by:
@@ -111,8 +107,3 @@ On the List view, you can then include the following liquid to read the URL and 
 {% endif %}
 {% endraw %}
 ```
-
-
-
-
-

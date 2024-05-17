@@ -1,4 +1,4 @@
-# What happens when a user is logged in, but another person in their household or office submits a form?
+# Shared Devices
 
 This problem was initially reported here -> [https://roadmap.siteglide.com/bugs/p/forms-overwriting-crm-records](https://roadmap.siteglide.com/core-platform/p/forms-overwriting-crm-records)
 
@@ -18,6 +18,7 @@ You can also add your own message on page like this:
   <p>Hi {{ session.current_user.name }}! <a href="/logout">(not you?)</a></p>
 {%- endif -%}
 {% endraw %}
+
 ```
 
 ### 2 - How to allow updating of existing user data - Essentially a 'user update' form

@@ -4,7 +4,7 @@ description: >-
   can also output fields that were submitted in the Form.
 ---
 
-# Dynamic Content in Workflow and Autoresponder Email Automations
+# Using Content from Form Submissions in the Subsequent Automation/ Email
 
 Emails are Liquid files, so they can include WebApp or Module List Views. You can also output fields that were submitted in the Form.
 
@@ -14,19 +14,19 @@ Emails are Liquid files, so they can include WebApp or Module List Views. They c
 
 ## Outputting Form Fields - submitted in the Form which triggered the Email
 
-Let's say you have a User fill in a [form](https://help.siteglide.com/article/99-forms-getting-started) and you want to send a confirmation Email to them, wouldn't it be great to personalise it to them a little? Since they've just filled in their name and other information in the form, accessing the form submission information is extremely useful.&#x20;
+Let's say you have a User fill in a [form](https://help.siteglide.com/article/99-forms-getting-started) and you want to send a confirmation Email to them, wouldn't it be great to personalise it to them a little? Since they've just filled in their name and other information in the form, accessing the form submission information is extremely useful.
 
-To test, and find the real names of the fields you might need, output all available form submission data in a test Email with: `{{form}}`Use that to identify form fields that you would like to output and use dot notation to output the ones you need.&#x20;
+To test, and find the real names of the fields you might need, output all available form submission data in a test Email with: `{{form}}`Use that to identify form fields that you would like to output and use dot notation to output the ones you need.
 
 For example, it should be possible to access the name of the User submitting the form with the following: `{{form.properties.name}}` Custom Fields can also be accessed here, though their database names will show instead of their user-friendly names, so its best to use the content to identify them while testing: `{{form.properties.form_field_4_1}}`
 
 ### Outputting WebApp and Module Data in the Email
 
-Visit the related Articles below for reference on the Liquid tags needed to output this kind of Content.  One extra thing to think about here is, what if I want to dynamically determine which item I should display in the Email?
+Visit the related Articles below for reference on the Liquid tags needed to output this kind of Content. One extra thing to think about here is, what if I want to dynamically determine which item I should display in the Email?
 
 #### Outputting a Specific WebApp Item in an Email
 
-To make sure that the Email can access the dynamic ID of custom content you want to display, you can create a custom field in the Form.&#x20;
+To make sure that the Email can access the dynamic ID of custom content you want to display, you can create a custom field in the Form.
 
 This would probably either need to be hidden from the User, or be a datasource type field to allow the user to select an item.
 
@@ -36,28 +36,19 @@ Note- the first line of the next example has been left as a generic assign (whic
 
 _E.g. in the Form Layout:_
 
-{% tabs %}
-{% tab title="Form Layout Liquid" %}
-```liquid
-{% raw %}
-{% assign my_dynamic_webapp_id = "98657" %}
-<div style="display: none;">
-  <input 
-    hidden class="form-control" 
-    name="{{ form_builder.fields.properties.form_field_2_1.name }}" 
-    data-cfs="4-1-input_text" 
-    type="text" 
-    value="{{my_dynamic_webapp_id}}"
-  />
-</div>
-{% endraw %}
-```
-{% endtab %}
 
-{% tab title="Email Automation Liquid" %}
+
+\`\`\`liquid \{% assign my\_dynamic\_webapp\_id = "98657" %\}
+
+````
+
+</div>
+
+<div data-gb-custom-block data-tag="tab" data-title='Email Automation Liquid'></div>
 ```liquid
 {% raw %}
 {% assign my_dynamic_webapp_id = form.properties.form_field_2_1 %}
+{% endraw %}
 {%- include 'webapp'
     id: '1' 
     item_ids: my_dynamic_webapp_id
@@ -66,10 +57,9 @@ _E.g. in the Form Layout:_
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
-{% endraw %}
-```
-{% endtab %}
-{% endtabs %}
+
+
+````
 
 ## Related Articles
 
