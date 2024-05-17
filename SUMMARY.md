@@ -25,13 +25,14 @@
 
 ## Assets
 
-* [Assets Reference](assets/assets-reference.md)
 * [💡 About Assets](assets/introduction.md)
+* [👀 Assets Reference](assets/assets-reference.md)
 * [🪴 Assets File Structure](assets/file-structure.md)
-* [🔹 Linking to Assets](assets/linking-to-assets-front-end.md)
+* [🔹 Linking to Assets Explained](assets/linking-to-assets-front-end.md)
 * [🔹 Fetching Assets only when needed and Avoiding Duplicates](assets/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
 * [💻 Assets with CLI](assets/assets-with-cli.md)
 * [🔼 Migrating Assets](migrating-to-siteglide/migrating-assets.md)
+* [🔧 Assets Troubleshooting](assets/assets-troubleshooting.md)
 
 ## Forms
 
