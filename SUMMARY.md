@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [👋 Welcome](README.md)
 
 ## Siteglide CLI
 
@@ -25,10 +25,13 @@
 
 ## Assets
 
+* [Assets Reference](assets/assets-reference.md)
 * [💡 About Assets](assets/introduction.md)
 * [🪴 Assets File Structure](assets/file-structure.md)
 * [🔹 Linking to Assets](assets/linking-to-assets-front-end.md)
-* [Migrating Assets](migrating-to-siteglide/migrating-assets.md)
+* [🔹 Fetching Assets only when needed and Avoiding Duplicates](assets/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
+* [💻 Assets with CLI](assets/assets-with-cli.md)
+* [🔼 Migrating Assets](migrating-to-siteglide/migrating-assets.md)
 
 ## Forms
 
