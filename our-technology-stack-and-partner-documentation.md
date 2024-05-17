@@ -14,16 +14,27 @@ layout:
 
 # 🔹 Our Technology Stack and Partner Documentation
 
+## Which Tools Should I Use to Work with Siteglide?
+
+There are a few main ways to work with your Siteglide Site:
+
+* Using the [Siteglide Admin](https://admin.siteglide.com/#/portal) - Create an Account and use the User Interface to explore and build your Site. If you have any questions, use our live chat button to get help.
+* Using the [Siteglide CLI](cli/introduction.md) - Efficiently work directly with your Site's code on your own machine.
+
 ## Which Coding Languages are used in Siteglide?
 
-
+{% hint style="info" %}
+Wait I'm not a developer?\
+\
+Don't worry, Siteglide has low-code tools like Studio, Toolbox and SiteBuilder to help Designers and Agents get stuck in as well!
+{% endhint %}
 
 In the course of this Documentation, you will probably come across the following languages that we use in many of our features and examples:
 
-* HTML - The standard Markup Language of the web
-* JavaScript - The standard client-side scripting language of the web
-* Yaml - Used by Siteglide to store settings like page metadata, normally at the top of Liquid files.
-* Liquid - Used by Siteglide for dynamic server-side rendering of HTML and other languages
+* HTML - The standard Markup Language of the web. [Learn more at MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* JavaScript - The standard client-side scripting language of the web. [Learn more at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* YAML - Used by Siteglide to store settings like page metadata, normally at the top of Liquid files.
+* Liquid - Used by Siteglide for dynamic server-side rendering of HTML and other languages.
 * GraphQL - Used by Siteglide to query the database and modify data. Often for beginners this will be tucked away inside our features, but learning it allows you to unlock more powerful possibilities.
 
 ## Partner and 3rd Party Documentation
