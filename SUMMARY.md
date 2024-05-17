@@ -4,17 +4,22 @@
 
 ## Siteglide CLI
 
-* [Siteglide CLI Introduction](cli/introduction.md)
-* [Siteglide CLI Changelog](cli/cli-changelog.md)
-* [Siteglide CLI Migrate Command - Manual Forms](cli/cli-migrate-command-manual-forms.md)
-* [Siteglide CLI Migrate Command - Converting Forms](cli/cli-migrate-command-converting-forms.md)
+* [💡 About Siteglide CLI](cli/introduction.md)
+* [🍃 Getting Started with CLI](siteglide-cli/getting-started-with-cli.md)
+* [👀 Siteglide CLI Reference](siteglide-cli/siteglide-cli-reference.md)
+* [🗓️ Siteglide CLI Changelog](cli/cli-changelog.md)
+* [🔼 Siteglide CLI Migrate Command - Manual Forms](cli/cli-migrate-command-manual-forms.md)
+* [🔼 Siteglide CLI Migrate Command - Converting Forms](cli/cli-migrate-command-converting-forms.md)
 
-## Pages
+## Pages and Page Templates
 
-* [Accessing Page Data](pages/accessing-page-data.md)
-* [Pages with Siteglide CLI](pages/pages-with-siteglide-cli.md)
-* [Page Templates](pages/page-templates.md)
-* [Page Templates with Siteglide CLI](pages/page-templates-with-cli.md)
+* [💡 About Pages](pages-and-page-templates/about-pages.md)
+* [💡 About Page Templates](pages-and-page-templates/page-templates.md)
+* [👀 Pages and Page Templates Reference](pages-and-page-templates/accessing-page-data.md)
+* [🌳 Pages and Page Templates File Structure](pages-and-page-templates/pages-and-page-templates-file-structure.md)
+* [💻 Pages with Siteglide CLI](pages-and-page-templates/pages-with-siteglide-cli.md)
+* [💻 Page Templates with Siteglide CLI](pages-and-page-templates/page-templates-with-cli.md)
+* [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/pages-and-page-templates-on-platformos.md)
 
 ## Includes
 

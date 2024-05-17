@@ -5,12 +5,14 @@ createdAt: 2021-04-09T13:11:37.000Z
 updatedAt: 2023-03-03T08:11:19.000Z
 ---
 
-# Siteglide CLI Migrate Command - Manual Forms
+# 🔼 Siteglide CLI Migrate Command - Manual Forms
 
 {% hint style="info" %}
 ### Note
 
-This is only necessary if you are not updating to a form built within Siteglide Admin before go live.
+This article refers to working with forms after using the Siteglide-CLI command to migrate a static website. \
+\
+This is only necessary if you have used this command and are not updating to a form built within Siteglide Admin before go live.
 {% endhint %}
 
 Depending on your system configuration, sometimes forms will not automatically convert during the migration process. If this has happened then please follow the steps below to do this manually:
