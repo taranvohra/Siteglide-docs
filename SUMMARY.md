@@ -14,11 +14,11 @@
 
 ## Pages and Page Templates
 
-* [🔹 System Pages Explained](pages-and-page-templates/system-pages-explained.md)
 * [💡 About Pages](pages-and-page-templates/about-pages.md)
 * [💡 About Page Templates](pages-and-page-templates/page-templates.md)
 * [👀 Pages and Page Templates Reference](pages-and-page-templates/accessing-page-data.md)
 * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/pages-and-page-templates-file-structure.md)
+* [🔹 System Pages Explained](pages-and-page-templates/system-pages-explained.md)
 * [💻 Pages with Siteglide CLI](pages-and-page-templates/pages-with-siteglide-cli.md)
 * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/page-templates-with-cli.md)
 * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/pages-and-page-templates-on-platformos.md)
@@ -48,6 +48,9 @@
 
 ## Forms
 
+* [💡 About Forms](forms/about-forms.md)
+* [👀 Forms Reference](forms/forms-reference.md)
+* [Forms Folder Structure](forms/forms-folder-structure.md)
 * [Using Custom Field Set fields in a Form's Custom Layout](forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 * [File Upload Previews](forms/file-upload-previews.md)
 * [Forms Success Callback](forms/forms-success-callback.md)
