@@ -4,5 +4,5 @@ description: >-
   included inside your code to achieve certain functions.
 ---
 
-# Siteglide Includes
+# 👀 Miscellaneous Siteglide Includes
 
