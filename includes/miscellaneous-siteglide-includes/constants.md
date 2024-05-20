@@ -1,4 +1,4 @@
-# constants
+# 👀 constants
 
 This is recommended at the top of most Pages and Page Templates if you are using Siteglide-CLI. It is not needed on the Siteglide Admin because it's included but hidden.
 
