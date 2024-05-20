@@ -1,2 +1,2 @@
-# 👀 ecommerce/constants\_json
+# 👀 constants\_json
 

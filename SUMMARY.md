@@ -27,8 +27,8 @@
 * [💡 About Includes (Partials)](includes/about-includes-partials.md)
 * [🌳 Includes File Structure](includes/includes-folder-structure.md)
 * [👀 Includes Reference](includes/includes-reference.md)
-* [👀 Miscellaneous Siteglide Includes](includes/miscellaneous-siteglide-includes/README.md)
-  * [👀 constants\_json](includes/miscellaneous-siteglide-includes/ecommerce-constants\_json.md)
+* [👀 General Siteglide Includes](includes/miscellaneous-siteglide-includes/README.md)
+  * [👀 constants\_json](includes/miscellaneous-siteglide-includes/constants\_json.md)
 * [💻 Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
 * [🔧 Includes Troubleshooting](includes/includes-troubleshooting.md)
 
