@@ -25,11 +25,15 @@
 ## Includes
 
 * [💡 About Includes (Partials)](includes/about-includes-partials.md)
-* [🌳 Includes Folder Structure](includes/includes-folder-structure.md)
+* [🌳 Includes File Structure](includes/includes-file-structure.md)
+* [👀 Includes Reference](includes/includes-reference.md)
 * [💻 Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
-* [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
+* [Siteglide Includes](includes/siteglide-includes.md)
+* [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard/README.md)
+  * [Page 1](includes/ecommerce-checkout-standard/page-1.md)
 * [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
 * [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)
+* [🔧 Includes Troubleshooting](includes/includes-troubleshooting.md)
 
 ## Assets
 
