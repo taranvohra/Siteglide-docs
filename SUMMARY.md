@@ -29,6 +29,7 @@
 * [👀 Includes Reference](includes/includes-reference.md)
 * [👀 General Siteglide Includes](includes/miscellaneous-siteglide-includes/README.md)
   * [👀 constants\_json](includes/miscellaneous-siteglide-includes/constants\_json.md)
+  * [constants](includes/miscellaneous-siteglide-includes/constants.md)
 * [💻 Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
 * [🔧 Includes Troubleshooting](includes/includes-troubleshooting.md)
 
