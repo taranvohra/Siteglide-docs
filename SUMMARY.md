@@ -49,9 +49,9 @@
 ## Forms
 
 * [💡 About Forms](forms/about-forms.md)
-* [👀 Forms Reference](forms/forms-reference.md)
-* [Forms Folder Structure](forms/forms-folder-structure.md)
-* [Using Custom Field Set fields in a Form's Custom Layout](forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
+* [👀 Form Reference](forms/form-reference.md)
+* [🌳 Forms Folder Structure](forms/forms-folder-structure.md)
+* [✔️ Using Custom Field Set fields in a Form's Custom Layout](forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 * [File Upload Previews](forms/file-upload-previews.md)
 * [Forms Success Callback](forms/forms-success-callback.md)
 * [Forms Error Callback and Validation](forms/custom-javascript-validation-for-forms.md)
