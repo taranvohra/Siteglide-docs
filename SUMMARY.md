@@ -25,7 +25,8 @@
 ## Includes
 
 * [💡 About Includes (Partials)](includes/about-includes-partials.md)
-* [Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
+* [🌳 Includes Folder Structure](includes/includes-folder-structure.md)
+* [💻 Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
 * [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
 * [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
 * [ecommerce/constants\_json](includes/ecommerce-constants\_json.md)

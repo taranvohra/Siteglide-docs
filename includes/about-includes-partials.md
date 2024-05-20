@@ -11,27 +11,31 @@ Using includes can have the following benefits:
 
 ## Types of Include
 
-### Content Sections
+### Content Sections and Code Snippets
 
-One kind of include which is easy for clients and agencies alike to access from the Siteglide Admin, if their user roles allow.&#x20;
+A kind of include which is easy for clients and agencies alike to access from the Siteglide Admin, if their user roles allow.&#x20;
 
-### Code Snippets
+The only difference between Content Sections and Code Snippets is organisational: they are functionally the same, but generally Content Sections will contain functional front-end HTML, whereas Code Snippets are more likely to contain invisible `<head>` metadata or `JavaScript` code. This is not a rule, and it's up to agencies how they use them.
 
-One kind of include which is easy for clients and agencies alike to access from the Siteglide Admin, if their user-roles allow. The only difference between Content Sections and Code Snippets is organisational: they are functionally the same, but generally Content Sections will contain functional front-end HTML, whereas Code Snippets are more likely to contain invisible `<head>` metadata or `JavaScript` code. This is not a rule, and it's up to agencies how they use them.
+### Headers and Footers
+
+A kind of include which is easy for clients and agencies alike to access from the Siteglide Admin, if their user roles allow.&#x20;
+
+Headers and Footers are intended a an optional place to store code which forms the visible header (or footer). It isn't the same thing as using our [Menu Builder Module](../menu-builder/introduction.md) to include a 'menu' feature, though often it will contain this as it's main feature. You can choose to skip this and place header code straight in the [Page Template](../pages-and-page-templates/page-templates.md).
 
 ### WebApps, Modules and More Includes From Siteglide
 
 Throughout our documentation, we'll give you the code to add a feature to your site and it will contain an include tag. Usually this will include a hidden Liquid file from the Siteglide module which controls key functionality and fetches important data, which will then in turn include the layout file which you can customise yourself.
 
-### Diagram of Include Tag Structure
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
-```mermaid
-graph TD;
-    A[<div data-gb-custom-block data-tag="include"></div>] --> B[Hidden Module File];
-    B --> C[User Customisable Layout File];
-```
+Check out the rest of this topic for more special Siteglide Liquid includes.
 
 ### Custom Path
 
-a
+You can write your own Liquid partial files and include them anywhere. See:
+
+{% content-ref url="includes-with-siteglide-cli.md" %}
+[includes-with-siteglide-cli.md](includes-with-siteglide-cli.md)
+{% endcontent-ref %}
 
