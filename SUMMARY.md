@@ -24,6 +24,7 @@
 
 ## Includes
 
+* [💡 About Includes (Partials)](includes/about-includes-partials.md)
 * [Includes with Siteglide CLI](includes/includes-with-siteglide-cli.md)
 * [👀 ecommerce/checkout\_standard](includes/ecommerce-checkout-standard.md)
 * [ecommerce/basic\_payment](includes/ecommerce-basic-payment.md)
@@ -227,6 +228,7 @@
 
 ## Liquid Templating Language
 
+* [💡 About Liquid](liquid-templating-language/about-liquid.md)
 * [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
 * [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid/accessing-data-from-liquid-objects.md)
 * [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
@@ -236,8 +238,8 @@
 
 ## GraphQL Query Language
 
+* [💡 About GraphQL](graphql/about-graphql.md)
 * [Tutorial Overview](graphql/tutorial-overview.md)
-* [About GraphQL](graphql/about-graphql.md)
 * [Tutorial 1 - Your First Query](graphql/tutorial-1-your-first-query.md)
 * [Tutorial 2 - Pagination](graphql/tutorial-2-pagination.md)
 * [Tutorial 3 - Filtering the Results](graphql/tutorial-3-filtering-the-results.md)

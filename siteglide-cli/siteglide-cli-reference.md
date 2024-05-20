@@ -1,5 +1,9 @@
 # 👀 Siteglide CLI Reference
 
+### Before you Start
+
+[getting-started-with-cli.md](getting-started-with-cli.md "mention")
+
 ### Commands
 
 These commands should be run from within the project folder. Commands follow the format of `siteglide-cli <command> <env> <flags>` , so for example if you would like to view the logs of your production environment in "quiet mode", you would run:
