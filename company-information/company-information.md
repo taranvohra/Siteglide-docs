@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# Company Information
+# 💡 About Company Information
 
 Company Information can be used to store key contact and branding information for your client while making it easy for them to manage. You can then use the liquid tags below to output this globally stored information anywhere on the site.
 

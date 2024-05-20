@@ -14,6 +14,7 @@
 
 ## Pages and Page Templates
 
+* [🔹 System Pages Explained](pages-and-page-templates/system-pages-explained.md)
 * [💡 About Pages](pages-and-page-templates/about-pages.md)
 * [💡 About Page Templates](pages-and-page-templates/page-templates.md)
 * [👀 Pages and Page Templates Reference](pages-and-page-templates/accessing-page-data.md)
@@ -188,7 +189,8 @@
 
 ## Company Information
 
-* [Company Information](company-information/company-information.md)
+* [💡 About Company Information](company-information/company-information.md)
+* [🔧 Troubleshooting Company Information](company-information/troubleshooting-company-information.md)
 
 ## Site Search
 
