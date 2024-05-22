@@ -22,16 +22,16 @@ This will be an essential part of the URLs.
 
 To build a URL, you will need to start with the beginning of the Cloudinary URL, which will direct the browser to their API endpoint, replacing 'demo' with your cloud name from step 2:
 
-`https://res.cloudinary.com/demo/image/upload/`\
+`https://res.cloudinary.com/demo/image/fetch/`\
 
 
 Next add your optional transformations to resize the image by a number of pixels width or height:
 
-`https://res.cloudinary.com/demo/image/upload/h_200,w_200`
+`https://res.cloudinary.com/demo/image/fetch/h_200,w_200`
 
 Next optionally add transformations to automatically transform to next-gen image formats on supported browsers only:
 
-`https://res.cloudinary.com/demo/image/upload/h_200,w_200/f_auto/`
+`https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/`
 
 then use Liquid to get the path to the original image on Siteglide's CDN. See&#x20;
 
@@ -46,7 +46,7 @@ For example:&#x20;
 Putting it all together:
 
 ```liquid
-https://res.cloudinary.com/demo/image/upload/h_200,w_200/f_auto/{{'images/example.jpg' | asset_url}}
+https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/{{'images/example.jpg' | asset_url}}
 ```
 
 ## Step 4 - Add HTML to deliver the Appropriate URL to several Screen Resolutions - Optional
@@ -55,18 +55,24 @@ https://res.cloudinary.com/demo/image/upload/h_200,w_200/f_auto/{{'images/exampl
 
 ```liquid
 <img
-  srcset="https://res.cloudinary.com/demo/image/upload/w_480/f_auto/{{'images/example.jpg' | asset_url}} 480w, https://res.cloudinary.com/demo/image/upload/w_800/f_auto/{{'images/example.jpg' | asset_url}} 800w"
+  srcset="https://res.cloudinary.com/demo/image/fetch/w_480/f_auto/{{'images/example.jpg' | asset_url}} 480w, https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}} 800w"
   sizes="(max-width: 600px) 480px,
          800px"
-  src="https://res.cloudinary.com/demo/image/upload/w_800/f_auto/{{'images/example.jpg' | asset_url}}"
+  src="https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}}"
   alt="Example of serving different sized images on different screen widths" />
 ```
+
+Learn more about the&#x20;
 
 ## Step 5 - Read the Cloudinary Docs and Experiment with more Image Transformations - Optional
 
 There are many more options available. Read more here:
 
-[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image\_transformations)
+[https://cloudinary.com/documentation/image\_transformations](https://cloudinary.com/documentation/image\_transformations)\
+\
+In these examples, you may need to replace 'upload' with 'fetch' in the URL to support remote images from the Siteglide file manager.
 
+Also check out using client hints on some browsers to further fine-tune image requests:
 
+[https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints](https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints)
 
