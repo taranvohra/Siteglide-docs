@@ -1,21 +1,20 @@
-# File Upload Previews
+# 🔹 File Upload Previews
 
 When a User uploads a File as part of a Form, you can automatically show previews of the images it uploads.
 
 ## Introduction
 
-When a User uploads a File as part of a [Form](https://help.siteglide.com/article/99-forms-getting-started), you can automatically show previews of the images it uploads.
+When a User uploads a File as part of a Form, you can automatically show previews of the images it uploads.
 
 We've aimed for maximum flexibility- you create the preview element with any HTML structure you like. Set the correct HTML attributes and we'll use your element to display an image preview as soon as one is available.
 
-![](./../.gitbook/assets/image-preview.png)
+![](../.gitbook/assets/image-preview.png)
 
 ## Syntax
 
 In these examples, we have a Form with a single upload field. In these examples the field's ID in the database is `form_field_11_1`.
 
 ```liquid
-{% raw %}
 <div class="input-group"> 
   <label for="form_field_11_1">File</label>
   <input 
@@ -29,7 +28,7 @@ In these examples, we have a Form with a single upload field. In these examples 
     type="file"
   /> 
 </div>
-{% endraw %}
+
 ```
 
 The upload field already consists of the following:
@@ -51,7 +50,7 @@ We'll also give you some feedback on what kind of file type the Image is by sett
 
 You can set the CSS of your element in advance so that the image displays in a manner of your choosing. See recommended CSS below.
 
-### _Standard Images_
+### Standard Images
 
 Here's an example `img` preview element:
 
@@ -60,7 +59,6 @@ Here's an example `img` preview element:
 Full code for this input:
 
 ```liquid
-{% raw %}
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -75,7 +73,7 @@ Full code for this input:
   />
   <img data-file-preview="form_field_11_1_file" height="100" width="100" />
 </div>
-{% endraw %}
+
 ```
 
 ### Background Images
@@ -87,7 +85,6 @@ Here's an example `<div>` element designed to use `background-image` to display 
 Full code for this input:
 
 ```liquid
-{% raw %}
 <div class="input-group">
   <label for="form_field_11_1">File</label>
   <input
@@ -102,7 +99,6 @@ Full code for this input:
   />
   <div data-file-preview="form_field_11_1_file"></div>
 </div>
-{% endraw %}
 ```
 
 ### Other File Types
@@ -142,7 +138,7 @@ height: 100px;
 
 As we use data-attributes extensively in this feature, you may also find it helpful to target these attributes.
 
-For example, the following selector will target all of your File Preview elements: `[data-file-preview] {    }`
+For example, the following selector will target all of your File Preview elements: `[data-file-preview] { }`
 
 The following will target all of your File Preview elements which have a File uploaded to them: `[data-file-preview][data-preview-file-type] { }`
 

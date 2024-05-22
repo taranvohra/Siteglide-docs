@@ -1,4 +1,4 @@
-# Custom JavaScript Validation for Forms
+# 🔹 Forms Error Callback and Validation
 
 This article gives some examples for different ways to validate Siteglide forms on the Front End using JavaScript.
 
@@ -16,14 +16,13 @@ For most errors, we'll provide a single error message which can be displayed. Fo
 Fields must be marked as "required" in the Admin, and in the HTML of your Form Layout, in order for them to trigger the validation process.
 
 ```liquid
-{% raw %}
 <input 
   class="form-control required" 
   id="{{ form_builder.fields.properties.form_field_4_1.name }}" 
   name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
   type="text"
 >
-{% endraw %}
+
 ```
 
 For most fields, we will validate only whether or not a field has been submitted- but for emails we take the extra step of checking whether or not the format of the email is valid.
@@ -48,7 +47,7 @@ A class of `.input-error` gets added to fields if they fail to validate, which y
 
 ## Passing your Custom Function in as an Argument
 
-You can write your own custom validation by changing:&#x20;
+You can write your own custom validation by changing:
 
 `<button onClick="s_form_submit_v2(this,'form_12');">` to be: `<button onClick="s_form_submit_v2(this,'form_12',error);">`
 
@@ -88,7 +87,6 @@ The example below demonstrates the following:
 _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for this example, let's invent a data-attribute `data-custom-msg` to store custom error messages against the field we want to display them for:
 
 ```liquid
-{% raw %}
 <input 
   data-custom-msg="You forgot the question field!!!" 
   class="form-control required" 
@@ -96,7 +94,6 @@ _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for
   name="{{ form_builder.fields.properties.form_field_4_1.name }}"  
   type="text"
 >
-{% endraw %}
 ```
 
 \*\*\* Step 3) Add CSS\*\*\* The CSS plays a visual role here, but also a functional one- as the boxes displaying the errors should be hidden when the Form is submitting and the Siteglide class can be used to select for this.

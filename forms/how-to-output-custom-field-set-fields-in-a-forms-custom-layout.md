@@ -1,4 +1,4 @@
-# ✔️ Using Custom Field Set fields in a Form's Custom Layout
+# 📋 Steps to Using Custom Field Set fields in a Form's Custom Layout
 
 Default Form Layouts should be automatically updated with Custom Field Set fields. However, custom Form Layouts will need further syntax.
 
@@ -35,8 +35,8 @@ The key HTML attribute will be located on different elements depending on the fi
 
 Check the Reference to see the syntax for each type:
 
-{% content-ref url="form-reference.md" %}
-[form-reference.md](form-reference.md)
+{% content-ref url="forms-reference.md" %}
+[forms-reference.md](forms-reference.md)
 {% endcontent-ref %}
 
 If the type does not fit any of the types here, you can use text.

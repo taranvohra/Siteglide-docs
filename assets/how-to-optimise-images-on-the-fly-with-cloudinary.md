@@ -1,4 +1,4 @@
-# ✔️ How to Optimise Images on the Fly with Cloudinary
+# 📋 Steps to Optimise Images on the Fly with Cloudinary
 
 ## Introduction
 

@@ -1,6 +1,6 @@
-# 👀 Form Reference
+# 👀 Forms Reference
 
-## Including a Form
+Including a Form
 
 ```liquid
 {% raw %}
@@ -18,6 +18,87 @@ Often you can save time by starting with a default layout and copying it to buil
 If you output two forms with the same ID, but different layouts, they may display different fields and look visually different, but they would use the same settings and their cases will be stored in the same database table.
 
 ## Form Layouts
+
+### The Form Tag
+
+Every Form should contain the \`\{% form %\} \{% endform %\}\` opening and closing tags where the HTML form element's closing tags would normally go. These will output the HTML tag along with important, hidden system fields.
+
+Learn more including how to pass HTML ID and class attributes:
+
+[https://documentation.platformos.com/api-reference/liquid/platformos-tags#form](https://documentation.platformos.com/api-reference/liquid/platformos-tags#form)
+
+### Submitting a Form
+
+```liquid
+<button type="button" onClick="s_form_submit_v2(this,'form_1', function(errors) {
+  //On Error
+},function(redirect) {
+  //On Success
+})">Submit</button>
+```
+
+Parameters:
+
+<details>
+
+<summary>1st - Button - DOM Element (required) </summary>
+
+A reference to the button element which should be a child of the Form which will be submitted
+
+</details>
+
+<details>
+
+<summary>2nd - Form ID - String (required) </summary>
+
+A reference to the Form ID in Siteglide
+
+</details>
+
+<details>
+
+<summary>3rd - Error Callback - function (optional)</summary>
+
+A callback function to be called when form client-side validation fails.
+
+Default behaviour will show a JS Alert with the first error.
+
+One parameter is passed containing an array of errors.
+
+Learn more: [custom-javascript-validation-for-forms.md](custom-javascript-validation-for-forms.md "mention")
+
+</details>
+
+<details>
+
+<summary>4th - Success Callback - function (optional)</summary>
+
+A callback function to be called when form client-side is successful.
+
+Default behaviour will redirect the Page to the value of the `s_redirect` input or if not present, the redirect setting in the Siteglide Admin.
+
+One parameter is passed containing the redirect URL.
+
+Learn more: [forms-success-callback.md](forms-success-callback.md "mention")
+
+</details>
+
+The form's HTML attributes will change during each step of the form submit process:
+
+* `form_x_submitting` class will be added for the duration of the submission
+* `data-s-form-progress="1"` data-attribute will be added and it's value changed at each submission step
+
+### File Upload Previews
+
+```html
+<img data-file-preview="form_field_11_1_file" height="100" width="100" />
+```
+
+OR for background images:
+
+```html
+<div data-file-preview="form_field_11_1_file"></div>
+```
 
 ### Custom Field Sets
 

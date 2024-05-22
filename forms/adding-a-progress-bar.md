@@ -1,20 +1,30 @@
-## Introduction
+# 📋 Steps to Adding a Progress Bar
 
-When a [Form](https://help.siteglide.com/article/99-forms-getting-started) is submitted on Siteglide, it may have a wide range of tasks to complete e.g. signing a User into a Secure Zone or making a Payment. Sometimes Users may have an improved experience if they know the submission is still making progress and has not frozen.&#x20;
+### Introduction
 
-That's why we've added data-attributes to the Form which will let you know each time a process is complete. You can use these to optimise your User Experience. They won't tell you how much time the submission will take to complete- but they will give the User a sense of continuation and progress.&#x20;
+When a [Form](https://help.siteglide.com/article/99-forms-getting-started) is submitted on Siteglide, it may have a wide range of tasks to complete e.g. signing a User into a Secure Zone or making a Payment. Sometimes Users may have an improved experience if they know the submission is still making progress and has not frozen.
 
-## The Attributes
+That's why we've added data-attributes to the Form which will let you know each time a process is complete. You can use these to optimise your User Experience. They won't tell you how much time the submission will take to complete- but they will give the User a sense of continuation and progress.
 
-The following data-attributes will be added to the \<form> element after the submission button is clicked.&#x20;
+### Step 1) Inspect The Attributes
 
-*   `data-s-form-progress` - This data attribute will let you know the most recent step that was completed by the Form Submission.&#x20;
+The following data-attributes will be added to the `<form>` element after the submission button is clicked.
 
-*   `data-s-form-progress-max` - This data attribute will let you know the maximum number of submission steps. At the time of writing, it is fixed at 8, but this may change in future releases. Some steps will be counted in this number even if the Form completes them instantly e.g. the Secure Zone step will be skipped if the Form is not a Secure Zone Form.&#x20;
+* `data-s-form-progress` - This data attribute will let you know the most recent step that was completed by the Form Submission.
+* `data-s-form-progress-max` - This data attribute will let you know the maximum number of submission steps. At the time of writing, it is fixed at 8, but this may change in future releases. Some steps will be counted in this number even if the Form completes them instantly e.g. the Secure Zone step will be skipped if the Form is not a Secure Zone Form.
 
-You can use CSS which selects these data-attributes to change the User Experience of the Form.&#x20;
+You can use CSS which selects these data-attributes to change the User Experience of the Form.
 
-## Full Code Example
+### Step 2) Add HTML for a Progress Bar
+
+```html
+<!-- This should be added inside the <form> element -->
+<div id="progressBar">
+	<div id="progressContent"></div>
+</div>
+```
+
+### Step 3) Add CSS rules to change the width of the progress bar on each step
 
 The following example displays a progress bar which increments with each submission step that is completed. It uses CSS transitions to create a smooth movement between each discrete step:
 
@@ -74,6 +84,7 @@ The following example displays a progress bar which increments with each submiss
 }
 ```
 {% endtab %}
+
 {% tab title="HTML" %}
 ```html
 <!-- This should be added inside the <form> element -->
@@ -82,6 +93,4 @@ The following example displays a progress bar which increments with each submiss
 </div>
 ```
 {% endtab %}
-{% endtabs %} 
-
-
+{% endtabs %}

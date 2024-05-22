@@ -4,7 +4,7 @@ description: >-
   can now insert a dynamic message using fields from the Form.
 ---
 
-# Form Confirmation Pages
+# 📋 Steps to Adding Form Confirmation Pages
 
 After a User submits a Form and you redirect them to a Confirmation Page, you can now insert a dynamic message using fields from the Form.
 
@@ -32,7 +32,7 @@ Step 2) Edit your Form in the Siteglide Admin under `CMS > Forms`
 
 Step 3) Fill in the \`\`Redirect To\`\` field with the URL of your Confirmation Page:
 
-## Including the Confirmation Message
+## Step 1) Including the Confirmation Message
 
 In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirmation with this Liquid tag:
 
@@ -45,11 +45,15 @@ In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirm
 
 The Layout parameter takes the name of the Layout File you wish to use, without the `.liquid` extension.
 
-## Form Confirmation Layouts
+## Step 2) Building Form Confirmation Layouts
 
 ### File Structure
 
 We store Form Confirmation Layouts at the following Path: `layouts/form_confirmation/` Each Layout should be a single Liquid file with a name of your choice followed by `.liquid`.
+
+{% content-ref url="forms-file-structure.md" %}
+[forms-file-structure.md](forms-file-structure.md)
+{% endcontent-ref %}
 
 ### Developing a Layout
 
@@ -117,7 +121,7 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
 
 If you're interested to read more about using Liquid to loop over the properties of an object, as we've done in this example, see more in this advanced tutorial:
 
-## Including an eCommerce Order Confirmation
+## Step 3) Optional - Including an eCommerce Order Confirmation
 
 You output Details about any eCommerce Order that was made using the Form Submission. You may be familiar doing this already within an email automation.
 
@@ -136,7 +140,7 @@ We've included an \`
 
 ```
 
-## How to make sure the Confirmation Message is only Displayed Once
+## Step 4) Optional - Make sure the Confirmation Message is only Displayed Once
 
 The Form Confirmation feature will continue to show details of the most recent Form Submission. If the feature is added to a Page that will have visitors who have not just submitted a Form, this may no longer be relevant.
 

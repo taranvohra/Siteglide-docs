@@ -1,4 +1,4 @@
-# Shared Devices
+# 🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form
 
 This problem was initially reported here -> [https://roadmap.siteglide.com/bugs/p/forms-overwriting-crm-records](https://roadmap.siteglide.com/core-platform/p/forms-overwriting-crm-records)
 
@@ -21,7 +21,7 @@ You can also add your own message on page like this:
 
 ```
 
-### 2 - How to allow updating of existing user data - Essentially a 'user update' form
+### 2 - How to allow updating of existing user name
 
 If you look at the email and name fields in your new default layout, you'll see this:
 
