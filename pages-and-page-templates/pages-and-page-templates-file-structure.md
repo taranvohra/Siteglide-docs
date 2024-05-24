@@ -22,4 +22,4 @@ Since Page Templates are called Layouts in platformOS, this is their name in the
 │   └── partials/
 </code></pre>
 
-We've only shown one [system page](system-pages-explained.md) as an example, more are available.
+We've only shown one [system page](system-pages.md) as an example, more are available.

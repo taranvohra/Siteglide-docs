@@ -9,8 +9,6 @@ updatedAt: 2023-03-03T08:09:21.000Z
 
 Siteglide CLI (Command Line Interface) is a tool that enables you to work on your project from your local IDE or Code Editor; it has similar behaviours to FTP (File Transfer Protocol), in that you can sync up and pull down changes from your website.&#x20;
 
-The benefit of using a CLI instead of an FTP is that it's designed specially for Siteglide's file structure and contains additional useful tools and features. You will be required to use some terminal commands to use this feature.
-
 ## Who is it for?
 
 Developers will be at home with the Siteglide CLI. It allows them to work faster than they can using the User Interface of the website. It also allows them to access the full suite of time-saving extensions and search tools in IDEs like [VSCode](https://code.visualstudio.com/) and [Atom](https://atom-editor.cc/).&#x20;
@@ -21,43 +19,31 @@ But it's not just for Developers! Designers, SEO specialists and Agency Leaders 
 
 Check the "File Structure" in each documentation topic, and this will help you find your way around the folders and files.
 
+## Why is there no FTP?
 
+### The Short Answer
 
-###
+With a CLI, we have full control over its functionality. This means we can make it work better for Agencies building sites on Siteglide.
 
-***
+### The Long Answer
 
-### Debug Mode
+There are several reasons why we think a CLI is better for Siteglide projects than an FTP. We'll start with the most important one.
 
-Somtimes Siteglide support may ask you to run the CLI in "debug mode". This provides more output into your terminal so that we can use it to aid in supporting you. To do this, you need to prefix the command you are running with some extra information. This prefix differs slightly on macOS, Linux and Windows, for example if you were to want to sync to a site with debug mode on:
+#### We can't use an FTP
 
-{% tabs %}
-{% tab title="cli" %}
-```linux
-DEBUG=true siteglide-cli sync production
-```
-{% endtab %}
+Siteglide is built upon the good work done by our friends at platformOS, which in turn runs on AWS (Amazon Web Services). FTP is not supported by some of the AWS services we use e.g. Cloud Storage, so we are unable to use it.
 
-{% tab title="macos" %}
-```macos
-DEBUG=true siteglide-cli sync production
-```
-{% endtab %}
+#### Validation
 
-{% tab title="windows command prompt" %}
-```windows
-set DEBUG=true && siteglide-cli sync production
-```
-{% endtab %}
+With CLI, we can validate code sent to the site. This is especially useful if you are syncing Liquid or GraphQL code where there are fewer 3rd party tools for linting. If there is a problem we can pick up automatically- the sync will fail and an error message will try to help you find the problem.
 
-{% tab title="windows powershell" %}
-```
-$env:DEBUG='true'; siteglide-cli sync production
-```
-{% endtab %}
-{% endtabs %}
+#### Version Control
 
-Note, for macOS and Linux, debugging will be turned on for that one command that you prefix. For Windows, debugging will be turned on for as long as Command Prompt or Powershell is open. Closing Command Prompt or Powershell and re-opening it will turn debug mode off.
+With Siteglide CLI we can keep track of the Code pushed to the Site from Admin and from local machines and make sure the Site always contains the most up to date pushes. It gives us scope to improve this functionality in the future.
+
+#### Developer Tools
+
+Other CLI commands like siteglide-cli graphql  and `siteglide-cli logs` provide developers with advanced tools that would not be available with an FTP.
 
 ### Changelog
 

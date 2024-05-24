@@ -3,6 +3,7 @@
 * [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
+* [🗓️ Siteglide Admin / API Changelog](siteglide-admin-api-changelog.md)
 
 ## Siteglide CLI
 
@@ -10,8 +11,10 @@
 * [🍃 Getting Started with CLI](siteglide-cli/getting-started-with-cli.md)
 * [👀 Siteglide CLI Reference](siteglide-cli/siteglide-cli-reference.md)
 * [🗓️ Siteglide CLI Changelog](cli/cli-changelog.md)
-* [🔼 Siteglide CLI Migrate Command - Manual Forms](cli/cli-migrate-command-manual-forms.md)
-* [🔼 Siteglide CLI Migrate Command - Converting Forms](cli/cli-migrate-command-converting-forms.md)
+* [🔼 Siteglide CLI Migrate Command](siteglide-cli/siteglide-cli-migrate-command/README.md)
+  * [🔼 Siteglide CLI Migrate Command - Manual Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
+  * [🔼 Siteglide CLI Migrate Command - Converting Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
+* [🔧 Troubleshooting Siteglide CLI](siteglide-cli/troubleshooting-siteglide-cli.md)
 
 ## Pages and Page Templates
 
@@ -19,7 +22,10 @@
 * [💡 About Page Templates](pages-and-page-templates/page-templates.md)
 * [👀 Pages and Page Templates Reference](pages-and-page-templates/accessing-page-data.md)
 * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/pages-and-page-templates-file-structure.md)
-* [🔹 System Pages Explained](pages-and-page-templates/system-pages-explained.md)
+* [🔹 Page Settings](pages-and-page-templates/page-settings.md)
+* [🔹 System Pages](pages-and-page-templates/system-pages.md)
+* [🧑‍🎨 Updating Page Content with the Studio Tab](pages-and-page-templates/updating-page-content-with-the-studio-tab.md)
+* [🔧 Rolling Back Page Changes](pages-and-page-templates/rolling-back-page-changes.md)
 * [💻 Pages with Siteglide CLI](pages-and-page-templates/pages-with-siteglide-cli.md)
 * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/page-templates-with-cli.md)
 * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/pages-and-page-templates-on-platformos.md)
