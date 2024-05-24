@@ -17,7 +17,7 @@ Often you can save time by starting with a default layout and copying it to buil
 
 If you output two forms with the same ID, but different layouts, they may display different fields and look visually different, but they would use the same settings and their cases will be stored in the same database table.
 
-## Form Layouts
+## Form Custom Layouts
 
 ### The Form Tag
 

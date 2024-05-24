@@ -1,6 +1,15 @@
 # 📋 Steps to Using Custom Field Set fields in a Form's Custom Layout
 
-Default Form Layouts should be automatically updated with Custom Field Set fields. However, custom Form Layouts will need further syntax.
+Custom Field Sets are a great time-saving feature, as they allow you to create a reusable group of fields that can be added to any:
+
+* Form (for saving against Case and User in the CRM)
+* eCommerce Product
+
+In order to use Custom Field Sets, set them up in the Siteglide Admin: first you define the fields you would like to include in the set and second, you attach the Custom Field Set to a Siteglide Feature (from the list above).
+
+Custom Field Sets will automatically include a hidden field Parent ID, which links them to the feature.
+
+Default Form Layouts should be automatically updated with any Custom Field Set fields which have been added to the form in the Admin UI. However, custom Form Layouts will need further syntax.
 
 ## Prerequisites
 

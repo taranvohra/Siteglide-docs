@@ -2,6 +2,7 @@
 
 * [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
+* [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
 ## Siteglide CLI
 
@@ -61,9 +62,13 @@
 * [📋 Steps to Programmatically  Redirecting after a Form Submission](forms/how-to-add-a-custom-redirect-to-my-form.md)
 * [📋 Steps to Using Separate Fields for First Name and Surname in a Form](forms/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
 * [🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form](forms/shared-devices.md)
+* [🔹 Explained - Preventing Spam Form Submissions and Captchas](forms/explained-preventing-spam-form-submissions-and-captchas.md)
+* [🔧 Troubleshooting Captchas](forms/troubleshooting-captchas.md)
+* [🔼 Migrating Forms](forms/migrating-forms.md)
 
 ## Emails and Automations
 
+* [About Automations](emails-and-automations/about-automations.md)
 * [Using Content from Form Submissions in the Subsequent Automation/ Email](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
 
