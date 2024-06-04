@@ -1,12 +1,11 @@
----
-description: >-
-  Emails are Liquid files, so they can include WebApp or Module List Views. You
-  can also output fields that were submitted in the Form.
----
+# 👀 Automations Reference
 
-# Using Content from Form Submissions in the Subsequent Automation/ Email
+The body of an Automation, whether it is an Email Notification, Custom Liquid Action or API call is a Liquid file, so they can include includes/partials. You can also output fields that were submitted in the Form.
 
-Emails are Liquid files, so they can include WebApp or Module List Views. You can also output fields that were submitted in the Form.
+There are a few limitations of this Liquid rendering environment:
+
+* The `export`, `content_for` and `yield` tags are not supported in this environment, which means:
+  * The ordinary constants file we include on Pages to make variables like [Company Information](../company-information/company-information.md) work, won't work here. See here instead: Email&#x20;
 
 ## Introduction
 

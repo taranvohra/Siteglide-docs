@@ -9,7 +9,7 @@
 
 * [💡 About Siteglide CLI](cli/introduction.md)
 * [🍃 Getting Started with CLI](siteglide-cli/getting-started-with-cli.md)
-* [👀 Siteglide CLI Reference](siteglide-cli/siteglide-cli-reference.md)
+* [👀 Siteglide CLI Reference & Commands](siteglide-cli/siteglide-cli-reference.md)
 * [🗓️ Siteglide CLI Changelog](cli/cli-changelog.md)
 * [🔼 Siteglide CLI Migrate Command](siteglide-cli/siteglide-cli-migrate-command/README.md)
   * [🔼 Siteglide CLI Migrate Command - Manual Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
@@ -74,8 +74,11 @@
 
 ## Emails and Automations
 
-* [About Automations](emails-and-automations/about-automations.md)
-* [Using Content from Form Submissions in the Subsequent Automation/ Email](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
+* [💡 About Automations](emails-and-automations/about-automations.md)
+* [🔹 A Transactional Email Example](emails-and-automations/a-transactional-email-example.md)
+* [🔹 An API Call Action Example](emails-and-automations/an-api-call-action-example.md)
+* [🔹 A Custom Liquid Action Example](emails-and-automations/a-custom-liquid-action-example.md)
+* [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
 
 ## Categories
