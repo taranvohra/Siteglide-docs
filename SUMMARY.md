@@ -87,18 +87,24 @@
 
 ## Categories
 
-* [Filtering WebApps and Modules by Categories](categories/filtering-webapps-and-modules-by-categories.md)
-* [Outputting Categories on WebApp / Module / eCommerce Layouts](categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
-* [Outputting Category Fields in any Location](categories/outputting-category-fields-in-any-location.md)
-* [Category Detail Layouts](categories/category-detail-layouts.md)
-* [How to check whether a Category has children](categories/how-to-check-whether-a-category-has-children.md)
+* [💡 About Categories](categories/about-categories.md)
+* [👀 Categories Reference](categories/category-detail-layouts.md)
+* [🌳 Category Layout Folder Structure](categories/category-layout-folder-structure.md)
+* [🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters](categories/filtering-webapps-and-modules-by-categories.md)
+* [🔹 Outputting Categories on WebApp / Module / eCommerce Layouts](categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
 
-## About Siteglide Modules
+## Siteglide Modules Marketplace
 
+* [💡 About Module Marketplace](siteglide-modules-marketplace/about-module-marketplace.md)
+* [🌳 Modules Folder Structure Introduction](siteglide-modules-marketplace/modules-folder-structure-introduction.md)
+* [👀 Modules Reference](siteglide-modules-marketplace/modules-reference.md)
 * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
+* [🔹 Siteglide's Module Update Policy](siteglide-modules-marketplace/siteglides-module-update-policy.md)
+* [🔹 Site Template Modules - and How to Make Your Own](siteglide-modules-marketplace/site-template-modules-and-how-to-make-your-own.md)
 
 ## Building Custom Marketplace Modules
 
+* [💡 About Building Modules](building-custom-marketplace-modules/about-building-modules.md)
 * [Module Setup](modules/module-setup.md)
 * [Create Folder Structure](modules/create-folder-structure.md)
 * [Updating Modules](modules/updating-existing-modules.md)

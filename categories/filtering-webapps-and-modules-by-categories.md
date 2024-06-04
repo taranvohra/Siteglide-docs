@@ -1,4 +1,4 @@
-# Filtering WebApps and Modules by Categories
+# 🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters
 
 This Article shows how to filter WebApp and Module Items using their category\_ids parameter.
 
@@ -13,7 +13,6 @@ You can use Category IDs to filter WebApp, Module or eCommerce Product Items whe
 You can filter by a single Category using category\_ids:
 
 ```liquid
-{% raw %}
 {% include 'module'
    id: '3'
    layout: 'default'
@@ -22,13 +21,12 @@ You can filter by a single Category using category\_ids:
    sort_order: 'asc'
    category_ids: '1' 
 %}
-{% endraw %}
+
 ```
 
 You can filter by multiple Categories using comma-separated values in the category\_ids parameter:
 
 ```liquid
-{% raw %}
 {% include 'module'
    id: '3'
    layout: 'default'
@@ -37,7 +35,7 @@ You can filter by multiple Categories using comma-separated values in the catego
    sort_order: 'asc'
    category_ids: '1,2,3' 
 %}
-{% endraw %}
+
 ```
 
 ## WebApps and Modules
@@ -47,7 +45,6 @@ This parameter works whether you're filtering WebApps or Modules!
 #### WebApp
 
 ```liquid
-{% raw %}
 {% include 'webapp'
    id: '3'
    layout: 'default'
@@ -56,13 +53,12 @@ This parameter works whether you're filtering WebApps or Modules!
    sort_order: 'asc'
    category_ids: '1,2' 
 %}
-{% endraw %}
+
 ```
 
 #### Module
 
 ```liquid
-{% raw %}
 {% include 'mdoule'
    id: '3'
    layout: 'default'
@@ -71,19 +67,17 @@ This parameter works whether you're filtering WebApps or Modules!
    sort_order: 'asc'
    category_ids: '1,2'
 %}
-{% endraw %}
+
 ```
 
 #### eCommerce Products
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: '1,2'
     type: 'list' 
 -%}
-{% endraw %}
 ```
 
 ## Nested Categories

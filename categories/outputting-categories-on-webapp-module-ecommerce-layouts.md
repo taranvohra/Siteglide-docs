@@ -1,6 +1,10 @@
-# Outputting Categories on WebApp / Module / eCommerce Layouts
+---
+description: >-
+  This Article shows how you can use the category_array field to access the IDs
+  of the Categories assigned to a WebApp or Module Item
+---
 
-This Article shows how you can use the category\_array field to access the IDs of the Categories assigned to a WebApp or Module Item
+# 🔹 Outputting Categories on WebApp / Module / eCommerce Layouts
 
 ## Introduction
 
