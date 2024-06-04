@@ -76,6 +76,7 @@
 
 * [💡 About Automations](emails-and-automations/about-automations.md)
 * [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
+* [🌳 Automations File Structure](emails-and-automations/automations-file-structure.md)
 * [🔹 A Transactional Email Example](emails-and-automations/a-transactional-email-example.md)
 * [🔹 An API Call Action Example](emails-and-automations/an-api-call-action-example.md)
 * [🔹 A Custom Liquid Action Example](emails-and-automations/a-custom-liquid-action-example.md)
