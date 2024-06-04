@@ -13,6 +13,3 @@ Forms are extremely versatile on Siteglide and can be used in a number of ways, 
   * Sending an API call
 
 You can use "capchas" to prevent spam submissions on forms.&#x20;
-
-### Useful Links:
-
