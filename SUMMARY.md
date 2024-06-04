@@ -75,11 +75,14 @@
 ## Emails and Automations
 
 * [💡 About Automations](emails-and-automations/about-automations.md)
+* [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
 * [🔹 A Transactional Email Example](emails-and-automations/a-transactional-email-example.md)
 * [🔹 An API Call Action Example](emails-and-automations/an-api-call-action-example.md)
 * [🔹 A Custom Liquid Action Example](emails-and-automations/a-custom-liquid-action-example.md)
-* [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
-* [Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
+* [🔹 Email Templates](emails-and-automations/email-templates.md)
+* [📋 Steps to Testing Emails on a Staging Site](emails-and-automations/steps-to-testing-emails-on-a-staging-site.md)
+* [📋 Steps to Authenticating Sendgrid Emails on Live Sites](emails-and-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
+* [💻 Email Automations and Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
 
 ## Categories
 
