@@ -8,4 +8,8 @@ Once you've read how our [introduction to Automations](about-automations.md), yo
 
 This example will send an email to 'site-admin@siteglide.com' with a link to the newly created item.
 
+{% hint style="info" %}
+Note, for forms, use the form variable for submitted data, for webapps and modules, use the data.data variable. See [dynamic-content-in-workflow-and-autoresponder-emails.md](../emails/dynamic-content-in-workflow-and-autoresponder-emails.md "mention")
+{% endhint %}
+
 <figure><img src="https://d258lu9myqkejp.cloudfront.net/attachment_images/f0f073c5beb44a6a98d214a515f6fe53bcc369019c684cac689acb65ef91f41a1679653640212.png" alt=""><figcaption></figcaption></figure>

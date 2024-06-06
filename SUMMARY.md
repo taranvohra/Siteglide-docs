@@ -3,7 +3,6 @@
 * [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
-* [🗓️ Siteglide Admin / API Changelog](siteglide-admin-api-changelog.md)
 
 ## Siteglide CLI
 

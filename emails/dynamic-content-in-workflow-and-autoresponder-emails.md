@@ -14,6 +14,10 @@ You can however use other [Liquid Includes / Partials](../includes/about-include
 
 ## Outputting Form Fields, or Using Them in Logic
 
+{% hint style="info" %}
+Note- this won't work with WebApps and Modules, see section below!
+{% endhint %}
+
 Outputting all available submission data as JSON tree for testing purposes:\
 \
 `{{form}}`\
@@ -34,3 +38,18 @@ Output a custom field (note, this includes CRM fields and Custom Field Set field
 
 Note, only the database IDs of your fields can be used here, not their human-friendly field names. These can be found in the form\_configurations folder if you use Siteglide-CLI. Or you can output the `{{form.properties}}` JSON to see all of the options available.
 
+## Outputting WebApp and Module Fields
+
+These code suggestions are intended for when you add an automation for WebApp or Module create or edit. \
+\
+Outputting all available module/webapp data as JSON tree for testing purposes:\
+\
+`{{data.data}}`
+
+Output a core field:
+
+`{{data.data.module_field_3_1}}`
+
+Output a custom field:
+
+`{{data.data.module_field_custom_3_1}}`
