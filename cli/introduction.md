@@ -9,6 +9,8 @@ updatedAt: 2023-03-03T08:09:21.000Z
 
 Siteglide CLI (Command Line Interface) is a tool that enables you to work on your project from your local IDE or Code Editor; it has similar behaviours to FTP (File Transfer Protocol), in that you can sync up and pull down changes from your website.&#x20;
 
+{% embed url="https://www.youtube.com/watch?t=705s&v=GG3-d5ovJo8" %}
+
 ## Who is it for?
 
 Developers will be at home with the Siteglide CLI. It allows them to work faster than they can using the User Interface of the website. It also allows them to access the full suite of time-saving extensions and search tools in IDEs like [VSCode](https://code.visualstudio.com/) and [Atom](https://atom-editor.cc/).&#x20;

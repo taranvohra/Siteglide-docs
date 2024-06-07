@@ -16,4 +16,12 @@ For other kinds of Module, we recommend getting hold of a developer. If you don'
 
 ## To Publish or Not?
 
-One way to start building Modules is to build them as an internal tool for&#x20;
+One way to start building Modules is to build them as an internal tool for your Agency. This doesn't require any approval from Siteglide.&#x20;
+
+Or, you can publish your Module on the marketplace. This requires Siteglide approval so we can check the module is transparent about the kind of code it runs. You can either:
+
+* Make the Module Open-Source&#x20;
+  * You can either all Siteglide users access, or require them to contact you before you decide whether to give their organisation access
+  * You can optionally allow others to contribute to your Github repository
+* or Accept Payments
+
