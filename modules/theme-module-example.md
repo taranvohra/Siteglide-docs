@@ -1,6 +1,6 @@
 # Theme Module Example
 
-In this example we’re going walk through, step by step, how to create a Website Theme Module that could either be used as a private module for your agency or shared publicly in the marketplace to deliver turnkey site solutions to your clients and more.
+In this example we're going walk through, step by step, how to create a Website Theme Module that could either be used as a private module for your agency or shared publicly in the marketplace to deliver turnkey site solutions to your clients and more.
 
 ![](/assets/Rq5gKKmUJUrFAEhkGbzjA_module-siteglide-theme-demo-1.png)
 
@@ -8,7 +8,7 @@ It is recommended that you download our example [Theme Demo Module Repository fr
 
 ## Create Your Module
 
-The first step to building your module is to create a listing for it in Siteglide.  Within your Portal from the left-hand menu, select “Custom Modules” and then click the blue “+ Add New Module” button in the top right-hand corner.
+The first step to building your module is to create a listing for it in Siteglide.  Within your Portal from the left-hand menu, select "Custom Modules" and then click the blue "+ Add New Module" button in the top right-hand corner.
 
 You only need to fill in basic information into the core fields. Checkout the [Create Create your Module in Siteglide](< >) doc for more information.
 
