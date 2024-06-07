@@ -25,13 +25,12 @@ In the Starter Site example below, the Module is initially included on the Blog 
 
 Firstly, you will need to provide the following Liquid to include your Archive layout:
 
-```liquid
-{%- include 'modules/siteglide_blog/get/get_blog_archive'
-    archive_layout: "default/archive"
+<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'modules/siteglide_blog/get/get_blog_archive'
+</strong>    archive_layout: "default/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
 
-```
+</code></pre>
 
 In the default layout, this Liquid would be placed inside the `sidebar/wrapper.liquid` file, but this is optional.
 

@@ -64,7 +64,7 @@
 * [📋 Steps to Changing Form Styling on Submission Using CSS](forms/adding-custom-css-to-show-form-submit-process.md)
 * [📋 Steps to Adding a Progress Bar](forms/adding-a-progress-bar.md)
 * [📋 Steps to Adding Form Confirmation Pages](forms/form-confirmation-pages.md)
-* [📋 Steps to Programmatically  Redirecting after a Form Submission](forms/how-to-add-a-custom-redirect-to-my-form.md)
+* [📋 Steps to Programmatically Redirecting after a Form Submission](forms/how-to-add-a-custom-redirect-to-my-form.md)
 * [📋 Steps to Using Separate Fields for First Name and Surname in a Form](forms/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
 * [🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form](forms/shared-devices.md)
 * [🔹 Explained - Preventing Spam Form Submissions and Captchas](forms/explained-preventing-spam-form-submissions-and-captchas.md)
@@ -114,6 +114,9 @@
 
 ## Blog & Authors Module
 
+* [💡 About the Blog & Authors Module](blog-and-authors-module/about-the-blog-and-authors-module.md)
+* [👀 Blog & Authors Reference](blog-and-authors-module/blog-and-authors-reference.md)
+* [🌳 Blog Module Folder Structure](blog-and-authors-module/blog-module-folder-structure.md)
 * [Blog Filter by Date](blog/blog-filter-by-date.md)
 * [Blog Filter by Category](blog/blog-filter-by-category.md)
 * [Blog Filter by Author](blog/blog-filter-by-author.md)

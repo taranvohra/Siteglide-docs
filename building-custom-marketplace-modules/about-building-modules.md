@@ -2,6 +2,10 @@
 
 Building Modules could be the perfect way to keep your workflow "DRY" (don't repeat yourself)! If you find a common requirement on more than one site, and no-one is currently offering a solution, or you think you can build a better one, building Modules might be for you.
 
+{% hint style="info" %}
+This documentation section is a work in progress. If you have any questions in the meantime, please don't hesitate to get in touch and we'd be happy to help!
+{% endhint %}
+
 ## What Skills do I Need?
 
 For some types of Module, anyone can have a go, for example building a Site Template could be done by a Designer with a little bit of HTML and CSS knowledge:
