@@ -40,16 +40,52 @@ Note, only the database IDs of your fields can be used here, not their human-fri
 
 ## Outputting WebApp and Module Fields
 
-These code suggestions are intended for when you add an automation for WebApp or Module create or edit. \
-\
+These code suggestions are intended for when you add an automation for WebApp or Module create or edit.&#x20;
+
+### On Item Create
+
 Outputting all available module/webapp data as JSON tree for testing purposes:\
 \
-`{{data.data}}`
+`{{data}}`
 
 Output a core field:
+
+`{{data.module_field_3_1}}`
+
+Output a custom field:
+
+`{{data.module_field_custom_3_1}}`
+
+### On Item Update
+
+Outputting data is slightly different when the trigger is an updated WebApp or Module item, because you have access to both the orginal data and the newly updated data.
+
+Outputting all available module/webapp data as JSON tree for testing purposes:
+
+`{{data.originalData}} <!-- Original Data-->`\
+`{{data.data}} <!-- New Data-->`
+
+Output a core field:
+
+`{{data.originalData.module_field_3_1}}`
 
 `{{data.data.module_field_3_1}}`
 
 Output a custom field:
 
+`{{data.originalData.module_field_custom_3_1}}`
+
 `{{data.data.module_field_custom_3_1}}`
+
+Make a Comparison
+
+```liquid
+{% raw %}
+{% if  data.originalData.module_field_custom_3_1 != data.data.module_field_custom_3_1 %}
+    {% comment %}Field module_field_custom_3_1 has changed. Do something{% endcomment %}
+{% else %}
+    {% comment %}Field module_field_custom_3_1 has not changed. Do something{% endcomment %}
+{% endif %}
+{% endraw %}
+```
+
