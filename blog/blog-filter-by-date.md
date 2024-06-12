@@ -1,4 +1,4 @@
-# Blog Filter by Date
+# 🔹 Blog Filter by Date
 
 Browse by Month and/or Search Blog Posts Between Two Dates
 
@@ -11,15 +11,11 @@ This article will show:
 * An explanation of the three main sub-Layouts available in in the Default Layout: (1) Search Between Two Dates (2) Browse By Months (3) Browse by Months under Year Header.
 * How to give User Feedback about Search Results
 
-![](https://downloads.intercomcdn.com/i/o/167280567/d043e46b31966ad5bad10e5b/image.png)
-
 ## Adding the Advanced Search Parameter
 
 The "Archive" Blog Navigation features all depend on the Advanced Search feature. In order to enable this dependency, you will need to add a parameter on the Page where you initially included a Blog Module: `use_adv_search: 'true'` Note- the word `true` must be in single quotes.
 
 In the Starter Site example below, the Module is initially included on the Blog Page, so we will do it here. We also switch to the `default` layout as this contains the updated examples.
-
-![](https://downloads.intercomcdn.com/i/o/167283252/7fa2434977ef1ed0458d412e/image.png)
 
 ### To Include the Archive Navigation Feature
 
@@ -77,8 +73,6 @@ The following examples will take you through the different options:
 
 ### Browse by Month
 
-![](https://downloads.intercomcdn.com/i/o/167292503/6661f116c2357242b71011b2/image.png)
-
 ```liquid
 <h2>Archive</h2>
 <ul>
@@ -100,8 +94,6 @@ In this example, we use the `blog_archive_months` object and loop over the array
 ### Browse by Months, organised into Years
 
 This Layout does not just organise the Months available under the relevant Year Headers, it also will skip any Years without a Blog Post.
-
-![](https://downloads.intercomcdn.com/i/o/167292829/53d955e9099672368596ff35/image.png)
 
 ```liquid
 <h2>Archive by Years</h2>
@@ -132,8 +124,6 @@ This example uses the same links as the previous one. However, it also organises
 In the Default Layout, this Option also includes the Previous "Browse by Months Organised into Years" Option for convenience- though the code can be simply removed if you prefer. We have removed it in this article's example.
 
 &#x20;It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
-
-![](https://downloads.intercomcdn.com/i/o/167292152/0e2fa3b1d153bdda479dacb0/image.png)
 
 ```liquid
 <h2>Search by Date</h2>
@@ -216,8 +206,6 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 * [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add\_to\_time)
 
 ### Feedback for the User
-
-![](https://downloads.intercomcdn.com/i/o/167295402/abe1734641ef2604993dbc7b/image.png)
 
 In the examples, you may notice another URL parameter is used: `range_type`. The `s_blog_date_search` Siteglide function for filtering blog posts by user-inputted dates adds the parameter `range_type="between"`. This would allow the following liquid on the List Layout to identify that this search is between two dates:
 
