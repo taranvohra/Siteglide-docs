@@ -23,6 +23,8 @@ As always, to use filtering on an included module layout, add the `use_adv_searc
 
 #### By Date
 
+(Requires `use_adv_search`)
+
 Include the Archive Layout (included in the default layout, or make your own)
 
 <pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'modules/siteglide_blog/get/get_blog_archive'
@@ -31,21 +33,37 @@ Include the Archive Layout (included in the default layout, or make your own)
 -%}
 </code></pre>
 
-Include: Search Blog Between Two Dates (included in the default layout, or make your own)
+#### By Category
+
+(Requires `use_adv_search`)
+
+Include the following liquid to dynamically get a list of available Blog Categories for the User to select:
 
 ```liquid
-{%- include 'modules/siteglide_blog/get/get_blog_archive'
-    archive_layout: "default/archive"
-    archive_layout_type: "sidebar_years_and_date_search" 
+{%- include 'modules/siteglide_system/get/get_categories'
+    categories_layout: 'default/categories'
+    categories_layout_type: 'sidebar' 
 -%}
 ```
 
-Advanced Filtering
+#### By Author
+
+&#x20;(Requires `use_adv_search`)
+
+```liquid
+{%- include 'modules/siteglide_authors/get/get_authors'
+    author_layout: 'default/author'
+    author_layout_type: 'sidebar'
+    author_field: 'module_field_3_4' 
+-%}
+```
+
+#### Keyword Search
+
+Link to the page with a keyword parameter in the URL to perform a search. (Requires `use_search`)
 
 ```
-{%- include 'module'
-    id: '3'
-    layout: 'default'
-    use_adv_search: 'true' 
--%}
+<form action="{{context.location.pathname}}">
+  <input type="search" placeholder="enter search term..." name="keyword">
+</form> 
 ```

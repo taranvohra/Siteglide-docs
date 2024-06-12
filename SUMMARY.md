@@ -116,11 +116,11 @@
 
 * [💡 About the Blog & Authors Module](blog-and-authors-module/about-the-blog-and-authors-module.md)
 * [👀 Blog & Authors Reference](blog-and-authors-module/blog-and-authors-reference.md)
-* [🌳 Blog Module Folder Structure](blog-and-authors-module/blog-module-folder-structure.md)
+* [🌳 Blog & Author Module Folder Structure](blog-and-authors-module/blog-module-folder-structure.md)
 * [🔹 Blog Filter by Date](blog/blog-filter-by-date.md)
-* [Blog Filter by Category](blog/blog-filter-by-category.md)
-* [Blog Filter by Author](blog/blog-filter-by-author.md)
-* [Blog Search](blog/blog-keyword-search.md)
+* [🔹 Blog Filter by Category](blog/blog-filter-by-category.md)
+* [🔹 Blog Filter by Author](blog/blog-filter-by-author.md)
+* [🔹 Blog Search](blog/blog-keyword-search.md)
 
 ## eCommerce Module
 
