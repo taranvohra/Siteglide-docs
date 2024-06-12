@@ -1,8 +1,8 @@
-# Blog Filter by Author
+# 🔹 Blog Filter by Author
 
 Combining the Blog and Author Modules allows you to filter the Blog posts by a specific Author's posts.
 
-![](https://downloads.intercomcdn.com/i/o/167274754/606ef32e1a5ed45d5915fff6/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/167274754/606ef32e1a5ed45d5915fff6/image.png) -->
 
 ## Introduction
 

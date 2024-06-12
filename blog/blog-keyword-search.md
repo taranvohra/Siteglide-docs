@@ -1,7 +1,6 @@
-
 The Article will show you how to adapt your Liquid Syntax and Blog Layouts to allow the User to Search for Posts by Keyword
 
-# Introduction
+# 🔹 Introduction
 
 You can also allow the User to search for Blog Posts by keyword. This requires a slightly different Liquid parameter from the other navigation methods, but you can use both parameters if you choose.
 

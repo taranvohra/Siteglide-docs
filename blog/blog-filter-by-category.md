@@ -1,8 +1,8 @@
-# Blog Filter by Category
+# 🔹 Blog Filter by Category
 
 This Navigation Option can be used in combination with other Navigation Options.
 
-![](https://downloads.intercomcdn.com/i/o/167279170/60d8c5aaf4a5c32ae4069bd1/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/167279170/60d8c5aaf4a5c32ae4069bd1/image.png) -->
 
 ## Introduction
 
