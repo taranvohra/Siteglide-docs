@@ -16,6 +16,8 @@ siteglide-cli -v
 
 If you already have siteglide-cli installed globally, this will tell you which version you have installed.
 
+You can find out which is the latest version here: [https://www.npmjs.com/package/@siteglide/siteglide-cli](https://www.npmjs.com/package/@siteglide/siteglide-cli)
+
 ## Installing & Updating
 
 You can use the following to install Siteglide CLI.
