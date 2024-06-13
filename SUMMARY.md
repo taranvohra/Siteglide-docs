@@ -10,6 +10,8 @@
 * [📋 Steps to Install Siteglide CLI](siteglide-cli/getting-started-with-cli.md)
 * [📋 Steps to Set Up Siteglide CLI on a Specific Site](siteglide-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 * [👀 Siteglide CLI Reference & Commands](siteglide-cli/siteglide-cli-reference.md)
+* [🧞 SiteBuilder with Siteglide CLI](siteglide-cli/sitebuilder-with-siteglide-cli.md)
+* [Page](siteglide-cli/page.md)
 * [🔼 Siteglide CLI Migrate Command](siteglide-cli/siteglide-cli-migrate-command/README.md)
   * [🔼 Siteglide CLI Migrate Command - Manual Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
   * [🔼 Siteglide CLI Migrate Command - Converting Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
@@ -299,3 +301,11 @@
 
 * [Module/WebApp Caching](best-practice/module-webapp-caching.md)
 * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
+
+## 🧞 SiteBuilder Module
+
+* [🎨 Themes](sitebuilder-module/themes/README.md)
+  * [🎨 Tailwind CSS Themes - Choosing a Build Method](sitebuilder-module/themes/tailwind-css-themes-choosing-a-build-method.md)
+  * [💻 Setting Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
+  * [💻 Setting Up Tailwind CSS with Siteglide CLI - from scratch](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
+  * [🎨 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](sitebuilder-module/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
