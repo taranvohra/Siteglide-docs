@@ -6,6 +6,16 @@ The CLI is distributed via Node Package Manager (NPM) and so you will need NodeJ
 
 Siteglide CLI requires a minimum of NodeJS version 10
 
+## I'm Not Sure if I've Set Up Siteglide CLI Already?
+
+In a Command Line, in any directory, type in:
+
+```
+siteglide-cli -v
+```
+
+If you already have siteglide-cli installed globally, this will tell you which version you have installed.
+
 ## Installing & Updating
 
 You can use the following to install Siteglide CLI.

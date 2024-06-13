@@ -124,16 +124,19 @@
 
 ## eCommerce Module
 
+* [💡 About the eCommerce Module](ecommerce-module/about-the-ecommerce-module.md)
 * [Payment Gateways](eCommerce/payment-gateways/introduction.md)
+  * [💡 About Payment Gateways](ecommerce-module/introduction/about-payment-gateways.md)
   * [Switching Payment Gateway](eCommerce/payment-gateways/switching-gateway.md)
   * [Building a Custom Payment Gateway](eCommerce/payment-gateways/building-a-custom-payment-gateway.md)
   * [Paypal Custom Parameters](eCommerce/payment-gateways/paypal-custom-params.md)
   * [Styling Stripe Card Elements](eCommerce/payment-gateways/styling-stripe-card-elements.md)
 * [Basic Payments](eCommerce/basic-payments/introduction.md)
-  * [Basic Payments - Introduction](eCommerce/basic-payments/basic-payments.md)
+  * [💡 About Basic Payment Forms](eCommerce/basic-payments/basic-payments.md)
   * [ecommerce/basic\_payment](eCommerce/basic-payments/ecommerce-basic-payment.md)
   * [Basic Payments - Payment Confirmation](eCommerce/basic-payments/payment-confirmation.md)
 * [Cart, Checkout and Quotes](eCommerce/cart-checkout-or-quotes/introduction.md)
+  * [💡 About Cart, Checkout and Quotes](ecommerce-module/introduction-2/about-cart-checkout-and-quotes.md)
   * [Product Liquid Reference](eCommerce/cart-checkout-or-quotes/product-liquid-reference.md)
   * [👀 ecommerce/checkout\_standard](eCommerce/cart-checkout-or-quotes/ecommerce-checkout-standard.md)
   * [Product List Layout](eCommerce/cart-checkout-or-quotes/product-lists.md)
@@ -155,6 +158,7 @@
   * [Re-Ordering](eCommerce/cart-checkout-or-quotes/re-order.md)
   * [Alternatives to Product Grouping](eCommerce/cart-checkout-or-quotes/product-grouping.md)
 * [Subscriptions](eCommerce/subscriptions/introduction.md)
+  * [💡 About Subscriptions](ecommerce-module/introduction-3/about-subscriptions.md)
   * [Subscriptions List Layout](eCommerce/subscriptions/subscriptions-list.md)
   * [Subscriptions Detail Layout](eCommerce/subscriptions/subscriptions-detail.md)
   * [User's Active Subscriptions](eCommerce/subscriptions/user-subscriptions.md)
