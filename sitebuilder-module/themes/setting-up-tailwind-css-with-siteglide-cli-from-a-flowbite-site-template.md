@@ -22,7 +22,7 @@ Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you t
 If you prefer using the Siteglide CLI to build sites already, the two CLIs work very well together.
 
 This guide is both a quick-start guide to get you started and a set of tips for how to build Tailwind CLI into your Siteglide workflow.
-TEST
+
 ## Step  1) Create a Site from the eCommerce Site Template <a href="#quick-start" id="quick-start"></a>
 
 {% hint style="info" %}
