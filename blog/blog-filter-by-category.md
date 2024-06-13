@@ -2,8 +2,6 @@
 
 This Navigation Option can be used in combination with other Navigation Options.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/167279170/60d8c5aaf4a5c32ae4069bd1/image.png) -->
-
 ## Introduction
 
 This Article will show:
@@ -54,9 +52,11 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
   <div class="col-12">
     <h2>Categories</h2>
     <ul>
-      {% raw %}
+      
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
 {% endraw %}
+
     </ul>
   </div>
 </div>

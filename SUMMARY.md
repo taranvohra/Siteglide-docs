@@ -7,9 +7,9 @@
 ## Siteglide CLI
 
 * [💡 About Siteglide CLI](cli/introduction.md)
-* [🍃 Getting Started with CLI](siteglide-cli/getting-started-with-cli.md)
+* [📋 Steps to Install Siteglide CLI](siteglide-cli/getting-started-with-cli.md)
+* [📋 Steps to Set Up Siteglide CLI on a Specific Site](siteglide-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 * [👀 Siteglide CLI Reference & Commands](siteglide-cli/siteglide-cli-reference.md)
-* [🗓️ Siteglide CLI Changelog](cli/cli-changelog.md)
 * [🔼 Siteglide CLI Migrate Command](siteglide-cli/siteglide-cli-migrate-command/README.md)
   * [🔼 Siteglide CLI Migrate Command - Manual Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
   * [🔼 Siteglide CLI Migrate Command - Converting Forms](siteglide-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)

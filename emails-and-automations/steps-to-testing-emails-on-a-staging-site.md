@@ -14,7 +14,7 @@ Okay so how do we test?
 
 Click the "Configuration" tab:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2) Fill in the Test Email Field
 

@@ -2,8 +2,6 @@
 
 Combining the Blog and Author Modules allows you to filter the Blog posts by a specific Author's posts.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/167274754/606ef32e1a5ed45d5915fff6/image.png) -->
-
 ## Introduction
 
 This article explains:
@@ -53,9 +51,11 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {% raw %}
+      
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
 {% endraw %}
+
     </ul>
   </div>
 </div>
@@ -66,11 +66,13 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
 
 ```liquid
 <a class="authorAnchorSidebar" href="{{context.location.pathname}}?module_field_3_4={{this.id}}&author_name={{this.name | url_encode}}">
-  {% raw %}
+  
+{% raw %}
 {% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
 {% endraw %}
+
   <li>{{this['name']}}</li>
 </a>
 
