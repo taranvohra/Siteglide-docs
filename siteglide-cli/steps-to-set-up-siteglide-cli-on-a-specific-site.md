@@ -22,7 +22,7 @@ If you do not already have a text editor installed, you can browse for one or in
 
 You can then open your project folder in the Text Editor:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3) Open the Integrated Terminal
 
@@ -30,7 +30,7 @@ You can then open your project folder in the Text Editor:
 If your IDE or Text Editor does not have an integrated terminal, you can open any terminal and change directory to your project folder.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 The terminal will appear in its own panel, by default below the code. In VSCode this will automatically change directory to your project folder (if not, do this manually)!
 
@@ -46,13 +46,13 @@ Open up the Siteglide Portal and find your Site in the Sites option in the left-
 
 In the Users tab, make sure your user's email address is listed. If not, invite yourself (as an existing user) to the Site.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5) Copy the Env Command with Pre-Filled Variables
 
 In the Details tab, near the bottom of the Site information, find the CLI Command and copy it.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6) Run the Env Command to Set Up a Connection Between your Project Folder and a Site
 
