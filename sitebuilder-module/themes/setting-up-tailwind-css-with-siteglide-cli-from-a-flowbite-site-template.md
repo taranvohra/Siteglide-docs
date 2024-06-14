@@ -23,7 +23,7 @@ If you prefer using the Siteglide CLI to build sites already, the two CLIs work 
 
 This guide is both a quick-start guide to get you started and a set of tips for how to build Tailwind CLI into your Siteglide workflow.
 
-## Step 1) Create a Site from the eCommerce Site Template <a href="#quick-start" id="quick-start"></a>
+## Step 1) Create a Site from any Flowbite Site Template <a href="#quick-start" id="quick-start"></a>
 
 {% hint style="info" %}
 You can use an existing Site you created from a Site Template previously, but it may not contain all of the files you need if it is older. If you get stuck, try a new Site Template creation and copy across the files you are missing.
@@ -33,7 +33,7 @@ In the Siteglide Portal, choose Marketplace in the menu and filter by the Catego
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-For this step-by-step article, we'll use the Flowbite eCommerce Site Template, but in future you will be able to use any Template which uses Tailwind CSS in its [SiteBuilder Theme](./).
+For this step-by-step article, we'll use the Flowbite eCommerce Site Template, but you can use any Template which uses Tailwind CSS in its [SiteBuilder Theme](./).
 
 Click the card to open up the modal:
 
@@ -74,21 +74,20 @@ Find the files in the folder:
             └───module_86
                 └───src
                     │   readme.md
-                    │
+                    │   tailwind.config.js
+                    │   tailwind.css
                     └───open_me_to_set_up_tailwind_1st_time
                         ├───copy_and_paste_my_files_into_the_root_project_folder
-                        │       package-lock.json
-                        │       package.json
-                        │
+                        │   package-lock.json
+                        │   package.json
                         └───copy_and_paste_my_files_into_the_src_folder
-                                tailwind.config.js
-                                tailwind.css
+                            tailwind.config.js
+                            tailwind.css
 ```
 
 And **copy and paste** these two files `package.json` and `package-lock.json` into the root project folder (next to- but not inside - marketplace\_builder).
 
-```
-│   package-lock.json
+<pre><code>│   package-lock.json
 │   package.json
 └───marketplace_builder
     └───assets
@@ -96,42 +95,20 @@ And **copy and paste** these two files `package.json` and `package-lock.json` in
             └───module_86
                 └───src
                     │   readme.md
-                    │
+                    │   tailwind.config.js
+                    │   tailwind.css
                     └───open_me_to_set_up_tailwind_1st_time
                         ├───copy_and_paste_my_files_into_the_root_project_folder
-                        │       
-                        │
-                        └───copy_and_paste_my_files_into_the_src_folder
-                                tailwind.config.js
-                                tailwind.css
-```
+                        │   package-lock.json
+<strong>                        │   package.json
+</strong>                        └───copy_and_paste_my_files_into_the_src_folder
+                            tailwind.config.js
+                            tailwind.css
+</code></pre>
 
 {% hint style="info" %}
-We've removed the files from the old folder for clarity, but you can leave a copy there too if you like. This means another collaborator on the Site can set up their Tailwind the same way!
+Because you are working from a Site Template, you don't need to copy the tailwind-config.js or the tailwind.css files. That's already done!
 {% endhint %}
-
-And **copy and paste** these two files `tailwind.config.js` and `tailwind.css` into the src folder (next to readme.md):
-
-```
-│   package-lock.json
-│   package.json
-└───marketplace_builder
-    └───assets
-        └───modules
-            └───module_86
-                └───src
-                    │   tailwind.css
-                    │   tailwind.config.js
-                    │   readme.md
-                    └───open_me_to_set_up_tailwind_1st_time
-                        ├───copy_and_paste_my_files_into_the_root_project_folder
-                        │       
-                        │
-                        └───copy_and_paste_my_files_into_the_src_folder
-                                
-```
-
-
 
 ### Step 4) Use NPM to Automatically Install Dependencies
 
