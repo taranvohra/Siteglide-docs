@@ -1,4 +1,4 @@
-# 📋 Steps to Set Up Tailwind CSS with Siteglide CLI on a Site with SiteBuilder Installed
+# 📋 Steps to Set Up Tailwind CSS with Siteglide CLI on Any Site with SiteBuilder Installed
 
 ## Before You Start <a href="#before-you-start" id="before-you-start"></a>
 
@@ -19,7 +19,7 @@ Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you t
 
 Each time you start working on a new project, you will need to follow these steps, however, the setup time is worth it as it will give you a much smoother experience going forward.
 
-### Step 1) Install the SiteBuilder Module <a href="#quick-start" id="quick-start"></a>
+## Step 1) Install the SiteBuilder Module <a href="#quick-start" id="quick-start"></a>
 
 Check if you have already installed the SiteBuilder Module on your site. The version should be at least 4.11.2
 
@@ -29,7 +29,7 @@ The SiteBuilder Module comes with the Free Flowbite Theme automatically.&#x20;
 
 If the download appears to have crashed, try refreshing the page and trying again - it is a large package of files.
 
-## Step 2) Install a Flowbite Site Template
+## Step 2) Create a Flowbite Site Template
 
 {% hint style="info" %}
 If you have already created a Flowbite Page Template using SiteBuilder, you can skip this step.
@@ -136,7 +136,7 @@ Next, move the `tailwind.config.js` and `tailwind.css` files from the `copy_and_
                             tailwind.css
 </code></pre>
 
-### Step 6) Use NPM to Automatically Install Dependencies
+## Step 6) Use NPM to Automatically Install Dependencies
 
 Using your integrated terminal from step 2, which is already open in your project directory, run the command:
 
@@ -148,7 +148,7 @@ npm i
 You may be given some warnings and information by npm at this stage. For the sake of this tutorial most are safe to ignore for now and come back to later.
 {% endhint %}
 
-### Step 7) Run Commands to Build your tailwind.min.css File and Sync it
+## Step 7) Run Commands to Build your tailwind.min.css File and Sync it
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
@@ -170,105 +170,14 @@ Both commands will keep running indefinately and will watch your files for chang
 
 You can now start building your Site using Tailwind CSS!
 
-#### Changing the Page Template's default path to your compiled CSS <a href="#changing-the-page-templates-default-path-to-your-compiled-css" id="changing-the-page-templates-default-path-to-your-compiled-css"></a>
+## Next
 
-If you've edited your Tailwind CLI settings to create the min.css file in a different location, you can edit a Page Template generated through SiteBuilder so that it correctly links to the new file path. Add a new parameter `optional_path_to_cli_css` to the Tailwind Head file.
+Head to the next article to understand in more depth:
 
-```liquid
-{% raw %}
-{% include 'modules/module_86/tailwind/head', optional_path_to_cli_css: 'css/tailwind2.min.css' %}
-{% endraw %}
-```
+* The Tailwind Config File
+* The Tailwind source CSS file
+* The Tailwind distributable CSS file
 
-Copy
-
-### An Example Workflow using Siteglide CLI and Tailwind CLI <a href="#an-example-workflow-using-siteglide-cli-and-tailwind-cli" id="an-example-workflow-using-siteglide-cli-and-tailwind-cli"></a>
-
-Each time you start work:
-
-1. Pull the latest files from the site using `siteglide-cli pull`. It's important to have the latest files, because Tailwind only adds classes that you're actually using, but it can only see which files you're using if the files are available locally.
-2. Use `siteglide-cli sync` to watch your `marketplace_builder` folder.
-3. In terminal, run the command: `npm run tailwind` to watch for Tailwind changes.
-4. Now you can begin work! Every time you make a change and save, your updated file will sync to Siteglide and so will a brand new version of the Tailwind CSS.
-
-### Adding Custom CSS <a href="#adding-custom-css" id="adding-custom-css"></a>
-
-You can use the src file `tailwind_src/tailwind.css` to write any custom CSS for your Tailwind build. Check the [Tailwind CSS documentation on Functions & Directives](https://tailwindcss.com/docs/functions-and-directives) for details.
-
-### Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
-
-#### NodeJS and NPM Versions <a href="#nodejs-and-npm-versions" id="nodejs-and-npm-versions"></a>
-
-If you see an error relating to the version of NPM, you may want to check which version of NodeJS and NPM you have installed on your machine:
-
-```bash
-node -v
-```
-
-Copy
-
-```bash
-npm -v
-```
-
-Copy
-
-Follow the instructions here to update depending on your operating system: [Installing NPM](https://docs.npmjs.com/cli/v8/configuring-npm/install).
-
-#### Version Control and Conflicts on Siteglide <a href="#version-control-and-conflicts-on-siteglide" id="version-control-and-conflicts-on-siteglide"></a>
-
-If you work with other developers (or on multiple devices) on the same Siteglide project, it is definately recommended to use a version-control (otherwise known as source-control) tool like GitHub to share your package.json file etc. with the other developer.
-
-The risk of conflicts is somewhat mitigated if you follow our reccomendation in the Quick Start guide of storing the `tailwind.config.js` file in a custom location (inside `marketplace_builder/views/partials`). This means it will be accessible via Siteglide CLI pull and editable via sync, but not from the Siteglide Admin.
-
-If you are using version-control, the node\_modules folder can become very large and we recommend adding this to your `.gitignore` file or equivalent.
-
-#### I've got a `syntax error` when I run the `npm run tailwind` command <a href="#ive-got-a-syntax-error-when-i-run-the-npm-run-tailwind-command" id="ive-got-a-syntax-error-when-i-run-the-npm-run-tailwind-command"></a>
-
-There might be an issue with your Tailwind Config File. Try temporarily reverting the file to the state it is in here and see if that fixes the problem. If not [contact Sitegurus](https://sitegurus.io/).
-
-#### I've got a different problem <a href="#ive-got-a-different-problem" id="ive-got-a-different-problem"></a>
-
-Please [contact Sitegurus](https://sitegurus.io/).
-
-### Removing JIT Code from the Template <a href="#removing-jit-code-from-the-template" id="removing-jit-code-from-the-template"></a>
-
-If you are certain that you won't be using the [Tailwind's JIT Compiler Via CDN](https://www.sitegurus.io/documentation/sitebuilder/libraries\_and\_frameworks/tailwinds\_jit\_compiler\_via\_cdn) in the future, you can optionally remove the `<script type="module">` and `<script type="tailwind-config">` tags containing the JIT version of the Tailwind Config file from the Page Template. This may help avoid clutter and confusion.
-
-### Alternative Configurations <a href="#alternative-configurations" id="alternative-configurations"></a>
-
-#### I already have a package JSON file. <a href="#i-already-have-a-package-json-file" id="i-already-have-a-package-json-file"></a>
-
-In that case, use npm to add dev-dependencies to the existing file rather than copying across our file:
-
-```bash
-npm i -D tailwindcss@3.1.5
-```
-
-Copy
-
-```bash
-npm i -D flowbite@1.4.7
-```
-
-Copy
-
-```bash
-npm i -D flowbite-typography@1.0.2
-```
-
-Copy
-
-[Adding Dependencies to a package.json file](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file#adding-dependencies-to-a-packagejson-file).
-
-#### I use an alternative package manager, instead of NPM. <a href="#i-use-an-alternative-package-manager-instead-of-npm" id="i-use-an-alternative-package-manager-instead-of-npm"></a>
-
-This is fine! We don't cover this in our example, but there is plenty of documentation out there. You can use the information in the answer above to see which dependencies we use.
-
-#### Editing this configuration <a href="#editing-this-configuration" id="editing-this-configuration"></a>
-
-This repository is a "quick-start" guide, not fixed instructions for how to use Tailwind with Siteglide. Feel free to read the relevant documentation from [Tailwind](https://tailwindcss.com/docs/installation), [NPM](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file), [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) and configure Tailwind however you wish.
-
-#### I prefer to work in the Siteglide Admin <a href="#i-prefer-to-work-in-the-siteglide-admin" id="i-prefer-to-work-in-the-siteglide-admin"></a>
-
-Have you tried our [JIT Compiler](https://www.sitegurus.io/documentation/sitebuilder/libraries\_and\_frameworks/tailwinds\_jit\_compiler\_via\_cdn)? Based on the fantastic JIT Compiler from the folks at Beyond Code, we've added caching to allow better production speeds and integrated it with a Siteglide Template. This allows a developer to use Tailwind entirely from the Siteglide Admin without using any CLI tools.
+{% content-ref url="using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md" %}
+[using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md](using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md)
+{% endcontent-ref %}

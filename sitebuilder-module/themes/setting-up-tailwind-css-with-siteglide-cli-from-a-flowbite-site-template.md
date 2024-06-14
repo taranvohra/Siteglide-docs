@@ -117,7 +117,7 @@ npm i
 You may be given some warnings and information by npm at this stage. For the sake of this tutorial most are safe to ignore for now and come back to later.
 {% endhint %}
 
-### Step 5) Run Commands to Build your tailwind.min.css File and Sync it
+## Step 5) Run Commands to Build your tailwind.min.css File and Sync it
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
@@ -147,6 +147,6 @@ Head to the next article to understand in more depth:
 * The Tailwind source CSS file
 * The Tailwind distributable CSS file
 
-{% content-ref url="the-tailwind-css-folder-structure-on-a-sitebuilder-site.md" %}
-[the-tailwind-css-folder-structure-on-a-sitebuilder-site.md](the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
+{% content-ref url="using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md" %}
+[using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md](using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md)
 {% endcontent-ref %}
