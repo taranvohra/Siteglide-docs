@@ -73,32 +73,65 @@ Find the files in the folder:
         └───modules
             └───module_86
                 └───src
-                        package-lock.json
-                        package.json
-                        readme.md
-                        tailwind.config.js
-                        tailwind.css
+                    │   readme.md
+                    │
+                    └───open_me_to_set_up_tailwind_1st_time
+                        ├───copy_and_paste_my_files_into_the_root_project_folder
+                        │       package-lock.json
+                        │       package.json
+                        │
+                        └───copy_and_paste_my_files_into_the_src_folder
+                                tailwind.config.js
+                                tailwind.css
 ```
 
-And **copy and paste** these two files out of the folder and into the root project folder (next to- but not inside - marketplace\_builder).
+And **copy and paste** these two files `package.json` and `package-lock.json` into the root project folder (next to- but not inside - marketplace\_builder).
 
 ```
 │   package-lock.json
 │   package.json
-│
 └───marketplace_builder
     └───assets
         └───modules
             └───module_86
                 └───src
-                        readme.md
-                        tailwind.config.js
-                        tailwind.css
+                    │   readme.md
+                    │
+                    └───open_me_to_set_up_tailwind_1st_time
+                        ├───copy_and_paste_my_files_into_the_root_project_folder
+                        │       
+                        │
+                        └───copy_and_paste_my_files_into_the_src_folder
+                                tailwind.config.js
+                                tailwind.css
 ```
 
 {% hint style="info" %}
 We've removed the files from the old folder for clarity, but you can leave a copy there too if you like. This means another collaborator on the Site can set up their Tailwind the same way!
 {% endhint %}
+
+And **copy and paste** these two files `tailwind.config.js` and `tailwind.css` into the src folder (next to readme.md):
+
+```
+│   package-lock.json
+│   package.json
+└───marketplace_builder
+    └───assets
+        └───modules
+            └───module_86
+                └───src
+                    │   tailwind.css
+                    │   tailwind.config.js
+                    │   readme.md
+                    └───open_me_to_set_up_tailwind_1st_time
+                        ├───copy_and_paste_my_files_into_the_root_project_folder
+                        │       
+                        │
+                        └───copy_and_paste_my_files_into_the_src_folder
+                                
+```
+
+
 
 ### Step 4) Use NPM to Automatically Install Dependencies
 
