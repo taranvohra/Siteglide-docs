@@ -305,8 +305,8 @@
 ## 🧞 SiteBuilder Module
 
 * [🎨 Themes](sitebuilder-module/themes/README.md)
-  * [🎨 Tailwind CSS Themes - Choosing a Build Method](sitebuilder-module/themes/tailwind-css-themes-choosing-a-build-method.md)
-  * [💻 Setting Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
-  * [💻 Setting Up Tailwind CSS with Siteglide CLI - from scratch](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
+  * [🔹 Tailwind CSS Themes - Choosing a Build Method](sitebuilder-module/themes/tailwind-css-themes-choosing-a-build-method.md)
+  * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
+  * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI on a Site with SiteBuilder Installed](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
   * [🔹 The Tailwind CSS Folder Structure on a SiteBuilder Site](sitebuilder-module/themes/the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
-  * [🎨 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](sitebuilder-module/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
+  * [🔹 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](sitebuilder-module/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)

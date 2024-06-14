@@ -1,4 +1,4 @@
-# 🎨 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)
+# 🔹 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)
 
 ### Before you Start <a href="#before-you-start" id="before-you-start"></a>
 

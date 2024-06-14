@@ -1,15 +1,12 @@
-# 💻 Setting Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template
+# 📋 Steps to Set Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template
+
+### Before You Start <a href="#before-you-start" id="before-you-start"></a>
 
 {% hint style="info" %}
 This Article is very similar to [setting-up-tailwind-css-with-siteglide-cli-from-scratch.md](setting-up-tailwind-css-with-siteglide-cli-from-scratch.md "mention") but by using a Flowbite Site Template as a starting point, we are able to skip several steps, making this article a better place to start for beginners.
 {% endhint %}
 
-## Using the Tailwind CLI with Siteglide <a href="#using-the-tailwind-cli-with-siteglide" id="using-the-tailwind-cli-with-siteglide"></a>
-
-### Before You Start <a href="#before-you-start" id="before-you-start"></a>
-
-* Check [Choosing a Build Method](tailwind-css-themes-choosing-a-build-method.md) first to choose which option suits you best.
-* Make sure you have already installed the Siteglide-CLI and are familiar with its use. [getting-started-with-cli.md](../../siteglide-cli/getting-started-with-cli.md "mention")
+* Check [Choosing a Build Method](tailwind-css-themes-choosing-a-build-method.md) first to choose which option suits you best, though we strongly recommend the CLI method described in this article.
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -19,9 +16,7 @@ Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you t
 * Get the best performance front-end as Tailwind can scan your entire codebase to carry out "tree-shaking" to only include utility classes you actually need
 * Faster development performance as you can rebuild your CSS faster, and therefore build things faster
 
-If you prefer using the Siteglide CLI to build sites already, the two CLIs work very well together.
-
-This guide is both a quick-start guide to get you started and a set of tips for how to build Tailwind CLI into your Siteglide workflow.
+Each time you start working on a new project, you will need to follow these steps, however, the setup time is worth it as it will give you a much smoother experience going forward.
 
 ## Step 1) Create a Site from any Flowbite Site Template <a href="#quick-start" id="quick-start"></a>
 
@@ -43,7 +38,7 @@ Fill out the settings and click the button to start the Site Create Process.
 
 This will take a while and you'll get an email when it finishes. You should have time to make a cup of tea and return in a few minutes to move on to Step 2.
 
-## Step 2) Set up Siteglide CLI for your new Site
+## Step 2)  Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
 
 You will need to install Siteglide CLI- if you haven't or are not sure if you have, head here first:
 
