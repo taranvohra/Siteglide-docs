@@ -178,6 +178,6 @@ Head to the next article to understand in more depth:
 * The Tailwind source CSS file
 * The Tailwind distributable CSS file
 
-{% content-ref url="using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md" %}
-[using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md](using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md)
+{% content-ref url="the-tailwind-css-folder-structure-on-a-sitebuilder-site.md" %}
+[the-tailwind-css-folder-structure-on-a-sitebuilder-site.md](the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
 {% endcontent-ref %}

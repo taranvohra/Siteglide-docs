@@ -308,5 +308,5 @@
   * [🔹 Tailwind CSS Themes - Choosing a Build Method](sitebuilder-module/themes/tailwind-css-themes-choosing-a-build-method.md)
   * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
   * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI on Any Site with SiteBuilder Installed](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
-  * [🔹 Using Tailwind CSS on any Siteglide Site with SiteBuilder and a Flowbite Theme Installed](sitebuilder-module/themes/using-tailwind-css-on-any-siteglide-site-with-sitebuilder-and-a-flowbite-theme-installed.md)
+  * [🔹 Using Tailwind CSS on any Siteglide Site with SiteBuilder and a Flowbite Theme Installed](sitebuilder-module/themes/the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
   * [🔹 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](sitebuilder-module/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
