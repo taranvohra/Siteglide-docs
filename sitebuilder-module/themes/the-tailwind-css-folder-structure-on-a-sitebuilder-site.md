@@ -29,7 +29,16 @@ This article will delve a little deeper into the files you can modify to take fu
 ## Useful Tools
 
 * We recommend if you are using VSCode that you download and enable this extension, which will help VSCode understand Tailwind's syntax and give you tips on things like colours: [bradlc.vscode-tailwindcss](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+* This extension is useful for creating shortcuts to your favourite project folders: [https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 * This tool is really helpful for fetching colours with all the shades you need generated for you: [https://uicolors.app/create](https://uicolors.app/create)
+
+## A Recommended Day-to-Day Workflow
+
+1. Open up the Project Folder for your Site
+2. In case your team have made any changes while you've been away, run `siteglide-cli pull <env>`
+3. Split your terminal and simultaneously run:
+   1. `siteglide-cli sync <env>` to push any code changes to the site
+   2. `npm run tailwind` to watch for code changes and re-compile your Tailwind build (see [#the-tailwind.min.css-file](the-tailwind-css-folder-structure-on-a-sitebuilder-site.md#the-tailwind.min.css-file "mention"))
 
 ## :deciduous\_tree: Folder Structure
 
@@ -75,7 +84,7 @@ However, if you do want to write your own CSS, you will not find yourself limite
 
 See here to understand how to insert your CSS into one of Tailwind's layers: [https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer)
 
-See here to understand how to add custom classes which combine exsiting Tailwind utility classes: [https://tailwindcss.com/docs/functions-and-directives#apply](https://tailwindcss.com/docs/functions-and-directives#apply)&#x20;
+See here to understand how to add custom classes which combine existing Tailwind utility classes: [https://tailwindcss.com/docs/functions-and-directives#apply](https://tailwindcss.com/docs/functions-and-directives#apply)&#x20;
 
 ## The `tailwind.min.css` File
 
