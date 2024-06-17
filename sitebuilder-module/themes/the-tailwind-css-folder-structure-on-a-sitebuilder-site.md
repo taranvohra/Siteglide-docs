@@ -32,13 +32,16 @@ This article will delve a little deeper into the files you can modify to take fu
 * Also if you are using VS Code, this extension is useful for creating shortcuts to your favourite project folders: [https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 * This tool is really helpful for fetching colours with all the shades you need generated for you: [https://uicolors.app/create](https://uicolors.app/create)
 
-## A Recommended Day-to-Day Workflow
+## A Recommended Day-to-Day Workflow&#x20;
+
+(For Editing a Siteglide Site Which Uses a Tailwind Theme.)
 
 1. Open up the Project Folder for your Site
 2. In case your team have made any changes while you've been away, run `siteglide-cli pull <env>`
 3. Split your terminal and simultaneously run:
    1. `siteglide-cli sync <env>` to push any code changes to the site
    2. `npm run tailwind` to watch for code changes and re-compile your Tailwind build (see [#the-tailwind.min.css-file](the-tailwind-css-folder-structure-on-a-sitebuilder-site.md#the-tailwind.min.css-file "mention"))
+4. Make the necessary changes to your code.
 
 ## What does each Tailwind related File Actually Do?
 
