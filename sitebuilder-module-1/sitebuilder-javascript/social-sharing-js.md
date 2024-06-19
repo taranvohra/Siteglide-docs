@@ -20,8 +20,6 @@ We use `context.exports` to make sure the script is only loaded once on the page
 {% endraw %}
 ```
 
-Copy
-
 ### Usage <a href="#usage" id="usage"></a>
 
 We use [vanilla-sharing documentation](https://www.npmjs.com/package/vanilla-sharing) and power it using data-attributes, so this documentation is vital for understanding usage.

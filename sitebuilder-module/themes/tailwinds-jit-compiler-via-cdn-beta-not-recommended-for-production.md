@@ -45,8 +45,6 @@ You can edit the config file for the JIT method at the following default path in
 {% endraw %}
 ```
 
-Copy
-
 On page rendering, this will be inserted into a `<script>` tag in the Page Template. For older versions of SiteBuilder the config could be edited directly in the Page Template.
 
 By default, we set up the Tailwind config file the way the library you’re using recommends in its documentation.

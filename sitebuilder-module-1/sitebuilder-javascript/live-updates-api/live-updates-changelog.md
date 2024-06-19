@@ -30,8 +30,6 @@ if(SitegurusLiveUpdate) {
 }
 ```
 
-Copy
-
 You can also use this code if you want to wait for each instance of Live Updates initiated by data-attributes to be ready; Useful if you are using methods to modify them:
 
 ```js
@@ -45,8 +43,6 @@ function myFunction() {
   window.sgLiveUpdateConfig['1'].setSuspenseCSSClassList('my-class');
 }
 ```
-
-Copy
 
 This code is more reliable than previous patterns when your own script is running asynchronously, as it should work whether your script or the Live Updates script is executed first.
 

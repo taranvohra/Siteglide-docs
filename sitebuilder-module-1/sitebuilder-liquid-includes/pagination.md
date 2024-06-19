@@ -22,8 +22,6 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 </section>
 ```
 
-Copy
-
 #### parameters <a href="#parameters" id="parameters"></a>
 
 | Parameter       | Type                      | Required                    | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |

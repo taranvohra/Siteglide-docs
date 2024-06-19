@@ -125,8 +125,6 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 <script async src="{{'modules/module_86/js/v1-1/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
 ```
 
-Copy
-
 * Live Updates API now adds a click listener to text input fields. This helps to cover an edge-case where a cancel button is nested inside the text area to clear the field. Non-breaking change.
 * New feature modifyHistory changes te URL to match fitlers without page reload - useful for shareable links and single-page applications
 * New feature automatically launches a live-update on page load if any of the live-update form elemtns has a value.

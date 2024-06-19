@@ -16,8 +16,6 @@ After the user first sets their preferences, these preferences will be stored in
 <script async src="https://uploads.prod01.london.platform-os.com/instances/668/assets/modules/module_86/js/v1/sitegurus_cookie_settings.js?updated=1695044532"></script>
 ```
 
-Copy
-
 The Liquid will ensure the script is only loaded once on the page.
 
 ### Creating Controls to set the preferences <a href="#creating-controls-to-set-the-preferences" id="creating-controls-to-set-the-preferences"></a>
@@ -32,8 +30,6 @@ Since the script is loaded asynchronously, the controls won't have event listene
 <button disabled data-sg-cookie="all" type="button" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" data-sg-cookie-btn-enabled="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" >Accept all</button>
 <button disabled data-sg-cookie="essential-only" type="button" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" data-sg-cookie-btn-enabled="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Accept essential cookies only</button>
 ```
-
-Copy
 
 #### Using form elements <a href="#using-form-elements" id="using-form-elements"></a>
 
@@ -50,8 +46,6 @@ Copy
 </div>
 ```
 
-Copy
-
 #### Accessing the current settings value <a href="#accessing-the-current-settings-value" id="accessing-the-current-settings-value"></a>
 
 Note in this example above, we also use Liquid `context.cookies.sg-cookie-policy-settings` to set a default checked value to the radio currently active on page load.
@@ -66,8 +60,6 @@ function success(event) {
   console.log(event.details)
 }
 ```
-
-Copy
 
 Accessing `event.details` will let you know the current state of the preferences, however, you could of course use JS to check the cookies directly.
 

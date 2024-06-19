@@ -39,8 +39,6 @@ Within each folder, each static layout gets its own file. The name of this file 
                                         1.liquid
 ```
 
-Copy
-
 #### Adding Content to Files <a href="#adding-content-to-files" id="adding-content-to-files"></a>
 
 At the present time, static content should be added inside each file as HTML only (including `<style>` or `<script>` tags if you like). It may be possible in future to include Liquid wrapped in raw tags, but it is not currently.

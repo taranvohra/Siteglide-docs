@@ -34,8 +34,6 @@ function myFunction() {
 }
 ```
 
-Copy
-
 #### 2) Optional: Add a `data-sg-live-update-section` data-attribute to the layout <a href="#id-2-optional-add-a-datasgliveupdatesection-dataattribute-to-the-layout" id="id-2-optional-add-a-datasgliveupdatesection-dataattribute-to-the-layout"></a>
 
 Adding the `data-sg-live-update-section` with a unique value to the same element where you added `data-sg-live-update-key` allows you to reference it later.
@@ -68,8 +66,6 @@ You can access a specific instance via this key, or loop over them all and run y
 </script>
 ```
 
-Copy
-
 #### 4) Call the method on the instance <a href="#id-4-call-the-method-on-the-instance" id="id-4-call-the-method-on-the-instance"></a>
 
 ```liquid
@@ -87,7 +83,5 @@ Copy
   }
 </script>
 ```
-
-Copy
 
 More methods can be found in the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference)

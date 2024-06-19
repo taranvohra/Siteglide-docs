@@ -32,8 +32,6 @@ In order to make the process of dynamically modifying the output simpler, we are
 {% endraw %}
 ```
 
-Copy
-
 ...and others via URL e.g. `page`:
 
 ```liquid
@@ -84,8 +82,6 @@ For example, the following markup can be used to add the parameters `&per_page=2
 </form>
 ```
 
-Copy
-
 Using the data-attributes and our automatic event listeners allows the user to modify multiple parameters at the same time. If you have filters for both category and colour, when the category filter changes, it will trigger a live-update of the content, but both the current values of the category and the colour inputs will be included in the request. Once the color filter is changed, it will in turn also include the category filter's current value in the request.
 
 Keyup events, targeting fields in which the user will type, will be [debounced](https://css-tricks.com/debouncing-throttling-explained-examples/) so that keyup events don't cause disorientating changes too often. After the user pauses in typing, the live-update will take the latest values and trigger the live-update. Other events are set to update immediately.
@@ -103,8 +99,6 @@ _Markup_
 ```liquid
 <button data-sg-live-update-control-params="/blog?range_gte={{month.start}}&range_lt={{month.end}}&range_type=month" data-sg-live-update-control-group="month">{{month.start | date: "%b" }}</button>
 ```
-
-Copy
 
 _What Problems do our custom toggle buttons solve?_
 
@@ -131,8 +125,6 @@ When a custom toggle button is pressed, we'll automatically add the data-attribu
 }
 ```
 
-Copy
-
 At the time of writing, the newest version of Tailwind supports the variant `aria-pressed:`.
 
 If using Flowbite, you can place a toggle component inside your button and modify it to use `group-aria-pressed:`; it can then show the toggled state of the parent button very clearly, using CSS only.
@@ -145,8 +137,6 @@ If using Flowbite, you can place a toggle component inside your button and modif
   </div>
 </button>
 ```
-
-Copy
 
 The special group `data-sg-live-update-control-group="page"` behaves uniquely, as the page will always reset to "1" when another change is made to the parameters elsewhere. For example, if you are currently on page 2, but a filter change means there is now only one result, staying on page 2 would mean the result was hidden- the special group behaviour avoids this problem. If there is no available page 1 button, all page buttons will be unpressed.
 
@@ -166,8 +156,6 @@ We've therefore provided specific markup for a sort button.
   </button>
 </div>
 ```
-
-Copy
 
 Markup rules:
 
@@ -218,8 +206,6 @@ instance.setSortHTML({
 });
 ```
 
-Copy
-
 changeStateOptions
 
 * onlyUpdateComponent allows you fine control over which components should re-render on this update.
@@ -232,8 +218,6 @@ instance.changeStateTrailingDebounce(undefined,false,{
 })
 ```
 
-Copy
-
 ```liquid
 <div data-sg-live-update-component="a">
   //Will re-render this time
@@ -242,8 +226,6 @@ Copy
   //Will not re-render this time
 </div>
 ```
-
-Copy
 
 ***
 
@@ -287,7 +269,5 @@ const instance = new SitegurusLiveUpdate({
   defaultParams: {per_page: '20'}
 });
 ```
-
-Copy
 
 <table data-full-width="true"><thead><tr><th>parameter</th><th>required</th><th>type</th><th>example</th><th>notes</th></tr></thead><tbody><tr><td>element</td><td>required</td><td>element</td><td><code>document.querySelector('#elementID')</code></td><td>This needs to be the main DOM element that represents the outermost element rendered by your Siteglide Liquid tag. Note by default, the whole component will live-update, but you can change this by defining components within it.</td></tr><tr><td>public_key</td><td>required</td><td>String</td><td><code>'some_public_key'</code></td><td>See Initialising with the Object Constructor in JavaScript</td></tr><tr><td>liveUpdateComponents</td><td>optional</td><td>Array of elements</td><td><code>Array.from(sectionEl.querySelectorAll('[data-sg-live-update-component]'))</code></td><td>Use this to define which areas of your layout you wish to live-update. Any areas outside of these will not live-update and will maintain state and focus during a live-update. If you do not pass a value here, the whle initiated element will live-update instead.</td></tr><tr><td>defaultParams</td><td>optional</td><td>Object</td><td><code>{per_page: '2', pagination_layout: 'default', item_ids: ['1','2']}</code> translates to <code>?per_page=2&#x26;pagination_layout=default&#x26;item_ids=1,2</code></td><td>Any params passed in at a later stage via form controls (using data-attributes) or as parameters on the liveUpdate method will overwrite the defaultParams.</td></tr><tr><td>suspenseHTML</td><td>optional</td><td>HTML String</td><td><code>'&#x3C;div>Loading...&#x3C;/div>'</code></td><td>This HTML replace components' InnerHTML during a live-update. The component element itself remains in the DOM at this point. After live-update, the new content will replace the component so the HTML will not persist after that point.</td></tr><tr><td>suspenseCSSClassList</td><td>optional</td><td>Space-separated list of classes</td><td><code>'class1 class2'</code></td><td>These classes will be added to the component element during a live-update. After live-update, the new content will replace the component so the classes will not persist after that point.</td></tr><tr><td>autoEventListeners</td><td>optional</td><td>Boolean</td><td><code>true</code></td><td>Default is false. You can set this to true to use the functionality of the data-attribute method while actually initiating with the programatic method.</td></tr><tr><td>sortHTML</td><td>optional</td><td>object</td><td><code>{unsorted: '&#x3C;span>&#x3C;/span>', asc: '&#x3C;span>&#x3C;/span>', desc: '&#x3C;span>&#x3C;/span>'}</code></td><td>See the <code>.setSortHTML()</code> method for details. Default value contains an SVG icon for each state.</td></tr></tbody></table>

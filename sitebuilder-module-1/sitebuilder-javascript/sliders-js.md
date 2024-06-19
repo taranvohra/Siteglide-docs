@@ -36,8 +36,6 @@ Each of the layouts which uses this script will include the following code for l
   <script async src="https://uploads.prod01.london.platform-os.com/instances/668/assets/modules/module_86/js/sitegurus_sliders_javascript_api.1.js?updated=1695044531"></script>
 ```
 
-Copy
-
 This code is included inside the layout in order to allow some level of configuration by developers, while maximising performance:
 
 1. It loads asynchronously along with its dependencies, and includes Liquid logic to ensure it only runs once.

@@ -259,8 +259,6 @@ The recommendation is that you use the following code to position custom paginat
 ```liquid
 ```
 
-Copy
-
 To use it, the module\_user must both set `show_pagination: 'false'` on the include tag to remove the default pagination and then set a custom `pagination_layout`.
 
 Built-in module `module_s2` can be used to add new pagination layouts to a theme.
@@ -283,8 +281,6 @@ Here is an example of settings being implemented in a SiteBuilder Layout:
 
 
 ```
-
-Copy
 
 Notes:
 

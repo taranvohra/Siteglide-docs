@@ -137,8 +137,6 @@ A dynamic wrapper does not include components directly; instead it includes this
 {% endraw %}
 ```
 
-Copy
-
 This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide `{% include 'form' %}` tag and the `form_layout_fields` include will inherit their values.
 
 #### The `collection` Parameter <a href="#the-collection-parameter" id="the-collection-parameter"></a>
@@ -161,8 +159,6 @@ This contains all Siteglide and all Custom Fields in the Form:
 {{context.exports.sitegurus_ui.form_fields | html_safe: raw_text: true }}
 ```
 
-Copy
-
 **Hidden Fields**
 
 This contains hidden fields needed to run the form:
@@ -170,8 +166,6 @@ This contains hidden fields needed to run the form:
 ```liquid
 {{context.exports.sitegurus_ui.form_hidden | html_safe: raw_text: true }}
 ```
-
-Copy
 
 **Address Fields**
 

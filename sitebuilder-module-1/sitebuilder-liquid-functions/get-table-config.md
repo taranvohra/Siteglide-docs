@@ -8,8 +8,6 @@
 {% endraw %}
 ```
 
-Copy
-
 ### Purpose <a href="#purpose" id="purpose"></a>
 
 This function fetches the configuration file which Siteglide uses to store metadata about the WebApp or Module. By outputting the returned Object `{{table_config}}` you can explore the JSON tree and find out information about the WebApp dynamically.
