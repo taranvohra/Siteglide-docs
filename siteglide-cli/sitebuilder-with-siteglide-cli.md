@@ -1,5 +1,9 @@
 # 🧞 SiteBuilder with Siteglide CLI
 
+{% content-ref url="../sitebuilder-module-1/about-sitebuilder.md" %}
+[about-sitebuilder.md](../sitebuilder-module-1/about-sitebuilder.md)
+{% endcontent-ref %}
+
 Here are some useful links if you're using SiteBuilder and want to get the most out of it using Siteglide CLI:
 
 ## Flowbite and Tailwind CSS

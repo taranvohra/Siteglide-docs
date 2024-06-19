@@ -1,4 +1,4 @@
-# 🪴 Assets File Structure
+# 🌳 Assets File Structure
 
 ```
 marketplace_builder/
