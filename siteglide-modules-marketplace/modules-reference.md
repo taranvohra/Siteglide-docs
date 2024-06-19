@@ -23,6 +23,26 @@ These Fields are available to all standard modules:
 
 `{%- include 'module', id: '3', layout: 'default', per_page: 1, sort_type: 'properties.release_date', sort_order: 'asc', type: 'detail' -%}`
 
+#### Liquid Include Parameters
+
+* `id` - the Module's ID
+* `item_ids` - output one or more module items, comma separated&#x20;
+* `category_ids` - output all items in one or more categories, comma separated&#x20;
+* `layout` - default is /default/ - 'layout' values are relative to the folder: layouts/modules/Blog (module\_3)/\[layout name]&#x20;
+* `per_page` - defines the number of items outputted on the page&#x20;
+* `show_pagination` - default is true - defines if items should be paginated when the per\_page is met.&#x20;
+* `sort_type` - defines the type by which items are ordered&#x20;
+  * `properties.name` - name of the Module item (alphabetical)&#x20;
+  * `created_at` - date the Module item was created&#x20;
+  * `updated_at` - date the Module item was last edited&#x20;
+  * `properties.weighting` - weighting of the Module item&#x20;
+  * `properties.release_date` - date the item is set to be released
+  * `properties.module_field_3_1` - Sort by a core or custom field
+* `sort_order` - defines the order in which the type is sorted asc - sort items in ascending order desc - sort items in descending order
+* `collection` - default is 'false' - If you set it as collection: 'true' then any layout is suppressed.Data is accessible via \{{context.exports.webapp\_1.data\}}. For Example, name would be: \{{context.exports.webapp\_1.data.result.items\[0]\['name']\}}
+* `use_search` -  Allows the Module to be searched by keyword parameter in URL
+* `use_adv_search` - Allows the Module to be filtered by core/custom field IDs in URL parameters
+
 {% hint style="info" %}
 If you nest any more Module or WebApp layouts inside this Module Layout, they will inherit the type parameter. This means if you want to input a nested list layout, you may need to reset the type parameter back to list with `type: 'list'`.
 {% endhint %}

@@ -10,7 +10,11 @@ This reference gives you a quick guide to all the code you can use with the Blog
 
 ### Blog Fields
 
+The Blog uses standard module fields as well as it's own core fields:
 
+{% content-ref url="../siteglide-modules-marketplace/modules-reference.md" %}
+[modules-reference.md](../siteglide-modules-marketplace/modules-reference.md)
+{% endcontent-ref %}
 
 | **Field Name**                                                                                                                                                      | **Liquid Tag**                  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -106,5 +110,11 @@ Link to the page with a `keyword` parameter in the URL to perform a search. (Req
 ### Authors
 
 #### Fields:
+
+Authors uses standard module fields as well as it's own core fields:
+
+{% content-ref url="../siteglide-modules-marketplace/modules-reference.md" %}
+[modules-reference.md](../siteglide-modules-marketplace/modules-reference.md)
+{% endcontent-ref %}
 
 <table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Title</td><td>{{ this['Title'] }}</td><td>name of the Author</td></tr><tr><td>Subtitle</td><td>{{ this['Subtitle'] }}</td><td>Job title or other short text about the Author</td></tr><tr><td>Description</td><td>{{ this['Description'] }}</td><td>Description of the Author</td></tr><tr><td>Image</td><td>{{ this['Image'] | asset_url }}</td><td>Image of the Author</td></tr><tr><td>Image Alt</td><td>{{ this['Image Alt'] }}</td><td>Image alt of the Author image</td></tr><tr><td>Linkedin URL</td><td>{{ this['LinkedIn URL'] }}</td><td>Linkedin profile URL of the Author</td></tr><tr><td>Facebook URL</td><td>{{ this['Facebook URL'] }}</td><td>Facebook profile URL of the Author</td></tr><tr><td>Twitter URL</td><td>{{ this['Twitter URL'] }}</td><td>Twitter profile URL of the Author</td></tr><tr><td>Instagram URL</td><td>{{ this['Instagram URL'] }}</td><td>Instagram profile URL of the Author</td></tr><tr><td>Pinterest URL</td><td>{{ this['Pinterest URL'] }}</td><td>Pinterest profile URL of the Author</td></tr></tbody></table>
