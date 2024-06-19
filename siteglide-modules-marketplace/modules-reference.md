@@ -7,6 +7,12 @@ description: >-
 
 # 👀 Modules Reference
 
+## Standard Module Fields
+
+These Fields are available to all standard modules:
+
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Item Name</td><td>{{ this['name'] }}</td><td>name of the Blog Post</td></tr><tr><td>Item Slug</td><td>{{ this['slug'] }} </td><td>item URL</td></tr><tr><td>Weighting</td><td>{{ this['weighting'] }} </td><td>weight of item, used for sorting</td></tr><tr><td>Release Date</td><td>{{ this['release_date'] }} </td><td>release date of the item</td></tr><tr><td>Expiry Date</td><td>{{ this['expiry_date'] }} </td><td>expiry date of the item</td></tr><tr><td>Enabled</td><td>{{ this['enabled'] }} </td><td>enable/disable the item</td></tr></tbody></table>
+
 ## Output a Module Layout
 
 ### List Layouts

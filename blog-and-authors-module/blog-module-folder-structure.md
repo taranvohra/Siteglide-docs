@@ -1,4 +1,4 @@
-# 🌳 Blog Module Folder Structure
+# 🌳 Blog & Author Module Folder Structure
 
 See general module folder strucutre for folder structure in common with all modules:
 
@@ -58,7 +58,12 @@ There is also a form directory for storing form layouts for front-end module/ au
                 │
                 └───module_6
                     │   collection.liquid
-                    │
+                    │   ├───detail
+                    │   │       item.liquid
+                    │   │       wrapper.liquid
+                    │   └───list
+                    │           item.liquid
+                    │           wrapper.liquid
                     └───form
                             default.liquid
 ```
