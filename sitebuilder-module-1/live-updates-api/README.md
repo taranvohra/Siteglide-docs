@@ -1,4 +1,4 @@
-# ✨ Live Updates API
+# 🧞 SiteBuilder Live Updates API
 
 ## Live Updates - An Introduction <a href="#live-updates-an-introduction" id="live-updates-an-introduction"></a>
 

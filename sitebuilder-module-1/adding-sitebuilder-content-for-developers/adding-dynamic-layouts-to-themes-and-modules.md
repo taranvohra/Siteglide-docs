@@ -178,7 +178,8 @@ The following example is from a module creator's layout\_config file.
 Perhaps the most complex and important part of the configuration to pay attention to is the files array. When SiteBuilder installs a layout, it takes a copy of the layout source code you've stored in the private folder and adds those copied files to the marketplace\_builder folder where they can be freely read and edited by the module user. It is therefore important to note the difference between the src property which points at the files you add and the dest property that points to where you wish the files to be installed.
 
 ```liquid
-{ {% raw %}
+{ 
+{% raw %}
 {% comment %}Object. Required.{% endcomment %}
   "module_<module_vanity_id>": { {% comment %}Object. Required.{% endcomment %}
     "1": { {% comment %}Object (key matches the numbered folder containing the layout files). Required.{% endcomment %}
@@ -220,6 +221,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
           "src": "testimonials/list/wrapper", {% comment %}Note this is an example of an embedded layout. We're still inside the same layout folder as the other files, but add another folder to keep the embedded layout files distinct and organised.{% endcomment %}
           "dest": "layouts/modules/module_8" {% comment %}Note this is an example of an embedded layout. The destination folder is actually in a completely different module folder. However, the name of the layout will remain the same. E.g. If the module user installs a layout and calls it "Gallery 2", both the Gallery Layout and the embedded Testimonials layout will have the folder names "module_<module_vanity_id>/gallery-2" and "module_8/gallery-2" respectively. See the embedded layouts section for more tips.{% endcomment %}
 {% endraw %}
+
         },
         {
           "src": "testimonials/list/item",
@@ -240,7 +242,7 @@ In step 1, you created the folder structure for the layouts, but this section sh
 
 It's up to you what kind of Liquid code to add to layouts, but there is one important rule:
 
-Where your layout contains any Liquid code which you wish to render at runtime, you need to wrap it in the `{% raw %}` liquid tags, see [https://documentation.platformos.com/api-reference/liquid/introduction#raw](https://documentation.platformos.com/api-reference/liquid/introduction#raw). In almost all cases, you can just wrap this tag around your entire layout. Without this tag, Liquid will run at build-time while SiteBuilder is creating your layout, which would most likely mean the Liquid would be rendered to nothing, or to something unexpected.
+Where your layout contains any Liquid code which you wish to render at runtime, you need to wrap it in the \`\` liquid tags, see [https://documentation.platformos.com/api-reference/liquid/introduction#raw](https://documentation.platformos.com/api-reference/liquid/introduction#raw). In almost all cases, you can just wrap this tag around your entire layout. Without this tag, Liquid will run at build-time while SiteBuilder is creating your layout, which would most likely mean the Liquid would be rendered to nothing, or to something unexpected.
 
 Important! Once you put raw tags into a layout, the Siteglide-CLI will ignore any errors in your code. So if you have an unexplained file in your layout that is not installing properly, try taking out the raw tags, syncing, then putting them back in. You may discover the error in the CLI.
 
@@ -304,6 +306,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
 
+
 <div id="slider_{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 <div id="toggle_{{sitebuilder_uniq_component_id}}" class="js-toggle-button"></div>
 
@@ -326,6 +329,7 @@ _Liquid_
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 
 <div data-slider="{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 ```
@@ -372,11 +376,15 @@ In this example, the layout\_config files array contains a file with the dest: `
 {% capture testimonials_layout -%}{{layout}}/testimonials{%- endcapture %}
 {% include 'module', id: '8', layout: testimonials_layout, type: 'list', item_ids: item_ids, _top_model: nil %}
 {% endraw %}
+
+
 ```
 
 _Resetting `_top_model` for consistent layout paths_
 
-The unusual looking `_top_model: nil` parameter is useful for making sure the nested Siteglide tag looks in a consistent location for layouts. Due to legacy reasons, where an `{% include 'module' %}` tag is nested inside another, Siteglide will look inside the parent module folder for all child module layouts. This is inconsistent with other tags, for example secure zones where Siteglide will look in the child module's folder, so it's easier to use this parameter to tell Siteglide to ignore the parent layout and look in the module folder for the current module. That way you can always store layouts safely accordingly to their own functionality rather than the functionality of the layout they're nested inside.
+The unusual looking `_top_model: nil` parameter is useful for making sure the nested Siteglide tag looks in a consistent location for layouts. Due to legacy reasons, where an \`
+
+\` tag is nested inside another, Siteglide will look inside the parent module folder for all child module layouts. This is inconsistent with other tags, for example secure zones where Siteglide will look in the child module's folder, so it's easier to use this parameter to tell Siteglide to ignore the parent layout and look in the module folder for the current module. That way you can always store layouts safely accordingly to their own functionality rather than the functionality of the layout they're nested inside.
 
 _Preserving the Layout Variable across multiple layers of Liquid_
 
@@ -386,6 +394,7 @@ If you're nesting layouts in more than two layers, you may experience a difficul
 {% raw %}
 {% assign original_layout = _layout %}
 {% endraw %}
+
 ```
 
 _Datasources_
