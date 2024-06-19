@@ -232,8 +232,6 @@ Perhaps the most complex and important part of the configuration to pay attentio
 }
 ```
 
-Copy Toggle Comments
-
 #### Step 4 - Adding the Content to Layout Source Files <a href="#step-4-adding-the-content-to-layout-source-files" id="step-4-adding-the-content-to-layout-source-files"></a>
 
 **Adding Liquid to Layouts using the Raw Tag**
