@@ -148,6 +148,7 @@
   * [📋 Step-by-step Basic Payment Confirmations](eCommerce/basic-payments/payment-confirmation.md)
 * [📂 Cart, Checkout and Quotes](eCommerce/cart-checkout-or-quotes/introduction.md)
   * [💡 About Cart, Checkout and Quotes](ecommerce-module/introduction-2/about-cart-checkout-and-quotes.md)
+  * [🌳 Cart and Checkout Folder Structure](ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
   * [Product Liquid Reference](eCommerce/cart-checkout-or-quotes/product-liquid-reference.md)
   * [👀 ecommerce/checkout\_standard](eCommerce/cart-checkout-or-quotes/ecommerce-checkout-standard.md)
   * [Product List Layout](eCommerce/cart-checkout-or-quotes/product-lists.md)
