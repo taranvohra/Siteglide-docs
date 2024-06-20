@@ -5,7 +5,7 @@ createdAt: 2021-02-19T16:08:21.000Z
 updatedAt: 2023-03-03T08:10:04.000Z
 ---
 
-# Volume Pricing
+# 🔹 Volume Pricing
 
 Offer your customers better prices when they purchase in bulk. This feature lets you define as many levels of Volume Pricing as you like.
 
@@ -33,20 +33,15 @@ There is no need to implement any front-end code in order to start using Volume 
 
 ## Outputting Volume Price Information in Product Layouts
 
-![](https://downloads.intercomcdn.com/i/o/294801815/27f4f1076899d9efc3f57b82/image.png)
-
 You may wish Front End to dynamically display the available prices for a product. To do so, you can loop over each pricing threshold and display the prices in a table, list or format of your choice.
 
 Inside the Product List/ Detail Page item.liquid file, you'll have access to the following fields:
 
-| **Field Name / Liquid Tag**           | **Example**                | **Notes**                                                                                                                                                                                             |
-| ------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| \{{this\['Volume pricing Enabled']\}} | true                       | Contains a boolean. If false, normal pricing will be used.                                                                                                                                            |
-| \{{this\['Volume Pricing']\}}         | { "100": 400, "1000": 350} | Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you. |
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name / Liquid Tag</strong></td><td><strong>Example</strong></td><td><strong>Notes</strong></td></tr><tr><td>{{this['Volume pricing Enabled']}}</td><td>true</td><td>Contains a boolean. If false, normal pricing will be used.</td></tr><tr><td>{{this['Volume Pricing']}}</td><td>{ "100": 400, "1000": 350}</td><td>Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you.</td></tr></tbody></table>
 
 When looping over an object like `this['Volume Pricing']`, `.first` allows you to access the key (here the quantity threshold) and `.last` allows you to access the value (here the price).
 
-First though, we use logic in the first line to check if the pricing has been enabled- to avoid confusion and disappointment.
+First though, we use logic in the first line to check if the pricing has been enabled:
 
 ```liquid
 {% raw %}
@@ -67,16 +62,9 @@ First though, we use logic in the first line to check if the pricing has been en
 
 ## Accessing Volume Prices in the Order Confirmation Email
 
-![](https://downloads.intercomcdn.com/i/o/294826902/b9182c8aa3c14a63189b8c6d/image.png)
-
 Inside the Order Confirmation Email, you'll have access to the following relevant fields.
 
-| **Field Name / Liquid Tag**                       | **Example** | **Notes**                                                                                                                                                                                              |
-| ------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| \{{product.volume\_pricing\_original\_price\}}    | 60.00       | A formatted price representing the price of the row, had the better volume price not been applied.                                                                                                     |
-| \{{product.volume\_pricing\_threshold\_reached\}} | 4           | The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below. |
-| \{{product.currency\_symbol\}}                    | £           |                                                                                                                                                                                                        |
-| \{{product.price\}}                               | 19.00       | This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available.                                                                   |
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name / Liquid Tag</strong></td><td><strong>Example</strong></td><td><strong>Notes</strong></td></tr><tr><td>{{product.volume_pricing_original_price}}</td><td>60.00</td><td>A formatted price representing the price of the row, had the better volume price not been applied.</td></tr><tr><td>{{product.volume_pricing_threshold_reached}}</td><td>4</td><td>The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below.</td></tr><tr><td>{{product.currency_symbol}}</td><td>£</td><td></td></tr><tr><td>{{product.price}}</td><td>19.00</td><td>This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available.</td></tr></tbody></table>
 
 The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
 
@@ -94,4 +82,4 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
 </td>
 ```
 
-See the [Order Confirmation Email](https://developers.siteglide.com/order-confirmation-emails) documentation for more.
+See the [Order Confirmation Email](order-confirmation.md) documentation for more.

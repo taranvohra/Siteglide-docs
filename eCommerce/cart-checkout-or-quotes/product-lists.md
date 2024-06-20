@@ -5,15 +5,13 @@ createdAt: 2021-02-19T09:29:06.000Z
 updatedAt: 2023-04-06T15:14:13.000Z
 ---
 
-# Product List Layout
+# 🔹 Product List Layout
 
 Similar to WebApp List Layouts, a Product List Layout can allow users to browse Products. It can be filtered and sorted too!
 
-![](https://siteglide-52c14a1a8a9b.intercom-attachments-1.com/i/o/163490181/725ceee413d826167274bb97/list\_layout.jpg)
-
 ## Prerequisites
 
-* You have [created Products](https://help.siteglide.com/article/196-products-introduction) in the Admin
+* You have created Products in the Admin
 
 ## Getting Started
 
@@ -49,25 +47,24 @@ It will cover how to:
 
 ## Folder Structure
 
-In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as below:
+If you need to refer to the folder structure for where layout files should go, refer to this:
 
-* `layouts`
-  * `modules`
-    * `module_14`
-      * `product`
-        * `name_of_my_layout`
-          * `list`
-            * `wrapper.liquid`
-            * `item.liquid`
-          * `detail`
-            * `wrapper.liquid`
-            * `item.liquid`
-      * `product_attributes`
-        * `my_attribute_layout.liquid`
+{% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
 
 ### Creating a new set of Product Layouts
 
-To create a new set of Product layouts- create your folder at the level of "name\_of\_my\_layout". Inside that, the folders and files should be created as shown above.
+To create a new set of Product layouts- create a new folder bearing the name of your layout, and create within it:
+
+* product
+  * name\_of\_my\_layout
+    * list
+      * wrapper.liquid
+      * item.liquid
+    * detail
+      * wrapper.liquid
+      * item.liquid
 
 ### List Layout Development
 
@@ -75,13 +72,12 @@ A list view for products is made up of two parts.
 
 #### wrapper.liquid
 
-wrapper.liquid -- list view example
-
 ```liquid
 <div class="row">
-  <div class="card-deck"> {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
-                              item_layout: 'item' 
-                          -%}
+  <div class="card-deck"> 
+    {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
+      item_layout: 'item' 
+    -%}
   </div>
 </div>
 
@@ -91,12 +87,11 @@ The wrapper contains the code for the main part of the section you are building.
 
 In the wrapper.liquid file, it is important to include the liquid file which loops over the Product items:
 
-```liquid
-{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
+<pre class="language-liquid"><code class="lang-liquid">{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
--%}
-
-```
+<strong>-%}
+</strong>
+</code></pre>
 
 The item\_layout parameter should be the name of a liquid file in the same folder as the current file. Usually this will be "item", but you could have an alternative Layout.
 
@@ -129,21 +124,6 @@ Output all data available in the "this" object: `{{this | json}}`
 
 ## Adding to Cart on the List View
 
-![](https://downloads.intercomcdn.com/i/o/202766316/777e7671a15e0108c77c9f0e/image.png)
-
-### Update
-
-Previously, adding Products from a List View to the Cart was only partially supported.
-
-What we did support on the List View:
-
-* Adding one of each Product at a time
-
-What we now also support, with some small code changes:
-
-* Choosing the Quantity before adding to Cart
-* Choosing Attributes before adding to Cart
-
 ### Marking Separate Products to support the Advanced Features of Adding to Cart on a Product List View
 
 In order to help the JavaScript understand which Quantity and Attribute Control belongs to which Product, we've added a new requirement to Product List Layouts. Please add the following data-attribute on the highest-level HTML element in your `item.liquid` file.
@@ -174,9 +154,15 @@ For old sites which do upgrade the eCommerce Module, but do not add this data-at
 
 As with Detail Layouts, you'll need to include the following Liquid and HTML code within the `item.liquid` file. It's also now important that these elements lie within the element with the `data-product-group` Attribute, when you're building a List Layout. See the section above for details.
 
-\*\*\*The "Add to Cart" Button \*\*\*\`
+_**The "Add to Cart" Button**_
 
-\`
+
+
+For more on developing the Add to Cart Button:
+
+{% content-ref url="add-to-cart-button.md" %}
+[add-to-cart-button.md](add-to-cart-button.md)
+{% endcontent-ref %}
 
 _**The Quantity Control**_
 
@@ -199,7 +185,9 @@ This is mandatory, but can be hidden and hard-coded to have a value of 1, if you
 
 ```
 
-\*\*\*Attribute Control \*\*\*As this code can be complex, so please refer to the [Attributes Layout ](https://developers.siteglide.com/attribute-layouts)doc for further information, or take a look at the full example below.
+_**Attribute Control**_
+
+As this code can be complex, so please refer to the [Attributes Layout ](https://developers.siteglide.com/attribute-layouts)doc for further information, or take a look at the full example below.
 
 _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which supports Adding to Cart:
 

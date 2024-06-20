@@ -5,11 +5,9 @@ createdAt: 2021-02-19T09:17:21.000Z
 updatedAt: 2023-04-06T15:15:58.000Z
 ---
 
-# Product Detail Layout
+# 🔹 Product Detail Layout
 
 Customise the way Products look on their automatically generated Detail Pages and add functionality for adding the Product to the Cart.
-
-![](https://siteglide-52c14a1a8a9b.intercom-attachments-1.com/i/o/163500122/fe240ab1f16e7e723880cb4f/detail\_layout.jpg)
 
 ## Prerequisites
 
@@ -43,6 +41,12 @@ In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as 
             * `item.liquid`
       * `product_attributes`
         * `my_attribute_layout.liquid`
+
+See more:
+
+{% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
 
 ### Creating a new set of Product Layouts
 
@@ -121,10 +125,16 @@ To create a button to add the current Product to the Cart use the following Liqu
 
 ```liquid
 {% raw %}
-{%- include 'ecommerce/cart_add' -%}
+{%- include 'ecommerce/cart_add', component_layout: 'name_of_my_layout' -%}
 {% endraw %}
 
 ```
+
+See more:
+
+{% content-ref url="add-to-cart-button.md" %}
+[add-to-cart-button.md](add-to-cart-button.md)
+{% endcontent-ref %}
 
 #### Quantity to Add to Cart
 

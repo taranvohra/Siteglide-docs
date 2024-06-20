@@ -4,15 +4,15 @@
 
 ## Step 2) Create a New Form
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3) Add a Name and Redirect URL. Set up any Custom Fields you wish to add
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4) In the Payments Tab, Toggle Payments on and Select Basic Payment
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For a basic fixed-amount set up, set the minimum payment value to exactly what you want users filling in the Form to Pay.\
@@ -24,17 +24,17 @@ For charitable donations and invoice payments, set the minimum payment to someth
 
 In the Secure Zones tab, pick a Secure Zone. Access will be granted when payment is made and the Form is submitted.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6) Save the Form
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7) Output your Form on a Page
 
 Back in CMS Forms, find the ID for your newly created Form:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this ID in the Liquid tag when you insert the Form on the Page (or use Toolbox as a quick shortcut):
 

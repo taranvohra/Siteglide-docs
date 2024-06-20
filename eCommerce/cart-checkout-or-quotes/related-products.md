@@ -5,11 +5,9 @@ createdAt: 2021-02-19T11:33:08.000Z
 updatedAt: 2023-04-06T15:08:02.000Z
 ---
 
-# Related Products
+# 📋 Steps to Datasource and Display Related Products
 
 How to use Module Custom Fields to output similar, related products
-
-![](https://downloads.intercomcdn.com/i/o/282006861/82f4131eb2ac45152fa9e3b8/image.png)
 
 ## Pre-requisites
 
@@ -22,21 +20,13 @@ Module Custom Fields allow a wide range of use cases for connecting up different
 
 You could of course use this same technique with the Blog Module or any other Module or WebApp.
 
-## Step By Step
-
 ### Step 1) Add a new Custom Field to Products
 
 To add a Custom Field to Products, first select Edit Module Structure from the Products List in Admin.
 
-![](https://downloads.intercomcdn.com/i/o/281984488/5ab9d9681291cb70dde3d46c/image.png)
-
 At the bottom of the available fields, you can find the Custom Fields section, and press the "Add new field" button.
 
-![](https://downloads.intercomcdn.com/i/o/281984986/aed1745b9182c9e7edff26db/image.png)
-
 The name of your field can be whatever you want, here we'll call it Related Products. The Datasource Multi type prompts us to choose a Module or WebApp that we will be able to select Items from.
-
-![](https://downloads.intercomcdn.com/i/o/281985832/a72882b3c513f02cc2a4f086/image.png)
 
 When you're ready, press save and your new Custom Field will be set up. You'll then be able to use this field when creating and editing Products.
 
@@ -44,15 +34,9 @@ When you're ready, press save and your new Custom Field will be set up. You'll t
 
 In this example, we'll edit the new Custom Field on an existing Product to create a relationship with another Product. From the Product Edit Page, select the Custom Fields tab:
 
-![](https://downloads.intercomcdn.com/i/o/281987097/8e3642f605365b4746aa0832/image.png)
-
 As we used the Datasource Multi field type and selected Products as the Module to be linked to, Siteglide knows what we're trying to do and will help us find the related Items. By clicking in the select box and starting to type "Crow" I should be able to find other Products with a similar name to this band easily.
 
-![](https://downloads.intercomcdn.com/i/o/281988102/152a8e8eba1012153c651ff0/image.png)
-
 Select as many as you need. Each Product's unique ID will be stored in array format in your Custom Field.
-
-![](https://downloads.intercomcdn.com/i/o/281988481/48748f56ec8636e028fdc9c2/image.png)
 
 When you're ready, save the Product.
 
@@ -60,15 +44,11 @@ When you're ready, save the Product.
 
 For the next steps (3 - 6), we'll be navigating to Code Editor to develop custom Layouts to display the Related Products Front End. We'll start by working in the "item.liquid" file of the Layout you're using for the Product Detail View. We'll nest a new List of Related Products inside this Detail Layout.
 
-![](https://downloads.intercomcdn.com/i/o/281989251/855f8a163df27a3811a6f93c/image.png)
-
 Inside the item.liquid file, we can access the Custom Field by name:
 
 ```liquid
 <h2>Related Products</h2><br><br>
 {{this['Related Products']}}<br><br>
-
-
 ```
 
 This outputs an array of the IDs of each of the related Products stored against our current Product. It should look something like this: `["55","75","147"]`

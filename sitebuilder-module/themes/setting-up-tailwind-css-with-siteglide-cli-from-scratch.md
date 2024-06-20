@@ -23,7 +23,7 @@ Each time you start working on a new project, you will need to follow these step
 
 Check if you have already installed the SiteBuilder Module on your site. The version should be at least 4.11.2
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 The SiteBuilder Module comes with the Free Flowbite Theme automatically.&#x20;
 
@@ -39,7 +39,7 @@ In the Siteglide Admin, under modules in the menu, enter the SiteBuilder Module.
 \
 Find Page Templates in the tabs:
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the popup, choose:
 
@@ -54,7 +54,7 @@ This template starts with a default Tailwind CSS file which allows most layouts 
 
 Older versions of SiteBuilder would have defaulted to use the JIT option as a default. Make sure it's set to CLI!
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4) Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
 
@@ -152,7 +152,7 @@ You may be given some warnings and information by npm at this stage. For the sak
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this command to build your Tailwind's CSS (we'll look at this in more detail in a minute):
 

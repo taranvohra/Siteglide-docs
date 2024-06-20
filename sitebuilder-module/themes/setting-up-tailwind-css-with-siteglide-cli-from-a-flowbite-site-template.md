@@ -26,13 +26,13 @@ You can use an existing Site you created from a Site Template previously, but it
 
 In the Siteglide Portal, choose Marketplace in the menu and filter by the Category "Template":
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 For this step-by-step article, we'll use the Flowbite eCommerce Site Template, but you can use any Template which uses Tailwind CSS in its [SiteBuilder Theme](./).
 
 Click the card to open up the modal:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill out the settings and click the button to start the Site Create Process.
 
@@ -121,7 +121,7 @@ You may be given some warnings and information by npm at this stage. For the sak
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this command to build your Tailwind's CSS (we'll look at this in more detail in a minute):
 

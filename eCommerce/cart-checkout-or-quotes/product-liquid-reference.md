@@ -5,7 +5,7 @@ createdAt: 2021-02-18T15:09:17.000Z
 updatedAt: 2023-04-06T15:09:36.000Z
 ---
 
-# Product Liquid Reference
+# 👀 Product Layout Reference (includes Cart List Views)
 
 While building Product and Attribute Layouts, a large range of dynamic data is available- here is a full reference guide.
 

@@ -27,6 +27,10 @@ marketplace_builder
             │               basic_payment.liquid
             │               ...
             └───modules
+                ├───module_5
+                │   └───user_orders
+                │       default.liquid
+                │       order_list_custom_layout.liquid
                 └───module_14
                     ├───checkout
                     │   ├───custom_layout
