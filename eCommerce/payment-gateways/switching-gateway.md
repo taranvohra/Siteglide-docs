@@ -5,13 +5,51 @@ createdAt: 2021-11-02T14:26:21.000Z
 updatedAt: 2024-01-29T12:23:57.692Z
 ---
 
-# Switching Payment Gateway
+# 📋 Steps to Switching Payment Gateway
 
-## Step 1
+## Step 1 - Create a Payment Form
 
-Use the [ecommerce/checkout\_standard](docId:WdXVXmm5wUE2tzGD5Px-5) include to output multiple payment gateways inside your checkout form Liquid layout file.
+Create a Form in the Siteglide Admin and turn on the setting to use it as a payment form. (Basic Payment Form and Checkout will be supported as both support at least 2 payment gateways.)
 
-## Step 2
+## Step 2 - Create a Custom Form Layout
+
+{% hint style="info" %}
+:genie:You can use [SiteBuilder](../../sitebuilder-module-1/link-to-sitebuilder-form-layouts.md) to quickly create a custom Form Layout
+{% endhint %}
+
+In Code Editor or CLI, make a copy of the default form layout, ready to customise it.
+
+In any Page, output your form and select the custom layout with the layout parameter. E.g. if your form ID is `1`, your layout should be at `marketplace_builder/views/partials/layouts/forms/form_1/`my-custom-layout`.liquid`
+
+```liquid
+{% raw %}
+{%- include 'ecommerce/checkout', form_id: '1', layout: 'my-custom-layout' -%}
+{% endraw %}
+```
+
+For Basic Payment forms:
+
+```liquid
+{% raw %}
+{% include 'form', id: '2', layout: 'my-custom-layout' %}
+{% endraw %}
+```
+
+## Step 3
+
+For Checkout Forms, use the ecommerce/checkout\_standard include to output multiple payment gateways inside your checkout form Liquid layout file.
+
+<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'ecommerce/checkout_standard' id: '123' default: 'true' -%}
+</strong>{%- include 'ecommerce/checkout_standard' id: '456', default: 'false' -%} 
+</code></pre>
+
+For Basic Payment Forms:
+
+<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'ecommerce/basic_payment' id: '123' default: 'true' -%}
+</strong>{%- include 'ecommerce/basic_payment' id: '456', default: 'false' -%} 
+</code></pre>
+
+## Step 4
 
 Once you have multiple options, you'll need a way to tell the system which to use.
 
@@ -25,19 +63,29 @@ s_e_set_payment_gateway('PayPal');
 
 Pass in the name of the Payment Gateway you wish to switch to as the only argument.
 
-This can be applied to any action you like, such as clicking a radio button, or opening an accordion. e.g.
+This can be applied as a callback to any JS event you like, such as clicking a radio button, or opening an accordion. e.g.
 
+{% tabs %}
+{% tab title="Liquid" %}
+```liquid
 
+<fieldset>
+  <legend>Select a payment gateway:</legend>
+  <div>
+    <input type="radio" id="123" name="paymentGateway" value="123" checked />
+    <label for="123">Stripe</label>
+  </div>
+  <div>
+    <input type="radio" id="456" name="paymentGateway" value="456" />
+    <label for="456">PayPal</label>
+  </div>
+</fieldset>
+```
+{% endtab %}
 
-\`\`\`liquid Pay with Stripe Pay with PayPal
-
-````
-
-</div>
-
-<div data-gb-custom-block data-tag="tab" data-title='javascript'>
-
+{% tab title="JavaScript" %}
 ```javascript
+
 const paymentGatewayCheckboxes = document.querySelectorAll('[name="paymentGateway"]');
 paymentGatewayCheckboxes.forEach(function(item) {
   item.addEventListener('change', function(e) {
@@ -45,6 +93,8 @@ paymentGatewayCheckboxes.forEach(function(item) {
     s_e_set_payment_gateway(radio.value);
   });
 })
-````
+```
+{% endtab %}
+{% endtabs %}
 
 If the JS function is not called, the default payment gateway from the multiple available gteways will be used.

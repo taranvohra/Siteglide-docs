@@ -5,6 +5,8 @@ createdAt: 2021-09-16T07:14:15.000Z
 updatedAt: 2023-04-06T15:54:15.000Z
 ---
 
+# 🔹 Paypal Custom Parameters
+
 PayPal allows you to include different parameters as part of the SDK such as disabling payment options that are unwanted, as per the following link -> [https://developer.paypal.com/docs/checkout/reference/customize-sdk](https://developer.paypal.com/docs/checkout/reference/customize-sdk/)
 
 To use these parameters add this code to top of your Form layout, containing the parameters you want:
