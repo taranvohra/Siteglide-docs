@@ -38,6 +38,10 @@ You should include this _inside_ a basic payment form layout.
 | currency  | String  | The currency to charge the user                                                                                                                              |
 | id        | Integer | The ID of the Payment Gateway to be used. If not included, then the system will output the Payment Gateway that you most recently updated in Siteglide Admin |
 
+{% hint style="info" %}
+Also see [Switching Payment Gateways](../payment-gateways/switching-gateway.md)
+{% endhint %}
+
 ## Payment Confirmation Layouts
 
 {% content-ref url="payment-confirmation.md" %}
