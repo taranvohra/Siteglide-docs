@@ -12,6 +12,18 @@ To include a Basic Payment Form on the Page, use the same syntax as a [standard 
 
 ## Form Layouts
 
+### Authorize.net Specific Instructions
+
+{% content-ref url="../../ecommerce-module/introduction-1/authorize.net-basic-payment-forms.md" %}
+[authorize.net-basic-payment-forms.md](../../ecommerce-module/introduction-1/authorize.net-basic-payment-forms.md)
+{% endcontent-ref %}
+
+### PayPal Specific Instructions
+
+{% content-ref url="../../ecommerce-module/introduction-1/paypal-basic-payment-forms.md" %}
+[paypal-basic-payment-forms.md](../../ecommerce-module/introduction-1/paypal-basic-payment-forms.md)
+{% endcontent-ref %}
+
 ### ecommerce/basic\_payment Liquid Tag
 
 #### What is it?
@@ -41,6 +53,16 @@ You should include this _inside_ a basic payment form layout.
 {% hint style="info" %}
 Also see [Switching Payment Gateways](../payment-gateways/switching-gateway.md)
 {% endhint %}
+
+### s\_e\_amount Field
+
+This HTML input field with the ID s\_e\_amount can be used to modify the amount which will be paid when the Form is submitted, see:
+
+{% content-ref url="../../ecommerce-module/introduction-1/steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
+[steps-to-allow-user-to-decide-amount-they-will-pay.md](../../ecommerce-module/introduction-1/steps-to-allow-user-to-decide-amount-they-will-pay.md)
+{% endcontent-ref %}
+
+[#a-note-on-security](basic-payments.md#a-note-on-security "mention")
 
 ## Payment Confirmation Layouts
 
