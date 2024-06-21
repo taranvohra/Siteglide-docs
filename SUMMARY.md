@@ -159,7 +159,7 @@
   * [🔹 Product Detail Layout](eCommerce/cart-checkout-or-quotes/product-detail.md)
   * [🔹 Volume Pricing](eCommerce/cart-checkout-or-quotes/volume-pricing.md)
   * [📋 Steps to Datasource and Display Related Products](eCommerce/cart-checkout-or-quotes/related-products.md)
-  * [Dynamic Product Layouts based on Categories](eCommerce/cart-checkout-or-quotes/changing-detail-view-based-on-product-category.md)
+  * [🔹 Dynamic Product Layouts based on Categories](eCommerce/cart-checkout-or-quotes/changing-detail-view-based-on-product-category.md)
   * [Attribute Layout](eCommerce/cart-checkout-or-quotes/attribute-layouts.md)
   * [Attributes - Changing Product Price after Change](eCommerce/cart-checkout-or-quotes/changing-price-as-attrs-are-selected.md)
   * [Attributes - Changing Product Details after Change](eCommerce/cart-checkout-or-quotes/changing-product-name-as-attribute-is-selected.md)

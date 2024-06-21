@@ -14,13 +14,13 @@ In this tutorial, we will show you how to create the simplest Cart and Checkout 
 
 In eCommerce/Settings, select the desired default currency for your Site:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2) Create Products
 
 In eCommerce / Products, create at least one product with a price:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Check the "Pricing" tab to add a price.
@@ -39,7 +39,7 @@ Users will need to see your products in order to access their Product Detail Pag
 {% hint style="success" %}
 [SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 {% endhint %}
 
 ## Step 4) Select a Product Detail Layout
@@ -55,7 +55,7 @@ Select the Detail Page Template and Layout:
 {% hint style="success" %}
 [SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 {% endhint %}
 
 ## Step 5) Implement an Add to Cart Button on Your Detail View
