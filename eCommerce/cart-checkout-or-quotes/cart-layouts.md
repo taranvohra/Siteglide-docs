@@ -139,7 +139,6 @@ Note that, after updating this input field, the User will also have to click the
 {% tab title="product/custom_cart_layout/list/item.liquid" %}
 ```liquid
 {% raw %}
-{% raw %}
 {% include 'ecommerce/cart_product_attributes' -%}
 {% endraw %}
 ```
