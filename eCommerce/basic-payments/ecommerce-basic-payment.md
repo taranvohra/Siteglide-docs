@@ -72,7 +72,7 @@ This HTML input field with the ID s\_e\_amount can be used to modify the amount 
 
 ```
 {% raw %}
-{% include 'ecommerce/payment_details', layout: 'default' %}
+{% include 'ecommerce/payment_details', layout: 'default' %}
 {% endraw %}
 ```
 

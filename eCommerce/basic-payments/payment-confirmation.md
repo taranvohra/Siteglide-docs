@@ -24,7 +24,7 @@ To include the details of the customer's most recent Order, include the followin
 
 ```liquid
 {% raw %}
-{% include 'ecommerce/payment_details', layout: 'default' %}
+{% include 'ecommerce/payment_details', layout: 'default' %}
 {% endraw %}
 ```
 
