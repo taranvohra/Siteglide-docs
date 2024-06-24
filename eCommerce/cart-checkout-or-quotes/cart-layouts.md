@@ -32,7 +32,7 @@ marketplace_builder
                                 wrapper.liquid
 ```
 
-See the full Cart & Checkout folder structure here:
+See the full Cart & Checkout folder structure here:&#x20;
 
 {% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
 [cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
@@ -44,16 +44,17 @@ The wrapper.liquid file should contain the code for the main section of code tha
 
 {% tabs %}
 {% tab title="product/custom_cart_layout/list/wrapper.liquid" %}
-```liquid
-
-
-
-
-
-
-
-
-```
+<pre class="language-liquid"><code class="lang-liquid"><strong>
+{% assign cart_parsed = context.session.cart | parse_json %}
+</strong>{% if cart_parsed.size > 0 %}
+  &#x3C;!-- Your Layout here -->
+  {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
+    item_layout: 'item' 
+  -%}
+{% else %}
+  &#x3C;!-- Message to say Cart is empty -->
+{% endif %}
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -77,7 +78,29 @@ Of course, this is just an ordinary link. It will need updating with the slug of
 
 The following reference shows how to output useful data about your Cart as a whole:
 
-<table data-full-width="false"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td><td><code>{{context.exports.cart_total_quantity.data}}</code></td></tr><tr><td>Shipping Price</td><td><code>{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}</code></td></tr><tr><td>Shipping Price Before Tax</td><td><code>{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}</code></td></tr><tr><td>Shipping Price Tax Amount</td><td>`{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}`</td></tr><tr><td>Total Item Price</td><td>`{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}`</td></tr><tr><td>Total Item Price before Tax</td><td>`{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}`</td></tr><tr><td>Total Item Tax Amount</td><td>`{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}`</td></tr><tr><td>Total Price Reduction (due to discounts)</td><td>`{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}`</td></tr><tr><td>Final Total Price before Tax</td><td>`{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}`</td></tr><tr><td>Final Total Tax Amount</td><td>`{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}`</td></tr><tr><td>Final Total Price</td><td>`{% include 'ecommerce/price_total', format_type: 'formatted' -%}`</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td>
+<td>{{context.exports.cart_total_quantity.data}}</td>
+</tr><tr><td>Shipping Price</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Shipping Price Before Tax</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Shipping Price Tax Amount</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Total Item Price</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Total Item Price before Tax</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Total Item Tax Amount</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Total Price Reduction (due to discounts)</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Final Total Price before Tax</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Final Total Tax Amount</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr><tr><td>Final Total Price</td>
+ <td><code>{% raw %}{% include 'ecommerce/price_total', format_type: 'formatted' -%}{% endraw %}</code></td>
+</tr></tbody></table>
 
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
@@ -124,7 +147,6 @@ Note that, after updating this input field, the User will also have to click the
 {% raw %}
 {% include 'ecommerce/cart_product_attributes' -%}
 {% endraw %}
-
 ```
 
 ## Controlling Inventory
@@ -138,12 +160,12 @@ In order to make sure Users do not increase the quantity of items in their Cart,
 {% endif %}
 {% endraw %}
 
-
 ```
 
 To improve this so that the User cannot increase the value by a greater number than is allowed by the stock level, you could add a "max" attribute to the quantity input:
 
 ```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
@@ -151,4 +173,5 @@ To improve this so that the User cannot increase the value by a greater number t
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
+{% endraw %}
 ```
