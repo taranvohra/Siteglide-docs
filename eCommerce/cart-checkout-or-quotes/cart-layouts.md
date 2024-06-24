@@ -100,7 +100,15 @@ If the cart has several lines containing the same product, but with different at
 
 In this example, the function is called when a button is clicked and Liquid is used to pass the cart ID into the function:
 
-`<button onclick="s_e_cart_remove(true,{{this.cart_data.cart_id}})"></button>`
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
+```liquid
+{% raw %}
+<button onclick="s_e_cart_remove(true,{{this.cart_data.cart_id}})"></button>
+{% endraw %}
+```
+{% endtab %}
+{% endtabs %}
 
 You can optionally pass in a callback function to the third argument to be called after the row has been removed from the cart. In order for this to work, you need to set `reload` (the first argument) to `false`.
 
@@ -108,45 +116,58 @@ You can optionally pass in a callback function to the third argument to be calle
 
 See the full Article on [updating Product quantities here](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart).
 
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
 ```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
-
-
+{% endraw %}
 ```
+{% endtab %}
+{% endtabs %}
 
 Note that, after updating this input field, the User will also have to click the "Update Cart" button, though this is covered in the wrapper.liquid file- as it covers the whole Page.
 
 ### Outputting the Attributes the User chose for this item:
 
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
 ```liquid
+{% raw %}
 {% raw %}
 {% include 'ecommerce/cart_product_attributes' -%}
 {% endraw %}
-
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Controlling Inventory
 
 In order to make sure Users do not increase the quantity of items in their Cart, when the Product is out of stock, you could use a liquid if statement:
 
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
 ```liquid
 {% raw %}
 {% if this.inventory.id != blank and this.inventory.quantity == '0' -%}
   <!-- Code here -->
 {% endif %}
 {% endraw %}
-
-
 ```
+{% endtab %}
+{% endtabs %}
 
 To improve this so that the User cannot increase the value by a greater number than is allowed by the stock level, you could add a "max" attribute to the quantity input:
 
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
 ```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
@@ -154,4 +175,7 @@ To improve this so that the User cannot increase the value by a greater number t
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
+{% endraw %}
 ```
+{% endtab %}
+{% endtabs %}
