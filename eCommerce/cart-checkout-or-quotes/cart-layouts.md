@@ -5,56 +5,61 @@ createdAt: 2021-02-18T16:04:43.000Z
 updatedAt: 2024-01-30T12:41:48.974Z
 ---
 
-# Cart Layouts
+# 🔹 Cart Layouts
 
 How to customise the Shopping Cart Layout
 
 ## Prerequisites
 
-* You have completed [How to Create a Shopping Cart and Guest Checkout](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial)
+* You have completed [How to Create a Shopping Cart and Guest Checkout](../../ecommerce-module/introduction-2/steps-to-implement-a-guest-checkout-flow.md)
 
-## Folder Structure
+## :deciduous\_tree: Folder Structure
 
-Cart layouts are stored in the following structure.
+Cart layouts are stored in the following structure:
 
-* `layouts`
-  * `modules`
-    * `module_14`
-      * `product`
-        * `name_of_my_cart_layout`
-          * `list`
-            * `wrapper.liquid`
-            * `item.liquid`
+```
+marketplace_builder
+└───views
+    └───partials
+        └───layouts
+            └───modules
+                └───module_14
+                    └───product
+                        collection.liquid
+                        └───custom_cart_layout
+                            └───list
+                                item.liquid
+                                wrapper.liquid
+```
 
-To create a new layout, right-click on the product folder to add a folder with the name of your layout, then create the list folder and wrapper and liquid files inside it as shown.
+See the full Cart & Checkout folder structure here:&#x20;
+
+{% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
 
 ## wrapper.liquid
 
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
 
-```liquid
-{%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
+{% tabs %}
+{% tab title="product/custom_cart_layout/list/wrapper.liquid" %}
+<pre class="language-liquid"><code class="lang-liquid"><strong>{% assign cart_parsed = context.session.cart | parse_json %}
+</strong>{% if cart_parsed.size > 0 %}
+  &#x3C;!-- Your Layout here -->
+  {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
--%}
-
-```
-
-### Hiding the Cart when Empty
-
-It's strongly recommended to hide the Cart using Liquid logic when it is empty. This logic can either go inside your `wrapper.liquid` file, or directly in the Page.
-
-```liquid
-{% raw %}
-{% assign cart_parsed = context.session.cart | parse_json %}
-{% if cart_parsed.size > 0 %}
-  <!-- Your Layout here -->
+  -%}
 {% else %}
-  <!-- Message to say Cart is empty -->
+  &#x3C;!-- Message to say Cart is empty -->
 {% endif %}
-{% endraw %}
+</code></pre>
+{% endtab %}
+{% endtabs %}
 
-
-```
+{% hint style="info" %}
+It's strongly recommended to hide the Cart using Liquid logic when it is empty. This logic can either go inside your `wrapper.liquid` file, or directly in the Page.
+{% endhint %}
 
 ### Empty the Cart
 
@@ -68,14 +73,11 @@ See the full Article on [updating the Cart's quantity here](https://developers.s
 
 Of course, this is just an ordinary link. It will need updating with the slug of your Checkout Page: `<a href="/checkout>Proceed to checkout</a>`
 
+## Reference
+
 The following reference shows how to output useful data about your Cart as a whole:
 
-| **Field Name** | **Liquid Tag**                                   |
-| -------------- | ------------------------------------------------ |
-| Total Quantity | \{{context.exports.cart\_total\_quantity.data\}} |
-| Shipping Price |                                                  |
-
-\| | Shipping Price Before Tax || | Shipping Price Tax Amount || | Total Item Price || | Total Item Price Before Tax || | Total Item Tax Amount || | Total Price Reduction (due to Discounts) || | Final Total Price Before Tax || | Final Total Tax Amount || | Final Total Price ||
+<table data-full-width="true"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td><td>{{context.exports.cart_total_quantity.data}}</td></tr><tr><td>Shipping Price</td><td></td></tr><tr><td>Shipping Price Before Tax</td><td></td></tr><tr><td>Shipping Price Tax Amount</td><td></td></tr><tr><td>Total Item Price</td><td></td></tr><tr><td>Total Item Price before Tax</td><td></td></tr><tr><td>Total Item Tax Amount</td><td></td></tr><tr><td>Total Price Reduction (due to discounts)</td><td></td></tr><tr><td>Final Total Price before Tax</td><td></td></tr><tr><td>Final Total Tax Amount</td><td></td></tr><tr><td>Final Total Price</td><td></td></tr></tbody></table>
 
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
@@ -118,9 +120,11 @@ Note that, after updating this input field, the User will also have to click the
 
 ### Outputting the Attributes the User chose for this item:
 
-\`
-
-\`
+```liquid
+{% raw %}
+{% include 'ecommerce/cart_product_attributes' -%}
+{% endraw %}
+```
 
 ## Controlling Inventory
 

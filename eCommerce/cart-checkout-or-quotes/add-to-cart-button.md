@@ -17,8 +17,8 @@ This Article assumes you've already:
 
 If you've not already done this, you can read the following Articles to learn more:
 
-* [Product List Layouts](https://developers.siteglide.com/list-layouts)
-* [Product Detail Layouts](https://developers.siteglide.com/detail-layouts)
+* [Product List Layouts](product-lists.md)
+* [Product Detail Layouts](product-detail.md)
 
 ## Introduction
 
