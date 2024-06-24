@@ -143,6 +143,13 @@ Note that, after updating this input field, the User will also have to click the
 {% endraw %}
 ```
 {% endtab %}
+{% tab title="product/custom_cart_layout/list/item.liquid" %}
+```liquid
+{% raw %}
+{% include 'ecommerce/cart_product_attributes' -%}
+{% endraw %}
+```
+{% endtab %}
 {% endtabs %}
 
 ## Controlling Inventory
