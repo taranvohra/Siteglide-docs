@@ -5,11 +5,9 @@ createdAt: 2021-02-18T16:28:25.000Z
 updatedAt: 2023-04-06T15:17:02.000Z
 ---
 
-# Attribute Layout
+# 🔹 Attribute Layout - Presenting the Choice to the Customer
 
 Product Attribute Layouts allow you to customise the way that you present users with a choice of which variation of a Product they want.
-
-![](https://siteglide-52c14a1a8a9b.intercom-attachments-1.com/i/o/163505293/9ce44490911c9b04f57b6f9b/single\_attr.jpg)
 
 Product Attribute Layouts allow you to customise the way that you present users with a choice of which variation of a Product they want.
 
@@ -30,21 +28,33 @@ It will cover how to:
 
 ## Folder Structure
 
-In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as below:
+In `SITE MANAGER/Code Editor`, the folder structure for product attributes layouts is as below:
 
-* `layouts`
-  * `modules`
-    * `module_14`
-      * `product`
-        * `name_of_my_layout`
-          * `list`
-            * `wrapper.liquid`
-            * `item.liquid`
-          * `detail`
-            * `wrapper.liquid`
-            * `item.liquid`
-      * `product_attributes`
-        * `my_attribute_layout.liquid`
+```
+marketplace_builder
+└───views
+    └───partials
+        └───layouts
+            └───modules
+                └───module_14
+                    ├───product
+                    │   collection.liquid
+                    │   └───custom_product_layout
+                    │       ├───detail
+                    │       │   item.liquid
+                    │       │   wrapper.liquid
+                    │       └───list
+                    │           item.liquid
+                    │           wrapper.liquid
+                    └───product_attributes
+                        └───custom_attributes_layout.liquid
+```
+
+See a more complete Cart & Checkout Folder Structure here:
+
+{% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
 
 ### Creating a new set of Product Layouts
 
@@ -64,8 +74,6 @@ If you are making a layout where you know exactly which Attribute a Product has,
 ```
 
 ## Looping Over Multiple Attributes
-
-![](https://siteglide-52c14a1a8a9b.intercom-attachments-1.com/i/o/163505298/3d5d9f2760cac1f596e8f23e/multi\_attr.jpg)
 
 If your Products have multiple Attributes, or you want to write code which can dynamically display any Attribute given to the Product, you can use liquid to loop over all Attributes. We've recently updated this example to be much simpler and easier to use.
 

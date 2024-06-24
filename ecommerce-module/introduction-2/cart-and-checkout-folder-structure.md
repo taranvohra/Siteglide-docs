@@ -13,10 +13,6 @@ marketplace_builder
 └───views
     └───partials
         └───layouts
-            ├─── modules
-            │    └───module_14
-            │        └───payment
-            │            └───custom_layout_payment_summary.liquid
             ├───forms
             │    └───form_1
             │       │    default.liquid

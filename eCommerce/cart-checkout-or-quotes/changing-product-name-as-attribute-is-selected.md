@@ -7,21 +7,29 @@ createdAt: 2021-02-19T15:38:05.000Z
 updatedAt: 2023-03-03T08:10:04.000Z
 ---
 
-# Attributes - Changing Product Details after Change
+# 📋 Steps to Change Product Details after a Customer Selects an Attribute
 
 When a User selects a Product Attribute, the Price changes, but what if you want to change the Product Name or Product Code?
 
-## Answer
+## Step 1) Add HTML selectors in the product item.liquid detail layout file
 
-![](https://downloads.intercomcdn.com/i/o/197120935/ed05f68ec92f7466ffeb0342/image.png)
+Add an element at the end of the name. We'll be targeting this by its ID and we'll be changing its content later:&#x20;
 
-\*Step 1) HTML - Add an element at the end of the name. We'll be targeting this by its ID and we'll be changing its content later: \*`<h1>{{this['name']}} <span id="selectedAttribute"></span></h1>`
-
-\*Step 2) Liquid - Make sure the Attributes are correctly outputted on the Product Detail Page, then inside the \<option> element in the Layout, add a data-attribute containing the field you want to use to update the Name. \*
-
+{% tabs %}
+{% tab title="product/custom_layout/detail/item.liquid" %}
 ```liquid
-<!-- Add data-option-name="{{option.name}}" -->
+<h1>{{this['name']}} <span id="selectedAttribute"></span></h1>
+```
+{% endtab %}
+{% endtabs %}
 
+## Step 2) Add a data-attribute to options to store the suffix you which to append to the Product title when this is selected
+
+&#x20;Make sure the Attributes are correctly outputted on the Product Detail Page, then inside the \<option> element in the Attributes Layout, add a data-attribute containing the field you want to use to update the Name.&#x20;
+
+{% tabs %}
+{% tab title="product_attributes/custom_layout.liquid" %}
+```liquid
 <option value="{{option.id}}" 
         data-option-name="{{option.name}}" 
         data-attribute-price-control="{{option.price_raw}}">
@@ -31,17 +39,23 @@ When a User selects a Product Attribute, the Price changes, but what if you want
         ({{this.price.currency_symbol}}{{option.price}})
         {% endunless %}
 {% endraw %}
-        </option>
+</option>
 ```
+{% endtab %}
+{% endtabs %}
 
-For a reminder on how to output Attribute Layouts correctly, check out the doc [here](https://developers.siteglide.com/attribute-layouts)
+For a reminder on how to output Attribute Layouts correctly, check out the doc [here](attribute-layouts.md)
 
-_Step 3) JavaScript - Add it to the wrapper.liquid Layout, or before the end of the \</body> tag._
+## _Step 3) Add a JavaScript Event Listener and Callback Function_
+
+{% hint style="info" %}
+:genie: If you're using SiteBuilder eCommerce layouts which leverage the Live Updates API, the page will not reload when an Attribute is changed. You may need to use a "change" event instead and figure out which option currently has the "selected" property, rather than relying on the selected attribute.&#x20;
+{% endhint %}
 
 ```javascript
 <script>
   function updateName() {
-    var selectedAttribute = document.querySelector("[data-attribute-control]").selectedIndex;
+    var selectedAttribute = document.querySelector("[data-attribute-control]");
     var attributeOptions = document.querySelectorAll("[data-attribute-control] option");
     var selectedAttributeName = attributeOptions[selectedAttribute].getAttribute("data-option-name");
     var newName = document.querySelector("#selectedAttribute");
