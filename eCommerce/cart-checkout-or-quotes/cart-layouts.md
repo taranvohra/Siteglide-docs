@@ -44,10 +44,10 @@ The wrapper.liquid file should contain the code for the main section of code tha
 
 {% tabs %}
 {% tab title="product/custom_cart_layout/list/wrapper.liquid" %}
-<pre class="language-liquid"><code class="lang-liquid"><strong>
+<pre class="language-liquid"><code class="lang-liquid">
 {% raw %}
 {% assign cart_parsed = context.session.cart | parse_json %}
-</strong>{% if cart_parsed.size > 0 %}
+{% if cart_parsed.size > 0 %}
   &#x3C;!-- Your Layout here -->
   {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
