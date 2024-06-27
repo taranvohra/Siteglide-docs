@@ -8,6 +8,10 @@ This Article is very similar to [setting-up-tailwind-css-with-siteglide-cli-from
 
 * Check [Choosing a Build Method](tailwind-css-themes-choosing-a-build-method.md) first to choose which option suits you best, though we strongly recommend the CLI method described in this article.
 
+{% embed url="https://youtu.be/JskMIrDeQ7c?feature=shared" %}
+Step-by-step guide to setting up Tailwind via CLI
+{% endembed %}
+
 ### Introduction <a href="#introduction" id="introduction"></a>
 
 Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you to:
