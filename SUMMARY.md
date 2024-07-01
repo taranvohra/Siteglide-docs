@@ -163,7 +163,7 @@
   * [🔹 Attribute Layout - Presenting the Choice to the Customer](eCommerce/cart-checkout-or-quotes/attribute-layouts.md)
   * [🔹 Attributes - Changing Product Price after Change](eCommerce/cart-checkout-or-quotes/changing-price-as-attrs-are-selected.md)
   * [🔹 Add to Cart Button](eCommerce/cart-checkout-or-quotes/add-to-cart-button.md)
-  * [🔹 Cart Layouts](eCommerce/cart-checkout-or-quotes/cart-layouts.md)
+  * [🔹 Cart Layouts - (Doc in Progress)](eCommerce/cart-checkout-or-quotes/cart-layouts.md)
   * [Checking Inventory in Cart](eCommerce/cart-checkout-or-quotes/checking-inventory-in-cart.md)
   * [Updating Quantity in Cart](eCommerce/cart-checkout-or-quotes/updating-quantity-in-cart.md)
   * [Discount Codes Layout](eCommerce/cart-checkout-or-quotes/discount-codes.md)
