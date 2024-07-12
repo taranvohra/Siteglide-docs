@@ -43,9 +43,9 @@ See the full Cart & Checkout folder structure here:
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
 
 
-
+{% tabs %}
+{% tab title="wrapper.liquid" %}
 ```liquid
-
 {% raw %}
 {% assign cart_parsed = context.session.cart | parse_json %}
 {% if cart_parsed.size > 0 %}
@@ -58,6 +58,8 @@ The wrapper.liquid file should contain the code for the main section of code tha
 {% endif %}
 {% endraw %}
 ```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 It's strongly recommended to hide the Cart using Liquid logic when it is empty. This logic can either go inside your `wrapper.liquid` file, or directly in the Page.
@@ -125,8 +127,6 @@ See the full Article on [updating Product quantities here](https://developers.si
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
-
-
 ````
 
 Note that, after updating this input field, the User will also have to click the "Update Cart" button, though this is covered in the wrapper.liquid file- as it covers the whole Page.
@@ -135,8 +135,8 @@ Note that, after updating this input field, the User will also have to click the
 
 
 
-\`\`\`liquid \{% include 'ecommerce/cart\_product\_attributes' -%\}
-
+```liquid
+{% include 'ecommerce/cart_product_attributes' -%}
 ````
 
 </div>
