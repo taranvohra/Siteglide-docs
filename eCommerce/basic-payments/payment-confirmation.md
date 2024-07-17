@@ -5,7 +5,7 @@ createdAt: 2021-02-19T10:48:13.000Z
 updatedAt: 2023-04-06T15:42:43.000Z
 ---
 
-# 📋 Step-by-step Basic Payments - Payment Confirmations
+# 📋 Step-by-step Basic Payment Confirmations
 
 Use Emails to send confirmation messages to customers, including a detailed breakdown of their Basic Payment Submission
 
@@ -26,6 +26,8 @@ To include the details of the customer's most recent Order, include the followin
 {% raw %}
 {% include 'ecommerce/payment_details', layout: 'default' %}
 {% endraw %}
+
+
 ```
 
 This can be outputted in one of two places:
@@ -46,14 +48,14 @@ You can use an existing Layout, or create a new one in this File Structure: `lay
 {% endcontent-ref %}
 
 {% hint style="info" %}
-### Note
+#### Note
 
 Unlike the similar Order Details Layout, Payment Details is simpler, so there are no wrapper and item files.
 {% endhint %}
 
 ## Step 3) Develop the Layout
 
-Inside your automation email body, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](../../emails/dynamic-content-in-workflow-and-autoresponder-emails.md) You'll still have access to these fields throughout the Payment Details Layouts as they will be inherited.&#x20;
+Inside your automation email body, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](../../emails/dynamic-content-in-workflow-and-autoresponder-emails.md) You'll still have access to these fields throughout the Payment Details Layouts as they will be inherited.
 
 \*\*\*Accessing Payment Details \*\*\*The layout file will have access to the `this` object, which will contain details about the Payment: `{{this}}` Within this object, you'll have access to the following fields:
 

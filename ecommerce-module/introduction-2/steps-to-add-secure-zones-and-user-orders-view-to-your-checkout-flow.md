@@ -12,9 +12,9 @@ Siteglide eCommerce is even more powerful with Secure Zones. With the security o
 
 ## Step 1) Create a Secure Zone
 
-Create a Secure Zone which will used by shoppers on your eCommerce site.&#x20;
+Create a Secure Zone which will used by shoppers on your eCommerce site.
 
-Alternatively, you can use a Secure Zone that you have created already.&#x20;
+Alternatively, you can use a Secure Zone that you have created already.
 
 Find out more about the Secure Zones Module here:
 
@@ -24,13 +24,13 @@ Find out more about the Secure Zones Module here:
 
 ## Step 2) Create a "My Orders" Page in a Secure Zone
 
-Create a new page which will display a list of Products Users have ordered.&#x20;
+Create a new page which will display a list of Products Users have ordered.
 
 {% hint style="info" %}
 Make a note of the Page slug, because you will want to add this to the Checkout Form’s "Redirect URL" field later.
 {% endhint %}
 
-In CMS / Pages, open the Page you have chosen and open the Details tab. Click the Secure Zones accordion to reveal the "Select a Secure Zone" field.&#x20;
+In CMS / Pages, open the Page you have chosen and open the Details tab. Click the Secure Zones accordion to reveal the "Select a Secure Zone" field.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,8 +51,6 @@ Next, click the "View Form" button to edit:
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 In the "Redirect URL" field add your Orders [Page slug](steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md#step-2-create-a-my-orders-page-in-a-secure-zone), preceded by a forward slash. E.g. /my-orders
-
-
 
 ## Step 4) Add the Secure Zone to the Checkout Form
 
@@ -91,6 +89,7 @@ Add the following liquid to your Orders page to output a list of the current log
 {% raw %}
 {%- include 'user_orders', layout: 'name_of_my_layout', sort_type: 'id', sort_order: 'asc', show_pagination: 'false' %}
 {% endraw %}
+
 ```
 
 The layout parameter should take the name of the list layout you created.
@@ -105,6 +104,8 @@ Your layout will have access to the "orders" object. You can loop over each orde
   <!-- {{order.id}} etc. -->
 {% endfor %}
 {% endraw %}
+
+
 ```
 
 See the orders reference for available fields:
