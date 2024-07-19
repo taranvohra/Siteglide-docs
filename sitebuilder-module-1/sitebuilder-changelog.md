@@ -20,6 +20,14 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.14.0 - Released 17th July 2024
+
+* New Flowbite Form Confirmation Layout which will automatically display submitted custom fields with headings.
+  * Each field type will be displayed appropriately, e.g. files can be downloaded and images will be displayed.
+* Page Templates and Flowbite Cookie Popup Layouts will include code for Google Tag Manager- ID will need adding manually in order to work.
+* Cleaned up some old files no longer used
+* Renamed some eCommerce layouts for clarity
+
 ### 4.11.1 - 4.11.4 - Released 17th June 2024 <a href="#id-4111-4114-released-17th-june-2024" id="id-4111-4114-released-17th-june-2024"></a>
 
 * Patches to manually-managed setting on files created with SiteBuilder
@@ -97,9 +105,9 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 #### 4.8.7 - Released 9th September 2023 <a href="#id-487-released-9th-september-2023" id="id-487-released-9th-september-2023"></a>
 
 * Forms
-  * Datasources in forms used to only show a maximum of 20 options. A lower value may have increased performance, but also reduced the user's choices arbitrarily. Now that limit has been increased to 2000 by default on both dynamic and static form layouts. You can change the default on dynamic layouts by setting a `datasource_limit` parameter to a string value e.g. `'1000'` on the `form_layout_fields` include. On static layouts, the `per_page` parameter can be edited on the nested `{% include %}` tags inside the layout which fetch the datasource options.
+  * Datasources in forms used to only show a maximum of 20 options. A lower value may have increased performance, but also reduced the user's choices arbitrarily. Now that limit has been increased to 2000 by default on both dynamic and static form layouts. You can change the default on dynamic layouts by setting a `datasource_limit` parameter to a string value e.g. `'1000'` on the `form_layout_fields` include. On static layouts, the `per_page` parameter can be edited on the nested `<div data-gb-custom-block data-tag="include"></div>` tags inside the layout which fetch the datasource options.
 * Cookie Popup Layouts
-  * Fixed bug preventing some layouts from hiding scripts when cookies rejected. Remember changes will only apply to freshly installed layouts. If you need to fix an existing layout manually, replace: `{% if context.exports.company_information.properties.google_analytics_id != blank and context.exports.sitebuilder.cookie_preferences_js == 'all' %}` with `{% if context.exports.company_information.properties.google_analytics_id != blank and context.cookies['sg-cookie-policy-settings'] == 'all' %}`
+  * Fixed bug preventing some layouts from hiding scripts when cookies rejected. Remember changes will only apply to freshly installed layouts. If you need to fix an existing layout manually, replace: `<div data-gb-custom-block data-tag="if" data-0='all' data-1='all' data-2='all' data-3='all' data-4='all' data-5='all' data-6='all' data-7='all' data-8='all' data-9='all' data-10='all' data-11='all' data-12='all' data-13='all' data-14='all' data-15='all' data-16='all' data-17='all' data-18='all' data-19='all' data-20='all' data-21='all' data-22='all'></div>` with `<div data-gb-custom-block data-tag="if" data-0='sg-cookie-policy-settings' data-1='sg-cookie-policy-settings' data-2='sg-cookie-policy-settings' data-3='sg-cookie-policy-settings' data-4='] == ' data-5='] == ' data-6='] == '></div>`
 * Live Updates
   * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_getting\_started#2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key)
 
