@@ -33,7 +33,7 @@ Each field within that Custom Field Set also has it's own ID. You can work this 
 
 In the example below- I have a Custom Field Set with an ID of 1 (displayed in the last slug of the URL)- and two fields:
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-20 175014.png" alt=""><figcaption><p>Noting the ID of the CFS and the field</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-05-20 175014.png" alt=""><figcaption><p>Noting the ID of the CFS and the field</p></figcaption></figure>
 
 * Pizza Topping appears first in the List- so has an ID of 1
 * Gelato appears second in the List, so has an ID of 2
@@ -44,8 +44,8 @@ The key HTML attribute will be located on different elements depending on the fi
 
 Check the Reference to see the syntax for each type:
 
-{% content-ref url="forms-reference.md" %}
-[forms-reference.md](forms-reference.md)
+{% content-ref url="../advanced-forms/forms-reference.md" %}
+[forms-reference.md](../advanced-forms/forms-reference.md)
 {% endcontent-ref %}
 
 If the type does not fit any of the types here, you can use text.

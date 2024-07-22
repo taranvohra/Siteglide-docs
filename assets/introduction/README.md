@@ -1,4 +1,4 @@
-# 💡 About Assets
+# 💡 Getting Started: Assets
 
 ### What is an Asset?
 
@@ -27,7 +27,7 @@ Asset files can be quite large, so when badly managed they can really slow down 
 
 Assets you upload to your Siteglide websites are stored directly on an Amazon Web Services (AWS) server, separate to the website you are building on, so that they can be accessed using CloudFront content delivery network (CDN) from your website.
 
-Checkout [File Manager - Introduction](introduction.md) for supported file types.
+Checkout [File Manager - Introduction](./) for supported file types.
 
 ### Caching Control
 
@@ -45,4 +45,4 @@ When a website visitor views a page, cached assets are retrieved from the closes
 
 Caching content gives you the performance and scale you need to give your visitors a fast, reliable and secure experience while viewing your website.
 
-Checkout [Accessing Assets](introduction.md) to find out how you can use this on your website.
+Checkout [Accessing Assets](./) to find out how you can use this on your website.

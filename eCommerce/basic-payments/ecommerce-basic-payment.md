@@ -2,12 +2,14 @@
 
 ## Including on a Page
 
-To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../forms/forms-reference.md):
+To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../forms/advanced-forms/forms-reference.md):
 
 ```liquid
 {% raw %}
 {%- include 'form', id: '10', layout: 'default' -%}
 {% endraw %}
+
+
 ```
 
 ## Form Layouts
@@ -75,4 +77,3 @@ This HTML input field with the ID s\_e\_amount can be used to modify the amount 
 {% include 'ecommerce/payment_details', layout: 'default' %}
 {% endraw %}
 ```
-

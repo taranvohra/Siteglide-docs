@@ -80,8 +80,8 @@ And set your Form to use it with the layout parameter.
 
 See the Forms Reference for creating your own Layout:
 
-{% content-ref url="../../forms/forms-reference.md" %}
-[forms-reference.md](../../forms/forms-reference.md)
+{% content-ref url="../../forms/advanced-forms/forms-reference.md" %}
+[forms-reference.md](../../forms/advanced-forms/forms-reference.md)
 {% endcontent-ref %}
 
 ## Step 10) Optionally, set your Basic Payment Form to Allow Users to Choose How Much they Pay

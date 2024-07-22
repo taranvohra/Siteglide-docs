@@ -110,7 +110,7 @@ E.g. `data-cfs="5-1-input_text"`
 
 If you're not sure where to find these, see:
 
-[how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md](how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md "mention")
+[how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md](../guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md "mention")
 
 #### Text
 

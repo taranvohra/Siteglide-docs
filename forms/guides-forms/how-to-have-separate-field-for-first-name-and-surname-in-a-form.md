@@ -16,7 +16,7 @@ When a [Form is created](https://help.siteglide.com/article/99-forms-getting-sta
 
 Firstly we'll need to create/ locate the form we need to add custom fields to. Head over to your site's admin, from here click "CMS" and find "Forms" within there. From here you can choose to create or edit a Form (as seen in red highlights):
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-03-26 153411.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-26 153411.png" alt=""><figcaption></figcaption></figure>
 
 Firstly we must create two separate form fields for First name and Last name, to do this click "Add Fields" and name them accordingly:
 

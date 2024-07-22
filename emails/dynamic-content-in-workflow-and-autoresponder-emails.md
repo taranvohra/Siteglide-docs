@@ -10,7 +10,7 @@ There are a few limitations of this Liquid rendering environment:
   * The ordinary constants file we include on Pages to make variables like [Company Information](../company-information/company-information.md) work, won't work here. See here instead: [constants\_json](../includes/miscellaneous-siteglide-includes/constants\_json.md)
   * Many Module and WebApp layouts won't work in this context, as they rely on the export tag to pass data between sections of the layout.
 
-You can however use other [Liquid Includes / Partials](../includes/about-includes-partials.md) like Content Sections and Code Snippets to organise code within an automation. This is especially useful for code which needs to run in multiple automations.&#x20;
+You can however use other [Liquid Includes / Partials](../includes/about-includes-partials/) like Content Sections and Code Snippets to organise code within an automation. This is especially useful for code which needs to run in multiple automations.&#x20;
 
 ## Outputting Form Fields, or Using Them in Logic
 

@@ -33,7 +33,7 @@ To include the details of the customer's most recent Order, include the followin
 This can be outputted in one of two places:
 
 * Inside the body of an [automation email](../../emails/dynamic-content-in-workflow-and-autoresponder-emails.md) e.g. autoresponder or workflow
-* Inside a [Form Confirmation Layout](../../forms/form-confirmation-pages.md)
+* Inside a [Form Confirmation Layout](../../forms/guides-forms/form-confirmation-pages.md)
 
 Placing in either of these locations will allow the system to identify the last submitted Form case and, if there is one, the associated payment.
 

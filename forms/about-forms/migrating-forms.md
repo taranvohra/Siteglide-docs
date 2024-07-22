@@ -37,7 +37,7 @@ Add all the fields you need:
 
 ## Step 3) Output the Siteglide Form in the Site
 
-Next, find the Liquid file where your old Form is outputted; this is most likely a [Page](../pages-and-page-templates/about-pages.md), but could also be a [Page Template](../pages-and-page-templates/page-templates.md) or a [Liquid Include](../includes/about-includes-partials.md). You may want to keep your old Form code there temporarily for reference, but now is the time to add the Siteglide Liquid code to output a Form there:
+Next, find the Liquid file where your old Form is outputted; this is most likely a [Page](../../pages-and-page-templates/getting-started-pages/about-pages.md), but could also be a [Page Template](../../pages-and-page-templates/getting-started-pages/page-templates.md) or a [Liquid Include](../../includes/about-includes-partials/). You may want to keep your old Form code there temporarily for reference, but now is the time to add the Siteglide Liquid code to output a Form there:
 
 ```
 {% raw %}
@@ -55,8 +55,8 @@ The new default layout should work fine, but it may not look or function the sam
 
 See the reference for tips on creating a Custom Form Layouts:
 
-{% content-ref url="forms-reference.md" %}
-[forms-reference.md](forms-reference.md)
+{% content-ref url="../advanced-forms/forms-reference.md" %}
+[forms-reference.md](../advanced-forms/forms-reference.md)
 {% endcontent-ref %}
 
 ## Step 5) Customise your Autoresponder and Workflow Emails - Optional
@@ -69,6 +69,6 @@ You can also add new automations to trigger events when your Form submits.
 
 Once you're happy your new Form is working, remove your old Form code from the Site to tidy up.
 
-{% content-ref url="../emails-and-automations/about-automations.md" %}
-[about-automations.md](../emails-and-automations/about-automations.md)
+{% content-ref url="../../emails-and-automations/about-automations.md" %}
+[about-automations.md](../../emails-and-automations/about-automations.md)
 {% endcontent-ref %}

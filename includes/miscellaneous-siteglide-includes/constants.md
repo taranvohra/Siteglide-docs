@@ -8,6 +8,6 @@ This is recommended at the top of most Pages and Page Templates if you are using
 {% endraw %}
 ```
 
-{% content-ref url="../../pages-and-page-templates/pages-with-siteglide-cli.md" %}
-[pages-with-siteglide-cli.md](../../pages-and-page-templates/pages-with-siteglide-cli.md)
+{% content-ref url="../../pages-and-page-templates/advanced-pages/pages-with-siteglide-cli.md" %}
+[pages-with-siteglide-cli.md](../../pages-and-page-templates/advanced-pages/pages-with-siteglide-cli.md)
 {% endcontent-ref %}

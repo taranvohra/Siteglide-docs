@@ -19,7 +19,7 @@ layout:
 There are a few main ways to work with your Siteglide Site:
 
 * Using the [Siteglide Admin](https://admin.siteglide.com/#/portal) - Create an Account and use the User Interface to explore and build your Site. If you have any questions, use our live chat button to get help.
-* Using the [Siteglide CLI](command-line-interface-cli/setup-cli/introduction.md) - Efficiently work directly with your Site's code on your own machine.
+* Using the [Siteglide CLI](../command-line-interface-cli/setup-cli/introduction.md) - Efficiently work directly with your Site's code on your own machine.
 
 ## Which Coding Languages are used in Siteglide?
 
@@ -39,7 +39,7 @@ In the course of this Documentation, you will probably come across the following
 
 ## Partner and 3rd Party Documentation
 
-<figure><img src=".gitbook/assets/siteglide-infrastructure.webp" alt=""><figcaption><p>An enterprise-grade infrastructure that delivers optimum security, reliability, flexibility, scalability and performance.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/siteglide-infrastructure.webp" alt=""><figcaption><p>An enterprise-grade infrastructure that delivers optimum security, reliability, flexibility, scalability and performance.</p></figcaption></figure>
 
 [Siteglide](https://siteglide.com/) works very closely with our partners at [platformOS](https://www.platformos.com/) to provide you with all the benefits of a modern cloud-based infrastructure like AWS, while at the same time making your life easier so you can focus on delivering the best for your clients.&#x20;
 

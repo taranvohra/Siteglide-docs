@@ -8,7 +8,7 @@ description: >-
 
 After a User submits a Form and you redirect them to a Confirmation Page, you can now insert a dynamic message using fields from the Form.
 
-<figure><img src="../.gitbook/assets/single-order (1) (1).jpg" alt=""><figcaption><p>The Form Confirmation can display the information which was just submitted, as a confirmation. They can also be used to display information about an eCommerce transaction.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/single-order (1) (1).jpg" alt=""><figcaption><p>The Form Confirmation can display the information which was just submitted, as a confirmation. They can also be used to display information about an eCommerce transaction.</p></figcaption></figure>
 
 ## Prerequisites
 
@@ -51,8 +51,8 @@ The Layout parameter takes the name of the Layout File you wish to use, without 
 
 We store Form Confirmation Layouts at the following Path: `layouts/form_confirmation/` Each Layout should be a single Liquid file with a name of your choice followed by `.liquid`.
 
-{% content-ref url="forms-file-structure.md" %}
-[forms-file-structure.md](forms-file-structure.md)
+{% content-ref url="../advanced-forms/forms-file-structure.md" %}
+[forms-file-structure.md](../advanced-forms/forms-file-structure.md)
 {% endcontent-ref %}
 
 ### Developing a Layout
