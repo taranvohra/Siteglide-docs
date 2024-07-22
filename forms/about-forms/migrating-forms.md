@@ -69,6 +69,6 @@ You can also add new automations to trigger events when your Form submits.
 
 Once you're happy your new Form is working, remove your old Form code from the Site to tidy up.
 
-{% content-ref url="../../emails-and-automations/about-automations.md" %}
-[about-automations.md](../../emails-and-automations/about-automations.md)
+{% content-ref url="../../automations-and-emails/about-automations/" %}
+[about-automations](../../automations-and-emails/about-automations/)
 {% endcontent-ref %}

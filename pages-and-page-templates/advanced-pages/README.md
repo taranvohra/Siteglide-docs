@@ -1,2 +1,2 @@
-# Advanced: Pages
+# 🧙‍♂️ Advanced: Pages
 

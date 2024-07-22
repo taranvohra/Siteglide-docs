@@ -1,2 +1,2 @@
-# Using CLI
+# 💻 Using CLI
 

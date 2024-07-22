@@ -6,11 +6,11 @@
 
 ## Command Line Interface (CLI)
 
-* [Setup CLI](command-line-interface-cli/setup-cli/README.md)
+* [📋 Setup CLI](command-line-interface-cli/setup-cli/README.md)
   * [💡 About Siteglide CLI](command-line-interface-cli/setup-cli/introduction.md)
   * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/setup-cli/getting-started-with-cli.md)
   * [📋 Steps to Set Up Siteglide CLI on a Specific Site](command-line-interface-cli/setup-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-* [Using CLI](command-line-interface-cli/using-cli/README.md)
+* [💻 Using CLI](command-line-interface-cli/using-cli/README.md)
   * [👀 Siteglide CLI Reference & Commands](command-line-interface-cli/using-cli/siteglide-cli-reference.md)
   * [🔧 Troubleshooting Siteglide CLI](command-line-interface-cli/using-cli/troubleshooting-siteglide-cli.md)
   * [🧞 SiteBuilder with Siteglide CLI](command-line-interface-cli/using-cli/sitebuilder-with-siteglide-cli.md)
@@ -20,14 +20,14 @@
 
 ## Pages and Page Templates
 
-* [Getting Started: Pages](pages-and-page-templates/getting-started-pages/README.md)
+* [🚀 Getting Started: Pages](pages-and-page-templates/getting-started-pages/README.md)
   * [💡 About Pages](pages-and-page-templates/getting-started-pages/about-pages.md)
   * [🔹 Page Settings](pages-and-page-templates/getting-started-pages/page-settings.md)
   * [🧑‍🎨 Updating Page Content with the Studio Tab](pages-and-page-templates/getting-started-pages/updating-page-content-with-the-studio-tab.md)
   * [🔧 Rolling Back Page Changes](pages-and-page-templates/getting-started-pages/rolling-back-page-changes.md)
   * [💡 About Page Templates](pages-and-page-templates/getting-started-pages/page-templates.md)
   * [🔹 System Pages](pages-and-page-templates/getting-started-pages/system-pages.md)
-* [Advanced: Pages](pages-and-page-templates/advanced-pages/README.md)
+* [🧙‍♂️ Advanced: Pages](pages-and-page-templates/advanced-pages/README.md)
   * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/advanced-pages/page-templates-with-cli.md)
   * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/advanced-pages/pages-and-page-templates-on-platformos.md)
   * [💻 Pages with Siteglide CLI](pages-and-page-templates/advanced-pages/pages-with-siteglide-cli.md)
@@ -36,10 +36,10 @@
 
 ## Includes
 
-* [💡 Getting Started: Includes (Partials)](includes/about-includes-partials/README.md)
+* [🚀 Getting Started: Includes (Partials)](includes/about-includes-partials/README.md)
   * [👀 Includes Reference](includes/about-includes-partials/includes-reference.md)
   * [🔧 Includes Troubleshooting](includes/about-includes-partials/includes-troubleshooting.md)
-* [👀 Advanced: Includes (Partials)](includes/miscellaneous-siteglide-includes/README.md)
+* [🧙‍♂️ Advanced: Includes (Partials)](includes/miscellaneous-siteglide-includes/README.md)
   * [👀 constants\_json](includes/miscellaneous-siteglide-includes/constants\_json.md)
   * [👀 constants](includes/miscellaneous-siteglide-includes/constants.md)
   * [🌳 Includes File Structure](includes/miscellaneous-siteglide-includes/includes-folder-structure.md)
@@ -47,11 +47,11 @@
 
 ## Assets
 
-* [💡 Getting Started: Assets](assets/introduction/README.md)
+* [🚀 Getting Started: Assets](assets/introduction/README.md)
   * [👀 Assets Reference](assets/introduction/assets-reference.md)
   * [🔹 Linking to Assets Explained](assets/introduction/linking-to-assets-front-end.md)
   * [🔧 Assets Troubleshooting](assets/introduction/assets-troubleshooting.md)
-* [Advanced: Assets](assets/advanced-assets/README.md)
+* [🧙‍♂️ Advanced: Assets](assets/advanced-assets/README.md)
   * [🌳 Assets File Structure](assets/advanced-assets/file-structure.md)
   * [💻 Assets with CLI](assets/advanced-assets/assets-with-cli.md)
   * [📋 Steps to Optimise Images on the Fly with Cloudinary](assets/advanced-assets/how-to-optimise-images-on-the-fly-with-cloudinary.md)
@@ -60,17 +60,17 @@
 
 ## Forms
 
-* [💡 Getting Started: Forms](forms/about-forms/README.md)
+* [🚀 Getting Started: Forms](forms/about-forms/README.md)
   * [🧞 Plug and Play Form Layouts From the SiteBuilder Module](forms/about-forms/plug-and-play-form-layouts-from-the-sitebuilder-module.md)
   * [🔼 Migrating Forms](forms/about-forms/migrating-forms.md)
-* [Guides: Forms](forms/guides-forms/README.md)
+* [📋 Guides: Forms](forms/guides-forms/README.md)
   * [📋 Steps to Using Separate Fields for First Name and Surname in a Form](forms/guides-forms/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
   * [📋 Steps to Programmatically Redirecting after a Form Submission](forms/guides-forms/how-to-add-a-custom-redirect-to-my-form.md)
   * [📋 Steps to Adding Form Confirmation Pages](forms/guides-forms/form-confirmation-pages.md)
   * [📋 Steps to Adding a Progress Bar](forms/guides-forms/adding-a-progress-bar.md)
   * [📋 Steps to Changing Form Styling on Submission Using CSS](forms/guides-forms/adding-custom-css-to-show-form-submit-process.md)
   * [📋 Steps to Using Custom Field Set fields in a Form's Custom Layout](forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
-* [Advanced: Forms](forms/advanced-forms/README.md)
+* [🧙‍♂️ Advanced: Forms](forms/advanced-forms/README.md)
   * [🔹 Explained - Preventing Spam Form Submissions and Captchas](forms/advanced-forms/explained-preventing-spam-form-submissions-and-captchas.md)
   * [🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form](forms/advanced-forms/shared-devices.md)
   * [🔹 Forms Error Callback and Validation](forms/advanced-forms/custom-javascript-validation-for-forms.md)
@@ -80,18 +80,20 @@
   * [🌳 Forms File Structure](forms/advanced-forms/forms-file-structure.md)
   * [👀 Forms Reference](forms/advanced-forms/forms-reference.md)
 
-## Emails and Automations
+## Automations (& Emails)
 
-* [💡 About Automations](emails-and-automations/about-automations.md)
-* [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
-* [🌳 Automations File Structure](emails-and-automations/automations-file-structure.md)
-* [🔹 A Transactional Email Example](emails-and-automations/a-transactional-email-example.md)
-* [🔹 An API Call Action Example](emails-and-automations/an-api-call-action-example.md)
-* [🔹 A Custom Liquid Action Example](emails-and-automations/a-custom-liquid-action-example.md)
-* [🔹 Email Templates](emails-and-automations/email-templates.md)
-* [📋 Steps to Testing Emails on a Staging Site](emails-and-automations/steps-to-testing-emails-on-a-staging-site.md)
-* [📋 Steps to Authenticating Sendgrid Emails on Live Sites](emails-and-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
-* [💻 Email Automations and Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
+* [💡 Getting Started: Automations & Emails](automations-and-emails/about-automations/README.md)
+  * [🔹 Email Templates](automations-and-emails/about-automations/email-templates.md)
+  * [🔹 A Transactional Email Example](automations-and-emails/about-automations/a-transactional-email-example.md)
+* [Advanced: Automations](automations-and-emails/advanced-automations/README.md)
+  * [👀 Automations Reference](automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/README.md)
+    * [🌳 Automations File Structure](automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/automations-file-structure.md)
+  * [🔹 A Custom Liquid Action Example](automations-and-emails/advanced-automations/a-custom-liquid-action-example.md)
+  * [💻 Email Automations and Email Templates with Siteglide CLI](automations-and-emails/advanced-automations/email-templates-with-cli.md)
+  * [🔹 An API Call Action Example](automations-and-emails/advanced-automations/an-api-call-action-example.md)
+* [Guides: Automations](automations-and-emails/guides-automations/README.md)
+  * [📋 Steps to Testing Emails on a Staging Site](automations-and-emails/guides-automations/steps-to-testing-emails-on-a-staging-site.md)
+  * [📋 Steps to Authenticating Sendgrid Emails on Live Sites](automations-and-emails/guides-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
 
 ## Categories
 

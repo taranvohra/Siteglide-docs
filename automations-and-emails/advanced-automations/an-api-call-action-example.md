@@ -1,6 +1,6 @@
 # 🔹 An API Call Action Example
 
-Once you've read how our [introduction to Automations](about-automations.md), you're ready to start creating your own. Below is an example of an API call in Automations.
+Once you've read how our [introduction to Automations](../about-automations/), you're ready to start creating your own. Below is an example of an API call in Automations.
 
 This example will create a customer in Stripe, where the email address is WebApp field 'webapp\_field\_1\_1':\
 

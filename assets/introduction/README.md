@@ -1,4 +1,4 @@
-# 💡 Getting Started: Assets
+# 🚀 Getting Started: Assets
 
 ### What is an Asset?
 

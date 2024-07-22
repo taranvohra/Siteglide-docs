@@ -30,7 +30,7 @@ trigger_condition: 'true'
 
 * Use to, bcc, cc, reply\_to and from for setting which email addresses should be used for each of these.&#x20;
 * Subject does what you'd expect
-* Layout sets which [email-templates.md](../emails-and-automations/email-templates.md "mention") you want to use
+* Layout sets which [email-templates.md](../about-automations/email-templates.md "mention") you want to use
 * Trigger condition of `true` will allow the Email to send, `false` will disable it.&#x20;
 
 ### Multiline example:

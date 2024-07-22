@@ -1,4 +1,4 @@
-# 💡 Getting Started: Includes (Partials)
+# 🚀 Getting Started: Includes (Partials)
 
 Includes, also known as partials on platformOS, are Liquid files which are smaller than a Page or Page Template, but which are intended to be included more than once in a Site.
 

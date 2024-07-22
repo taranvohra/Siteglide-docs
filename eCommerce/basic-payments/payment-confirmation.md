@@ -32,7 +32,7 @@ To include the details of the customer's most recent Order, include the followin
 
 This can be outputted in one of two places:
 
-* Inside the body of an [automation email](../../emails/dynamic-content-in-workflow-and-autoresponder-emails.md) e.g. autoresponder or workflow
+* Inside the body of an [automation email](../../automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/) e.g. autoresponder or workflow
 * Inside a [Form Confirmation Layout](../../forms/guides-forms/form-confirmation-pages.md)
 
 Placing in either of these locations will allow the system to identify the last submitted Form case and, if there is one, the associated payment.
@@ -55,7 +55,7 @@ Unlike the similar Order Details Layout, Payment Details is simpler, so there ar
 
 ## Step 3) Develop the Layout
 
-Inside your automation email body, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](../../emails/dynamic-content-in-workflow-and-autoresponder-emails.md) You'll still have access to these fields throughout the Payment Details Layouts as they will be inherited.
+Inside your automation email body, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](../../automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/) You'll still have access to these fields throughout the Payment Details Layouts as they will be inherited.
 
 \*\*\*Accessing Payment Details \*\*\*The layout file will have access to the `this` object, which will contain details about the Payment: `{{this}}` Within this object, you'll have access to the following fields:
 
