@@ -31,8 +31,8 @@
   * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/advanced-pages/page-templates-with-cli.md)
   * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/advanced-pages/pages-and-page-templates-on-platformos.md)
   * [💻 Pages with Siteglide CLI](pages-and-page-templates/advanced-pages/pages-with-siteglide-cli.md)
-  * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/advanced-pages/pages-and-page-templates-file-structure.md)
-  * [👀 Pages and Page Templates Reference](pages-and-page-templates/advanced-pages/accessing-page-data.md)
+* [👀 Reference: Pages and Page Templates](pages-and-page-templates/accessing-page-data/README.md)
+  * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/accessing-page-data/pages-and-page-templates-file-structure.md)
 
 ## Includes
 
