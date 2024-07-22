@@ -4,19 +4,19 @@
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
-## Siteglide CLI
+## Command Line Interface (CLI)
 
-* [Setup CLI](siteglide-cli/setup-cli/README.md)
-  * [💡 About Siteglide CLI](siteglide-cli/setup-cli/introduction.md)
-  * [📋 Steps to Install Siteglide CLI](siteglide-cli/setup-cli/getting-started-with-cli.md)
-  * [📋 Steps to Set Up Siteglide CLI on a Specific Site](siteglide-cli/setup-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-* [Using CLI](siteglide-cli/using-cli/README.md)
-  * [👀 Siteglide CLI Reference & Commands](siteglide-cli/using-cli/siteglide-cli-reference.md)
-  * [🔧 Troubleshooting Siteglide CLI](siteglide-cli/using-cli/troubleshooting-siteglide-cli.md)
-  * [🧞 SiteBuilder with Siteglide CLI](siteglide-cli/using-cli/sitebuilder-with-siteglide-cli.md)
-  * [🔼 Siteglide CLI Migrate Command](siteglide-cli/using-cli/siteglide-cli-migrate-command/README.md)
-    * [🔼 Siteglide CLI Migrate Command - Manual Forms](siteglide-cli/using-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
-    * [🔼 Siteglide CLI Migrate Command - Converting Forms](siteglide-cli/using-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
+* [Setup CLI](command-line-interface-cli/setup-cli/README.md)
+  * [💡 About Siteglide CLI](command-line-interface-cli/setup-cli/introduction.md)
+  * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/setup-cli/getting-started-with-cli.md)
+  * [📋 Steps to Set Up Siteglide CLI on a Specific Site](command-line-interface-cli/setup-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+* [Using CLI](command-line-interface-cli/using-cli/README.md)
+  * [👀 Siteglide CLI Reference & Commands](command-line-interface-cli/using-cli/siteglide-cli-reference.md)
+  * [🔧 Troubleshooting Siteglide CLI](command-line-interface-cli/using-cli/troubleshooting-siteglide-cli.md)
+  * [🧞 SiteBuilder with Siteglide CLI](command-line-interface-cli/using-cli/sitebuilder-with-siteglide-cli.md)
+  * [🔼 Siteglide CLI Migrate Command](command-line-interface-cli/using-cli/siteglide-cli-migrate-command/README.md)
+    * [🔼 Siteglide CLI Migrate Command - Manual Forms](command-line-interface-cli/using-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
+    * [🔼 Siteglide CLI Migrate Command - Converting Forms](command-line-interface-cli/using-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
 
 ## Pages and Page Templates
 
