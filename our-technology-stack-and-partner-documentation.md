@@ -19,7 +19,7 @@ layout:
 There are a few main ways to work with your Siteglide Site:
 
 * Using the [Siteglide Admin](https://admin.siteglide.com/#/portal) - Create an Account and use the User Interface to explore and build your Site. If you have any questions, use our live chat button to get help.
-* Using the [Siteglide CLI](cli/introduction.md) - Efficiently work directly with your Site's code on your own machine.
+* Using the [Siteglide CLI](siteglide-cli/setup-cli/introduction.md) - Efficiently work directly with your Site's code on your own machine.
 
 ## Which Coding Languages are used in Siteglide?
 

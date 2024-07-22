@@ -4,7 +4,7 @@ Here we will outline the process involved in creating, building, submitting, and
 
 ## Prerequisites
 
-* [ ] Know how to use CLI -  [introduction.md](../cli/introduction.md "mention")
+* [ ] Know how to use CLI -  [introduction.md](../siteglide-cli/setup-cli/introduction.md "mention")
 * [ ] Know how to use Github - [GitHub](https://github.com/)
 * [ ] Your IDE (Integrated Development Environment) of choice (VSCode, Atom, Sublime etc)
 

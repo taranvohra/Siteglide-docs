@@ -1,8 +1,8 @@
-# 👀 Siteglide CLI Reference
+# 👀 Siteglide CLI Reference & Commands
 
 ### Before you Start
 
-[getting-started-with-cli.md](getting-started-with-cli.md "mention")
+[getting-started-with-cli.md](../setup-cli/getting-started-with-cli.md "mention")
 
 ### Commands
 
