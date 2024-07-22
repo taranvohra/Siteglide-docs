@@ -1,4 +1,4 @@
-# 💡 About Automations
+# 🚀 Getting Started: Automations & Emails
 
 #### What are Automations?
 

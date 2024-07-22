@@ -1,10 +1,3 @@
----
-title: Managing Email Templates
-slug: DCRG-
-createdAt: 2021-02-18T10:48:52.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
-
 # 💻 Email Automations and Email Templates with Siteglide CLI
 
 We recommend for now creating Automations in the Siteglide Admin so that the triggers are correctly attached to the Form.&#x20;
@@ -30,7 +23,7 @@ trigger_condition: 'true'
 
 * Use to, bcc, cc, reply\_to and from for setting which email addresses should be used for each of these.&#x20;
 * Subject does what you'd expect
-* Layout sets which [email-templates.md](../about-automations/email-templates.md "mention") you want to use
+* Layout sets which [email-templates.md](../emails-and-automations/email-templates.md "mention") you want to use
 * Trigger condition of `true` will allow the Email to send, `false` will disable it.&#x20;
 
 ### Multiline example:

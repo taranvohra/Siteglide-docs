@@ -82,18 +82,18 @@
 
 ## Automations (& Emails)
 
-* [💡 Getting Started: Automations & Emails](automations-and-emails/about-automations/README.md)
-  * [🔹 Email Templates](automations-and-emails/about-automations/email-templates.md)
-  * [🔹 A Transactional Email Example](automations-and-emails/about-automations/a-transactional-email-example.md)
-* [Advanced: Automations](automations-and-emails/advanced-automations/README.md)
-  * [👀 Automations Reference](automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/README.md)
-    * [🌳 Automations File Structure](automations-and-emails/advanced-automations/dynamic-content-in-workflow-and-autoresponder-emails/automations-file-structure.md)
-  * [🔹 A Custom Liquid Action Example](automations-and-emails/advanced-automations/a-custom-liquid-action-example.md)
-  * [💻 Email Automations and Email Templates with Siteglide CLI](automations-and-emails/advanced-automations/email-templates-with-cli.md)
-  * [🔹 An API Call Action Example](automations-and-emails/advanced-automations/an-api-call-action-example.md)
-* [Guides: Automations](automations-and-emails/guides-automations/README.md)
-  * [📋 Steps to Testing Emails on a Staging Site](automations-and-emails/guides-automations/steps-to-testing-emails-on-a-staging-site.md)
-  * [📋 Steps to Authenticating Sendgrid Emails on Live Sites](automations-and-emails/guides-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
+* [🚀 Getting Started: Automations & Emails](emails-and-automations/about-automations.md)
+  * [🔹 Email Templates](emails-and-automations/email-templates.md)
+  * [🔹 A Transactional Email Example](emails-and-automations/a-transactional-email-example.md)
+* [📋 Guides: Automations](automations-and-emails/guides-automations/README.md)
+  * [📋 Steps to Testing Emails on a Staging Site](emails-and-automations/steps-to-testing-emails-on-a-staging-site.md)
+  * [📋 Steps to Authenticating Sendgrid Emails on Live Sites](emails-and-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
+* [🧙‍♂️ Advanced: Automations](automations-and-emails/advanced-automations/README.md)
+  * [👀 Automations Reference](emails/dynamic-content-in-workflow-and-autoresponder-emails.md)
+    * [🌳 Automations File Structure](emails-and-automations/automations-file-structure.md)
+  * [🔹 A Custom Liquid Action Example](emails-and-automations/a-custom-liquid-action-example.md)
+  * [💻 Email Automations and Email Templates with Siteglide CLI](emails/email-templates-with-cli.md)
+  * [🔹 An API Call Action Example](emails-and-automations/an-api-call-action-example.md)
 
 ## Categories
 
