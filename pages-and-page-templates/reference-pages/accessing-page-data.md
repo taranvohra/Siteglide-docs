@@ -45,7 +45,7 @@ Browse the rest of the documentation to find dynamic Liquid features you can ins
 
 [about-liquid.md](../../liquid-templating-language/about-liquid.md "mention")
 
-[alternatives-to-storing-server-side-code-in-fields.md](../../webapps-databases/go-further-webapps/front-end-submit-forms-edit/alternatives-to-storing-server-side-code-in-fields.md "mention")
+[alternatives-to-storing-server-side-code-in-fields.md](../../webapps-databases/go-further-webapps/alternatives-to-storing-server-side-code-in-fields.md "mention")
 
 [Broken link](broken-reference "mention")
 

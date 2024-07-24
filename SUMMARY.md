@@ -1,8 +1,12 @@
 # Table of contents
 
+## Introduction
+
+***
+
 * [👋 Welcome](README.md)
-  * [🔹 Our Technology Stack and Partner Documentation](readme/our-technology-stack-and-partner-documentation.md)
-  * [🔹 Siteglide Support Policy](readme/siteglide-support-policy.md)
+* [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
+* [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
 ## Command Line Interface (CLI)
 
@@ -266,30 +270,32 @@
   * [WebApps Introduction](webapps-databases/get-started-webapps/introduction.md)
   * [WebApps Search and Filtering](webapps-databases/get-started-webapps/search-and-filtering.md)
   * [WebApp Custom Field Names and IDs](webapps-databases/get-started-webapps/custom-field-sets.md)
+  * [Creating WebApps from the CLI](webapps-databases/get-started-webapps/creating-webapps-from-the-cli.md)
 * [🧙‍♂️ Go Further: WebApps](webapps-databases/go-further-webapps/README.md)
   * [WebApp - Front End Submit Forms - Create](webapps-databases/go-further-webapps/front-end-submit-forms-add.md)
-  * [WebApp - Front End Submit Forms - Update](webapps-databases/go-further-webapps/front-end-submit-forms-edit/README.md)
-    * [WebApps - Alternatives to Storing Server-side Code in WebApp Fields](webapps-databases/go-further-webapps/front-end-submit-forms-edit/alternatives-to-storing-server-side-code-in-fields.md)
+  * [WebApp - Front End Submit Forms - Update](webapps-databases/go-further-webapps/front-end-submit-forms-edit.md)
   * [WebApp - Front End Submit Forms - Delete](webapps-databases/go-further-webapps/front-end-submit-forms-delete.md)
+  * [WebApps - Alternatives to Storing Server-side Code in WebApp Fields](webapps-databases/go-further-webapps/alternatives-to-storing-server-side-code-in-fields.md)
+* [👀 Reference: WebApps](webapps-databases/reference-webapps/README.md)
+  * [Field Types](webapps-databases/reference-webapps/field-types.md)
 
 ## Company Information
 
-* [💡 About Company Information](company-information/company-information.md)
-* [🔧 Troubleshooting Company Information](company-information/troubleshooting-company-information.md)
+* [🚀 Get Started: Company Info](company-information/get-started-company-info/README.md)
+  * [💡 About Company Information](company-information/get-started-company-info/company-information.md)
+* [👀 Reference: Company Info](company-information/reference-company-info/README.md)
+  * [🔧 Troubleshooting Company Information](company-information/reference-company-info/troubleshooting-company-information.md)
 
 ## Site Search
 
-* [Site Search](site-search/site-search.md)
+* [🚀 Get Started: Site Search](site-search/get-started-site-search/README.md)
+  * [About Site Search](site-search/get-started-site-search/site-search.md)
 
-## Public API/Zapier
+## Public API
 
-* [Public API/Zapier Changelog](public-api/changelog.md)
+* [🚀 Get Started: API](public-api/get-started-api/README.md)
+  * [Public API Changelog](public-api/get-started-api/changelog.md)
 * [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
-
-## Data Structures
-
-* [Creating WebApps from the CLI](data-structures/creating-webapps-from-the-cli.md)
-* [Field Types](data-structures/field-types.md)
 
 ## CRM
 
