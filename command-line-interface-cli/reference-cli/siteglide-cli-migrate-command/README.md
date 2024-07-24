@@ -6,7 +6,7 @@ You can work with SiteGurus on this, every partner that signs up to their Site r
 
 You can also do this yourself using CLI and following instructions and the video below.
 
-**Note:** If you're new to CLI, I highly suggest reading [Introducing Siteglide CLI](../../setup-cli/introduction.md) first.
+**Note:** If you're new to CLI, I highly suggest reading [Introducing Siteglide CLI](../../get-started-cli/introduction.md) first.
 
 ### Step 1 - Create A Site
 

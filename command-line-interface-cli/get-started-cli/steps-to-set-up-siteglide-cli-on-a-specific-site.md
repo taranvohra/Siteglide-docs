@@ -92,7 +92,7 @@ If you use Github for backing up your code, debugging and undoing mistakes, it's
 
 You now know how to set up Siteglide CLI on a Site! You can follow these steps every time you want to work on a new Site.&#x20;
 
-Next, check the [siteglide-cli-reference.md](../using-cli/siteglide-cli-reference.md "mention") for how to:
+Next, check the [siteglide-cli-reference.md](../reference-cli/siteglide-cli-reference.md "mention") for how to:
 
 * Deploy all your code to the site
 * Sync individual files to the site as you save them
