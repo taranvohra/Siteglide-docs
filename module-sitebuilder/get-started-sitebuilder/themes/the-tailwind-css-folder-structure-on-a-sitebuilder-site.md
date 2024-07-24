@@ -108,6 +108,6 @@ When you make changes to any of the following while `npm run tailwind` is runnin
 * Your `tailwind.config.js` file
 * Your `tailwind.css` file
 
-A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [siteglide-cli-reference.md](../../command-line-interface-cli/reference-cli/siteglide-cli-reference.md "mention")\
+A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [siteglide-cli-reference.md](../../../command-line-interface-cli/reference-cli/siteglide-cli-reference.md "mention")\
 \
 Tailwind uses tree-shaking so that any classes which aren't used by the files referenced above will be removed from the final CSS file to make it as fast as possible. It will also be minified.

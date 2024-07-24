@@ -8,6 +8,13 @@
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
+## Siteglide Portal
+
+* [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
+  * [Agency Whitelabelling](siteglide-portal/get-started-portal/agency-whitelabelling.md)
+  * [📁 Domains](siteglide-portal/get-started-portal/domains/README.md)
+    * [How to setup a multi domain start page](siteglide-portal/get-started-portal/domains/how-to-setup-a-multi-domain-start-page.md)
+
 ## Command Line Interface (CLI)
 
 * [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
@@ -299,117 +306,107 @@
 
 ## CRM
 
-* [User Details](crm/user-details.md)
-* [User Secure Zones](crm/user-secure-zones.md)
-* [Storing User's Favourite WebApp / Module Items](crm/storing-users-favourite-webapp-module-items.md)
-* [User's Form Submissions (Cases)](crm/users-form-submissions-cases.md)
-* [How Users Edit their Email and Password Front End](crm/how-users-edit-their-email-and-password-front-end.md)
-* [Editing a User's CRM record Front End with Custom Field Sets](crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+* [🚀 Get Started: CRM](crm/get-started-crm/README.md)
+  * [User Details](crm/get-started-crm/user-details.md)
+  * [User's Form Submissions (Cases)](crm/get-started-crm/users-form-submissions-cases.md)
+  * [How Users Edit their Email and Password Front End](crm/get-started-crm/how-users-edit-their-email-and-password-front-end.md)
+  * [User Secure Zones](crm/get-started-crm/user-secure-zones.md)
+* [🧙‍♂️ Go Further: CRM](crm/go-further-crm/README.md)
+  * [Editing a User's CRM record Front End with Custom Field Sets](crm/go-further-crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+  * [Storing User's Favourite WebApp / Module Items](crm/go-further-crm/storing-users-favourite-webapp-module-items.md)
 
-## Pagination
+***
 
-* [Pagination on Liquid Tags](pagination/why-pagination.md)
-* [Custom Pagination Layouts](pagination/pagination-layouts.md)
+* [Translating Dates](translating-dates.md)
 
-## The Siteglide Portal
+## System Features
 
-* [Agency Whitelabelling](portal/agency-whitelabelling.md)
+* [🚀 Get Started: System Features](system-features/get-started-system-features/README.md)
+  * [Pagination on Liquid Tags](system-features/get-started-system-features/why-pagination.md)
+  * [Custom Pagination Layouts](system-features/get-started-system-features/pagination-layouts.md)
+  * [Timezones in the Siteglide Admin and on the front-end of your Site](system-features/get-started-system-features/how-do-i-control-timezones.md)
+  * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
+  * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
 
-## Domains
+## Liquid Templating
 
-* [How to setup a multi domain start page](domains/how-to-setup-a-multi-domain-start-page.md)
-
-## Working with Dates and Timezones
-
-* [Timezones in the Siteglide Admin and on the front-end of your Site](timezones/how-do-i-control-timezones.md)
-* [Translating Dates](timezones/translating-dates.md)
-
-## Liquid Templating Language
-
-* [💡 About Liquid](liquid-templating-language/about-liquid.md)
-* [How do I learn more about Liquid?](liquid/how-do-i-learn-more-about-liquid.md)
-* [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid/accessing-data-from-liquid-objects.md)
-* [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
-* [Accessing Data from the Global Context Variable](liquid/accessing-data-from-the-global-context-variable.md)
-* [Truthiness - Using Liquid to determine if a field is empty or blank](liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
-* [Using Collections with WebApps and Modules](liquid/using-collections-with-webapps-and-modules.md)
+* [🚀 Get Started: Liquid](liquid-templating/get-started-liquid/README.md)
+  * [💡 About Liquid](liquid-templating/get-started-liquid/about-liquid/README.md)
+    * [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid-templating/get-started-liquid/about-liquid/accessing-data-from-liquid-objects.md)
+  * [How do I learn more about Liquid?](liquid-templating/get-started-liquid/how-do-i-learn-more-about-liquid.md)
+  * [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid-templating/get-started-liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
+  * [Accessing Data from the Global Context Variable](liquid-templating/get-started-liquid/accessing-data-from-the-global-context-variable.md)
+  * [Truthiness - Using Liquid to determine if a field is empty or blank](liquid-templating/get-started-liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+  * [Using Collections with WebApps and Modules](liquid-templating/get-started-liquid/using-collections-with-webapps-and-modules.md)
 
 ## GraphQL Query Language
 
-* [💡 About GraphQL](graphql/about-graphql.md)
-* [Tutorial Overview](graphql/tutorial-overview.md)
-* [Tutorial 1 - Your First Query](graphql/tutorial-1-your-first-query.md)
-* [Tutorial 2 - Pagination](graphql/tutorial-2-pagination.md)
-* [Tutorial 3 - Filtering the Results](graphql/tutorial-3-filtering-the-results.md)
-* [Tutorial 3 - (Answers)](graphql/tutorial-3-answers.md)
-* [Tutorial 4 - Advanced Filtering](graphql/tutorial-4-advanced-filtering.md)
-* [Tutorial 4 - (Answers)](graphql/tutorial-4-answers.md)
-* [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](graphql/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)
-* [Tutorial 6 - Variables](graphql/tutorial-6-variables.md)
-* [Tutorial 6 - (Answers)](graphql/tutorial-6-answers.md)
-* [Tutorial 7 - Sorting](graphql/tutorial-7-sorting.md)
-* [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
-* [Tutorial 9 - Using Mutations to Create New Records](graphql/tutorial-9-using-mutations-to-create-new-records.md)
-* [Tutorial 10 - Using Mutations to Edit a Record](graphql/tutorial-10-using-mutations-to-edit-a-record.md)
-* [Tutorial 11 - Using Mutations to Delete an Item](graphql/tutorial-11-using-mutations-to-delete-an-item.md)
-* [Tutorial 12 - Related Records and Datasources](graphql/tutorial-12-related-records-and-datasources.md)
+* [🚀 Get Started: GraphQL](graphql-query-language/get-started-graphql/README.md)
+  * [💡 About GraphQL](graphql-query-language/get-started-graphql/about-graphql.md)
+  * [📋 Tutorials](graphql-query-language/get-started-graphql/tutorials/README.md)
+    * [Tutorial Overview](graphql-query-language/get-started-graphql/tutorials/tutorial-overview.md)
+    * [Tutorial 1 - Your First Query](graphql-query-language/get-started-graphql/tutorials/tutorial-1-your-first-query.md)
+    * [Tutorial 2 - Pagination](graphql-query-language/get-started-graphql/tutorials/tutorial-2-pagination.md)
+    * [Tutorial 3 - Filtering the Results](graphql-query-language/get-started-graphql/tutorials/tutorial-3-filtering-the-results.md)
+    * [Tutorial 3 - (Answers)](graphql-query-language/get-started-graphql/tutorials/tutorial-3-answers.md)
+    * [Tutorial 4 - Advanced Filtering](graphql-query-language/get-started-graphql/tutorials/tutorial-4-advanced-filtering.md)
+    * [Tutorial 4 - (Answers)](graphql-query-language/get-started-graphql/tutorials/tutorial-4-answers.md)
+    * [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](graphql-query-language/get-started-graphql/tutorials/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)
+    * [Tutorial 6 - Variables](graphql-query-language/get-started-graphql/tutorials/tutorial-6-variables.md)
+    * [Tutorial 6 - (Answers)](graphql-query-language/get-started-graphql/tutorials/tutorial-6-answers.md)
+    * [Tutorial 7 - Sorting](graphql-query-language/get-started-graphql/tutorials/tutorial-7-sorting.md)
+    * [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](graphql-query-language/get-started-graphql/tutorials/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md)
+    * [Tutorial 9 - Using Mutations to Create New Records](graphql-query-language/get-started-graphql/tutorials/tutorial-9-using-mutations-to-create-new-records.md)
+    * [Tutorial 10 - Using Mutations to Edit a Record](graphql-query-language/get-started-graphql/tutorials/tutorial-10-using-mutations-to-edit-a-record.md)
+    * [Tutorial 11 - Using Mutations to Delete an Item](graphql-query-language/get-started-graphql/tutorials/tutorial-11-using-mutations-to-delete-an-item.md)
+    * [Tutorial 12 - Related Records and Datasources](graphql-query-language/get-started-graphql/tutorials/tutorial-12-related-records-and-datasources.md)
 
-## Best Practice and Performance
+## Module: CRM Sync
 
-* [Module/WebApp Caching](best-practice/module-webapp-caching.md)
-* [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](best-practice/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
+* [💡 About CRM Sync Module](module-crm-sync/about-crm-sync-module.md)
+* [🗓️ CRM Sync Changelog](module-crm-sync/crm-sync-changelog.md)
+* [📋 Steps to Set Up CRM Sync on an Automation](module-crm-sync/steps-to-set-up-crm-sync-on-an-automation.md)
 
-## 🧞 SiteBuilder Module
+## 🧞 Module: SiteBuilder
 
-* [🎨 Themes](sitebuilder-module/themes/README.md)
-  * [🔹 Tailwind CSS Themes - Choosing a Build Method](sitebuilder-module/themes/tailwind-css-themes-choosing-a-build-method.md)
-  * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
-  * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI on Any Site with SiteBuilder Installed](sitebuilder-module/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
-  * [🔹 Using Tailwind CSS on any Siteglide Site with SiteBuilder and a Flowbite Theme Installed](sitebuilder-module/themes/the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
-  * [🔹 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](sitebuilder-module/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
-
-## CRM Sync Module
-
-* [💡 About CRM Sync Module](crm-sync-module/about-crm-sync-module.md)
-* [🗓️ CRM Sync Changelog](crm-sync-module/crm-sync-changelog.md)
-* [📋 Steps to Set Up CRM Sync on an Automation](crm-sync-module/steps-to-set-up-crm-sync-on-an-automation.md)
-
-## 🧞 SiteBuilder Module
-
-* [💡 About SiteBuilder](sitebuilder-module-1/about-sitebuilder.md)
-* [🗓️ SiteBuilder Changelog](sitebuilder-module-1/sitebuilder-changelog.md)
-* [🔹 Dynamic Layouts in SiteBuilder](sitebuilder-module-1/dynamic-layouts-in-sitebuilder.md)
-* [🔹 Static and Dynamic Form Layouts](sitebuilder-module-1/link-to-sitebuilder-form-layouts.md)
-* [🔹 Sliders / Carousels](sitebuilder-module-1/sliders-carousels.md)
-* [🧞 SiteBuilder Live Updates API](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/README.md)
-  * [🗓️ Live Updates Changelog](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/live-updates-changelog.md)
-  * [👀 Live Updates Reference](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/live-updates-reference.md)
-  * [🔹 Live Updates Markup Example](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/live-updates-markup-example.md)
-  * [📋 Steps to Setting Up Live Updates API in a Module/WebApp Layout](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md)
-  * [🔹 Live Updates Example - Enforcing Filters](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/live-updates-example-enforcing-filters.md)
-  * [📋 Steps to Use Live Updates Methods](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/steps-to-use-live-updates-methods.md)
-  * [📋 Steps to Initialise Live Updates with JS](sitebuilder-module-1/sitebuilder-javascript/live-updates-api/steps-to-initialise-live-updates-with-js.md)
-* [👀 SiteBuilder JavaScript](sitebuilder-module-1/sitebuilder-javascript/README.md)
-  * [🔹 Forms JS](sitebuilder-module-1/sitebuilder-javascript/forms-js.md)
-  * [🔹 Social Sharing JS](sitebuilder-module-1/sitebuilder-javascript/social-sharing-js.md)
-  * [🔹 Sliders JS](sitebuilder-module-1/sitebuilder-javascript/sliders-js.md)
-  * [🔹 Dark Mode JS](sitebuilder-module-1/sitebuilder-javascript/dark-mode-js.md)
-  * [🔹 Cookie Settings JS](sitebuilder-module-1/sitebuilder-javascript/cookie-settings-js.md)
-* [💻 Adding SiteBuilder Content (For Developers)](sitebuilder-module-1/adding-sitebuilder-content-for-developers/README.md)
-  * [👀 Reference](sitebuilder-module-1/adding-sitebuilder-content-for-developers/reference.md)
-  * [🔹 Creating SiteBuilder Themes](sitebuilder-module-1/adding-sitebuilder-content-for-developers/creating-sitebuilder-themes.md)
-  * [🔹 Support for Marketplace Modules](sitebuilder-module-1/adding-sitebuilder-content-for-developers/support-for-marketplace-modules.md)
-  * [🔹 Adding Dynamic Layouts to Themes & Modules](sitebuilder-module-1/adding-sitebuilder-content-for-developers/adding-dynamic-layouts-to-themes-and-modules.md)
-  * [🔹 Adding Static Layouts to your Theme](sitebuilder-module-1/adding-sitebuilder-content-for-developers/adding-static-layouts-to-your-theme.md)
-* [👀 SiteBuilder Liquid Includes](sitebuilder-module-1/sitebuilder-liquid-includes/README.md)
-  * [🔹 Pagination](sitebuilder-module-1/sitebuilder-liquid-includes/pagination.md)
-* [👀 SiteBuilder Liquid Functions](sitebuilder-module-1/sitebuilder-liquid-functions/README.md)
-  * [🔹 Detail Page Valid](sitebuilder-module-1/sitebuilder-liquid-functions/detail-page-valid.md)
-  * [🔹 Field Mapping](sitebuilder-module-1/sitebuilder-liquid-functions/field-mapping.md)
-  * [🔹 Get Table Config](sitebuilder-module-1/sitebuilder-liquid-functions/get-table-config.md)
-  * [🔹 Live Update Params Encode](sitebuilder-module-1/sitebuilder-liquid-functions/live-update-params-encode.md)
-  * [🔹 Case From Order ID](sitebuilder-module-1/sitebuilder-liquid-functions/case-from-order-id.md)
-
-## Group 1
-
-* [Page 1](group-1/page-1.md)
+* [🚀 Get Started: SiteBuilder](module-sitebuilder/get-started-sitebuilder/README.md)
+  * [💡 About SiteBuilder](module-sitebuilder/get-started-sitebuilder/about-sitebuilder.md)
+  * [🗓️ SiteBuilder Changelog](module-sitebuilder/get-started-sitebuilder/sitebuilder-changelog.md)
+  * [🔹 Dynamic Layouts in SiteBuilder](module-sitebuilder/get-started-sitebuilder/dynamic-layouts-in-sitebuilder.md)
+  * [🔹 Static and Dynamic Form Layouts](module-sitebuilder/get-started-sitebuilder/link-to-sitebuilder-form-layouts.md)
+  * [🔹 Sliders / Carousels](module-sitebuilder/get-started-sitebuilder/sliders-carousels.md)
+  * [🧞 SiteBuilder Live Updates API](module-sitebuilder/get-started-sitebuilder/live-updates-api/README.md)
+    * [🗓️ Live Updates Changelog](module-sitebuilder/get-started-sitebuilder/live-updates-api/live-updates-changelog.md)
+    * [👀 Live Updates Reference](module-sitebuilder/get-started-sitebuilder/live-updates-api/live-updates-reference.md)
+    * [🔹 Live Updates Markup Example](module-sitebuilder/get-started-sitebuilder/live-updates-api/live-updates-markup-example.md)
+    * [📋 Steps to Setting Up Live Updates API in a Module/WebApp Layout](module-sitebuilder/get-started-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md)
+    * [🔹 Live Updates Example - Enforcing Filters](module-sitebuilder/get-started-sitebuilder/live-updates-api/live-updates-example-enforcing-filters.md)
+    * [📋 Steps to Use Live Updates Methods](module-sitebuilder/get-started-sitebuilder/live-updates-api/steps-to-use-live-updates-methods.md)
+    * [📋 Steps to Initialise Live Updates with JS](module-sitebuilder/get-started-sitebuilder/live-updates-api/steps-to-initialise-live-updates-with-js.md)
+  * [👀 SiteBuilder JavaScript](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/README.md)
+    * [🔹 Forms JS](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/forms-js.md)
+    * [🔹 Social Sharing JS](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/social-sharing-js.md)
+    * [🔹 Sliders JS](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/sliders-js.md)
+    * [🔹 Dark Mode JS](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/dark-mode-js.md)
+    * [🔹 Cookie Settings JS](module-sitebuilder/get-started-sitebuilder/sitebuilder-javascript/cookie-settings-js.md)
+  * [💻 Adding SiteBuilder Content (For Developers)](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/README.md)
+    * [👀 Reference](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/reference.md)
+    * [🔹 Creating SiteBuilder Themes](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/creating-sitebuilder-themes.md)
+    * [🔹 Support for Marketplace Modules](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/support-for-marketplace-modules.md)
+    * [🔹 Adding Dynamic Layouts to Themes & Modules](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/adding-dynamic-layouts-to-themes-and-modules.md)
+    * [🔹 Adding Static Layouts to your Theme](module-sitebuilder/get-started-sitebuilder/adding-sitebuilder-content-for-developers/adding-static-layouts-to-your-theme.md)
+  * [🎨 Themes](module-sitebuilder/get-started-sitebuilder/themes/README.md)
+    * [🔹 Tailwind CSS Themes - Choosing a Build Method](module-sitebuilder/get-started-sitebuilder/themes/tailwind-css-themes-choosing-a-build-method.md)
+    * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI - from a Flowbite Site Template](module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
+    * [📋 Steps to Set Up Tailwind CSS with Siteglide CLI on Any Site with SiteBuilder Installed](module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
+    * [🔹 Using Tailwind CSS on any Siteglide Site with SiteBuilder and a Flowbite Theme Installed](module-sitebuilder/get-started-sitebuilder/themes/the-tailwind-css-folder-structure-on-a-sitebuilder-site.md)
+    * [🔹 Tailwind's JIT Compiler Via CDN (Beta - not recommended for Production)](module-sitebuilder/get-started-sitebuilder/themes/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
+* [👀 Reference: SiteBuilder](module-sitebuilder/reference-sitebuilder/README.md)
+  * [👀 SiteBuilder Liquid Includes](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-includes/README.md)
+    * [🔹 Pagination](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-includes/pagination.md)
+  * [👀 SiteBuilder Liquid Functions](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/README.md)
+    * [🔹 Detail Page Valid](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/detail-page-valid.md)
+    * [🔹 Field Mapping](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/field-mapping.md)
+    * [🔹 Get Table Config](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/get-table-config.md)
+    * [🔹 Live Update Params Encode](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/live-update-params-encode.md)
+    * [🔹 Case From Order ID](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/case-from-order-id.md)

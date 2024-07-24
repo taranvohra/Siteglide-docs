@@ -77,7 +77,7 @@ As Orders List Layouts are for showing secure information about Users, they are 
 Create a new file in the user\_orders folder and give it a name of your choice. Make a note of the name you gave it.
 
 {% hint style="success" %}
-[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Orders List design ready for you in a Bootstrap 5 or Tailwind version.\
+[SiteBuilder](../../../module-sitebuilder/get-started-sitebuilder/about-sitebuilder.md) has an out-of-the-box Orders List design ready for you in a Bootstrap 5 or Tailwind version.\
 ![](<../../../.gitbook/assets/image (14).png>)
 {% endhint %}
 

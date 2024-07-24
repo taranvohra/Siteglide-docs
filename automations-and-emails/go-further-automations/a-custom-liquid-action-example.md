@@ -2,7 +2,7 @@
 
 Once you've read how our [introduction to Automations](../../emails-and-automations/about-automations.md), you're ready to start creating your own. Below is an example of a custom action in Automations.\
 \
-A custom action is a great place to run a [GraphQL mutation](../../graphql/tutorial-9-using-mutations-to-create-new-records.md) if you want to modify something in the site's database.
+A custom action is a great place to run a [GraphQL mutation](../../graphql-query-language/get-started-graphql/tutorials/tutorial-9-using-mutations-to-create-new-records.md) if you want to modify something in the site's database.
 
 This example will log data if the WebApp item's name contains 'Hello'.
 
