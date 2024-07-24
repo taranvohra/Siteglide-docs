@@ -97,11 +97,12 @@
 
 ## Categories
 
-* [💡 About Categories](categories/about-categories.md)
-* [👀 Categories Reference](categories/category-detail-layouts.md)
-* [🌳 Category Layout Folder Structure](categories/category-layout-folder-structure.md)
-* [🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters](categories/filtering-webapps-and-modules-by-categories.md)
-* [🔹 Outputting Categories on WebApp / Module / eCommerce Layouts](categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
+* [💡 Getting Started: Categories](categories/about-categories.md)
+* [Advanced: Categories](categories/advanced-categories/README.md)
+  * [🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters](categories/advanced-categories/filtering-webapps-and-modules-by-categories.md)
+  * [🔹 Outputting Categories on WebApp / Module / eCommerce Layouts](categories/advanced-categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
+* [👀 Reference: Categories](categories/category-detail-layouts/README.md)
+  * [🌳 Category Layout Folder Structure](categories/category-detail-layouts/category-layout-folder-structure.md)
 
 ## Siteglide Modules Marketplace
 

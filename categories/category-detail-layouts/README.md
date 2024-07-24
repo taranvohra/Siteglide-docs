@@ -1,4 +1,4 @@
-# 👀 Categories Reference
+# 👀 Reference: Categories
 
 ## Global List of Categories
 
@@ -80,8 +80,8 @@ If you want to skip any Categories, you can use Liquid if statements and the `co
 
 See more here:
 
-{% content-ref url="filtering-webapps-and-modules-by-categories.md" %}
-[filtering-webapps-and-modules-by-categories.md](filtering-webapps-and-modules-by-categories.md)
+{% content-ref url="../advanced-categories/filtering-webapps-and-modules-by-categories.md" %}
+[filtering-webapps-and-modules-by-categories.md](../advanced-categories/filtering-webapps-and-modules-by-categories.md)
 {% endcontent-ref %}
 
 ## Category Detail Pages
@@ -102,8 +102,8 @@ The following tags are available within the Category Detail Layout:
 
 You can use any of the Liquid which you can use on Pages in the Category Detail Layout:
 
-{% content-ref url="../pages-and-page-templates/accessing-page-data/" %}
-[accessing-page-data](../pages-and-page-templates/accessing-page-data/)
+{% content-ref url="../../pages-and-page-templates/accessing-page-data/" %}
+[accessing-page-data](../../pages-and-page-templates/accessing-page-data/)
 {% endcontent-ref %}
 
 Category Detail Pages give you additional features including Breadcrumbs, Parent Category Lists, Child Category Lists and more.
@@ -182,6 +182,6 @@ To access the category which belongs to the item currently being outputted in a 
 
 See more:
 
-{% content-ref url="outputting-categories-on-webapp-module-ecommerce-layouts.md" %}
-[outputting-categories-on-webapp-module-ecommerce-layouts.md](outputting-categories-on-webapp-module-ecommerce-layouts.md)
+{% content-ref url="../advanced-categories/outputting-categories-on-webapp-module-ecommerce-layouts.md" %}
+[outputting-categories-on-webapp-module-ecommerce-layouts.md](../advanced-categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
 {% endcontent-ref %}
