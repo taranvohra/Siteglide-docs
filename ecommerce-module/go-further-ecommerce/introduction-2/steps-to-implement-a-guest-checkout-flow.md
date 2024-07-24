@@ -14,13 +14,13 @@ In this tutorial, we will show you how to create the simplest Cart and Checkout 
 
 In eCommerce/Settings, select the desired default currency for your Site:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2) Create Products
 
 In eCommerce / Products, create at least one product with a price:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Check the "Pricing" tab to add a price.
@@ -37,25 +37,25 @@ Users will need to see your products in order to access their Product Detail Pag
 ```
 
 {% hint style="success" %}
-[SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 {% endhint %}
 
 ## Step 4) Select a Product Detail Layout
 
 To set a Detail Layout, start at eCommerce / Products and click the "View Table" button:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Select the Detail Page Template and Layout:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-[SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1).png>)
 {% endhint %}
 
 ## Step 5) Implement an Add to Cart Button on Your Detail View
@@ -72,7 +72,7 @@ This liquid include tag will add the "Add to Cart" Button:
 
 `{% include 'ecommerce/cart_add' -%}`
 
-This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
+This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../reference-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
 
 `{% include 'ecommerce/cart_add', component_layout: 'custom_layout' -%}`
 
@@ -97,15 +97,15 @@ Use the `layout` parameter to select the folder which contains the wrapper.liqui
 Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layouts)
 
 {% hint style="success" %}
-[SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\
-<img src="../../.gitbook/assets/image (7).png" alt="" data-size="original">
+[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\
+<img src="../../../.gitbook/assets/image (7).png" alt="" data-size="original">
 {% endhint %}
 
 ## Step 7) Create a Form for your Checkout Page
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](../../forms/about-forms/).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](../../../forms/about-forms/).
 
 You will need to add the following information when creating your form:
 
@@ -139,9 +139,9 @@ The layout parameter should refer to the folder which contains your form layout 
 For now, you can use the "default" layout that is included with the eCommerce module.
 
 {% hint style="success" %}
-[SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Checkout Form Layout design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Checkout Form Layout design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8).png>)
 {% endhint %}
 
 If the page is visited while the user has an empty cart, an alternative "empty" layout will show. The default form layout will automatically add an empty layout at the path:
@@ -152,7 +152,7 @@ If you create a custom layout, you should also create an empty.liquid file, rena
 
 ## Step 10) Test your eCommerce flow.
 
-Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../introduction/test-cards.md)
+Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../../get-started-ecommerce/payment-gateways/test-cards.md)
 
 Users will be added to the CRM in Admin.
 

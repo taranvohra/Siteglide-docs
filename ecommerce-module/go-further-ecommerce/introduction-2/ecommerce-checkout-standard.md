@@ -42,4 +42,4 @@ This will output the Payment Gateway with the ID you select. When outputting by 
 
 Once you've added multiple Payment Gateways to your form using the include above, you can add JavaScript to switch between them on the client side:
 
-[Switching Between Multiple Payment Method Options](../../Siteglide%20Developer%20Documentation/Switching%20Between%20Multiple%20Payment%20Method%20Options.md)
+[Switching Between Multiple Payment Method Options](../../../Siteglide%20Developer%20Documentation/Switching%20Between%20Multiple%20Payment%20Method%20Options.md)

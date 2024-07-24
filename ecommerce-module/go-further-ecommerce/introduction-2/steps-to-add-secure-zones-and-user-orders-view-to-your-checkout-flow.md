@@ -18,8 +18,8 @@ Alternatively, you can use a Secure Zone that you have created already.
 
 Find out more about the Secure Zones Module here:
 
-{% content-ref url="../../secure-zones/introduction.md" %}
-[introduction.md](../../secure-zones/introduction.md)
+{% content-ref url="../../../secure-zones/introduction.md" %}
+[introduction.md](../../../secure-zones/introduction.md)
 {% endcontent-ref %}
 
 ## Step 2) Create a "My Orders" Page in a Secure Zone
@@ -32,7 +32,7 @@ Make a note of the Page slug, because you will want to add this to the Checkout 
 
 In CMS / Pages, open the Page you have chosen and open the Details tab. Click the Secure Zones accordion to reveal the "Select a Secure Zone" field.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Click in this to open a drop-down list of your Secure Zones and select the one you wish to be accessed by Users after they complete Checkout.
 
@@ -44,11 +44,11 @@ The [previous article](steps-to-implement-a-guest-checkout-flow.md) explained ho
 
 Find Forms in the Siteglide Admin’s left-hand side menu under CMS / Forms. Select your checkout Form in the list:
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Next, click the "View Form" button to edit:
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 In the "Redirect URL" field add your Orders [Page slug](steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md#step-2-create-a-my-orders-page-in-a-secure-zone), preceded by a forward slash. E.g. /my-orders
 
@@ -56,7 +56,7 @@ In the "Redirect URL" field add your Orders [Page slug](steps-to-add-secure-zone
 
 Select the Secure Zones tag and then click in the Secure Zones Input field to see a dropdown of Secure Zones you have already created.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Select the Secure Zone you want to log your Users in to when they complete the form.
 
@@ -70,15 +70,15 @@ As Orders List Layouts are for showing secure information about Users, they are 
 
 `module_5/user_orders/name_of_my_layout.liquid`
 
-{% content-ref url="cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](cart-and-checkout-folder-structure.md)
+{% content-ref url="../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../reference-ecommerce/cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
 Create a new file in the user\_orders folder and give it a name of your choice. Make a note of the name you gave it.
 
 {% hint style="success" %}
-[SiteBuilder](../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Orders List design ready for you in a Bootstrap 5 or Tailwind version.\
-![](<../../.gitbook/assets/image (14).png>)
+[SiteBuilder](../../../sitebuilder-module-1/about-sitebuilder.md) has an out-of-the-box Orders List design ready for you in a Bootstrap 5 or Tailwind version.\
+![](<../../../.gitbook/assets/image (14).png>)
 {% endhint %}
 
 ## Step 6) Add Orders layout to the Orders Page

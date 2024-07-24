@@ -52,8 +52,8 @@ marketplace_builder
 
 See a more complete Cart & Checkout Folder Structure here:
 
-{% content-ref url="../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../ecommerce-module/introduction-2/cart-and-checkout-folder-structure.md)
+{% content-ref url="../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../reference-ecommerce/cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
 ### Creating a new set of Product Layouts

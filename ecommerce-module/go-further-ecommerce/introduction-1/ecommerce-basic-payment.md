@@ -2,7 +2,7 @@
 
 ## Including on a Page
 
-To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../forms/advanced-forms/forms-reference.md):
+To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../../forms/advanced-forms/forms-reference.md):
 
 ```liquid
 {% raw %}
@@ -16,14 +16,14 @@ To include a Basic Payment Form on the Page, use the same syntax as a [standard 
 
 ### Authorize.net Specific Instructions
 
-{% content-ref url="../../ecommerce-module/introduction-1/authorize.net-basic-payment-forms.md" %}
-[authorize.net-basic-payment-forms.md](../../ecommerce-module/introduction-1/authorize.net-basic-payment-forms.md)
+{% content-ref url="authorize.net-basic-payment-forms.md" %}
+[authorize.net-basic-payment-forms.md](authorize.net-basic-payment-forms.md)
 {% endcontent-ref %}
 
 ### PayPal Specific Instructions
 
-{% content-ref url="../../ecommerce-module/introduction-1/paypal-basic-payment-forms.md" %}
-[paypal-basic-payment-forms.md](../../ecommerce-module/introduction-1/paypal-basic-payment-forms.md)
+{% content-ref url="paypal-basic-payment-forms.md" %}
+[paypal-basic-payment-forms.md](paypal-basic-payment-forms.md)
 {% endcontent-ref %}
 
 ### ecommerce/basic\_payment Liquid Tag
@@ -53,18 +53,18 @@ You should include this _inside_ a basic payment form layout.
 | id        | Integer | The ID of the Payment Gateway to be used. If not included, then the system will output the Payment Gateway that you most recently updated in Siteglide Admin |
 
 {% hint style="info" %}
-Also see [Switching Payment Gateways](../payment-gateways/switching-gateway.md)
+Also see [Switching Payment Gateways](../../get-started-ecommerce/payment-gateways/switching-gateway.md)
 {% endhint %}
 
 ### s\_e\_amount Field
 
 This HTML input field with the ID s\_e\_amount can be used to modify the amount which will be paid when the Form is submitted, see:
 
-{% content-ref url="../../ecommerce-module/introduction-1/steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
-[steps-to-allow-user-to-decide-amount-they-will-pay.md](../../ecommerce-module/introduction-1/steps-to-allow-user-to-decide-amount-they-will-pay.md)
+{% content-ref url="steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
+[steps-to-allow-user-to-decide-amount-they-will-pay.md](steps-to-allow-user-to-decide-amount-they-will-pay.md)
 {% endcontent-ref %}
 
-[#a-note-on-security](basic-payments.md#a-note-on-security "mention")
+[#a-note-on-security](../../get-started-ecommerce/basic-payments/basic-payments.md#a-note-on-security "mention")
 
 ## Payment Confirmation Layouts
 

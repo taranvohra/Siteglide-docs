@@ -6,8 +6,8 @@
 [.](./)
 {% endcontent-ref %}
 
-{% content-ref url="../../introduction-2/about-cart-checkout-and-quotes.md" %}
-[about-cart-checkout-and-quotes.md](../../introduction-2/about-cart-checkout-and-quotes.md)
+{% content-ref url="../../../get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
+[about-cart-checkout-and-quotes.md](../../../get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
 {% endcontent-ref %}
 
 ## Checkout Support
