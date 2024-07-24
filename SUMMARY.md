@@ -137,6 +137,7 @@
 ## eCommerce Module
 
 * [🚀 Get Started: eCommerce](ecommerce-module/get-started-ecommerce/README.md)
+  * [💡 About the eCommerce Module](ecommerce-module/get-started-ecommerce/about-the-ecommerce-module.md)
   * [Basic Payments](ecommerce-module/get-started-ecommerce/basic-payments/README.md)
     * [💡 About Basic Payment Forms](ecommerce-module/get-started-ecommerce/basic-payments/basic-payments.md)
   * [Payment Gateways](ecommerce-module/get-started-ecommerce/payment-gateways/README.md)
@@ -145,7 +146,6 @@
     * [🔹 Test Cards](ecommerce-module/get-started-ecommerce/payment-gateways/test-cards.md)
   * [Cart, Checkout and Quotes](ecommerce-module/get-started-ecommerce/cart-checkout-and-quotes/README.md)
     * [💡 About Cart, Checkout and Quotes](ecommerce-module/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
-* [💡 About the eCommerce Module](ecommerce-module/about-the-ecommerce-module.md)
 * [🧙‍♂️ Go Further: eCommerce](ecommerce-module/go-further-ecommerce/README.md)
   * [📂 Payment Gateways](ecommerce-module/go-further-ecommerce/introduction/README.md)
     * [💻 Building a Custom Payment Gateway](ecommerce-module/go-further-ecommerce/introduction/building-a-custom-payment-gateway/README.md)
