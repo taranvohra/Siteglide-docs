@@ -44,8 +44,8 @@ In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as 
 
 See more:
 
-{% content-ref url="../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../reference-ecommerce/cart-and-checkout-folder-structure.md)
+{% content-ref url="../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../reference-ecommerce/cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
 ### Creating a new set of Product Layouts

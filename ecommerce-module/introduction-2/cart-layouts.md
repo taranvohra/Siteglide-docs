@@ -34,8 +34,8 @@ marketplace_builder
 
 See the full Cart & Checkout folder structure here:
 
-{% content-ref url="../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../reference-ecommerce/cart-and-checkout-folder-structure.md)
+{% content-ref url="../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../reference-ecommerce/cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
 ## wrapper.liquid

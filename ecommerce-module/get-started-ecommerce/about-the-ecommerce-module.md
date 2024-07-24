@@ -8,8 +8,8 @@ description: 'We''ve split the eCommerce Module into the following sections:'
 
 All eCommerce features require you to first set up at least one Payment Gateway.
 
-{% content-ref url="../go-further-ecommerce/introduction/" %}
-[introduction](../go-further-ecommerce/introduction/)
+{% content-ref url="../introduction-1/" %}
+[introduction-1](../introduction-1/)
 {% endcontent-ref %}
 
 ## Basic Payment Forms, Checkout and Subscriptions
@@ -27,8 +27,8 @@ Most Suitable for:
 * Paying Invoices or one off payments
 * Buying Lifetime Access to content stored within one of your Secure Zones
 
-{% content-ref url="basic-payments/basic-payments.md" %}
-[basic-payments.md](basic-payments/basic-payments.md)
+{% content-ref url="../introduction/basic-payments.md" %}
+[basic-payments.md](../introduction/basic-payments.md)
 {% endcontent-ref %}
 
 ## Cart, Checkout or Quotes
@@ -39,8 +39,8 @@ Most suitable for:
   * E.g. An online shop
 * Customers Choosing multiple products and requesting a Quote on their list
 
-{% content-ref url="cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
-[about-cart-checkout-and-quotes.md](cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
+{% content-ref url="../introduction-2/about-cart-checkout-and-quotes.md" %}
+[about-cart-checkout-and-quotes.md](../introduction-2/about-cart-checkout-and-quotes.md)
 {% endcontent-ref %}
 
 ## Subscriptions
@@ -50,6 +50,6 @@ Most Suitable for:
 * Storing a Customer's Card in the Payment Gateway with permission to charge it on regular occasions to provide continued access to a product
 * Taking regular Payments to provide access to a Secure Zone on your site, removing access once the payments are cancelled or stop.
 
-{% content-ref url="../go-further-ecommerce/introduction-3/about-subscriptions.md" %}
-[about-subscriptions.md](../go-further-ecommerce/introduction-3/about-subscriptions.md)
+{% content-ref url="../introduction-3/about-subscriptions.md" %}
+[about-subscriptions.md](../introduction-3/about-subscriptions.md)
 {% endcontent-ref %}

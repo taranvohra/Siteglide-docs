@@ -4,15 +4,15 @@
 
 ## Step 2) Create a New Form
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3) Add a Name and Redirect URL. Set up any Custom Fields you wish to add
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4) In the Payments Tab, Toggle Payments on and Select Basic Payment
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For a basic fixed-amount set up, set the minimum payment value to exactly what you want users filling in the Form to Pay.\
@@ -24,17 +24,17 @@ For charitable donations and invoice payments, set the minimum payment to someth
 
 In the Secure Zones tab, pick a Secure Zone. Access will be granted when payment is made and the Form is submitted.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6) Save the Form
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7) Output your Form on a Page
 
 Back in CMS Forms, find the ID for your newly created Form:
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this ID in the Liquid tag when you insert the Form on the Page (or use Toolbox as a quick shortcut):
 
@@ -50,8 +50,8 @@ Your Payment Form is now set up and ready to accept payments using the minimum p
 
 If your Payment Gateway is in 'Test Mode', then you may need to enter card details specific to the testing environment.&#x20;
 
-{% content-ref url="../../get-started-ecommerce/payment-gateways/test-cards.md" %}
-[test-cards.md](../../get-started-ecommerce/payment-gateways/test-cards.md)
+{% content-ref url="../introduction-1/test-cards.md" %}
+[test-cards.md](../introduction-1/test-cards.md)
 {% endcontent-ref %}
 
 ## Step 9) Install a SiteBuilder Layout or Create your Own Layout
@@ -80,8 +80,8 @@ And set your Form to use it with the layout parameter.
 
 See the Forms Reference for creating your own Layout:
 
-{% content-ref url="../../../forms/advanced-forms/forms-reference.md" %}
-[forms-reference.md](../../../forms/advanced-forms/forms-reference.md)
+{% content-ref url="../../forms/advanced-forms/forms-reference.md" %}
+[forms-reference.md](../../forms/advanced-forms/forms-reference.md)
 {% endcontent-ref %}
 
 ## Step 10) Optionally, set your Basic Payment Form to Allow Users to Choose How Much they Pay

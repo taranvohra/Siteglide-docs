@@ -6,8 +6,8 @@
 [.](./)
 {% endcontent-ref %}
 
-{% content-ref url="../../../get-started-ecommerce/basic-payments/basic-payments.md" %}
-[basic-payments.md](../../../get-started-ecommerce/basic-payments/basic-payments.md)
+{% content-ref url="../../introduction/basic-payments.md" %}
+[basic-payments.md](../../introduction/basic-payments.md)
 {% endcontent-ref %}
 
 ## Basic Payment Form Support

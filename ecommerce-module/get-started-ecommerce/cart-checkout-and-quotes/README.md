@@ -1,2 +1,0 @@
-# Cart, Checkout and Quotes
-
