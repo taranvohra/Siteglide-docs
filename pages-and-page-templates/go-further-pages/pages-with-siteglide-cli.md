@@ -15,8 +15,8 @@ If you add Pages locally, you'll need to add this data.`-`
 
 Pages must be stored within the following file path of your project: `marketplace_builder/views/pages/` and must be `.liquid` file type.
 
-{% content-ref url="../accessing-page-data/pages-and-page-templates-file-structure.md" %}
-[pages-and-page-templates-file-structure.md](../accessing-page-data/pages-and-page-templates-file-structure.md)
+{% content-ref url="../reference-pages/pages-and-page-templates-file-structure.md" %}
+[pages-and-page-templates-file-structure.md](../reference-pages/pages-and-page-templates-file-structure.md)
 {% endcontent-ref %}
 
 ## Yaml Settings and Metadata

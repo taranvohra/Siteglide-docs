@@ -6,12 +6,12 @@ description: >-
 
 # 🔧 Troubleshooting Company Information
 
-{% content-ref url="../includes/miscellaneous-siteglide-includes/constants.md" %}
-[constants.md](../includes/miscellaneous-siteglide-includes/constants.md)
+{% content-ref url="../miscellaneous-siteglide-includes/constants.md" %}
+[constants.md](../miscellaneous-siteglide-includes/constants.md)
 {% endcontent-ref %}
 
 Or for automations:
 
-{% content-ref url="../includes/miscellaneous-siteglide-includes/constants_json.md" %}
-[constants\_json.md](../includes/miscellaneous-siteglide-includes/constants\_json.md)
+{% content-ref url="../miscellaneous-siteglide-includes/constants_json.md" %}
+[constants\_json.md](../miscellaneous-siteglide-includes/constants\_json.md)
 {% endcontent-ref %}

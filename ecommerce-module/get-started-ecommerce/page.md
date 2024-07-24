@@ -1,7 +1,0 @@
-# Page
-
-Products
-
-Payments
-
-Orders
