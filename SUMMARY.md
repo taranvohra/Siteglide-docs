@@ -31,7 +31,7 @@
   * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/advanced-pages/page-templates-with-cli.md)
   * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/advanced-pages/pages-and-page-templates-on-platformos.md)
   * [💻 Pages with Siteglide CLI](pages-and-page-templates/advanced-pages/pages-with-siteglide-cli.md)
-* [👀 Reference: Pages and Page Templates](pages-and-page-templates/accessing-page-data/README.md)
+* [👀 Reference](pages-and-page-templates/accessing-page-data/README.md)
   * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/accessing-page-data/pages-and-page-templates-file-structure.md)
 
 ## Includes
@@ -101,7 +101,7 @@
 * [Advanced: Categories](categories/advanced-categories/README.md)
   * [🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters](categories/advanced-categories/filtering-webapps-and-modules-by-categories.md)
   * [🔹 Outputting Categories on WebApp / Module / eCommerce Layouts](categories/advanced-categories/outputting-categories-on-webapp-module-ecommerce-layouts.md)
-* [👀 Reference: Categories](categories/category-detail-layouts/README.md)
+* [👀 Reference](categories/category-detail-layouts/README.md)
   * [🌳 Category Layout Folder Structure](categories/category-detail-layouts/category-layout-folder-structure.md)
 
 ## Siteglide Modules Marketplace
