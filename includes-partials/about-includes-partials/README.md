@@ -21,7 +21,7 @@ The only difference between Content Sections and Code Snippets is organisational
 
 A kind of include which is easy for clients and agencies alike to access from the Siteglide Admin, if their user roles allow.&#x20;
 
-Headers and Footers are intended a an optional place to store code which forms the visible header (or footer). It isn't the same thing as using our [Menu Builder Module](../../menu-builder/introduction.md) to include a 'menu' feature, though often it will contain this as it's main feature. You can choose to skip this and place header code straight in the [Page Template](../../pages-and-page-templates/get-started-pages/page-templates.md).
+Headers and Footers are intended a an optional place to store code which forms the visible header (or footer). It isn't the same thing as using our [Menu Builder Module](../../module-menu-builder/get-started-menu-builder/introduction.md) to include a 'menu' feature, though often it will contain this as it's main feature. You can choose to skip this and place header code straight in the [Page Template](../../pages-and-page-templates/get-started-pages/page-templates.md).
 
 ### WebApps, Modules and More Includes From Siteglide
 
