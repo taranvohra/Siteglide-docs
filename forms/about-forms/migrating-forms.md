@@ -37,7 +37,7 @@ Add all the fields you need:
 
 ## Step 3) Output the Siteglide Form in the Site
 
-Next, find the Liquid file where your old Form is outputted; this is most likely a [Page](../../pages-and-page-templates/getting-started-pages/about-pages.md), but could also be a [Page Template](../../pages-and-page-templates/getting-started-pages/page-templates.md) or a [Liquid Include](../../includes/about-includes-partials/). You may want to keep your old Form code there temporarily for reference, but now is the time to add the Siteglide Liquid code to output a Form there:
+Next, find the Liquid file where your old Form is outputted; this is most likely a [Page](../../pages-and-page-templates/get-started-pages/about-pages.md), but could also be a [Page Template](../../pages-and-page-templates/get-started-pages/page-templates.md) or a [Liquid Include](../../includes/about-includes-partials/). You may want to keep your old Form code there temporarily for reference, but now is the time to add the Siteglide Liquid code to output a Form there:
 
 ```
 {% raw %}

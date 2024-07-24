@@ -56,7 +56,7 @@ You can compare [Google Page Speed Scores](https://developers.google.com/speed/p
 
 After a successful import and deploy to your Siteglide Site, you can head to this Site within your Admin.
 
-Upon looking at your Site within Admin, you will see that your Pages have been created for you to manage and edit. These Pages will contain head, header and footer scripts, as well as Page Content. This is something you can change by implementing [Page Templates](../../../pages-and-page-templates/getting-started-pages/page-templates.md).
+Upon looking at your Site within Admin, you will see that your Pages have been created for you to manage and edit. These Pages will contain head, header and footer scripts, as well as Page Content. This is something you can change by implementing [Page Templates](../../../pages-and-page-templates/get-started-pages/page-templates.md).
 
 Your images will be showing on this Site, just as they are in your current Site.
 
