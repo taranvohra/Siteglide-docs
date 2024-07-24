@@ -2,7 +2,7 @@
 
 Common things to check when experiencing problems with includes:
 
-* [ ] Check that your include's path is correct- this is the most common problem. Check the [reference ](../../includes-reference.md)for details.&#x20;
+* [ ] Check that your include's path is correct- this is the most common problem. Check the [reference ](../../reference-includes/includes-reference.md)for details.&#x20;
   * [ ] Have you accidentally included the file extension?
   * [ ] Have you started the path too early? Perhaps starting with "marketplace\_builder" or "views"?
 * [ ] Check the syntax is correct, are you using commas ',' to separate parameters passed to the include and colons ':' to separate keys and values?

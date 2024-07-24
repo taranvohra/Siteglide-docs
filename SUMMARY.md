@@ -48,8 +48,8 @@
   * [👀 constants](miscellaneous-siteglide-includes/constants.md)
   * [🌳 Includes File Structure](miscellaneous-siteglide-includes/includes-folder-structure.md)
   * [💻 Includes with Siteglide CLI](miscellaneous-siteglide-includes/includes-with-siteglide-cli.md)
-* [Reference: Includes](reference-includes.md)
-* [🔧 Tags for Includes](includes-reference.md)
+* [👀 Reference: Includes](reference-includes/README.md)
+  * [🔧 Tags for Includes](reference-includes/includes-reference.md)
 
 ## Assets
 

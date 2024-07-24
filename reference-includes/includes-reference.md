@@ -8,8 +8,8 @@ The Liquid tag `include` is usually used to insert a Liquid Partial into a Liqui
 
 Sometimes this can link to one of your files directly, simply pass in a String containing a custom path to your file. The path must start relative to the partials folder and must not include the file extension:
 
-{% content-ref url="miscellaneous-siteglide-includes/includes-folder-structure.md" %}
-[includes-folder-structure.md](miscellaneous-siteglide-includes/includes-folder-structure.md)
+{% content-ref url="../miscellaneous-siteglide-includes/includes-folder-structure.md" %}
+[includes-folder-structure.md](../miscellaneous-siteglide-includes/includes-folder-structure.md)
 {% endcontent-ref %}
 
 Sometimes it will link to a hidden Siteglide Module file, which may in turn include one of your customisable "layout" Liquid files.
