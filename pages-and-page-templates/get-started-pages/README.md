@@ -1,2 +1,6 @@
-# 🚀 Getting Started: Pages
+---
+description: All things Pages
+---
+
+# 🚀 Get Started: Pages
 
