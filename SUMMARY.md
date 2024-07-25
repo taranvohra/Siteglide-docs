@@ -7,6 +7,7 @@
 * [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
+* [💡 How to Navigate our Docs](how-to-navigate-our-docs.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
 
 ## Siteglide Portal
