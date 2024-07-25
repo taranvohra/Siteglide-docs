@@ -1,12 +1,13 @@
 # Table of contents
 
-## Introduction
+## Let's Get Started!
 
 ***
 
 * [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
+* [🚀 Get Started Tutorials](get-started-tutorials.md)
 
 ## Siteglide Portal
 
