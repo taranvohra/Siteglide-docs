@@ -12,9 +12,19 @@
 ## Siteglide Portal
 
 * [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
-  * [Agency Whitelabelling](siteglide-portal/get-started-portal/agency-whitelabelling.md)
-  * [📁 Domains](siteglide-portal/get-started-portal/domains/README.md)
-    * [How to setup a multi domain start page](siteglide-portal/get-started-portal/domains/how-to-setup-a-multi-domain-start-page.md)
+  * [📁 Dashboard](siteglide-portal/get-started-portal/dashboard.md)
+  * [📁 Account Area](siteglide-portal/get-started-portal/account-area.md)
+  * [📁 Sites](siteglide-portal/get-started-portal/sites/README.md)
+    * [📁 Domains](siteglide-portal/get-started-portal/sites/domains/README.md)
+      * [How to setup a multi domain start page](siteglide-portal/get-started-portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
+  * [📁 Marketplace](siteglide-portal/get-started-portal/marketplace/README.md)
+    * [💡 About the Marketplace](siteglide-portal/get-started-portal/marketplace/about-module-marketplace.md)
+    * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
+    * [🔹 Siteglide's Module Update Policy](siteglide-portal/get-started-portal/marketplace/siteglides-module-update-policy.md)
+* [🧙‍♂️ Go Further: Portal](siteglide-portal/go-further-portal/README.md)
+  * [📁 Agencies](siteglide-portal/go-further-portal/agencies/README.md)
+    * [Agency Whitelabelling](siteglide-portal/go-further-portal/agencies/agency-whitelabelling.md)
+    * [📁 Clients](siteglide-portal/go-further-portal/agencies/clients.md)
 
 ## Command Line Interface (CLI)
 
@@ -214,26 +224,22 @@
   * [Public API Changelog](public-api/get-started-api/changelog.md)
 * [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
 
-## Marketplace
+## Dev Marketplace
 
-* [🚀 Get Started: Marketplace](marketplace/get-started-marketplace/README.md)
-  * [💡 About the Marketplace](marketplace/get-started-marketplace/about-module-marketplace.md)
-  * [🔹 Siteglide's Module Update Policy](marketplace/get-started-marketplace/siteglides-module-update-policy.md)
-  * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
-* [🧙‍♂️ Go Further: Marketplace](marketplace/go-further-marketplace/README.md)
-  * [Building for Marketplace](marketplace/go-further-marketplace/building-for-marketplace/README.md)
-    * [💡 About Building Modules](marketplace/go-further-marketplace/building-for-marketplace/about-building-modules.md)
-    * [Module Setup](marketplace/go-further-marketplace/building-for-marketplace/module-setup.md)
-    * [🔹 Site Template Modules - and How to Make Your Own](marketplace/go-further-marketplace/building-for-marketplace/site-template-modules-and-how-to-make-your-own.md)
-    * [Create Folder Structure](marketplace/go-further-marketplace/building-for-marketplace/create-folder-structure.md)
-    * [Updating Modules](marketplace/go-further-marketplace/building-for-marketplace/updating-existing-modules.md)
-    * [Submit Module for Approval](marketplace/go-further-marketplace/building-for-marketplace/submit-module-for-approval.md)
-    * [Adding Payment to a Module](marketplace/go-further-marketplace/building-for-marketplace/adding-payment-to-a-module.md)
-    * [Theme Module Example](marketplace/go-further-marketplace/building-for-marketplace/theme-module-example.md)
-    * [Data & UI Module Example](marketplace/go-further-marketplace/building-for-marketplace/data-and-ui-module-example.md)
-* [👀 Reference: Marketplace](marketplace/reference-marketplace/README.md)
-  * [🔧 Tags for Marketplace](marketplace/reference-marketplace/modules-reference.md)
-  * [🌳 Modules Folder Structure Introduction](marketplace/reference-marketplace/modules-folder-structure-introduction.md)
+* [🧙‍♂️ Go Further: Dev Marketplace](dev-marketplace/go-further-dev-marketplace/README.md)
+  * [Building for Marketplace](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/README.md)
+    * [💡 About Building Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/about-building-modules.md)
+    * [Module Setup](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/module-setup.md)
+    * [🔹 Site Template Modules - and How to Make Your Own](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/site-template-modules-and-how-to-make-your-own.md)
+    * [Create Folder Structure](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/create-folder-structure.md)
+    * [Updating Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/updating-existing-modules.md)
+    * [Submit Module for Approval](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/submit-module-for-approval.md)
+    * [Adding Payment to a Module](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/adding-payment-to-a-module.md)
+    * [Theme Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/theme-module-example.md)
+    * [Data & UI Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/data-and-ui-module-example.md)
+* [👀 Reference: Dev Marketplace](dev-marketplace/reference-dev-marketplace/README.md)
+  * [🔧 Tags for Marketplace](dev-marketplace/reference-dev-marketplace/modules-reference.md)
+  * [🌳 Modules Folder Structure Introduction](dev-marketplace/reference-dev-marketplace/modules-folder-structure-introduction.md)
 
 ## 🧞 Module: SiteBuilder
 
