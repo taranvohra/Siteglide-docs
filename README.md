@@ -4,6 +4,8 @@ Welcome to Siteglide's Documentation!&#x20;
 
 Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-type="rating" data-max="5"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Tutorials</strong></mark></td><td>Step-by-step guides</td><td></td><td>null</td><td><a href=".gitbook/assets/image (2).png">image (2).png</a></td></tr><tr><td><mark style="color:blue;"><strong>Reference</strong></mark></td><td>At a glance tags and info</td><td></td><td>3</td><td><a href=".gitbook/assets/image (1).png">image (1).png</a></td></tr><tr><td></td><td></td><td></td><td>null</td><td></td></tr></tbody></table>
+
 {% hint style="info" %}
 **Not sure where to start?** Check out our Get Started Tutorials:
 {% endhint %}
