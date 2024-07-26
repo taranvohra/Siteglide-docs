@@ -1,4 +1,4 @@
-# 📋 Steps to create your first site
+# 📋 Steps to Create your First Site
 
 This guide will walk you through the process of creating a new site using Siteglide's admin area.
 
@@ -48,4 +48,5 @@ Finally, give your site a name and click 'Create Site'.
 
 And that's it! You've successfully created a new site, you will need to wait for it to be ready to use. You will receive an email when it's done but can also find it under the Sites area:
 
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/v1u9wLZ2/3bf5f58f-56e5-4b32-b427-36fc35cd9bfc.jpg?source=viewer&#x26;v=%22ddbfd9bfe9035551bb2c140d6b3d916c%22" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/v1u9wLZ2/3bf5f58f-56e5-4b32-b427-36fc35cd9bfc.jpg?source=viewer&#x26;v=%22ddbfd9bfe9035551bb2c140d6b3d916c%22" alt=""><figcaption><p>Once you get the email confirming it's ready you will need to refresh this page or click the link from the email</p></figcaption></figure>
+
