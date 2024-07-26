@@ -82,4 +82,4 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
 </td>
 ```
 
-See the [Order Confirmation Email](order-confirmation.md) documentation for more.
+See the [Order Confirmation Email](orders/order-confirmation.md) documentation for more.

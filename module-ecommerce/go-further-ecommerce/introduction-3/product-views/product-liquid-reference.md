@@ -5,7 +5,7 @@ createdAt: 2021-02-18T15:09:17.000Z
 updatedAt: 2023-04-06T15:09:36.000Z
 ---
 
-# 👀 Product Layout Reference (includes Cart List Views)
+# 🔹 Product Layouts
 
 While building Product and Attribute Layouts, a large range of dynamic data is available- here is a full reference guide.
 
@@ -117,3 +117,11 @@ Assuming the above example liquid forloop has been implemented, you can access t
 | Attribute ID                               | \{{ option.product\_attribute.id \}}          | The Unique ID of this Attribute                               |
 | Attribute Name                             | \{{ option.product\_attribute.name \}}        | The Name of the Attribute e.g. Size or Colour                 |
 | Attribute                                  | \{{ option.product\_attribute.product\_id \}} | The Unique Product ID that this Attribute is associated with. |
+
+## Volume Pricing
+
+Information about how to output information about volume pricing can be found here:
+
+{% content-ref url="../volume-pricing.md" %}
+[volume-pricing.md](../volume-pricing.md)
+{% endcontent-ref %}

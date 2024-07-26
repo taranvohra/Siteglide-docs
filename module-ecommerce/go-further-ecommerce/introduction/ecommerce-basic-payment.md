@@ -64,7 +64,7 @@ This HTML input field with the ID s\_e\_amount can be used to modify the amount 
 [steps-to-allow-user-to-decide-amount-they-will-pay.md](steps-to-allow-user-to-decide-amount-they-will-pay.md)
 {% endcontent-ref %}
 
-[#a-note-on-security](basic-payments.md#a-note-on-security "mention")
+[#a-note-on-security](../../get-started-ecommerce/basic-payment-forms/basic-payments.md#a-note-on-security "mention")
 
 ## Payment Confirmation Layouts
 

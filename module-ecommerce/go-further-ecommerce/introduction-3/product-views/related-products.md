@@ -24,13 +24,13 @@ You could of course use this same technique with the Blog Module or any other Mo
 
 To add a Custom Field to Products, first select Edit Module Structure from the Products List in Admin.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 At the bottom of the available fields, you can find the Custom Fields section, and press the "Add new field" button.
 
 The name of your field can be whatever you want, here we'll call it Related Products. The Datasource Multi type prompts us to choose a Module or WebApp that we will be able to select Items from.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 When you're ready, press save and your new Custom Field will be set up. You'll then be able to use this field when creating and editing Products.
 
@@ -40,7 +40,7 @@ In this example, we'll edit the new Custom Field on an existing Product to creat
 
 As we used the Datasource Multi field type and selected Products as the Module to be linked to, Siteglide knows what we're trying to do and will help us find the related Items.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Select as many as you need. Each Product's unique ID will be stored in array format in your Custom Field.
 

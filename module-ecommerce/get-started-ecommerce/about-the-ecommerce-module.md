@@ -27,8 +27,8 @@ Most Suitable for:
 * Paying Invoices or one off payments
 * Buying Lifetime Access to content stored within one of your Secure Zones
 
-{% content-ref url="../go-further-ecommerce/introduction/basic-payments.md" %}
-[basic-payments.md](../go-further-ecommerce/introduction/basic-payments.md)
+{% content-ref url="basic-payment-forms/basic-payments.md" %}
+[basic-payments.md](basic-payment-forms/basic-payments.md)
 {% endcontent-ref %}
 
 ## Cart, Checkout or Quotes
@@ -39,8 +39,8 @@ Most suitable for:
   * E.g. An online shop
 * Customers Choosing multiple products and requesting a Quote on their list
 
-{% content-ref url="../go-further-ecommerce/introduction-3/about-cart-checkout-and-quotes.md" %}
-[about-cart-checkout-and-quotes.md](../go-further-ecommerce/introduction-3/about-cart-checkout-and-quotes.md)
+{% content-ref url="cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
+[about-cart-checkout-and-quotes.md](cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
 {% endcontent-ref %}
 
 ## Subscriptions

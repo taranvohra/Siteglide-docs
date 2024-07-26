@@ -1,14 +1,14 @@
-# 👀 Checkout Reference
+# 🔹 Checkout Form Layouts
 
 ## Checkout Form Layout
 
-Mostly Checkout Form Layouts are developed in the same way as standard CMS Form Layouts, with a few differences included below:
+Mostly Checkout Form Layouts are developed in the same way as [standard CMS Form Layouts](../../../../forms/reference-forms/forms-reference.md), with a few differences included below:
 
 ### ecommerce/checkout\_standard
 
 #### What is it?
 
-This is used to output payment fields in a checkout form.
+This liquid include used to output payment fields in a checkout form.
 
 #### Where to use?
 
@@ -42,4 +42,4 @@ This will output the Payment Gateway with the ID you select. When outputting by 
 
 Once you've added multiple Payment Gateways to your form using the include above, you can add JavaScript to switch between them on the client side:
 
-[Switching Between Multiple Payment Method Options](../../../Siteglide%20Developer%20Documentation/Switching%20Between%20Multiple%20Payment%20Method%20Options.md)
+[Switching Between Multiple Payment Method Options](../../introduction-1/switching-gateway.md)

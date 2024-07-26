@@ -5,13 +5,13 @@ createdAt: 2021-02-18T16:04:43.000Z
 updatedAt: 2024-01-30T12:41:48.974Z
 ---
 
-# 👀 Cart Layouts Reference
+# 🔹 Cart Layouts
 
 How to customise the Shopping Cart Layout
 
 ## Prerequisites
 
-* You have completed [How to Create a Shopping Cart and Guest Checkout](steps-to-implement-a-guest-checkout-flow.md)
+* You have completed [How to Create a Shopping Cart and Guest Checkout](../../../get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
 
 ## :deciduous\_tree: Folder Structure
 
@@ -34,8 +34,8 @@ marketplace_builder
 
 See the full Cart & Checkout folder structure here:
 
-{% content-ref url="../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../reference-ecommerce/cart-and-checkout-folder-structure.md)
+{% content-ref url="../../../reference-ecommerce/cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../../reference-ecommerce/cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
 ## wrapper.liquid

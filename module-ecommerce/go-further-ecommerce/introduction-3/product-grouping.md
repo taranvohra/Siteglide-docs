@@ -7,7 +7,7 @@ createdAt: 2021-02-18T13:08:26.000Z
 updatedAt: 2023-04-11T07:38:27.000Z
 ---
 
-# Alternatives to Product Grouping
+# 📋 Steps - Alternatives to Product Grouping
 
 ## Prerequisites
 
