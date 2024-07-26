@@ -4,17 +4,9 @@ Welcome to Siteglide's Documentation!&#x20;
 
 Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Tutorials</strong></mark></td><td>Step-by-step guides</td><td><a href="get-started-tutorials.md">get-started-tutorials.md</a></td><td><a href=".gitbook/assets/Portal1.png">Portal1.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Reference</strong></mark></td><td>At a glance tags and info</td><td></td><td><a href=".gitbook/assets/image (1).png">image (1).png</a></td></tr><tr><td><mark style="color:blue;"><strong>Video Library</strong></mark></td><td>Visit Our Youtube Channel</td><td><a href="./#articles">#articles</a></td><td><a href=".gitbook/assets/image (5).png">image (5).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Tutorials</strong></mark></td><td>Step-by-step guides</td><td><a href="get-started-tutorials.md">get-started-tutorials.md</a></td><td><a href=".gitbook/assets/Tutorials.png">Tutorials.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Create your First Site</strong></mark></td><td>At a glance tags and info</td><td><a href="siteglide-portal/get-started-portal/steps-to-create-your-first-site.md">steps-to-create-your-first-site.md</a></td><td><a href=".gitbook/assets/Create-a-Site.png">Create-a-Site.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Setup CLI</strong></mark> </td><td>Visit Our Youtube Channel</td><td><a href="command-line-interface-cli/get-started-cli/getting-started-with-cli.md">getting-started-with-cli.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
 
-{% hint style="info" %}
-**Not sure where to start?** Check out our Get Started Tutorials:
-{% endhint %}
-
-{% content-ref url="get-started-tutorials.md" %}
-[get-started-tutorials.md](get-started-tutorials.md)
-{% endcontent-ref %}
-
-### Structure
+### How our Docs are Structured
 
 We've structured our docs to focus on 3 things:
 
@@ -22,7 +14,7 @@ We've structured our docs to focus on 3 things:
 2. :man\_mage: **Go Further:** This is where you'd find more detailed docs that help you really push the boundaries of all things web development. One of the biggest benefits of Siteglide over other platforms is you can go beyond the Siteglide feature set by tapping into the core infrastructure capabilities using GraphQL.
 3. :eyes: **Reference:** Sometimes you just need to find a tag to insert a specific field/value or maybe you want to know the folder structure of a specific feature. Use our reference section to quickly find information and also troubleshoot issues.
 
-### Articles
+### Types of Articles
 
 Within these 3 areas you'll likely find the following types of articles:
 
