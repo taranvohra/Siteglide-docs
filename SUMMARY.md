@@ -12,7 +12,7 @@
 ## Siteglide Portal
 
 * [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
-  * [📋 Steps to Create your first site](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
+  * [📋 Steps to create your first site](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
   * [📁 Dashboard](siteglide-portal/get-started-portal/dashboard.md)
   * [📁 Account Area](siteglide-portal/get-started-portal/account-area.md)
   * [📁 Sites](siteglide-portal/get-started-portal/sites/README.md)
