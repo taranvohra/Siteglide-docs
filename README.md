@@ -4,6 +4,14 @@ Welcome to Siteglide's Documentation!&#x20;
 
 Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
+{% hint style="info" %}
+**Not sure where to start?** Try our guide to Creating your first Site:
+{% endhint %}
+
+{% content-ref url="siteglide-portal/get-started-portal/steps-to-create-your-first-site.md" %}
+[steps-to-create-your-first-site.md](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
+{% endcontent-ref %}
+
 ### Structure
 
 We've structured our docs to focus on 3 things:
