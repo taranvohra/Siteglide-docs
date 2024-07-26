@@ -221,6 +221,7 @@
 ## Public API
 
 * [🚀 Get Started: API](public-api/get-started-api/README.md)
+  * [API Example](public-api/get-started-api/api-example.md)
   * [Public API Changelog](public-api/get-started-api/changelog.md)
 * [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
 
