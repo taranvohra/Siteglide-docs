@@ -4,6 +4,9 @@
 
 * [👋 Welcome](README.md)
 * [🚀 Get Started](introduction/get-started.md)
+* * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
+* [🔹 Siteglide Support Policy](siteglide-support-policy.md)
+* [🚀 Get Started Tutorials](get-started-tutorials.md)
 
 ## Portal
 
@@ -108,12 +111,6 @@
 ## Reporting
 
 * [Building Reports](reporting2/building-reports.md)
-
-## Let's Get Started!
-
-* [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
-* [🔹 Siteglide Support Policy](siteglide-support-policy.md)
-* [🚀 Get Started Tutorials](get-started-tutorials.md)
 
 ## Pages and Page Templates
 
