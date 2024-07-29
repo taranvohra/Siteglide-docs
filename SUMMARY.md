@@ -3,6 +3,7 @@
 ## Introduction
 
 * [👋 Welcome](README.md)
+* [🚀 Get Started](introduction/get-started.md)
 
 ## Portal
 
