@@ -14,6 +14,21 @@
 
 ## Developer Tools
 
+## Command Line Interface (CLI)
+
+* [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
+  * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
+  * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
+  * [📋 Steps to Set Up Siteglide CLI on a Specific Site](command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+  * [🧞 SiteBuilder with Siteglide CLI](command-line-interface-cli/get-started-cli/sitebuilder-with-siteglide-cli.md)
+* [🧙‍♂️ Go Further: CLI](command-line-interface-cli/go-further-cli/README.md)
+  * [🔼 Siteglide CLI Migrate Command](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/README.md)
+    * [🔼 Siteglide CLI Migrate Command - Manual Forms](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
+    * [🔼 Siteglide CLI Migrate Command - Converting Forms](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
+* [👀 Reference: CLI](command-line-interface-cli/reference-cli/README.md)
+  * [👀 Siteglide CLI Reference & Commands](command-line-interface-cli/reference-cli/siteglide-cli-reference.md)
+  * [🔧 Troubleshooting Siteglide CLI](command-line-interface-cli/reference-cli/troubleshooting-siteglide-cli.md)
+
 * [CLI](developer-tools2/cli/README.md)
   * [Get Started with CLI](developer-tools2/cli/get-started-with-cli.md)
   * [Go Further with CLI](developer-tools2/cli/go-further-with-cli.md)
@@ -105,20 +120,7 @@
     * [Agency Whitelabelling](siteglide-portal/go-further-portal/agencies/agency-whitelabelling.md)
     * [📁 Clients](siteglide-portal/go-further-portal/agencies/clients.md)
 
-## Command Line Interface (CLI)
 
-* [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
-  * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
-  * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
-  * [📋 Steps to Set Up Siteglide CLI on a Specific Site](command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-  * [🧞 SiteBuilder with Siteglide CLI](command-line-interface-cli/get-started-cli/sitebuilder-with-siteglide-cli.md)
-* [🧙‍♂️ Go Further: CLI](command-line-interface-cli/go-further-cli/README.md)
-  * [🔼 Siteglide CLI Migrate Command](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/README.md)
-    * [🔼 Siteglide CLI Migrate Command - Manual Forms](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
-    * [🔼 Siteglide CLI Migrate Command - Converting Forms](command-line-interface-cli/go-further-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
-* [👀 Reference: CLI](command-line-interface-cli/reference-cli/README.md)
-  * [👀 Siteglide CLI Reference & Commands](command-line-interface-cli/reference-cli/siteglide-cli-reference.md)
-  * [🔧 Troubleshooting Siteglide CLI](command-line-interface-cli/reference-cli/troubleshooting-siteglide-cli.md)
 
 ## Pages and Page Templates
 
