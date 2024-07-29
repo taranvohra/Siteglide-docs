@@ -40,12 +40,12 @@ In the example below- I have a Custom Field Set with an ID of 1 (displayed in th
 
 ## Step 2) Add code for each Custom Field Set Field to the Layout
 
-The key HTML attribute will be located on different elements depending on the field type.&#x20;
+The key HTML attribute will be located on different elements depending on the field type.
 
 Check the Reference to see the syntax for each type:
 
-{% content-ref url="../../reference-forms/forms-reference.md" %}
-[forms-reference.md](../../reference-forms/forms-reference.md)
+{% content-ref url="../forms-reference.md" %}
+[forms-reference.md](../forms-reference.md)
 {% endcontent-ref %}
 
 If the type does not fit any of the types here, you can use text.

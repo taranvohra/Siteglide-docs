@@ -43,11 +43,13 @@ Next, find the Liquid file where your old Form is outputted; this is most likely
 {% raw %}
 {% include 'form', id: '1', layout: 'default' %}
 {% endraw %}
+
+
 ```
 
 The ID of your form should be the number associated with the Form in the Siteglide Admin.
 
-A default Layout will be created automatically for you and updated whenever the Form settings change.&#x20;
+A default Layout will be created automatically for you and updated whenever the Form settings change.
 
 ## Step 4) Create a Custom Layout - Optional
 
@@ -55,13 +57,13 @@ The new default layout should work fine, but it may not look or function the sam
 
 See the reference for tips on creating a Custom Form Layouts:
 
-{% content-ref url="../reference-forms/forms-reference.md" %}
-[forms-reference.md](../reference-forms/forms-reference.md)
+{% content-ref url="forms-reference.md" %}
+[forms-reference.md](forms-reference.md)
 {% endcontent-ref %}
 
 ## Step 5) Customise your Autoresponder and Workflow Emails - Optional
 
-Automations will be created automatically for an Autoresponder and Workflow Email, but these can be removed or edited to suit your original site's brand and content.&#x20;
+Automations will be created automatically for an Autoresponder and Workflow Email, but these can be removed or edited to suit your original site's brand and content.
 
 You can also add new automations to trigger events when your Form submits.
 

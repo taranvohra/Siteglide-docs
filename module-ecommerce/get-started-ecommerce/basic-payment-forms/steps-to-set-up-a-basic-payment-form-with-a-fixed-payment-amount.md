@@ -42,13 +42,15 @@ Use this ID in the Liquid tag when you insert the Form on the Page (or use Toolb
 {% raw %}
 {% include 'form', id: '11', layout: 'default' %}
 {% endraw %}
+
+
 ```
 
 Your Payment Form is now set up and ready to accept payments using the minimum payment value you set.
 
 ## Step 8) Testing
 
-If your Payment Gateway is in 'Test Mode', then you may need to enter card details specific to the testing environment.&#x20;
+If your Payment Gateway is in 'Test Mode', then you may need to enter card details specific to the testing environment.
 
 {% content-ref url="../../go-further-ecommerce/introduction-1/test-cards.md" %}
 [test-cards.md](../../go-further-ecommerce/introduction-1/test-cards.md)
@@ -72,23 +74,22 @@ For PayPal or Authorize.net, you will need to follow the relevant extra steps:
 
 See SiteBuilder to install a plug and play, themed Form Layout for your payment Form:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 And set your Form to use it with the layout parameter.
 
 See the Forms Reference for creating your own Layout:
 
-{% content-ref url="../../../forms/reference-forms/forms-reference.md" %}
-[forms-reference.md](../../../forms/reference-forms/forms-reference.md)
+{% content-ref url="../../../cms/forms/forms-reference.md" %}
+[forms-reference.md](../../../cms/forms/forms-reference.md)
 {% endcontent-ref %}
 
 ## Step 10) Optionally, set your Basic Payment Form to Allow Users to Choose How Much they Pay
 
-By default, the Form will charge the minimum amount, but for some use cases like donations or invoices, you may want  to allow them to pay more:
+By default, the Form will charge the minimum amount, but for some use cases like donations or invoices, you may want to allow them to pay more:
 
 {% content-ref url="../../go-further-ecommerce/introduction/steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
 [steps-to-allow-user-to-decide-amount-they-will-pay.md](../../go-further-ecommerce/introduction/steps-to-allow-user-to-decide-amount-they-will-pay.md)
 {% endcontent-ref %}
-

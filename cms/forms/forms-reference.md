@@ -8,10 +8,10 @@ Including a Form
 {% endraw %}
 ```
 
-* The id refers to the specific form you wish to output.&#x20;
+* The id refers to the specific form you wish to output.
 * Layout refers to either the:
   * The default layout which is created automatically by the system - this should not be edited directly as every time you modify the form fields, the default layout will automatically be updated. Any changes you make using CLI will be overwritten.
-  * A custom layout allows you to decide which fields to output and how. You can fully customise it. In the parameter, you should include the file name with no extension, and any subfolders relative to the folder form\_1 where the number matches the form ID.&#x20;
+  * A custom layout allows you to decide which fields to output and how. You can fully customise it. In the parameter, you should include the file name with no extension, and any subfolders relative to the folder form\_1 where the number matches the form ID.
 
 Often you can save time by starting with a default layout and copying it to build your custom layout.
 
@@ -41,7 +41,7 @@ Parameters:
 
 <details>
 
-<summary>1st - Button - DOM Element (required) </summary>
+<summary>1st - Button - DOM Element (required)</summary>
 
 A reference to the button element which should be a child of the Form which will be submitted
 
@@ -49,7 +49,7 @@ A reference to the button element which should be a child of the Form which will
 
 <details>
 
-<summary>2nd - Form ID - String (required) </summary>
+<summary>2nd - Form ID - String (required)</summary>
 
 A reference to the Form ID in Siteglide
 
@@ -65,7 +65,7 @@ Default behaviour will show a JS Alert with the first error.
 
 One parameter is passed containing an array of errors.
 
-Learn more: [custom-javascript-validation-for-forms.md](../go-further-forms/custom-javascript-validation-for-forms.md "mention")
+Learn more: [custom-javascript-validation-for-forms.md](custom-javascript-validation-for-forms.md "mention")
 
 </details>
 
@@ -79,7 +79,7 @@ Default behaviour will redirect the Page to the value of the `s_redirect` input 
 
 One parameter is passed containing the redirect URL.
 
-Learn more: [forms-success-callback.md](../go-further-forms/forms-success-callback.md "mention")
+Learn more: [forms-success-callback.md](forms-success-callback.md "mention")
 
 </details>
 
@@ -110,7 +110,7 @@ E.g. `data-cfs="5-1-input_text"`
 
 If you're not sure where to find these, see:
 
-[how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md](../about-forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md "mention")
+[how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md](guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md "mention")
 
 #### Text
 

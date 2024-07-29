@@ -1,6 +1,6 @@
-# 🚀 Getting Started: Forms
+# 💡 About Forms
 
-Forms are extremely versatile on Siteglide and can be used in a number of ways, such as:&#x20;
+Forms are extremely versatile on Siteglide and can be used in a number of ways, such as:
 
 * Including standard fields for collecting one-off information, we call this a "case"
 * Including groups of fields, called Custom Field Sets
@@ -12,4 +12,4 @@ Forms are extremely versatile on Siteglide and can be used in a number of ways, 
   * Carrying out a custom automation action
   * Sending an API call
 
-You can use "capchas" to prevent spam submissions on forms.&#x20;
+You can use "capchas" to prevent spam submissions on forms.

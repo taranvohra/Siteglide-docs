@@ -6,8 +6,10 @@ This is recommended at the top of most Pages and Page Templates if you are using
 {% raw %}
 {% include 'modules/siteglide_system/constants' -%}
 {% endraw %}
+
+
 ```
 
-{% content-ref url="../../pages-and-page-templates/go-further-pages/pages-with-siteglide-cli.md" %}
-[pages-with-siteglide-cli.md](../../pages-and-page-templates/go-further-pages/pages-with-siteglide-cli.md)
+{% content-ref url="../cms/pages/pages-with-siteglide-cli.md" %}
+[pages-with-siteglide-cli.md](../cms/pages/pages-with-siteglide-cli.md)
 {% endcontent-ref %}

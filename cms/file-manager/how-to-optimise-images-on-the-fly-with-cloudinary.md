@@ -2,9 +2,9 @@
 
 ## Introduction
 
-[https://cloudinary.com/](https://cloudinary.com/) is a 3rd party service which we recommend as a convenient way to transform assets on the fly to change their size or format.&#x20;
+[https://cloudinary.com/](https://cloudinary.com/) is a 3rd party service which we recommend as a convenient way to transform assets on the fly to change their size or format.
 
-When building sites for fast performance, there is often a compromise with convenience. Tools like  [Google Page](https://pagespeed.web.dev/)[ Speed Insights](https://pagespeed.web.dev/) remind you to store multiple sized versions of the same image in order to optimise them to different sized device screens and resolutions. You also want to serve images in next-gen formats like `webp`, but your client will usually upload `jpg` or `png` images.&#x20;
+When building sites for fast performance, there is often a compromise with convenience. Tools like [Google Page](https://pagespeed.web.dev/)[ Speed Insights](https://pagespeed.web.dev/) remind you to store multiple sized versions of the same image in order to optimise them to different sized device screens and resolutions. You also want to serve images in next-gen formats like `webp`, but your client will usually upload `jpg` or `png` images.
 
 Cloudinary allows you to get the best of both worlds, by using the Siteglide File Manager's AWS CDN to store single original copies of each image for a clutter-free, easy experience for clients, while in the code you can dynamically transform images to optimise them perfectly to the site vistors. Cloudinary also caches their transformations, so after the first time they are delivered as fast as if you had already uploaded different versions to the CDN.
 
@@ -22,8 +22,7 @@ This will be an essential part of the URLs.
 
 To build a URL, you will need to start with the beginning of the Cloudinary URL, which will direct the browser to their API endpoint, replacing 'demo' with your cloud name from step 2:
 
-`https://res.cloudinary.com/demo/image/fetch/`\
-
+`https://res.cloudinary.com/demo/image/fetch/`\\
 
 Next add your optional transformations to resize the image by a number of pixels width or height:
 
@@ -33,13 +32,13 @@ Next optionally add transformations to automatically transform to next-gen image
 
 `https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/`
 
-then use Liquid to get the path to the original image on Siteglide's CDN. See&#x20;
+then use Liquid to get the path to the original image on Siteglide's CDN. See
 
-{% content-ref url="../introduction/linking-to-assets-front-end.md" %}
-[linking-to-assets-front-end.md](../introduction/linking-to-assets-front-end.md)
+{% content-ref url="../../assets/introduction/linking-to-assets-front-end.md" %}
+[linking-to-assets-front-end.md](../../assets/introduction/linking-to-assets-front-end.md)
 {% endcontent-ref %}
 
-For example:&#x20;
+For example:
 
 `{{'images/example.jpg' | asset_url}}`
 
@@ -62,7 +61,7 @@ https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/{{'images/example
   alt="Example of serving different sized images on different screen widths" />
 ```
 
-Learn more about the&#x20;
+Learn more about the
 
 ## Step 5 - Read the Cloudinary Docs and Experiment with more Image Transformations - Optional
 
@@ -75,4 +74,3 @@ In these examples, you may need to replace 'upload' with 'fetch' in the URL to s
 Also check out using client hints on some browsers to further fine-tune image requests:
 
 [https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints](https://cloudinary.com/documentation/responsive\_server\_side\_client\_hints)
-

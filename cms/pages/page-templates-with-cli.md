@@ -9,8 +9,8 @@ updatedAt: 2023-03-03T08:09:58.000Z
 
 Templates must be stored within the following file path of your project: `marketplace_builder/views/layouts/templates/` and must be `.liquid` file type.
 
-{% content-ref url="../reference-pages/pages-and-page-templates-file-structure.md" %}
-[pages-and-page-templates-file-structure.md](../reference-pages/pages-and-page-templates-file-structure.md)
+{% content-ref url="pages-and-page-templates-file-structure.md" %}
+[pages-and-page-templates-file-structure.md](pages-and-page-templates-file-structure.md)
 {% endcontent-ref %}
 
 ## YAML Page Template Settings
@@ -47,13 +47,13 @@ metadata:
 * `use_design_system` - true/false - used to determine whether or not we automatically add assets from the Siteglide Design System Module.
 * `physical_file_path` - Files should be stored in a location relative to their ID. If your ID is 1, then the physical\_file\_path would be views/layouts/templates/1.liquid
 
-## Hidden Liquid&#x20;
+## Hidden Liquid
 
-This Liquid is not displayed as editable code in the Siteglide Admin and is automatically added. However, if you're using CLI, you should make sure to include it manually if missing.&#x20;
+This Liquid is not displayed as editable code in the Siteglide Admin and is automatically added. However, if you're using CLI, you should make sure to include it manually if missing.
 
 ### Constants
 
-Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most Page Templates.&#x20;
+Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most Page Templates.
 
 ```liquid
 {% raw %}

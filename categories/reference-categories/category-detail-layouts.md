@@ -105,8 +105,8 @@ The following tags are available within the Category Detail Layout:
 
 You can use any of the Liquid which you can use on Pages in the Category Detail Layout:
 
-{% content-ref url="../../pages-and-page-templates/reference-pages/accessing-page-data.md" %}
-[accessing-page-data.md](../../pages-and-page-templates/reference-pages/accessing-page-data.md)
+{% content-ref url="../../cms/pages/accessing-page-data.md" %}
+[accessing-page-data.md](../../cms/pages/accessing-page-data.md)
 {% endcontent-ref %}
 
 Category Detail Pages give you additional features including Breadcrumbs, Parent Category Lists, Child Category Lists and more.

@@ -2,7 +2,7 @@
 
 ## Checkout Form Layout
 
-Mostly Checkout Form Layouts are developed in the same way as [standard CMS Form Layouts](../../../../forms/reference-forms/forms-reference.md), with a few differences included below:
+Mostly Checkout Form Layouts are developed in the same way as [standard CMS Form Layouts](../../../../cms/forms/forms-reference.md), with a few differences included below:
 
 ### ecommerce/checkout\_standard
 

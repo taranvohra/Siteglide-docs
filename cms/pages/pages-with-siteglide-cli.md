@@ -15,8 +15,8 @@ If you add Pages locally, you'll need to add this data.`-`
 
 Pages must be stored within the following file path of your project: `marketplace_builder/views/pages/` and must be `.liquid` file type.
 
-{% content-ref url="../reference-pages/pages-and-page-templates-file-structure.md" %}
-[pages-and-page-templates-file-structure.md](../reference-pages/pages-and-page-templates-file-structure.md)
+{% content-ref url="pages-and-page-templates-file-structure.md" %}
+[pages-and-page-templates-file-structure.md](pages-and-page-templates-file-structure.md)
 {% endcontent-ref %}
 
 ## Yaml Settings and Metadata
@@ -76,7 +76,7 @@ searchable: true
 * `redirect_to` - The slug to redirect to, if it needs it. If it's homepage, you need to redirect to '/'
 * `redirect_code` - Set as '301' if there's a redirect
 * `searchable` - Set as 'true' so it shows in search results
-* `layout` - Adds the [Page Template](../get-started-pages/page-templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
+* `layout` - Adds the [Page Template](../../pages-and-page-templates/get-started-pages/page-templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
 
 **Body** must include the constants snippet shown in example for features like SEO and Secure Zones to work.
 

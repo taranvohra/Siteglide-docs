@@ -45,3 +45,7 @@ Here is how a generic Page Template file should be structured:
 While editing a Page, you can assign a Template using the Page Template drop down and then clicking Save.
 
 Note: Toolbox functionality will soon be added to the templates section of Admin, allowing you to easily select elements to add to the page.
+
+## Page Templates on platformOS
+
+Page Templates on Siteglide are called Layouts on platformOS: [https://documentation.platformos.com/developer-guide/pages/layouts](https://documentation.platformos.com/developer-guide/pages/layouts)

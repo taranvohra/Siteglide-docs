@@ -34,12 +34,14 @@ Users will need to see your products in order to access their Product Detail Pag
 {% raw %}
 {%- include 'ecommerce/products', layout: 'default', per_page: '20', show_pagination: 'true' -%}
 {% endraw %}
+
+
 ```
 
 {% hint style="success" %}
 [SiteBuilder](../../../module-sitebuilder/get-started-sitebuilder/about-sitebuilder.md) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../../.gitbook/assets/image (2) (1).png>)
+<img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="original">
 {% endhint %}
 
 ## Step 4) Select a Product Detail Layout
@@ -55,7 +57,7 @@ Select the Detail Page Template and Layout:
 {% hint style="success" %}
 [SiteBuilder](../../../module-sitebuilder/get-started-sitebuilder/about-sitebuilder.md) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../../.gitbook/assets/image (3) (1).png>)
+<img src="../../../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
 {% endhint %}
 
 ## Step 5) Implement an Add to Cart Button on Your Detail View
@@ -70,11 +72,15 @@ Learn more about Product Detail pages [here](https://developers.siteglide.com/de
 
 This liquid include tag will add the "Add to Cart" Button:
 
-`{% include 'ecommerce/cart_add' -%}`
+\`
+
+\`
 
 This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../reference-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
 
-`{% include 'ecommerce/cart_add', component_layout: 'custom_layout' -%}`
+\`
+
+\`
 
 {% hint style="warning" %}
 If adding an Add to Cart Button to a List View, make sure that the highest level component in the wrapper.liquid file has the HTML data-attribute added: `data-product-list`.
@@ -84,12 +90,14 @@ If adding an Add to Cart Button to a List View, make sure that the highest level
 
 Create a new Page for your Cart and use liquid to include the Cart.
 
-`{%- include 'ecommerce/cart', layout: 'cart', remove_default_css: 'false' -%}`
+\`
+
+\`
 
 {% hint style="info" %}
 Note- the Cart does not need to be on it’s own page, but this is the easiest place to start.\
 \
-If you are using SiteBuilder, or have already added your own CSS for the Cart, we recommend setting`remove_default_css: 'false'`&#x20;
+If you are using SiteBuilder, or have already added your own CSS for the Cart, we recommend setting`remove_default_css: 'false'`
 {% endhint %}
 
 Use the `layout` parameter to select the folder which contains the wrapper.liquid and the item.liquid file you would like to use for your layout. For now, you can use the "cart" layout which is included in the eCommerce Module.
@@ -105,7 +113,7 @@ Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layou
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](../../../forms/about-forms/).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](broken-reference).
 
 You will need to add the following information when creating your form:
 
@@ -124,13 +132,13 @@ If you are using the PayPal Payment Gateway, you will need to carry out an [addi
 
 ## Step 8) Create a new Page for your Checkout Form
 
-
-
 ## Step 9) Add the Checkout form to your Checkout Page
 
-Include the Checkout Layout in your page - use the ID from the CMS / Forms list as the `form_id` parameter.  If you use the Toolbox to add this code, you can lookup your form by name.
+Include the Checkout Layout in your page - use the ID from the CMS / Forms list as the `form_id` parameter. If you use the Toolbox to add this code, you can lookup your form by name.
 
-`{% include 'ecommerce/checkout', form_id: '2', layout: 'default' -%}`
+\`
+
+\`
 
 The layout parameter should refer to the folder which contains your form layout file. This file exists here:
 
@@ -141,7 +149,7 @@ For now, you can use the "default" layout that is included with the eCommerce mo
 {% hint style="success" %}
 [SiteBuilder](../../../module-sitebuilder/get-started-sitebuilder/about-sitebuilder.md) has an out-of-the-box Checkout Form Layout design ready for you in a Bootstrap 5 or Tailwind version.
 
-![](<../../../.gitbook/assets/image (8).png>)
+<img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original">
 {% endhint %}
 
 If the page is visited while the user has an empty cart, an alternative "empty" layout will show. The default form layout will automatically add an empty layout at the path:
@@ -169,7 +177,7 @@ After a User has submitted your Checkout form, an order will be automatically ge
 Click on the name of the order for more information.
 
 {% hint style="info" %}
-It is more difficult to give "Guest" Users access to their past orders, as you would need to verify that the order belongs to them, potentially manually by asking them to provide some information.&#x20;
+It is more difficult to give "Guest" Users access to their past orders, as you would need to verify that the order belongs to them, potentially manually by asking them to provide some information.
 {% endhint %}
 
 You can add Secure Zones to this flow in the next article, allowing you to easily show the User their past orders when logged in:
@@ -182,4 +190,4 @@ You can add Secure Zones to this flow in the next article, allowing you to easil
 
 As a user buys a Product, the Inventory decreases accordingly.
 
-A User cannot buy a Product if its Inventory is 0, but you can also hide Products that have sold out from the Product List Views.&#x20;
+A User cannot buy a Product if its Inventory is 0, but you can also hide Products that have sold out from the Product List Views.

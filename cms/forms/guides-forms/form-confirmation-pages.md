@@ -52,8 +52,8 @@ The Layout parameter takes the name of the Layout File you wish to use, without 
 
 We store Form Confirmation Layouts at the following Path: `layouts/form_confirmation/` Each Layout should be a single Liquid file with a name of your choice followed by `.liquid`.
 
-{% content-ref url="../../reference-forms/forms-file-structure.md" %}
-[forms-file-structure.md](../../reference-forms/forms-file-structure.md)
+{% content-ref url="../forms-file-structure.md" %}
+[forms-file-structure.md](../forms-file-structure.md)
 {% endcontent-ref %}
 
 ### Developing a Layout

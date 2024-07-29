@@ -2,7 +2,7 @@
 
 ## Including on a Page
 
-To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../../forms/reference-forms/forms-reference.md):
+To include a Basic Payment Form on the Page, use the same syntax as a [standard form](../../../cms/forms/forms-reference.md):
 
 ```liquid
 {% raw %}
