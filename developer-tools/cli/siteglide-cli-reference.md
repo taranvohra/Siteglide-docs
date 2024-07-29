@@ -1,10 +1,16 @@
-# 👀 Siteglide CLI Reference & Commands
+---
+description: The main commands you'll need when using Siteglide CLI
+---
 
-### Before you Start
+# Reference
 
-[getting-started-with-cli.md](../get-started-with-cli/getting-started-with-cli.md "mention")
+## Not Yet Installed Siteglide CLI?
 
-### Commands
+{% content-ref url="quickstart.md" %}
+[quickstart.md](quickstart.md)
+{% endcontent-ref %}
+
+## CLI Commands
 
 These commands should be run from within the project folder. Commands follow the format of `siteglide-cli <command> <env> <flags>` , so for example if you would like to view the logs of your production environment in "quiet mode", you would run:
 
@@ -18,7 +24,7 @@ Command flags such as `<command>` `<env>` and `<flags>` should be replaced with 
 
 ***
 
-#### Add
+### Add
 
 The first time you use the CLI with a project on your device, you will need to create an environment. This is essentially a config file that authorises your connection.
 
@@ -34,7 +40,7 @@ Replace with a chosen name for the environment, for example `production`. On lar
 
 ***
 
-#### Sync
+### Sync
 
 `siteglide-cli sync <env>`
 
@@ -46,7 +52,7 @@ Flags:
 
 ***
 
-#### Logs
+### Logs
 
 `siteglide-cli logs <env>`
 
@@ -58,7 +64,7 @@ Flags: `-f` : Filter log types `-q` : Quiet mode
 
 ***
 
-#### Version
+### Version
 
 `siteglide-cli -v`
 
@@ -66,7 +72,7 @@ Check the current version of Siteglide CLI you are running. See the [Siteglide C
 
 ***
 
-#### Help
+### Help
 
 `siteglide-cli help`
 
@@ -74,13 +80,13 @@ Generates a list of valid Siteglide CLI commands available to you.
 
 ***
 
-#### GraphQL
+### GraphQL
 
 Deprecated - Please see the GUI command below
 
 ***
 
-#### GUI
+### GUI
 
 `siteglide-cli gui <env>`
 
@@ -94,7 +100,7 @@ Flags: `-o`: Automatically open GraphiQL in default browser
 
 ***
 
-#### Pull
+### Pull
 
 `siteglide-cli pull <env>`
 
@@ -110,7 +116,7 @@ Note: Assets such as images and videos are not downloaded as part of CLI Pull
 
 ***
 
-#### Init
+### Init
 
 `siteglide-cli init`
 
@@ -118,7 +124,7 @@ This will create a blank folder structure within the folder you run the command,
 
 ***
 
-#### Deploy
+### Deploy
 
 `siteglide-cli deploy <env>`
 
@@ -130,7 +136,7 @@ Flags:
 
 ***
 
-#### Export
+### Export
 
 `siteglide-cli export <env>`
 
@@ -144,7 +150,7 @@ Flags: `-w` : With assets, also download asset files from your instance such as 
 
 ***
 
-#### Migrate
+### Migrate
 
 `siteglide-cli migrate <env> --url <existing url>`
 
@@ -162,9 +168,21 @@ Flags:
 
 `-i`: A string to send to the scraper that if found in the URL it will ignore downloading that page. For example if your blog posts are links such as `site.com/post/post-name` and you wanted to ignore them, you could use the flag `-i /post/` This flag can be used multiple time such as `-i /blog -i /posts/`
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 ***
 
-#### List
+### List
 
 `siteglide-cli list`
 
@@ -172,7 +190,7 @@ Output a list of environments you have previously added and their relative URLs 
 
 ***
 
-#### Modules
+### Modules
 
 `siteglide-cli modules <env>`
 

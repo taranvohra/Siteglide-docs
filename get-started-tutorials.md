@@ -12,12 +12,12 @@ We recommend following these guides in order:
 
 ### Using the Command Line Interface
 
-{% content-ref url="developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
-[getting-started-with-cli.md](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+{% content-ref url="developer-tools/cli/getting-started-with-cli.md" %}
+[getting-started-with-cli.md](developer-tools/cli/getting-started-with-cli.md)
 {% endcontent-ref %}
 
-{% content-ref url="developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="developer-tools/cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
+[steps-to-set-up-siteglide-cli-on-a-specific-site.md](developer-tools/cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
