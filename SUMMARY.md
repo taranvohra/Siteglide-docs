@@ -14,8 +14,6 @@
 
 ## Developer Tools
 
-## Command Line Interface (CLI)
-
 * [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
   * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
   * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
