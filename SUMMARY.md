@@ -12,7 +12,7 @@
 * [Billing](portal2/billing.md)
 * [Tickets](portal2/tickets.md)
 
-## Developer Tools
+## Command Line Interface (CLI)
 
 * [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
   * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
@@ -26,7 +26,6 @@
 * [👀 Reference: CLI](command-line-interface-cli/reference-cli/README.md)
   * [👀 Siteglide CLI Reference & Commands](command-line-interface-cli/reference-cli/siteglide-cli-reference.md)
   * [🔧 Troubleshooting Siteglide CLI](command-line-interface-cli/reference-cli/troubleshooting-siteglide-cli.md)
-
 * [CLI](developer-tools2/cli/README.md)
   * [Get Started with CLI](developer-tools2/cli/get-started-with-cli.md)
   * [Go Further with CLI](developer-tools2/cli/go-further-with-cli.md)
@@ -117,8 +116,6 @@
   * [📁 Agencies](siteglide-portal/go-further-portal/agencies/README.md)
     * [Agency Whitelabelling](siteglide-portal/go-further-portal/agencies/agency-whitelabelling.md)
     * [📁 Clients](siteglide-portal/go-further-portal/agencies/clients.md)
-
-
 
 ## Pages and Page Templates
 
