@@ -4,6 +4,7 @@
 
 * [👋 Welcome](README.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
+* [Siteglide Technology Stack](introduction/siteglide-technology-stack.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
 ## Portal
@@ -45,7 +46,7 @@
 
 ## CMS
 
-* [Pages](cms/pages.md)
+* [Pages](cms/pages/README.md)
   * [🚀 Get Started: Pages](pages-and-page-templates/get-started-pages/README.md)
   * [💡 About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
   * [🔹 Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
@@ -61,8 +62,7 @@
   * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/reference-pages/pages-and-page-templates-file-structure.md)
   * [🔧 Tags for Pages and Templates](pages-and-page-templates/reference-pages/accessing-page-data.md)
 * [Content Sections](cms/content-sections.md)
-* [File Manager](cms/file-manager.md)
-  * * [🚀 Get Started: Assets](assets/introduction/README.md)
+* [File Manager](cms/file-manager/README.md)
   * [🔹 Linking to Assets Explained](assets/introduction/linking-to-assets-front-end.md)
   * [🔧 Assets Troubleshooting](assets/introduction/assets-troubleshooting.md)
   * [🔹 Siteglide Scripts Explained](assets/introduction/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
