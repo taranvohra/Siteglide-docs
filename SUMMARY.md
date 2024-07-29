@@ -11,7 +11,7 @@
 
 * [Account](portal/account.md)
 * [Sites](portal/sites/README.md)
-  * [📋 Steps to Create your First Site](portal/sites/steps-to-create-your-first-site.md)
+  * [📋 Create a Site](portal/sites/steps-to-create-your-first-site.md)
   * [📁 Domains](portal/sites/domains/README.md)
     * [How to setup a multi domain start page](portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
 * [Users & User Roles](portal/users-and-user-roles.md)
