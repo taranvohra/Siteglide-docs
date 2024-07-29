@@ -45,13 +45,61 @@
 
 ## CMS
 
-* [Pages](cms2/pages.md)
-* [Content Sections](cms2/content-sections.md)
-* [File Manager](cms2/file-manager.md)
-* [Forms](cms2/forms.md)
-* [Categories](cms2/categories.md)
-* [Company Information](cms2/company-information.md)
+* [Pages](cms/pages.md)
+  * [🚀 Get Started: Pages](pages-and-page-templates/get-started-pages/README.md)
+  * [💡 About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
+  * [🔹 Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
+  * [🧑‍🎨 Updating Page Content with the Studio Tab](pages-and-page-templates/get-started-pages/updating-page-content-with-the-studio-tab.md)
+  * [🔧 Rolling Back Page Changes](pages-and-page-templates/get-started-pages/rolling-back-page-changes.md)
+  * [💡 About Page Templates](pages-and-page-templates/get-started-pages/page-templates.md)
+  * [🔹 System Pages](pages-and-page-templates/get-started-pages/system-pages.md)
+* [🧙‍♂️ Go Further: Pages](pages-and-page-templates/go-further-pages/README.md)
+  * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/go-further-pages/page-templates-with-cli.md)
+  * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/go-further-pages/pages-and-page-templates-on-platformos.md)
+  * [💻 Pages with Siteglide CLI](pages-and-page-templates/go-further-pages/pages-with-siteglide-cli.md)
+* [👀 Reference: Pages](pages-and-page-templates/reference-pages/README.md)
+  * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/reference-pages/pages-and-page-templates-file-structure.md)
+  * [🔧 Tags for Pages and Templates](pages-and-page-templates/reference-pages/accessing-page-data.md)
+* [Content Sections](cms/content-sections.md)
+* [File Manager](cms/file-manager.md)
+  * * [🚀 Get Started: Assets](assets/introduction/README.md)
+  * [🔹 Linking to Assets Explained](assets/introduction/linking-to-assets-front-end.md)
+  * [🔧 Assets Troubleshooting](assets/introduction/assets-troubleshooting.md)
+  * [🔹 Siteglide Scripts Explained](assets/introduction/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
+  * [🔼 Migrating Assets](assets/introduction/migrating-assets.md)
+* [🧙‍♂️ Go Further: Assets](assets/go-further-assets/README.md)
+  * [💻 Assets with CLI](assets/go-further-assets/assets-with-cli.md)
+  * [📋 Steps to Optimise Images on the Fly with Cloudinary](assets/go-further-assets/how-to-optimise-images-on-the-fly-with-cloudinary.md)
+* [👀 Reference: Assets](assets/reference-assets/README.md)
+  * [👀 Tags for Assets](assets/reference-assets/assets-reference.md)
+  * [🌳 Assets File Structure](assets/reference-assets/file-structure.md)
+* [Forms](cms/forms.md)
+* [Categories](cms/categories.md)
+* [Company Information](cms/company-information.md)
 * [URL Redirects](cms2/url-redirects.md)
+
+## Forms
+
+* [🚀 Get Started: Forms](forms/about-forms/README.md)
+  * [🧞 Plug and Play Form Layouts From the SiteBuilder Module](forms/about-forms/plug-and-play-form-layouts-from-the-sitebuilder-module.md)
+  * [🔼 Migrating Forms](forms/about-forms/migrating-forms.md)
+  * [📋 Guides: Forms](forms/about-forms/guides-forms/README.md)
+    * [📋 Steps to Using Separate Fields for First Name and Surname in a Form](forms/about-forms/guides-forms/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
+    * [📋 Steps to Programmatically Redirecting after a Form Submission](forms/about-forms/guides-forms/how-to-add-a-custom-redirect-to-my-form.md)
+    * [📋 Steps to Adding Form Confirmation Pages](forms/about-forms/guides-forms/form-confirmation-pages.md)
+    * [📋 Steps to Adding a Progress Bar](forms/about-forms/guides-forms/adding-a-progress-bar.md)
+    * [📋 Steps to Changing Form Styling on Submission Using CSS](forms/about-forms/guides-forms/adding-custom-css-to-show-form-submit-process.md)
+    * [📋 Steps to Using Custom Field Set fields in a Form's Custom Layout](forms/about-forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
+* [🧙‍♂️ Go Further: Forms](forms/go-further-forms/README.md)
+  * [🔹 Explained - Preventing Spam Form Submissions and Captchas](forms/go-further-forms/explained-preventing-spam-form-submissions-and-captchas.md)
+  * [🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form](forms/go-further-forms/shared-devices.md)
+  * [🔹 Forms Error Callback and Validation](forms/go-further-forms/custom-javascript-validation-for-forms.md)
+  * [🔹 Forms Success Callback](forms/go-further-forms/forms-success-callback.md)
+  * [🔹 File Upload Previews](forms/go-further-forms/file-upload-previews.md)
+* [👀 Reference: Forms](forms/reference-forms/README.md)
+  * [🌳 Forms File Structure](forms/reference-forms/forms-file-structure.md)
+  * [👀 Forms Reference](forms/reference-forms/forms-reference.md)
+  * [🔧 Troubleshooting Captchas](forms/reference-forms/troubleshooting-captchas.md)
 
 ## Modules
 
@@ -102,30 +150,10 @@
 
 * [Building Reports](reporting2/building-reports.md)
 
-## Pages and Page Templates
-
-* [🚀 Get Started: Pages](pages-and-page-templates/get-started-pages/README.md)
-  * [💡 About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
-  * [🔹 Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
-  * [🧑‍🎨 Updating Page Content with the Studio Tab](pages-and-page-templates/get-started-pages/updating-page-content-with-the-studio-tab.md)
-  * [🔧 Rolling Back Page Changes](pages-and-page-templates/get-started-pages/rolling-back-page-changes.md)
-  * [💡 About Page Templates](pages-and-page-templates/get-started-pages/page-templates.md)
-  * [🔹 System Pages](pages-and-page-templates/get-started-pages/system-pages.md)
-* [🧙‍♂️ Go Further: Pages](pages-and-page-templates/go-further-pages/README.md)
-  * [💻 Page Templates with Siteglide CLI](pages-and-page-templates/go-further-pages/page-templates-with-cli.md)
-  * [🔗 Pages and Page Templates on platformOS](pages-and-page-templates/go-further-pages/pages-and-page-templates-on-platformos.md)
-  * [💻 Pages with Siteglide CLI](pages-and-page-templates/go-further-pages/pages-with-siteglide-cli.md)
-* [👀 Reference: Pages](pages-and-page-templates/reference-pages/README.md)
-  * [🌳 Pages and Page Templates File Structure](pages-and-page-templates/reference-pages/pages-and-page-templates-file-structure.md)
-  * [🔧 Tags for Pages and Templates](pages-and-page-templates/reference-pages/accessing-page-data.md)
-
 ## Includes (Partials)
 
 * [🚀 Get Started: Includes](includes-partials/about-includes-partials/README.md)
   * [🔧 Includes Troubleshooting](includes-partials/about-includes-partials/includes-troubleshooting.md)
-
-***
-
 * [🧙‍♂️ Go Further: Includes](miscellaneous-siteglide-includes/README.md)
   * [👀 constants\_json](miscellaneous-siteglide-includes/constants\_json.md)
   * [👀 constants](miscellaneous-siteglide-includes/constants.md)
@@ -133,43 +161,6 @@
   * [💻 Includes with Siteglide CLI](miscellaneous-siteglide-includes/includes-with-siteglide-cli.md)
 * [👀 Reference: Includes](reference-includes/README.md)
   * [🔧 Tags for Includes](reference-includes/includes-reference.md)
-
-## Assets
-
-* [🚀 Get Started: Assets](assets/introduction/README.md)
-  * [🔹 Linking to Assets Explained](assets/introduction/linking-to-assets-front-end.md)
-  * [🔧 Assets Troubleshooting](assets/introduction/assets-troubleshooting.md)
-  * [🔹 Siteglide Scripts Explained](assets/introduction/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
-  * [🔼 Migrating Assets](assets/introduction/migrating-assets.md)
-* [🧙‍♂️ Go Further: Assets](assets/go-further-assets/README.md)
-  * [💻 Assets with CLI](assets/go-further-assets/assets-with-cli.md)
-  * [📋 Steps to Optimise Images on the Fly with Cloudinary](assets/go-further-assets/how-to-optimise-images-on-the-fly-with-cloudinary.md)
-* [👀 Reference: Assets](assets/reference-assets/README.md)
-  * [👀 Tags for Assets](assets/reference-assets/assets-reference.md)
-  * [🌳 Assets File Structure](assets/reference-assets/file-structure.md)
-
-## Forms
-
-* [🚀 Get Started: Forms](forms/about-forms/README.md)
-  * [🧞 Plug and Play Form Layouts From the SiteBuilder Module](forms/about-forms/plug-and-play-form-layouts-from-the-sitebuilder-module.md)
-  * [🔼 Migrating Forms](forms/about-forms/migrating-forms.md)
-  * [📋 Guides: Forms](forms/about-forms/guides-forms/README.md)
-    * [📋 Steps to Using Separate Fields for First Name and Surname in a Form](forms/about-forms/guides-forms/how-to-have-separate-field-for-first-name-and-surname-in-a-form.md)
-    * [📋 Steps to Programmatically Redirecting after a Form Submission](forms/about-forms/guides-forms/how-to-add-a-custom-redirect-to-my-form.md)
-    * [📋 Steps to Adding Form Confirmation Pages](forms/about-forms/guides-forms/form-confirmation-pages.md)
-    * [📋 Steps to Adding a Progress Bar](forms/about-forms/guides-forms/adding-a-progress-bar.md)
-    * [📋 Steps to Changing Form Styling on Submission Using CSS](forms/about-forms/guides-forms/adding-custom-css-to-show-form-submit-process.md)
-    * [📋 Steps to Using Custom Field Set fields in a Form's Custom Layout](forms/about-forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
-* [🧙‍♂️ Go Further: Forms](forms/go-further-forms/README.md)
-  * [🔹 Explained - Preventing Spam Form Submissions and Captchas](forms/go-further-forms/explained-preventing-spam-form-submissions-and-captchas.md)
-  * [🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form](forms/go-further-forms/shared-devices.md)
-  * [🔹 Forms Error Callback and Validation](forms/go-further-forms/custom-javascript-validation-for-forms.md)
-  * [🔹 Forms Success Callback](forms/go-further-forms/forms-success-callback.md)
-  * [🔹 File Upload Previews](forms/go-further-forms/file-upload-previews.md)
-* [👀 Reference: Forms](forms/reference-forms/README.md)
-  * [🌳 Forms File Structure](forms/reference-forms/forms-file-structure.md)
-  * [👀 Forms Reference](forms/reference-forms/forms-reference.md)
-  * [🔧 Troubleshooting Captchas](forms/reference-forms/troubleshooting-captchas.md)
 
 ## Automations (& Emails)
 
