@@ -46,8 +46,8 @@ The steps followed in the video can be found [here](https://docs.npmjs.com/resol
 
 Read our in-depth guide:
 
-{% content-ref url="steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
+[steps-to-set-up-siteglide-cli-on-a-specific-site.md](get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
 ## Debug Mode

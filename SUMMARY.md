@@ -25,10 +25,10 @@
 
 * [CLI](developer-tools/cli/README.md)
   * [Quickstart](developer-tools/cli/quickstart.md)
-  * [Introduction](developer-tools/cli/getting-started-with-cli.md)
-  * [Site Setup](developer-tools/cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+  * [Introduction](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+  * [Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
   * [Troubleshooting](developer-tools/cli/troubleshooting.md)
-  * [Reference](developer-tools/cli/siteglide-cli-reference.md)
+  * [Reference](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
 * [Liquid](developer-tools/liquid/README.md)
   * [🚀 Get Started: Liquid](developer-tools/liquid/get-started-liquid.md)
   * [💡 About Liquid](developer-tools/liquid/about-liquid/README.md)

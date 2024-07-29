@@ -6,8 +6,8 @@ description: The main commands you'll need when using Siteglide CLI
 
 ## Not Yet Installed Siteglide CLI?
 
-{% content-ref url="quickstart.md" %}
-[quickstart.md](quickstart.md)
+{% content-ref url="../quickstart.md" %}
+[quickstart.md](../quickstart.md)
 {% endcontent-ref %}
 
 ## CLI Commands
