@@ -43,9 +43,9 @@ If using CLI, [Pages with CLI ](pages-with-siteglide-cli.md)for details on Page 
 
 Browse the rest of the documentation to find dynamic Liquid features you can insert into your Pages and Page Templates using Liquid tags. Almost any Liquid is suitable for outputting in either.
 
-[about-liquid](../../liquid-templating/get-started-liquid/about-liquid/ "mention")
+[Broken link](broken-reference "mention")
 
-[alternatives-to-storing-server-side-code-in-fields.md](../../webapps-databases/go-further-webapps/alternatives-to-storing-server-side-code-in-fields.md "mention")
+[Broken link](broken-reference "mention")
 
 [broken-reference](../../pages-and-page-templates/reference-pages/broken-reference/ "mention")
 

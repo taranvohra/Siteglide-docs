@@ -1,0 +1,2 @@
+# 🌳 Category Layout Folder Structure
+

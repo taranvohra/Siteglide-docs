@@ -1,0 +1,2 @@
+# 🌳 Automations File Structure
+

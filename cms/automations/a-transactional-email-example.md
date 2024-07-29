@@ -1,0 +1,2 @@
+# 🔹 A Transactional Email Example
+

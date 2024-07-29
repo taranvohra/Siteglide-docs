@@ -1,0 +1,2 @@
+# 🔹 Get Table Config
+

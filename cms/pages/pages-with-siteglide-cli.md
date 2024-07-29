@@ -76,7 +76,7 @@ searchable: true
 * `redirect_to` - The slug to redirect to, if it needs it. If it's homepage, you need to redirect to '/'
 * `redirect_code` - Set as '301' if there's a redirect
 * `searchable` - Set as 'true' so it shows in search results
-* `layout` - Adds the [Page Template](../../pages-and-page-templates/get-started-pages/page-templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
+* `layout` - Adds the [Page Template](broken-reference) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
 
 **Body** must include the constants snippet shown in example for features like SEO and Secure Zones to work.
 

@@ -1,0 +1,2 @@
+# 🔹 Detail Page Valid
+

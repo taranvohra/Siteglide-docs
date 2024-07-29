@@ -20,12 +20,12 @@ We recommend following these guides in order:
 [steps-to-set-up-siteglide-cli-on-a-specific-site.md](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
-{% content-ref url="module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md" %}
-[setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md](module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md" %}
-[setting-up-tailwind-css-with-siteglide-cli-from-scratch.md](module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Navigating the CMS
