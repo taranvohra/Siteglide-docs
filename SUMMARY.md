@@ -2,7 +2,8 @@
 
 ## Introduction
 
-* [Welcome](README.md)
+* [👋 Welcome](README.md)
+* [👋 Welcome](README.md)
 
 ## Portal
 
@@ -82,13 +83,8 @@
 
 * [Building Reports](reporting2/building-reports.md)
 
-# Table of contents
-
 ## Let's Get Started!
 
-***
-
-* [👋 Welcome](README.md)
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
@@ -510,4 +506,3 @@
   * [📋 Steps to Set Up CRM Sync on an Automation](module-crm-sync/get-started-crm-sync/steps-to-set-up-crm-sync-on-an-automation.md)
 * [👀 Reference: CRM Sync](module-crm-sync/reference-crm-sync/README.md)
   * [🗓️ CRM Sync Changelog](module-crm-sync/reference-crm-sync/crm-sync-changelog.md)
-
