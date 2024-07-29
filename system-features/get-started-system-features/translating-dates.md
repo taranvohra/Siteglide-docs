@@ -60,6 +60,7 @@ First, we will need to create an object of Months converted from English to whic
 {% endraw %}
 
 
+
 ```
 
 Now we have an object called "months" storing all the translated Months, simply change "FRE" and the translation to whichever language you'd like.

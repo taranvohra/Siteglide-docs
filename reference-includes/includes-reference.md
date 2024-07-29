@@ -2,7 +2,7 @@
 
 ## The Include Tag and Custom Paths
 
-The Liquid tag `include` is usually used to insert a Liquid Partial into a Liquid File.&#x20;
+The Liquid tag `include` is usually used to insert a Liquid Partial into a Liquid File.
 
 {% embed url="https://documentation.platformos.com/api-reference/liquid/include" %}
 
@@ -25,6 +25,7 @@ To include one of Site's common include types, use these below and pass in the I
 {% include 'content_section', id: '1', name: 'optional to help code readability' %}
 {% include 'code_snippet', id: '1', name: 'optional to help code readability' %}
 {% endraw %}
+
 ```
 
 ### Inheritance
@@ -39,9 +40,11 @@ These can be either implicit or explicitly passed:
 {% include 'my_file', explicit_variable: 'b' %}
 {% assign varible_with_no_scope = 'c' %}
 {% endraw %}
+
+
 ```
 
-For this example, `implicit_variable` and `explicit_variable` will have scope inside the partial file when it is rendered, but `varible_with_no_scope` will not, simply because it is initialised after the include tag in the page.&#x20;
+For this example, `implicit_variable` and `explicit_variable` will have scope inside the partial file when it is rendered, but `varible_with_no_scope` will not, simply because it is initialised after the include tag in the page.
 
 There are also alternative tags which have a different inheritance behaviour:
 

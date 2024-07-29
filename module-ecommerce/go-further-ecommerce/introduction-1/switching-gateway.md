@@ -25,6 +25,7 @@ In any Page, output your form and select the custom layout with the layout param
 {% raw %}
 {%- include 'ecommerce/checkout', form_id: '1', layout: 'my-custom-layout' -%}
 {% endraw %}
+
 ```
 
 For Basic Payment forms:
@@ -33,21 +34,35 @@ For Basic Payment forms:
 {% raw %}
 {% include 'form', id: '2', layout: 'my-custom-layout' %}
 {% endraw %}
+
+
 ```
 
 ## Step 3
 
 For Checkout Forms, use the ecommerce/checkout\_standard include to output multiple payment gateways inside your checkout form Liquid layout file.
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'ecommerce/checkout_standard' id: '123' default: 'true' -%}
-</strong>{%- include 'ecommerce/checkout_standard' id: '456', default: 'false' -%} 
-</code></pre>
+```liquid
+
+
+
+
+
+
+ 
+```
 
 For Basic Payment Forms:
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'ecommerce/basic_payment' id: '123' default: 'true' -%}
-</strong>{%- include 'ecommerce/basic_payment' id: '456', default: 'false' -%} 
-</code></pre>
+```liquid
+
+
+
+
+
+
+ 
+```
 
 ## Step 4
 

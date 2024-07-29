@@ -6,6 +6,7 @@
 {% raw %}
 {%- function field_map = "modules/module_86/front_end/functions/v1/field_mapping", field_headings: field_headings, this: this -%}
 {% endraw %}
+
 ```
 
 ### Purpose <a href="#purpose" id="purpose"></a>
@@ -30,6 +31,7 @@ Starting with this Object...
 }
 {% endparse_json %}
 {% endraw %}
+
 ```
 
 You could change it so that existing `{{field_map['Title']}}` outputs would output values from a different field like so:
@@ -42,6 +44,7 @@ You could change it so that existing `{{field_map['Title']}}` outputs would outp
 }
 {% endparse_json %}
 {% endraw %}
+
 ```
 
 Or you can add a brand new slot to the WebApp `{{field_map['Extra Slot']}}` and populate it with a new field's data:

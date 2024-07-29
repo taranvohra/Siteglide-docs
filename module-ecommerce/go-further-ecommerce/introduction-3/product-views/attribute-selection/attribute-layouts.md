@@ -99,6 +99,7 @@ If your Products have multiple Attributes, or you want to write code which can d
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 ## Attribute Layout Development
@@ -118,13 +119,15 @@ You can loop over this array with the following liquid code, (where the example 
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 To get the full benefits of Attribute functionality, including the user's choice of Attribute affecting what is added to the Cart, the data-attributes and function calls in the example should be included:
 
 ```liquid
 <select name="attr1" class="form-control" data-attribute-control="{{product_attribute_id}}" onchange="s_e_update_price()">
-  {% raw %}
+  
+{% raw %}
 {% for option in product_attribute_options %}
     <option value="{{option.id}}" data-attribute-price-control="{{option.price_raw}}">
       {{option.name}} {{this.price.currency_symbol}}{{option.price}})

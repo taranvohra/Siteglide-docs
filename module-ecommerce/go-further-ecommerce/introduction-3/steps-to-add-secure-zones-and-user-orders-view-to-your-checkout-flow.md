@@ -90,6 +90,7 @@ Add the following liquid to your Orders page to output a list of the current log
 {%- include 'user_orders', layout: 'name_of_my_layout', sort_type: 'id', sort_order: 'asc', show_pagination: 'false' %}
 {% endraw %}
 
+
 ```
 
 The layout parameter should take the name of the list layout you created.

@@ -31,6 +31,7 @@ In order to make the process of dynamically modifying the output simpler, we are
 {% include 'webapp', id: '1', layout: 'default', item_ids: '1,2' %}
 {% endraw %}
 
+
 ```
 
 ...and others via URL e.g. `page`:

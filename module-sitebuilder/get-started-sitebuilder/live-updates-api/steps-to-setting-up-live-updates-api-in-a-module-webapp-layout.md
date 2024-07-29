@@ -16,14 +16,17 @@ Firstly, make sure the SiteBuilder Module is installed on your site. Then, inclu
   {% export live_update_JS_loaded, namespace: sitebuilder %}
 {% endif %}
 {% endraw %}
+
+
 ```
 
 ## 2) Defining a Layout which will live-update and automatically generating a public API key <a href="#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key" id="id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key"></a>
 
 Secondly, choose which section of code you'd like the API to be ready to live-update.
 
-* This must be some Liquid code which can be rendered using a single Liquid `{% include %}` tag. E.g. `{% include 'webapp', id: '3', layout: 'custom' %}` or `{%- include 'ecommerce/cart', layout: 'cart_custom' %}`.
-* The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via `{{context.params}}`.
+* This must be some Liquid code which can be rendered using a single Liquid \`
+
+\` tag. E.g. \`\` or \`\`. \* The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via \`\{{context.params\}}\`.
 
 At the top of this layout, in the wrapper file if it has one, you need to include the following Liquid. This generates a public\_key you need to use the API. See "Thinking about Security" for why we use this. If you're using a WebApp or Module tag and layout from Siteglide, these variables will be available automatically.
 
@@ -31,14 +34,19 @@ At the top of this layout, in the wrapper file if it has one, you need to includ
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 {% endraw %}
+
+
 ```
 
-However, if you're using a Liquid tag which has a value other than `module` or `webapp`, you will need to manually feed in the model\_type parameter as well. For example, if you're using the tag: `{%- include 'ecommerce/cart', layout: 'cart_custom' %}`, then your public key function should look like this:
+However, if you're using a Liquid tag which has a value other than `module` or `webapp`, you will need to manually feed in the model\_type parameter as well. For example, if you're using the tag: \`
+
+\`, then your public key function should look like this:
 
 ```liquid
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, model_type: 'ecommerce/cart', collection: 'false' %}
 {% endraw %}
+
 ```
 
 You can also use the Live Updates API with a `content_section` or `code_snippet`. Note that these include types don't intrinsically react to changes in the URL e.g. setting a parameter like `page` would not be natively supported. This can however be a benefit if you intend to write custom code including GraphQl; you will have to write that server-side code yourself, but you can take advantage of the Live Updates JS and event-listeners to quickly implement filter functionality on the client-side.
@@ -49,6 +57,7 @@ To use Live Updates with a `content_section` or `code_snippet`, you need to add 
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", model_type: 'code_snippet', include_id: '1' %}
 {% endraw %}
+
 ```
 
 See the `collection` and `creator_id` URL parameters for more details about setting `collection` to 'true' when generating the public key.
@@ -78,6 +87,7 @@ At this point in our guide, your code should look something like this:
 {% endif %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 {% endraw %}
+
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <!-- rest of layout markup goes here -->
 </section>
@@ -112,7 +122,8 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-    {% raw %}
+    
+{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
@@ -120,6 +131,8 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
       </label>
     {% endfor %}
 {% endraw %}
+
+
   </form>
 </section>
 ```
@@ -132,7 +145,9 @@ Replacing the entire layout in the DOM may not be ideal however, as users intera
 
 The API allows you to specify one or more "components" which should update when the data changes. Once you setup a component, the HTML in between components will no longer change.
 
-Let's add the important Siteglide tag `{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}`, which fetches our results, inside a new area marked as a component:
+Let's add the important Siteglide tag \`
+
+\`, which fetches our results, inside a new area marked as a component:
 
 ```liquid
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
@@ -140,7 +155,8 @@ Let's add the important Siteglide tag `{%- include 'modules/siteglide_system/get
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-    {% raw %}
+    
+{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">

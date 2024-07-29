@@ -12,13 +12,13 @@ This object stores every category in key-value pairs where the key is the ID of 
 
 ## Accessing a specific Category via ID
 
-As the Categories data Object is a key map, you can access any specific category by accessing the object and then passing in the Category's ID in square brackets: \
+As the Categories data Object is a key map, you can access any specific category by accessing the object and then passing in the Category's ID in square brackets:\
 \
 `{{context.exports.categories.data['1234']}}`
 
 ## Accessing a Category's Fields
 
-Once you've accessed the value of that Category via it's ID, you can access that Category's Fields using dot notation. For example, here we'll access its name: \
+Once you've accessed the value of that Category via it's ID, you can access that Category's Fields using dot notation. For example, here we'll access its name:\
 \
 `{{context.exports.categories.data['1234']}}.name}}`
 
@@ -49,6 +49,7 @@ If you wish to display all the Categories on the Site, you can loop over them al
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 If you want to skip any Categories, you can use Liquid if statements and the `continue` tag to do this:
@@ -63,6 +64,8 @@ If you want to skip any Categories, you can use Liquid if statements and the `co
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
 {% endraw %}
+
+
 ```
 
 ### Filtering WebApps and Modules
@@ -87,7 +90,7 @@ See more here:
 ## Category Detail Pages
 
 {% hint style="info" %}
-:computer: Siteglide-CLI tip:  We strongly advise against editing the Category Detail Page itself on Siteglide CLI, as it could be changed at any time by the system. Stick to editing the Category Detail Layout!
+:computer: Siteglide-CLI tip: We strongly advise against editing the Category Detail Page itself on Siteglide CLI, as it could be changed at any time by the system. Stick to editing the Category Detail Layout!
 {% endhint %}
 
 Default Fields

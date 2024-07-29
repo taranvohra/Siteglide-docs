@@ -59,6 +59,7 @@ We can output the Products data like so
 {%- endfor -%}
 {% endraw %}
 
+
 ```
 
 However, we just need the Media Download Item ID which can be outputted like so, if you have other Custom Fields you'll need to replace 'product\_1' with the field name
@@ -71,6 +72,7 @@ However, we just need the Media Download Item ID which can be outputted like so,
 
 {%- endfor -%}
 {% endraw %}
+
 
 ```
 

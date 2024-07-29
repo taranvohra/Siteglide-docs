@@ -41,7 +41,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
 
 By default, the List View will show all Events that are enabled, released and not yet expired.
 
-If you just want to filter the List so it either shows Events that have already happened in the Past- or those Events which will happen in the Future, it may not be necessary to include the entire Archive Feature.&#x20;
+If you just want to filter the List so it either shows Events that have already happened in the Past- or those Events which will happen in the Future, it may not be necessary to include the entire Archive Feature.
 
 ### Filter by Past Events
 
@@ -51,6 +51,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% raw %}
 {% assign now = "now" | date: "%s" %}
 {% endraw %}
+
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
 
 ```
@@ -63,6 +64,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% raw %}
 {% assign now = "now" | date: "%s" %}
 {% endraw %}
+
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 
 ```
@@ -84,6 +86,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% endif %}
 {% endraw %}
 
+
 ```
 
 ## Including the Archive Navigation Feature
@@ -101,7 +104,7 @@ Firstly, you will need to provide the following Liquid to include your Archive l
 ### Parameters
 
 * `archive_layout`-The layout parameter refers to the main layout folder followed by a path to the folder storing any archive layouts you are using. In the example, an `/archive` folder is used.
-* `archive_layout_type`- The type parameter refers to the name of the Archive Layout file.&#x20;
+* `archive_layout_type`- The type parameter refers to the name of the Archive Layout file.
 
 In the `default/archive/` folder we have 3 different optional types of Archive Layout you can choose by entering their names in the `type` parameter. We will show the liquid tag for including each.
 
@@ -146,7 +149,8 @@ The following examples will take you through the different options:
 ```liquid
 <h2>Archive</h2>
 <ul>
-  {% raw %}
+  
+{% raw %}
 {% for month in events_archive_months %}
     <li>
       <a href="{{context.headers.PATH_INFO}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month&range_field=events">
@@ -155,6 +159,7 @@ The following examples will take you through the different options:
     </li>
   {% endfor %}
 {% endraw %}
+
 </ul>
 
 ```
@@ -174,7 +179,8 @@ This Layout does not just organise the Months available under the relevant Year 
 ```liquid
 <h2>Archive by Years</h2>
 <ul>
-  {% raw %}
+  
+{% raw %}
 {% for year in events_archive_years %}
     <li>{{year.start | date: "%Y"}}</li>
     <ul>
@@ -189,6 +195,7 @@ This Layout does not just organise the Months available under the relevant Year 
     </ul>
   {% endfor %}
 {% endraw %}
+
 </ul>
 
 ```
@@ -204,14 +211,15 @@ This example uses the same links as the previous one. However, it also organises
 
 In the Default Layout, this Option also includes the Previous "Browse by Months Organised into Years" Option for convenience- though the code can be simply removed if you prefer. We have removed it in this article's example.
 
-&#x20;It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
+It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
 
 ```liquid
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Archive by Years</h2>
     <ul>
-      {% raw %}
+      
+{% raw %}
 {% assign events_archive_years = events_archive_years | sort: "start" %}
       {% for year in events_archive_years %}
         <li>{{year.start | date: "%Y"}}</li>
@@ -261,6 +269,7 @@ In the Default Layout, this Option also includes the Previous "Browse by Months 
 Add your custom error message here- it can be renamed by changing its name in the argument for the s_events_date_search function and in the definition below.
 {% endcomment %}
 {% endraw %}
+
 <script>
   function s_events_date_search_error() {
     alert("Please enter valid dates before searching.");
@@ -271,7 +280,7 @@ Add your custom error message here- it can be renamed by changing its name in th
 
 In this example a form is used to take user input. The Siteglide function automatically adds the dates to the URL parameters in the correct format. You can rewrite the error function to customise the way the form handles invalid dates entered.
 
-\*\*\*A note about Date Entry Inputs on different Browsers \*\*\*Different Browsers may display the Date Input fields very differently. 3rd party Javascript Plugins are available for making sure these display with your desired Design.&#x20;
+\*\*\*A note about Date Entry Inputs on different Browsers \*\*\*Different Browsers may display the Date Input fields very differently. 3rd party Javascript Plugins are available for making sure these display with your desired Design.
 
 ## Custom Layouts
 
@@ -289,6 +298,7 @@ _**events\_archive\_years**_
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 _**events\_archive\_months**_
@@ -301,18 +311,19 @@ _**events\_archive\_months**_
 {% endfor %}
 {% endraw %}
 
+
 ```
 
-In order to filter the Events List by date, you need to refresh the Page URL with parameters in the [Unix Epoch time](https://www.unixtimestamp.com/index.php) format.&#x20;
+In order to filter the Events List by date, you need to refresh the Page URL with parameters in the [Unix Epoch time](https://www.unixtimestamp.com/index.php) format.
 
 The following URL Parameters will cause Results in the List to Filter:
 
-* `range_gt` - greater than&#x20;
-* `range_gte` - greater than or equal to&#x20;
+* `range_gt` - greater than
+* `range_gte` - greater than or equal to
 * `range_lt` - less than
 * `range_lte` - less than or equal to
 
-For the above to work, remember to set the `use_adv_search: true` parameter (see start of article)!&#x20;
+For the above to work, remember to set the `use_adv_search: true` parameter (see start of article)!
 
 The pOS documentation website has some useful tips on how to use liquid to convert date formats and manipulate dates and times. See the following useful filters, and browse the docs for more:
 
@@ -340,6 +351,7 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 {% endif %}
 {% endraw %}
 
+
 ```
 
 Whereas, you could use another `range_type` to indicate that different feedback should be given to the User. e.g. the parameter `month` in this example changes the sentence structure from "Events between" to "Events in" to communicate the different kind of filtering that is now taking place.
@@ -355,4 +367,4 @@ Whereas, you could use another `range_type` to indicate that different feedback 
 {% endraw %}
 ```
 
-Note- in both of these examples- the `gte` and `gt`  dates are both outputted- this is because only one is expected to be available. The Layout is designed to accept either
+Note- in both of these examples- the `gte` and `gt` dates are both outputted- this is because only one is expected to be available. The Layout is designed to accept either

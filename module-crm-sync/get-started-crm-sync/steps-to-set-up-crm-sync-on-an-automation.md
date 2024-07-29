@@ -32,6 +32,7 @@ The module provides you with Liquid code which, when run, carries out a range of
 {% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add' %}
 {% endraw %}
+
 ```
 
 #### Parameters <a href="#parameters" id="parameters"></a>
@@ -60,6 +61,8 @@ Setting this parameter further modifies the behaviour of the previously discusse
 {% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add', lists: 'English Language Newsletter,Food and Recipes' %}
 {% endraw %}
+
+
 ```
 
 The above example will add the contact to both lists.
@@ -88,6 +91,7 @@ You can use the `reserved_fields` parameter to map Siteglide data into those res
 {% endparse_json %}
 {% include "modules/module_132/v1/crm_sync", marketing_provider: "sendgrid", action: 'add', reserved_fields: reserved_fields %}
 {% endraw %}
+
 ```
 
 **`email`**

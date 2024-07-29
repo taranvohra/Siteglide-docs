@@ -21,6 +21,7 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 {% include "modules\module_86\private\views\partials\front_end\includes\v1\pagination", live_updates: 'false', lock_per_page: 'true' %}
 {% endraw %}
 
+
 </section>
 ```
 

@@ -58,6 +58,7 @@ First though, we use logic in the first line to check if the pricing has been en
 {% endif %}
 {% endraw %}
 
+
 ```
 
 ## Accessing Volume Prices in the Order Confirmation Email
@@ -70,7 +71,8 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
 
 ```liquid
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
-  {% raw %}
+  
+{% raw %}
 {% if product.volume_pricing_threshold_reached != blank %}
     <span style="color: red; text-decoration: line-through;">
       {{ product.currency_symbol }}{{product.volume_pricing_original_price}}</span>

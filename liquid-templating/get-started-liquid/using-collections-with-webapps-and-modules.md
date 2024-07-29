@@ -98,7 +98,8 @@ Alternatively, you could include the webapp just once as a collection, then use 
 
   <h2>Featured Item</h2>
   
-  {% raw %}
+  
+{% raw %}
 {% assign this = context.exports.webapp_1.data.result.items[0] %}
   {{this.Title}}
   
@@ -108,6 +109,7 @@ Alternatively, you could include the webapp just once as a collection, then use 
     {{this.Title}}
   {% endfor %}
 {% endraw %}
+
   
 </div>
 
@@ -136,7 +138,8 @@ We can use the `offset` parameter on our loop tag to start the loop at a differe
 
   <h2>Featured Item</h2>
   
-  {% raw %}
+  
+{% raw %}
 {% assign this = context.exports.webapp_1.data.result.items[0] %}
   {{this.Title}}
   

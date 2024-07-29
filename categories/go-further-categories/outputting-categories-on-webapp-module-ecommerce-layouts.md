@@ -41,6 +41,7 @@ To loop over all these Category IDs you can use a Liquid For Loop:
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 Once you have the Category ID, you can use the Categories data object to access any other Category fields, e.g. the name:
@@ -52,6 +53,7 @@ Once you have the Category ID, you can use the Categories data object to access 
   {{context.exports.categories.data[category].name}} <!-- outputs this Category name -->
 {% endfor %}
 {% endraw %}
+
 
 ```
 
@@ -78,6 +80,7 @@ You can use the following to only output the name of a specifc category assigned
 {% endraw %}
 
 
+
 {{context.exports.categories.data[categoryID].name}}
 
 </div>
@@ -94,6 +97,7 @@ If you want to make sure the category item in the array you are calling exists f
     {{context.exports.categories.data[this.category_array[0]].name}}
 {% endif %}
 {% endraw %}
+
 
 
 </div>

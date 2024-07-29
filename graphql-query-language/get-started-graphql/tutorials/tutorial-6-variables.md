@@ -191,6 +191,7 @@ If you require any other conversions, please request them on Intercom and we'll 
 {% assign new_int = original_string | plus: 0 %}
 {% endraw %}
 
+
 ```
 
 _String to Float_
@@ -201,6 +202,7 @@ _String to Float_
 {% assign new_float = original_string | plus: 0.00 %}
 {% endraw %}
 
+
 ```
 
 _String to \[String]_
@@ -210,6 +212,7 @@ _String to \[String]_
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
 {% endraw %}
+
 
 ```
 
@@ -225,6 +228,7 @@ _String to Boolean_
 {% endif %}
 {% endraw %}
 
+
 ```
 
 _Boolean to String_
@@ -234,6 +238,7 @@ _Boolean to String_
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
 {% endraw %}
+
 
 
 ```
@@ -268,6 +273,7 @@ _Literal JSON object to HASH object_ (Needed for advanced variables only- like p
   ]
 {% endparse_json %}
 {% endraw %}
+
 
 ```
 

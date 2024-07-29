@@ -222,6 +222,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
           "dest": "layouts/modules/module_8" {% comment %}Note this is an example of an embedded layout. The destination folder is actually in a completely different module folder. However, the name of the layout will remain the same. E.g. If the module user installs a layout and calls it "Gallery 2", both the Gallery Layout and the embedded Testimonials layout will have the folder names "module_<module_vanity_id>/gallery-2" and "module_8/gallery-2" respectively. See the embedded layouts section for more tips.{% endcomment %}
 {% endraw %}
 
+
         },
         {
           "src": "testimonials/list/item",
@@ -285,9 +286,9 @@ Here is an example of settings being implemented in a SiteBuilder Layout:
 Notes:
 
 1. Where a layout contains multiple files, the settings block should be placed at the top (under the tag) of the first file that will be outputted, which would normally be called the `wrapper`.
-2. The entire settings block should be wrapped between two Liquid comments `{% comment %} ---Settings--- {% endcomment %}` and `{% comment %} ---End Settings--- {% endcomment %}`.
-3. Each setting should be preceded by another comment with the name of the setting (6 dashes before and after), then a comment to explain the purpose of the setting.
-4. Finally, each setting should contain a Liquid tag to set the variable. This variable's value should be read where needed within the rest of the file and within any other files in the layout which may need to use it. Due to Liquid inheritance, the variable will be available for any files included by the file that contains the setting block.
+2. The entire settings block should be wrapped between two Liquid comments \`
+
+\` and \`\`. 3. Each setting should be preceded by another comment with the name of the setting (6 dashes before and after), then a comment to explain the purpose of the setting. 4. Finally, each setting should contain a Liquid tag to set the variable. This variable's value should be read where needed within the rest of the file and within any other files in the layout which may need to use it. Due to Liquid inheritance, the variable will be available for any files included by the file that contains the setting block.
 
 These conventions help to keep the settings consistent and readable for the module user (and the developer). Following them now will also allow your layouts to take advantage of future improvements when settings are further integrated into the SiteBuilder UI. Watch this space!
 
@@ -305,6 +306,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 
 
 <div id="slider_{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
@@ -329,6 +331,7 @@ _Liquid_
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 
 
 <div data-slider="{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
@@ -378,6 +381,7 @@ In this example, the layout\_config files array contains a file with the dest: `
 {% endraw %}
 
 
+
 ```
 
 _Resetting `_top_model` for consistent layout paths_
@@ -394,6 +398,7 @@ If you're nesting layouts in more than two layers, you may experience a difficul
 {% raw %}
 {% assign original_layout = _layout %}
 {% endraw %}
+
 
 ```
 

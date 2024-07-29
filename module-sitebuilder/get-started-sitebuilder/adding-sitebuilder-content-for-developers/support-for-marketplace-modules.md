@@ -53,7 +53,8 @@ To configure the module and help SiteBuilder understand at a high level what con
 ```liquid
 {
   "module_<module_vanity_id>": {
-    "title": "Example Module", {% raw %}
+    "title": "Example Module", 
+{% raw %}
 {% comment %}String. Required. The title of your module in Siteglide{% endcomment %}
     "description": "A simple module with a title, image and rich text field.", {% comment %}String. Optional. A description of what your module does. This is not currently used, but may be used in future.{% endcomment %}
     "install_type": "default", {% comment %}String. Required. Leave as "default". Only the "forms" module uses a different value.{% endcomment %}
@@ -77,6 +78,7 @@ To configure the module and help SiteBuilder understand at a high level what con
     "available_on_pagebuilder": true, {% comment %}Boolean. Required. Set to true for your module to appear in PageBuilder.{% endcomment %}
     "extends_themes": ["theme_01"] {% comment %}Array. Required (can be empty array). This setting allows your module to add layouts to themes created by others in the marketplace. You can find theme IDs in the documentation for themes found in the marketplace. Normally these should be of the format "theme_" followed by the vanity ID of the theme's Siteglide module. At the time of writing, there are two themes built in to SiteBuilder: "theme_01" is Flowbite and "theme_02" is Bootstrap. It is possible for the theme creator to deny all modules the ability to extend their theme or to allow only certain modules to extend it. If you're not sure, ask the module creator for permission. Sitegurus generally welcomes module creators to extend any theme we maintain.{% endcomment %}
 {% endraw %}
+
   }
 }
 ```
@@ -89,13 +91,15 @@ Here is an example of the Blog module's configuration which does not have sub-mo
 
 ```liquid
 "sub_modules": {
-  "0": { {% raw %}
+  "0": { 
+{% raw %}
 {% comment %}String (integer as string). Required. The key for a "default" sub-module should always be 0.{% endcomment %}
     "name": "default",{% comment %}String. Required. The name for a "default" sub-module should always be "default".{% endcomment %}
     "liquid_tag": "module", {% comment %}String. Required. When an "include" liquid tag is created, what will the first parameter be? In almost all cases, this should be "module".{% endcomment %}
     "allow_default_settings": true,{% comment %}Boolean. Required. Setting to true means that when a layout of this module is added through PageBuilder, the normal module settings like "per_page" will be offered to the module user in the settings side-panel. If any of these settings don't make sense, you should set this to false and manually add any settings which are needed instead, see the next example below. {% endcomment %}
     "siteglide_module_id": "3" {% comment %}String or null (integer as string). Required. This will for a default sub_module almost certainly be your <module_vanity_id>. It controls the "id" parameter when either layouts or PageBuilder outputs a Liquid tag for one of your layouts.{% endcomment %}
 {% endraw %}
+
   }
 }
 ```
@@ -111,7 +115,8 @@ We will only comment on the parts of this example which are different from the p
   "1": {
     "name": "Login Forms",
     "liquid_tag": "login_form",
-    "allow_default_settings": false, {% raw %}
+    "allow_default_settings": false, 
+{% raw %}
 {% comment %}Boolean. Required. In the Siteglide menu module there is no such thing as a per_page parameter (and several other default settings don't work either) so we disable default settings. In your module it is most likely that you'll wish to keep this as true and add new settings on top of the default settings. {% endcomment %}
     "define_new_settings": [ {% comment %}Array (array of objects). Optional. {% endcomment %}
         { {% comment %}Object. Optional. Describes adding a single setting in PageBuilder to set a parameter in the Liquid tag which will be generated in the page. Rememeber that with Liquid inheritance you can actually pass any unreserved parameter to the Liquid tag and it will be inherited in the Layout, so this is a very flexible tool.{% endcomment %}

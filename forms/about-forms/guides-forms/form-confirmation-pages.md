@@ -41,6 +41,7 @@ In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirm
 {% include 'form_confirmation', layout: 'default' %}
 {% endraw %}
 
+
 ```
 
 The Layout parameter takes the name of the Layout File you wish to use, without the `.liquid` extension.
@@ -110,6 +111,7 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
 {% endraw %}
 
 
+
         </tbody>
         <tr>
     </table>
@@ -137,6 +139,7 @@ We've included an \`
   <p>Looks like you've not ordered anything with us this time. We hope to see you again soon!</p>
 {% endif %}
 {% endraw %}
+
 
 ```
 

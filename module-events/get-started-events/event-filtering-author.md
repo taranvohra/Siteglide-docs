@@ -59,9 +59,11 @@ The `author_field` will be `module_field_12_4` if you are using Siteglide's Auth
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {% raw %}
+      
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
 {% endraw %}
+
     </ul>
   </div>
 </div>
@@ -75,11 +77,13 @@ The `author_field` will be `module_field_12_4` if you are using Siteglide's Auth
   class="authorAnchorSidebar" 
   href="{{context.location.pathname}}?module_field_12_4={{this.id}}&author_name={{this.name | url_encode}}"
 >
-  {% raw %}
+  
+{% raw %}
 {% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
 {% endraw %}
+
   <li>{{this['name']}}</li>
 </a>
 

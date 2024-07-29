@@ -83,7 +83,7 @@ To make sense of the JSON that the Liquid outputs, you'll need a tool for automa
 We don't have a favourite JSON parsing tool, but you can see a third-party comparison here: [https://geekflare.com/json-online-tools/](https://geekflare.com/json-online-tools/) Many Code Editing environments also have a tool for prettifying JSON data.
 
 {% hint style="danger" %}
-### Important Note
+#### Important Note
 
 We'd recommend when parsing JSON using third party tools that you do not use sensitive Client data. It's best to use test data and publically accessible data when testing and developing dot-notation. We cannot verify that any third party tool will handle your data safely.
 {% endhint %}

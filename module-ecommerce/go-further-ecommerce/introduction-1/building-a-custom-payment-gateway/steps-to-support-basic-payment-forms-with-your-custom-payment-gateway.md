@@ -94,6 +94,7 @@ In the results of this query, you'll be able to verify the true minimum amount a
 {%- assign currency = form_configuration_data.result.items[0].configuration.properties.form_payment_currency.value | downcase -%}
 {% endraw %}
 
+
 ```
 
 ```liquid

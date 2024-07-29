@@ -7,16 +7,16 @@
 ## Portal
 
 * [Account](portal2/account.md)
-* [Sites](portal2/sites.md)
+* [Sites](portal/sites/README.md)
+  * [📁 Domains](portal/sites/domains/README.md)
+    * [How to setup a multi domain start page](portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
 * [Users & User Roles](portal2/users-and-user-roles.md)
 * [Billing](portal2/billing.md)
 * [Tickets](portal2/tickets.md)
 * [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
   * [📋 Steps to Create your First Site](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
   * [📁 Account Area](siteglide-portal/get-started-portal/account-area.md)
-  * [📁 Sites](siteglide-portal/get-started-portal/sites/README.md)
-    * [📁 Domains](siteglide-portal/get-started-portal/sites/domains/README.md)
-      * [How to setup a multi domain start page](siteglide-portal/get-started-portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
+  * [📁 Sites](portal/get-started-portal/sites.md)
   * [📁 Marketplace](siteglide-portal/get-started-portal/marketplace/README.md)
     * [💡 About the Marketplace](siteglide-portal/get-started-portal/marketplace/about-module-marketplace.md)
     * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
@@ -29,7 +29,6 @@
 ## Developer Tools
 
 * [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
-  * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
   * [📋 Steps to Install Siteglide CLI](command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
   * [📋 Steps to Set Up Siteglide CLI on a Specific Site](command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
   * [🧞 SiteBuilder with Siteglide CLI](command-line-interface-cli/get-started-cli/sitebuilder-with-siteglide-cli.md)
@@ -44,6 +43,7 @@
   * [Get Started with CLI](developer-tools2/cli/get-started-with-cli.md)
   * [Go Further with CLI](developer-tools2/cli/go-further-with-cli.md)
   * [CLI Reference](developer-tools2/cli/cli-reference.md)
+  * [💡 About Siteglide CLI](developer-tools/cli/introduction.md)
 * [Page](developer-tools2/page.md)
 * [Liquid](developer-tools2/liquid.md)
 * [GraphQL](developer-tools2/graphql.md)
@@ -113,7 +113,6 @@
 * [🔹 Our Technology Stack and Partner Documentation](our-technology-stack-and-partner-documentation.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
-
 
 ## Pages and Page Templates
 

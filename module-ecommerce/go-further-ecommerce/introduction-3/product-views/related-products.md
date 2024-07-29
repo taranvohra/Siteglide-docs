@@ -38,7 +38,7 @@ When you're ready, press save and your new Custom Field will be set up. You'll t
 
 In this example, we'll edit the new Custom Field on an existing Product to create a relationship with another Product. From the Product Edit Page, select the Custom Fields tab:
 
-As we used the Datasource Multi field type and selected Products as the Module to be linked to, Siteglide knows what we're trying to do and will help us find the related Items.&#x20;
+As we used the Datasource Multi field type and selected Products as the Module to be linked to, Siteglide knows what we're trying to do and will help us find the related Items.
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,15 +73,20 @@ We can change the type by assigning a new variable:
 {% raw %}
 {% assign related_products_str = this['Related products'] | join: ',' %}
 {% endraw %}
+
+
 ```
 
 ### Step 5) Add a Product List Layout which Datasources to the Related Products
 
 Next, we need to output a Product List, nested within our existing Product Detail Layout.
 
-<pre class="language-liquid"><code class="lang-liquid">&#x3C;h2>Related Products&#x3C;/h2>
-<strong>{% assign related_products_str = this['Related products'] | join: ',' %}
-</strong>{%- include 'ecommerce/products'
+```liquid
+<h2>Related Products</h2>
+
+
+
+{%- include 'ecommerce/products'
     layout: 'default'
     per_page: '3'
     show_pagination: 'false'
@@ -91,15 +96,15 @@ Next, we need to output a Product List, nested within our existing Product Detai
     item_ids: related_products_str
 -%} 
 
-</code></pre>
+```
 
-_**Item Ids Parameter**_&#x20;
+_**Item Ids Parameter**_
 
 Without the `item_ids` parameter, our List outputs only the first few Products alphabetically, instead of fetching our dynamic Related Products.
 
 We can change that by adding the `item_ids` parameter and feeding in our comma-separated String of IDs (that we stored in a new Liquid variable):`item_ids: related_products`
 
-_**Datasource Parameter**_&#x20;
+_**Datasource Parameter**_
 
 `datasource: 'true'` When you output an include inside a Detail Layout, by default Siteglide will try to fetch a Detail Layout. This is one reason why it's important to set the `datasource: 'true'` parameter, which will then cause Siteglide to look for a List type Layout.
 
@@ -109,7 +114,7 @@ _**Per Page Parameter**_
 
 `per_page: '3'` In the example, the per\_page has been set to 3. In some cases, you may wish to limit the number of "related" results in this way, so they don't distract from the main subject of the Page. It is completely optional.
 
-_**Layout Parameter**_ \
+_**Layout Parameter**_\
 \
 Select the name of a Product List Layout you'll use to style how the dynamic Related Products List will look (see Step 7).
 

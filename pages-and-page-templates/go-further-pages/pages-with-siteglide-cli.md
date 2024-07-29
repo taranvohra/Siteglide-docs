@@ -72,11 +72,11 @@ searchable: true
     * `twitter_type` - Defines page content type for twitter sharing link
     * `enabled` - If the page is visible on the front-end
     * `use_siteglide_js` - Set as 'false' to supress the siteglide.js file from being included in your page. Note: This will stop forms from submitting, only turn this off on pages that do not include forms. Currently this does not work for the homepage of your site
-* `physical_file_path` - Files should be stored in a location relative to their slug. If your slug is /services/cleaning, then the physical\_file\_path would be views/pages/services/cleaning.liquid - **note changing this line can have unexpected results.** If you want to move a file, you can just move the file and delete this line. Re-syncing or deploying should change the physical file path automatically.&#x20;
+* `physical_file_path` - Files should be stored in a location relative to their slug. If your slug is /services/cleaning, then the physical\_file\_path would be views/pages/services/cleaning.liquid - **note changing this line can have unexpected results.** If you want to move a file, you can just move the file and delete this line. Re-syncing or deploying should change the physical file path automatically.
 * `redirect_to` - The slug to redirect to, if it needs it. If it's homepage, you need to redirect to '/'
 * `redirect_code` - Set as '301' if there's a redirect
 * `searchable` - Set as 'true' so it shows in search results
-* `layout` - Adds the [Page Template](../get-started-pages/page-templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.&#x20;
+* `layout` - Adds the [Page Template](../get-started-pages/page-templates.md) e.g. set to 'templates/1' for the template with an ID of 1. Or to leave blank for API Endpoints, set to empty string ''.
 
 **Body** must include the constants snippet shown in example for features like SEO and Secure Zones to work.
 
@@ -84,7 +84,7 @@ searchable: true
 
 ### Constants
 
-Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most pages. \
+Constants makes certain variables available in the Page and passes others up to the Page Template e.g. SEO. It should sit at the very top of most pages.\
 \
 If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip it to improve performance.
 
@@ -92,6 +92,7 @@ If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip i
 {% raw %}
 {% include 'modules/siteglide_system/constants' -%}
 {% endraw %}
+
 ```
 
 ### Secure Zones

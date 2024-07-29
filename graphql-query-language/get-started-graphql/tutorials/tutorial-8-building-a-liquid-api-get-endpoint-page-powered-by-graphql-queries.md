@@ -139,7 +139,7 @@ Note- I'll be using - before and after my closing Liquid tags to remove unnecess
 In the example, we'll pass inputs into the endpoint Page using query parameters on the end of the URL, for example, I already have the URL for accessing the endpoint Page: `/api/webapp-1.json`
 
 {% hint style="warning" %}
-### Remember
+#### Remember
 
 The ".json" extension should be replaced with the "format" you chose in step 2.
 {% endhint %}
@@ -154,6 +154,7 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 {%- assign per_page = context.params.per_page -%}
 {% endraw %}
 
+
 ```
 
 ### Step 5) Use Liquid to feed variables into the Query (and make sure they are the correct type)
@@ -165,6 +166,7 @@ Accessing these values via the above method tends to set them as String values i
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
 {% endraw %}
+
 
 ```
 
@@ -203,13 +205,15 @@ If you decided in step 2 that you didn't want to change the Page format, you sho
 -%}
 
 <div class="row">
-  {% raw %}
+  
+{% raw %}
 {%- for item in fetch_webapp_1_by_page.records.results -%}
     <div class="col">
       <h2>{{item.properties.name}}</h2>
     </div>
   {%- endfor -%}
 {% endraw %}
+
 </div>
 
 ```
@@ -247,6 +251,7 @@ Name,ID,Description
 {{item.properties.webapp_field_1_1}}
 {% endfor %}
 {% endraw %}
+
 
 ```
 
@@ -332,6 +337,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
 {%- endif -%}
 {% endraw %}
 
+
 ```
 
 * To check that the request comes from an authorized Page/ Site, you can check this with context:
@@ -342,6 +348,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
+
 
 ```
 
@@ -386,8 +393,6 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 * The if statement logic checks if a 2xx response code is received (meaning any authorization policies have passed) and that there is no HTML tag containing a 401 code from a Secure Zone check failure. See Step 8) for more details.
 * The function requests the data from our new endpoint.
 * It then loops over the Items and appends each WebApp Name to the HTML DOM.
-
-
 
 \`\`\`liquid
 
@@ -449,7 +454,8 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   per_page: per_page
 -%}
 <div class="row"> 
-  {% raw %}
+  
+{% raw %}
 {% for this in fetch_webapp_1_by_page.records.results %}
     <div class="col-4">
        <h3>{{this.properties.name}}</h3>

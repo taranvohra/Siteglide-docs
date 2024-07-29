@@ -33,6 +33,7 @@ In this example, we set the filter as if we have a WebApp 1 with a custom field 
   function ready() {
     {% comment %} Add to params the Siteglide filter relating to the WebApp custom field, and the unique ID custom parameter. {% endcomment %}
 {% endraw %}
+
     window.sgLiveUpdateConfig['{{sitebuilder_uniq_component_id}}'].liveUpdate({webapp_field_1_1: '{{any_variable}}', sitebuilder_uniq_component_id: '{{sitebuilder_uniq_component_id}}'});
   }
 </script>

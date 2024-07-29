@@ -57,6 +57,7 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
 {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
 {% endraw %}
 
+
     </ul>
   </div>
 </div>

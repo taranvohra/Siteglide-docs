@@ -29,6 +29,7 @@ The following Liquid can be added within a `user_subscriptions` List Layout:`<di
 {% endraw %}
 
 
+
 ```
 
 ## Un-scheduling the Cancellation before it happens
@@ -45,6 +46,7 @@ You may wish to use logic to only show the button when it can be used.
   {%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}
 {%- endif -%}
 {% endraw %}
+
 
 ```
 

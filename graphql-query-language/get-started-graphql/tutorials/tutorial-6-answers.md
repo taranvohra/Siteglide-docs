@@ -101,6 +101,7 @@ c) Let's add the `graphql` tag with the variable parameter.
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 {% endraw %}
 
+
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -115,6 +116,7 @@ We can output the results using the variable name we defined in the `graphql` ta
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 {% endraw %}
+
 
 {% graphql my_result = "gallery_by_page",
 page: current_page
@@ -184,6 +186,7 @@ page: current_page
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 However, you won't have access to the user-friendly names for fields in that Layout, because GraphQL will output the raw database IDs for fields.
@@ -215,7 +218,8 @@ You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
 <ul>
-  {% raw %}
+  
+{% raw %}
 {% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}

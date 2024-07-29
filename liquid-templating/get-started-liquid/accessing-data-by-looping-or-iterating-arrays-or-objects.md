@@ -58,6 +58,7 @@ We can access all values in the Array using a Liquid For Loop:
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 This outputs:
@@ -128,6 +129,7 @@ This sounds odd, but it's the name of the eCommerce Category we wanted! You can 
 {% raw %}
 {% assign my_example_category_id = 98490 %}
 {% endraw %}
+
 
 {{context.exports.categories.items[my_example_category_id].name}}
 

@@ -86,7 +86,7 @@ If you need to modify them, you can split this into following the 4 items in the
 ```
 
 {% hint style="warning" %}
-### A note on security
+#### A note on security
 
 Even if a malicious User submits a fraudulent User ID argument, we will double check on the server-side, so it won't be possible for them to change the favourites of other Users.
 {% endhint %}
