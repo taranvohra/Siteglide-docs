@@ -4,7 +4,7 @@
 
 * [👋 Welcome](README.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
-* [Siteglide Technology Stack](introduction/siteglide-technology-stack.md)
+* [🔹 Siteglide Technology Stack](introduction/siteglide-technology-stack.md)
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 
 ## Portal
@@ -47,7 +47,6 @@
 ## CMS
 
 * [Pages](cms/pages/README.md)
-  * [🚀 Get Started: Pages](pages-and-page-templates/get-started-pages/README.md)
   * [💡 About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
   * [🔹 Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
   * [🧑‍🎨 Updating Page Content with the Studio Tab](pages-and-page-templates/get-started-pages/updating-page-content-with-the-studio-tab.md)
