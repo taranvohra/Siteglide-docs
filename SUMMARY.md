@@ -12,7 +12,7 @@
 * [Billing](portal2/billing.md)
 * [Tickets](portal2/tickets.md)
 
-## Command Line Interface (CLI)
+## Developer Tools
 
 * [🚀 Get Started: CLI](command-line-interface-cli/get-started-cli/README.md)
   * [💡 About Siteglide CLI](command-line-interface-cli/get-started-cli/introduction.md)
