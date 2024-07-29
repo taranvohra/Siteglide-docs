@@ -35,7 +35,6 @@
   * [CLI Reference](developer-tools/cli/cli-reference/README.md)
     * [👀 Siteglide CLI Reference & Commands](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
     * [🔧 Troubleshooting Siteglide CLI](developer-tools/cli/cli-reference/troubleshooting-siteglide-cli.md)
-* [Page](developer-tools/page.md)
 * [Liquid](developer-tools/liquid/README.md)
   * [🚀 Get Started: Liquid](developer-tools/liquid/get-started-liquid.md)
   * [💡 About Liquid](developer-tools/liquid/about-liquid/README.md)
