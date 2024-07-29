@@ -22,7 +22,7 @@ Having set up your local Project Folder with:
 
 * A Text Editor for viewing your Folder Structure inside a Project Folder
 * A Siteglide-CLI environment which connects your Project Folder to a Site
-* An npm script which runs a Tailwind compilation process&#x20;
+* An npm script which runs a Tailwind compilation process
 
 This article will delve a little deeper into the files you can modify to take full control of your Tailwind build!
 
@@ -32,7 +32,7 @@ This article will delve a little deeper into the files you can modify to take fu
 * Also if you are using VS Code, this extension is useful for creating shortcuts to your favourite project folders: [https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 * This tool is really helpful for fetching colours with all the shades you need generated for you: [https://uicolors.app/create](https://uicolors.app/create)
 
-## A Recommended Day-to-Day Workflow&#x20;
+## A Recommended Day-to-Day Workflow
 
 (For Editing a Siteglide Site Which Uses a Tailwind Theme.)
 
@@ -62,7 +62,7 @@ This article will delve a little deeper into the files you can modify to take fu
 
 ### Source Files
 
-`src` is short for source. These files are not designed to be seen by the browser. Instead think of them as the _recipe_ for a final Tailwind CSS file.&#x20;
+`src` is short for source. These files are not designed to be seen by the browser. Instead think of them as the _recipe_ for a final Tailwind CSS file.
 
 When you sync these files, they are still pushed to your Site because they are inside the marketplace\_builder folder. This allows you to share changes with other users on the Site (or yourself on different machines).
 
@@ -83,15 +83,15 @@ This file can be used to write ordinary CSS, or you can use Tailwind's documente
 
 Often with Tailwind CSS, you will find you will not need to enter this file often, as you can achieve most of the styling you want by using existing:
 
-* Utility Classes&#x20;
+* Utility Classes
 * Arbitrary Values in Utility Classes
 * Prefixes instead of Media Queries
 
-However, if you do want to write your own CSS, you will not find yourself limited!&#x20;
+However, if you do want to write your own CSS, you will not find yourself limited!
 
 See here to understand how to insert your CSS into one of Tailwind's layers: [https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer)
 
-See here to understand how to add custom classes which combine existing Tailwind utility classes: [https://tailwindcss.com/docs/functions-and-directives#apply](https://tailwindcss.com/docs/functions-and-directives#apply)&#x20;
+See here to understand how to add custom classes which combine existing Tailwind utility classes: [https://tailwindcss.com/docs/functions-and-directives#apply](https://tailwindcss.com/docs/functions-and-directives#apply)
 
 ### The `tailwind.min.css` Final CSS File
 
@@ -108,6 +108,6 @@ When you make changes to any of the following while `npm run tailwind` is runnin
 * Your `tailwind.config.js` file
 * Your `tailwind.css` file
 
-A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [siteglide-cli-reference.md](../../../command-line-interface-cli/reference-cli/siteglide-cli-reference.md "mention")\
+A new version of the `tailwind.min.css` file will be generated. Use the Siteglide CLI to sync or deploy this to your Site to see your changes applied: [siteglide-cli-reference.md](../../../developer-tools/cli/cli-reference/siteglide-cli-reference.md "mention")\
 \
 Tailwind uses tree-shaking so that any classes which aren't used by the files referenced above will be removed from the final CSS file to make it as fast as possible. It will also be minified.

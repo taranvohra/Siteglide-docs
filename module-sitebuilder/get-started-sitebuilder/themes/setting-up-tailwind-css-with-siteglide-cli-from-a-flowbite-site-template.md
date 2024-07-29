@@ -42,18 +42,18 @@ Fill out the settings and click the button to start the Site Create Process.
 
 This will take a while and you'll get an email when it finishes. You should have time to make a cup of tea and return in a few minutes to move on to Step 2.
 
-## Step 2)  Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
+## Step 2) Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
 
 You will need to install Siteglide CLI- if you haven't or are not sure if you have, head here first:
 
-{% content-ref url="../../../command-line-interface-cli/get-started-cli/getting-started-with-cli.md" %}
-[getting-started-with-cli.md](../../../command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
+{% content-ref url="../../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
+[getting-started-with-cli.md](../../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
 {% endcontent-ref %}
 
 Next you'll need to follow the steps to create a project folder for your new Site and setup Siteglide CLI for this new Site:
 
-{% content-ref url="../../../command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](../../../command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="../../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
+[steps-to-set-up-siteglide-cli-on-a-specific-site.md](../../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
 Once you've pulled the Codebase for the new Site down into your project folder, continue to the next step.

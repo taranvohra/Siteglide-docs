@@ -2,7 +2,7 @@
 
 ### Before you Start
 
-[getting-started-with-cli.md](../get-started-cli/getting-started-with-cli.md "mention")
+[getting-started-with-cli.md](../get-started-with-cli/getting-started-with-cli.md "mention")
 
 ### Commands
 

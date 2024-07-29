@@ -6,18 +6,18 @@ We recommend following these guides in order:
 
 ### First Steps
 
-{% content-ref url="siteglide-portal/get-started-portal/steps-to-create-your-first-site.md" %}
-[steps-to-create-your-first-site.md](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
+{% content-ref url="portal/sites/steps-to-create-your-first-site.md" %}
+[steps-to-create-your-first-site.md](portal/sites/steps-to-create-your-first-site.md)
 {% endcontent-ref %}
 
 ### Using the Command Line Interface
 
-{% content-ref url="command-line-interface-cli/get-started-cli/getting-started-with-cli.md" %}
-[getting-started-with-cli.md](command-line-interface-cli/get-started-cli/getting-started-with-cli.md)
+{% content-ref url="developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
+[getting-started-with-cli.md](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
 {% endcontent-ref %}
 
-{% content-ref url="command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](command-line-interface-cli/get-started-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
+[steps-to-set-up-siteglide-cli-on-a-specific-site.md](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
 {% content-ref url="module-sitebuilder/get-started-sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md" %}
@@ -29,4 +29,3 @@ We recommend following these guides in order:
 {% endcontent-ref %}
 
 ### Navigating the CMS
-
