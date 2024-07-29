@@ -11,6 +11,20 @@
 * [Users & User Roles](portal2/users-and-user-roles.md)
 * [Billing](portal2/billing.md)
 * [Tickets](portal2/tickets.md)
+* [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
+  * [📋 Steps to Create your First Site](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
+  * [📁 Account Area](siteglide-portal/get-started-portal/account-area.md)
+  * [📁 Sites](siteglide-portal/get-started-portal/sites/README.md)
+    * [📁 Domains](siteglide-portal/get-started-portal/sites/domains/README.md)
+      * [How to setup a multi domain start page](siteglide-portal/get-started-portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
+  * [📁 Marketplace](siteglide-portal/get-started-portal/marketplace/README.md)
+    * [💡 About the Marketplace](siteglide-portal/get-started-portal/marketplace/about-module-marketplace.md)
+    * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
+    * [🔹 Siteglide's Module Update Policy](siteglide-portal/get-started-portal/marketplace/siteglides-module-update-policy.md)
+* [🧙‍♂️ Go Further: Portal](siteglide-portal/go-further-portal/README.md)
+  * [📁 Agencies](siteglide-portal/go-further-portal/agencies/README.md)
+    * [Agency Whitelabelling](siteglide-portal/go-further-portal/agencies/agency-whitelabelling.md)
+    * [📁 Clients](siteglide-portal/go-further-portal/agencies/clients.md)
 
 ## Developer Tools
 
@@ -100,22 +114,6 @@
 * [🔹 Siteglide Support Policy](siteglide-support-policy.md)
 * [🚀 Get Started Tutorials](get-started-tutorials.md)
 
-## Siteglide Portal
-
-* [🚀 Get Started: Portal](siteglide-portal/get-started-portal/README.md)
-  * [📋 Steps to Create your First Site](siteglide-portal/get-started-portal/steps-to-create-your-first-site.md)
-  * [📁 Account Area](siteglide-portal/get-started-portal/account-area.md)
-  * [📁 Sites](siteglide-portal/get-started-portal/sites/README.md)
-    * [📁 Domains](siteglide-portal/get-started-portal/sites/domains/README.md)
-      * [How to setup a multi domain start page](siteglide-portal/get-started-portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
-  * [📁 Marketplace](siteglide-portal/get-started-portal/marketplace/README.md)
-    * [💡 About the Marketplace](siteglide-portal/get-started-portal/marketplace/about-module-marketplace.md)
-    * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
-    * [🔹 Siteglide's Module Update Policy](siteglide-portal/get-started-portal/marketplace/siteglides-module-update-policy.md)
-* [🧙‍♂️ Go Further: Portal](siteglide-portal/go-further-portal/README.md)
-  * [📁 Agencies](siteglide-portal/go-further-portal/agencies/README.md)
-    * [Agency Whitelabelling](siteglide-portal/go-further-portal/agencies/agency-whitelabelling.md)
-    * [📁 Clients](siteglide-portal/go-further-portal/agencies/clients.md)
 
 ## Pages and Page Templates
 
