@@ -1,5 +1,5 @@
 ---
-description: We recommend reading this before installing our CLI
+description: What is the CLI and Why use it?
 ---
 
 # Introduction

@@ -1,8 +1,12 @@
 # Site Setup
 
-This article follows on from [getting-started-with-cli.md](getting-started-with-cli.md "mention") which is a one-time process on your machine to install Siteglide-CLI.\
-\
-Now you should be ready to learn how to set up a new project folder and connect it to a specific Siteglide Site. You'll need to follow these steps every time you want to use the CLI to work on a new site, so over time these will become very familiar.
+## Not Yet Installed Siteglide CLI?
+
+{% content-ref url="../quickstart.md" %}
+[quickstart.md](../quickstart.md)
+{% endcontent-ref %}
+
+&#x20;Once you've installed the CLI you should be ready to learn how to set up a new project folder and connect it to a specific Siteglide Site. You'll need to follow these steps every time you want to use the CLI to work on a new site, so over time these will become very familiar.
 
 ## Step 1) Create a Project Folder on Your Machine
 
