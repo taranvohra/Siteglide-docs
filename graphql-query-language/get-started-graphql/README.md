@@ -1,2 +1,2 @@
-# 🚀 Get Started: GraphQL
+# GraphQL
 

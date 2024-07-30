@@ -289,6 +289,7 @@ As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot 
 {% endraw %}
 
 
+
 ```
 
 ## A many:1 alternative

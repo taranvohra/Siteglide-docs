@@ -12,8 +12,8 @@ We recommend following these guides in order:
 
 ### Using the Command Line Interface
 
-{% content-ref url="developer-tools/cli/quickstart.md" %}
-[quickstart.md](developer-tools/cli/quickstart.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}

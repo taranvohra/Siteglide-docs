@@ -50,6 +50,7 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
 {% endraw %}
 
 
+
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
@@ -60,6 +61,7 @@ The button will only work if the User is logged in, so you may wish to add the f
 <!-- Code only runs if User is logged in -->
 {% endif %}
 {% endraw %}
+
 
 
 ```

@@ -18,6 +18,7 @@ Firstly, make sure the SiteBuilder Module is installed on your site. Then, inclu
 {% endraw %}
 
 
+
 ```
 
 ## 2) Defining a Layout which will live-update and automatically generating a public API key <a href="#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key" id="id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key"></a>
@@ -36,6 +37,7 @@ At the top of this layout, in the wrapper file if it has one, you need to includ
 {% endraw %}
 
 
+
 ```
 
 However, if you're using a Liquid tag which has a value other than `module` or `webapp`, you will need to manually feed in the model\_type parameter as well. For example, if you're using the tag: \`
@@ -47,6 +49,7 @@ However, if you're using a Liquid tag which has a value other than `module` or `
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, model_type: 'ecommerce/cart', collection: 'false' %}
 {% endraw %}
 
+
 ```
 
 You can also use the Live Updates API with a `content_section` or `code_snippet`. Note that these include types don't intrinsically react to changes in the URL e.g. setting a parameter like `page` would not be natively supported. This can however be a benefit if you intend to write custom code including GraphQl; you will have to write that server-side code yourself, but you can take advantage of the Live Updates JS and event-listeners to quickly implement filter functionality on the client-side.
@@ -57,6 +60,7 @@ To use Live Updates with a `content_section` or `code_snippet`, you need to add 
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", model_type: 'code_snippet', include_id: '1' %}
 {% endraw %}
+
 
 ```
 
@@ -87,6 +91,7 @@ At this point in our guide, your code should look something like this:
 {% endif %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 {% endraw %}
+
 
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <!-- rest of layout markup goes here -->
@@ -131,6 +136,7 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
       </label>
     {% endfor %}
 {% endraw %}
+
 
 
   </form>

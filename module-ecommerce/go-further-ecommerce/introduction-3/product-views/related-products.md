@@ -75,6 +75,7 @@ We can change the type by assigning a new variable:
 {% endraw %}
 
 
+
 ```
 
 ### Step 5) Add a Product List Layout which Datasources to the Related Products

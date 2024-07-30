@@ -223,6 +223,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
 {% endraw %}
 
 
+
         },
         {
           "src": "testimonials/list/item",
@@ -309,6 +310,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
 
 
 
+
 <div id="slider_{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 <div id="toggle_{{sitebuilder_uniq_component_id}}" class="js-toggle-button"></div>
 
@@ -331,6 +333,7 @@ _Liquid_
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 
 
 
@@ -382,6 +385,7 @@ In this example, the layout\_config files array contains a file with the dest: `
 
 
 
+
 ```
 
 _Resetting `_top_model` for consistent layout paths_
@@ -398,6 +402,7 @@ If you're nesting layouts in more than two layers, you may experience a difficul
 {% raw %}
 {% assign original_layout = _layout %}
 {% endraw %}
+
 
 
 ```

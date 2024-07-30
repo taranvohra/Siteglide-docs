@@ -59,6 +59,7 @@ First though, we use logic in the first line to check if the pricing has been en
 {% endraw %}
 
 
+
 ```
 
 ## Accessing Volume Prices in the Order Confirmation Email

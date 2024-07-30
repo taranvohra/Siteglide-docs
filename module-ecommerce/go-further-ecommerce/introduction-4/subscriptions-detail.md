@@ -89,6 +89,7 @@ We provide an example of some logic you can use to explain to logged in Users wh
 
 
 
+
 ```
 
 In the case where the User is not currently logged in and is not responding to an email, the logic won't be able to determine the exact status straight away.
@@ -166,6 +167,7 @@ To determine this, you can use Liquid Logic to hide an entire block of code in w
 {% endraw %}
 
 
+
 ```
 
 Fields:
@@ -202,6 +204,7 @@ You can use logic to display a different price to Users in this situation.
   <p>{{this.price.price_charge}}</p>
 {% endif %}
 {% endraw %}
+
 
 
 ```

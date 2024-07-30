@@ -102,6 +102,7 @@ c) Let's add the `graphql` tag with the variable parameter.
 {% endraw %}
 
 
+
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -116,6 +117,7 @@ We can output the results using the variable name we defined in the `graphql` ta
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 {% endraw %}
+
 
 
 {% graphql my_result = "gallery_by_page",
@@ -185,6 +187,7 @@ page: current_page
   {% include 'layouts/webapps/webapp_1/list/my_layout_name', this: this %}
 {% endfor %}
 {% endraw %}
+
 
 
 ```

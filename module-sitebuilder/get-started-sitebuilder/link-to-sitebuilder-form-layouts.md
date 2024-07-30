@@ -117,6 +117,7 @@ A dynamic wrapper does not include components directly; instead it includes this
 
 
 
+
 ```
 
 This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide \`
@@ -165,6 +166,7 @@ This is an array which contains all CRM addresses added to the form, if any are 
   </div>
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -231,6 +233,7 @@ For both parameters, the default is `'false'` and turning on the feature is `'tr
 {% endraw %}
 
 
+
 ```
 
 If the user is not logged in, the fields will show as normal, as they are awaiting user input.
@@ -243,6 +246,7 @@ Important note: this functionality relies on the `name_field` and `email` compon
 {% if context.current_user.id != blank and hide_email_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
 {% endraw %}
 
+
 " >
   <!-- Add rest of email component here. -->
 </div>
@@ -253,6 +257,7 @@ Important note: this functionality relies on the `name_field` and `email` compon
 {% raw %}
 {% if context.current_user.id != blank and hide_name_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
 {% endraw %}
+
 
 " >
   <!-- Add rest of name_field component here. -->

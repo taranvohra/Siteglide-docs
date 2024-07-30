@@ -8,8 +8,8 @@ description: The main commands you'll need when using Siteglide CLI
 You need CLI installed first, check out our Quickstart guide:
 {% endhint %}
 
-{% content-ref url="../quickstart.md" %}
-[quickstart.md](../quickstart.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## CLI Commands

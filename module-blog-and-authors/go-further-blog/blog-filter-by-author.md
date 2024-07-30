@@ -57,6 +57,7 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
 {% endraw %}
 
 
+
     </ul>
   </div>
 </div>
@@ -73,6 +74,7 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
 {% endraw %}
+
 
 
   <li>{{this['name']}}</li>

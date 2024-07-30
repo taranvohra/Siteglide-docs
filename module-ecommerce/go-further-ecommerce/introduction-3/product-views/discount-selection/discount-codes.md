@@ -59,6 +59,7 @@ For now, you can add the data-attribute `data-s-e-refresh-layout-discount-code` 
 {% include 'ecommerce/discount_code', layout: "cart/default" %}
 {% endraw %}
 
+
 </div>
 
 ```
@@ -199,7 +200,7 @@ In the examples below, we'll show the basic options recommended for different ty
 #### Applying to a Subscription Layout:
 
 {% hint style="info" %}
-#### Note
+**Note**
 
 We recommend hiding the apply button after the Subscription Order has been created and the Discount Code has been redeemed. See Subscription Specific Instructions.
 {% endhint %}
@@ -274,7 +275,7 @@ _Why is this helpful?_ Although we check Discount Codes are valid when they are 
 Adding a "remove" button gives the User a clear way to solve any problems stopping them from completing their purchase.
 
 {% hint style="info" %}
-#### Note
+**Note**
 
 You cannot remove a Subscription Discount Code after the Subscription Order has been created and the Discount redeemed. See Subscription Specific Instructions.
 {% endhint %}
@@ -305,6 +306,7 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 {% endraw %}
 
 
+
 ```
 
 #### On Basic Payment Layouts:
@@ -322,6 +324,7 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
                                   </p>
 {%- endif -%}
 {% endraw %}
+
 
 
 ```
@@ -360,6 +363,7 @@ For both situations, we can use the fields inside the discount variable to acces
 {% endraw %}
 
 
+
 ```
 
 \*After the Subscription Order is Created and the Discount Redeemed \*At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
@@ -395,6 +399,7 @@ For both situations, we can use the fields inside the discount variable to acces
 {% endraw %}
 
 
+
 ```
 
 ### 5b - Displaying the Minimum Spend
@@ -413,6 +418,7 @@ The following code can be used to display the minimum spend needed to keep using
                  price_data: discount_minimum -%}</p>
 {%- endif -%}
 {% endraw %}
+
 
 
 ```
@@ -435,6 +441,7 @@ The following code can be used to display the minimum spend needed to keep using
 {% endraw %}
 
 
+
 ```
 
 #### On Subscription Layouts
@@ -452,6 +459,7 @@ It's probably only really necessary to display the minimum spend before the Subs
                  </p>
 {%- endif -%}
 {% endraw %}
+
 
 
 ```
@@ -602,7 +610,7 @@ Once you've created your function, use the `success_cb` option in step 3) b) and
 ## Specific Instructions for Subscriptions
 
 {% hint style="success" %}
-#### Note
+**Note**
 
 We recommend for Subscriptions to add some logic checking whether a Subscription Order has already been created and if so, to hide the apply button. This is because once the Subscription Order is created- any Discount Code already applied will be redeemed.
 {% endhint %}
@@ -616,6 +624,7 @@ At this point it's not possible to apply or change the Discount Code, only displ
 <!-- Insert code here - the Discount has already been redeemed against the Subscription Order-->
 {% endif %}
 {% endraw %}
+
 
 
 ```

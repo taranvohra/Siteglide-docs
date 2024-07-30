@@ -22,6 +22,7 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 {% endraw %}
 
 
+
 </section>
 ```
 

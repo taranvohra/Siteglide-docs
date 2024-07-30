@@ -4,16 +4,16 @@
 
 This reference gives you a quick guide to all the code you can use with the Blog, but some features are available to all Modules, see more:
 
-{% content-ref url="../../dev-marketplace/reference-dev-marketplace/modules-reference.md" %}
-[modules-reference.md](../../dev-marketplace/reference-dev-marketplace/modules-reference.md)
+{% content-ref url="../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md" %}
+[modules-reference.md](../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md)
 {% endcontent-ref %}
 
 ### Blog Fields
 
 The Blog uses standard module fields as well as it's own core fields:
 
-{% content-ref url="../../dev-marketplace/reference-dev-marketplace/modules-reference.md" %}
-[modules-reference.md](../../dev-marketplace/reference-dev-marketplace/modules-reference.md)
+{% content-ref url="../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md" %}
+[modules-reference.md](../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md)
 {% endcontent-ref %}
 
 | **Field Name**                                                                                                                                                      | **Liquid Tag**                  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -59,7 +59,7 @@ Inside an archive layout, you have access to the following variables which can b
 
 To apply filters, the URL must be given the following parameters:
 
-* A combination of `range_gt`, `range_gte`, `range_lt`, `range_lte` to set the date range to "range greater than", "range greater than or equal to" etc., in the format: %Y-%m-%d.&#x20;
+* A combination of `range_gt`, `range_gte`, `range_lt`, `range_lte` to set the date range to "range greater than", "range greater than or equal to" etc., in the format: %Y-%m-%d.
 * `range_type` - an optional convention, you can set this to e.g. "between" or "month" so that you can interpret the URL accordingly when you arrive.
 * `range_field` - is used in Events module, but not needed here. Default is to use release date for range field
 
@@ -78,11 +78,11 @@ Include the following liquid to dynamically get a list of available Blog Categor
 
 To apply filters, the URL must be given the following parameters:
 
-* category - to be given the value of one or more category IDs to filter by, comma separated.&#x20;
+* category - to be given the value of one or more category IDs to filter by, comma separated.
 
 #### By Author
 
-&#x20;(Requires `use_adv_search`)
+(Requires `use_adv_search`)
 
 ```liquid
 {%- include 'modules/siteglide_authors/get/get_authors'
@@ -113,8 +113,8 @@ Link to the page with a `keyword` parameter in the URL to perform a search. (Req
 
 Authors uses standard module fields as well as it's own core fields:
 
-{% content-ref url="../../dev-marketplace/reference-dev-marketplace/modules-reference.md" %}
-[modules-reference.md](../../dev-marketplace/reference-dev-marketplace/modules-reference.md)
+{% content-ref url="../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md" %}
+[modules-reference.md](../../developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md)
 {% endcontent-ref %}
 
 <table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Title</td><td>{{ this['Title'] }}</td><td>name of the Author</td></tr><tr><td>Subtitle</td><td>{{ this['Subtitle'] }}</td><td>Job title or other short text about the Author</td></tr><tr><td>Description</td><td>{{ this['Description'] }}</td><td>Description of the Author</td></tr><tr><td>Image</td><td>{{ this['Image'] | asset_url }}</td><td>Image of the Author</td></tr><tr><td>Image Alt</td><td>{{ this['Image Alt'] }}</td><td>Image alt of the Author image</td></tr><tr><td>Linkedin URL</td><td>{{ this['LinkedIn URL'] }}</td><td>Linkedin profile URL of the Author</td></tr><tr><td>Facebook URL</td><td>{{ this['Facebook URL'] }}</td><td>Facebook profile URL of the Author</td></tr><tr><td>Twitter URL</td><td>{{ this['Twitter URL'] }}</td><td>Twitter profile URL of the Author</td></tr><tr><td>Instagram URL</td><td>{{ this['Instagram URL'] }}</td><td>Instagram profile URL of the Author</td></tr><tr><td>Pinterest URL</td><td>{{ this['Pinterest URL'] }}</td><td>Pinterest profile URL of the Author</td></tr></tbody></table>

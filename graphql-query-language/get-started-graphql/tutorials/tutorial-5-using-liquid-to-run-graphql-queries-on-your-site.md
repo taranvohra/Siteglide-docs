@@ -96,6 +96,7 @@ You can output all of your results on the Page, using Liquid output syntax `{{ }
 {% graphql my_results = "get_items_with_musical_names" %}
 {% endraw %}
 
+
 {{my_results}}
 
 ```
@@ -163,6 +164,7 @@ The dot notation to reach the results is:
 {% graphql my_results = "get_items_with_musical_names" %}
 {% endraw %}
 
+
 {{my_results.records.results}}
 
 ```
@@ -180,6 +182,7 @@ Alternatively, you can always run your query in the GraphiQL Playground and work
   
 {% endfor %}
 {% endraw %}
+
 
 
 ```

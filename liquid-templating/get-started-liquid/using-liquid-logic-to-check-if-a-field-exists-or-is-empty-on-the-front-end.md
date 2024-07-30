@@ -18,6 +18,7 @@ Say I wanted to run some code on every Page that isn't the homepage, I'd write s
 {% endraw %}
 
 
+
 ```
 
 This would work fine if we were on the Homepage, as the variable's value would be true. However, on other Pages, it would not behave as expected, as is\_homepage would be undefined..

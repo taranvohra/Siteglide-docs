@@ -62,6 +62,7 @@ Note: "this" contains one of the Category IDs assigned to our Product, we then u
 {% endraw %}
 
 
+
 ```
 
 We've now created an array of all the individual "parameters" in our "full\_slug" field, next we'll loop over this and check none of the parameters equal "product-group"- if they do then we know that Category is being used for Product Grouping and store its ID. Add this code to the for loop above:
@@ -77,6 +78,7 @@ We've now created an array of all the individual "parameters" in our "full\_slug
   {% endfor %}
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -117,6 +119,7 @@ If you'd like to use a separate Layout to output your products, add this include
   {% endfor %}
 {% endfor %}
 {% endraw %}
+
 
 {%- include 'ecommerce/products'
     layout: 'custom_layout'
