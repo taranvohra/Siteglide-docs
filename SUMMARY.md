@@ -184,84 +184,70 @@
     * [🔹 Get Table Config](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/get-table-config.md)
     * [🔹 Live Update Params Encode](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/live-update-params-encode.md)
     * [🔹 Case From Order ID](module-sitebuilder/reference-sitebuilder/sitebuilder-liquid-functions/case-from-order-id.md)
+  
 ## Modules
 
-* [MenuBuilder](modules2/menubuilder.md)
-* [Blog](modules2/blog.md)
-* [Authors](modules2/authors.md)
-* [FAQ](modules2/faq.md)
-* [Testimonials](modules2/testimonials.md)
-* [Slider](modules2/slider.md)
+* [Core Modules](modules2/core-modules.md)
+  * [MenuBuilder](modules2/menubuilder.md)
+    * [🚀 Get Started: Menu Builder](module-menu-builder/get-started-menu-builder/README.md)
+  * [Menu Builder Introduction](module-menu-builder/get-started-menu-builder/introduction.md)
+  * [Blog & Authors](modules2/blog.md)
+    * [🚀 Get Started: Blog](module-blog-and-authors/get-started-blog/README.md)
+  * [💡 About the Blog & Authors Module](module-blog-and-authors/get-started-blog/about-the-blog-and-authors-module.md)
+* [🧙‍♂️ Go Further: Blog](module-blog-and-authors/go-further-blog/README.md)
+  * [🔹 Blog Filter by Date](module-blog-and-authors/go-further-blog/blog-filter-by-date/README.md)
+    * [🔹 Blog Search](module-blog-and-authors/go-further-blog/blog-filter-by-date/blog-keyword-search.md)
+  * [🔹 Blog Filter by Category](module-blog-and-authors/go-further-blog/blog-filter-by-category.md)
+  * [🔹 Blog Filter by Author](module-blog-and-authors/go-further-blog/blog-filter-by-author.md)
+* [👀 Reference: Blog](module-blog-and-authors/reference-blog/README.md)
+  * [🌳 Blog & Author Module Folder Structure](module-blog-and-authors/reference-blog/blog-module-folder-structure.md)
+  * [🔧 Tags for Blog & Authors](module-blog-and-authors/reference-blog/blog-and-authors-reference.md)
+  * [Events](modules2/events.md)
+    * * [🚀 Get Started: Events](module-events/get-started-events/README.md)
+  * [Events - Introduction](module-events/get-started-events/events-intro/README.md)
+    * [Events - Filter by Category](module-events/get-started-events/events-intro/event-filtering-category.md)
+  * [Events - Getting Started with Event Filtering & Searching](module-events/get-started-events/event-filtering.md)
+  * [Events - Filter By Host (Author)](module-events/get-started-events/event-filtering-author.md)
+  * [Events - Standard List View](module-events/get-started-events/event-list.md)
+* [🧙‍♂️ Go Further: Events](module-events/go-further-events/README.md)
+  * [Events - Datasourcing the Event Host](module-events/go-further-events/event-host-datasource/README.md)
+    * [Events - Filter by Event Dates](module-events/go-further-events/event-host-datasource/event-filtering-dates.md)
+  * [Events - Search](module-events/go-further-events/event-search.md)
+  * [Events - Map List View](module-events/go-further-events/event-list-map.md)
+* [👀 Reference: Events](module-events/reference-events/README.md)
+  * [🔧 Tags for Events](module-events/reference-events/tags-for-events.md)
+  * [FAQ](modules2/faq.md)
+    * [🚀 Get Started: FAQs](module-faqs/get-started-faqs/README.md)
+  * [FAQs Module Liquid Reference](module-faqs/get-started-faqs/reference.md)
+  * [Testimonials](modules2/testimonials.md)
+    * [🚀 Get Started: Testimonials](module-testimonials/get-started-testimonials/README.md)
+  * [Testimonials Module](module-testimonials/get-started-testimonials/introduction.md)
+  * [Slider](modules2/slider.md)
+    * [🚀 Get Started: Slider](module-slider/get-started-slider/README.md)
+  * [Slider Module Introduction](module-slider/get-started-slider/introduction.md)
+
+  * [Secure Zones](modules2/secure-zones.md)
+    * [🚀 Get Started: Secure Zones](module-secure-zones/get-started-secure-zones/README.md)
+  * [💡 About Secure Zones](module-secure-zones/get-started-secure-zones/introduction.md)
+  * [Secure Zones with Siteglide CLI](module-secure-zones/get-started-secure-zones/secure-zones-with-cli.md)
+* [🧙‍♂️ Go Further: Secure Zones](module-secure-zones/go-further-secure-zones/README.md)
+  * [Dynamically Assign a Secure Zone during Form Submission](module-secure-zones/go-further-secure-zones/dynamically-assign-a-secure-zone-after-form-submission.md)
+  * [Using the context.current\_user object](module-secure-zones/go-further-secure-zones/using-the-context-current-user-object.md)
+  * [Media Downloads](modules2/media-downloads.md)
+    * * [🚀 Get Started: Media Downloads](module-media-downloads/media-downloads-introduction.md))
+* [Community Modules](modules2/community-modules.md)
+  * [CRM Sync](module-crm-sync/get-started-crm-sync/README.md)
+  * [💡 About CRM Sync Module](module-crm-sync/get-started-crm-sync/about-crm-sync-module.md)
+  * [📋 Steps to Set Up CRM Sync on an Automation](module-crm-sync/get-started-crm-sync/steps-to-set-up-crm-sync-on-an-automation.md)
+* [👀 Reference: CRM Sync](module-crm-sync/reference-crm-sync/README.md)
+  * [🗓️ CRM Sync Changelog](module-crm-sync/reference-crm-sync/crm-sync-changelog.md)
+
 
 ## WebApps
 
 * [Tables](webapps2/tables.md)
 * [Items](webapps2/items.md)
 * [Layouts](webapps2/layouts.md)
-
-## eCommerce
-
-* [Products](ecommerce2/products.md)
-* [Orders](ecommerce2/orders.md)
-* [Shipping Options](ecommerce2/shipping-options.md)
-* [Discount Codes](ecommerce2/discount-codes.md)
-* [Subscriptions](ecommerce2/subscriptions.md)
-* [Tax Codes](ecommerce2/tax-codes.md)
-* [Payment Gateways](ecommerce2/payment-gateways.md)
-* [eCommerce Settings](ecommerce2/ecommerce-settings.md)
-
-## CRM
-
-* [Users](crm2/users.md)
-* [Companies](crm2/companies.md)
-* [Cases](crm2/cases.md)
-
-## Site Manager
-
-* [Code Editor](site-manager2/code-editor.md)
-* [Page Templates](site-manager2/templates.md)
-* [Headers & Footers](site-manager2/headers-and-footers.md)
-* [Code Snippets](site-manager2/code-snippets.md)
-* [System Pages](site-manager2/system-pages.md)
-* [System Emails](site-manager2/system-emails.md)
-* [Integrations](site-manager2/integrations.md)
-* [Data Management](site-manager2/data-management.md)
-
-## Reporting
-
-* [Building Reports](reporting2/building-reports.md)
-
-## Includes (Partials)
-
-* [🚀 Get Started: Includes](includes-partials/about-includes-partials/README.md)
-  * [🔧 Includes Troubleshooting](includes-partials/about-includes-partials/includes-troubleshooting.md)
-* [🧙‍♂️ Go Further: Includes](miscellaneous-siteglide-includes/README.md)
-  * [👀 constants\_json](miscellaneous-siteglide-includes/constants\_json.md)
-  * [👀 constants](miscellaneous-siteglide-includes/constants.md)
-  * [🌳 Includes File Structure](miscellaneous-siteglide-includes/includes-folder-structure.md)
-  * [💻 Includes with Siteglide CLI](miscellaneous-siteglide-includes/includes-with-siteglide-cli.md)
-* [👀 Reference: Includes](reference-includes/README.md)
-  * [🔧 Tags for Includes](reference-includes/includes-reference.md)
-
-## Automations (& Emails)
-
-
-
-## Company Information
-
-
-
-## Categories
-
-
-
-## Site Search
-
-* [🚀 Get Started: Site Search](site-search/get-started-site-search/README.md)
-  * [About Site Search](site-search/get-started-site-search/site-search.md)
-
-## WebApps (Databases)
-
 * [🚀 Get Started: WebApps](webapps-databases/get-started-webapps/README.md)
   * [WebApp Layouts](webapps-databases/get-started-webapps/layouts.md)
   * [WebApps Introduction](webapps-databases/get-started-webapps/introduction.md)
@@ -276,34 +262,9 @@
 * [👀 Reference: WebApps](webapps-databases/reference-webapps/README.md)
   * [Field Types](webapps-databases/reference-webapps/field-types.md)
 
-## CRM
+## eCommerce
 
-* [🚀 Get Started: CRM](crm/get-started-crm/README.md)
-  * [User Details](crm/get-started-crm/user-details.md)
-  * [User's Form Submissions (Cases)](crm/get-started-crm/users-form-submissions-cases.md)
-  * [How Users Edit their Email and Password Front End](crm/get-started-crm/how-users-edit-their-email-and-password-front-end.md)
-  * [User Secure Zones](crm/get-started-crm/user-secure-zones.md)
-* [🧙‍♂️ Go Further: CRM](crm/go-further-crm/README.md)
-  * [Editing a User's CRM record Front End with Custom Field Sets](crm/go-further-crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
-  * [Storing User's Favourite WebApp / Module Items](crm/go-further-crm/storing-users-favourite-webapp-module-items.md)
-
-## System Features
-
-* [🚀 Get Started: System Features](system-features/get-started-system-features/README.md)
-  * [Pagination on Liquid Tags](system-features/get-started-system-features/why-pagination.md)
-  * [Custom Pagination Layouts](system-features/get-started-system-features/pagination-layouts.md)
-  * [Timezones in the Siteglide Admin and on the front-end of your Site](system-features/get-started-system-features/how-do-i-control-timezones.md)
-  * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
-  * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
-  * [Translating Dates](system-features/get-started-system-features/translating-dates.md)
-
-## 🧞 Module: SiteBuilder
-
-
-
-## Module: eCommerce
-
-* [🚀 Get Started: eCommerce](module-ecommerce/get-started-ecommerce/README.md)
+* [🚀 Get Started](module-ecommerce/get-started-ecommerce/README.md)
   * [💡 About the eCommerce Module](module-ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
   * [📂 Cart, Checkout and Quotes](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/README.md)
     * [💡 About Cart, Checkout and Quotes](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
@@ -371,73 +332,61 @@
 * [Reference: eCommerce](module-ecommerce/reference-ecommerce/README.md)
   * [🌳 Basic Payment Forms Folder Structure](module-ecommerce/reference-ecommerce/basic-payment-forms-folder-structure.md)
   * [🌳 Cart and Checkout Folder Structure](module-ecommerce/reference-ecommerce/cart-and-checkout-folder-structure.md)
+* [Products](ecommerce2/products.md)
+* [Orders](ecommerce2/orders.md)
+* [Shipping Options](ecommerce2/shipping-options.md)
+* [Discount Codes](ecommerce2/discount-codes.md)
+* [Subscriptions](ecommerce2/subscriptions.md)
+* [Tax Codes](ecommerce2/tax-codes.md)
+* [Payment Gateways](ecommerce2/payment-gateways.md)
+* [eCommerce Settings](ecommerce2/ecommerce-settings.md)
 
-## Module: Blog & Authors
+## CRM
 
-* [🚀 Get Started: Blog](module-blog-and-authors/get-started-blog/README.md)
-  * [💡 About the Blog & Authors Module](module-blog-and-authors/get-started-blog/about-the-blog-and-authors-module.md)
-* [🧙‍♂️ Go Further: Blog](module-blog-and-authors/go-further-blog/README.md)
-  * [🔹 Blog Filter by Date](module-blog-and-authors/go-further-blog/blog-filter-by-date/README.md)
-    * [🔹 Blog Search](module-blog-and-authors/go-further-blog/blog-filter-by-date/blog-keyword-search.md)
-  * [🔹 Blog Filter by Category](module-blog-and-authors/go-further-blog/blog-filter-by-category.md)
-  * [🔹 Blog Filter by Author](module-blog-and-authors/go-further-blog/blog-filter-by-author.md)
-* [👀 Reference: Blog](module-blog-and-authors/reference-blog/README.md)
-  * [🌳 Blog & Author Module Folder Structure](module-blog-and-authors/reference-blog/blog-module-folder-structure.md)
-  * [🔧 Tags for Blog & Authors](module-blog-and-authors/reference-blog/blog-and-authors-reference.md)
+* [Users](crm2/users.md)
+* [Companies](crm2/companies.md)
+* [Cases](crm2/cases.md)
+* [🚀 Get Started: CRM](crm/get-started-crm/README.md)
+  * [User Details](crm/get-started-crm/user-details.md)
+  * [User's Form Submissions (Cases)](crm/get-started-crm/users-form-submissions-cases.md)
+  * [How Users Edit their Email and Password Front End](crm/get-started-crm/how-users-edit-their-email-and-password-front-end.md)
+  * [User Secure Zones](crm/get-started-crm/user-secure-zones.md)
+* [🧙‍♂️ Go Further: CRM](crm/go-further-crm/README.md)
+  * [Editing a User's CRM record Front End with Custom Field Sets](crm/go-further-crm/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+  * [Storing User's Favourite WebApp / Module Items](crm/go-further-crm/storing-users-favourite-webapp-module-items.md)
 
-## Module: Events
+## Site Manager
 
-* [🚀 Get Started: Events](module-events/get-started-events/README.md)
-  * [Events - Introduction](module-events/get-started-events/events-intro/README.md)
-    * [Events - Filter by Category](module-events/get-started-events/events-intro/event-filtering-category.md)
-  * [Events - Getting Started with Event Filtering & Searching](module-events/get-started-events/event-filtering.md)
-  * [Events - Filter By Host (Author)](module-events/get-started-events/event-filtering-author.md)
-  * [Events - Standard List View](module-events/get-started-events/event-list.md)
-* [🧙‍♂️ Go Further: Events](module-events/go-further-events/README.md)
-  * [Events - Datasourcing the Event Host](module-events/go-further-events/event-host-datasource/README.md)
-    * [Events - Filter by Event Dates](module-events/go-further-events/event-host-datasource/event-filtering-dates.md)
-  * [Events - Search](module-events/go-further-events/event-search.md)
-  * [Events - Map List View](module-events/go-further-events/event-list-map.md)
-* [👀 Reference: Events](module-events/reference-events/README.md)
-  * [🔧 Tags for Events](module-events/reference-events/tags-for-events.md)
+* [Code Editor](site-manager2/code-editor.md)
+* [Page Templates](site-manager2/templates.md)
+* [Headers & Footers](site-manager2/headers-and-footers.md)
+* [Code Snippets](site-manager2/code-snippets.md)
+  * * [🚀 Get Started: Includes](includes-partials/about-includes-partials/README.md)
+  * [🔧 Includes Troubleshooting](includes-partials/about-includes-partials/includes-troubleshooting.md)
+* [🧙‍♂️ Go Further: Includes](miscellaneous-siteglide-includes/README.md)
+  * [👀 constants\_json](miscellaneous-siteglide-includes/constants\_json.md)
+  * [👀 constants](miscellaneous-siteglide-includes/constants.md)
+  * [🌳 Includes File Structure](miscellaneous-siteglide-includes/includes-folder-structure.md)
+  * [💻 Includes with Siteglide CLI](miscellaneous-siteglide-includes/includes-with-siteglide-cli.md)
+* [👀 Reference: Includes](reference-includes/README.md)
+  * [🔧 Tags for Includes](reference-includes/includes-reference.md)
+* [System Pages](site-manager2/system-pages.md)
+* [System Emails](site-manager2/system-emails.md)
+* [Integrations](site-manager2/integrations.md)
+* [Data Management](site-manager2/data-management.md)
 
-## Module: Media Downloads
+## Reporting
 
-* [🚀 Get Started: Media Downloads](module-media-downloads/media-downloads-introduction.md)
+* [Building Reports](reporting2/building-reports.md)
 
-## Module: Menu Builder
+## Miscellaneous
 
-* [🚀 Get Started: Menu Builder](module-menu-builder/get-started-menu-builder/README.md)
-  * [Menu Builder Introduction](module-menu-builder/get-started-menu-builder/introduction.md)
-
-## Module: Secure Zones
-
-* [🚀 Get Started: Secure Zones](module-secure-zones/get-started-secure-zones/README.md)
-  * [💡 About Secure Zones](module-secure-zones/get-started-secure-zones/introduction.md)
-  * [Secure Zones with Siteglide CLI](module-secure-zones/get-started-secure-zones/secure-zones-with-cli.md)
-* [🧙‍♂️ Go Further: Secure Zones](module-secure-zones/go-further-secure-zones/README.md)
-  * [Dynamically Assign a Secure Zone during Form Submission](module-secure-zones/go-further-secure-zones/dynamically-assign-a-secure-zone-after-form-submission.md)
-  * [Using the context.current\_user object](module-secure-zones/go-further-secure-zones/using-the-context-current-user-object.md)
-
-## Module: Slider
-
-* [🚀 Get Started: Slider](module-slider/get-started-slider/README.md)
-  * [Slider Module Introduction](module-slider/get-started-slider/introduction.md)
-
-## Module: Testimonials
-
-* [🚀 Get Started: Testimonials](module-testimonials/get-started-testimonials/README.md)
-  * [Testimonials Module](module-testimonials/get-started-testimonials/introduction.md)
-
-## Module: FAQs
-
-* [🚀 Get Started: FAQs](module-faqs/get-started-faqs/README.md)
-  * [FAQs Module Liquid Reference](module-faqs/get-started-faqs/reference.md)
-
-## Module: CRM Sync
-
-* [🚀 Get Started: CRM Sync](module-crm-sync/get-started-crm-sync/README.md)
-  * [💡 About CRM Sync Module](module-crm-sync/get-started-crm-sync/about-crm-sync-module.md)
-  * [📋 Steps to Set Up CRM Sync on an Automation](module-crm-sync/get-started-crm-sync/steps-to-set-up-crm-sync-on-an-automation.md)
-* [👀 Reference: CRM Sync](module-crm-sync/reference-crm-sync/README.md)
-  * [🗓️ CRM Sync Changelog](module-crm-sync/reference-crm-sync/crm-sync-changelog.md)
+* [🚀 Get Started: System Features](system-features/get-started-system-features/README.md)
+  * [Pagination on Liquid Tags](system-features/get-started-system-features/why-pagination.md)
+  * [Custom Pagination Layouts](system-features/get-started-system-features/pagination-layouts.md)
+  * [Timezones in the Siteglide Admin and on the front-end of your Site](system-features/get-started-system-features/how-do-i-control-timezones.md)
+  * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
+  * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
+  * [Translating Dates](system-features/get-started-system-features/translating-dates.md)
+  * [Site Search](site-search/get-started-site-search/README.md)
+  * [About Site Search](site-search/get-started-site-search/site-search.md)
