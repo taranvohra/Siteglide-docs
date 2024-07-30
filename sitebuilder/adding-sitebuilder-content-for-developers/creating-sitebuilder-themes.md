@@ -1,4 +1,4 @@
-# 🔹 Creating SiteBuilder Themes
+# ℹ️ Creating SiteBuilder Themes
 
 ### Extending SiteBuilder <a href="#extending-sitebuilder" id="extending-sitebuilder"></a>
 

@@ -1,4 +1,4 @@
-# 🔹 Support for Marketplace Modules
+# ℹ️ Support for Marketplace Modules
 
 ### Who is this aimed at? <a href="#who-is-this-aimed-at" id="who-is-this-aimed-at"></a>
 

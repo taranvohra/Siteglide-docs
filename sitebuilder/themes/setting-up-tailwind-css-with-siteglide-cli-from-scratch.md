@@ -1,13 +1,10 @@
-# 📋 Steps to Set Up Tailwind CSS with Siteglide CLI on Any Site with SiteBuilder Installed
+# 📋 Set Up Tailwind CSS
 
 ## Before You Start <a href="#before-you-start" id="before-you-start"></a>
 
 {% hint style="info" %}
-This Article is very similar to [setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md](setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md "mention") but in this article, it doesn't matter how or when you created your Site. If you install the SiteBuilder Module with any version since 4.11.2, these steps will work.
+You must already have a Site with SiteBuilder installed
 {% endhint %}
-
-* Check [Choosing a Build Method](https://www.sitegurus.io/documentation/sitebuilder/libraries\_and\_frameworks/libraries\_using\_tailwind\_css\_choosing\_a\_build\_method) first to choose which option suits you best.
-* This Article assumes you have already created and chsoen a Siteglide Site to work on
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -19,55 +16,24 @@ Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you t
 
 Each time you start working on a new project, you will need to follow these steps, however, the setup time is worth it as it will give you a much smoother experience going forward.
 
-## Step 1) Install the SiteBuilder Module <a href="#quick-start" id="quick-start"></a>
-
-Check if you have already installed the SiteBuilder Module on your site. The version should be at least 4.11.2
-
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
-
-The SiteBuilder Module comes with the Free Flowbite Theme automatically.
-
-If the download appears to have crashed, try refreshing the page and trying again - it is a large package of files.
-
-## Step 2) Create a Flowbite Site Template
-
-{% hint style="info" %}
-If you have already created a Flowbite Page Template using SiteBuilder, you can skip this step.
-{% endhint %}
-
-In the Siteglide Admin, under modules in the menu, enter the SiteBuilder Module.\
-\
-Find Page Templates in the tabs:
-
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
-
-In the popup, choose:
-
-* A name e.g. "Main"
-* Default Page Template - optional
-* the Flowbite Theme (other SiteBuilder Themes will be available to download from Marketplace)
-* Optionally, add a Menu, but this is not neccesary for this tutorial
-
-This template starts with a default Tailwind CSS file which allows most layouts to work out of the box, but if you want to start changing things, you'll need to follow the rest of these setup steps!
-
-## Step 3) Check Your SiteBuilder Tailwind Settings are Set to CLI Build
+## Step 1) Check Your SiteBuilder Tailwind Settings are Set to CLI Build
 
 Older versions of SiteBuilder would have defaulted to use the JIT option as a default. Make sure it's set to CLI!
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/xQuorQvv/57b911fc-9d00-4f9f-81bc-8e70036dbf09.jpg?source=viewer&#x26;v=%22fcaa1cc100f3008ef92010120f6756c7%22" alt=""><figcaption></figcaption></figure>
 
-## Step 4) Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
+## Step 2) Set up Project Folder in a Code Editor and Connect it with your Siteglide Site Using Siteglide CLI
 
 You will need to install Siteglide CLI- if you haven't or are not sure if you have, head here first:
 
-{% content-ref url="../../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
-[getting-started-with-cli.md](../../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+{% content-ref url="../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
+[getting-started-with-cli.md](../../developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
 {% endcontent-ref %}
 
 Next you'll need to follow the steps to create a project folder for your new Site and setup Siteglide CLI for this new Site:
 
-{% content-ref url="../../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](../../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
+[steps-to-set-up-siteglide-cli-on-a-specific-site.md](../../developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
 {% endcontent-ref %}
 
 Once you've pulled the Codebase for the new Site down into your project folder, continue to the next step.
@@ -152,7 +118,7 @@ You may be given some warnings and information by npm at this stage. For the sak
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this command to build your Tailwind's CSS (we'll look at this in more detail in a minute):
 

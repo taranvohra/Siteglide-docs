@@ -1,4 +1,4 @@
-# 🔹 Sliders / Carousels
+# ℹ️ Sliders / Carousels
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

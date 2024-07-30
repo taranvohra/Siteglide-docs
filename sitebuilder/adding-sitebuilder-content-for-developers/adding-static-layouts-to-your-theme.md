@@ -1,4 +1,4 @@
-# 🔹 Adding Static Layouts to your Theme
+# ℹ️ Adding Static Layouts to your Theme
 
 This documentation is aimed at those following the [theme-creator](https://www.sitegurus.io/D:/git/Sitegurus%20Modules/SiteGurus-Documentation/modules/sitegurus\_documentation/public/views/pages/documentation/sitebuilder/adding\_sitebuilder\_content\_using\_modules/adding\_themes.liquid) route. It's not currently supported to include static layouts within the module-creator route.
 
@@ -49,7 +49,8 @@ The `static_config.liquid` file should be added inside the theme folder in order
 
 ```liquid
 {
-  "name": "Studio", {% raw %}
+  "name": "Studio", 
+{% raw %}
 {% comment %}String. Required. The name of your theme{% endcomment %}
   "id": "theme_<module_vanity_id>", {% comment %}String. Required. {% endcomment %}
   "categories": [

@@ -1,4 +1,4 @@
-# 🔹 Dynamic Layouts in SiteBuilder
+# ℹ️ Dynamic Layouts in SiteBuilder
 
 ## What is a Dynamic Layout in SiteBuilder? <a href="#what-is-a-module-in-sitebuilder" id="what-is-a-module-in-sitebuilder"></a>
 
@@ -6,7 +6,7 @@ In Siteglide Module and WebApp layouts are called dynamic, because their content
 
 Dynamic Layouts in SiteBuilder are categorised so that it's clear which Siteglide feature they provide a dynamic layout for: e.g.
 
-* Modules e.g. "Menu Module" and Sub-Modules e.g. "Headers".&#x20;
+* Modules e.g. "Menu Module" and Sub-Modules e.g. "Headers".
 * WebApp
 * Forms
 * Pagination

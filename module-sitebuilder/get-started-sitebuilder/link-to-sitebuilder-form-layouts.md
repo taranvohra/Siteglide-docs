@@ -1,4 +1,4 @@
-# 🔹 Static and Dynamic Form Layouts
+# ℹ️ Static and Dynamic Form Layouts
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

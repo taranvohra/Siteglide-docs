@@ -29,3 +29,9 @@ With Siteglide CLI we can keep track of the Code pushed to the Site from Admin a
 ### Developer Tools
 
 Other CLI commands like siteglide-cli graphql and `siteglide-cli logs` provide developers with advanced tools that would not be available with an FTP.
+
+## Ready to Start Using CLI?
+
+{% content-ref url="../quickstart.md" %}
+[quickstart.md](../quickstart.md)
+{% endcontent-ref %}

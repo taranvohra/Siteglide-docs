@@ -1,4 +1,4 @@
-# 💻 Adding SiteBuilder Content (For Developers)
+# Extending SiteBuilder
 
 ### Extending SiteBuilder <a href="#extending-sitebuilder" id="extending-sitebuilder"></a>
 

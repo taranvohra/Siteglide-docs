@@ -1,4 +1,4 @@
-# 🔹 Adding Dynamic Layouts to Themes & Modules
+# ℹ️ Adding Dynamic Layouts to Themes & Modules
 
 ### Configuring Dynamic Layouts <a href="#configuring-dynamic-layouts" id="configuring-dynamic-layouts"></a>
 
