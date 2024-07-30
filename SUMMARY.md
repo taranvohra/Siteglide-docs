@@ -91,8 +91,8 @@
 ## CMS
 
 * [Pages](cms/pages/README.md)
-  * [💡 About Pages](cms/pages/about-pages.md)
-  * [🔹 Page Settings](cms/pages/page-settings.md)
+  * [💡 About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
+  * [🔹 Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
   * [🧑‍🎨 Updating Page Content with the Studio Tab](cms/pages/updating-page-content-with-the-studio-tab.md)
   * [🔧 Rolling Back Page Changes](cms/pages/rolling-back-page-changes.md)
   * [💡 About Page Templates](cms/pages/about-page-templates.md)
