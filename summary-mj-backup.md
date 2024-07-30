@@ -24,20 +24,20 @@
 
 ## Developer Tools
 
-* [CLI](developer-tools/cli/README.md)
-  * [🚀 Quickstart](developer-tools/cli/quickstart.md)
-  * [ℹ️ About](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
-  * [📋 Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-  * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
-  * [💻 Reference](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
-* [🚀 Get Started: Liquid](liquid-templating/get-started-liquid/README.md)
-  * [💡 About Liquid](liquid-templating/get-started-liquid/about-liquid/README.md)
-    * [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid-templating/get-started-liquid/about-liquid/accessing-data-from-liquid-objects.md)
-  * [How do I learn more about Liquid?](liquid-templating/get-started-liquid/how-do-i-learn-more-about-liquid.md)
-  * [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid-templating/get-started-liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
-  * [Accessing Data from the Global Context Variable](liquid-templating/get-started-liquid/accessing-data-from-the-global-context-variable.md)
-  * [Truthiness - Using Liquid to determine if a field is empty or blank](liquid-templating/get-started-liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
-  * [Using Collections with WebApps and Modules](liquid-templating/get-started-liquid/using-collections-with-webapps-and-modules.md)
+* [CLI](developer-tools2/cli/README.md)
+  * [💡 About Siteglide CLI](developer-tools/cli/introduction.md)
+  * [Setup CLI](developer-tools/cli/get-started-with-cli/README.md)
+    * [📋 Steps to Install Siteglide CLI](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+    * [📋 Steps to Set Up Siteglide CLI on a Specific Site](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+  * [Go Further with CLI](developer-tools/cli/go-further-with-cli/README.md)
+    * [🔼 Siteglide CLI Migrate Command](developer-tools/cli/go-further-with-cli/siteglide-cli-migrate-command/README.md)
+      * [🔼 Siteglide CLI Migrate Command - Manual Forms](developer-tools/cli/go-further-with-cli/siteglide-cli-migrate-command/cli-migrate-command-manual-forms.md)
+      * [🔼 Siteglide CLI Migrate Command - Converting Forms](developer-tools/cli/go-further-with-cli/siteglide-cli-migrate-command/cli-migrate-command-converting-forms.md)
+  * [CLI Reference](developer-tools/cli/cli-reference/README.md)
+    * [👀 Siteglide CLI Reference & Commands](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
+    * [🔧 Troubleshooting Siteglide CLI](developer-tools/cli/cli-reference/troubleshooting-siteglide-cli.md)
+* [Page](developer-tools2/page.md)
+* [Liquid](developer-tools2/liquid.md)
 * [GraphQL](developer-tools2/graphql.md)
 * [Public API](developer-tools2/public-api.md)
 * [Marketplace](developer-tools/marketplace/README.md)
@@ -234,7 +234,14 @@
 
 ## Liquid Templating
 
-
+* [🚀 Get Started: Liquid](liquid-templating/get-started-liquid/README.md)
+  * [💡 About Liquid](liquid-templating/get-started-liquid/about-liquid/README.md)
+    * [Accessing Data in Liquid Variables - Tutorial 1 - Using Dot Notation](liquid-templating/get-started-liquid/about-liquid/accessing-data-from-liquid-objects.md)
+  * [How do I learn more about Liquid?](liquid-templating/get-started-liquid/how-do-i-learn-more-about-liquid.md)
+  * [Accessing Data in Liquid Variables - Tutorial 2 - Iterating over Arrays and Objects](liquid-templating/get-started-liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
+  * [Accessing Data from the Global Context Variable](liquid-templating/get-started-liquid/accessing-data-from-the-global-context-variable.md)
+  * [Truthiness - Using Liquid to determine if a field is empty or blank](liquid-templating/get-started-liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+  * [Using Collections with WebApps and Modules](liquid-templating/get-started-liquid/using-collections-with-webapps-and-modules.md)
 
 ## GraphQL Query Language
 
