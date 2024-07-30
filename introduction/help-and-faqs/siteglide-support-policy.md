@@ -1,6 +1,6 @@
-# 🔹 Siteglide Support Policy
+# ℹ️ Siteglide Support Policy
 
-Our Agency Success team here at Siteglide are dedicated to providing exceptional support and assistance to Digital Agencies and Siteglide Experts which ensures they are able to deliver the best solutions for their customers.&#x20;
+Our Agency Success team here at Siteglide are dedicated to providing exceptional support and assistance to Digital Agencies and Siteglide Experts which ensures they are able to deliver the best solutions for their customers.
 
 **Please note:** Website owners need to contact their Digital Agency for assistance, if you do not have one let us know and we'll recommend a reliable local agency or you can use our services team, [Sitegurus](https://www.sitegurus.io/).
 

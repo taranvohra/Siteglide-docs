@@ -1,4 +1,4 @@
-# 🔹 Siteglide Technology Stack
+# ℹ️ Siteglide Technology Stack
 
 ## Which Tools Should I Use to Work with Siteglide?
 

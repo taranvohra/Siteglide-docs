@@ -1,2 +1,0 @@
-# 💡 About CRM Sync Module
-
