@@ -75,6 +75,13 @@
 * [👀 Reference: Dev Marketplace](dev-marketplace/reference-dev-marketplace/README.md)
   * [🔧 Tags for Marketplace](dev-marketplace/reference-dev-marketplace/modules-reference.md)
   * [🌳 Modules Folder Structure Introduction](dev-marketplace/reference-dev-marketplace/modules-folder-structure-introduction.md)
+ * [System Features](system-features/get-started-system-features/README.md)
+  * [Pagination on Liquid Tags](system-features/get-started-system-features/why-pagination.md)
+  * [Custom Pagination Layouts](system-features/get-started-system-features/pagination-layouts.md)
+  * [Timezones in the Siteglide Admin and on the front-end of your Site](system-features/get-started-system-features/how-do-i-control-timezones.md)
+  * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
+  * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
+  * [Translating Dates](system-features/get-started-system-features/translating-dates.md)
 
 ## CMS
 
@@ -117,6 +124,19 @@
   * [🌳 Forms File Structure](cms/forms/forms-file-structure.md)
   * [👀 Forms Reference](cms/forms/forms-reference.md)
   * [🔧 Troubleshooting Captchas](cms/forms/troubleshooting-captchas.md)
+  * [Automations](cms/automations/README.md)
+  * [🚀 Get Started: Automations](cms/automations/get-started-automations.md)
+  * [🔹 Email Templates](cms/automations/email-templates.md)
+  * [🔹 A Transactional Email Example](cms/automations/a-transactional-email-example.md)
+  * [📋 Guides: Automations](cms/automations/guides-automations/README.md)
+    * [📋 Steps to Testing Emails on a Staging Site](cms/automations/guides-automations/steps-to-testing-emails-on-a-staging-site.md)
+    * [📋 Steps to Authenticating Sendgrid Emails on Live Sites](cms/automations/guides-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
+  * [🧙‍♂️ Go Further: Automations](cms/automations/go-further-automations.md)
+  * [🔹 A Custom Liquid Action Example](cms/automations/a-custom-liquid-action-example.md)
+  * [💻 Email Automations and Email Templates with Siteglide CLI](cms/automations/email-automations-and-email-templates-with-siteglide-cli.md)
+  * [🔹 An API Call Action Example](cms/automations/an-api-call-action-example.md)
+  * [🌳 Automations File Structure](cms/automations/automations-file-structure.md)
+  * [🔧 Automations Reference](cms/automations/automations-reference.md)
 * [Categories](cms/categories.md)
 * [Company Information](cms/company-information.md)
 * [URL Redirects](cms2/url-redirects.md)
@@ -255,13 +275,7 @@
 
 ## System Features
 
-* [🚀 Get Started: System Features](system-features/get-started-system-features/README.md)
-  * [Pagination on Liquid Tags](system-features/get-started-system-features/why-pagination.md)
-  * [Custom Pagination Layouts](system-features/get-started-system-features/pagination-layouts.md)
-  * [Timezones in the Siteglide Admin and on the front-end of your Site](system-features/get-started-system-features/how-do-i-control-timezones.md)
-  * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
-  * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
-  * [Translating Dates](system-features/get-started-system-features/translating-dates.md)
+
 
 ## Liquid Templating
 
