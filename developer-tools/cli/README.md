@@ -4,7 +4,7 @@ description: Siteglide Command Line Interface
 
 # CLI
 
-## Comfortable with code? Looking to build/develop with Siteglide?&#x20;
+### Comfortable with code? Looking to build/develop with Siteglide?&#x20;
 
 We recommend using our CLI (Command Line Interface).
 
