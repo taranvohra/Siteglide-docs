@@ -26,7 +26,7 @@
 
 * [CLI](developer-tools/cli/README.md)
   * [🚀 Quickstart](developer-tools/cli/quickstart.md)
-  * [ℹ️ Introduction](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+  * [ℹ️ About](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
   * [📋 Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
   * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
   * [💻 Reference](developer-tools/cli/cli-reference/siteglide-cli-reference.md)

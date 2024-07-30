@@ -2,7 +2,7 @@
 description: What is the CLI and Why use it?
 ---
 
-# Introduction
+# ℹ️ About
 
 Siteglide CLI (Command Line Interface) is a tool that enables you to work on your project from your local IDE or Code Editor; it has similar behaviours to FTP (File Transfer Protocol), in that you can sync up and pull down changes from your website.
 

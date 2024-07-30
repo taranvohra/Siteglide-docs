@@ -4,7 +4,9 @@ description: Get started with our CLI
 
 # 🚀 Quickstart
 
-We'd recommend reading the following article first:
+{% hint style="info" %}
+If unsure please read more about CLI first:
+{% endhint %}
 
 {% content-ref url="get-started-with-cli/getting-started-with-cli.md" %}
 [getting-started-with-cli.md](get-started-with-cli/getting-started-with-cli.md)
