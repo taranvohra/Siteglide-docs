@@ -8,8 +8,8 @@ description: Connect to a site via CLI
 You need CLI installed first, check out our Quickstart guide:
 {% endhint %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../quickstart.md" %}
+[quickstart.md](../quickstart.md)
 {% endcontent-ref %}
 
 Once you've installed the CLI you should be ready to learn how to set up a new project folder and connect it to a specific Siteglide Site. You'll need to follow these steps every time you want to use the CLI to work on a new site, so over time these will become very familiar.
