@@ -79,9 +79,9 @@
 
 * [Setup SiteBuilder](sitebuilder/themes/README.md)
   * [💡 About SiteBuilder](sitebuilder/themes/about-sitebuilder.md)
-  * [ℹ️ Themes & Templates](sitebuilder/themes/themes-and-templates.md)
   * [📋 Use a Flowbite Template](sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
   * [📋 Install SiteBuilder Module](sitebuilder/themes/install-sitebuilder-module.md)
+  * [ℹ️ Themes & Templates](sitebuilder/themes/themes-and-templates.md)
   * [📋 Create a Page Template](sitebuilder/themes/create-a-page-template.md)
   * [📋 Set Up Tailwind CSS](sitebuilder/themes/setting-up-tailwind-css-with-siteglide-cli-from-scratch.md)
   * [ℹ️ Tailwind CSS Themes - Choosing a Build Method](sitebuilder/themes/tailwind-css-themes-choosing-a-build-method.md)
