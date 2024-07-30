@@ -1,8 +1,8 @@
-# ℹ️ Using Tailwind CSS with SiteBuilder
+# 📋 Editing Tailwind CSS
 
-## Pre-Requisites
+## Before you Start
 
-We recommend you start with either of these two articles first, before starting this article:
+You will need to have already created a site with both Sitebuilder installed and a Flowbite/Tailwind Page template setup:
 
 {% content-ref url="setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md" %}
 [setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md](setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md)
