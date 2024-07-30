@@ -12,7 +12,7 @@ We recommend using our CLI (Command Line Interface).
 [quickstart.md](quickstart.md)
 {% endcontent-ref %}
 
-## Not used a CLI before?
+## New to Command Line Interfaces?
 
 You can go further, faster with CLI but it's not for everyone, we recommend reading the following articles before deciding:
 
