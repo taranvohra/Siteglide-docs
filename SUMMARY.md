@@ -57,11 +57,24 @@
     * [Tutorial 10 - Using Mutations to Edit a Record](graphql-query-language/get-started-graphql/tutorials/tutorial-10-using-mutations-to-edit-a-record.md)
     * [Tutorial 11 - Using Mutations to Delete an Item](graphql-query-language/get-started-graphql/tutorials/tutorial-11-using-mutations-to-delete-an-item.md)
     * [Tutorial 12 - Related Records and Datasources](graphql-query-language/get-started-graphql/tutorials/tutorial-12-related-records-and-datasources.md)
-* [Public API](developer-tools2/public-api.md)
-* [Marketplace](developer-tools/marketplace/README.md)
-  * [💡 About the Marketplace](developer-tools/marketplace/about-module-marketplace.md)
-  * [Module Marketplace](https://admin.siteglide.com/#/portal/community/marketplace)
-  * [🔹 Siteglide's Module Update Policy](developer-tools/marketplace/siteglides-module-update-policy.md)
+* [Public API](public-api/get-started-api/README.md)
+  * [API Example](public-api/get-started-api/api-example.md)
+  * [Public API Changelog](public-api/get-started-api/changelog.md)
+  * [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
+* [Marketplace](dev-marketplace/go-further-dev-marketplace/README.md)
+  * [Building for Marketplace](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/README.md)
+    * [💡 About Building Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/about-building-modules.md)
+    * [Module Setup](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/module-setup.md)
+    * [🔹 Site Template Modules - and How to Make Your Own](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/site-template-modules-and-how-to-make-your-own.md)
+    * [Create Folder Structure](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/create-folder-structure.md)
+    * [Updating Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/updating-existing-modules.md)
+    * [Submit Module for Approval](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/submit-module-for-approval.md)
+    * [Adding Payment to a Module](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/adding-payment-to-a-module.md)
+    * [Theme Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/theme-module-example.md)
+    * [Data & UI Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/data-and-ui-module-example.md)
+* [👀 Reference: Dev Marketplace](dev-marketplace/reference-dev-marketplace/README.md)
+  * [🔧 Tags for Marketplace](dev-marketplace/reference-dev-marketplace/modules-reference.md)
+  * [🌳 Modules Folder Structure Introduction](dev-marketplace/reference-dev-marketplace/modules-folder-structure-introduction.md)
 
 ## CMS
 
@@ -260,27 +273,9 @@
 
 ## Public API
 
-* [🚀 Get Started: API](public-api/get-started-api/README.md)
-  * [API Example](public-api/get-started-api/api-example.md)
-  * [Public API Changelog](public-api/get-started-api/changelog.md)
-* [Zapier - Formatting arrays correctly](public-api/formatting-arrays-correctly.md)
+
 
 ## Dev Marketplace
-
-* [🧙‍♂️ Go Further: Dev Marketplace](dev-marketplace/go-further-dev-marketplace/README.md)
-  * [Building for Marketplace](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/README.md)
-    * [💡 About Building Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/about-building-modules.md)
-    * [Module Setup](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/module-setup.md)
-    * [🔹 Site Template Modules - and How to Make Your Own](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/site-template-modules-and-how-to-make-your-own.md)
-    * [Create Folder Structure](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/create-folder-structure.md)
-    * [Updating Modules](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/updating-existing-modules.md)
-    * [Submit Module for Approval](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/submit-module-for-approval.md)
-    * [Adding Payment to a Module](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/adding-payment-to-a-module.md)
-    * [Theme Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/theme-module-example.md)
-    * [Data & UI Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/data-and-ui-module-example.md)
-* [👀 Reference: Dev Marketplace](dev-marketplace/reference-dev-marketplace/README.md)
-  * [🔧 Tags for Marketplace](dev-marketplace/reference-dev-marketplace/modules-reference.md)
-  * [🌳 Modules Folder Structure Introduction](dev-marketplace/reference-dev-marketplace/modules-folder-structure-introduction.md)
 
 ## 🧞 Module: SiteBuilder
 
