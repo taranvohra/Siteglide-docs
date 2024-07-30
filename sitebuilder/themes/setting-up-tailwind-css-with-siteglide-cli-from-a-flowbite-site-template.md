@@ -16,7 +16,7 @@ Step-by-step guide to setting up Tailwind via CLI
 
 In the Siteglide Portal, choose Marketplace in the menu and filter by the Category "Template":
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/Qwuope1j/7f6b5898-704b-4e4b-92ba-0dbd9fefabda.jpg?source=viewer&#x26;v=%22a6b821cc0fdc54f783aafe70d01b7fff%22" alt=""><figcaption></figcaption></figure>
 
 For this step-by-step article, we'll use the Flowbite eCommerce Site Template, but you can use any Template which uses Tailwind CSS.
 
