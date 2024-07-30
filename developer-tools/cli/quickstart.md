@@ -26,7 +26,7 @@ If you hit any issues please check our Troubleshooting guide:
 
 ## Step 2: Connect to a Site
 
-Use the site specific command to connect directly to your site:
+Setup a local folder and use the site specific command to connect directly to your site (you can find this on the site details page in Portal):
 
 siteglide-cli add --email me@mydomain.com --url https://my\_great\_site.com
 
@@ -40,7 +40,13 @@ Need some help? Read our full Site Setup Guide:
 
 ## Step 3: Start Building!
 
-You should now be ready to start work, you'll likely want to pull down the files from the server, check out of Reference article for a full list of useful Commands:
+You should now be ready to start work, you'll likely want to pull down the files from the server:
+
+```
+siteglide-cli pull <env>
+```
+
+Check out our Reference article for a full list of useful Commands:
 
 {% content-ref url="cli-reference/siteglide-cli-reference.md" %}
 [siteglide-cli-reference.md](cli-reference/siteglide-cli-reference.md)
