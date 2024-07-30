@@ -76,7 +76,7 @@ This liquid include tag will add the "Add to Cart" Button:
 
 \`
 
-This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../reference-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
+This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product. To add a custom Cart Add layout, see the [Folder Structure](../../../ecommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md) for the correct directory and use the `component_layout` parameter to reference it:
 
 \`
 
@@ -113,7 +113,7 @@ Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layou
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](broken-reference).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](broken-reference/).
 
 You will need to add the following information when creating your form:
 
@@ -127,7 +127,7 @@ You will need to add the following information when creating your form:
 Save your changes.
 
 {% hint style="info" %}
-If you are using the PayPal Payment Gateway, you will need to carry out an [additional step](../../go-further-ecommerce/introduction-3/checkout-forms/checkout-forms-with-paypal.md).
+If you are using the PayPal Payment Gateway, you will need to carry out an [additional step](../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/checkout-forms/checkout-forms-with-paypal.md).
 {% endhint %}
 
 ## Step 8) Create a new Page for your Checkout Form
@@ -160,7 +160,7 @@ If you create a custom layout, you should also create an empty.liquid file, rena
 
 ## Step 10) Test your eCommerce flow.
 
-Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../../go-further-ecommerce/introduction-1/test-cards.md)
+Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../../../ecommerce/introduction-1/test-cards.md)
 
 Users will be added to the CRM in Admin.
 
@@ -182,8 +182,8 @@ It is more difficult to give "Guest" Users access to their past orders, as you w
 
 You can add Secure Zones to this flow in the next article, allowing you to easily show the User their past orders when logged in:
 
-{% content-ref url="../../go-further-ecommerce/introduction-3/steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md" %}
-[steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md](../../go-further-ecommerce/introduction-3/steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md)
+{% content-ref url="../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md" %}
+[steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md](../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-add-secure-zones-and-user-orders-view-to-your-checkout-flow.md)
 {% endcontent-ref %}
 
 ### A note on Inventory

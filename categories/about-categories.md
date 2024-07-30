@@ -1,10 +1,10 @@
-# 🚀 Get Started: Categories
+# Categories
 
 Categories are an excellent method for sorting and grouping content on your Site in an intuitive, hierarchical way.
 
 Categories can be useful in a number of situations:
 
-* &#x20;segmenting blogs and services
+* segmenting blogs and services
 * displaying related services on a page due to those items being in the same category.
 * Categories are also used in eCommerce to form product catalogues and groups.
 * Building a menu of categories with items displayed underneath
@@ -22,5 +22,4 @@ Would have the following URL for the Hats detail page:
 /shop/clothing/unisex/hats
 ```
 
-You can optionally apply a Category Detail Layout to all of these enabled detail Pages.&#x20;
-
+You can optionally apply a Category Detail Layout to all of these enabled detail Pages.

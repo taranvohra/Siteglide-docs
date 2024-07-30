@@ -17,7 +17,7 @@
 {% hint style="info" %}
 For a basic fixed-amount set up, set the minimum payment value to exactly what you want users filling in the Form to Pay.\
 \
-For charitable donations and invoice payments, set the minimum payment to something minimal like $5 which avoids you making a loss on payment gateway fees for tiny transactions. Then look to [steps-to-allow-user-to-decide-amount-they-will-pay.md](../../go-further-ecommerce/introduction/steps-to-allow-user-to-decide-amount-they-will-pay.md "mention")
+For charitable donations and invoice payments, set the minimum payment to something minimal like $5 which avoids you making a loss on payment gateway fees for tiny transactions. Then look to [steps-to-allow-user-to-decide-amount-they-will-pay.md](../../../ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-allow-user-to-decide-amount-they-will-pay.md "mention")
 {% endhint %}
 
 ## Step 5) Optionally, Give Lifetime Access to a Secure Zone to Users Who Pay
@@ -52,8 +52,8 @@ Your Payment Form is now set up and ready to accept payments using the minimum p
 
 If your Payment Gateway is in 'Test Mode', then you may need to enter card details specific to the testing environment.
 
-{% content-ref url="../../go-further-ecommerce/introduction-1/test-cards.md" %}
-[test-cards.md](../../go-further-ecommerce/introduction-1/test-cards.md)
+{% content-ref url="../../../ecommerce/introduction-1/test-cards.md" %}
+[test-cards.md](../../../ecommerce/introduction-1/test-cards.md)
 {% endcontent-ref %}
 
 ## Step 9) Install a SiteBuilder Layout or Create your Own Layout
@@ -64,12 +64,12 @@ If you are using the Stripe Payment Gateway, this step is optional.
 
 For PayPal or Authorize.net, you will need to follow the relevant extra steps:
 
-{% content-ref url="../../go-further-ecommerce/introduction/authorize.net-basic-payment-forms.md" %}
-[authorize.net-basic-payment-forms.md](../../go-further-ecommerce/introduction/authorize.net-basic-payment-forms.md)
+{% content-ref url="../../../ecommerce/get-started-ecommerce/basic-payment-forms/authorize.net-basic-payment-forms.md" %}
+[authorize.net-basic-payment-forms.md](../../../ecommerce/get-started-ecommerce/basic-payment-forms/authorize.net-basic-payment-forms.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../go-further-ecommerce/introduction/paypal-basic-payment-forms.md" %}
-[paypal-basic-payment-forms.md](../../go-further-ecommerce/introduction/paypal-basic-payment-forms.md)
+{% content-ref url="../../../ecommerce/get-started-ecommerce/basic-payment-forms/paypal-basic-payment-forms.md" %}
+[paypal-basic-payment-forms.md](../../../ecommerce/get-started-ecommerce/basic-payment-forms/paypal-basic-payment-forms.md)
 {% endcontent-ref %}
 
 See SiteBuilder to install a plug and play, themed Form Layout for your payment Form:
@@ -90,6 +90,6 @@ See the Forms Reference for creating your own Layout:
 
 By default, the Form will charge the minimum amount, but for some use cases like donations or invoices, you may want to allow them to pay more:
 
-{% content-ref url="../../go-further-ecommerce/introduction/steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
-[steps-to-allow-user-to-decide-amount-they-will-pay.md](../../go-further-ecommerce/introduction/steps-to-allow-user-to-decide-amount-they-will-pay.md)
+{% content-ref url="../../../ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-allow-user-to-decide-amount-they-will-pay.md" %}
+[steps-to-allow-user-to-decide-amount-they-will-pay.md](../../../ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-allow-user-to-decide-amount-they-will-pay.md)
 {% endcontent-ref %}

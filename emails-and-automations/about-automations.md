@@ -1,4 +1,4 @@
-# 🚀 Getting Started: Automations & Emails
+# Automations
 
 #### What are Automations?
 
@@ -39,5 +39,3 @@ Note: From this view you can also edit or delete any existing Automations.
 ![Select a Trigger](https://d258lu9myqkejp.cloudfront.net/attachment\_images/9b9f0b6af72e75c44739eeaf48710178716f911a065df65d8930613d16a39ba6screenshot-2022-10-07-124810\_1rpm0c5.png)
 
 ![Select an Action](https://d258lu9myqkejp.cloudfront.net/attachment\_images/244a348b10909709dc374a1657d247850092b0b51bab5b69677106cb1ece721ascreenshot-2022-10-07-124814\_yw31s5.png)
-
-&#x20;

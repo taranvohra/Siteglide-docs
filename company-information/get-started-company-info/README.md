@@ -1,2 +1,2 @@
-# 🚀 Get Started: Company Info
+# Company Information
 

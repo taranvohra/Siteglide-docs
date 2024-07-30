@@ -1,2 +1,2 @@
-# 🚀 Get Started: System Features
+# System Features
 

@@ -7,10 +7,10 @@ The body of an Automation, whether it is an Email Notification, Custom Liquid Ac
 There are a few limitations of this Liquid rendering environment:
 
 * The `export`, `content_for` and `yield` tags are not supported in this environment, which means:
-  * The ordinary constants file we include on Pages to make variables like [Company Information](../../company-information/get-started-company-info/company-information.md) work, won't work here. See here instead: [constants\_json](../../miscellaneous-siteglide-includes/constants\_json.md)
+  * The ordinary constants file we include on Pages to make variables like [Company Information](../../company-information/get-started-company-info/company-information.md) work, won't work here. See here instead: [constants\_json](../../site-manager/code-snippets/constants\_json.md)
   * Many Module and WebApp layouts won't work in this context, as they rely on the export tag to pass data between sections of the layout.
 
-You can however use other [Liquid Includes / Partials](../../includes-partials/about-includes-partials/) like Content Sections and Code Snippets to organise code within an automation. This is especially useful for code which needs to run in multiple automations.&#x20;
+You can however use other [Liquid Includes / Partials](broken-reference) like Content Sections and Code Snippets to organise code within an automation. This is especially useful for code which needs to run in multiple automations.
 
 ## Outputting Form Fields, or Using Them in Logic
 
@@ -40,7 +40,7 @@ Note, only the database IDs of your fields can be used here, not their human-fri
 
 ## Outputting WebApp and Module Fields
 
-These code suggestions are intended for when you add an automation for WebApp or Module create or edit.&#x20;
+These code suggestions are intended for when you add an automation for WebApp or Module create or edit.
 
 ### On Item Create
 
@@ -88,4 +88,3 @@ Make a Comparison
 {% endif %}
 {% endraw %}
 ```
-
