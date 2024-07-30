@@ -14,7 +14,7 @@ We recommend using our CLI (Command Line Interface).
 
 ## New to Command Line Interfaces?
 
-You can go further, faster with CLI but it's not for everyone, we recommend reading the following articles before deciding:
+You can go further, faster with CLI but it's not for everyone, we recommend reading the following article before deciding:
 
 {% content-ref url="get-started-with-cli/getting-started-with-cli.md" %}
 [getting-started-with-cli.md](get-started-with-cli/getting-started-with-cli.md)
