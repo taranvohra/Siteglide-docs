@@ -1,4 +1,4 @@
-# Troubleshooting
+# ❔ Troubleshooting
 
 ## Not Sure if You've Set Up Siteglide CLI Already?
 
@@ -12,7 +12,7 @@ If you already have siteglide-cli installed globally, this will tell you which v
 
 You can find out which is the latest version here: [https://www.npmjs.com/package/@siteglide/siteglide-cli](https://www.npmjs.com/package/@siteglide/siteglide-cli)
 
-## Have You installed the Dependencies?
+## Have You Installed the Dependencies?
 
 The CLI is distributed via Node Package Manager (NPM) and so you will need NodeJS installed on your machine. The easiest way to get this is to visit [https://nodejs.org/](https://nodejs.org/) and download the LTS version as this has better support.
 
