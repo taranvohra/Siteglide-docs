@@ -72,9 +72,8 @@
     * [Adding Payment to a Module](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/adding-payment-to-a-module.md)
     * [Theme Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/theme-module-example.md)
     * [Data & UI Module Example](dev-marketplace/go-further-dev-marketplace/building-for-marketplace/data-and-ui-module-example.md)
-* [👀 Reference: Dev Marketplace](dev-marketplace/reference-dev-marketplace/README.md)
-  * [🔧 Tags for Marketplace](dev-marketplace/reference-dev-marketplace/modules-reference.md)
-  * [🌳 Modules Folder Structure Introduction](dev-marketplace/reference-dev-marketplace/modules-folder-structure-introduction.md)
+    * [🔧 Tags for Marketplace](developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-reference.md)
+    * [🌳 Modules Folder Structure Introduction](developer-tools/go-further-dev-marketplace/building-for-marketplace/modules-folder-structure-introduction.md)
 
 ## CMS
 
@@ -262,20 +261,6 @@
   * [Module/WebApp Caching](system-features/get-started-system-features/module-webapp-caching.md)
   * [Getting Started with Liquid Caching - to Reduce Server Response time and Improve Performance](system-features/get-started-system-features/getting-started-with-liquid-caching-to-reduce-server-response-time-and-improve-performance.md)
   * [Translating Dates](system-features/get-started-system-features/translating-dates.md)
-
-## Liquid Templating
-
-
-
-## GraphQL Query Language
-
-
-
-## Public API
-
-
-
-## Dev Marketplace
 
 ## 🧞 Module: SiteBuilder
 

@@ -19,7 +19,7 @@ You're now ready to add some simple code.
 It is probably simplest to choose Custom Action as the Automation type, or you could add the code on Step 3 to an existing email or API automation.
 
 {% hint style="info" %}
-See the [Broken link](broken-reference "mention") and [about-automations.md](../../emails-and-automations/about-automations.md "mention") sections.
+See the [broken-reference](broken-reference/ "mention") and [about-automations.md](../../emails-and-automations/about-automations.md "mention") sections.
 {% endhint %}
 
 ## Step 3) Include a Line of Liquid to Sync the Sumitted User Data to your CRM <a href="#the-liquid-include" id="the-liquid-include"></a>
@@ -32,6 +32,7 @@ The module provides you with Liquid code which, when run, carries out a range of
 {% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add' %}
 {% endraw %}
+
 
 ```
 
@@ -91,6 +92,7 @@ You can use the `reserved_fields` parameter to map Siteglide data into those res
 {% endparse_json %}
 {% include "modules/module_132/v1/crm_sync", marketing_provider: "sendgrid", action: 'add', reserved_fields: reserved_fields %}
 {% endraw %}
+
 
 ```
 

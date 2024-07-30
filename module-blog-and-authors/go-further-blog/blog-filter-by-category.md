@@ -58,6 +58,7 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
 {% endraw %}
 
 
+
     </ul>
   </div>
 </div>

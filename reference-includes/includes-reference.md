@@ -26,6 +26,7 @@ To include one of Site's common include types, use these below and pass in the I
 {% include 'code_snippet', id: '1', name: 'optional to help code readability' %}
 {% endraw %}
 
+
 ```
 
 ### Inheritance

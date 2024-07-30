@@ -1,2 +1,2 @@
-# 🧙‍♂️ Go Further: Marketplace
+# Marketplace
 

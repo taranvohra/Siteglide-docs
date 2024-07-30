@@ -100,6 +100,7 @@ If your Products have multiple Attributes, or you want to write code which can d
 {% endraw %}
 
 
+
 ```
 
 ## Attribute Layout Development
@@ -118,6 +119,7 @@ You can loop over this array with the following liquid code, (where the example 
   {{option.name}} ({{this.price.currency_symbol}}{{option.price}})
 {% endfor %}
 {% endraw %}
+
 
 
 ```

@@ -79,6 +79,7 @@ To configure the module and help SiteBuilder understand at a high level what con
     "extends_themes": ["theme_01"] {% comment %}Array. Required (can be empty array). This setting allows your module to add layouts to themes created by others in the marketplace. You can find theme IDs in the documentation for themes found in the marketplace. Normally these should be of the format "theme_" followed by the vanity ID of the theme's Siteglide module. At the time of writing, there are two themes built in to SiteBuilder: "theme_01" is Flowbite and "theme_02" is Bootstrap. It is possible for the theme creator to deny all modules the ability to extend their theme or to allow only certain modules to extend it. If you're not sure, ask the module creator for permission. Sitegurus generally welcomes module creators to extend any theme we maintain.{% endcomment %}
 {% endraw %}
 
+
   }
 }
 ```
@@ -99,6 +100,7 @@ Here is an example of the Blog module's configuration which does not have sub-mo
     "allow_default_settings": true,{% comment %}Boolean. Required. Setting to true means that when a layout of this module is added through PageBuilder, the normal module settings like "per_page" will be offered to the module user in the settings side-panel. If any of these settings don't make sense, you should set this to false and manually add any settings which are needed instead, see the next example below. {% endcomment %}
     "siteglide_module_id": "3" {% comment %}String or null (integer as string). Required. This will for a default sub_module almost certainly be your <module_vanity_id>. It controls the "id" parameter when either layouts or PageBuilder outputs a Liquid tag for one of your layouts.{% endcomment %}
 {% endraw %}
+
 
   }
 }

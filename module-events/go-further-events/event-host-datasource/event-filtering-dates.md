@@ -52,6 +52,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% assign now = "now" | date: "%s" %}
 {% endraw %}
 
+
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
 
 ```
@@ -64,6 +65,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% raw %}
 {% assign now = "now" | date: "%s" %}
 {% endraw %}
+
 
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 
@@ -85,6 +87,7 @@ If you just want to filter the List so it either shows Events that have already 
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 {% endif %}
 {% endraw %}
+
 
 
 ```
@@ -160,6 +163,7 @@ The following examples will take you through the different options:
   {% endfor %}
 {% endraw %}
 
+
 </ul>
 
 ```
@@ -195,6 +199,7 @@ This Layout does not just organise the Months available under the relevant Year 
     </ul>
   {% endfor %}
 {% endraw %}
+
 
 </ul>
 
@@ -270,6 +275,7 @@ Add your custom error message here- it can be renamed by changing its name in th
 {% endcomment %}
 {% endraw %}
 
+
 <script>
   function s_events_date_search_error() {
     alert("Please enter valid dates before searching.");
@@ -299,6 +305,7 @@ _**events\_archive\_years**_
 {% endraw %}
 
 
+
 ```
 
 _**events\_archive\_months**_
@@ -310,6 +317,7 @@ _**events\_archive\_months**_
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -350,6 +358,7 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 
 {% endif %}
 {% endraw %}
+
 
 
 ```

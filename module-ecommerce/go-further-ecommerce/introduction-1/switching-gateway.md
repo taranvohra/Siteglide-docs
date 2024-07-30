@@ -26,6 +26,7 @@ In any Page, output your form and select the custom layout with the layout param
 {%- include 'ecommerce/checkout', form_id: '1', layout: 'my-custom-layout' -%}
 {% endraw %}
 
+
 ```
 
 For Basic Payment forms:

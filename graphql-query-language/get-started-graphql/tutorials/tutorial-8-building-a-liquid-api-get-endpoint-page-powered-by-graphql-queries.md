@@ -139,7 +139,7 @@ Note- I'll be using - before and after my closing Liquid tags to remove unnecess
 In the example, we'll pass inputs into the endpoint Page using query parameters on the end of the URL, for example, I already have the URL for accessing the endpoint Page: `/api/webapp-1.json`
 
 {% hint style="warning" %}
-#### Remember
+**Remember**
 
 The ".json" extension should be replaced with the "format" you chose in step 2.
 {% endhint %}
@@ -155,6 +155,7 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 {% endraw %}
 
 
+
 ```
 
 ### Step 5) Use Liquid to feed variables into the Query (and make sure they are the correct type)
@@ -166,6 +167,7 @@ Accessing these values via the above method tends to set them as String values i
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
 {% endraw %}
+
 
 
 ```
@@ -214,6 +216,7 @@ If you decided in step 2 that you didn't want to change the Page format, you sho
   {%- endfor -%}
 {% endraw %}
 
+
 </div>
 
 ```
@@ -251,6 +254,7 @@ Name,ID,Description
 {{item.properties.webapp_field_1_1}}
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -338,6 +342,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
 {% endraw %}
 
 
+
 ```
 
 * To check that the request comes from an authorized Page/ Site, you can check this with context:
@@ -348,6 +353,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
+
 
 
 ```
