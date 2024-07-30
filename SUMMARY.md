@@ -3,9 +3,10 @@
 ## Introduction
 
 * [👋 Welcome](README.md)
-* [🚀 Get Started Tutorials](get-started-tutorials.md)
-* [🔹 Siteglide Technology Stack](introduction/siteglide-technology-stack.md)
-* [🔹 Siteglide Support Policy](siteglide-support-policy.md)
+* [🚀 Tutorials](get-started-tutorials.md)
+* [❔ Help & FAQs](introduction/help-and-faqs/README.md)
+  * [🔹 Siteglide Support Policy](introduction/help-and-faqs/siteglide-support-policy.md)
+  * [🔹 Siteglide Technology Stack](introduction/help-and-faqs/siteglide-technology-stack.md)
 
 ## Portal
 
@@ -24,7 +25,7 @@
 ## Developer Tools
 
 * [CLI](developer-tools/cli/README.md)
-  * [Quickstart](developer-tools/cli/quickstart.md)
+  * [🚀 Quickstart](developer-tools/cli/quickstart.md)
   * [Introduction](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
   * [Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
   * [Troubleshooting](developer-tools/cli/troubleshooting.md)

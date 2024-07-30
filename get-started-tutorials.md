@@ -1,4 +1,4 @@
-# 🚀 Get Started Tutorials
+# 🚀 Tutorials
 
 We're constantly putting together Tutorials and Guides to help you get started with each area of Siteglide.
 
@@ -12,20 +12,12 @@ We recommend following these guides in order:
 
 ### Using the Command Line Interface
 
-{% content-ref url="developer-tools/cli/get-started-with-cli/getting-started-with-cli.md" %}
-[getting-started-with-cli.md](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+{% content-ref url="developer-tools/cli/quickstart.md" %}
+[quickstart.md](developer-tools/cli/quickstart.md)
 {% endcontent-ref %}
 
 {% content-ref url="developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
 [steps-to-set-up-siteglide-cli-on-a-specific-site.md](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Navigating the CMS
