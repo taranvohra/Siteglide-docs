@@ -5,8 +5,8 @@
 * [👋 Welcome](README.md)
 * [🚀 Tutorials](get-started-tutorials.md)
 * [❔ Help & FAQs](introduction/help-and-faqs/README.md)
-  * [🔹 Siteglide Support Policy](introduction/help-and-faqs/siteglide-support-policy.md)
-  * [🔹 Siteglide Technology Stack](introduction/help-and-faqs/siteglide-technology-stack.md)
+  * [ℹ️ Siteglide Support Policy](introduction/help-and-faqs/siteglide-support-policy.md)
+  * [ℹ️ Siteglide Technology Stack](introduction/help-and-faqs/siteglide-technology-stack.md)
 
 ## Portal
 
@@ -26,10 +26,10 @@
 
 * [CLI](developer-tools/cli/README.md)
   * [🚀 Quickstart](developer-tools/cli/quickstart.md)
-  * [Introduction](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
-  * [Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
-  * [Troubleshooting](developer-tools/cli/troubleshooting.md)
-  * [Reference](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
+  * [ℹ️ Introduction](developer-tools/cli/get-started-with-cli/getting-started-with-cli.md)
+  * [📋 Site Setup](developer-tools/cli/get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+  * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
+  * [💻 Reference](developer-tools/cli/cli-reference/siteglide-cli-reference.md)
 * [Liquid](developer-tools/liquid/README.md)
   * [🚀 Get Started: Liquid](developer-tools/liquid/get-started-liquid.md)
   * [💡 About Liquid](developer-tools/liquid/about-liquid/README.md)
