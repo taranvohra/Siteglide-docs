@@ -8,20 +8,8 @@ Want to find out more about SiteBuilder and when you should use it?
 [about-sitebuilder.md](about-sitebuilder.md)
 {% endcontent-ref %}
 
-## Step 1: Decide Which Route <a href="#creating-a-template" id="creating-a-template"></a>
+## Choose your Path <a href="#creating-a-template" id="creating-a-template"></a>
 
-Do you have a site already or do you want to start from something off-the-shelf?
+You might have an existing site you want to use SiteBuilder with, you might be looking to build a blank site or build from a Template. Select your path:
 
-{% content-ref url="../../portal/sites/steps-to-create-your-first-site.md" %}
-[steps-to-create-your-first-site.md](../../portal/sites/steps-to-create-your-first-site.md)
-{% endcontent-ref %}
-
-Create a Site from&#x20;
-
-### Installing Static Layouts <a href="#installing-static-layouts" id="installing-static-layouts"></a>
-
-Static Layouts are sections of pre-built HTML code that you can add to your pages in the Siteglide Admin. They do not generally contain any Liquid templating, so won't pull in any dynamic content from the server or CMS. Instead, you can use Siteglide's Studio tab to edit their content directly in the page.
-
-### Modules and Dynamic Layouts <a href="#modules-and-dynamic-layouts" id="modules-and-dynamic-layouts"></a>
-
-Once you've installed a Page Template, check out the [Dynamic Module Layouts](https://www.sitegurus.io/documentation/sitebuilder/modules\_and\_more/dynamic\_module\_layouts) to see what kind of dynamic content is available for this Theme.
+<table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Option 1:</strong> Create Site from Template (Recommended)</td><td></td><td></td><td><a href="setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md">setting-up-tailwind-css-with-siteglide-cli-from-a-flowbite-site-template.md</a></td></tr><tr><td><strong>Option 2:</strong> Existing/Blank Site</td><td></td><td></td><td><a href="install-sitebuilder-module.md">install-sitebuilder-module.md</a></td></tr></tbody></table>
