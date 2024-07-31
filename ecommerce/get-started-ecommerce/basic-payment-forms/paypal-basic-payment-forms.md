@@ -2,7 +2,7 @@
 
 #### Prerequisites
 
-* You have set up a PayPal Payment Gateway, with the required authentication: [Payments Gateways](../../introduction-1/)
+* You have set up a PayPal Payment Gateway, with the required authentication: [Payments Gateways](../../payment-gateways/)
 
 ## Introduction
 

@@ -46,8 +46,8 @@ The steps followed in the video can be found [here](https://docs.npmjs.com/resol
 
 Read our in-depth guide:
 
-{% content-ref url="get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md" %}
-[steps-to-set-up-siteglide-cli-on-a-specific-site.md](get-started-with-cli/steps-to-set-up-siteglide-cli-on-a-specific-site.md)
+{% content-ref url="site-setup.md" %}
+[site-setup.md](site-setup.md)
 {% endcontent-ref %}
 
 ## Debug Mode
@@ -81,4 +81,3 @@ $env:DEBUG='true'; siteglide-cli sync production
 {% endtabs %}
 
 Note, for macOS and Linux, debugging will be turned on for that one command that you prefix. For Windows, debugging will be turned on for as long as Command Prompt or Powershell is open. Closing Command Prompt or Powershell and re-opening it will turn debug mode off.
-

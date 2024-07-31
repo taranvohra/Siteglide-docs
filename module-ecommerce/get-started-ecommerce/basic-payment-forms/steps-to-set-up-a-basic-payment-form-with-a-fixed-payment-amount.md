@@ -52,8 +52,8 @@ Your Payment Form is now set up and ready to accept payments using the minimum p
 
 If your Payment Gateway is in 'Test Mode', then you may need to enter card details specific to the testing environment.
 
-{% content-ref url="../../../ecommerce/introduction-1/test-cards.md" %}
-[test-cards.md](../../../ecommerce/introduction-1/test-cards.md)
+{% content-ref url="../../../ecommerce/payment-gateways/test-cards.md" %}
+[test-cards.md](../../../ecommerce/payment-gateways/test-cards.md)
 {% endcontent-ref %}
 
 ## Step 9) Install a SiteBuilder Layout or Create your Own Layout

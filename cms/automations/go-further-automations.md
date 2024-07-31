@@ -1,2 +1,2 @@
-# 🧙‍♂️ Go Further: Automations
+# 🧙‍♂️ Advanced: Automations
 

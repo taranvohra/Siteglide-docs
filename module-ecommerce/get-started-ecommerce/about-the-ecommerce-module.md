@@ -8,8 +8,8 @@ description: 'We''ve split the eCommerce Module into the following sections:'
 
 All eCommerce features require you to first set up at least one Payment Gateway.
 
-{% content-ref url="../../ecommerce/introduction-1/" %}
-[introduction-1](../../ecommerce/introduction-1/)
+{% content-ref url="../../ecommerce/payment-gateways/" %}
+[payment-gateways](../../ecommerce/payment-gateways/)
 {% endcontent-ref %}
 
 ## Basic Payment Forms, Checkout and Subscriptions
