@@ -1,12 +1,22 @@
+---
+description: Working with Tailwind via our CLI
+---
+
 # 📋 Set Up Tailwind CSS
 
 ## Before You Start <a href="#before-you-start" id="before-you-start"></a>
 
-{% hint style="info" %}
-You must already have a Site with SiteBuilder installed
+{% hint style="warning" %}
+You must already have a Site with SiteBuilder installed and have our CLI installed
 {% endhint %}
 
-### Introduction <a href="#introduction" id="introduction"></a>
+## Introduction <a href="#introduction" id="introduction"></a>
+
+If you don't have the Siteglide CLI installed or need help with the CLI follow our Quickstart guide:
+
+{% content-ref url="../../developer-tools/cli/quickstart.md" %}
+[quickstart.md](../../developer-tools/cli/quickstart.md)
+{% endcontent-ref %}
 
 Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you to:
 
