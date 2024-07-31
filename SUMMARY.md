@@ -78,7 +78,7 @@
 
 ## SiteBuilder
 
-* [Setup SiteBuilder](sitebuilder/setup-sitebuilder/README.md)
+* [Quickstart](sitebuilder/setup-sitebuilder/README.md)
   * [💡 About SiteBuilder](sitebuilder/setup-sitebuilder/about-sitebuilder.md)
   * [📋 Create Site from Flowbite Template](sitebuilder/setup-sitebuilder/create-site-from-flowbite-template.md)
   * [📋 Install SiteBuilder Module](sitebuilder/setup-sitebuilder/install-sitebuilder-module.md)
