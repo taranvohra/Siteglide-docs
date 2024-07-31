@@ -16,7 +16,9 @@ If unsure please read more about CLI first:
 
 The Siteglide CLI can be installed from NPM using:
 
+```
 npm i -g @siteglide/siteglide-cli
+```
 
 {% hint style="info" %}
 If you hit any issues please check our Troubleshooting guide:
@@ -30,7 +32,9 @@ If you hit any issues please check our Troubleshooting guide:
 
 Setup a local folder and use the site specific command to connect directly to your site (you can find this on the site details page in Portal):
 
-siteglide-cli add --email me@mydomain.com --url https://my\_great\_site.com
+```
+siteglide-cli add --email me@mydomain.com --url https://my_great_site.com
+```
 
 {% hint style="info" %}
 Need some help? Read our full Site Setup Guide:

@@ -1,12 +1,13 @@
 # Table of contents
 
-## Introduction
-
 * [👋 Welcome](README.md)
-* [🚀 Tutorials](introduction/tutorials.md)
-* [❔ Help & FAQs](introduction/help-and-faqs/README.md)
-  * [ℹ️ Siteglide Support Policy](introduction/help-and-faqs/siteglide-support-policy.md)
-  * [ℹ️ Siteglide Technology Stack](introduction/help-and-faqs/siteglide-technology-stack.md)
+
+## Get Started
+
+* [🚀 Tutorials](get-started/tutorials.md)
+* [❔ Support & FAQs](get-started/support-and-faqs/README.md)
+  * [ℹ️ Siteglide Support Policy](get-started/support-and-faqs/siteglide-support-policy.md)
+  * [ℹ️ Siteglide Technology Stack](get-started/support-and-faqs/siteglide-technology-stack.md)
 
 ## Portal
 
