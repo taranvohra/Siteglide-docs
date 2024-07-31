@@ -30,7 +30,7 @@ If you hit any issues please check our Troubleshooting guide:
 
 ## Step 2: Connect to a Site
 
-Setup a local folder and use the site specific command to connect directly to your site (you can find this on the site details page in Portal):
+Setup a local folder and use the site specific command to connect directly to your site (you can find this on the site details page in Portal - [more info](https://docs.siteglide.com/en/developer-tools/cli/site-setup#step-5-copy-the-env-command-with-pre-filled-variables)):
 
 ```
 siteglide-cli add --email me@mydomain.com --url https://my_great_site.com
