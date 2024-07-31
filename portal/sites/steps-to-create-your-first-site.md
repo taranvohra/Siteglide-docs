@@ -1,10 +1,10 @@
-# 📋 Steps to Create your First Site
+# 📋 Create a Site
 
 This guide will walk you through the process of creating a new site using Siteglide's admin area.
 
 ## Step 1: Access the Dashboard
 
-Once you're logged into the portal, you'll find yourself on the dashboard.&#x20;
+Once you're logged into the portal, you'll find yourself on the dashboard.
 
 If you don't see a 'Create a Website' button (as per 2nd screenshot) please contact us via Live Chat to prove you're human and we'll get you setup!
 
@@ -50,3 +50,14 @@ And that's it! You've successfully created a new site, you will need to wait for
 
 <figure><img src="https://p186.p2.n0.cdn.zight.com/items/v1u9wLZ2/3bf5f58f-56e5-4b32-b427-36fc35cd9bfc.jpg?source=viewer&#x26;v=%22ddbfd9bfe9035551bb2c140d6b3d916c%22" alt=""><figcaption><p>Once you get the email confirming it's ready you will need to refresh this page or click the link from the email</p></figcaption></figure>
 
+## Next Steps:
+
+Take a look at our Admin Overview for how to start managing and editing the site:
+
+ADMIN LINK
+
+If you're a developer you'll likely want to be able to easily edit the Tailwind CSS via our CLI:
+
+{% content-ref url="../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md" %}
+[set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)
+{% endcontent-ref %}
