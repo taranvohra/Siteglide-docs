@@ -28,6 +28,6 @@ Marketplace Templates help you get started quickly without having to build a sit
 Why not test it out by creating a site from a template?
 {% endhint %}
 
-{% content-ref url="create-site-from-flowbite-template.md" %}
-[create-site-from-flowbite-template.md](create-site-from-flowbite-template.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

@@ -4,8 +4,8 @@
 
 You will need to have already created a site with both Sitebuilder installed and a Flowbite/Tailwind Page template setup:
 
-{% content-ref url="create-site-from-flowbite-template.md" %}
-[create-site-from-flowbite-template.md](create-site-from-flowbite-template.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="set-up-tailwind-css.md" %}

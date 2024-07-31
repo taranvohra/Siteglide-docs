@@ -80,7 +80,6 @@
 
 * [🚀 Quickstart: SiteBuilder](sitebuilder/setup-sitebuilder/README.md)
   * [💡 About SiteBuilder](sitebuilder/setup-sitebuilder/about-sitebuilder.md)
-  * [📋 Create Site from Flowbite Template](sitebuilder/setup-sitebuilder/create-site-from-flowbite-template.md)
   * [📋 Install SiteBuilder Module](sitebuilder/setup-sitebuilder/install-sitebuilder-module.md)
   * [📋 Create a Page Template](sitebuilder/setup-sitebuilder/create-a-page-template.md)
   * [📋 Set Up Tailwind CSS](sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)

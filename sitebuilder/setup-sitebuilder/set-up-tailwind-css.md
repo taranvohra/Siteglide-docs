@@ -26,6 +26,12 @@ Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you t
 
 Each time you start working on a new project, you will need to follow these steps, however, the setup time is worth it as it will give you a much smoother experience going forward.
 
+## Step by Step Guide
+
+{% embed url="https://youtu.be/JskMIrDeQ7c?feature=shared" %}
+Step-by-step guide to setting up Tailwind via CLI
+{% endembed %}
+
 ## Step 1) Check Your SiteBuilder Tailwind Settings are Set to CLI Build
 
 Older versions of SiteBuilder would have defaulted to use the JIT option as a default. Make sure it's set to CLI!

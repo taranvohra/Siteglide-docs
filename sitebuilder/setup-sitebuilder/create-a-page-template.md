@@ -1,8 +1,14 @@
 # 📋 Create a Page Template
 
-In the Page Templates tab, create a new Page Template to choose a Theme according to your preferences.
+{% hint style="info" %}
+You can skip this if your site already has a Page Template (it will do if you used a Template) and you don't need another
+{% endhint %}
+
+A Page Template is an essential component, any of our Marketplace Templates will come with at least one already but you can create them here:
 
 <figure><img src="https://p186.p2.n0.cdn.zight.com/items/5zuKxvrB/2d88d7d6-5183-48f4-8cc1-18578da8c94d.jpg?source=viewer&#x26;v=%22f4f2c84cd775280d4a64e3d18ba1b7c7%22" alt=""><figcaption></figcaption></figure>
+
+SiteBuilder simply leverages the Page Templates functionality in Siteglide but builds it for you with useful options to save you time.
 
 In the popup, choose:
 
