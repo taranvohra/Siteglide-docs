@@ -8,7 +8,7 @@ Want to find out more about SiteBuilder and when you should use it?
 [about-sitebuilder.md](about-sitebuilder.md)
 {% endcontent-ref %}
 
-## Choose your Path <a href="#creating-a-template" id="creating-a-template"></a>
+## Ready? Choose your Path <a href="#creating-a-template" id="creating-a-template"></a>
 
 You might have an existing site you want to use SiteBuilder with, you might be looking to build a blank site or build from a Template. Select your path:
 
