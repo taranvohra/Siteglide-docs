@@ -1,8 +1,10 @@
-# ℹ️ Themes & Templates
+# ℹ️ Marketplace Themes & Templates
 
 SiteBuilder Themes help you to find content for your site which uses a consistent CSS and JS framework.
 
 A Theme becomes active when you create a Page Template in SiteBuilder using that Theme in the Page Templates tab.
+
+<figure><img src="../../.gitbook/assets/Siteglide-Marketplace-Themes-and-Templates.png" alt=""><figcaption></figcaption></figure>
 
 ### Choosing a Theme <a href="#choosing-a-theme" id="choosing-a-theme"></a>
 
@@ -28,6 +30,6 @@ Marketplace Templates help you get started quickly without having to build a sit
 Why not test it out by creating a site from a template?
 {% endhint %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../portal/sites/steps-to-create-your-first-site.md" %}
+[steps-to-create-your-first-site.md](../../portal/sites/steps-to-create-your-first-site.md)
 {% endcontent-ref %}

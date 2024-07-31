@@ -86,7 +86,7 @@
   * [📋 Set Up Tailwind CSS](sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)
   * [📋 Editing Tailwind CSS](sitebuilder/setup-sitebuilder/editing-tailwind-css.md)
   * [📋 Installing Layouts](sitebuilder/setup-sitebuilder/installing-layouts.md)
-  * [ℹ️ Themes & Templates](sitebuilder/setup-sitebuilder/themes-and-templates.md)
+  * [ℹ️ Marketplace Themes & Templates](sitebuilder/setup-sitebuilder/marketplace-themes-and-templates.md)
   * [ℹ️ Static Layouts](sitebuilder/setup-sitebuilder/static-layouts.md)
   * [ℹ️ Dynamic Layouts in SiteBuilder](sitebuilder/setup-sitebuilder/dynamic-layouts-in-sitebuilder.md)
   * [ℹ️ Static and Dynamic Form Layouts](sitebuilder/setup-sitebuilder/static-and-dynamic-form-layouts.md)

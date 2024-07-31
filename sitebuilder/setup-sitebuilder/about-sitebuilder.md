@@ -21,22 +21,54 @@ SiteBuilder offers 2 main things:
 
 Sitebuilder does **NOT** limit what you can build, it's simply a starting point for rapid development that can then be completely customised.
 
-## Where Should I Start? <a href="#where-should-i-start" id="where-should-i-start"></a>
-
-{% embed url="https://youtu.be/rf0QdzS6XF4" %}
-
 ## How Does It Work? <a href="#how-does-it-work" id="how-does-it-work"></a>
 
 Some code repositories require you to copy and paste code from the example into your site, but this can be fiddly if the code needs to go into lots of different folders and files.
 
 SiteBuilder does the hard work for you and is plug & play!
 
-When you choose one of our examples, all you have to do is give it a name and we'll create the required file structure automatically. The layout will be ready to use in your Siteglide site and, where supported, available in Toolbox!
+When you choose one of our Layouts, all you have to do is give it a name and we'll create the required file structure automatically. The layout will be ready to use in your Siteglide site and, where supported, available in Toolbox!
 
-### Learn More <a href="#learn-more" id="learn-more"></a>
+## Marketplace Themes & Templates
 
-Use the menu on the left to find out more about SiteBuilder, or join the conversation on Siteglide's [Discord](https://discord.gg/TRC4BFQfkT).
+{% content-ref url="marketplace-themes-and-templates.md" %}
+[marketplace-themes-and-templates.md](marketplace-themes-and-templates.md)
+{% endcontent-ref %}
+
+## Page Templates
+
+{% content-ref url="create-a-page-template.md" %}
+[create-a-page-template.md](create-a-page-template.md)
+{% endcontent-ref %}
+
+## Pages <a href="#how-does-it-work" id="how-does-it-work"></a>
+
+## Layouts
+
+{% content-ref url="static-layouts.md" %}
+[static-layouts.md](static-layouts.md)
+{% endcontent-ref %}
+
+{% content-ref url="dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](dynamic-layouts-in-sitebuilder.md)
+{% endcontent-ref %}
+
+{% content-ref url="static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](static-and-dynamic-form-layouts.md)
+{% endcontent-ref %}
+
+## Live Updates API
+
+{% content-ref url="../using-sitebuilder/live-updates-api/" %}
+[live-updates-api](../using-sitebuilder/live-updates-api/)
+{% endcontent-ref %}
 
 ## Licence <a href="#licence" id="licence"></a>
 
 By using SiteBuilder you are bound by the terms detailed in our [EULA](https://www.sitegurus.io/eula).
+
+## Where Should I Start? <a href="#where-should-i-start" id="where-should-i-start"></a>
+
+{% content-ref url="quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](quickstart-sitebuilder.md)
+{% endcontent-ref %}

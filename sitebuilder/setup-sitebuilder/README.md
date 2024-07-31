@@ -14,7 +14,5 @@ Check out our Quickstart guide:
 [quickstart-sitebuilder.md](quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
-## Looking to Extend SiteBuilder?
-
 
 
