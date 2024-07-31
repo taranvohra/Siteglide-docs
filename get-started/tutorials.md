@@ -1,23 +1,26 @@
-# 🚀 Tutorials
+# 🚀 Quickstart Guides
 
 We're constantly putting together Tutorials and Guides to help you get started with each area of Siteglide.
 
 We recommend following these guides in order:
 
-### First Steps
+### First You'll need a Website
 
 {% content-ref url="../portal/sites/steps-to-create-your-first-site.md" %}
 [steps-to-create-your-first-site.md](../portal/sites/steps-to-create-your-first-site.md)
 {% endcontent-ref %}
 
-### Using the Command Line Interface
+### Build Better, Faster with SiteBuilder
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../sitebuilder/setup-sitebuilder/" %}
+[setup-sitebuilder](../sitebuilder/setup-sitebuilder/)
 {% endcontent-ref %}
 
-{% content-ref url="../developer-tools/cli/site-setup.md" %}
-[site-setup.md](../developer-tools/cli/site-setup.md)
+### Siteglide Command Line Interface (CLI)
+
+{% content-ref url="../developer-tools/cli/quickstart.md" %}
+[quickstart.md](../developer-tools/cli/quickstart.md)
 {% endcontent-ref %}
 
-### Navigating the CMS
+## Navigating the CMS
+

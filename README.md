@@ -8,7 +8,7 @@ Siteglide allows agencies to take control over code and data via API, CLI or UI.
 
 ### Types of Articles
 
-1. :rocket: **Get Started:** The bare essentials with links to more detailed articles if you get stuck.
+1. :rocket: **Quickstart:** The bare essentials with links to more detailed articles if you get stuck.
 2. :information\_source: **About / Introduction:** A brief overview of the topic.
 3. :clipboard: **Step by Step Articles:** How to Implement a Feature or Solve a Problem
 4. :bulb: **Concept:** Will take a feature and explain it in a little more depth

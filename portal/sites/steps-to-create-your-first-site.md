@@ -1,4 +1,4 @@
-# 📋 Create a Site
+# 🚀 Quickstart: Create a Site
 
 This guide will walk you through the process of creating a new site using Siteglide's admin area.
 

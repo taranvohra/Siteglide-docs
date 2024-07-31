@@ -2,7 +2,7 @@
 description: SiteBuilder is the quickest way to get started with Siteglide
 ---
 
-# Quickstart
+# 🚀 Quickstart: SiteBuilder
 
 ## What is SiteBuilder?
 

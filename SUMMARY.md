@@ -4,7 +4,7 @@
 
 ## Get Started
 
-* [🚀 Tutorials](get-started/tutorials.md)
+* [🚀 Quickstart Guides](get-started/tutorials.md)
 * [❔ Support & FAQs](get-started/support-and-faqs/README.md)
   * [ℹ️ Siteglide Support Policy](get-started/support-and-faqs/siteglide-support-policy.md)
   * [ℹ️ Siteglide Technology Stack](get-started/support-and-faqs/siteglide-technology-stack.md)
@@ -13,7 +13,7 @@
 
 * [Account](portal2/account.md)
 * [Sites](portal/sites/README.md)
-  * [📋 Create a Site](portal/sites/steps-to-create-your-first-site.md)
+  * [🚀 Quickstart: Create a Site](portal/sites/steps-to-create-your-first-site.md)
   * [📁 Domains](portal/sites/domains/README.md)
     * [How to setup a multi domain start page](portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
 * [Users & User Roles](portal2/users-and-user-roles.md)
@@ -26,7 +26,7 @@
 ## Developer Tools
 
 * [CLI](developer-tools/cli/README.md)
-  * [🚀 Quickstart](developer-tools/cli/quickstart.md)
+  * [🚀 Quickstart: CLI](developer-tools/cli/quickstart.md)
   * [ℹ️ About](developer-tools/cli/about.md)
   * [📋 Site Setup](developer-tools/cli/site-setup.md)
   * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
@@ -78,7 +78,7 @@
 
 ## SiteBuilder
 
-* [Quickstart](sitebuilder/setup-sitebuilder/README.md)
+* [🚀 Quickstart: SiteBuilder](sitebuilder/setup-sitebuilder/README.md)
   * [💡 About SiteBuilder](sitebuilder/setup-sitebuilder/about-sitebuilder.md)
   * [📋 Create Site from Flowbite Template](sitebuilder/setup-sitebuilder/create-site-from-flowbite-template.md)
   * [📋 Install SiteBuilder Module](sitebuilder/setup-sitebuilder/install-sitebuilder-module.md)
