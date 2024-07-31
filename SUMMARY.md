@@ -79,7 +79,7 @@
 ## SiteBuilder
 
 * [Build Sites Faster](sitebuilder/setup-sitebuilder/README.md)
-  * [🚀 Quickstart](sitebuilder/setup-sitebuilder/quickstart.md)
+  * [🚀 Quickstart: SiteBuilder](sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
   * [ℹ️ About](sitebuilder/setup-sitebuilder/about-sitebuilder.md)
   * [📋 Install SiteBuilder Module](sitebuilder/setup-sitebuilder/install-sitebuilder-module.md)
   * [📋 Create a Page Template](sitebuilder/setup-sitebuilder/create-a-page-template.md)

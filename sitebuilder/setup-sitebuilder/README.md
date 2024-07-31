@@ -10,8 +10,8 @@ SiteBuilder is definitely the best way to get started but it's so much more than
 
 Check out our Quickstart guide:
 
-{% content-ref url="quickstart.md" %}
-[quickstart.md](quickstart.md)
+{% content-ref url="quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
 ## Looking to Extend SiteBuilder?

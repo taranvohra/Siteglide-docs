@@ -10,8 +10,8 @@ We're constantly putting together Tutorials and Guides to help you get started w
 
 ### Build Better, Faster with SiteBuilder
 
-{% content-ref url="../sitebuilder/setup-sitebuilder/" %}
-[setup-sitebuilder](../sitebuilder/setup-sitebuilder/)
+{% content-ref url="../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
 ### Siteglide Command Line Interface (CLI)
