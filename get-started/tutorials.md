@@ -2,8 +2,6 @@
 
 We're constantly putting together Tutorials and Guides to help you get started with each area of Siteglide.
 
-We recommend following these guides in order:
-
 ### First You'll need a Website
 
 {% content-ref url="../portal/sites/steps-to-create-your-first-site.md" %}

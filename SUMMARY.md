@@ -89,6 +89,7 @@
   * [ℹ️ Tailwind CSS Themes - Choosing a Build Method](sitebuilder/setup-sitebuilder/tailwind-css-themes-choosing-a-build-method.md)
   * [ℹ️ Tailwind's JIT Compiler Via CDN](sitebuilder/setup-sitebuilder/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
 * [Using SiteBuilder](sitebuilder/using-sitebuilder/README.md)
+  * [ℹ️ Static Layouts](sitebuilder/using-sitebuilder/static-layouts.md)
   * [📋 Installing Layouts](sitebuilder/using-sitebuilder/installing-layouts.md)
   * [ℹ️ Dynamic Layouts in SiteBuilder](sitebuilder/using-sitebuilder/dynamic-layouts-in-sitebuilder.md)
   * [ℹ️ Static and Dynamic Form Layouts](sitebuilder/using-sitebuilder/static-and-dynamic-form-layouts.md)
