@@ -56,6 +56,12 @@ Take a look at our Admin Overview for how to start managing and editing the site
 
 ADMIN LINK
 
+If you've picked a SiteBuilder Template (as per the steps above) you can dramatically speed up development by using our SiteBuilder Module and Layouts:
+
+{% content-ref url="../../sitebuilder/setup-sitebuilder/about-sitebuilder.md" %}
+[about-sitebuilder.md](../../sitebuilder/setup-sitebuilder/about-sitebuilder.md)
+{% endcontent-ref %}
+
 If you're a developer you'll likely want to be able to easily edit the Tailwind CSS via our CLI:
 
 {% content-ref url="../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md" %}
