@@ -1,4 +1,4 @@
-# 💡 About Page Templates
+# ℹ️ About Page Templates
 
 Page Templates are used for organising the repeatable content you will want to display on multiple pages, including Headers and Footers
 

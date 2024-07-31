@@ -1,4 +1,4 @@
-# 🔹 Forms Success Callback
+# ℹ️ Forms Success Callback
 
 By default, Siteglide Forms will reload the page after submission.
 

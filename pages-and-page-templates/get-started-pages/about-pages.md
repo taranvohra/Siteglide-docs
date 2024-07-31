@@ -1,4 +1,4 @@
-# 💡 About Pages
+# ℹ️ About Pages
 
 Pages are the backbone of any website.\
 \

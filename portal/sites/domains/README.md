@@ -1,2 +1,2 @@
-# 📁 Domains
+# 🌍 Domains
 

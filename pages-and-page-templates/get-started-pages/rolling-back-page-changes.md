@@ -1,4 +1,4 @@
-# 🔧 Rolling Back Page Changes
+# ℹ️ Rolling Back Page Changes
 
 ## History <a href="#id-2-history" id="id-2-history"></a>
 

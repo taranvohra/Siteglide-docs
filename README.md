@@ -4,11 +4,11 @@ Welcome to Siteglide's Documentation!&#x20;
 
 Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Need Some Help?</strong></mark></td><td>Step-by-step guides</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Tutorials.png">Tutorials.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Ready to Create Sites?</strong></mark></td><td>At a glance tags and info</td><td><a href="portal/sites/steps-to-create-your-first-site.md">steps-to-create-your-first-site.md</a></td><td><a href=".gitbook/assets/Create-a-Site (2).png">Create-a-Site (2).png</a></td></tr><tr><td><mark style="color:blue;"><strong>Dive into the Code?</strong></mark></td><td>Follow our Quickstart Guide</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong>Need Some Help?</strong></mark></td><td>Step-by-step guides</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart.png">Quickstart.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Ready to Create Sites?</strong></mark></td><td>At a glance tags and info</td><td><a href="portal/sites/steps-to-create-your-first-site.md">steps-to-create-your-first-site.md</a></td><td><a href=".gitbook/assets/Create-a-Site.png">Create-a-Site.png</a></td></tr><tr><td><mark style="color:blue;"><strong>Dive into the Code?</strong></mark></td><td>Follow our Quickstart Guide</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
 
 ### Types of Articles
 
-1. :rocket: **Quickstart:** The bare essentials with links to more detailed articles if you get stuck.
+1. :rocket: **Quickstart:** Bare essential guides with links to more detailed articles if you get stuck.
 2. :information\_source: **About / Introduction:** A brief overview of the topic.
 3. :clipboard: **Step by Step Articles:** How to Implement a Feature or Solve a Problem
 4. :bulb: **Concept:** Will take a feature and explain it in a little more depth

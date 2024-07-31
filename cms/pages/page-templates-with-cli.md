@@ -5,7 +5,7 @@ createdAt: 2021-02-18T11:01:15.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 💻 Page Templates with Siteglide CLI
+# ℹ️ Page Templates with Siteglide CLI
 
 Templates must be stored within the following file path of your project: `marketplace_builder/views/layouts/templates/` and must be `.liquid` file type.
 

@@ -1,4 +1,4 @@
-# 🔹 Forms Error Callback and Validation
+# ℹ️ Forms Error Callback and Validation
 
 This article gives some examples for different ways to validate Siteglide forms on the Front End using JavaScript.
 

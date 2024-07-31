@@ -1,2 +1,2 @@
-# 🧑‍🎨 Updating Page Content with the Studio Tab
+# ℹ️ Updating Page Content with the Studio Tab
 

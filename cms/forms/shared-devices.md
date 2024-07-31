@@ -1,4 +1,4 @@
-# 🔹 Explained - Show Clearly When a User is Already Logged in When Submitting a Form
+# ℹ️ Explained - Show Clearly When a User is Already Logged in When Submitting a Form
 
 This problem was initially reported here -> [https://roadmap.siteglide.com/bugs/p/forms-overwriting-crm-records](https://roadmap.siteglide.com/core-platform/p/forms-overwriting-crm-records)
 

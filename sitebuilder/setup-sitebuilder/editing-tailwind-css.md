@@ -2,19 +2,13 @@
 
 ## Before you Start
 
-You will need to have already created a site with both Sitebuilder installed and a Flowbite/Tailwind Page template setup:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+{% hint style="info" %}
+This article assumes you have completed the setup steps:
+{% endhint %}
 
 {% content-ref url="set-up-tailwind-css.md" %}
 [set-up-tailwind-css.md](set-up-tailwind-css.md)
 {% endcontent-ref %}
-
-{% hint style="info" %}
-It is possible to follow the [https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation) docs to set up the Tailwind CLI your own way. However, this article above sets up the folder structure in a way which is compatible with a Siteglide Site's folder structure and this article assumes your folder structure is set up the same way.
-{% endhint %}
 
 ## Introduction
 

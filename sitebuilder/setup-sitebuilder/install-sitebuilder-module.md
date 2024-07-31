@@ -1,3 +1,7 @@
+---
+description: The SiteBuilder Module must be installed to use SiteBuilder
+---
+
 # 📋 Install SiteBuilder Module
 
 Check if you have already installed the SiteBuilder Module on your site (click Install if not).&#x20;

@@ -1,4 +1,4 @@
-# 🔹 Explained - Preventing Spam Form Submissions and Captchas
+# ℹ️ Explained - Preventing Spam Form Submissions and Captchas
 
 Siteglide offers Spam protection called hCaptcha on forms, which is already fully baked in to the platform for you.
 

@@ -1,4 +1,4 @@
-# 💡 About Forms
+# ℹ️ About Forms
 
 Forms are extremely versatile on Siteglide and can be used in a number of ways, such as:
 

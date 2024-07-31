@@ -1,12 +1,12 @@
-# 📋 Create a Page Template
+---
+description: Page Templates help you standardise how multiple pages look/work
+---
 
-{% hint style="info" %}
-You can skip this if your site already has a Page Template (it will do if you used a Template) and you don't need another
-{% endhint %}
+# 📋 Create a Page Template
 
 A Page Template is an essential component, any of our Marketplace Templates will come with at least one already but you can create them here:
 
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/5zuKxvrB/2d88d7d6-5183-48f4-8cc1-18578da8c94d.jpg?source=viewer&#x26;v=%22f4f2c84cd775280d4a64e3d18ba1b7c7%22" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/5zuKxvrB/2d88d7d6-5183-48f4-8cc1-18578da8c94d.jpg?source=viewer&#x26;v=%22f4f2c84cd775280d4a64e3d18ba1b7c7%22" alt=""><figcaption><p>One template already exists (Main) but you can create more if needed</p></figcaption></figure>
 
 SiteBuilder simply leverages the Page Templates functionality in Siteglide but builds it for you with useful options to save you time.
 

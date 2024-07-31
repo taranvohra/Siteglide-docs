@@ -1,4 +1,4 @@
-# How to setup a multi domain start page
+# 📋 How to setup a multi domain start page
 
 The following code example can be added to a Page Template and applied to the home/start page of a site to load a different start page for different domains added to the site.
 

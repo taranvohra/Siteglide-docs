@@ -1,4 +1,4 @@
-# 🔹 Page Settings
+# ℹ️ Page Settings
 
 ### Details <a href="#id-2-details" id="id-2-details"></a>
 

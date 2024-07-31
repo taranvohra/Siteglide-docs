@@ -5,7 +5,7 @@ createdAt: 2021-02-18T10:52:51.000Z
 updatedAt: 2023-03-03T08:09:58.000Z
 ---
 
-# 💻 Pages with Siteglide CLI
+# ℹ️ Pages with Siteglide CLI
 
 When the Admin builds a Page, it adds important metadata using the YAML language.
 

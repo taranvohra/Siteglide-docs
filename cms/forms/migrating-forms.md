@@ -4,7 +4,7 @@ description: >-
   checklist for how to migrate Forms
 ---
 
-# 🔼 Migrating Forms
+# ℹ️ Migrating Forms
 
 ## Pre-Requisites
 

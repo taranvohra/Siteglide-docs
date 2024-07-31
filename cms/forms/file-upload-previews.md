@@ -1,4 +1,4 @@
-# 🔹 File Upload Previews
+# ℹ️ File Upload Previews
 
 When a User uploads a File as part of a Form, you can automatically show previews of the images it uploads.
 
