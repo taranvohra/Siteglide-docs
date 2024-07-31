@@ -56,13 +56,13 @@ Open up the Siteglide Portal and find your Site in the Sites option in the left-
 
 In the Users tab, make sure your user's email address is listed. If not, invite yourself (as an existing user) to the Site.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/eDuKGYKy/49aa8bdb-47e9-45f9-ad70-d15deb8e1cdd.jpg?source=viewer&#x26;v=%22ddc1fb9e21f8e31f1c02db87839b794a%22" alt=""><figcaption></figcaption></figure>
 
 ## Step 5) Copy the Env Command with Pre-Filled Variables
 
 In the Details tab, near the bottom of the Site information, find the CLI Command and copy it.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://p186.p2.n0.cdn.zight.com/items/eDuKGYev/4f0b933c-f20d-4560-90f3-3cb501ab86f7.jpg?source=viewer&#x26;v=%2284e088722ac1d1c251a8b40a139ccbbb%22" alt=""><figcaption></figcaption></figure>
 
 ## Step 6) Run the Env Command to Set Up a Connection Between your Project Folder and a Site
 
