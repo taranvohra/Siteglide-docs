@@ -1,3 +1,7 @@
+---
+description: In-depth step-by-step courses to master Siteglide
+---
+
 # ⏬ Courses
 
-In depth courses&#x20;
+Coming soon!
