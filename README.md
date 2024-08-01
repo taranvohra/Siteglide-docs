@@ -1,3 +1,7 @@
+---
+description: The home of Siteglide Docs - Build Limitless Digital Experiences
+---
+
 # 👋 Welcome
 
 Welcome to Siteglide's Documentation!&#x20;
