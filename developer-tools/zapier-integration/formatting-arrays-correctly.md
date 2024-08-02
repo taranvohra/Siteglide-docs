@@ -1,4 +1,4 @@
-# Zapier - Formatting arrays correctly
+# ℹ️ Formatting arrays correctly
 
 Background
 
