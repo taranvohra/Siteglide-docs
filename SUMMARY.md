@@ -61,7 +61,7 @@
     * [Tutorial 11 - Using Mutations to Delete an Item](developer-tools/graphql/tutorials/tutorial-11-using-mutations-to-delete-an-item.md)
     * [Tutorial 12 - Related Records and Datasources](developer-tools/graphql/tutorials/tutorial-12-related-records-and-datasources.md)
 * [Public API](developer-tools/public-api/README.md)
-  * [🔗 Sessions](developer-tools/public-api/api-example.md)
+  * [🔗 Sessions](developer-tools/public-api/sessions.md)
   * [🔗 Forms](developer-tools/public-api/forms.md)
   * [🔗 Categories](developer-tools/public-api/categories.md)
   * [🔗 Modules](developer-tools/public-api/modules.md)
