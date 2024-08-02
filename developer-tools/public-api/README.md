@@ -10,48 +10,6 @@ Siteglide is designed to give you total access to your data and to platform capa
 
 If you don't see an endpoint you need you can create your own or contact us if you think it should be platform wide.
 
-## Create a new user
-
-<mark style="color:green;">`POST`</mark> `/users`
-
-\<Description of the endpoint>
-
-**Headers**
-
-| Name          | Value              |
-| ------------- | ------------------ |
-| Content-Type  | `application/json` |
-| Authorization | `Bearer <token>`   |
-
-**Body**
-
-| Name   | Type   | Description      |
-| ------ | ------ | ---------------- |
-| `name` | string | Name of the user |
-| `age`  | number | Age of the user  |
-
-**Response**
-
-{% tabs %}
-{% tab title="200" %}
-```json
-{
-  "id": 1,
-  "name": "John",
-  "age": 30
-}
-```
-{% endtab %}
-
-{% tab title="400" %}
-```json
-{
-  "error": "Invalid request"
-}
-```
-{% endtab %}
-{% endtabs %}
-
 Each Siteglide feature has it's own page with the various endpoints:
 
 {% content-ref url="sessions.md" %}
