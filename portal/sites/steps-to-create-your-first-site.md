@@ -38,9 +38,7 @@ If you're new to Siteglide or less technical, it's recommended to start with a t
 Please follow the above link if you're new to Siteglide
 {% endhint %}
 
-The rest of this Quickstart guide is for experienced Siteglide users and will focus on building a Custom Site. Click the 'Build a Custom Site' button.
-
-
+The rest of this Quickstart guide will focus on building a Custom Site. Click the 'Build a Custom Site' button.
 
 ## Step 3: Name your Custom Site
 
