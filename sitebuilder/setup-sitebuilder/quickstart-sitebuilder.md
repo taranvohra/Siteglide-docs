@@ -30,9 +30,18 @@ CLI is primarily for developers, skip this if you don't need to customise the Ta
 
 ## Step 3: Editing Sites
 
-Here are the most important articles that will help you build out content and edit it:
+Layouts are the main way to build out sites and functionality, they control the structure:
 
 {% content-ref url="about-sitebuilder/static-layouts.md" %}
 [static-layouts.md](about-sitebuilder/static-layouts.md)
 {% endcontent-ref %}
 
+{% content-ref url="installing-layouts.md" %}
+[installing-layouts.md](installing-layouts.md)
+{% endcontent-ref %}
+
+To edit the design and styling of the site you'll need to edit the Tailwind CSS:
+
+{% content-ref url="editing-tailwind-css.md" %}
+[editing-tailwind-css.md](editing-tailwind-css.md)
+{% endcontent-ref %}
