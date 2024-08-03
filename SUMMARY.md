@@ -89,6 +89,7 @@
 
 * [Build Sites Faster](sitebuilder/setup-sitebuilder/README.md)
   * [🚀 Quickstart: SiteBuilder](sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
+  * [📋 Create Site From Template](sitebuilder/setup-sitebuilder/create-site-from-template.md)
   * [ℹ️ About](sitebuilder/setup-sitebuilder/about-sitebuilder/README.md)
     * [ℹ️ Marketplace Themes & Templates](sitebuilder/setup-sitebuilder/about-sitebuilder/marketplace-themes-and-templates.md)
     * [ℹ️ Static Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/static-layouts.md)
