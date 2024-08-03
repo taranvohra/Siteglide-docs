@@ -1,4 +1,4 @@
-# ℹ️ Dynamic Layouts in SiteBuilder
+# ℹ️ Dynamic Layouts
 
 ## What is a Dynamic Layout in SiteBuilder? <a href="#what-is-a-module-in-sitebuilder" id="what-is-a-module-in-sitebuilder"></a>
 

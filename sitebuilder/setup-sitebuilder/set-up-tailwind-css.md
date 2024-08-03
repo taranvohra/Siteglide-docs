@@ -14,8 +14,8 @@ You must already have a Site with SiteBuilder installed and have our CLI install
 
 If you don't have the Siteglide CLI installed or need help with the CLI follow our Quickstart guide:
 
-{% content-ref url="../../../developer-tools/cli/quickstart.md" %}
-[quickstart.md](../../../developer-tools/cli/quickstart.md)
+{% content-ref url="../../developer-tools/cli/quickstart.md" %}
+[quickstart.md](../../developer-tools/cli/quickstart.md)
 {% endcontent-ref %}
 
 Using the Command Line Interface (CLI) to build a Tailwind CSS file allows you to:
@@ -42,14 +42,14 @@ Older versions of SiteBuilder would have defaulted to use the JIT option as a de
 
 You will need to install Siteglide CLI- if you haven't or are not sure if you have, head here first:
 
-{% content-ref url="../../../developer-tools/cli/about.md" %}
-[about.md](../../../developer-tools/cli/about.md)
+{% content-ref url="../../developer-tools/cli/about.md" %}
+[about.md](../../developer-tools/cli/about.md)
 {% endcontent-ref %}
 
 Next you'll need to follow the steps to create a project folder for your new Site and setup Siteglide CLI for this new Site:
 
-{% content-ref url="../../../developer-tools/cli/site-setup.md" %}
-[site-setup.md](../../../developer-tools/cli/site-setup.md)
+{% content-ref url="../../developer-tools/cli/site-setup.md" %}
+[site-setup.md](../../developer-tools/cli/site-setup.md)
 {% endcontent-ref %}
 
 Once you've pulled the Codebase for the new Site down into your project folder, continue to the next step.
@@ -134,7 +134,7 @@ You may be given some warnings and information by npm at this stage. For the sak
 
 Split your terminal in two. We'll need one window to build our Tailwind CSS and a second one to sync our changes to the Site:\\
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Use this command to build your Tailwind's CSS (we'll look at this in more detail in a minute):
 
@@ -160,6 +160,6 @@ Head to the next article to understand in more depth:
 * The Tailwind source CSS file
 * The Tailwind distributable CSS file
 
-{% content-ref url="../styling/editing-tailwind-css.md" %}
-[editing-tailwind-css.md](../styling/editing-tailwind-css.md)
+{% content-ref url="editing-tailwind-css.md" %}
+[editing-tailwind-css.md](editing-tailwind-css.md)
 {% endcontent-ref %}

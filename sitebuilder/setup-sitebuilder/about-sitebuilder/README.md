@@ -37,24 +37,24 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 
 ## Page Templates
 
-{% content-ref url="../site-setup/create-a-page-template.md" %}
-[create-a-page-template.md](../site-setup/create-a-page-template.md)
+{% content-ref url="../create-a-page-template.md" %}
+[create-a-page-template.md](../create-a-page-template.md)
 {% endcontent-ref %}
 
 ## Pages <a href="#how-does-it-work" id="how-does-it-work"></a>
 
 ## Layouts
 
-{% content-ref url="../layouts/insert-static-layouts.md" %}
-[insert-static-layouts.md](../layouts/insert-static-layouts.md)
+{% content-ref url="static-layouts.md" %}
+[static-layouts.md](static-layouts.md)
 {% endcontent-ref %}
 
-{% content-ref url="../layouts/dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](../layouts/dynamic-layouts-in-sitebuilder.md)
+{% content-ref url="dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="../layouts/static-and-dynamic-form-layouts.md" %}
-[static-and-dynamic-form-layouts.md](../layouts/static-and-dynamic-form-layouts.md)
+{% content-ref url="static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](static-and-dynamic-form-layouts.md)
 {% endcontent-ref %}
 
 ## Live Updates API

@@ -60,6 +60,6 @@ ADMIN LINK
 
 If you're a developer you'll likely want to be able to easily edit the Tailwind CSS via our CLI:
 
-{% content-ref url="../../sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md" %}
-[set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md)
+{% content-ref url="../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md" %}
+[set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)
 {% endcontent-ref %}

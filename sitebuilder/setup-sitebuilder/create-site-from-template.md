@@ -6,7 +6,7 @@ description: Build a Site using a SiteBuilder Template
 
 From the Siteglide Portal on either the Dashboard page or the Sites page you should see a button to create a new site. It will open a modal to select either a Template or Custom Site.
 
-<figure><img src="../../../.gitbook/assets/Siteglide-Create-Site-Modal-Dashboard.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Create-Site-Modal-Dashboard.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Step 1: Select a Template
 
@@ -34,6 +34,6 @@ And that's it! You've successfully created a new site, you will need to wait for
 
 Continue with our Quickstart guide?
 
-{% content-ref url="../quickstart-sitebuilder.md" %}
-[quickstart-sitebuilder.md](../quickstart-sitebuilder.md)
+{% content-ref url="quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](quickstart-sitebuilder.md)
 {% endcontent-ref %}
