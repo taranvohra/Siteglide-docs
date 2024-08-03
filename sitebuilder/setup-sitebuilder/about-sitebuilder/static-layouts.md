@@ -4,4 +4,4 @@ Static Layouts are sections of pre-built HTML code that you can add to your page
 
 ## Insert Static Layouts from Studio Sidebar
 
-<figure><img src="../../.gitbook/assets/Siteglide-Studio-SiteBuilder-Static-Layout-Insert.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Siteglide-Studio-SiteBuilder-Static-Layout-Insert.png" alt=""><figcaption></figcaption></figure>

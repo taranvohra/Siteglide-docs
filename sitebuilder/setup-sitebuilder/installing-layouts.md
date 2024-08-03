@@ -1,10 +1,8 @@
 # 📋 Installing Layouts
 
 {% hint style="info" %}
-Static Layouts do not need to be installed: [static-layouts.md](static-layouts.md "mention")
+Static Layouts do not need to be installed: [static-layouts.md](about-sitebuilder/static-layouts.md "mention")
 {% endhint %}
-
-
 
 ### Modules and Dynamic Layouts <a href="#modules-and-dynamic-layouts" id="modules-and-dynamic-layouts"></a>
 

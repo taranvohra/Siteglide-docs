@@ -14,7 +14,7 @@ Create a Form in the Siteglide Admin and turn on the setting to use it as a paym
 ## Step 2 - Create a Custom Form Layout
 
 {% hint style="info" %}
-:genie:You can use [SiteBuilder](../../sitebuilder/setup-sitebuilder/static-and-dynamic-form-layouts.md) to quickly create a custom Form Layout
+:genie:You can use [SiteBuilder](../../sitebuilder/setup-sitebuilder/about-sitebuilder/static-and-dynamic-form-layouts.md) to quickly create a custom Form Layout
 {% endhint %}
 
 In Code Editor or CLI, make a copy of the default form layout, ready to customise it.

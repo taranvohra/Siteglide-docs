@@ -52,7 +52,7 @@ CLI is primarily for developers, skip this if you don't need to customise the co
 
 Here are the most important articles that will help you build out content and edit it:
 
-{% content-ref url="static-layouts.md" %}
-[static-layouts.md](static-layouts.md)
+{% content-ref url="about-sitebuilder/static-layouts.md" %}
+[static-layouts.md](about-sitebuilder/static-layouts.md)
 {% endcontent-ref %}
 

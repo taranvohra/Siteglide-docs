@@ -37,8 +37,8 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 
 ## Page Templates
 
-{% content-ref url="create-a-page-template.md" %}
-[create-a-page-template.md](create-a-page-template.md)
+{% content-ref url="../create-a-page-template.md" %}
+[create-a-page-template.md](../create-a-page-template.md)
 {% endcontent-ref %}
 
 ## Pages <a href="#how-does-it-work" id="how-does-it-work"></a>
@@ -59,8 +59,8 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 
 ## Live Updates API
 
-{% content-ref url="../using-sitebuilder/live-updates-api/" %}
-[live-updates-api](../using-sitebuilder/live-updates-api/)
+{% content-ref url="../../using-sitebuilder/live-updates-api/" %}
+[live-updates-api](../../using-sitebuilder/live-updates-api/)
 {% endcontent-ref %}
 
 ## Licence <a href="#licence" id="licence"></a>
@@ -69,6 +69,6 @@ By using SiteBuilder you are bound by the terms detailed in our [EULA](https://w
 
 ## Where Should I Start? <a href="#where-should-i-start" id="where-should-i-start"></a>
 
-{% content-ref url="quickstart-sitebuilder.md" %}
-[quickstart-sitebuilder.md](quickstart-sitebuilder.md)
+{% content-ref url="../quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](../quickstart-sitebuilder.md)
 {% endcontent-ref %}
