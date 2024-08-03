@@ -14,3 +14,11 @@ The SiteBuilder Module comes with the Free Flowbite Theme automatically.
 
 If the download does not show as Installed after some time, try refreshing the page and trying again - it is a large package of files.
 
+## Next Steps:
+
+You'll need to create a Page Template:
+
+{% content-ref url="create-a-page-template.md" %}
+[create-a-page-template.md](create-a-page-template.md)
+{% endcontent-ref %}
+
