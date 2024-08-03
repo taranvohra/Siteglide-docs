@@ -6,7 +6,7 @@ description: Page Templates help you standardise how multiple pages look/work
 
 A Page Template is an essential component, any of our Marketplace Templates will come with at least one already but you can create them here:
 
-<figure><img src="../../.gitbook/assets/SiteBuilder-Page-Templates.jpg" alt=""><figcaption><p>One template already exists (Main) but you can create more if needed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/SiteBuilder-Page-Templates.jpg" alt=""><figcaption><p>One template already exists (Main) but you can create more if needed</p></figcaption></figure>
 
 SiteBuilder simply leverages the Page Templates functionality in Siteglide but builds it for you with useful options to save you time.
 
