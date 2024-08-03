@@ -30,8 +30,8 @@ You have the option to create a new site from scratch or use a Template.&#x20;
 
 If you're new to Siteglide or less technical, it's recommended to start with a template because they're built with SiteBuilder, a tool to help you rapidly build and customise websites:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
