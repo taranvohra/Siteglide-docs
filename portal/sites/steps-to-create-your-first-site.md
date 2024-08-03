@@ -24,27 +24,31 @@ If you already have 1 or more site you'll see options to create a site, manage e
 
 ## Step 2: Choose Site Creation Method
 
-You have the option to create a new site from scratch or use a Template. If you're new to Siteglide or less technical, it's recommended to start with a template.
+You have the option to create a new site from scratch or use a Template.&#x20;
 
 <figure><img src="https://p186.p2.n0.cdn.zight.com/items/mXuWlEkR/2b98c39f-540b-4864-a4bf-10d215506aa8.jpg?source=viewer&#x26;v=%22dde4f0d458f05746ad79f05e5fb4072b%22" alt=""><figcaption></figcaption></figure>
 
-## Step 3: Select a Template
+If you're new to Siteglide or less technical, it's recommended to start with a template because they're built with SiteBuilder, a tool to help you rapidly build and customise websites:
 
-This will take you to the Marketplace where you can select a category of templates. You can choose between all of our Flowbite layout templates or a couple of Bootstrap 5 options. It's recommended to use Flowbite, especially if you're familiar with Tailwind.
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/Qwuope1j/7f6b5898-704b-4e4b-92ba-0dbd9fefabda.jpg?source=viewer&#x26;v=%22a6b821cc0fdc54f783aafe70d01b7fff%22" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Please follow the above link if you're new to Siteglide
+{% endhint %}
 
-## Step 4: Choose the Appropriate Template
+The rest of this Quickstart guide is for experienced Siteglide users and will focus on building a Custom Site. Click the 'Build a Custom Site' button.
 
-We recommend starting with the Landing Page or the Marketing Site Template. Choose the Marketing Site if you want to see more Siteglide functionality or the Landing Page if you'd rather just learn the basics first.
 
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/Z4uN0zZZ/e346ba9b-65b8-4d4b-9e26-89d2e7601219.jpg?source=viewer&#x26;v=%22d6940a092c873dcd2a9ee34e7ec6cdd4%22" alt=""><figcaption></figcaption></figure>
 
-## Step 5: Create the Site
+## Step 3: Name your Custom Site
 
-Finally, give your site a name and click 'Create Site'.
+Give the site a name and it will automatically create the URL. You will need to ensure it's unique, if it turns red please amend by making it more unique. Then click Create Site.
 
-<figure><img src="https://p186.p2.n0.cdn.zight.com/items/mXuWlJwq/617ae064-afbd-45ad-9e88-d3b6ab2c44c5.gif?source=viewer&#x26;v=%22abea1ec6fa029afcbd51096cb4fa55de%22" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Create-Site-Blank-Modal-Dashboard.jpg" alt=""><figcaption></figcaption></figure>
+
+## Step 5: Manage Your New Site Once Ready
 
 And that's it! You've successfully created a new site, you will need to wait for it to be ready to use. You will receive an email when it's done but can also find it under the Sites area:
 
@@ -55,12 +59,6 @@ And that's it! You've successfully created a new site, you will need to wait for
 Take a look at our Admin Overview for how to start managing and editing the site:
 
 ADMIN LINK
-
-If you've picked a SiteBuilder Template (as per the steps above) you can dramatically speed up development by using our SiteBuilder Module and Layouts:
-
-{% content-ref url="../../sitebuilder/setup-sitebuilder/about-sitebuilder.md" %}
-[about-sitebuilder.md](../../sitebuilder/setup-sitebuilder/about-sitebuilder.md)
-{% endcontent-ref %}
 
 If you're a developer you'll likely want to be able to easily edit the Tailwind CSS via our CLI:
 

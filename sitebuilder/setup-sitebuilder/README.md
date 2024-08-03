@@ -14,5 +14,9 @@ Check out our Quickstart guide:
 [quickstart-sitebuilder.md](quickstart-sitebuilder.md)
 {% endcontent-ref %}
 
+## Want to install the Module on an existing site?
 
+{% content-ref url="install-sitebuilder-module.md" %}
+[install-sitebuilder-module.md](install-sitebuilder-module.md)
+{% endcontent-ref %}
 
