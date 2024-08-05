@@ -104,6 +104,7 @@
     * [📋 Insert Static Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/static-layouts.md)
     * [📋 Installing Dynamic Layouts](sitebuilder/setup-sitebuilder/installing-layouts.md)
     * [ℹ️ Dynamic Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/dynamic-layouts-in-sitebuilder.md)
+    * [Install Dynamic Form Layouts](sitebuilder/setup-sitebuilder/layouts/install-dynamic-form-layouts.md)
     * [ℹ️ Static and Dynamic Form Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/static-and-dynamic-form-layouts.md)
     * [ℹ️ Sliders / Carousels](sitebuilder/setup-sitebuilder/about-sitebuilder/sliders-carousels.md)
 * [Advanced Features](sitebuilder/using-sitebuilder/README.md)
