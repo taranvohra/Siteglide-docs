@@ -12,12 +12,6 @@ Looking for Static Layouts? They don't need to be installed, see: [static-layout
 
 ## Modules and Dynamic Layouts <a href="#modules-and-dynamic-layouts" id="modules-and-dynamic-layouts"></a>
 
-More info on Dynamic Layouts:
-
-{% content-ref url="about-sitebuilder/dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](about-sitebuilder/dynamic-layouts-in-sitebuilder.md)
-{% endcontent-ref %}
-
 Once you've installed a Page Template, the other tabs will be available including the Layouts tab. Here you can toggle the Module on the right hand side and view all the different dynamic layouts available.
 
 <figure><img src="../../.gitbook/assets/SiteBuilder-Layouts.png" alt=""><figcaption></figcaption></figure>
@@ -42,10 +36,23 @@ A really powerful part of SiteBuilder is the Dynamic Form Layouts that automatic
 
 More information on Form Layout options with SiteBuilder:
 
-{% content-ref url="about-sitebuilder/static-and-dynamic-form-layouts.md" %}
-[static-and-dynamic-form-layouts.md](about-sitebuilder/static-and-dynamic-form-layouts.md)
+{% content-ref url="layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](layouts/about-layouts/static-and-dynamic-form-layouts.md)
 {% endcontent-ref %}
 
+More info on Dynamic Layouts:
 
+{% content-ref url="layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
+{% endcontent-ref %}
 
-Want to edit the Layouts themselves? We recommend doing this via CLI
+## Next Steps:
+
+Want to add more Modules to your site?
+
+{% content-ref url="../../portal/sites/install-modules.md" %}
+[install-modules.md](../../portal/sites/install-modules.md)
+{% endcontent-ref %}
+
+Want to edit the Module Layouts themselves? We recommend doing this via CLI but you can also do it in Admin:
+

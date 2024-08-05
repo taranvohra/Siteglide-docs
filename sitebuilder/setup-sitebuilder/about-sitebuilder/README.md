@@ -49,12 +49,12 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 [static-layouts.md](static-layouts.md)
 {% endcontent-ref %}
 
-{% content-ref url="dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](dynamic-layouts-in-sitebuilder.md)
+{% content-ref url="../layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](../layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="static-and-dynamic-form-layouts.md" %}
-[static-and-dynamic-form-layouts.md](static-and-dynamic-form-layouts.md)
+{% content-ref url="../layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](../layouts/about-layouts/static-and-dynamic-form-layouts.md)
 {% endcontent-ref %}
 
 ## Live Updates API
