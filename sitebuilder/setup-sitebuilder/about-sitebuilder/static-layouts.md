@@ -19,3 +19,11 @@ You can essentially use any TailwindCSS Layouts or code blocks. A few ideas of h
 [Flowbite website](https://flowbite.com/blocks/): Flowbite are constantly releasing new layouts that may not yet be available in Siteglide.
 
 [Flowbite Chat GPT](https://chatgpt.com/g/g-y7yC35HB9-flowbite-gpt): Create your own AI generated layouts/sections in seconds!
+
+## Ready to Install Dynamic Layouts?
+
+Use Siteglide's prebuilt Modules (Blog, Events etc) or build your own with WebApps. SiteBuilder helps you quickly install layouts that will handle the dynamic code for you.
+
+{% content-ref url="../installing-layouts.md" %}
+[installing-layouts.md](../installing-layouts.md)
+{% endcontent-ref %}
