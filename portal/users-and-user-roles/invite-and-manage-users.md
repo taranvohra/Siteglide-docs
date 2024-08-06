@@ -12,7 +12,7 @@ To invite users to your Account you can only do this from the Users tab on your 
 
 You will not see the blue invite button on the Users page (left hand menu Users link):
 
-<figure><img src="../../.gitbook/assets/Siteglide-Users.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Users (1).jpg" alt=""><figcaption></figcaption></figure>
 
 If you click a user you can see what Sites they have access to and their User Role:
 

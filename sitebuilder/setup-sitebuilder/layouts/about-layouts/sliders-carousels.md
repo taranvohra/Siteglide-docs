@@ -1,4 +1,4 @@
-# ℹ️ Sliders
+# 🏗️ Sliders
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

@@ -2,7 +2,7 @@
 description: Beta - not recommended for Production
 ---
 
-# ℹ️ Tailwind's JIT Compiler Via CDN
+# 🏗️ Tailwind's JIT Compiler Via CDN
 
 ### Before you Start <a href="#before-you-start" id="before-you-start"></a>
 

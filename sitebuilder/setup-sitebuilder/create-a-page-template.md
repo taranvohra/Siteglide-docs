@@ -2,7 +2,7 @@
 description: Page Templates help you standardise how multiple pages look/work
 ---
 
-# 📋 Create a Page Template
+# 🏗️ Create a Page Template
 
 A Page Template is an essential component, any of our Marketplace Templates will come with at least one already but you can create them here:
 

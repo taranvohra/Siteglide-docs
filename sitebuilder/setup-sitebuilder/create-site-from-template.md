@@ -2,7 +2,7 @@
 description: Build a Site using a SiteBuilder Template
 ---
 
-# 📋 Create Site From Template
+# 🏗️ Create Site From Template
 
 From the Siteglide Portal on either the Dashboard page or the Sites page you should see a button to create a new site. It will open a modal to select either a Template or Custom Site.
 

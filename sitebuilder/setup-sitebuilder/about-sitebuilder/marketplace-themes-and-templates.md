@@ -1,4 +1,4 @@
-# ℹ️ Marketplace Themes & Templates
+# 🏗️ Marketplace Themes & Templates
 
 SiteBuilder Themes help you to find content for your site which uses a consistent CSS and JS framework.
 

@@ -1,4 +1,4 @@
-# ℹ️ Tailwind CSS Themes - Choosing a Build Method
+# 🏗️ Tailwind CSS Themes - Choosing a Build Method
 
 ![Choosing a Build Method](https://res.cloudinary.com/sitegurus/image/upload/v1656591688/modules/module\_86/admin/library\_thumbs/tailwindui.jpg)
 

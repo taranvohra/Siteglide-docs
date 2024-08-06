@@ -1,4 +1,4 @@
-# 📋 Editing Tailwind CSS
+# 🏗️ Editing Tailwind CSS
 
 ## Before you Start
 

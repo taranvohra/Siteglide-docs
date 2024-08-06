@@ -2,7 +2,7 @@
 description: Easily insert dynamic layouts for Siteglide Modules via SiteBuilder
 ---
 
-# 📋 Installing Dynamic Layouts
+# 🏗️ Installing Dynamic Layouts
 
 
 
