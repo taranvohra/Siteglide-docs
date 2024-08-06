@@ -18,8 +18,8 @@ description: Create and Manage Sites on Siteglide
 
 ## Want to Install or Manage Modules?
 
-{% content-ref url="install-modules.md" %}
-[install-modules.md](install-modules.md)
+{% content-ref url="install-and-manage-modules.md" %}
+[install-and-manage-modules.md](install-and-manage-modules.md)
 {% endcontent-ref %}
 
 ## Ready to Go Live or Need to Manage Domains?

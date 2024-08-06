@@ -50,8 +50,8 @@ More info on Dynamic Layouts:
 
 Want to add more Modules to your site?
 
-{% content-ref url="../../portal/sites/install-modules.md" %}
-[install-modules.md](../../portal/sites/install-modules.md)
+{% content-ref url="../../portal/sites/install-and-manage-modules.md" %}
+[install-and-manage-modules.md](../../portal/sites/install-and-manage-modules.md)
 {% endcontent-ref %}
 
 Want to edit the Module Layouts themselves? We recommend doing this via CLI but you can also do it in Admin:

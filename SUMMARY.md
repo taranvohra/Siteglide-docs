@@ -16,7 +16,7 @@
   * [🚀 Quickstart: Create a Site](portal/sites/steps-to-create-your-first-site.md)
   * [ℹ️ Site Details](portal/sites/site-details.md)
   * [ℹ️ Site Users](portal/sites/site-users.md)
-  * [📋 Install Modules](portal/sites/install-modules.md)
+  * [📋 Install & Manage Modules](portal/sites/install-and-manage-modules.md)
   * [🌍 Domains](portal/sites/domains/README.md)
     * [📋 How to setup a multi domain start page](portal/sites/domains/how-to-setup-a-multi-domain-start-page.md)
 * [Users](portal/users-and-user-roles/README.md)
