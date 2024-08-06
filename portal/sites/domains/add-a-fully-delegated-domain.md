@@ -52,7 +52,13 @@ To add more Records just click Edit Records and add new rows as required:
 
 ## Step 5: Wait and Check it's Propagated
 
+
+
 No matter how many times you've put sites live you'll no doubt be refreshing and questioning if it's worked from the moment you change the Nameservers!
+
+You're looking for the Status to show as 'Live' in Siteglide but there are other ways to check progress listed below:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Site-Domains-Add-Fully-Delegated-Live.png" alt=""><figcaption></figcaption></figure>
 
 Typically you'll see some positive signals within minutes but you really do need to give it an hour or so (registrars will say 24-48 hours) before stepping in.
 
