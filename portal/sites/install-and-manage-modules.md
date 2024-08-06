@@ -20,7 +20,7 @@ Clicking a module will give you more information:
 
 When ready just click install to install it to that site.
 
-Next Steps:
+## Next Steps:
 
 {% content-ref url="../../sitebuilder/setup-sitebuilder/installing-layouts.md" %}
 [installing-layouts.md](../../sitebuilder/setup-sitebuilder/installing-layouts.md)
