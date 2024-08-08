@@ -13,8 +13,6 @@ Although it can feel like a big leap at first, using custom GraphQL gives you ul
 
 Firstly, let's go through a few frequently asked questions about GraphQL. In the next article, we'll then get started on our first Query on a new Starter Site.
 
-![](https://downloads.intercomcdn.com/i/o/180518656/3a3397466b2d8026621681a8/image.png)
-
 ## What is it?
 
 GraphQL is an open-source querying language which was originally developed by Facebook. The general idea was to create a language which allowed Developers to **quickly** develop **flexible** requests for data, while being **efficient** and only asking for exactly the data they needed. The structure of the query, including relationships between different tables, matches the structure of results- making it easy to iterate over the data after the query is complete. You can read about the open-source project on their website here: [https://graphql.org/](https://graphql.org/)
