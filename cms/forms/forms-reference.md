@@ -69,7 +69,7 @@ Default behaviour will show a JS Alert with the first error.
 
 One parameter is passed containing an array of errors.
 
-Learn more: [custom-javascript-validation-for-forms.md](custom-javascript-validation-for-forms.md "mention")
+Learn more: [custom-javascript-validation-for-forms.md](go-further-forms/custom-javascript-validation-for-forms.md "mention")
 
 </details>
 
@@ -83,7 +83,7 @@ Default behaviour will redirect the Page to the value of the `s_redirect` input 
 
 One parameter is passed containing the redirect URL.
 
-Learn more: [forms-success-callback.md](forms-success-callback.md "mention")
+Learn more: [forms-success-callback.md](go-further-forms/forms-success-callback.md "mention")
 
 </details>
 

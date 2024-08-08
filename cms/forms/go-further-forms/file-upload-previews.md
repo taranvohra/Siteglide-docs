@@ -8,7 +8,7 @@ When a User uploads a File as part of a Form, you can automatically show preview
 
 We've aimed for maximum flexibility- you create the preview element with any HTML structure you like. Set the correct HTML attributes and we'll use your element to display an image preview as soon as one is available.
 
-![](../../.gitbook/assets/image-preview.png)
+![](../../../.gitbook/assets/image-preview.png)
 
 ## Syntax
 
