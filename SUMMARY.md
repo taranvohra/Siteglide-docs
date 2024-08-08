@@ -154,6 +154,7 @@
 ## CMS
 
 * [Pages](cms/pages/README.md)
+  * [🚀 Quickstart: Pages](cms/pages/quickstart-pages.md)
   * [ℹ️ About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
   * [ℹ️ Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
   * [ℹ️ Updating Page Content with the Studio Tab](pages-and-page-templates/get-started-pages/updating-page-content-with-the-studio-tab.md)
