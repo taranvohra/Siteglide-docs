@@ -157,6 +157,8 @@
 
 * [Pages](cms/pages/README.md)
   * [🚀 Quickstart: Pages](cms/pages/quickstart-pages.md)
+  * [Studio](cms/pages/studio.md)
+  * [Code View](cms/pages/code-view.md)
   * [ℹ️ Toolbox](cms/pages/toolbox.md)
   * [ℹ️ About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
   * [ℹ️ Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)

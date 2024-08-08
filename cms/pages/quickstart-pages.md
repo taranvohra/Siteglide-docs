@@ -32,7 +32,21 @@ There are various other settings including SEO meta data, Open Graph and assigni
 
 You have 3 ways to add content and build out pages:
 
-1. **Studio:** Our visual no-code editor allows you to edit content and, depending on the setup, insert new Layouts (e.g if SiteBuilder is installed).
-2. **Code Editor:** The 'code' tab allows you to write code from within Siteglide and also includes the powerful Toolbox area on the right hand side to insert content. Find out more about: [toolbox.md](toolbox.md "mention").
-3.
+1. **Studio:** Our visual no-code editor allows you to edit content and, depending on the setup, insert new Layouts (e.g if SiteBuilder is installed):
+
+{% content-ref url="studio.md" %}
+[studio.md](studio.md)
+{% endcontent-ref %}
+
+1. **Code View:** The 'code' tab allows you to write code from within Siteglide and also includes the powerful Toolbox area on the right hand side to insert content. Find out more:
+
+{% content-ref url="code-view.md" %}
+[code-view.md](code-view.md)
+{% endcontent-ref %}
+
+1. **CLI:** If you're building sites and have some coding experience we strongly recommend using our CLI for code related work:
+
+{% content-ref url="../../developer-tools/cli/" %}
+[cli](../../developer-tools/cli/)
+{% endcontent-ref %}
 
