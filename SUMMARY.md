@@ -102,6 +102,7 @@
 
 * [Build Sites Faster](sitebuilder/setup-sitebuilder/README.md)
   * [🚀 Quickstart: SiteBuilder](sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
+  * [🏗️ PageBuilder](sitebuilder/setup-sitebuilder/pagebuilder.md)
   * [Site Setup](sitebuilder/setup-sitebuilder/site-setup/README.md)
     * [🏗️ Create Site From Template](sitebuilder/setup-sitebuilder/create-site-from-template.md)
     * [🏗️ Install SiteBuilder Module](sitebuilder/setup-sitebuilder/install-sitebuilder-module.md)
@@ -156,6 +157,7 @@
 
 * [Pages](cms/pages/README.md)
   * [🚀 Quickstart: Pages](cms/pages/quickstart-pages.md)
+  * [ℹ️ Toolbox](cms/pages/toolbox.md)
   * [ℹ️ About Pages](pages-and-page-templates/get-started-pages/about-pages.md)
   * [ℹ️ Page Settings](pages-and-page-templates/get-started-pages/page-settings.md)
   * [ℹ️ Updating Page Content with the Studio Tab](pages-and-page-templates/get-started-pages/updating-page-content-with-the-studio-tab.md)
