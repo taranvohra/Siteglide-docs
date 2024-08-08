@@ -5,7 +5,7 @@ createdAt: Wed Feb 17 2021 12:37:36 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Dec 27 2023 13:41:32 GMT+0000 (Coordinated Universal Time)
 ---
 
-# 💡 About GraphQL
+# ℹ️ About GraphQL
 
 Although it can feel like a big leap at first, using custom GraphQL gives you ultimate control over dynamic data. We'll guide you through.
 
