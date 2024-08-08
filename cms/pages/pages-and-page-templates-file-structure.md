@@ -4,9 +4,9 @@ All Liquid files live somewhere inside the views folder.
 
 Since Page Templates are called Layouts in platformOS, this is their name in the file structure.
 
-[Page Templates](broken-reference) (Layouts) in a Siteglide site should be stored in a templates sub-folder and named by their unique ID in Siteglide.
+[templates.md](../../site-manager2/templates.md "mention") in a Siteglide site should be stored in a templates sub-folder and named by their unique ID in Siteglide.
 
-[Pages ](../../pages-and-page-templates/get-started-pages/about-pages.md)can be anywhere in the pages folder. They can have any file name and use any subfolders you like. By default their URL will be relative to the pages folder, but you can change this using the slug in YAML, or by changing the URL in the Siteglide Admin.
+[.](./ "mention") can be anywhere in the pages folder. They can have any file name and use any subfolders you like. By default their URL will be relative to the pages folder, but you can change this using the slug in YAML, or by changing the URL in the Siteglide Admin.
 
 <pre><code>marketplace_builder/
 ├── views/
@@ -22,4 +22,4 @@ Since Page Templates are called Layouts in platformOS, this is their name in the
 │   └── partials/
 </code></pre>
 
-We've only shown one [system page](../../pages-and-page-templates/get-started-pages/system-pages.md) as an example, more are available.
+We have pre-built[system-pages.md](../../pages-and-page-templates/get-started-pages/system-pages.md "mention") available to use out of the box.

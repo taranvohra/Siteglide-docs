@@ -1,4 +1,4 @@
-# Studio
+# ℹ️ Studio
 
 Studio is our no-code editor that also allows you build out pages if you have Layouts installed (e.g. [Broken link](broken-reference "mention"))
 

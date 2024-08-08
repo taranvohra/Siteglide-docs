@@ -60,4 +60,4 @@ You have 3 ways to add content and build out pages:
 
 As you add and edit content you'll likely want to use the bar at the bottom of the page to Save, View the page (as a visitor would), potentially copy the page or delete it.
 
-There's also the 'History' tab which lets you rollback to a previous version if needed.
+There's also the 'History' tab which lets you rollback to a previous version if needed. Here, you can view and restore different versions of the Page. You can view when this version was created, by who, how this was created, and the code for this Page to decide if you’d like to restore this version.

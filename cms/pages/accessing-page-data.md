@@ -5,11 +5,7 @@ description: Page and Page Templates
 # 💻 Reference
 
 {% hint style="info" %}
-Not a Developer?\
-\
-In the Siteglide Admin, you can either Modify Page Content using the low-code route of the Siteglide Studio, or edit the code in the code tab.\
-\
-When in the code tab, you can use the Toolbox to quickly find useful snippets of code.
+**Not a Developer?** We recommend using [studio.md](studio.md "mention"), our no-code editor.
 {% endhint %}
 
 ## Liquid for Page Templates only
@@ -46,10 +42,6 @@ If using CLI, [Pages with CLI ](pages-with-siteglide-cli.md)for details on Page 
 ## Liquid for either Pages or Page Templates
 
 Browse the rest of the documentation to find dynamic Liquid features you can insert into your Pages and Page Templates using Liquid tags. Almost any Liquid is suitable for outputting in either.
-
-[Broken link](broken-reference "mention")
-
-[Broken link](broken-reference "mention")
 
 [broken-reference](../../pages-and-page-templates/reference-pages/broken-reference/ "mention")
 
