@@ -8,6 +8,7 @@
 * [❔ Support & FAQs](get-started/support-and-faqs/README.md)
   * [ℹ️ Siteglide Support Policy](get-started/support-and-faqs/siteglide-support-policy.md)
   * [ℹ️ Siteglide Technology Stack](get-started/support-and-faqs/siteglide-technology-stack.md)
+  * [ℹ️ External Resources](get-started/support-and-faqs/external-resources.md)
 
 ## Portal
 
