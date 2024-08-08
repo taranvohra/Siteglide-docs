@@ -31,7 +31,9 @@
   * [💳 Billing Setup](portal/billing/billing-setup.md)
 * [Tickets](portal2/tickets.md)
 * [Agencies](portal/agencies/README.md)
+  * [Agency Account](portal/agencies/agency-account.md)
   * [Clients](portal/agencies/clients.md)
+  * [Site Copies](portal/agencies/site-copies.md)
   * [Agency Whitelabelling](portal/agencies/agency-whitelabelling.md)
 
 ## Developer Tools

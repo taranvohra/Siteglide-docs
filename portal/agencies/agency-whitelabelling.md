@@ -12,6 +12,8 @@ Over time we will continue increasing coverage of the whitelabling capabilities 
 
 To re-brand your Portal and Admin, head over to the Agency Details page, upload your logo and enable "whitelabelling".
 
+<figure><img src="../../.gitbook/assets/Siteglide-Agency-Community-Expert-Details.png" alt=""><figcaption></figcaption></figure>
+
 ## Login
 
 Below is an Endpoint and example snippets of code you can use to enable your Clients to login to Admin directly from your own Agency website.

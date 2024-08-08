@@ -4,6 +4,10 @@ description: Manage your Siteglide Account
 
 # Account
 
+{% hint style="info" %}
+Looking for Agency Account information? [agency-account.md](../portal/agencies/agency-account.md "mention")
+{% endhint %}
+
 You can manage your company profile and account settings here:
 
 <figure><img src="../.gitbook/assets/Siteglide-Account-Details.jpg" alt=""><figcaption></figcaption></figure>
