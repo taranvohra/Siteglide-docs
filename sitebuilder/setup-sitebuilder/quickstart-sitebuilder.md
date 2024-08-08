@@ -30,6 +30,12 @@ CLI is primarily for developers, skip this if you don't need to customise the Ta
 
 ## Step 3: Editing Sites
 
+Creat & Edit Pages:
+
+{% content-ref url="../../cms/pages/quickstart-pages.md" %}
+[quickstart-pages.md](../../cms/pages/quickstart-pages.md)
+{% endcontent-ref %}
+
 Layouts are the main way to build out sites and functionality, they control the structure:
 
 {% content-ref url="about-sitebuilder/static-layouts.md" %}
