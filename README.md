@@ -21,5 +21,5 @@ Siteglide allows agencies to take control over code and data via API, CLI or UI.
 7. :deciduous\_tree: **File Structure:** This will show you which folders and files are necessary and where to add them to your codebase. This will be presented in the format from which you would see it in Siteglide CLI
 8. :grey\_question: **Troubleshooting:** Find answers to common challenges
 9. :man\_mage: **Go Further:** This is where you'd find more detailed docs that help you really push the boundaries of all things web development
-10. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions.
+10. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions
 11. :woman\_technologist: **Agencies:** Articles specific to Digital Agency partners
