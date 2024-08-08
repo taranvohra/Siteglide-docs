@@ -26,7 +26,13 @@ You likely need to assign a Page Template, if none appear in the dropdown you'll
 Our SiteBuilder Templates come with Page Templates and are the easiest way to get started with Siteglide: [quickstart-sitebuilder.md](../../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md "mention")
 {% endhint %}
 
-There are various other settings including SEO meta data, Open Graph and assigning the page to a Secure Zone.
+There are various other settings including SEO meta data, Open Graph and assigning the page to a Secure Zone:
+
+{% content-ref url="../../pages-and-page-templates/get-started-pages/page-settings.md" %}
+[page-settings.md](../../pages-and-page-templates/get-started-pages/page-settings.md)
+{% endcontent-ref %}
+
+Before adding content we recommend saving the page so that the Template is correctly linked and that Studio can display the page correctly.
 
 ## Step 3: Add Content
 
@@ -50,3 +56,8 @@ You have 3 ways to add content and build out pages:
 [cli](../../developer-tools/cli/)
 {% endcontent-ref %}
 
+## Step 4: Making Changes
+
+As you add and edit content you'll likely want to use the bar at the bottom of the page to Save, View the page (as a visitor would), potentially copy the page or delete it.
+
+There's also the 'History' tab which lets you rollback to a previous version if needed.
