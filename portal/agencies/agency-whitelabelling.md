@@ -2,7 +2,7 @@
 description: Add your own branding to the Siteglide Admin
 ---
 
-# Agency Whitelabelling
+# 👩‍💻 Agency Whitelabelling
 
 ​Whitelabelling enables your Agency to re-brand the Siteglide portal by replacing our logo with your own. Re-branding the platform in this way means you are able to provide a more consistent, branded and streamlined service to your clients and maintain a single point of contact with them.
 

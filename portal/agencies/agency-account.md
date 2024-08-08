@@ -1,4 +1,4 @@
-# Agency Account
+# 👩‍💻 Agency Account
 
 {% hint style="info" %}
 If you're not an Agency and have a Business account visit: [account.md](../../portal2/account.md "mention")

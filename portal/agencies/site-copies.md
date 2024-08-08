@@ -1,4 +1,4 @@
-# Site Copies
+# 👩‍💻 Site Copies
 
 An Agency only feature is being able to make copies of existing sites either to a blank Staging or to an existing Site (can be a Production Site):
 

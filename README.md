@@ -22,3 +22,4 @@ Siteglide allows agencies to take control over code and data via API, CLI or UI.
 8. :grey\_question: **Troubleshooting:** Find answers to common challenges
 9. :man\_mage: **Go Further:** This is where you'd find more detailed docs that help you really push the boundaries of all things web development
 10. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions.
+11. :woman\_technologist: **Agencies:** Articles specific to Digital Agency partners
