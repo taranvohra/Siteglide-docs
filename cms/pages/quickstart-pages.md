@@ -46,8 +46,8 @@ You have 3 ways to add content and build out pages:
 
 1. **Code View:** The 'code' tab allows you to write code from within Siteglide and also includes the powerful Toolbox area on the right hand side to insert content. Find out more:
 
-{% content-ref url="code-view.md" %}
-[code-view.md](code-view.md)
+{% content-ref url="code-view-and-toolbox.md" %}
+[code-view-and-toolbox.md](code-view-and-toolbox.md)
 {% endcontent-ref %}
 
 1. **CLI:** If you're building sites and have some coding experience we strongly recommend using our CLI for code related work:
