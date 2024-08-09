@@ -5,7 +5,7 @@ createdAt: 2021-02-16T14:30:04.000Z
 updatedAt: 2023-12-14T15:18:54.409Z
 ---
 
-# 💡 About Secure Zones
+# ℹ️ About
 
 We provide the Liquid for Sign Up, Login and Password Reset Forms and for checking if the current User is signed in
 

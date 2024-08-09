@@ -18,8 +18,8 @@ Alternatively, you can use a Secure Zone that you have created already.
 
 Find out more about the Secure Zones Module here:
 
-{% content-ref url="../../../module-secure-zones/get-started-secure-zones/introduction.md" %}
-[introduction.md](../../../module-secure-zones/get-started-secure-zones/introduction.md)
+{% content-ref url="../../../modules/core-modules/secure-zones/introduction/" %}
+[introduction](../../../modules/core-modules/secure-zones/introduction/)
 {% endcontent-ref %}
 
 ## Step 2) Create a "My Orders" Page in a Secure Zone
