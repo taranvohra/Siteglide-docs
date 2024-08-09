@@ -5,7 +5,7 @@ Go to a specific site in Portal and click the Modules tab. This will show all Mo
 You can filter to see which Modules are installed:
 
 {% hint style="info" %}
-We recommend keeping Modules Updated (yellow Update button shows an update is available), read more on managing Modules: [updating-existing-modules.md](../../developer-tools/marketplace/building-for-marketplace/updating-existing-modules.md "mention")
+We recommend keeping Modules Updated (yellow Update button shows an update is available), read more on managing Modules: [updating-existing-modules.md](../../developer-tools/building-for-marketplace/updating-existing-modules.md "mention")
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Siteglide-Modules-Installed.png" alt=""><figcaption></figcaption></figure>

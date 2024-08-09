@@ -1,8 +1,14 @@
 # Core Modules
 
-The Siteglide Marketplace has a variety of useful Modules, Templates, Themes and Integrations. Some of which have been built by Siteglide so that you can pick and choose which to install onto each site and reduce clutter/usage if they're not required. These are 'Core Modules' or 'Siteglide Modules'. Other Modules are likely Community built.
+## What are Core Modules?
 
-The Core Modules are:&#x20;
+
+
+These are 'Core Modules' or 'Siteglide Modules'. Other Modules are likely Community built.
+
+## The Core Modules:
+
+These can all be installed from Marketplace ( ) or the Modules tab on a Site ( [#want-to-install-or-manage-modules](../../portal/sites/#want-to-install-or-manage-modules "mention")) :&#x20;
 
 {% content-ref url="../../modules2/menubuilder.md" %}
 [menubuilder.md](../../modules2/menubuilder.md)

@@ -2,8 +2,8 @@
 
 See general module folder strucutre for folder structure in common with all modules:
 
-{% content-ref url="../../../developer-tools/marketplace/building-for-marketplace/modules-folder-structure-introduction.md" %}
-[modules-folder-structure-introduction.md](../../../developer-tools/marketplace/building-for-marketplace/modules-folder-structure-introduction.md)
+{% content-ref url="../../../developer-tools/building-for-marketplace/modules-folder-structure-introduction.md" %}
+[modules-folder-structure-introduction.md](../../../developer-tools/building-for-marketplace/modules-folder-structure-introduction.md)
 {% endcontent-ref %}
 
 \

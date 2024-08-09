@@ -1,4 +1,4 @@
-# Create Folder Structure
+# ℹ️ Create Folder Structure
 
 A Module can contain any code that will run on Siteglide, but that code does need to be split into the relevant folders (notifications, views, etc.) and folder structures. Below, we'll take a look at how to do just that along with all the various options available to you, depending on what you would like to build.
 
@@ -12,7 +12,7 @@ For example, with our Siteglide Theme Demo Module this would generate a name of 
 
 Create a new staging site within your agency to build your module on. Ideally you'll want to use a blank site, so pick the "Build a Custom Site" option on creation. Only you will see what your site is called, so you can call it anything you like.
 
-![](../../../assets/f3N39NCDMxKmbG19AT-JK\_custom-module-create-staging-1.png)
+![](../../assets/f3N39NCDMxKmbG19AT-JK\_custom-module-create-staging-1.png)
 
 Once you have successfully created your staging site, create a project folder on your machine to work within, [connect to your site via CLI](https://developers.siteglide.com/introducing-siteglide-cli#uo-add) and then [pull the site](https://developers.siteglide.com/introducing-siteglide-cli#mf-pull) down onto your local machine so that you are ready to begin building your module.
 

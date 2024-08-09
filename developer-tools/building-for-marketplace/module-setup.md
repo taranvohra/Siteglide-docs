@@ -1,10 +1,10 @@
-# Module Setup
+# ℹ️ Module Setup
 
 Here we will outline the process involved in creating, building, submitting, and maintaining a Module in the following series of docs.
 
 ## Prerequisites
 
-* [ ] Know how to use CLI - [introduction.md](../../../developer-tools/cli/introduction.md "mention")
+* [ ] Know how to use CLI - [introduction.md](../cli/introduction.md "mention")
 * [ ] Know how to use Github - [GitHub](https://github.com/)
 * [ ] Your IDE (Integrated Development Environment) of choice (VSCode, Atom, Sublime etc)
 
@@ -18,7 +18,7 @@ With that in mind, anywhere in this documentation where you see text wrapped in 
 
 The first step to building your module is to create a listing for it in Siteglide. Within your Portal from the left-hand menu, select “Custom Modules” and then click the blue “+ Add New Module” button in the top right-hand corner.
 
-![](../../../assets/Z3A0h1xufodpWF\_DGlyFX\_screenshot-2022-03-10-at-110207.png)
+![](../../assets/Z3A0h1xufodpWF\_DGlyFX\_screenshot-2022-03-10-at-110207.png)
 
 Next, fill in the Module Details form. For now, you only need to provide the following basic information:
 
@@ -34,4 +34,4 @@ We will come back later to enter information into the remaining fields, so for n
 
 Now that you have created your new module, when you view it you will see that it has a “Vanity ID” field. Make a note of this number for later as it will be used within the Module.
 
-![](../../../assets/stqCwmwpnsFI2fIdbpvC1\_custom-module-vanity-id-2.png)
+![](../../assets/stqCwmwpnsFI2fIdbpvC1\_custom-module-vanity-id-2.png)

@@ -1,4 +1,4 @@
-# 🔹 Site Template Modules - and How to Make Your Own
+# ℹ️ Site Template Modules - and How to Make Your Own
 
 ## About Site Templates
 

@@ -1,8 +1,8 @@
-# Theme Module Example
+# ℹ️ Theme Module Example
 
 In this example we're going walk through, step by step, how to create a Website Theme Module that could either be used as a private module for your agency or shared publicly in the marketplace to deliver turnkey site solutions to your clients and more.
 
-![](../../../assets/Rq5gKKmUJUrFAEhkGbzjA\_module-siteglide-theme-demo-1.png)
+![](../../assets/Rq5gKKmUJUrFAEhkGbzjA\_module-siteglide-theme-demo-1.png)
 
 It is recommended that you download our example [Theme Demo Module Repository from GitHub](https://github.com/Siteglide/Module\_Siteglide\_ThemeDemo) so that you have all of the code and asset files available at each step of this guide and can easily follow along to and have your module end up looking exactly the same.
 
@@ -10,19 +10,19 @@ It is recommended that you download our example [Theme Demo Module Repository fr
 
 The first step to building your module is to create a listing for it in Siteglide. Within your Portal from the left-hand menu, select "Custom Modules" and then click the blue "+ Add New Module" button in the top right-hand corner.
 
-You only need to fill in basic information into the core fields. Checkout the [Create Create your Module in Siteglide](../../../modules/%20/) doc for more information.
+You only need to fill in basic information into the core fields. Checkout the [Create Create your Module in Siteglide](../../modules/%20/) doc for more information.
 
 Remember to note down your newly generated Vanity ID.
 
 ## Create Your Folder Structure
 
-First, create a fresh staging site for your module. Checkout [Create Your Staging Site](../../../modules/%20/) **:** for more information on this step.
+First, create a fresh staging site for your module. Checkout [Create Your Staging Site](../../modules/%20/) **:** for more information on this step.
 
 Second, create a folder for your project on your local machine. Working within your new project folder, connect to your new staging site via CLI to pull the initial site files down onto your computer.
 
 Next, create a top level folder called `modules/<module_name>/public` within your project folder. Because we are creating a basic theme Module, we don’t need to create the private top level folder. Checkout [Top Level Folders](https://developers.siteglide.com/2-create-folder-structure#9x-top-level-folders) for more info.
 
-![](../../../assets/OSlgyzgpAqML1M1TXp\_T0\_create-top-level-folder-1.png)
+![](../../assets/OSlgyzgpAqML1M1TXp\_T0\_create-top-level-folder-1.png)
 
 ### Assets
 
@@ -32,7 +32,7 @@ Within the public folder, we want to add in the core assets our Theme Module wil
 * `js` - Core Bootstrap 5 JS files along with a custom JS file which our Theme pages will run using.
 * `scss` - Core Bootstrap 5 CSS files along with a custom CSS file which will Style our Theme pages.
 
-![](../../../assets/y6nt6TQcgn2mRkIQRkLvx\_theme-module-assets-1.png)
+![](../../assets/y6nt6TQcgn2mRkIQRkLvx\_theme-module-assets-1.png)
 
 Open the `Module_Siteglide_ThemeDemo` project folder you downloaded earlier and navigate into `modules/<module_name>/public/assets`. From here, drag and drop all three `bootstrap5-plain-assets`, `js` & `scss` folders into your own Module project assets folder.
 
@@ -49,7 +49,7 @@ First, within your `modules/<module_name>/public` folder, create a new folder ca
 
 Setting Pages up with appropriate Template, Header & Footer files allows us to only write the code once and apply it consistently across all of our theme pages. It also makes it easier to update later if we’d like to. For more information on page structure checkout: [Templates - Getting Started](https://help.siteglide.com/en/article/templates-getting-started-jbynlb/).
 
-![](../../../assets/1m1nO4GayNeKDrW66UBjw\_theme-module-layouts-1.png)
+![](../../assets/1m1nO4GayNeKDrW66UBjw\_theme-module-layouts-1.png)
 
 Open the `Module_Siteglide_ThemeDemo` project folder you downloaded earlier and navigate into `modules/<module_name>/public/views`. From here, drag and drop all three `layouts`, `pages` & `partials` folders into your own Module project views folder.
 
@@ -79,7 +79,7 @@ Now that we have added all of the core assets and views to our module, let’s s
 
 Using CLI run the [deploy command](https://developers.siteglide.com/introducing-siteglide-cli#tq-deploy) to send all of the files within your project folder up to your staging site.
 
-![](../../../assets/nBrvK3QRxl04hiWbB\_\_sv\_theme-module-deploy-1.png)
+![](../../assets/nBrvK3QRxl04hiWbB\_\_sv\_theme-module-deploy-1.png)
 
 Open your staging site to view your work both front-end and back end.
 
@@ -102,7 +102,7 @@ Follow the checklist to confirm your Theme Module is ready for submission:
 
 Here is what your project folder should now look like:
 
-![](../../../assets/ib89QWFYkVQU6a8T4V96o\_theme-module-project-ready-1.png)
+![](../../assets/ib89QWFYkVQU6a8T4V96o\_theme-module-project-ready-1.png)
 
 ### GitHub
 
