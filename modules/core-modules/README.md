@@ -2,9 +2,11 @@
 
 ## What are Core Modules?
 
+'Core Modules' or 'Siteglide Modules' are built by Siteglide and are optional features you can choose to install per site. Other Modules are likely Community built. More information on our Marketplace page:
 
-
-These are 'Core Modules' or 'Siteglide Modules'. Other Modules are likely Community built.
+{% content-ref url="../../portal/marketplace.md" %}
+[marketplace.md](../../portal/marketplace.md)
+{% endcontent-ref %}
 
 ## The Core Modules:
 
