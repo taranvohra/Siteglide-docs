@@ -14,10 +14,10 @@
 
 ## Want to get under the hood via CLI?
 
-{% content-ref url="pages-with-siteglide-cli.md" %}
-[pages-with-siteglide-cli.md](pages-with-siteglide-cli.md)
+{% content-ref url="about-pages/pages-with-siteglide-cli.md" %}
+[pages-with-siteglide-cli.md](about-pages/pages-with-siteglide-cli.md)
 {% endcontent-ref %}
 
-{% content-ref url="page-templates-with-cli.md" %}
-[page-templates-with-cli.md](page-templates-with-cli.md)
+{% content-ref url="page-templates/page-templates-with-cli.md" %}
+[page-templates-with-cli.md](page-templates/page-templates-with-cli.md)
 {% endcontent-ref %}

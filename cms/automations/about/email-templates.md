@@ -1,9 +1,9 @@
-# 🔹 Email Templates
+# ℹ️ Email Templates
 
 Email Templates work very similarly to Page Templates, see:
 
-{% content-ref url="../../pages-and-page-templates/get-started-pages/page-templates.md" %}
-[page-templates.md](../../pages-and-page-templates/get-started-pages/page-templates.md)
+{% content-ref url="../../pages/page-templates/" %}
+[page-templates](../../pages/page-templates/)
 {% endcontent-ref %}
 
 They can be useful in emails to add re-usable branding including headers and footers and email-friendly HTML, like an over-arching table.

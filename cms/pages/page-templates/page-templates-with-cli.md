@@ -9,8 +9,8 @@ updatedAt: 2023-03-03T08:09:58.000Z
 
 Templates must be stored within the following file path of your project: `marketplace_builder/views/layouts/templates/` and must be `.liquid` file type.
 
-{% content-ref url="pages-and-page-templates-file-structure.md" %}
-[pages-and-page-templates-file-structure.md](pages-and-page-templates-file-structure.md)
+{% content-ref url="../pages-and-page-templates-file-structure.md" %}
+[pages-and-page-templates-file-structure.md](../pages-and-page-templates-file-structure.md)
 {% endcontent-ref %}
 
 ## YAML Page Template Settings

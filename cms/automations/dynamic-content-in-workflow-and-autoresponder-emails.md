@@ -1,4 +1,4 @@
-# 🔧 Automations Reference
+# 💻 Reference
 
 ## Introduction - The Body of the Automation Supports Liquid, with some Limitations
 

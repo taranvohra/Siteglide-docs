@@ -1,4 +1,4 @@
-# 💻 Email Automations and Email Templates with Siteglide CLI
+# ℹ️ Email Automations and Email Templates with Siteglide CLI
 
 We recommend for now creating Automations in the Siteglide Admin so that the triggers are correctly attached to the Form.
 

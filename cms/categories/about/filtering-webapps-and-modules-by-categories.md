@@ -1,4 +1,4 @@
-# 🔹 Filtering WebApps and Modules by Categories Using Liquid Parameters
+# ℹ️ Filtering WebApps and Modules by Categories Using Liquid Parameters
 
 This Article shows how to filter WebApp and Module Items using their category\_ids parameter.
 

@@ -4,7 +4,7 @@ description: >-
   of the Categories assigned to a WebApp or Module Item
 ---
 
-# 🔹 Outputting Categories on WebApp / Module / eCommerce Layouts
+# ℹ️ Outputting Categories on WebApp / Module / eCommerce Layouts
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# 🔧 Tags for Categories
+# 💻 Reference
 
 ## Global List of Categories
 
@@ -84,8 +84,8 @@ If you want to skip any Categories, you can use Liquid if statements and the `co
 
 See more here:
 
-{% content-ref url="filtering-webapps-and-modules-by-categories.md" %}
-[filtering-webapps-and-modules-by-categories.md](filtering-webapps-and-modules-by-categories.md)
+{% content-ref url="about/filtering-webapps-and-modules-by-categories.md" %}
+[filtering-webapps-and-modules-by-categories.md](about/filtering-webapps-and-modules-by-categories.md)
 {% endcontent-ref %}
 
 ## Category Detail Pages
@@ -186,6 +186,6 @@ To access the category which belongs to the item currently being outputted in a 
 
 See more:
 
-{% content-ref url="outputting-categories-on-webapp-module-ecommerce-layouts.md" %}
-[outputting-categories-on-webapp-module-ecommerce-layouts.md](outputting-categories-on-webapp-module-ecommerce-layouts.md)
+{% content-ref url="about/outputting-categories-on-webapp-module-ecommerce-layouts.md" %}
+[outputting-categories-on-webapp-module-ecommerce-layouts.md](about/outputting-categories-on-webapp-module-ecommerce-layouts.md)
 {% endcontent-ref %}

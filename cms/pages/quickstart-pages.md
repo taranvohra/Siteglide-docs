@@ -28,8 +28,8 @@ Our SiteBuilder Templates come with Page Templates and are the easiest way to ge
 
 There are various other settings including SEO meta data, Open Graph and assigning the page to a Secure Zone:
 
-{% content-ref url="../../pages-and-page-templates/get-started-pages/page-settings.md" %}
-[page-settings.md](../../pages-and-page-templates/get-started-pages/page-settings.md)
+{% content-ref url="about-pages/page-settings.md" %}
+[page-settings.md](about-pages/page-settings.md)
 {% endcontent-ref %}
 
 Before adding content we recommend saving the page so that the Template is correctly linked and that Studio can display the page correctly.

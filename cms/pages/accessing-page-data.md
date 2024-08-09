@@ -26,7 +26,7 @@ Can receive a String in the Page Template from a content\_for tag in the page
 * `{{context.page.metadata.name}}` - outputs the Name field of the page
 
 {% hint style="info" %}
-If using CLI, check [Page Templates with Siteglide-CLI](page-templates-with-cli.md)[ ](pages-with-siteglide-cli.md)for details on Page Template only Liquid which is hidden on the Siteglide Admin.
+If using CLI, check [Page Templates with Siteglide-CLI](page-templates/page-templates-with-cli.md)[ ](about-pages/pages-with-siteglide-cli.md)for details on Page Template only Liquid which is hidden on the Siteglide Admin.
 {% endhint %}
 
 ## Liquid for Pages only
@@ -36,7 +36,7 @@ Can send a string from a page or partial/include to the page template
 {% endembed %}
 
 {% hint style="info" %}
-If using CLI, [Pages with CLI ](pages-with-siteglide-cli.md)for details on Page only Liquid which is hidden on the Siteglide Admin.
+If using CLI, [Pages with CLI ](about-pages/pages-with-siteglide-cli.md)for details on Page only Liquid which is hidden on the Siteglide Admin.
 {% endhint %}
 
 ## Liquid for either Pages or Page Templates

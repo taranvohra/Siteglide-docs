@@ -10,6 +10,6 @@ This is recommended at the top of most Pages and Page Templates if you are using
 
 ```
 
-{% content-ref url="../../cms/pages/pages-with-siteglide-cli.md" %}
-[pages-with-siteglide-cli.md](../../cms/pages/pages-with-siteglide-cli.md)
+{% content-ref url="../../cms/pages/about-pages/pages-with-siteglide-cli.md" %}
+[pages-with-siteglide-cli.md](../../cms/pages/about-pages/pages-with-siteglide-cli.md)
 {% endcontent-ref %}

@@ -1,25 +1,14 @@
 # Categories
 
-Categories are an excellent method for sorting and grouping content on your Site in an intuitive, hierarchical way.
+## Get Started with Categories:
 
-Categories can be useful in a number of situations:
+{% content-ref url="quickstart-categories.md" %}
+[quickstart-categories.md](quickstart-categories.md)
+{% endcontent-ref %}
 
-* segmenting blogs and services
-* displaying related services on a page due to those items being in the same category.
-* Categories are also used in eCommerce to form product catalogues and groups.
-* Building a menu of categories with items displayed underneath
+## Learn more about Categories:
 
-Each Category can optionally have an automatic system detail Page enabled for it, which will be accessible at a URL which is based off the category's ancestor's in the hierarchy, followed by its own unique slug e.g. the following category structure:
+{% content-ref url="about/" %}
+[about](about/)
+{% endcontent-ref %}
 
-* Shop
-  * Clothing
-    * Unisex
-      * Hats
-
-Would have the following URL for the Hats detail page:
-
-```html
-/shop/clothing/unisex/hats
-```
-
-You can optionally apply a Category Detail Layout to all of these enabled detail Pages.

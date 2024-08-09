@@ -11,7 +11,7 @@ Wondering how to adjust the Product Detail Page based on Category?
 
 ## Answer:
 
-As a User navigates to your Product Detail Page, Siteglide will load the Detail View you have specified in your eCommerce Settings. However, it is perfectly possible to customise this based on [Categories](../../../../cms/categories/), using Liquid logic! You can read more about using Categories on the Layout of the WebApp or Module Item they belong to [here](../../../../cms/categories/filtering-webapps-and-modules-by-categories.md).
+As a User navigates to your Product Detail Page, Siteglide will load the Detail View you have specified in your eCommerce Settings. However, it is perfectly possible to customise this based on [Categories](../../../../cms/categories/), using Liquid logic! You can read more about using Categories on the Layout of the WebApp or Module Item they belong to [here](../../../../cms/categories/about/filtering-webapps-and-modules-by-categories.md).
 
 In this example, you'd need to know the ID of a category you want to display; this can be found in Admin when you select a category. E.g. let's say we want to display something special when something has the category "Featured" and you know it has an ID of "111111":
 
