@@ -219,9 +219,9 @@
   * [🌳 File Structure](cms/categories/category-layout-folder-structure.md)
   * [💻 Reference](cms/categories/category-detail-layouts.md)
 * [Company Information](cms/company-information/README.md)
-  * [💡 About Company Information](cms/company-information/company-information.md)
-  * [👀 Reference: Company Information](cms/company-information/reference-company-info.md)
-  * [🔧 Troubleshooting Company Information](cms/company-information/troubleshooting-company-information.md)
+  * [ℹ️ About](cms/company-information/about.md)
+  * [💻 Reference](cms/company-information/company-information.md)
+  * [❔ Troubleshooting](cms/company-information/troubleshooting-company-information.md)
 * [URL Redirects](cms2/url-redirects.md)
 
 ## Modules

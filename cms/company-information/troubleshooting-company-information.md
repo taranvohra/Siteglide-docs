@@ -4,7 +4,7 @@ description: >-
   following on the page:
 ---
 
-# 🔧 Troubleshooting Company Information
+# ❔ Troubleshooting
 
 {% content-ref url="../../site-manager/code-snippets-includes/constants.md" %}
 [constants.md](../../site-manager/code-snippets-includes/constants.md)

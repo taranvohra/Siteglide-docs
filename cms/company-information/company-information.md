@@ -1,11 +1,4 @@
----
-cover: >-
-  ../../.gitbook/assets/995ebb14508974b7abc9e2fe8d61f7144098c5cb470eb039859264b82f914fa2cmscompany_1nf3ghd
-  (1).png
-coverY: 0
----
-
-# 💡 About Company Information
+# 💻 Reference
 
 Company Information can be used to store key contact and branding information for your client while making it easy for them to manage. You can then use the liquid tags below to output this globally stored information anywhere on the site.
 
