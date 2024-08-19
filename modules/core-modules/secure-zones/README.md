@@ -2,8 +2,8 @@
 
 ## Get Started with Secure Zones:
 
-{% content-ref url="../../../module-secure-zones/get-started-secure-zones/" %}
-[get-started-secure-zones](../../../module-secure-zones/get-started-secure-zones/)
+{% content-ref url="quickstart-secure-zones.md" %}
+[quickstart-secure-zones.md](quickstart-secure-zones.md)
 {% endcontent-ref %}
 
 ## Customising Secure Zones:

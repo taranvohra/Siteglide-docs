@@ -4,8 +4,8 @@ The Events Module is linked to eCommerce Module, to give you full functionality 
 
 ## Ready to build Events?
 
-{% content-ref url="../../../module-events/get-started-events/" %}
-[get-started-events](../../../module-events/get-started-events/)
+{% content-ref url="quickstart-events.md" %}
+[quickstart-events.md](quickstart-events.md)
 {% endcontent-ref %}
 
 ## Want to Filter Items?

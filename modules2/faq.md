@@ -2,8 +2,8 @@
 
 ## Get Started with the FAQ Module
 
-{% content-ref url="../module-faqs/get-started-faqs/" %}
-[get-started-faqs](../module-faqs/get-started-faqs/)
+{% content-ref url="../modules/core-modules/faq/quickstart-faqs.md" %}
+[quickstart-faqs.md](../modules/core-modules/faq/quickstart-faqs.md)
 {% endcontent-ref %}
 
 ## Looking for a Specific Tag?

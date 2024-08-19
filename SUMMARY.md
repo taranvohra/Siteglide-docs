@@ -231,25 +231,25 @@
     * [🚀 Quickstart: Menu Builder](module-menu-builder/get-started-menu-builder/README.md)
     * [ℹ️ About](module-menu-builder/get-started-menu-builder/introduction.md)
   * [Secure Zones](modules/core-modules/secure-zones/README.md)
-    * [🚀 Quickstart: Secure Zones](module-secure-zones/get-started-secure-zones/README.md)
+    * [🚀 Quickstart: Secure Zones](modules/core-modules/secure-zones/quickstart-secure-zones.md)
     * [ℹ️ About](modules/core-modules/secure-zones/introduction/README.md)
       * [📋 Dynamically Assign a Secure Zone during Form Submission](modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission.md)
     * [🧙‍♂️ Go Further](modules/core-modules/secure-zones/go-further-secure-zones/README.md)
       * [ℹ️ Secure Zones with Siteglide CLI](modules/core-modules/secure-zones/go-further-secure-zones/secure-zones-with-cli.md)
       * [ℹ️ Using the context.current\_user object](modules/core-modules/secure-zones/go-further-secure-zones/using-the-context-current-user-object.md)
   * [Media Downloads](modules/core-modules/media-downloads/README.md)
-    * [🚀 Quickstart](modules/core-modules/media-downloads/quickstart.md)
+    * [🚀 Quickstart: Media Downloads](modules/core-modules/media-downloads/quickstart-media-downloads.md)
     * [ℹ️ Layouts](modules/core-modules/media-downloads/layouts.md)
     * [💻 Reference](modules/core-modules/media-downloads/reference.md)
   * [Blog & Authors](modules/core-modules/blog-and-authors/README.md)
-    * [🚀 Quickstart](modules/core-modules/blog-and-authors/quickstart-blog.md)
+    * [🚀 Quickstart: Blog & Authors](modules/core-modules/blog-and-authors/quickstart-blog.md)
     * [🔹 Blog Search](modules/core-modules/blog-and-authors/blog-keyword-search.md)
     * [🔹 Blog Filter by Category](modules/core-modules/blog-and-authors/blog-filter-by-category.md)
     * [🔹 Blog Filter by Author](modules/core-modules/blog-and-authors/blog-filter-by-author.md)
     * [🌳 File Structure](modules/core-modules/blog-and-authors/blog-module-folder-structure.md)
     * [💻 Reference](modules/core-modules/blog-and-authors/blog-and-authors-reference.md)
   * [Events](modules/core-modules/events/README.md)
-    * [🚀 Quickstart](module-events/get-started-events/README.md)
+    * [🚀 Quickstart: Events](modules/core-modules/events/quickstart-events.md)
     * [ℹ️ Filter by Category](module-events/get-started-events/events-intro/event-filtering-category.md)
     * [ℹ️ Getting Started with Event Filtering & Searching](module-events/get-started-events/event-filtering.md)
     * [ℹ️ Filter By Host (Author)](module-events/get-started-events/event-filtering-author.md)
@@ -259,14 +259,14 @@
     * [ℹ️ Search](module-events/go-further-events/event-search.md)
     * [ℹ️ Map List View](module-events/go-further-events/event-list-map.md)
   * [FAQ](modules2/faq.md)
-    * [🚀 Quickstart](module-faqs/get-started-faqs/README.md)
+    * [🚀 Quickstart: FAQ](modules/core-modules/faq/quickstart-faqs.md)
     * [💻 Reference](module-faqs/get-started-faqs/reference.md)
   * [Testimonials](modules2/testimonials.md)
-    * [🚀 Get Started: Testimonials](module-testimonials/get-started-testimonials/README.md)
-    * [Testimonials Module](module-testimonials/get-started-testimonials/introduction.md)
+    * [🚀 Quickstart: Testimonials](modules/core-modules/testimonials/quickstart-testimonials.md)
+    * [💻 Reference](module-testimonials/get-started-testimonials/introduction.md)
   * [Slider](modules2/slider.md)
-    * [🚀 Get Started: Slider](module-slider/get-started-slider/README.md)
-    * [Slider Module Introduction](module-slider/get-started-slider/introduction.md)
+    * [🚀 Quickstart: Slider](modules/core-modules/slider/quickstart-slider.md)
+    * [💻 Reference: Slider](module-slider/get-started-slider/introduction.md)
 * [Community Modules](modules/community-modules/README.md)
   * [🏗️ SiteBuilder](modules/community-modules/sitebuilder.md)
   * [🚀 CRM Sync](modules/community-modules/crm-sync/README.md)
@@ -276,6 +276,7 @@
 
 ## WebApps
 
+* [🚀 Quickstart: WebApps](webapps/quickstart-webapps.md)
 * [Tables](webapps/tables/README.md)
   * [Creating WebApps from the CLI](webapps/tables/creating-webapps-from-the-cli.md)
   * [Field Types](webapps/tables/field-types.md)
@@ -284,6 +285,7 @@
 
 ## eCommerce
 
+* [🚀 Quickstart: eCommerce](ecommerce/quickstart-ecommerce.md)
 * [Get Started](module-ecommerce/get-started-ecommerce/README.md)
   * [💡 About the eCommerce Module](module-ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
   * [📂 Cart, Checkout and Quotes](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/README.md)
@@ -358,6 +360,7 @@
 
 ## CRM
 
+* [🚀 Quickstart: CRM](crm/quickstart-crm.md)
 * [Users](crm/users/README.md)
   * [User Details](crm/users/user-details.md)
   * [User Secure Zones](crm/users/user-secure-zones.md)
