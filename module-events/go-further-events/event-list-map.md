@@ -1,8 +1,6 @@
-# Events - Map List View
+# ℹ️ Map List View
 
 The Map Layout is a List Layout which demonstrates how you can use the Google Maps API to visualise Events from the Siteglide database.
-
-![](https://downloads.intercomcdn.com/i/o/203125841/156aa59682bf991accbb5832/image.png)
 
 ## Prerequisites
 
@@ -74,7 +72,8 @@ The `item.liquid` file should be left in the format of a JSON object, but you ma
     slug: {{this.full_slug | json }},	
     event_start: "{{this.properties.module_field_12_2 | date: "%d/%m/%Y %H:%M T%z"}}",	
     event_end: "{{this.properties.module_field_12_3 | date: "%d/%m/%Y %H:%M T%z"}}",	
-    valid: "{% raw %}
+    valid: "
+{% raw %}
 {% if this.properties.module_field_12_7 == blank %}invalid{% else %}valid{% endif %}"
 }{% unless forloop.last %},{% endunless %}
 {% endraw %}

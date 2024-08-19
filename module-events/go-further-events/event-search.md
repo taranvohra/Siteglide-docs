@@ -1,4 +1,4 @@
-# Events - Search
+# ℹ️ Search
 
 The Article will show you how to adapt your Liquid Syntax and Events Layouts to allow the User to Search for Events by Keyword
 
@@ -8,7 +8,7 @@ You can also allow the User to search for Events by keyword. This requires a sli
 
 ## Liquid Syntax
 
-Although all other Events Navigation options require you to set the `use_adv_search: 'true'` Liquid parameter, keyword search requires the `use_search` parameter.&#x20;
+Although all other Events Navigation options require you to set the `use_adv_search: 'true'` Liquid parameter, keyword search requires the `use_search` parameter.
 
 ```liquid
 {%- include 'module'

@@ -1,4 +1,4 @@
-# Events - Filter By Host (Author)
+# ℹ️ Filter By Host (Author)
 
 This Option Lets you filter Events by Host
 

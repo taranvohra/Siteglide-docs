@@ -1,4 +1,4 @@
-# Events - Getting Started with Event Filtering & Searching
+# ℹ️ Getting Started with Event Filtering & Searching
 
 The Events Module List View can be filtered by Category, Host, or by finding Events which are happening between given dates.
 
@@ -6,7 +6,7 @@ The Events Module List View can be filtered by Category, Host, or by finding Eve
 
 ## Introduction
 
-The Events Module includes the following optional features for helping Users navigate the List View.&#x20;
+The Events Module includes the following optional features for helping Users navigate the List View.
 
 * Browse by Category
 * Browse by Host (requires Authors Module)
@@ -25,13 +25,13 @@ However, certain features just won't have the same effect. For example, filterin
 
 ## Using two List Views on the Same Page- and only filtering one of them
 
-As the Events Navigation options are powered by URL parameters, the parameters will filter all Events List Views on the Page the same way.&#x20;
+As the Events Navigation options are powered by URL parameters, the parameters will filter all Events List Views on the Page the same way.
 
 If you want to provide a Calendar and an Events List together on the Page for example, and you only wish one of them to be affected by the filters in the URL, you can do so by only using the `use_adv_search: 'true'` parameter on the List View you want to be filtered.
 
 ## User Feedback
 
-Each Events Navigation Article will explain how you can use Liquid Logic to dynamically show the currently applied filter.  Here, we'll show an example of some Logic that will check for any of the applied filters:
+Each Events Navigation Article will explain how you can use Liquid Logic to dynamically show the currently applied filter. Here, we'll show an example of some Logic that will check for any of the applied filters:
 
 ```liquid
 {% raw %}

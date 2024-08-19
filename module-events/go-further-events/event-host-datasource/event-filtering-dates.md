@@ -1,4 +1,4 @@
-# Events - Filter by Event Dates
+# ℹ️ Filter by Event Dates
 
 This option allows you to provide the User with links to months when Events are happening - or let them Search between any two dates.
 
