@@ -10,6 +10,12 @@ Go to the Modules tab under the Site you want to work on in Portal and click ins
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Modules-Core-Blog-Authors.png" alt=""><figcaption></figcaption></figure>
 
+More on Installing and Managing Modules:
+
+{% content-ref url="../../../portal/sites/install-and-manage-modules.md" %}
+[install-and-manage-modules.md](../../../portal/sites/install-and-manage-modules.md)
+{% endcontent-ref %}
+
 ## Step 2: Create Items
 
 Go to the Module page within the Site and either edit an existing item or create a new one:

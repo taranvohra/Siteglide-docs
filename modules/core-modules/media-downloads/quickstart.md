@@ -6,6 +6,12 @@ Go to the Modules tab on the Site in Portal and search or find Media Downloads. 
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Modules-Core-Media-Downloads-Install.png" alt=""><figcaption></figcaption></figure>
 
+More on Installing and Managing Modules:
+
+{% content-ref url="../../../portal/sites/install-and-manage-modules.md" %}
+[install-and-manage-modules.md](../../../portal/sites/install-and-manage-modules.md)
+{% endcontent-ref %}
+
 ## Step 2: Create an Item
 
 Go to the Module and create a new Item or edit any existing Items. You can also click view table to edit the Module itself:
