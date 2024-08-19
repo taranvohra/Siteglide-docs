@@ -1,4 +1,4 @@
-# 🔧 Tags for Blog & Authors
+# 💻 Reference
 
 ### General Module Reference
 
