@@ -16,9 +16,11 @@ You can find out which is the latest version here: [https://www.npmjs.com/packag
 
 The CLI is distributed via Node Package Manager (NPM) and so you will need NodeJS installed on your machine. The easiest way to get this is to visit [https://nodejs.org/](https://nodejs.org/) and download the LTS version as this has better support.
 
-Open the download and follow the wizard with the default options to finish install.
+{% hint style="warning" %}
+Siteglide CLI requires a minimum of NodeJS version 10 but for Windows there is an issue with versions above 18.20.1. **Please use 18.20.1.**
+{% endhint %}
 
-Siteglide CLI requires a minimum of NodeJS version 10
+Open the download and follow the wizard with the default options to finish install.
 
 ## Have you Installed the CLI Globally on your Machine?
 
