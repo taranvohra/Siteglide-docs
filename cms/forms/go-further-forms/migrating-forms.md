@@ -70,7 +70,3 @@ You can also add new automations to trigger events when your Form submits.
 ## Step 6) Test and Clear Up
 
 Once you're happy your new Form is working, remove your old Form code from the Site to tidy up.
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
