@@ -4,7 +4,7 @@
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-The SiteGurus Live-Update API helps you quickly build interactive, dynamic website layouts for Siteglide which live-update parts of their content when the user interacts with them.
+The SiteBuilder Live Updates API helps you quickly build interactive, dynamic website layouts for Siteglide which live-update parts of their content when the user interacts with them.
 
 <figure><img src="https://res.cloudinary.com/sitegurus/image/upload/f_auto/v1680276257/modules/module_86/admin/libraries/5/tables/table-1.png" alt=""><figcaption></figcaption></figure>
 
