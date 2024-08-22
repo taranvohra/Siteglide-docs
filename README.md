@@ -16,7 +16,7 @@ If you're looking for help with a site and not sure where to look you can check 
 
 Alternatively use the Search (top right) or navigate through the left menu which is organised to match the menu you will see in Siteglide.
 
-<table data-view="cards"><thead><tr><th data-type="rating" data-max="5"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>null</td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td>null</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td>null</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th data-type="rating" data-max="5"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>5</td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td>5</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td>5</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
 
 ## Types of Articles
 
