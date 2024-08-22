@@ -4,13 +4,21 @@ description: The home of Siteglide Docs - Build Limitless Digital Experiences
 
 # 👋 Welcome
 
-Welcome to Siteglide's Documentation!&#x20;
-
 Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Need Some Help?</strong></td><td>Step-by-step guides</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart.png">Quickstart.png</a></td></tr><tr><td><strong>Ready to Create Sites?</strong></td><td>Use a SiteBuilder Template</td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site-SiteBuilder.png">Create-a-Site-SiteBuilder.png</a></td></tr><tr><td><strong>Dive into the Code?</strong></td><td>Follow our Quickstart Guide</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
+## Where do I start?
 
-### Types of Articles
+If you're new to Siteglide we recommend starting from a pre-built Template that leverages our SiteBuilder tool: [create-site-from-template.md](sitebuilder/setup-sitebuilder/create-site-from-template.md "mention").
+
+If you're code savvy we strongly recommend setting up our CLI so you can get the most from Siteglide via VSCode or your preferred IDE: [quickstart.md](developer-tools/cli/quickstart.md "mention")
+
+If you're looking for help with a site and not sure where to look you can check out our [tutorials.md](get-started/tutorials.md "mention").&#x20;
+
+Alternatively use the Search (top right) or navigate through the left menu which is organised to match the menu you will see in Siteglide.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>New to Siteglide?</strong>    </td><td>Use a SiteBuilder Template</td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td><strong>Need Some Help?</strong></td><td>Step-by-step guides</td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td><strong>Dive into the Code?</strong></td><td>Follow our Quickstart Guide</td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
+
+## Types of Articles
 
 1. :rocket: **Quickstart:** Bare essential guides with links to more detailed articles if you get stuck
 2. :information\_source: **About / Introduction:** A brief overview of the topic
