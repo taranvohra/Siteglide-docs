@@ -281,6 +281,7 @@
   * [Field Types](webapps/tables/field-types.md)
 * [Items](webapps2/items.md)
 * [Layouts](webapps2/layouts.md)
+* [ℹ️ WebApp List Layout](webapps/webapp-list-layout.md)
 
 ## eCommerce
 
