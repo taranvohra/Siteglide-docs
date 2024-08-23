@@ -2,7 +2,7 @@
 
 We're constantly putting together Tutorials and Guides to help you get started with each area of Siteglide.
 
-## Build Better, Faster with SiteBuilder
+## Build Better AND Faster with SiteBuilder
 
 {% content-ref url="../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md" %}
 [quickstart-sitebuilder.md](../sitebuilder/setup-sitebuilder/quickstart-sitebuilder.md)
