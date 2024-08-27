@@ -20,6 +20,12 @@ You will see the custom fields you create in the setup stage and can fill in the
 
 <figure><img src="../.gitbook/assets/Siteglide-WebApps-Item-Custom-Fields.png" alt=""><figcaption></figcaption></figure>
 
+Full details here:
+
+{% content-ref url="items/create-webapp-items.md" %}
+[create-webapp-items.md](items/create-webapp-items.md)
+{% endcontent-ref %}
+
 ## Step 3: Customise the Layout
 
 You can edit the default layouts or create new ones via CLI and Code Editor but we strongly recommend using SiteBuilder.&#x20;
