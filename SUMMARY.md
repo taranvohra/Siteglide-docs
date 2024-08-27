@@ -276,12 +276,13 @@
 ## WebApps
 
 * [🚀 Quickstart: WebApps](webapps/quickstart-webapps.md)
-* [Tables](webapps/tables/README.md)
-  * [Creating WebApps from the CLI](webapps/tables/creating-webapps-from-the-cli.md)
-  * [Field Types](webapps/tables/field-types.md)
-* [Items](webapps2/items.md)
-* [Layouts](webapps2/layouts.md)
-* [ℹ️ WebApp List Layout](webapps/webapp-list-layout.md)
+* [WebApp Items](webapps/items/README.md)
+  * [📋 Create WebApp Items](webapps/items/create-webapp-items.md)
+  * [📋 Importing and Exporting](webapps/items/importing-and-exporting.md)
+* [Layouts](webapps/layouts/README.md)
+  * [ℹ️ WebApp List Layout](webapps/layouts/webapp-list-layout.md)
+  * [ℹ️ WebApp Detail Layouts](webapps/layouts/webapp-detail-layouts.md)
+  * [📋 Searching by Location](webapps/layouts/searching-by-location.md)
 
 ## eCommerce
 
