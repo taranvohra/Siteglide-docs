@@ -54,7 +54,9 @@ Once the verification CNAME record has propagated the WWW CNAME Record needs to 
 
 ![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/675766690a2105effba6c541fa9042718196bc0aca64a984869352884ea916b720f847b9-5e47-4982-aaea-e44bff\_w8y6cl.jpeg)
 
-The site will now be live via WWW (https://www.domain.com) but not via the root domain (https://domain.com). Complete Step 5 to fully setup the domain correctly.
+The site will now be live via WWW (https://www.domain.com) but not via the root domain (https://domain.com). Complete Step 5 to fully setup the domain correctly. The domain should show as 'Live' under the Status column in Siteglide:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Portal-Sites-Domain-External-Live.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5: Forward the Root/@ to the www (with SSL)
 
