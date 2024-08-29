@@ -160,7 +160,7 @@ If you create a custom layout, you should also create an empty.liquid file, rena
 
 ## Step 10) Test your eCommerce flow.
 
-Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../../../ecommerce/payment-gateways/test-cards.md)
+Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../../../ecommerce/get-started-ecommerce/payment-gateways/test-cards.md)
 
 Users will be added to the CRM in Admin.
 

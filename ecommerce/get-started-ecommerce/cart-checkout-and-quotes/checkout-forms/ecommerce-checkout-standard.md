@@ -42,4 +42,4 @@ This will output the Payment Gateway with the ID you select. When outputting by 
 
 Once you've added multiple Payment Gateways to your form using the include above, you can add JavaScript to switch between them on the client side:
 
-[Switching Between Multiple Payment Method Options](../../../payment-gateways/switching-gateway.md)
+[Switching Between Multiple Payment Method Options](../../payment-gateways/switching-gateway.md)
