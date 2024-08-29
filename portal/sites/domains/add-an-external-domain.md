@@ -1,4 +1,4 @@
-# Add an External Domain
+# 📋 Add an External Domain
 
 {% hint style="warning" %}
 We strongly recommend Fully Delegating your domain for best results and to avoid additional steps redirecting the non-www to www.

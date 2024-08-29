@@ -1,4 +1,4 @@
-# Add a Fully Delegated Domain
+# 📋 Add a Fully Delegated Domain
 
 ## Step 1: Add a Domain
 
