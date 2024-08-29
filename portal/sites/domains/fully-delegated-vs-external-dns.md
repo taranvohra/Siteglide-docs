@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Fully Delegated vs External DNS
 
 When adding a Domain in Siteglide you can choose between Fully Delegated and External.&#x20;
