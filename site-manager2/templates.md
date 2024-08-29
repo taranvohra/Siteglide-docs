@@ -1,10 +1,18 @@
-# Page Templates
+# Templates (Pages & Email)
 
-Page Templates are used for organising the repeatable content you will want to display on multiple pages, including Headers and Footers
+Templates are used for organising the repeatable content you will want to display on multiple pages, including Headers and Footers. You can also use Templates for Emails.
 
 ## Introduction
 
 Page Templates are used to easily and consistently apply the same global content to pages, such as: Headers, Footers, Global Stylesheets and Analytics Tracking Scripts.
+
+You can find Templates under Site Manager:
+
+<figure><img src="../.gitbook/assets/Siteglide-Site-Manager-Page-Templates-List.png" alt=""><figcaption></figcaption></figure>
+
+We recommend editing Templates via CLI but the Toolbox feature is useful when inserting Siteglide features/code:
+
+<figure><img src="../.gitbook/assets/Siteglide-Site-Manager-Page-Template.png" alt=""><figcaption></figcaption></figure>
 
 ## An Example Page Template
 

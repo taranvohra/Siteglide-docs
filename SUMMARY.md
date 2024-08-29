@@ -375,7 +375,7 @@
 ## Site Manager
 
 * [Code Editor](site-manager2/code-editor.md)
-* [Page Templates](site-manager2/templates.md)
+* [Templates (Pages & Email)](site-manager2/templates.md)
 * [Headers & Footers](site-manager2/headers-and-footers.md)
 * [Code Snippets (Includes)](site-manager/code-snippets-includes/README.md)
   * [🔧 Includes Troubleshooting](site-manager/code-snippets-includes/includes-troubleshooting.md)
@@ -391,7 +391,7 @@
 
 ## Reporting
 
-* [Building Reports](reporting2/building-reports.md)
+* [🚀 Quickstart: Reports](reporting2/building-reports.md)
 
 ## Miscellaneous
 
