@@ -154,6 +154,7 @@
 
 ## CMS
 
+* [Dashboard](cms/dashboard.md)
 * [Pages](cms/pages/README.md)
   * [🚀 Quickstart: Pages](cms/pages/quickstart-pages.md)
   * [ℹ️ Studio](cms/pages/studio.md)

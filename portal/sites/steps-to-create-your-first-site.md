@@ -48,18 +48,28 @@ Give the site a name and it will automatically create the URL. You will need to 
 
 ## Step 5: Manage Your New Site Once Ready
 
-And that's it! You've successfully created a new site, you will need to wait for it to be ready to use. You will receive an email when it's done but can also find it under the Sites area:
+And that's it! You've successfully created a new site, you will need to wait for it to be ready to use:
 
 <figure><img src="https://p186.p2.n0.cdn.zight.com/items/v1u9wLZ2/3bf5f58f-56e5-4b32-b427-36fc35cd9bfc.jpg?source=viewer&#x26;v=%22ddbfd9bfe9035551bb2c140d6b3d916c%22" alt=""><figcaption><p>Once you get the email confirming it's ready you will need to refresh this page or click the link from the email</p></figcaption></figure>
 
+You will receive an email when it's done but can also find it under the Sites area:
+
+<figure><img src="../../.gitbook/assets/Siteglide-Sites-List.png" alt=""><figcaption></figcaption></figure>
+
+The Status will show as Trial and there will be a new blue button in the bottom bar that will likely say Sign up for Admin Access if you've not yet used it, otherwise it'll say Admin going forwards:
+
+<figure><img src="../../.gitbook/assets/Siteglide-Site-Details.jpg" alt=""><figcaption><p>Click Sign up for Admin Access and you'll then be on the Site Dashboard</p></figcaption></figure>
+
 ## Next Steps:
 
-Take a look at our Admin Overview for how to start managing and editing the site:
+Click through to Administer the Site and you'll end up on the Dashboard:
 
-ADMIN LINK
+{% content-ref url="../../cms/dashboard.md" %}
+[dashboard.md](../../cms/dashboard.md)
+{% endcontent-ref %}
 
-If you're a developer you'll likely want to be able to easily edit the Tailwind CSS via our CLI:
+If you're a developer you'll likely want to set up our CLI:
 
-{% content-ref url="../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md" %}
-[set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md)
+{% content-ref url="../../developer-tools/cli/quickstart.md" %}
+[quickstart.md](../../developer-tools/cli/quickstart.md)
 {% endcontent-ref %}
