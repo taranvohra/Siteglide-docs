@@ -30,6 +30,8 @@
   * [📋 Invite & Manage Users](portal/users-and-user-roles/invite-and-manage-users.md)
 * [Billing](portal/billing/README.md)
   * [💳 Billing Setup](portal/billing/billing-setup.md)
+  * [💳 Plans](portal/billing/plans.md)
+  * [💳 Invoices](portal/billing/invoices.md)
 * [Tickets](portal2/tickets.md)
 * [Marketplace](portal/marketplace.md)
 * [Agencies](portal/agencies/README.md)
