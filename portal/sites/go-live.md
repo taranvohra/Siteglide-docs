@@ -32,11 +32,11 @@ The Subscription tab will show your current usage and recommend which plan you n
 
 On the Go Live tab there are a few options, firstly pick your currency then select the Plan (based on Step 2) and finally pick your preferred/closest Datacenter (this cannot be changed).
 
-<figure><img src="../../.gitbook/assets/Siteglide-Site-Go-Live.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Site-Go-Live (1).png" alt=""><figcaption></figcaption></figure>
 
 The button will not turn blue until you've selected a Plan:
 
-<figure><img src="../../.gitbook/assets/Siteglide-Site-Go-Live-Selected.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Site-Go-Live-Selected (1).png" alt=""><figcaption></figcaption></figure>
 
 It will then confirm the last 4 digits of the card that will be used and that you will be charged pro-rata for the remainder of the month based on the selected plan. When ready click Start Subscription. Please contact us if you are unsure about any of these steps, we cannot make changes once the site is Live.
 
