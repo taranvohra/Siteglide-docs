@@ -114,19 +114,38 @@ Category Detail Pages give you additional features including Breadcrumbs, Parent
 
 ### Breadcrumbs
 
-Output breadcrumb of Categories to the current Category page using the defined layout:`<div data-gb-custom-block data-tag="-" data-0='category_breadcrumbs' data-1=', layout: ' data-2='breadcrumb'></div>`
+Output breadcrumb of Categories to the current Category page using the defined layout:
+
+<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
+</strong></code></pre>
 
 ### Parent Category List
 
-Output parent Categories using the defined layout: `<div data-gb-custom-block data-tag="-" data-0='category_parent' data-1=', layout: ' data-2='parent'></div>`
+Output parent Categories using the defined layout:
+
+```liquid
+{%- include 'category_parent', layout: 'parent' -%
+```
 
 ### Child Category List
 
-Output child Categories using the defined layout: `<div data-gb-custom-block data-tag="-" data-0='category_children' data-1=', layout: ' data-2='children'></div>`
+Output child Categories using the defined layout:&#x20;
+
+```liquid
+{% raw %}
+{%- include 'category_children', layout: 'children' -%}
+{% endraw %}
+```
 
 ### Items in this Category
 
-Output all items categorised to the current Category Page using the defined layout: `<div data-gb-custom-block data-tag="-" data-0='category_items' data-1=', layout: ' data-2='items'></div>`
+Output all items categorised to the current Category Page using the defined layout:&#x20;
+
+```liquid
+{% raw %}
+{%- include 'category_items', layout: 'items' -%}
+{% endraw %}
+```
 
 Note that this will only output items in this specific Category. To output all items that belong to sub-Categories, then add another parameter of `show_all_sub_items: 'true'`.
 

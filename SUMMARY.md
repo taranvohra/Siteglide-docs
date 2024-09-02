@@ -219,7 +219,7 @@
     * [ℹ️ Outputting Categories on WebApp / Module / eCommerce Layouts](cms/categories/about/outputting-categories-on-webapp-module-ecommerce-layouts.md)
     * [ℹ️ Filtering WebApps and Modules by Categories Using Liquid Parameters](cms/categories/about/filtering-webapps-and-modules-by-categories.md)
   * [🌳 File Structure](cms/categories/category-layout-folder-structure.md)
-  * [💻 Reference](cms/categories/category-detail-layouts.md)
+  * [💻 Reference](cms/categories/reference.md)
 * [Company Information](cms/company-information/README.md)
   * [ℹ️ About](cms/company-information/about.md)
   * [💻 Reference](cms/company-information/company-information.md)
