@@ -20,6 +20,18 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.15.1 - Released 5th August 2024
+
+* Patch to fix Flowbite WebApp Edit Form layout not installing properly in "static" mode.&#x20;
+
+### 4.15.0 - Released 3rd August 2024
+
+* New Layout type- Category List Views - these work as code snippets which can be added almost anywhere and either loop over all categories or children of a category ID you pass in in settings.
+  * SiteBuilder 4.15.0
+    * 2 new Category List Layouts
+  * Flowbite Pro Theme 1.9.0
+    * 5 new Category List Layouts
+
 ### 4.14.0 - Released 17th July 2024
 
 * New Flowbite Form Confirmation Layout which will automatically display submitted custom fields with headings.
