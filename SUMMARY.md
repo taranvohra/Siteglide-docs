@@ -286,6 +286,7 @@
   * [ℹ️ WebApp List Layout](webapps/layouts/webapp-list-layout.md)
   * [ℹ️ WebApp Detail Layouts](webapps/layouts/webapp-detail-layouts.md)
   * [📋 Searching by Location](webapps/layouts/searching-by-location.md)
+  * [ℹ️ Field Types](webapps/layouts/field-types.md)
 
 ## eCommerce
 
