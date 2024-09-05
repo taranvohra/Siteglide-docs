@@ -1,60 +1,34 @@
-# ℹ️ Field Types
+---
+description: The home of Siteglide Docs - Build Limitless Digital Experiences
+---
 
-## Field Types available
+# 👋 Welcome
 
-A list of field types available on Siteglide and the corresponding platformOS data type applicable to them
+Siteglide allows agencies to take control over code and data via API, CLI or UI. With the right blend of out-of-the-box tools and freedom to develop - without limits.
 
-| Name                     | Siteglide Type    | platformOS Type |
-| ------------------------ | ----------------- | --------------- |
-| Text (String)            | input\_text       | string          |
-| Text (Multiline)         | textarea          | string          |
-| Checkbox                 | input\_checkbox   | array           |
-| Radio Button             | input\_radio      | string          |
-| Dropdown (Single Item)   | select            | string          |
-| Dropdown (Multi Item)    | select\_multi     | array           |
-| Datasource (Single Item) | datasource        | integer         |
-| Datasource (Multi Item)  | datasource\_multi | array           |
-| Image (Single)           | image             | string          |
-| Image (Array)            | image\_array      | array           |
-| File                     | file              | string          |
-| Folder                   | folder            | string          |
-| Date                     | date              | integer         |
-| Number (Integer)         | number\_integer   | integer         |
-| Number (Float)           | number\_float     | float           |
-| Boolean                  | boolean           | boolean         |
-| Custom Array             | array\_custom     | array           |
+## Where do I start?
 
-## Where are these field types available to use as Custom Fields?
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>New Users</strong></td><td><a href="sitebuilder/setup-sitebuilder/create-site-from-template.md">create-site-from-template.md</a></td><td><a href=".gitbook/assets/Create-a-Site (3).png">Create-a-Site (3).png</a></td></tr><tr><td><strong>Existing Users</strong></td><td><a href="get-started/tutorials.md">tutorials.md</a></td><td><a href=".gitbook/assets/Quickstart (1).png">Quickstart (1).png</a></td></tr><tr><td><strong>Developers</strong></td><td><a href="developer-tools/cli/quickstart.md">quickstart.md</a></td><td><a href=".gitbook/assets/Setup-CLI.png">Setup-CLI.png</a></td></tr></tbody></table>
 
-* **Modules** - All field types
-* **WebApps** - All field types
-* **eCommerce Products** - All field types
-* **CRM Users** - All field types
-* **Forms** - All field types _except Custom Array_
-* **Custom Field Sets** - All field types _except Custom Array_
+If you're new to Siteglide we recommend starting from a pre-built Template that leverages our SiteBuilder tool: [create-site-from-template.md](sitebuilder/setup-sitebuilder/create-site-from-template.md "mention").
 
-## Form Configuration metadata options
+If you're looking for help with a site and not sure where to look you can check out our [tutorials.md](get-started/tutorials.md "mention").&#x20;
 
-All field types have the following metadata options:
+If you're already working on a site and you're code savvy we strongly recommend setting up our CLI so you can get the most from Siteglide via VSCode or your preferred IDE: [quickstart.md](developer-tools/cli/quickstart.md "mention")
 
-| Name     | Type    | Notes                                                                                             |
-| -------- | ------- | ------------------------------------------------------------------------------------------------- |
-| name     | string  | The field name to be shown in Siteglide Admin UI                                                  |
-| type     | string  | The field type in the 'Siteglide Type' column above                                               |
-| live     | boolean | Determines whether or not the field is shown or used anywhere                                     |
-| hidden   | boolean | Determines whether or not the field is shown in Siteglide Admin UI                                |
-| order    | integer | The position the field is shown in Siteglide Admin UI and Import CSVs                             |
-| editable | boolean | Determines whether you can edit this metadata in the Siteglide Admin UI builder views             |
-| required | boolean | Determines whether it is required to fill in this field in Siteglide Admin UI and front-end forms |
+**Looking for something else?** Use the Search (top right) or navigate through the left menu which is organised to match the menu you will see in Siteglide.
 
-Some other metadata options are available to specific field types:
+## Types of Articles
 
-| Name           | Type    | Available for                                     | Notes                                                                                                                                   |
-| -------------- | ------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| rich\_text     | boolean | textarea                                          | Determines whether the Rich Text editor appears in Siteglide Admin UI for this field                                                    |
-| options        | string  | input\_checkbox input\_radio select select\_multi | A comma separated string of options to be displayed for this field in Siteglide Admin UI                                                |
-| datasource\_id | string  | datasource datasource\_multi                      | The ID of the model you want options to show from for this field in Siteglide Admin UI. This includes the type, for example `webapp_1`. |
-| num\_min       | string  | number\_integer number\_float                     | The minimum value this number field will allow the user to select.                                                                      |
-| num\_max       | string  | number\_integer number\_float                     | The maximum value this number field will allow the user to select.                                                                      |
-| num\_step      | string  | number\_integer number\_float                     | The amount the number will change by using the number scroller in Siteglide Admin UI.                                                   |
-| num\_precision | string  | number\_integer number\_float                     | The amount of decimal places shown in Siteglide Admin UI.                                                                               |
+1. :rocket: **Quickstart:** Bare essential guides with links to more detailed articles if you get stuck
+2. :information\_source: **About / Introduction:** A brief overview of the topic
+3. :clipboard: **Step by Step Articles:** How to Implement a Feature or Solve a Problem
+4. :bulb: **Concept:** Will take a feature and explain it in a little more depth
+5. :construction\_site: **SiteBuilder:** How to get setup and get the most from the SiteBuilder module
+6. :computer: **Reference:** A brief reference guide to this feature for developers and anyone interested in code
+7. :deciduous\_tree: **File Structure:** This will show you which folders and files are necessary and where to add them to your codebase. This will be presented in the format from which you would see it in Siteglide CLI
+8. :grey\_question: **Troubleshooting:** Find answers to common challenges
+9. :man\_mage: **Go Further:** This is where you'd find more detailed docs that help you really push the boundaries of all things web development
+10. :link: **API:** Endpoints and articles related to our API
+11. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions
+12. :woman\_technologist: **Agencies:** Articles specific to Digital Agency partners
