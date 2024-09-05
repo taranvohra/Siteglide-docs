@@ -1,6 +1,7 @@
 # Table of contents
 
-* [👋 Welcome](README.md)
+* [ℹ️ Field Types](README.md)
+* [👋 Welcome](<README (1).md>)
 
 ## Get Started
 
@@ -75,8 +76,7 @@
     * [Tutorial 10 - Using Mutations to Edit a Record](developer-tools/graphql/tutorials/tutorial-10-using-mutations-to-edit-a-record.md)
     * [Tutorial 11 - Using Mutations to Delete an Item](developer-tools/graphql/tutorials/tutorial-11-using-mutations-to-delete-an-item.md)
     * [Tutorial 12 - Related Records and Datasources](developer-tools/graphql/tutorials/tutorial-12-related-records-and-datasources.md)
-* [Configuration](developer-tools/configuration/README.md)
-  * [ℹ️ Field Types](webapps/tables/field-types.md)
+* [Configuration](developer-tools/configuration.md)
 * [Public API](developer-tools/public-api/README.md)
   * [🔗 Sessions](developer-tools/public-api/sessions.md)
   * [🔗 Forms](developer-tools/public-api/forms.md)
