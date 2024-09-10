@@ -2,7 +2,7 @@
 description: Get started with our CLI
 ---
 
-# 🚀 Quickstart
+# 🚀 Quickstart: CLI
 
 {% hint style="info" %}
 If unsure please read more about CLI first:
@@ -57,3 +57,7 @@ Check out our Reference article for a full list of useful Commands:
 {% content-ref url="reference.md" %}
 [reference.md](reference.md)
 {% endcontent-ref %}
+
+{% hint style="info" %}
+If you're using Flowbite/Tailwind please ensure you have Tailwind setup to compile CSS: [set-up-tailwind-css.md](../../sitebuilder/setup-sitebuilder/set-up-tailwind-css.md "mention")
+{% endhint %}
