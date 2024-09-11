@@ -20,6 +20,8 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.15.2 - 4.15.3 - Hotfixes - Released 10th September 2024
+
 ### 4.15.1 - Released 5th August 2024
 
 * Patch to fix Flowbite WebApp Edit Form layout not installing properly in "static" mode.&#x20;
