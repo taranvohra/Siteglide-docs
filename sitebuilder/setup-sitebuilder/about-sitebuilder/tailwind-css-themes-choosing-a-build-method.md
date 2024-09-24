@@ -28,8 +28,18 @@ Both methods have their advantages, which we'll look at here, but it also depend
 
 In the end, it depends on your preference and the way your clients wish to use your site.&#x20;
 
-If you use the Siteglide-CLI already to take advantage of modern code editing tools, you'll be right at home with Tailwind CLI.
+If you use the Siteglide-CLI already to take advantage of modern code editing tools, you'll be right at home with our recommended method: Tailwind CLI.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Setting up Tailwind CLI</td><td></td><td></td><td><a href="https://app.gitbook.com/o/4DsXpZUJmkzzwFMKxvx9/snippet/19598">Editing the Tailwind Config File</a></td></tr><tr><td>Editing Tailwind CSS using the CLI</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+{% content-ref url="../set-up-tailwind-css.md" %}
+[set-up-tailwind-css.md](../set-up-tailwind-css.md)
+{% endcontent-ref %}
 
-If you already work in the Siteglide Admin to keep everything in one place, you'll possibly find Preview Mode more convenient.&#x20;
+{% content-ref url="../editing-tailwind-css.md" %}
+[editing-tailwind-css.md](../editing-tailwind-css.md)
+{% endcontent-ref %}
+
+If you, or your client, wish to build and preview your Pages in the Siteglide Admin without frequent use of the Siteglide CLI, Preview mode may be for you. We still recommend using the Tailwind CLI now and again to set up your brand variables and to set them consistently across all of your pages at once, but this does not need to be done every time you make a change in Admin, allowing for a potentially smoother experience for clients and development.&#x20;
+
+{% content-ref url="../styling/tailwind-css-preview-mode-coming-soon.md" %}
+[tailwind-css-preview-mode-coming-soon.md](../styling/tailwind-css-preview-mode-coming-soon.md)
+{% endcontent-ref %}
