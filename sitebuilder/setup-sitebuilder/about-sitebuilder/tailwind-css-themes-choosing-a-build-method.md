@@ -28,6 +28,8 @@ Both methods have their advantages, which we'll look at here, but it also depend
 
 In the end, it depends on your preference and the way your clients wish to use your site.&#x20;
 
-If you use the Siteglide-CLI already to take advantage of modern code editing tools, you'll be right at home with Tailwind CLI. [Using the Tailwind CLI with Siteglide](https://www.sitegurus.io/documentation/sitebuilder/libraries\_and\_frameworks/using\_the\_tailwind\_cli\_with\_siteglide)
+If you use the Siteglide-CLI already to take advantage of modern code editing tools, you'll be right at home with Tailwind CLI.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Setting up Tailwind CLI</td><td></td><td></td><td><a href="https://app.gitbook.com/o/4DsXpZUJmkzzwFMKxvx9/snippet/19598">Editing the Tailwind Config File</a></td></tr><tr><td>Editing Tailwind CSS using the CLI</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 If you already work in the Siteglide Admin to keep everything in one place, you'll possibly find Preview Mode more convenient.&#x20;

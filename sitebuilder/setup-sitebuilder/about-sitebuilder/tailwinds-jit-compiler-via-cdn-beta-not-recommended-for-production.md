@@ -3,7 +3,7 @@
 ### Before you Start <a href="#before-you-start" id="before-you-start"></a>
 
 {% hint style="warning" %}
-This is a Beta feature - not recommended for Production
+This is a deprecated feature - not recommended for Production
 {% endhint %}
 
 * Check [Choosing a Build Method](https://www.sitegurus.io/documentation/sitebuilder/libraries\_and\_frameworks/libraries\_using\_tailwind\_css\_choosing\_a\_build\_method) first to choose which option suits you best.
