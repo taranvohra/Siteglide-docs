@@ -1,14 +1,16 @@
-# 🏗️ Tailwind CSS - Preview Mode (Coming Soon)
-
-While using the CLI to build a fast Tailwind CSS file is the recommended way to use Tailwind by the makers of Tailwind themselves and by us, sometimes there are situations where it is worth sacrificing a little page speed for convenience and faster development time.\
-\
-One option is to use the [Tailwind Play CDN ](https://tailwindcss.com/docs/installation/play-cdn)or our now deprecated JIT method, but since these generate CSS at runtime, they cannot see classes which are needed for different states of Liquid logic, for example if you log in or out of a secure zone.
-
-Our preview mode is designed to keep the convenience of Tailwind code which "just works out of the box" without the drawbacks of needing to recalculate the Tailwind CSS every time you view the Page.
+# 🏗️ Tailwind CSS - Preview Build
 
 {% hint style="info" %}
-Preview Mode is designed so it can be used on its own, or in combination with the recommended CLI method. See below!
+Preview Mode is not recommended for Live Sites. We recommend only using CLI to compile Tailwind which will load the minimum CSS possible and maximise performance.
 {% endhint %}
+
+Our Preview Mode is designed to keep the convenience of Tailwind code which "just works out of the box" without the drawbacks of needing to recalculate the Tailwind CSS every time you view the Page.
+
+Preview Mode is designed so it can be used on its own, or in combination with the recommended CLI method. See below!
+
+#### Why is it needed?
+
+Options such as the [Tailwind Play CDN ](https://tailwindcss.com/docs/installation/play-cdn)(or our now deprecated JIT method) generate CSS at runtime, so they cannot see classes which are needed for different states of Liquid logic, for example if you log in or out of a secure zone.
 
 ## Page Template Level Control
 
@@ -48,7 +50,7 @@ If no custom CLI build can be found and no path is provided, preview mode will b
 The Preview mode starts by adding two CSS files from CDNs to your Page Template's `<head>:`
 
 1. A CSS file distributed by Flowbite containing Tailwind classes to support the vast majority of their blocks and components [https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css](https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css) (will always load latest version of Flowbite)
-2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbites as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".&#x20;
+2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbite's as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".&#x20;
 
 Together these CSS files create a set of fallbacks which allow Flowbite Layouts to look how Flowbite and SiteBuilder intended out of the box, should these classes not be included elsewhere. However, they won't have any of your branded variables set, like colours or fonts. The extra load time for these CSS files is also the reason why it's not generally recommended to use Preview Page for pages in Production.
 
@@ -56,7 +58,7 @@ Together these CSS files create a set of fallbacks which allow Flowbite Layouts 
 
 ### Safelist
 
-If you know you wish to support more classes using your brand variables in future, you can consider adding them to the [safelist](https://tailwindcss.com/docs/content-configuration#safelisting-classes) in your custom CLI Tailwind Config. Just bear in mind that this can make a template which is only using the CLI CSS less efficient as it can use less tree-shaking.&#x20;
+If you know you wish to support more classes using your brand variables in future, you can consider adding them to the [safelist](https://tailwindcss.com/docs/content-configuration#safelisting-classes) in your custom CLI Tailwind Config. Just bear in mind that this can make a template which is only using the CLI CSS less efficient as it can use less tree-shaking.
 
 ## Use Cases
 
@@ -81,7 +83,3 @@ However, you can support them by running a CLI Tailwind build as well, either:
 {% endif %}
 {% endraw %}
 ```
-
-
-
-## &#x20; 
