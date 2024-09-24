@@ -9,7 +9,7 @@ Tailwind’s approach to performance means it provides a huge range of utility c
 There are a few alternatives to consider when it comes to generating a Tailwind CSS file for your Siteglide site:
 
 1. A Command Line Interface (CLI) Compilation on your machine (recommended)
-2. Quickstart Preview (Coming soon!)
+2. Preview Mode
 3. Just In Time (JIT) Compilation in the Browser (deprecated)
 
 ### Which one is right for me? <a href="#which-one-is-right-for-me" id="which-one-is-right-for-me"></a>
@@ -18,7 +18,7 @@ That depends!
 
 Both methods have their advantages, which we'll look at here, but it also depends on the preference of the developer and the type of project you're working on.
 
-| Question                                                                                       | Tailwind CLI                                                                                              | Tailwind Preview                                                                                                                         | JIT CDN (deprecated)                                                                                                                                                                                                                                                 |
+| Question                                                                                       | Tailwind CLI                                                                                              | Preview Mode                                                                                                                             | JIT CDN (deprecated)                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Will it support CSS classes that sit inside Secure Zones or other Liquid logical statements?   | ✔️                                                                                                        | ✔️ So long as it uses Flowbite blocks or components.                                                                                     | ❌ See [Safelisting classes which are added via user-interaction](https://www.sitegurus.io/documentation/sitebuilder/themes/tailwinds\_jit\_compiler\_via\_cdn#safelisting-classes-which-are-added-via-user-interaction) for possible workarounds and recommendations |
 | Can I use the latest version of Tailwind?                                                      | ✔️                                                                                                        | ✔️                                                                                                                                       | Not yet. You can use most features from version 2.0 of Tailwind. We rely on Open Source code to provide the JIT method and it is not possible to keep it fully up to date as Tailwind brings out new versions.                                                       |
@@ -38,8 +38,8 @@ If you use the Siteglide-CLI already to take advantage of modern code editing to
 [editing-tailwind-css.md](../editing-tailwind-css.md)
 {% endcontent-ref %}
 
-If you, or your client, wish to build and preview your Pages in the Siteglide Admin without frequent use of the Siteglide CLI, Preview mode may be for you. We still recommend using the Tailwind CLI now and again to set up your brand variables and to set them consistently across all of your pages at once, but this does not need to be done every time you make a change in Admin, allowing for a potentially smoother experience for clients and development.&#x20;
+If you, or your client, wish to build and preview your Pages in the Siteglide Admin without frequent use of the Siteglide CLI, Preview Mode may be for you. We still recommend using the Tailwind CLI now and again to set up your brand variables and to set them consistently across all of your pages at once, but this does not need to be done every time you make a change in Admin, allowing for a potentially smoother experience for clients and development.&#x20;
 
-{% content-ref url="../styling/tailwind-css-preview-mode-coming-soon.md" %}
-[tailwind-css-preview-mode-coming-soon.md](../styling/tailwind-css-preview-mode-coming-soon.md)
+{% content-ref url="../styling/tailwind-css-preview-mode.md" %}
+[tailwind-css-preview-mode.md](../styling/tailwind-css-preview-mode.md)
 {% endcontent-ref %}
