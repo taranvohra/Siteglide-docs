@@ -30,6 +30,18 @@ Once created, you can find your template in the SiteBuilder Page Templates tab a
 
 Once you've created a Page Template, you'll unlock the PageBuilder, Layouts and Settings tabs.
 
+### Flowbite-specific options
+
 {% hint style="info" %}
 The Flowbite template starts with a default Tailwind CSS file which allows most layouts to work out of the box, but if you want to start changing things, you'll need to follow the rest of these setup steps!
 {% endhint %}
+
+When creating your Page Template, you can select a Tailwind build method of either:
+
+* CLI
+* Preview
+* Use the default from the SiteBuilder Settings tab
+
+When editing your Page Template later, you can modify the `template_build_method` parameter and set it to either `'cli'`, `'preview'` or empty string `''`.
+
+You can learn more about [which build method to use here](about-sitebuilder/tailwind-css-themes-choosing-a-build-method.md), or continue to[ set up our recommended CLI method](set-up-tailwind-css.md)!
