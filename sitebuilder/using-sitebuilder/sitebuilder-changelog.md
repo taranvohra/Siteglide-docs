@@ -20,6 +20,23 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.17.0 - Released 24th September 2024
+
+* Tailwind build method can now be overridden on the Page Template level, either by setting when you create a Page Template, or by using the `template_build_method` parameter (can be set to either "cli" or "preview"):
+
+```liquid
+{% raw %}
+{% include 'modules/module_86/tailwind/head', template_build_method: 'cli', template_build_me optional_path_to_cli_css: '' %}
+{% endraw %}
+```
+
+* New Preview build method for Tailwind. This is a replacement for the now deprecated JIT option, which should provide faster development times.&#x20;
+  * Preview mode is designed to load CSS fallbacks so that any Flowbite blocks added to the site will be supported out-of-the-box, using Flowbite default variables.
+  * It can be used alongside a CLI build. The CLI build will override any classes you've used, with branded versions of the variables you've set in your Tailwind Config file, while continuing to fallback to Flowbite defaults when brand new blocks are added.
+* New Static Layouts for Flowbite:
+  * Portfolio
+  * Promotional Section
+
 ### 4.15.2 - 4.15.3 - Hotfixes - Released 10th September 2024
 
 ### 4.15.1 - Released 5th August 2024
