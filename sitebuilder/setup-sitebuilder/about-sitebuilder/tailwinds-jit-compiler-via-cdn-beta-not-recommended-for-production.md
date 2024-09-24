@@ -1,8 +1,4 @@
----
-description: Beta - not recommended for Production
----
-
-# 🏗️ Tailwind's JIT Compiler Via CDN
+# 🏗️ Tailwind's JIT Compiler Via CDN (deprecated)
 
 ### Before you Start <a href="#before-you-start" id="before-you-start"></a>
 
