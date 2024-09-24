@@ -40,6 +40,6 @@ If you use the Siteglide-CLI already to take advantage of modern code editing to
 
 If you, or your client, wish to build and preview your Pages in the Siteglide Admin without frequent use of the Siteglide CLI, Preview mode may be for you. We still recommend using the Tailwind CLI now and again to set up your brand variables and to set them consistently across all of your pages at once, but this does not need to be done every time you make a change in Admin, allowing for a potentially smoother experience for clients and development.&#x20;
 
-{% content-ref url="../styling/tailwind-css-preview-mode-coming-soon.md" %}
-[tailwind-css-preview-mode-coming-soon.md](../styling/tailwind-css-preview-mode-coming-soon.md)
+{% content-ref url="../styling/tailwind-css-preview-build.md" %}
+[tailwind-css-preview-build.md](../styling/tailwind-css-preview-build.md)
 {% endcontent-ref %}
