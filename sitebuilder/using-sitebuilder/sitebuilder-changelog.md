@@ -37,6 +37,10 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
   * Portfolio
   * Promotional Section
 
+### 4.16.3 - Released 19th September
+
+* Small UX and styling improvements to navigation and scrolling
+
 ### 4.15.2 - 4.15.3 - Hotfixes - Released 10th September 2024
 
 ### 4.15.1 - Released 5th August 2024
