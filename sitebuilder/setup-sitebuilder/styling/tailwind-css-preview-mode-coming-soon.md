@@ -14,6 +14,35 @@ Preview Mode is designed so it can be used on its own, or in combination with th
 
 In the past, we used SiteBuilder module settings to let you pick your preferred build method. Now this can also be set on the Page Template level. This allows you to, use a CLI method for faster live pages, and a Preview method for pages which are still in development.
 
+You can set Preview Mode on a Page Template either when you create a Page Template in SiteBuilder:
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+Or, by editing the Page Template code:
+
+### Preview Mode On
+
+```liquid
+
+{% raw %}
+{% include 'modules/module_86/tailwind/head', template_build_method: 'preview', optional_path_to_cli_css: 'css/tailwind.min.css' %}
+{% endraw %}
+```
+
+### CLI build only
+
+```liquid
+{% raw %}
+{% include 'modules/module_86/tailwind/head', optional_path_to_cli_css: 'css/tailwind.min.css' %}
+{% endraw %}
+```
+
+{% hint style="info" %}
+SiteBuilder automatically checks if a custom Tailwind CLI build exists. If you have one, providing a path, even to the default location, you can improve page speed, whether preview mode is on or off.
+{% endhint %}
+
+If no custom CLI build can be found and no path is provided, preview mode will be used automatically, even if CLI build is selected as a preference.
+
 ## How does it work? A custom build with fallbacks
 
 The Preview mode starts by adding two CSS files from CDNs to your Page Template's `<head>:`
@@ -21,9 +50,9 @@ The Preview mode starts by adding two CSS files from CDNs to your Page Template'
 1. A CSS file distributed by Flowbite containing Tailwind classes to support the vast majority of their blocks and components [https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css](https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css) (will always load latest version of Flowbite)
 2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbites as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".&#x20;
 
-Together these CSS files create a set of fallbacks which allow Flowbite Layouts to look how Flowbite and SiteBuilder intended out of the box, should these classes not be included elsewhere. However, they won't have any of your branded variables set, like colours or fonts.
+Together these CSS files create a set of fallbacks which allow Flowbite Layouts to look how Flowbite and SiteBuilder intended out of the box, should these classes not be included elsewhere. However, they won't have any of your branded variables set, like colours or fonts. The extra load time for these CSS files is also the reason why it's not generally recommended to use Preview Page for pages in Production.
 
-3. To get a more consistent look and to apply your brand variables, Preview mode can also pull in a custom CLI Tailwind build underneath the other two. Where this 3rd CSS file contains the same class as one of the other 2 files, e.g. \`bg-blue-700\` it will overwrite it with the correct variables. Where the custom build does not yet support a class, the original Flowbite variables will be used as a fallback.  Unlike a purely CLI-based approach, you don't need to spin up the CLI every time you make a change to the HTML, as you can use the fallbacks while developing and rebuild the custom CSS later, e.g. when you finish a page.&#x20;
+3. To get a more consistent look and to apply your brand variables, Preview mode can also pull in a custom CLI Tailwind build underneath the other two. Where this 3rd CSS file contains the same class as one of the other 2 files, e.g. \`bg-blue-700\` it will overwrite it with the correct variables e.g. the correct shade of blue. Where the custom build does not yet support a class, the original Flowbite variables will be used as a fallback.  Unlike a purely CLI-based approach, you don't need to spin up the CLI every time you make a change to the HTML, as you can use the fallbacks while developing and rebuild the custom CSS later, e.g. when you finish a page.&#x20;
 
 ### Safelist
 
