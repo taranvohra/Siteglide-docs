@@ -48,6 +48,8 @@
   * [📋 Site Setup](developer-tools/cli/site-setup.md)
   * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
   * [💻 Reference](developer-tools/cli/reference.md)
+  * [🧙‍♂️ Go Further: CLI](developer-tools/cli/go-further-cli/README.md)
+    * [Creating WebApps via CLI](developer-tools/cli/go-further-cli/creating-webapps-via-cli.md)
 * [Liquid](developer-tools/liquid/README.md)
   * [🚀 Quickstart: Liquid](developer-tools/liquid/quickstart-liquid.md)
   * [ℹ️ About](developer-tools/liquid/about-liquid.md)
