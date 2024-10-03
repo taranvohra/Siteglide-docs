@@ -163,9 +163,7 @@ This is an example CSS file structure for the same theme.
                                         main.liquid
 ```
 
-Copy
-
-**Default CSS**
+#### **Default CSS**
 
 Firstly, `../css/default/css.liquid` contains a Liquid snippet which will be added to all templates created using your theme. This happens regardless of whether or not a CSS preference is chosen (see next sub-section).
 
@@ -175,7 +173,7 @@ It is okay to include a small amount of JS here, for example, Flowbite includes 
 
 If you don't need to use this, you _must_ include the file, but please leave the contents completely blank.
 
-**CSS Preferences**
+#### **CSS Preferences**
 
 As well as default CSS, you can choose to have some CSS files which are copied onto the module user's site and hosted there. The benefit of this is that it allows the module-user to edit that CSS.
 
@@ -200,7 +198,7 @@ metadata:
 If you don't need the CSS preferences feature, leave the "css\_preference\_options" property as an empty object `{}` in the theme\_config.\
 
 
-#### Step 6 - JavaScript <a href="#step-6-javascript" id="step-6-javascript"></a>
+### Step 6 - JavaScript <a href="#step-6-javascript" id="step-6-javascript"></a>
 
 To add JavaScript (which you don't expect to be edited by the ordinary module-user) to any templates which need to be installed, you can add any script tags to the path `modules/module_<module_vanity_id>/private/views/partials/sitebuilder/theme_<module_vanity_id>/js.liquid`. These will be added to the template, as is, when the template is created.
 
