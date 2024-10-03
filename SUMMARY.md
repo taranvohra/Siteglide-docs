@@ -159,6 +159,7 @@
   * [ℹ️ Support for Marketplace Modules](sitebuilder/extending-sitebuilder/support-for-marketplace-modules.md)
   * [ℹ️ Adding Dynamic Layouts to Themes & Modules](sitebuilder/extending-sitebuilder/adding-dynamic-layouts-to-themes-and-modules.md)
   * [ℹ️ Adding Static Layouts to your Theme](sitebuilder/extending-sitebuilder/adding-static-layouts-to-your-theme.md)
+  * [💻 Reference](sitebuilder/extending-sitebuilder/reference.md)
 
 ## CMS
 
