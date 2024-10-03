@@ -1,6 +1,4 @@
-# Extending SiteBuilder
-
-### Extending SiteBuilder <a href="#extending-sitebuilder" id="extending-sitebuilder"></a>
+# Extend SiteBuilder
 
 SiteBuilder is now designed to be extendable. Developers can add new Themes and modules. They can also extend our core libraries (and their own) with new layouts.
 
