@@ -1,10 +1,25 @@
 # ℹ️ Integration Automations
 
+Integration Automations are a quick and easy way to connect Siteglide with other Apps. They can be added in various places in Siteglide including:
 
+1. Forms
+2. WebApps
+3. Modules
+4. eCommerce
 
-### 4a: Integrations
+Just look out for the Automations tab (for WebApps and Module click the blue View Table button at the top of the List View of items):
 
-Select the App you would like to integrate with and then pick an Action from the list:
+<figure><img src="../../../.gitbook/assets/Siteglide-Automations1.png" alt=""><figcaption></figcaption></figure>
+
+You just need to give the Integration a name and select which Siteglide Trigger you want to use:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Automations-Create-Integration.png" alt=""><figcaption></figcaption></figure>
+
+Then Select the App you want to connect to for the Action:
+
+<figure><img src="../../../.gitbook/assets/Siteglide-Automations-Integrations-Slack1.png" alt=""><figcaption></figcaption></figure>
+
+Then complete the rest of the steps that are typically unique to that app (Slack is just one example):
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Automations-Integrations-Slack-Action.png" alt=""><figcaption></figcaption></figure>
 
@@ -12,8 +27,6 @@ Then Connect your Account (SSO/OAuth):
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Automations-Integrations-Slack-SSO2.png" alt=""><figcaption></figcaption></figure>
 
-Then complete the rest of the steps that are typically unique to that app (Slack is just one example):
+Finally you can customise the Action using Siteglide Data:
 
 <figure><img src="../../../.gitbook/assets/Siteglide-Automations-Integrations-Slack-Action-Setup.png" alt=""><figcaption></figcaption></figure>
-
-### 4b: Emails, API Calls and Custom

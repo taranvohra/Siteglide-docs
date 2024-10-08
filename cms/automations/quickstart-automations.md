@@ -9,6 +9,8 @@ Automations can be added in various places in Siteglide including:
 3. Modules
 4. eCommerce
 
+Navigate to the relevant feature and look for the Automations tab.
+
 ## Step 2: Select an Automation Type:
 
 On the Automations tab there are 4 options, Integrations, Emails, API Calls and Custom:
@@ -71,7 +73,7 @@ The setup and customisation varies depending on the Action type you use, please 
 
 ## Step 5: Managing Automations
 
-5a: Customising Automations using Siteglide Data:
+### 5a: Customising Automations using Siteglide Data:
 
 In all Automation Types, you can access the data of an item. In Integrations you simply select your data from the dropdown fields and in Emails, API Calls and Custom you can use `{{data}}` or `{{form}}` in your code editor.
 
