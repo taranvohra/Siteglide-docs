@@ -9,22 +9,81 @@ Automations can be added in various places in Siteglide including:
 3. Modules
 4. eCommerce
 
-## Step 2: Add New Automation and Select a Trigger
+## Step 2: Select an Automation Type:
 
-On the Automations tab there's a plus icon (:heavy\_plus\_sign:) on the right hand side, this will then show the Triggers dropdown list:
+On the Automations tab there are 4 options, Integrations, Emails, API Calls and Custom:
 
-<figure><img src="../../.gitbook/assets/Siteglide-Automations-Triggers.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Siteglide-Automations1.png" alt=""><figcaption></figcaption></figure>
 
-## Step 3: Select your Action
+Find out more about each type of Automation:
 
-Once you've selected your Trigger it will show the available Actions and other information or settings available:
+{% content-ref url="guides-automations/integration-automations.md" %}
+[integration-automations.md](guides-automations/integration-automations.md)
+{% endcontent-ref %}
 
-<figure><img src="../../.gitbook/assets/Siteglide-Automations-Actions.png" alt=""><figcaption></figcaption></figure>
+{% content-ref url="guides-automations/email-automations.md" %}
+[email-automations.md](guides-automations/email-automations.md)
+{% endcontent-ref %}
 
-## Step 4: Customise the Action
+{% content-ref url="guides-automations/api-call-automations.md" %}
+[api-call-automations.md](guides-automations/api-call-automations.md)
+{% endcontent-ref %}
 
-In all Automations, you can access the data of an item using both `{{data}}` or `{{form}}` in your code editor.
+{% content-ref url="guides-automations/custom-automations.md" %}
+[custom-automations.md](guides-automations/custom-automations.md)
+{% endcontent-ref %}
 
-Once you save your changes, the Automation will then be in place. For example, next time someone creates a WebApp item, your selected Action will be performed.
 
-Note: From this view you can also edit or delete any existing Automations.
+
+## Step 3: Create New Automation & Select a Trigger
+
+### 3a: Integrations
+
+Click the 'Create New Integration' button and then choose a Siteglide Trigger and ensure you give it a name:
+
+<figure><img src="../../.gitbook/assets/Siteglide-Automations-Create-Integration.png" alt=""><figcaption></figcaption></figure>
+
+### 3b: Emails, API Calls and Custom
+
+For Emails, API Calls and Custom you simply select the Trigger:
+
+<figure><img src="../../.gitbook/assets/Siteglide-Automations-Create-Email.png" alt=""><figcaption></figcaption></figure>
+
+## Step 4: Setup and customise your Action
+
+The setup and customisation varies depending on the Action type you use, please follow the relevant setup article:
+
+{% content-ref url="guides-automations/integration-automations.md" %}
+[integration-automations.md](guides-automations/integration-automations.md)
+{% endcontent-ref %}
+
+{% content-ref url="guides-automations/email-automations.md" %}
+[email-automations.md](guides-automations/email-automations.md)
+{% endcontent-ref %}
+
+{% content-ref url="guides-automations/api-call-automations.md" %}
+[api-call-automations.md](guides-automations/api-call-automations.md)
+{% endcontent-ref %}
+
+{% content-ref url="guides-automations/custom-automations.md" %}
+[custom-automations.md](guides-automations/custom-automations.md)
+{% endcontent-ref %}
+
+## Step 5: Managing Automations
+
+5a: Customising Automations using Siteglide Data:
+
+In all Automation Types, you can access the data of an item. In Integrations you simply select your data from the dropdown fields and in Emails, API Calls and Custom you can use `{{data}}` or `{{form}}` in your code editor.
+
+### 5b: Enabling and Disabling Automations
+
+You can use the Enable toggle to control whether an Automation is Live. If Enabled it would run the next time that Trigger Event occurs.
+
+<figure><img src="../../.gitbook/assets/Siteglide-Automations-Integrations-Enabled.png" alt=""><figcaption></figcaption></figure>
+
+### 5b: Deleting Automations
+
+You can delete any automation using the red Delete Automation button that appears at the bottom of the automation itself (within the page, not in the bottom bar):
+
+<figure><img src="../../.gitbook/assets/Siteglide-Automations-Delete.png" alt=""><figcaption></figcaption></figure>
+
