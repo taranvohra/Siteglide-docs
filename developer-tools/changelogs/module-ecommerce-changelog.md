@@ -14,7 +14,7 @@
 
 ### 1.14.2 - 25th June 2024
 
-* Updated security as outlined in [System Files update v2.8.2.4](https://help.siteglide.com/en/article/245-module-system-files-changelog)
+* Updated security as outlined in [System Files update v2.8.2.4](https://docs.siteglide.com/en/developer-tools/changelogs/module-system-files-changelog#id-2.8.2.4-25th-june-2024)
 * Settings - Added a 'Pricing Accuracy' setting to allow you to switch between 2 decimal places and 4 decimal places on pricing for Products, Attributes, and Shipping (as well as showing those values in Order views)
 
 ***
@@ -30,13 +30,13 @@
 
 ### 1.13.4 - 6th February 2024
 
-* Add custom callback support for [s\_e\_cart\_update](https://roadmap.siteglide.com/core-platform/p/add-callback-function-to-secartupdate) and [s\_e\_cart\_remove](https://roadmap.siteglide.com/core-platform/p/add-callback-parameter-to-secartremove) - [Docs](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart#TlXq7)
+* Add custom callback support for [s\_e\_cart\_update](https://roadmap.siteglide.com/core-platform/p/add-callback-function-to-secartupdate) and [s\_e\_cart\_remove](https://roadmap.siteglide.com/core-platform/p/add-callback-parameter-to-secartremove) - [Docs](https://docs.siteglide.com/en/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart#the-s\_e\_cart\_update\_quantity-function)
 
 ***
 
 ### 1.13.3 - 23rd January 2024
 
-* Now checks if a custom empty cart layout exists, and if it doesn't we fallback to the default layout, rather than displaying an error message - [Docs on how empty cart layouts work](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial#%3A\~%3Atext=If%20you%20create%20a%20custom%20layout,%20you%20should%20also%20create%20an%20empty.liquid%20file,%20renaming%20the%20default%20folder%20in%20the%20filepath%20above%20with%20the%20name%20of%20your%20form%20layout)
+* Now checks if a custom empty cart layout exists, and if it doesn't we fallback to the default layout, rather than displaying an error message - Docs on how empty cart layouts work
 
 ***
 
