@@ -359,6 +359,7 @@
     * [📋 Steps to Allow User to Decide Amount they Will Pay](ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-allow-user-to-decide-amount-they-will-pay.md)
     * [📋 Step-by-step Basic Payment Confirmations](ecommerce/get-started-ecommerce/basic-payment-forms/payment-confirmation.md)
     * [👀 Basic Payment Forms Reference](ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic-payment.md)
+    * [ℹ️ ecommerce/basic\_payment](ecommerce/get-started-ecommerce/basic-payment-forms/ecommerce-basic\_payment.md)
   * [📂 Payment Gateways](ecommerce/get-started-ecommerce/payment-gateways/README.md)
     * [💻 Building a Custom Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/building-a-custom-payment-gateway/README.md)
       * [📋 Steps to Support Basic Payment Forms with your Custom Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/building-a-custom-payment-gateway/steps-to-support-basic-payment-forms-with-your-custom-payment-gateway.md)

@@ -8,7 +8,7 @@
 
 ### 1.0.4 - 11th February 2021
 
-* Updated default layouts to use [Siteglide Studio](https://help.siteglide.com/article/135-studio-by-siteglide-introduction) (this won't overwrite existing installed layouts)
+* Updated default layouts to use Siteglide Studio (this won't overwrite existing installed layouts)
 
 ***
 
@@ -32,16 +32,16 @@
 
     New installs of the Events Module will have improved default Detail Layouts. Previously you had to click through to the Product Detail Page to buy tickets, but this can now be done straight from the Events Detail Page. This should mean a simpler UX experience.
 
-    For existing Events and eCommerce Module users, you can easily add this functionality, should you wish to upgrade. Read the "Adding to Cart on the List View" section on the eCommerce docs: [https://developers.siteglide.com/list-layouts](https://developers.siteglide.com/list-layouts)
+    For existing Events and eCommerce Module users, you can easily add this functionality, should you wish to upgrade.
 
 ***
 
 ### 1.0.1 - 16th July 2020
 
-* Add [keyword search](https://developers.siteglide.com/browse-events-by-keyword) to default Events List Layout
+* Add keyword search to default Events List Layout
 
 ***
 
 ### 1.0.0 - 22nd April 2020
 
-* [Initial release](https://help.siteglide.com/article/133-modules-getting-started)
+* Initial release

@@ -14,7 +14,7 @@
 
 ### 1.0.8 - 11th February 2021
 
-* Updated default layouts to use [Siteglide Studio](https://help.siteglide.com/article/135-studio-by-siteglide-introduction) (this won't overwrite existing installed layouts)
+* Updated default layouts to use Siteglide Studio (this won't overwrite existing installed layouts)
 
 ***
 

@@ -8,13 +8,13 @@
 
 ### 1.0.3 - 11th February 2021
 
-* Updated default layouts to use [Siteglide Studio](https://help.siteglide.com/article/135-studio-by-siteglide-introduction) (this won't overwrite existing installed layouts)
+* Updated default layouts to use Siteglide Studio (this won't overwrite existing installed layouts)
 
 ***
 
 ### 1.0.2 - 16th July 2020
 
-* Add [keyword search](https://developers.siteglide.com/browse-by-keyword) to default Blog Layout
+* Add keyword search to default Blog Layout
 
 ***
 

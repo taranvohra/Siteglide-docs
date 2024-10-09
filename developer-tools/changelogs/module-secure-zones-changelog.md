@@ -2,7 +2,7 @@
 
 ### 1.3.2 - 25th June 2024
 
-* Updated security as outlined in [System Files update v2.8.2.4](https://help.siteglide.com/en/article/245-module-system-files-changelog)
+* Updated security as outlined in [System Files update v2.8.2.4](https://docs.siteglide.com/en/developer-tools/changelogs/module-system-files-changelog#id-2.8.2.4-25th-june-2024)
 
 ***
 
@@ -26,7 +26,7 @@
 
 ### 1.2.10 - 7th December 2021
 
-* Add support for new eCommerce Order structure on User Orders output via `order_products_flat` - [Docs](https://developers.siteglide.com/how-to-sell-digital-products#pi-output-the-media-download-link-within-your-user-orders-layout)
+* Add support for new eCommerce Order structure on User Orders output via `order_products_flat`
 
 ***
 
@@ -57,7 +57,7 @@
 
 ### 1.2.5 - 11th February 2021
 
-* Updated default layouts to use [Siteglide Studio](https://help.siteglide.com/article/135-studio-by-siteglide-introduction) (this won't overwrite existing installed layouts)
+* Updated default layouts to use Siteglide Studio (this won't overwrite existing installed layouts)
 
 ***
 
@@ -95,20 +95,12 @@ After this update, only Secure Zones attached to a specific Form in Admin will b
 
 We have worked quickly to close this vulnerability after discovering it internally and thank you for your understanding.
 
-This documentation sets out clearly the new safer procedure for changing the Secure Zone using front-end code: - [docs](https://developers.siteglide.com/in-a-form-layout-dynamically-select-a-secure-zone-from-an-approved-list-in-admin)
-
-_Further Documentation Updates:_
-
-We've also updated our Secure Zones documentation with new content, see especially:
-
-* [Secure Zones Introduction](https://help.siteglide.com/article/139-secure-zones-getting-started)
-
 ***
 
 ### 1.2.1 - 28th October 2020
 
-* _Favourites_ - You can now add a button to WebApp/ Module layouts to allow logged in users to store items as 'favourite' - [Docs](https://developers.siteglide.com/storing-users-favourite-webapp-module-items)
-* _Email/Password edit_ - Users can now edit their Email Address and Password - [Docs](https://developers.siteglide.com/how-users-edit-their-email-and-password-front-end)
+* _Favourites_ - You can now add a button to WebApp/ Module layouts to allow logged in users to store items as 'favourite'
+* _Email/Password edit_ - Users can now edit their Email Address and Password
 * _User Secure Zones_ - This data array can now be accessed in Templates as well as Pages
 
 ***
@@ -128,13 +120,13 @@ If you apply this update, then your eCommerce Module should be updated to at lea
 
 ### 1.0.0 - 14th August 2020
 
-* Support for Secure WebApp items - [Docs](https://help.siteglide.com/article/139-secure-zones-getting-started)
+* Support for Secure WebApp items
 
 ***
 
 ### 0.10.0 - 29th July 2020
 
-* User Subscriptions View updated to include new Subscriptions functionality: [User Subscriptions](https://developers.siteglide.com/user-subscriptions-list-the-logged-in-users-subscription-orders)
+* User Subscriptions View updated to include new Subscriptions functionality.
 
 ***
 
@@ -154,7 +146,7 @@ If you apply this update, then your eCommerce Module should be updated to at lea
 
 ### 0.9.3 - 14th February 2020
 
-* [Browser Support updates](https://help.siteglide.com/article/254-browser-support-updates-release-notes)
+* Browser Support updates
 * Bug fix - Secure Zones blocked signup -
 
 Initial report here -> [https://roadmap.siteglide.com/bugs/p/secure-zones-second-signup-with-same-email](https://roadmap.siteglide.com/bugs/p/secure-zones-second-signup-with-same-email)
