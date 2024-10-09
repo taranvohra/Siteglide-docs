@@ -9,6 +9,7 @@
   * [ℹ️ Siteglide Support Policy](get-started/support-and-faqs/siteglide-support-policy.md)
   * [ℹ️ Siteglide Technology Stack](get-started/support-and-faqs/siteglide-technology-stack.md)
   * [ℹ️ External Resources](get-started/support-and-faqs/external-resources.md)
+  * [ℹ️ Front-end Browser Support](get-started/support-and-faqs/front-end-browser-support.md)
 
 ## Portal
 
@@ -104,6 +105,8 @@
   * [ℹ️ Data & UI Module Example](developer-tools/building-for-marketplace/data-and-ui-module-example.md)
   * [💻 Reference](developer-tools/building-for-marketplace/modules-reference.md)
   * [🌳 File Structure](developer-tools/building-for-marketplace/modules-folder-structure-introduction.md)
+* [Changelog](developer-tools/changelog/README.md)
+  * [Module - System Files - Changelog](developer-tools/changelog/module-system-files-changelog.md)
 
 ## SiteBuilder
 
@@ -287,6 +290,8 @@
     * [ℹ️ About CRM Sync Module](modules/community-modules/crm-sync/about-crm-sync-module.md)
     * [📋 Steps to Set Up CRM Sync on an Automation](modules/community-modules/crm-sync/steps-to-set-up-crm-sync-on-an-automation.md)
     * [🗓️ CRM Sync Changelog](modules/community-modules/crm-sync/crm-sync-changelog.md)
+* [Go Further: Modules](modules/go-further-modules/README.md)
+  * [ℹ️ Front-end Submit Modules](modules/go-further-modules/front-end-submit-modules.md)
 
 ## WebApps
 
@@ -298,6 +303,7 @@
   * [ℹ️ WebApp List Layout](webapps/layouts/webapp-list-layout.md)
   * [ℹ️ WebApp Detail Layouts](webapps/layouts/webapp-detail-layouts.md)
   * [📋 Searching by Location](webapps/layouts/searching-by-location.md)
+  * [📋 Searching - Advanced Filtering](webapps/layouts/searching-advanced-filtering.md)
 
 ## eCommerce
 
