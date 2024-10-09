@@ -2,8 +2,8 @@
 
 ## Want to Check what Plans are Available?
 
-{% content-ref url="plans.md" %}
-[plans.md](plans.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Ready to Go Live? Add a Payment Method
