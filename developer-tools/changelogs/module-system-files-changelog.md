@@ -1,4 +1,4 @@
-# Module - System Files - Changelog
+# 🛳️ Module - System Files - Changelog
 
 ### 2.8.2.5 - 10th July 2024
 

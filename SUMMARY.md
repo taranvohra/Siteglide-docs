@@ -105,8 +105,16 @@
   * [ℹ️ Data & UI Module Example](developer-tools/building-for-marketplace/data-and-ui-module-example.md)
   * [💻 Reference](developer-tools/building-for-marketplace/modules-reference.md)
   * [🌳 File Structure](developer-tools/building-for-marketplace/modules-folder-structure-introduction.md)
-* [Changelog](developer-tools/changelog/README.md)
-  * [Module - System Files - Changelog](developer-tools/changelog/module-system-files-changelog.md)
+* [Changelogs](developer-tools/changelogs/README.md)
+  * [🛳️ Module - System Files - Changelog](developer-tools/changelogs/module-system-files-changelog.md)
+  * [🛳️ Module - eCommerce - Changelog](developer-tools/changelogs/module-ecommerce-changelog.md)
+  * [🛳️ Module - Menu - Changelog](developer-tools/changelogs/module-menu-changelog.md)
+  * [🛳️ Siteglide Admin/API - Changelog](developer-tools/changelogs/siteglide-admin-api-changelog.md)
+  * [🛳️ Module - Slider - Changelog](developer-tools/changelogs/module-slider-changelog.md)
+  * [🛳️ Module - Secure Zones - Changelog](developer-tools/changelogs/module-secure-zones-changelog.md)
+  * [🛳️ Module - FAQ - Changelog](developer-tools/changelogs/module-faq-changelog.md)
+  * [🛳️ Module - Events - Changelog](developer-tools/changelogs/module-events-changelog.md)
+  * [🛳️ Module - Blog - Changelog](developer-tools/changelogs/module-blog-changelog.md)
 
 ## SiteBuilder
 

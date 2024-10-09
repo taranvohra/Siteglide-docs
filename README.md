@@ -30,5 +30,6 @@ If you're already working on a site and you're code savvy we strongly recommend 
 8. :grey\_question: **Troubleshooting:** Find answers to common challenges
 9. :man\_mage: **Go Further:** This is where you'd find more detailed docs that help you really push the boundaries of all things web development
 10. :link: **API:** Endpoints and articles related to our API
-11. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions
-12. :woman\_technologist: **Agencies:** Articles specific to Digital Agency partners
+11. :cruise\_ship: **Changelogs:** Releases, Updates and any important changes to Siteglide
+12. :credit\_card: **Billing/Account:** Articles related to Billing, Payments and Subscriptions
+13. :woman\_technologist: **Agencies:** Articles specific to Digital Agency partners
