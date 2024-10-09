@@ -32,6 +32,8 @@
   * [💳 Billing Setup](portal/billing/billing-setup.md)
   * [💳 Plans](portal/billing/plans.md)
   * [💳 Invoices](portal/billing/invoices.md)
+  * [💳 Automatic Site Upgrades](portal/billing/automatic-site-upgrades.md)
+  * [💳 Subscription Changes](portal/billing/subscription-changes.md)
 * [Tickets](portal2/tickets.md)
 * [Marketplace](portal/marketplace.md)
 * [Agencies](portal/agencies/README.md)
