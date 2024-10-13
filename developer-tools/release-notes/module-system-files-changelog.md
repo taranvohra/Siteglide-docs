@@ -1,5 +1,12 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.2.6 - 13th October 2024
+
+* **Automations V2** - A complete rebuild of Automations using our new API (that runs from the Site directly), a new and improved UI and a new Automation type called Integrations. Integrations allow no-code connections to 3rd party Apps via SSO in a similar way to Zapier without leaving Siteglide.
+* **Rich Text Editor V2** - An update to the Rich Text Editor that can be used in Modules and WebApps. The update includes an AI tool to write and edit content.
+
+
+
 ### 2.8.2.5 - 10th July 2024
 
 * WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](https://developers.siteglide.com/webapp-list-layouts) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
