@@ -23,19 +23,17 @@ Find out more about each type of Automation:
 [integration-automations.md](guides-automations/integration-automations.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/email-automations.md" %}
-[email-automations.md](guides-automations/email-automations.md)
+{% content-ref url="guides-automations/a-transactional-email-example.md" %}
+[a-transactional-email-example.md](guides-automations/a-transactional-email-example.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/api-call-automations.md" %}
-[api-call-automations.md](guides-automations/api-call-automations.md)
+{% content-ref url="guides-automations/an-api-call-action-example.md" %}
+[an-api-call-action-example.md](guides-automations/an-api-call-action-example.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/custom-automations.md" %}
-[custom-automations.md](guides-automations/custom-automations.md)
+{% content-ref url="guides-automations/a-custom-liquid-action-example.md" %}
+[a-custom-liquid-action-example.md](guides-automations/a-custom-liquid-action-example.md)
 {% endcontent-ref %}
-
-
 
 ## Step 3: Create New Automation & Select a Trigger
 
@@ -59,16 +57,16 @@ The setup and customisation varies depending on the Action type you use, please 
 [integration-automations.md](guides-automations/integration-automations.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/email-automations.md" %}
-[email-automations.md](guides-automations/email-automations.md)
+{% content-ref url="guides-automations/a-transactional-email-example.md" %}
+[a-transactional-email-example.md](guides-automations/a-transactional-email-example.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/api-call-automations.md" %}
-[api-call-automations.md](guides-automations/api-call-automations.md)
+{% content-ref url="guides-automations/an-api-call-action-example.md" %}
+[an-api-call-action-example.md](guides-automations/an-api-call-action-example.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides-automations/custom-automations.md" %}
-[custom-automations.md](guides-automations/custom-automations.md)
+{% content-ref url="guides-automations/a-custom-liquid-action-example.md" %}
+[a-custom-liquid-action-example.md](guides-automations/a-custom-liquid-action-example.md)
 {% endcontent-ref %}
 
 ## Step 5: Managing Automations
