@@ -1,5 +1,10 @@
 # 🛳️ Siteglide Admin/API - Changelog
 
+### 13th October 2024
+
+* **Automations V2** - A complete rebuild of Automations using our new API (that runs from the Site directly), a new and improved UI and a new Automation type called Integrations. Integrations allow no-code connections to 3rd party Apps via SSO in a similar way to Zapier without leaving Siteglide.
+* **Rich Text Editor V2** - An update to the Rich Text Editor that can be used in Modules and WebApps. The update includes an AI tool to write and edit content.
+
 ### 4th November 2022
 
 * Pages - Fix for Agency Layouts not showing in Studio tab
