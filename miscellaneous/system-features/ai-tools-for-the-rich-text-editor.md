@@ -1,7 +1,9 @@
-# ℹ️ AI Tools for the Rich Text Editor
+# AI Tools for the Rich Text Editor
 
 {% hint style="info" %}
 While this is now available for all users it is still in Beta and we value any feedback or reports of issues as at 14th October 2024. It's currently free to use but will soon have 2 options: 1) Use our OpenAI API Key and pay for usage as part of your Siteglide subscription 2) Use your own Open API Key and there will be no Siteglide related usage cost.&#x20;
+
+We will also be adding the AI tool option to User Roles so you have the option to control who can see it and use it.
 {% endhint %}
 
 {% hint style="warning" %}
