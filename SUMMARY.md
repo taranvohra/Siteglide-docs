@@ -432,3 +432,4 @@
   * [Translating Dates](miscellaneous/system-features/translating-dates.md)
   * [Site Search](miscellaneous/system-features/get-started-site-search.md)
   * [About Site Search](miscellaneous/system-features/site-search.md)
+  * [ℹ️ AI Tools for the Rich Text Editor](miscellaneous/system-features/ai-tools-for-the-rich-text-editor.md)
