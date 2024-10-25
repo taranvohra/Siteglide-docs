@@ -20,6 +20,22 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.17.2 - Released October 25th 2024
+
+\+ Flowbite Pro Version 1.9.4
+
+* New Admin Table Layouts for Modules:
+  * Blog List
+  * FAQ List
+  * Events List
+* 2 New Blog Detail Layouts
+* 2 New Form Layouts
+* New Accordion WebApp Layout
+* Original Blog Detail Layout updated with new features (will roll out to other Blog layouts soon):
+  * Google Structured Data Support
+  * Support for visiting URL with ?edit=true at end of URL to display edit form (after permission checks). This goes nicely with the Admin Tables which can link to it.
+* Updated many modals to be "static" to prevent accidental closing
+
 ### 4.17.1 - Released October 2024&#x20;
 
 * Support for new Pro layouts in Preview Mode
