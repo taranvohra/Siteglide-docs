@@ -20,6 +20,17 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.17.1 - Released October 2024&#x20;
+
+* Support for new Pro layouts in Preview Mode
+* Removed console errors for Live Updates which were unnecessary (logs not errors).
+* Flowbite Pro Theme - Version 1.9.4
+  * A new eCommerce themed menu layout containing a mini cart preview
+    * Cart preview includes product thumbnails, names and prices
+    * User can delete items from cart, with live-updates supported re-rendering for a smooth experience
+  * A new Blog Detail layout alternative
+  * More static layouts for Portfolio and Promotional Section
+
 ### 4.17.0 - Released 24th September 2024
 
 * Tailwind build method can now be overridden on the Page Template level, either by setting when you create a Page Template, or by using the `template_build_method` parameter (can be set to either "cli" or "preview"):
