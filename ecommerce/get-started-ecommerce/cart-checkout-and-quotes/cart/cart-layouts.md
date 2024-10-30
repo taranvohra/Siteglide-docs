@@ -17,7 +17,7 @@ How to customise the Shopping Cart Layout
 
 Cart layouts are stored in the following structure:
 
-```
+```bash
 marketplace_builder
 └───views
     └───partials
