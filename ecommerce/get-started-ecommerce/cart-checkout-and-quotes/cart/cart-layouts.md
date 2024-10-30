@@ -43,15 +43,12 @@ See the full Cart & Checkout folder structure here:
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
 
 ```liquid
-{% raw %}
 {% assign cart_parsed = context.session.cart | parse_json %}
 {% if cart_parsed.size > 0 %}
   {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products' item_layout: 'item' -%}
 {% else %}
   Sorry, your cart is empty.
 {% endif %}
-{% endraw %}
-
 ```
 
 #### Empty the Cart
