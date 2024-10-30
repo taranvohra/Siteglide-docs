@@ -51,6 +51,7 @@ The wrapper.liquid file should contain the code for the main section of code tha
   Sorry, your cart is empty.
 {% endif %}
 {% endraw %}
+
 ```
 
 #### Empty the Cart
@@ -65,13 +66,7 @@ Of course, this is just an ordinary link. It will need updating with the slug of
 
 The following reference shows how to output useful data about your Cart as a whole:
 
-
-
-<table data-full-width="true"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td><td><code>{{context.exports.cart_total_quantity.data}}</code></td></tr><tr><td>Shipping Price</td><td><code>
-
-<div data-gb-custom-block data-tag="include" data-0='ecommerce/price_shipping' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Shipping Price Before Tax</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_shipping_before_tax' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Shipping Price Tax Amount</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_shipping_tax_amount' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Total Item Price</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_item_cost' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Total Item Price before Tax</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_item_before_tax' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Total Item Tax Amount</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_item_tax_amount' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Total Price Reduction (due to discounts)</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_reduction' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Final Total Price before Tax</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_before_tax' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Final Total Tax Amount</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total_tax_amount' data-1='formatted' data-2='formatted'></div></code></td></tr><tr><td>Final Total Price</td><td><code><div data-gb-custom-block data-tag="include" data-0='ecommerce/price_total' data-1='formatted' data-2='formatted'></div>
-
-</code></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td><td><code>{{context.exports.cart_total_quantity.data}}</code></td></tr><tr><td>Shipping Price</td><td></td></tr><tr><td>Shipping Price Before Tax</td><td></td></tr><tr><td>Shipping Price Tax Amount</td><td></td></tr><tr><td>Total Item Price</td><td></td></tr><tr><td>Total Item Price before Tax</td><td></td></tr><tr><td>Total Item Tax Amount</td><td></td></tr><tr><td>Total Price Reduction (due to discounts)</td><td></td></tr><tr><td>Final Total Price before Tax</td><td></td></tr><tr><td>Final Total Tax Amount</td><td></td></tr><tr><td>Final Total Price</td><td></td></tr></tbody></table>
 
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
@@ -79,23 +74,19 @@ Normally though, Attributes will be handled in the next step- the item.liquid fi
 
 ### item.liquid
 
-The cart layout will iterate in a loop, outputting the item.liquid file for each line in the customer's cart.&#x20;
+The cart layout will iterate in a loop, outputting the item.liquid file for each line in the customer's cart.
 
-<div data-gb-custom-block data-tag="hint" data-style='info'>
-
+{% hint style="info" %}
 **`cart_id`**
 
-
-
-Each line in the cart has a `cart_id` accessible at `{{this.cart_data.cart_id}}.` \
+Each line in the cart has a `cart_id` accessible at `{{this.cart_data.cart_id}}.`\
 \
 When modifying the cart with JS, this `cart_id` will be needed.\
 \
 Multiple lines in the cart may refer to the same product if a different combination of attributes is selected.
+{% endhint %}
 
-</div>
-
-&#x20;Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts).
+Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts).
 
 There are some additional points to bear in mind when creating a cart layout's item.liquid file:
 
@@ -107,15 +98,13 @@ If the cart has several lines containing the same product, but with different at
 
 In this example, the function is called when a button is clicked and Liquid is used to pass the cart ID into the function:
 
-<div data-gb-custom-block data-tag="tabs">
-
-<div data-gb-custom-block data-tag="tab" data-title='item.liquid'>
-
+{% tabs %}
+{% tab title="item.liquid" %}
 ```liquid
 <button onclick="s_e_cart_remove(true,{{this.cart_data.cart_id}})">
   Remove Item from Cart
 </button>
-````
+```
 
 You can optionally pass in a callback function to the third argument to be called after the row has been removed from the cart. In order for this to work, you need to set `reload` (the first argument) to `false`.
 
@@ -137,7 +126,7 @@ function removeCallback() {
 {% endtab %}
 {% endtabs %}
 
-### Increasing the Quantity of a Product in the Cart:
+#### Increasing the Quantity of a Product in the Cart:
 
 See the full Article on [updating Product quantities here](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart).
 
@@ -166,7 +155,7 @@ See the full Article on [updating Product quantities here](https://developers.si
 
 Note that, after updating this input field, the User will also have to click the "Update Cart" button. Following the link above will lead to a more detailed article.
 
-### Outputting the Attributes the User chose for this item:
+#### Outputting the Attributes the User chose for this item:
 
 ```liquid
 
@@ -177,7 +166,7 @@ Note that, after updating this input field, the User will also have to click the
 
 ```
 
-### Controlling Inventory
+#### Controlling Inventory
 
 In order to make sure Users do not increase the quantity of items in their Cart, when the Product is out of stock, you could add a "max" attribute to the quantity input:
 
@@ -198,3 +187,5 @@ In order to make sure Users do not increase the quantity of items in their Cart,
 {% hint style="info" %}
 Items added to a Cart in Siteglide are not reserved. It is possible for two or more customers to add the last product in stock to their cart at once.
 {% endhint %}
+{% endtab %}
+{% endtabs %}
