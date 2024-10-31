@@ -97,8 +97,7 @@ If the cart has several lines containing the same product, but with different at
 
 In this example, the function is called when a button is clicked and Liquid is used to pass the cart ID into the function:
 
-{% tabs %}
-{% tab title="item.liquid" %}
+####item.liquid 
 ```liquid
 <button onclick="s_e_cart_remove(true,{{this.cart_data.cart_id}})">
   Remove Item from Cart
@@ -107,38 +106,26 @@ In this example, the function is called when a button is clicked and Liquid is u
 
 You can optionally pass in a callback function to the third argument to be called after the row has been removed from the cart. In order for this to work, you need to set `reload` (the first argument) to `false`.
 
-{% tabs %}
-{% tab title="item.liquid" %}
+####item.liquid
 ```liquid
 <button onclick="s_e_cart_remove(false,{{this.cart_data.cart_id}},removeCallback)">
   Remove Item from Cart
 </button>
 ```
-{% endtab %}
 
-{% tab title="javascript" %}
+####JavaScript
 ```javascript
 function removeCallback() {
   //Do something
 }
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Increasing the Quantity of a Product in the Cart:
 
 See the full Article on [updating Product quantities here](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart).
-
-{% tabs %}
-{% tab title="wrapper.liquid" %}
-<pre class="language-liquid"><code class="lang-liquid">&#x3C;!-- Step 2 -->
-
-<strong>&#x3C;button onclick="s_e_cart_update(false,'{{context.authenticity_token}}')">Update Cart&#x3C;/button>
-</strong></code></pre>
-{% endtab %}
-
-{% tab title="item.liquid" %}
+#### item.liquid
 ```liquid
+{% raw %}
 <!-- Step 1 -->
 
 <input 
@@ -148,30 +135,34 @@ See the full Article on [updating Product quantities here](https://developers.si
   value="{{this.cart.data.quantity}}"
   onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}',false)"
 >
+{% endraw %}
 ```
-{% endtab %}
-{% endtabs %}
+
+####wrapper.liquid
+```liquid
+{% raw %}
+<!-- Step 2 -->
+
+<button onclick="s_e_cart_update(false,'{{context.authenticity_token}}')">Update Cart</button>
+{% endraw %}
+```
 
 Note that, after updating this input field, the User will also have to click the "Update Cart" button. Following the link above will lead to a more detailed article.
 
 #### Outputting the Attributes the User chose for this item:
 
 ```liquid
-
 {% raw %}
 {% include 'ecommerce/cart_product_attributes' %}
 {% endraw %}
-
-
 ```
 
 #### Controlling Inventory
 
 In order to make sure Users do not increase the quantity of items in their Cart, when the Product is out of stock, you could add a "max" attribute to the quantity input:
 
-{% tabs %}
-{% tab title="item.liquid" %}
 ```liquid
+{% raw %}
 <input type="number" 
        name="quantity" 
        min="1" 
@@ -179,12 +170,9 @@ In order to make sure Users do not increase the quantity of items in their Cart,
        value="{{this.cart_data.quantity}}" 
        onchange="s_e_cart_update_quantity(event.target.value,{{this.cart_data.cart_id}},'{{context.authenticity_token}}')"
 />
+{% endraw %}
 ```
-{% endtab %}
-{% endtabs %}
 
 {% hint style="info" %}
 Items added to a Cart in Siteglide are not reserved. It is possible for two or more customers to add the last product in stock to their cart at once.
 {% endhint %}
-{% endtab %}
-{% endtabs %}

@@ -332,10 +332,11 @@ Okay, so now you can use the GraphiQL Sandbox to test your queries with variable
 Step 1) Add parameters to the graphql tag for each variable you've defined in the Query. Here, we'll continue with our example and add `category`
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: 
  %}
-
+{% endraw %}
 ```
 
 Notes:
@@ -349,37 +350,40 @@ Step 2) Next, add the value of the parameter.
 You can either hardcode the value:
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: "98486"
  %}
 
+{% endraw %}
 ```
 
 Or, you can use a Liquid variable which you defined earlier:
 
 ```liquid
-<!-- Create an empty array -->
 {% raw %}
+<!-- Create an empty array -->
 {% assign current_category_array = "" | split: "," %}
 <!-- Add Strings to the Array -->
 {% assign current_category_array = current_category_array | add_to_array: "98486" | add_to_array: "98487" %}
-{% endraw %}
 
 <!-- Feed the Liquid Array into the query by its variable name. No quotes are needed around a variable name when you set it as a parameter- it's dynamic data. -->
 
 {% graphql my_results = "find_items_with_category",
  category: current_category_array
  %}
-
+{% endraw %}
 ```
 
 Or, you can use data from Siteglide that's already stored in a Liquid variable. In this case, let's say we're in an item.liquid file for a Product. We already have access to the Categories that this Product is assigned to - luckily, the data is already a Liquid Array. Let's use that data to find other records in the same Category.
 
 ```liquid
+{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: this.category_array
  %}
 
+{% endraw %}
 ```
 
 ## Challenge - Using Page as a Variable
@@ -401,6 +405,7 @@ Here are some snippets of code you can use to help you:
 \*User Interaction \*You can use anchors to allow the User to refresh the Page and change the Page Parameter in the URL.
 
 ```liquid
+{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
@@ -408,6 +413,7 @@ Here are some snippets of code you can use to help you:
 </ul>
 
 
+{% endraw %}
 ```
 
 \*Reading URL parameters \*You can use Liquid to read the Page parameter in the URL. You'll then need to work out how to feed this variable into your GraphQL query: \`

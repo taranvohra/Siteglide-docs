@@ -175,21 +175,25 @@ Accessing these values via the above method tends to set them as String values i
 We can then add them to the query.
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
 -%}
 
+{% endraw %}
 ```
 
 If the query expects variables to be Strings you can actually add them straight to the query without assigning as variables first:
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
 -%}
 
+{% endraw %}
 ```
 
 ### Step 6) Output results on the Endpoint Page - These will be the response body
@@ -228,6 +232,7 @@ If you decided in step 2 to change the format of the Page, you'll need to use Li
 As GraphQL already outputs in JSON format, this is easy:
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
@@ -235,6 +240,7 @@ As GraphQL already outputs in JSON format, this is easy:
 
 {{fetch_webapp_1_by_page}}
 
+{% endraw %}
 ```
 
 #### Option 6) c) CSV format
@@ -244,6 +250,7 @@ For something like CSV, you'll need to use logic to output the data in the corre
 We use `{%` rather than `{%-` in this example, because we want to preserve new lines to make sure each row of the CSV displays correctly.
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
@@ -257,6 +264,7 @@ Name,ID,Description
 
 
 
+{% endraw %}
 ```
 
 ### Step 7) Test the endpoint Page
@@ -371,6 +379,7 @@ This basic example will request data from the example earlier and console log th
 The if statement logic checks if a 2xx response code is received (meaning any authorization policies have passed) and that there is no HTML tag containing a 401 code from a Secure Zone check failure. See Step 8) for more details.
 
 ```liquid
+{% raw %}
 <script>
   var xReq = new XMLHttpRequest();
   xReq.onload = function () {
@@ -386,6 +395,7 @@ The if statement logic checks if a 2xx response code is received (meaning any au
 </script>
 
 
+{% endraw %}
 ```
 
 #### Example 9) a) ii) Parsing JSON and manipulating the DOM
@@ -455,6 +465,7 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
 **Build HTML on the Endpoint Page**
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
@@ -470,11 +481,13 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
 {% endraw %}
 </div>
 
+{% endraw %}
 ```
 
 **Fetch HTML on the Front End Page**
 
 ```liquid
+{% raw %}
 <div class="webapp_1">
 </div>
 
@@ -491,6 +504,7 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   xReq.open('GET', '/api/webapp-1?page=1&per_page=1');
   xReq.send();
 </script>
+{% endraw %}
 ```
 
 ## A Footnote

@@ -12,6 +12,7 @@ This Module lets you add [Testimonials](https://help.siteglide.com/article/131-m
 ### Syntax
 
 ```liquid
+{% raw %}
 {%- include 'module'
     id: '8'
     layout: 'design_system/10'
@@ -19,6 +20,7 @@ This Module lets you add [Testimonials](https://help.siteglide.com/article/131-m
     sort_type: 'properties.name'
     sort_order: 'asc' 
 -%}
+{% endraw %}
 ```
 
 ### Parameters

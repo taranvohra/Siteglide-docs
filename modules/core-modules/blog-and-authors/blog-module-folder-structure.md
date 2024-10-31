@@ -14,7 +14,7 @@ Replace "custom\_example" with the name of your own custom layout. You can add a
 
 There is also a form directory for storing form layouts for front-end module/ author item submission.
 
-```
+```bash
 └───marketplace_builder
     └───views
         └───partials

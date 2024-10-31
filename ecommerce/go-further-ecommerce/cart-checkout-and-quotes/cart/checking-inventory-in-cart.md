@@ -1,2 +1,0 @@
-# Checking Inventory in Cart
-

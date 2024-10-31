@@ -49,6 +49,7 @@ Each instance is stored within the object against a key which is derived from th
 You can access a specific instance via this key, or loop over them all and run your method on the instance. In the example, replace methodName with the method name from this documentation.
 
 ```liquid
+{% raw %}
 <script>
   if(window.sgLiveUpdateInitiated === true) {
     ready();
@@ -64,11 +65,13 @@ You can access a specific instance via this key, or loop over them all and run y
     }
   }
 </script>
+{% endraw %}
 ```
 
 #### 4) Call the method on the instance <a href="#id-4-call-the-method-on-the-instance" id="id-4-call-the-method-on-the-instance"></a>
 
 ```liquid
+{% raw %}
 <script>
   if(window.sgLiveUpdateInitiated === true) {
     ready();
@@ -82,6 +85,7 @@ You can access a specific instance via this key, or loop over them all and run y
     instance.setSuspenseHTML('<div>loading</div>');
   }
 </script>
+{% endraw %}
 ```
 
 More methods can be found in the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference)

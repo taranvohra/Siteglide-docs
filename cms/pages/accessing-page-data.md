@@ -13,7 +13,9 @@ description: Page and Page Templates
 Determines where in the Page Template the dynamic content of the Page itself will sit:
 
 ```liquid
+{% raw %}
 {{content_for_layout}}
+{% endraw %}
 ```
 
 Note though that the Page is actually rendered by the server before the Page Template, this allows Liquid to pass data from the Page to the Page Template either using Page Metadata or the `content_for` and `yield` tags.

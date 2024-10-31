@@ -1,6 +1,6 @@
 # 🌳 Category Layout Folder Structure
 
-```
+```bash
 └───marketplace_builder
     └───views
         └───partials

@@ -70,10 +70,12 @@ To apply filters, the URL must be given the following parameters:
 Include the following liquid to dynamically get a list of available Blog Categories for the User to select:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_categories'
     categories_layout: 'default/categories'
     categories_layout_type: 'sidebar' 
 -%}
+{% endraw %}
 ```
 
 To apply filters, the URL must be given the following parameters:
@@ -85,11 +87,13 @@ To apply filters, the URL must be given the following parameters:
 (Requires `use_adv_search`)
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_authors/get/get_authors'
     author_layout: 'default/author'
     author_layout_type: 'sidebar'
     author_field: 'module_field_3_4' 
 -%}
+{% endraw %}
 ```
 
 To apply filters, the URL must be given the following parameters:

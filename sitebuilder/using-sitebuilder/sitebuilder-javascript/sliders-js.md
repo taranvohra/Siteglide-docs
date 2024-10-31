@@ -15,6 +15,7 @@ Read more about the Slider Module here]\(/documentation/sitebuilder/modules\_and
 Each of the layouts which uses this script will include the following code for loading the script and setting up the configuration for the slider:
 
 ```liquid
+{% raw %}
 <script>
   if(!window.sitebuilderSwiperConfig ) {
     window.sitebuilderSwiperConfig  = {};
@@ -34,6 +35,7 @@ Each of the layouts which uses this script will include the following code for l
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script async src="https://uploads.prod01.london.platform-os.com/instances/668/assets/modules/module_86/js/sitegurus_sliders_javascript_api.1.js?updated=1695044531"></script>
+{% endraw %}
 ```
 
 This code is included inside the layout in order to allow some level of configuration by developers, while maximising performance:
@@ -72,6 +74,7 @@ Under the configuration, you can define a callback function in the `onInit` prop
 In the example below, we show you how to add a button to manipulate the slider once it is ready.
 
 ```liquid
+{% raw %}
 <button id="reset">Back to start</button>
 <script>
   window.sitebuilderSwiperConfig[''] = {
@@ -90,6 +93,7 @@ In the example below, we show you how to add a button to manipulate the slider o
   }
 
 </script>
+{% endraw %}
 ```
 
 The references to each initialised slider are also stored inside the window.sitebuilderSwiperConfig object.

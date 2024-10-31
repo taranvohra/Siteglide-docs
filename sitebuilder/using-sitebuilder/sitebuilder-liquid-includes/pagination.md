@@ -13,17 +13,13 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 #### Example <a href="#example" id="example"></a>
 
 ```liquid
+{% raw %}
 <section class="p-8">
   <!-- Main Layout here -->
   <!-- Use the below Liquid tag to choose where your pagination will be outputted -->
-  
-{% raw %}
-{% include "modules\module_86\private\views\partials\front_end\includes\v1\pagination", live_updates: 'false', lock_per_page: 'true' %}
-{% endraw %}
-
-
-
+  {% include "modules\module_86\private\views\partials\front_end\includes\v1\pagination", live_updates: 'false', lock_per_page: 'true' %}
 </section>
+{% endraw %}
 ```
 
 #### parameters <a href="#parameters" id="parameters"></a>

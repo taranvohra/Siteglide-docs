@@ -9,7 +9,13 @@ Until this point, we have focussed on how to use our data-attributes to configur
 Similar to the Getting Started Section, include the following Liquid to asyncronously load the JS only once per page.
 
 ```liquid
-<script async src="https://uploads.prod01.london.platform-os.com/instances/668/assets/modules/module_86/js/v1-2/sitegurus_live_update_javascript_api.js?updated=1695044533"></script>
+{% raw %}
+{% if context.exports.sitebuilder.live_update_JS_loaded == blank %}
+  <script async src="{{'modules/module_86/js/v1-6/sitegurus_live_update_javascript_api.min.js' | asset_url }}"></script>
+  {% assign live_update_JS_loaded = true %}
+  {% export live_update_JS_loaded, namespace: sitebuilder %}
+{% endif %}
+{% endraw %}
 ```
 
 We'll skip this snippet of code in the next few examples, for brevity.
@@ -19,6 +25,7 @@ We'll skip this snippet of code in the next few examples, for brevity.
 Since the JS runs asynchronously, the constructor function cannot be invoked immediately. We provide a custom event on the document which can be listened for so that we know when the script is ready.
 
 ```liquid
+{% raw %}
 <script>
   //The live-update module's script is loaded asynchronously, so you must wait for it to be ready before using its functions.
   document.addEventListener('live_update_script_ready', ready);
@@ -26,6 +33,7 @@ Since the JS runs asynchronously, the constructor function cannot be invoked imm
 
   }
 </script>
+{% endraw %}
 ```
 
 #### 3) Passing in the Public Key and Initialising <a href="#id-3-passing-in-the-public-key-and-initialising" id="id-3-passing-in-the-public-key-and-initialising"></a>
@@ -41,6 +49,7 @@ c) Or you can use Liquid to output the public key as a global JS variable in an 
 Inline Script Tag example:
 
 ```liquid
+{% raw %}
 <script>
   //The live-update module's script is loaded asynchronously, so you must wait for it to be ready before using its functions.
   document.addEventListener('live_update_script_ready', ready);
@@ -58,6 +67,7 @@ Inline Script Tag example:
     )
   }
 </script>
+{% endraw %}
 ```
 
 Refer to the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference) for the full range of available options which can be used while initialising with JS.
@@ -65,6 +75,7 @@ Refer to the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/
 #### 4) Add an HTML control and attach an Event Listener <a href="#id-4-add-an-html-control-and-attach-an-event-listener" id="id-4-add-an-html-control-and-attach-an-event-listener"></a>
 
 ```liquid
+{% raw %}
 <script>
   //The live-update module's script is loaded asynchronously, so you must wait for it to be ready before using its functions.
   document.addEventListener('live_update_script_ready', ready);
@@ -87,6 +98,7 @@ Refer to the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/
     })
   }
 </script>
+{% endraw %}
 ```
 
 #### 5) Trigger a Live Update when the Event Callback runs <a href="#id-5-trigger-a-live-update-when-the-event-callback-runs" id="id-5-trigger-a-live-update-when-the-event-callback-runs"></a>
@@ -94,6 +106,7 @@ Refer to the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/
 Earlier we stored a reference to the Live Update instance in a variable called `section`. We can use this now to run the `liveUpdate` method inside the event callback function.
 
 ```liquid
+{% raw %}
 <script>
   //The live-update module's script is loaded asynchronously, so you must wait for it to be ready before using its functions.
   document.addEventListener('live_update_script_ready', ready);
@@ -118,6 +131,7 @@ Earlier we stored a reference to the Live Update instance in a variable called `
     })
   }
 </script>
+{% endraw %}
 ```
 
 You can find the full reference for this method and others in the (API Reference)\[/documentation/sitebuilder/live\_updates/API\_reference]. Other methods can be run on the instance in the same way.

@@ -61,6 +61,7 @@ As with list views, the detail folder inside your new layout folder should conta
 wrapper.liquid -- detail view example
 
 ```liquid
+{% raw %}
 <section class="large detail-view ecommerce">
   <div class="container">
     <div class="row">
@@ -71,15 +72,18 @@ wrapper.liquid -- detail view example
   </div>
 </section>
 
+{% endraw %}
 ```
 
 This is the file for the main section code e.g. a section title or padding. You will need to use the following liquid to include your item.liquid file inside the wrapper and give it access to information about the Product:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
     item_layout: 'item' 
 -%}
 
+{% endraw %}
 ```
 
 ### item.liquid
@@ -87,6 +91,7 @@ This is the file for the main section code e.g. a section title or padding. You 
 item.liquid -- detail view example
 
 ```liquid
+{% raw %}
 <div class="col-lg-6"> <img src="{{this['Image'] | asset_url}}" class="img-fluid"></div>
 <div class="col-lg-5 offset-lg-1">
   <div>
@@ -118,6 +123,7 @@ item.liquid -- detail view example
   </div>
 </div>
 
+{% endraw %}
 ```
 
 Unlike the List View, the code in the item.liquid file in the Detail folder will only be displayed once instead of looped. Inside the `item.liquid` file, you'll have access to the "this" object, which contains the fields you'll need. See [reference](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts) for available fields or output `{{this | json}}` in the item.liquid file to see the exact data available to you.
@@ -145,6 +151,8 @@ See more:
 In order to use the "Add to Cart" Button, you'll also need to have an input element where Users can select the quantity they'd like to add. Make sure it has the correct data-attribute.
 
 ```liquid
+{% raw %}
 <label for="quantity">Quantity</label>
 <input type="number" min="1" value="1" data-quantity-control id="quantity" />
+{% endraw %}
 ```

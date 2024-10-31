@@ -21,6 +21,7 @@ This example will redirect the user to `/home` no matter what the redirect says 
 {% tabs %}
 {% tab title="Liquid" %}
 ```liquid
+{% raw %}
 <select id="choose_office" required>
     <option value="1">Office 1</option>
     <option value="2">Office 2</option>
@@ -30,6 +31,7 @@ This example will redirect the user to `/home` no matter what the redirect says 
   value="/home" 
   type="hidden"
 />
+{% endraw %}
 ```
 {% endtab %}
 

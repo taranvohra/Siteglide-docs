@@ -62,7 +62,7 @@ We've built files in the Site Template which contain the instructions npm needs 
 
 Find the files in the folder:
 
-```
+```bash
 └───marketplace_builder
     └───assets
         └───modules

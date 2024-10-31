@@ -35,12 +35,14 @@ Thirdly, make a note of your "vanity ID". We'll refer to this as \<module\_vanit
 Most of the files in your module will be in the private folder so SiteBuilder won't know they're there unless it knows where to look. You'll next need to create the following file at the public path: `modules/module_<module_vanity_id>/public/views/partials/sitebuilder/module_registry.liquid` to make your module available to SiteBuilder.
 
 ```liquid
+{% raw %}
 ---
 metadata:
   enabled: true
   module_id: module_<module_vanity_id>
   type: theme
 ---
+{% endraw %}
 ```
 
 The placeholder \<module\_vanity\_id> should be replaced by the vanity ID that Siteglide gave you earlier.

@@ -142,6 +142,7 @@ Now we know which Products are related to one another, we can output them. For t
 To do this we'll use a Collection (read more here: [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial)) which will be filtered by the parameter "category\_id", meaning only items within the specified category are included (please follow step 1 for instructions on how we can do this dynamically).
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/products'
     layout: 'default'
     per_page: '20'
@@ -154,6 +155,7 @@ To do this we'll use a Collection (read more here: [Collections](https://develop
 -%}
 
 
+{% endraw %}
 ```
 
 If you're in a Detail layout, make sure to include the `type: 'list'` parameter. Also, ensure `collection: 'true'` is added to the include, along with your Category ID.

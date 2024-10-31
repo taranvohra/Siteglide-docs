@@ -22,11 +22,13 @@ This Article will show:
 Include the following liquid to dynamically get a list of available Events Categories for the User to select:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_categories'
     categories_layout: 'design_system/1/categories'
     categories_layout_type: 'list' 
 -%}
 
+{% endraw %}
 ```
 
 The parameters refer to Layouts which will be used to display the Category links.
@@ -39,6 +41,7 @@ The parameters refer to Layouts which will be used to display the Category links
 #### wrapper.liquid
 
 ```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Categories</h2>
@@ -50,11 +53,13 @@ The parameters refer to Layouts which will be used to display the Category links
   </div>
 </div>
 
+{% endraw %}
 ```
 
 #### item.liquid
 
 ```liquid
+{% raw %}
 <li>
        <a
               href="{{context.headers.PATH_INFO}}?category={{this.id}}" 
@@ -64,6 +69,7 @@ The parameters refer to Layouts which will be used to display the Category links
        </a>
 </li>
 
+{% endraw %}
 ```
 
 The link should be the slug of your Events List view followed by `?category={{this.id}}`. Siteglide will be able to read the Category id from the URL and populate the List View on refresh. In this example we use the context object to automatically get the slug of the current Events Page.

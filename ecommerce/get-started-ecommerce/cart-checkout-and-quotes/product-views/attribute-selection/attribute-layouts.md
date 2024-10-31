@@ -65,12 +65,14 @@ To create a new set of Product layouts- create your folder at the level of "name
 If you are making a layout where you know exactly which Attribute a Product has, you can include an Attribute layout to display an Attribute with a given name: `detail/item.liquid` (including a single Attribute)
 
 ```liquid
+{% raw %}
 {% include 'ecommerce/product_attributes'
    name: attribute
    layout: 'demo_site_attributes'
    attribute_name: "Size" 
 -%}
 
+{% endraw %}
 ```
 
 ## Looping Over Multiple Attributes
@@ -127,16 +129,16 @@ You can loop over this array with the following liquid code, (where the example 
 To get the full benefits of Attribute functionality, including the user's choice of Attribute affecting what is added to the Cart, the data-attributes and function calls in the example should be included:
 
 ```liquid
+{% raw %}
 <select name="attr1" class="form-control" data-attribute-control="{{product_attribute_id}}" onchange="s_e_update_price()">
   
-{% raw %}
 {% for option in product_attribute_options %}
     <option value="{{option.id}}" data-attribute-price-control="{{option.price_raw}}">
       {{option.name}} {{this.price.currency_symbol}}{{option.price}})
     </option>
   {% endfor %}
-{% endraw %}
 </select>
+{% endraw %}
 ```
 
 As you can see in the example, inside the loop it is possible to access the specific Attribute Option in this iteration via the "option" variable you created when setting up the loop, but you can also still access the "this" object specific to the Detail Layout that wraps around and includes the Attribute Layout. See the [Product Layout Liquid Reference](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts) to see the fields available in the "this" object and those specific to Attributes and Attribute Options.

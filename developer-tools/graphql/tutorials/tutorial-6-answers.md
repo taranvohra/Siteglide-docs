@@ -63,6 +63,7 @@ Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liq
 We gave you these in the tips. You'll have needed to add them on a Page of your choice.
 
 ```liquid
+{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
@@ -70,6 +71,7 @@ We gave you these in the tips. You'll have needed to add them on a Page of your 
 </ul>
 
 
+{% endraw %}
 ```
 
 Pressing one of the buttons will redirect us to the same Page, but will be adding a `page` query parameter to the URL. This is the easiest way to pass variables to Liquid- because Liquid runs before the Page loads, and the URL is one of the only available sources of dynamic information at this point.
@@ -137,6 +139,7 @@ If you're having difficulty with any of these steps still, please don't hesitate
 _Liquid_
 
 ```liquid
+{% raw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -149,6 +152,7 @@ page: current_page
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
 
+{% endraw %}
 ```
 
 _GraphQL_
@@ -220,6 +224,7 @@ query gallery_by_page($page: Int) {
 You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
+{% raw %}
 <ul>
   
 {% raw %}
@@ -228,6 +233,7 @@ You can then use this to manipulate the HTML pagination controls:
   {% endfor %}
 {% endraw %}
 </ul>
+{% endraw %}
 ```
 
 ## Next Time

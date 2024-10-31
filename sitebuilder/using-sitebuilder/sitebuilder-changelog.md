@@ -192,7 +192,9 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 * Live Updates API now has a new version of its JavaScript file, with added functionality. This will be included in many new SiteBuilder layouts by default, or you can optionally upgrade your existing layouts with the tag:
 
 ```liquid
+{% raw %}
 <script async src="{{'modules/module_86/js/v1-1/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
+{% endraw %}
 ```
 
 * Live Updates API now adds a click listener to text input fields. This helps to cover an edge-case where a cancel button is nested inside the text area to clear the field. Non-breaking change.

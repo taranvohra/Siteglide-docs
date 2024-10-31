@@ -58,17 +58,13 @@ We can access all values in the Array using a Liquid For Loop:
 {% endfor %}
 {% endraw %}
 
-
-
 ```
 
 This outputs:
 
-```liquid
+```bash
 98479
-
 111111
-
 ```
 
 ## Finding the Length of an Array
@@ -81,38 +77,43 @@ As well as arrays, you might come across a map of data. Here is an example which
 
 It outputs something like this (but I've shortened it here!):
 
-```liquid
-{"items":
-  {
-    "98490":
-{"id":"98490"
-  "external_id":"category_57703"
-  "name":"Women"
-  "parent":"98487"
-  "slug":"women"
-  "image":null
-  "description":null
-  "meta_title":"Women"
-  "meta_desc":null
-  "og_title":null
-  "og_desc":null
-  "og_type":null
-  "twitter_type":null
-  "full_slug":"/our-products/merch/clothes/women"},
-    "98489":{"id":"98489"
-             "external_id":"category_57701"
-             "name":"Men"
-             "parent":"98487"
-             "slug":"men"
-             "image":null
-             "description":null
-             "meta_title":"Men"
-             "meta_desc":null
-             "og_title":null
-             "og_desc":null
-             "og_type":null
-             "twitter_type":null
-             "full_slug":"/our-products/merch/clothes/men"}
+```json
+{
+  "items": {
+    "98490": {
+      "id":"98490",
+      "external_id":"category_57703",
+      "name":"Womens",
+      "parent":"98487",
+      "slug":"women",
+      "image":null,
+      "description":null,
+      "meta_title":"Womens",
+      "meta_desc":null,
+      "og_title":null,
+      "og_desc":null,
+      "og_type":null,
+      "twitter_type":null,
+      "full_slug":"/our-products/merch/clothes/womens"
+    },
+    {
+      "98489":{
+        "id":"98489",
+        "external_id":"category_57701",
+        "name":"Men",
+        "parent":"98487",
+        "slug":"men",
+        "image":null,
+        "description":null,
+        "meta_title":"Men",
+        "meta_desc":null,
+        "og_title":null,
+        "og_desc":null,
+        "og_type":null,
+        "twitter_type":null,
+        "full_slug":"/our-products/merch/clothes/men"
+      }
+    }
   }
 }
 
@@ -129,12 +130,8 @@ This sounds odd, but it's the name of the eCommerce Category we wanted! You can 
 ```liquid
 {% raw %}
 {% assign my_example_category_id = 98490 %}
-{% endraw %}
-
-
-
 {{context.exports.categories.items[my_example_category_id].name}}
-
+{% endraw %}
 ```
 
 ### Looping over a Map

@@ -40,11 +40,13 @@ The recover password form is the first step in recover password flow. Users shou
 By default, a system page will already be created on your site at `/system/recover-password`, which can be found in Admin under `Site Manager/System Pages` . You can edit that page, or add the form to a new page with the tag:
 
 ```liquid
+{% raw %}
 {% include 'recover_password',
 	buttonText: 'Submit',
 	redirect: '/'
 -%}
 
+{% endraw %}
 ```
 
 #### Password Reset Email
@@ -62,11 +64,13 @@ This is the last step in the recover password flow where the user has already cl
 This form should normally be outputted on the `/system/reset-password` System Page, as this is where the dynamic link from the email will point. You can optionally redirect users back to the page where they can sign in with their new password.
 
 ```liquid
+{% raw %}
 {% include 'reset_password'
 	failContent: 'The provided token is no longer valid. Please request password instructions again.',
 	buttonText: 'Submit',
 	redirect: '/'
 -%}
+{% endraw %}
 ```
 
 ## Liquid Tags

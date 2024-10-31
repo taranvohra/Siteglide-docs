@@ -21,6 +21,7 @@ The Events Module Map Layout is an example of a List Layout. Like all List Layou
 To output the map, output the List Layout as normal, and choose a Map Layout in the `layout` parameter.
 
 ```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1/map'
@@ -29,6 +30,7 @@ To output the map, output the List Layout as normal, and choose a Map Layout in 
 -%}
 
 
+{% endraw %}
 ```
 
 There are a few parameters which work particularly well on the Map Layout, because we will want to disable Pagination and show all enabled and released Events at once:
@@ -63,6 +65,7 @@ var locations = [
 The `item.liquid` file should be left in the format of a JSON object, but you may choose to add more variables:
 
 ```liquid
+{% raw %}
 {	
     id: "{{this.id}}",
 	lat: {{this.properties.module_field_12_7 | split: ',' | first | times: 1 | default: "invalid" }},
@@ -73,7 +76,6 @@ The `item.liquid` file should be left in the format of a JSON object, but you ma
     event_start: "{{this.properties.module_field_12_2 | date: "%d/%m/%Y %H:%M T%z"}}",	
     event_end: "{{this.properties.module_field_12_3 | date: "%d/%m/%Y %H:%M T%z"}}",	
     valid: "
-{% raw %}
 {% if this.properties.module_field_12_7 == blank %}invalid{% else %}valid{% endif %}"
 }{% unless forloop.last %},{% endunless %}
 {% endraw %}

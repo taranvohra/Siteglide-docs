@@ -68,19 +68,21 @@ Just outputting `this` on its own would show you the real JSON Object behind the
 
 This outputs an object of data, which to start with is a little hard to read. That's because whitespace is removed for efficiency reasons. Adding the whitespace back in with a third party tool will allow us to read it more easily (see the next section).
 
-```liquid
-{"id":"98656","properties":{"name":"The Latest Music","slug":"the-latest-music"... 
-
-etc.
-
-
+```json
+{
+  "id":"98656",
+  "properties": {
+    "name":"The Latest Music",
+    "slug":"the-latest-music"
+  }
+}
 ```
 
 ## Visualising the Object "Tree"
 
 To make sense of the JSON that the Liquid outputs, you'll need a tool for automatically formatting the JSON data and adding whitespace. Some tools even help you visualise the data in other more advanced ways.
 
-We don't have a favourite JSON parsing tool, but you can see a third-party comparison here: [https://geekflare.com/json-online-tools/](https://geekflare.com/json-online-tools/) Many Code Editing environments also have a tool for prettifying JSON data.
+We don't have a favourite JSON parsing tool, but you can see a third-party comparison here: [https://geekflare.com/json-online-tools/](https://geekflare.com/json-online-tools/) Many Code Editing environments like VSCode also have a useful extension for prettifying JSON data.
 
 {% hint style="danger" %}
 #### Important Note

@@ -35,13 +35,12 @@ We'll give you an example of how this JavaScript may work here. You can adapt th
 
 ### Example 1 - Allowing the User to enter any value they wish
 
-The following example allows the User to enter an amount of their choice into an input in the Form. Our function changes the format, then sets the value of the hidden field. Note that the entire example should sit inside a Liquid \`
+The following example allows the User to enter an amount of their choice into an input in the Form. Our function changes the format, then sets the value of the hidden field.
 
-\` tag.
+####Liquid
 
-{% tabs %}
-{% tab title="Liquid" %}
 ```liquid
+{% raw %}
 <div class="">
   <label for="user_chooses_amount_to_pay">
     How much can you afford to donate (pounds and pence e.g. 10.00)?
@@ -55,11 +54,10 @@ The following example allows the User to enter an amount of their choice into an
     >
   </div>
 </div>
-
+{% endraw }
 ```
-{% endtab %}
+####JavaScript
 
-{% tab title="JavaScript" %}
 ```javascript
 function changeAmountToPay() {
   var output = document.querySelector('#s_e_amount');
@@ -69,8 +67,6 @@ function changeAmountToPay() {
 var input = document.querySelector('#user_chooses_amount_to_pay');
 input.addEventListener('keyup', changeAmountToPay);
 ```
-{% endtab %}
-{% endtabs %}
 
 ### Example 2 - Using URL parameters to change the value of s\_e\_amount
 

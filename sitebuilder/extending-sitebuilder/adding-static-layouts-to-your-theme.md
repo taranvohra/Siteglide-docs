@@ -48,9 +48,9 @@ At the present time, static content should be added inside each file as HTML onl
 The `static_config.liquid` file should be added inside the theme folder in order to give SiteBuilder the metadata it needs to find your layouts and display them in either the Studio tab UI or the PageBuilder UI.
 
 ```liquid
+{% raw %}
 {
   "name": "Studio", 
-{% raw %}
 {% comment %}String. Required. The name of your theme{% endcomment %}
   "id": "theme_<module_vanity_id>", {% comment %}String. Required. {% endcomment %}
   "categories": [
@@ -61,7 +61,6 @@ The `static_config.liquid` file should be added inside the theme folder in order
         {
           "id": "1", {% comment %}String. Required. Must be unique within layouts and exactly match the filename of the layout it describes. {% endcomment %}
           "thumbnail": "https://res.cloudinary.com/...hero-1.png" {% comment %}String (absolute path image URL). Required. While the image will be thumbnail sized in Studio, it should be large enough to display correctly in PageBuilder, so should be at least 800px wide.{% endcomment %}
-{% endraw %}
         },
         {
           "id": "2",
@@ -81,4 +80,5 @@ The `static_config.liquid` file should be added inside the theme folder in order
     }
   ]
 }
+{% endraw %}
 ```

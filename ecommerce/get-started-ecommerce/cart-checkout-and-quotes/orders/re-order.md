@@ -73,6 +73,7 @@ Adding the button will load a small button layout. You can find the default Layo
 \*\*\*Adding the function \*\*\*The styling of the button is completely up to you. To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
 
 ```liquid
+{% raw %}
 onclick="s_e_reorder({ order_id: '{{order_id}}'
                         token: '{{token}}'
                         cart_url: '/cart'
@@ -80,6 +81,7 @@ onclick="s_e_reorder({ order_id: '{{order_id}}'
                         success_cb: success})"
 
 
+{% endraw %}
 ```
 
 The function takes a single argument containing an options object. The available arguments are as follows:

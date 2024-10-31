@@ -14,6 +14,7 @@ Create a nested Menu Structure using the Pages you've built and customise its la
 ### Syntax
 
 ```liquid
+{% raw %}
 {%- include 'menu'
     id:'6560'
     layout: 'default'
@@ -21,6 +22,7 @@ Create a nested Menu Structure using the Pages you've built and customise its la
 -%}
 
 
+{% endraw %}
 ```
 
 ### Parameters
@@ -52,12 +54,14 @@ Within this module folder you will find the following layout folders:
 The wrapper file is used to wrap the menu item output and should contain the liquid for outputting the menu items. You can wrap your menu with any content you'd like, such as a plain \<ul> tag, or a section wrapper with a title.
 
 ```liquid
+{% raw %}
 <ul>
 	{% include 'modules/siteglide_menu/get/get_items'
 		item_layout: 'item' 
 	-%}
 </ul>
 
+{% endraw %}
 ```
 
 #### Example - item.liquid

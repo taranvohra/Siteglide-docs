@@ -102,12 +102,14 @@ If there are multiple Products in one Order, we'll need to create an array of th
 So no we've assigned all of our Media Download IDs to '`media_download_id`'- we'll use this within the 'item\_ids' parameter on our Media Download Layout include:
 
 ```liquid
+{% raw %}
 {%- include 'module'
     id: '17'
     layout: 'my-layout'
     item_ids: media_download_id 
 -%}
 
+{% endraw %}
 ```
 
 Now, locate your Media Download layouts- these can be found under: Code Editor > Modules > Module\_17 (Media Downloads).
@@ -117,9 +119,11 @@ From here you can either use an existing layout or copy the default layout struc
 We'll only need to include the Media Download Items within the 'wrapper' file, here's how this looks:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_media_downloads/get/get_items'
     item_layout: 'item' 
 -%}
+{% endraw %}
 ```
 
 Then within the 'item' layout, we'll add an anchor to allow the items to be downloaded- we'll also output the name of the Media Download Item as the anchor's text: `<p><a href="{{this['url']}}">{{this['name']}}</a></p>`

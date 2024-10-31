@@ -44,25 +44,31 @@ For Basic Payment forms:
 For Checkout Forms, use the ecommerce/checkout\_standard include to output multiple payment gateways inside your checkout form Liquid layout file.
 
 ```liquid
-
-
-
-
-
-
- 
+{% raw %}
+{%- include 'ecommerce/checkout_standard'
+  id: '123',
+  default: 'true'
+-%}
+{%- include 'ecommerce/checkout_standard'
+  id: '456',
+  default: 'false'
+-%}
+{% endraw %}
 ```
 
 For Basic Payment Forms:
 
 ```liquid
-
-
-
-
-
-
- 
+{% raw %}
+{%- include 'ecommerce/basic_payment'
+  id: '123',
+  default: 'true'
+-%}
+{%- include 'ecommerce/basic_payment'
+  id: '456',
+  default: 'false'
+-%}
+{% endraw %}
 ```
 
 ## Step 4
@@ -84,6 +90,7 @@ This can be applied as a callback to any JS event you like, such as clicking a r
 {% tabs %}
 {% tab title="Liquid" %}
 ```liquid
+{% raw %}
 
 <fieldset>
   <legend>Select a payment gateway:</legend>
@@ -96,6 +103,7 @@ This can be applied as a callback to any JS event you like, such as clicking a r
     <label for="456">PayPal</label>
   </div>
 </fieldset>
+{% endraw %}
 ```
 {% endtab %}
 

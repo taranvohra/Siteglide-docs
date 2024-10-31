@@ -71,6 +71,7 @@ Inside the Order Confirmation Email, you'll have access to the following relevan
 The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
 
 ```liquid
+{% raw %}
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
   
 {% raw %}
@@ -83,6 +84,7 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
   {% endif %}
 {% endraw %}
 </td>
+{% endraw %}
 ```
 
 See the [Order Confirmation Email](orders/order-confirmation.md) documentation for more.

@@ -1,6 +1,6 @@
 # 🌳 Forms Folder Structure
 
-```
+```bash
 └───marketplace_builder
     ├───custom_model_types
     │   └───forms

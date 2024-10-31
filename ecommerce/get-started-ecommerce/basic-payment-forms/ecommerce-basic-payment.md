@@ -39,11 +39,13 @@ You should include this _inside_ a basic payment form layout.
 #### How to use?
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/basic_payment'
   amount: '500'
   currency: 'usd'
   id: '10'
 -%}
+{% endraw %}
 ```
 
 | Parameter | Type    | Notes                                                                                                                                                        |

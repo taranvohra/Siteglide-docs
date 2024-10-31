@@ -10,7 +10,7 @@ The JSON files which control triggers and which actions to run are stored in the
 
 "FIC" stands for "Form Create" - it is a shorthand for the trigger which can be expected to run the code in the file.&#x20;
 
-```
+```bash
 └───marketplace_builder
     ├───notifications
     │   └───email_notifications

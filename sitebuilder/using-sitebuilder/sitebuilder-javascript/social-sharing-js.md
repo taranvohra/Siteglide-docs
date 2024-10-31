@@ -33,5 +33,7 @@ The `data-s-g-option-url` is normally a required option and if you leave it blan
 Full Twitter example:
 
 ```liquid
+{% raw %}
 <button data-s-g-social-feature="tw" data-s-g-option-url="https://sitegurus.io" data-s-g-option-hashtags="test,testing,ilovetesting">Tweet about Sitegurus!</button>
+{% endraw %}
 ```

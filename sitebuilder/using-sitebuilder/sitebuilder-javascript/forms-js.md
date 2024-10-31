@@ -13,5 +13,7 @@ Page Templates
 ### Script Code <a href="#script-code" id="script-code"></a>
 
 ```liquid
+{% raw %}
 <script async id="sitegurus_forms_javascript_api" src="{{'modules/module_86/js/sitegurus_forms_javascript_api.js' | asset_url}}" charset="utf-8"></script>
+{% endraw %}
 ```

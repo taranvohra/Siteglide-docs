@@ -49,10 +49,12 @@ Inside your `order_details` layout you'll find an `item.liquid` and `wrapper.liq
 You can use the `wrapper.liquid` file to build the main HTML structure of your Layout. When you're ready to include the Order Details, use the following Liquid to include the `item.liquid` file:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_order_details'
     item_layout: 'item' 
 -%}
 
+{% endraw %}
 ```
 
 #### Item

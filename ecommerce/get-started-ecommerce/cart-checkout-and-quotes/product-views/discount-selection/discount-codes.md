@@ -39,10 +39,12 @@ The screenshot below shows how the Discount Code Layout can be nested inside the
 The following Liquid will add the Layout:
 
 ```liquid
+{% raw %}
 {% include 'ecommerce/discount_code'
    layout: "cart/default" 
 %}
 
+{% endraw %}
 ```
 
 The only parameter you'll need will be `layout` which refers to the file name of the Layout. We'll look at where to create the Layout files in Step 2.
@@ -54,14 +56,11 @@ In order to better support adding Discount Code Layouts on Forms, we've added th
 For now, you can add the data-attribute `data-s-e-refresh-layout-discount-code` to the element which serves as a wrapper for your Layout e.g.
 
 ```liquid
-<div data-s-e-refresh-layout-discount-code>
 {% raw %}
+<div data-s-e-refresh-layout-discount-code>
 {% include 'ecommerce/discount_code', layout: "cart/default" %}
-{% endraw %}
-
-
 </div>
-
+{% endraw %}
 ```
 
 In a Cart Layout, you may also wish to set prices to automatically update when the discount code is added.
@@ -74,12 +73,14 @@ You can add the following data-attributes:
 e.g.
 
 ```liquid
+{% raw %}
 <p class="text-uppercase"><strong>TOTAL PRICE:</strong> 
 <span data-s-e-live-cart-currency></span>
 <span data-s-e-live-cart-total>
 {% include 'ecommerce/price_total'
             format_type: 'formatted' -%}</span></p>
 
+{% endraw %}
 ```
 
 ### Related Layout Development Docs
@@ -123,20 +124,16 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
 ### 3a - Add an \<input> element and \<label>
 
 ```liquid
+{% raw %}
 <label class="mb-3" for="s_e_discount_code">Discount Code</label>
 <input class="form-control" 
        id="s_e_discount_code" 
        data-s-e-discount-code 
-{% raw %}
+
 {% if discount_code != blank %} 
        value="{{discount_code}}" 
        readonly="true"{%- endif -%}
 {% endraw %}
-
-
->
-
-
 ```
 
 _HTML Attributes Explained:_

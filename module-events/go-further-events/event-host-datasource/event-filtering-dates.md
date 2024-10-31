@@ -23,6 +23,7 @@ This article will show:
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Event Items, this can be added to the include for Event List like so:
 
 ```liquid
+{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'default'
@@ -33,6 +34,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     use_adv_search: 'true' 
 -%}
 
+{% endraw %}
 ```
 
 ## Past Events and Future Events
@@ -50,11 +52,11 @@ If you just want to filter the List so it either shows Events that have already 
 ```liquid
 {% raw %}
 {% assign now = "now" | date: "%s" %}
-{% endraw %}
 
 
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
 
+{% endraw %}
 ```
 
 ### Filter by Future Events
@@ -64,11 +66,9 @@ If you just want to filter the List so it either shows Events that have already 
 ```liquid
 {% raw %}
 {% assign now = "now" | date: "%s" %}
-{% endraw %}
-
-
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 
+{% endraw %}
 ```
 
 ### Using Liquid Logic to "Toggle" between Past and Future Events
@@ -97,11 +97,13 @@ If you just want to filter the List so it either shows Events that have already 
 Firstly, you will need to provide the following Liquid to include your Archive layout:
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
 
+{% endraw %}
 ```
 
 ### Parameters
@@ -114,31 +116,37 @@ In the `default/archive/` folder we have 3 different optional types of Archive L
 _**Include: Browse By Months**_
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar" 
 -%}
 
+{% endraw %}
 ```
 
 _**Include: Browse By Months Under Years Header**_
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years"
 -%}
 
+{% endraw %}
 ```
 
 _**Include: Search Events Between Two Dates**_
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_events/get/get_events_archive'
     archive_layout: "design_system/1/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
 
+{% endraw %}
 ```
 
 ## Events Archive Layouts
@@ -150,6 +158,7 @@ The following examples will take you through the different options:
 ![](https://downloads.intercomcdn.com/i/o/203097728/66141d6f7f41130389f473fc/image.png)
 
 ```liquid
+{% raw %}
 <h2>Archive</h2>
 <ul>
   
@@ -166,6 +175,7 @@ The following examples will take you through the different options:
 
 </ul>
 
+{% endraw %}
 ```
 
 In this example, we use the `events_archive_months` object and loop over the array. For each iteration, a URL link is outputted which has three range parameters:
@@ -181,6 +191,7 @@ In this example, we use the `events_archive_months` object and loop over the arr
 This Layout does not just organise the Months available under the relevant Year Headers, it also will skip any Years without an Event.
 
 ```liquid
+{% raw %}
 <h2>Archive by Years</h2>
 <ul>
   
@@ -203,6 +214,7 @@ This Layout does not just organise the Months available under the relevant Year 
 
 </ul>
 
+{% endraw %}
 ```
 
 This example uses the same links as the previous one. However, it also organises the links into the years in which they belong by first looping over the years in the events\_archive\_years and then using the group\_by liquid filter and another loop to output the month links grouped under the current iteration's year. Learn more about this Liquid at the pOS docs:
@@ -219,6 +231,7 @@ In the Default Layout, this Option also includes the Previous "Browse by Months 
 It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
 
 ```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Archive by Years</h2>
@@ -282,6 +295,7 @@ Add your custom error message here- it can be renamed by changing its name in th
   }
 </script>
 
+{% endraw %}
 ```
 
 In this example a form is used to take user input. The Siteglide function automatically adds the dates to the URL parameters in the correct format. You can rewrite the error function to customise the way the form handles invalid dates entered.

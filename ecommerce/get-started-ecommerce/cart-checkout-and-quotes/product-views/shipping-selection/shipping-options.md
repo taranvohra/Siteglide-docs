@@ -54,21 +54,20 @@ Include your Custom Layout alongside my\_layout:
 Here's an example:
 
 ```liquid
+{% raw %}
 <div class="form-group">
 	<select onchange="s_e_cart_shipping(this);">
 		<option value="">--Please select--</option>
-		{% raw %}
+		
 {%- for this in shipping_options -%}
 			{% assign currency = this.price.properties["module_field_14/price_2"] %}
 			<option {% if this.id == current_cart_shipping_id %}selected{% endif %} 
 					value="{{this.id}}">{{this.name}} {{this.currency_symbol}}{{this.price}} 
 					</option>
 		{%- endfor -%}
-{% endraw %}
 	</select>
 </div>
-
-
+{% endraw %}
 ```
 
 Some key points to note from the example:

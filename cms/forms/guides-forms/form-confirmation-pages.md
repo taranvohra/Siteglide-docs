@@ -40,8 +40,6 @@ In the Siteglide Admin under `CMS > Pages` in the Code tab, add the Form Confirm
 {% raw %}
 {% include 'form_confirmation', layout: 'default' %}
 {% endraw %}
-
-
 ```
 
 The Layout parameter takes the name of the Layout File you wish to use, without the `.liquid` extension.
@@ -73,19 +71,22 @@ Note- you will not currently be able to use the `{{this}}` variable inside an Em
 _Using`{{this}}`_
 
 ```liquid
+{% raw %}
 <h1>Thanks for getting in touch!</h1>
 <p>Nice to meet you {{this.name}}!</p>
 <p>We'll get back to your query as soon as possible.</p>
-
+{% endraw %}
 ```
 
 _Using `{{form.properites}}` in a Layout copied from an Email Notification_
 
 ```liquid
+{% raw %}
 <h1>Thanks for getting in touch!</h1> 
 <p>Nice to meet you {{form.properties.name}}!</p> 
 <p>We'll get back to your query as soon as possible.</p> 
 
+{% endraw %}
 ```
 
 #### Outputting Fields Dynamically
@@ -93,6 +94,7 @@ _Using `{{form.properites}}` in a Layout copied from an Email Notification_
 You can choose to re-use the same confirmation message for multiple Forms. Here is an example which will list the submitted fields (whatever they may be!) in an HTML table. Be aware, depending on the Form, it may always need some adjustments to cover more unusual field types e.g. Checkboxes:
 
 ```liquid
+{% raw %}
 <p>In the meantime, please double check the information you provided us below:</p>
 <div class="responsive-table-container">
     <table>
@@ -119,6 +121,7 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
 
 </div>
 
+{% endraw %}
 ```
 
 If you're interested to read more about using Liquid to loop over the properties of an object, as we've done in this example, see more in this advanced tutorial:

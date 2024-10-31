@@ -63,6 +63,7 @@ Next we must add unique ids to our custom fields, we will use these to combine t
 Update each field to include id="lastName" and id="firstName" after the name value. These aren't normally required but will be used to refer to our fields in the following Java Script. Here's what the custom fields should look like:
 
 ```liquid
+{% raw %}
 <label for="form_field_2_4">First Name</label>
 <input
   class="form-control required"
@@ -77,6 +78,7 @@ Update each field to include id="lastName" and id="firstName" after the name val
   type="text"
   id="lastName"
 />
+{% endraw %}
 ```
 
 ### Step 5) Change the Form Submit Behaviour to Run a New Data Normalisation Function First

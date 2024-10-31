@@ -90,6 +90,7 @@ A quick tip for setting up the Custom Layout quickly is to start by copying and 
 In the code from the default Layout that we've copied, we can see the dropdown field that my Users will use to select their location (and thanks to the code we will write now, their Secure Zone).
 
 ```liquid
+{% raw %}
 <div class="row mt-4 select">	
     <div class="col">
     		<label for="form_field_12_1">Location</label>
@@ -101,6 +102,7 @@ In the code from the default Layout that we've copied, we can see the dropdown f
     		</select>
 	</div>
 </div>
+{% endraw %}
 ```
 
 We can also see the hidden field that we must change the value of in order to change the active Secure Zone: `<input id="s_sz_id" value="743,744" type="hidden">` Note- this includes the IDs of the Secure Zones, not their names, so Admin should be referenced so that you know which is which.

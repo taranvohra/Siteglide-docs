@@ -63,21 +63,21 @@ To display the initial price of a Products on the Product List, or Detail View, 
 To watch an Attribute for change, add the listener: `onchange="s_e_update_price()"`to the `<select>` element in your chosen Attributes Layout:
 
 ```liquid
+{% raw %}
 <label for="{{attribute_name | slugify}}">{{name}}</label>
 <select name="attr1" 
         class="form-control" 
         data-attribute-control="{{this_attribute.id}}" 
         onchange="s_e_update_price()">
-{% raw %}
 {% for option in product_attribute_options -%}
 <option {% if forloop.first %}selected{% endif %} value="{{option.id}}" 
             data-attribute-price-control="{{option.price_raw}}">
 {{option.name}} (+{{this.price.currency_symbol}}{{option.price}})
 </option>
 {% endfor -%}
-{% endraw %}
 </select>
 
+{% endraw %}
 ```
 
 ## Usage Notes
@@ -96,10 +96,12 @@ To mark an element within the `item.liquid` file as being the element which will
 The value of these Attributes should be set using Liquid to the Product's initial price and currency:
 
 ```liquid
+{% raw %}
 <p class="product-price" 
    data-price-control="{{this.price.price_charge}}" 
    data-currency-control="{{this.price.currency_symbol}}">
    {{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
+{% endraw %}
 ```
 
 In this example above- we also add the initial Price to the text content of the element using Liquid on Page Load. Instead, you can run the function on Page Load to display the initial price, should you choose.

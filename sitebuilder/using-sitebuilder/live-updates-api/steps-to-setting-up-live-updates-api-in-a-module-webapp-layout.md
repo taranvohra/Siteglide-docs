@@ -71,9 +71,11 @@ See the `collection` and `creator_id` URL parameters for more details about sett
 Before you can use the API on a layout, you must let the JavaScript know that a particular layout needs to be prepared to connect to the Live Updates API. To do this we need to add a data-attribute containing the public key from earlier to a layout's main element. (See the API reference for an alternative method using the JavaScript new keyword.)
 
 ```liquid
+{% raw %}
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <!-- rest of layout markup goes here -->
 </section>
+{% endraw %}
 ```
 
 The layout will now initialise once the JS has loaded. You can check it has initialised and access the instance by typing `window.sgLiveUpdateConfig` into your JavaScript console.
@@ -103,6 +105,7 @@ Next, a common feature of a layout with live updates is to add a form which the 
 To add a form, we need another data-attribute. You can add as many forms as you need (if for example different controls need to be in different places in the layout).
 
 ```liquid
+{% raw %}
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <form data-sg-live-update-controls="search">
 
@@ -112,6 +115,7 @@ To add a form, we need another data-attribute. You can add as many forms as you 
   </form>
   <!-- rest of layout markup goes here -->
 </section>
+{% endraw %}
 ```
 
 The simplest way to add controls to your form is to use standard HTML form elements. The element's name should correspond to the URL parameter you wish the user to be able to change, while the value of the element obviously will set the parameter's value. Check the full example at the beginning along with the API Reference to see other kinds of supported controls and buttons:
@@ -122,25 +126,21 @@ The simplest way to add controls to your form is to use standard HTML form eleme
 Note ordinary HTML elements don't need any additional data-attributes. The API will watch for changes within the form area.
 
 ```liquid
+{% raw %}
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <form data-sg-live-update-controls="search">
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-    
-{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
         <span>{{category[1].name}}</span>
       </label>
     {% endfor %}
-{% endraw %}
-
-
-
   </form>
 </section>
+{% endraw %}
 ```
 
 ## 5) Defining Components <a href="#id-5-defining-components" id="id-5-defining-components"></a>
@@ -156,14 +156,13 @@ Let's add the important Siteglide tag \`
 \`, which fetches our results, inside a new area marked as a component:
 
 ```liquid
+{% raw %}
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <form data-sg-live-update-controls="search">
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-    
-{% raw %}
-{% for category in context.exports.categories.items %}
+    {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
         <span>{{category[1].name}}</span>
@@ -172,9 +171,9 @@ Let's add the important Siteglide tag \`
   </form>
   <div data-sg-live-update-component="results">
     {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
-{% endraw %}
   </div>
 </section>
+{% endraw %}
 ```
 
 Now the results will update when we the user types in the search box, but their entries so far will not be lost as the form is not inside the component.

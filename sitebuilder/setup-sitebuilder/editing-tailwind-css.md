@@ -41,7 +41,7 @@ This article will delve a little deeper into the files you can modify to take fu
 
 ### :deciduous\_tree: Folder Structure
 
-```
+```bash
 └───marketplace_builder
     └───assets
         |   └───css

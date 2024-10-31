@@ -23,6 +23,7 @@ Although all other Blog Navigation options require you to set the `use_adv_searc
 This code can be included in one of your Blog Navigation Layouts. Keyword Search will be activated if you've set the Liquid parameter above and the JavaScript below sets the keyword parameter in the URL.
 
 ```liquid
+{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Search Posts by Keyword</h2>
@@ -47,4 +48,5 @@ This code can be included in one of your Blog Navigation Layouts. Keyword Search
     location.assign(url_string);
   }
 </script>
+{% endraw %}
 ```

@@ -45,7 +45,9 @@ For example:
 Putting it all together:
 
 ```liquid
+{% raw %}
 https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/{{'images/example.jpg' | asset_url}}
+{% endraw %}
 ```
 
 ## Step 4 - Add HTML to deliver the Appropriate URL to several Screen Resolutions - Optional
@@ -53,12 +55,14 @@ https://res.cloudinary.com/demo/image/fetch/h_200,w_200/f_auto/{{'images/example
 [Source: MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia\_and\_embedding/Responsive\_images)
 
 ```liquid
+{% raw %}
 <img
   srcset="https://res.cloudinary.com/demo/image/fetch/w_480/f_auto/{{'images/example.jpg' | asset_url}} 480w, https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}} 800w"
   sizes="(max-width: 600px) 480px,
          800px"
   src="https://res.cloudinary.com/demo/image/fetch/w_800/f_auto/{{'images/example.jpg' | asset_url}}"
   alt="Example of serving different sized images on different screen widths" />
+{% endraw %}
 ```
 
 Learn more about the

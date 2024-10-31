@@ -34,11 +34,13 @@ Here you can set up Detail Pages by:
 You can use the `type` parameter to output a Detail Layout in most Liquid files:
 
 ```liquid
+{% raw %}
 {% include "module", id: "14/subscription"
    item_ids: subscription_id
    type: "detail", layout: 'my_layout'
 %}
 
+{% endraw %}
 ```
 
 Parameters:
@@ -124,10 +126,12 @@ The `wrapper.liquid` file could be used to add any HTML structure you may requir
 You must include the following Liquid, which will output the `item.liquid` file for the Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
 
+{% endraw %}
 ```
 
 #### Step 5 - Available Fields
@@ -212,8 +216,10 @@ You can use logic to display a different price to Users in this situation.
 Or alternatively, you can use the default filter:
 
 ```liquid
+{% raw %}
 <p>{{subscription_order['Plan Chargeable Price'] | default: this.price.price_charge}}</p>
 
+{% endraw %}
 ```
 
 _Tip: Working with the interval_ As you can see above, there are multiple fields involved in storing the interval of charges, which you can use to display the interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:
