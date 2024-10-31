@@ -73,16 +73,13 @@ The following example shows how the Volume Pricing can be shown inside a \<td> e
 ```liquid
 {% raw %}
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
-  
-{% raw %}
-{% if product.volume_pricing_threshold_reached != blank %}
+  {% if product.volume_pricing_threshold_reached != blank %}
     <span style="color: red; text-decoration: line-through;">
       {{ product.currency_symbol }}{{product.volume_pricing_original_price}}</span>
     {{ product.currency_symbol }}{{product.price}}
   {% else %}
     {{ product.currency_symbol }}{{ product.price }}
   {% endif %}
-{% endraw %}
 </td>
 {% endraw %}
 ```

@@ -108,21 +108,17 @@ item.liquid -- detail view example
     </div>
   </div>
   <hr class="mt-4 mb-4">
-  
-{% raw %}
-{% if this['Description'] %} <h4>Product Description</h4> {{this['Description']}} {% endif %}
+  {% if this['Description'] %} <h4>Product Description</h4> {{this['Description']}} {% endif %}
   <hr class="mt-4 mb-4">
   <div class="row product-detail-buttons">
-    <div class="col-12 col-md-6"> {% include 'ecommerce/cart_add' -%}
-{% endraw %}
-
- </div>
+    <div class="col-12 col-md-6">
+      {% include 'ecommerce/cart_add' -%}
+    </div>
     <div class="col-12 col-md-6">
       <a class="btn btn-primary" href="/cart">View my Cart</a>
     </div>
   </div>
 </div>
-
 {% endraw %}
 ```
 

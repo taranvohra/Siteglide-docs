@@ -88,7 +88,6 @@ Alternatively, you could include the webapp just once as a collection, then use 
 ```liquid
 {% raw %}
 <div class="container">
-
   {%- include 'webapp'
       id: '1'
       per_page: '6'
@@ -96,25 +95,14 @@ Alternatively, you could include the webapp just once as a collection, then use 
       sort_order: 'asc'
       collection: 'true' 
   -%}
-
   <h2>Featured Item</h2>
-  
-  
-{% raw %}
-{% assign this = context.exports.webapp_1.data.result.items[0] %}
+  {% assign this = context.exports.webapp_1.data.result.items[0] %}
   {{this.Title}}
-  
   <h2>Other Items</h2>
-  
   {% for this in context.exports.webapp_1.data.result.items %}
     {{this.Title}}
   {% endfor %}
-{% endraw %}
-
-
-  
 </div>
-
 {% endraw %}
 ```
 

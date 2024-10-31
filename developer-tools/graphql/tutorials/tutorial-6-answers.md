@@ -226,12 +226,9 @@ You can then use this to manipulate the HTML pagination controls:
 ```liquid
 {% raw %}
 <ul>
-  
-{% raw %}
-{% for page in (1..my_result.records.total_pages) %}
+  {% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}
-{% endraw %}
 </ul>
 {% endraw %}
 ```

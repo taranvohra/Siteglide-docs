@@ -161,20 +161,14 @@ The following examples will take you through the different options:
 {% raw %}
 <h2>Archive</h2>
 <ul>
-  
-{% raw %}
-{% for month in events_archive_months %}
+  {% for month in events_archive_months %}
     <li>
       <a href="{{context.headers.PATH_INFO}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month&range_field=events">
         {{month.start | date: "%b-%y" }}
       </a>
     </li>
   {% endfor %}
-{% endraw %}
-
-
 </ul>
-
 {% endraw %}
 ```
 

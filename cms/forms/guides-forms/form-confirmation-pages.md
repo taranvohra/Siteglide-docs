@@ -97,30 +97,20 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
 {% raw %}
 <p>In the meantime, please double check the information you provided us below:</p>
 <div class="responsive-table-container">
-    <table>
-        <tbody>
-            
-{% raw %}
-{% for field in this %}
-                {% comment %}Use the following unless condition to List fields you'd like to leave out of the message.{% endcomment %}
-                {% unless field[0] == "properties" or field[0] == "user_id" or field[1] == blank %}
-                    <tr>
-                        <th style="border: solid 1px black">{{field[0]}}</th>
-                        <td style="border: solid 1px black">{{field[1]}}</td>
-                     </tr>
-                {% endunless %} 
-            {% endfor %}
-{% endraw %}
-
-
-
-        </tbody>
-        <tr>
-    </table>
- </div>
-
+  <table>
+    <tbody>
+      {% for field in this %}
+        {% comment %}Use the following unless condition to List fields you'd like to leave out of the message.{% endcomment %}
+        {% unless field[0] == "properties" or field[0] == "user_id" or field[1] == blank %}
+          <tr>
+            <th style="border: solid 1px black">{{field[0]}}</th>
+            <td style="border: solid 1px black">{{field[1]}}</td>
+          </tr>
+        {% endunless %} 
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
-
 {% endraw %}
 ```
 

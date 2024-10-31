@@ -256,14 +256,9 @@ We use `{%` rather than `{%-` in this example, because we want to preserve new l
   per_page: per_page
 -%}
 Name,ID,Description
-{% raw %}
 {% for item in fetch_webapp_1_by_page.records.results %}{{item.properties.name}},{{item.id}},
 {{item.properties.webapp_field_1_1}}
 {% endfor %}
-{% endraw %}
-
-
-
 {% endraw %}
 ```
 

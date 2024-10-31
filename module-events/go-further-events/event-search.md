@@ -63,13 +63,10 @@ This code can be included in one of your Events Navigation Layouts. Keyword Sear
     </form>
   </div>
 </div>
-
-{% raw %}
 {% comment %}
 This example function will search for events in the future with this keyword. 
 You'll need to use the "use_search" and "use_adv_search" parameters in your Liquid tag.
 {% endcomment %}
-{% endraw %}
 <script>
   function events_search() {
     event.preventDefault();

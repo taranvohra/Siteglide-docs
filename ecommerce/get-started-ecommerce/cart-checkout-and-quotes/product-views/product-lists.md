@@ -204,44 +204,34 @@ _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which s
 ```liquid
 {% raw %}
 <div class="card" data-product-group>
-    <div class="card-img">
-        <a href="/{{this['module_slug']}}/{{this['slug']}}" 
-           title="">
-           <img src="{{this['Image'] | asset_url}}" alt="{{this['name']}}"></a>
-    </div>
-    <div class="card-body">
-        <h2 class="card-title">
-            <a href="/{{this['module_slug']}}/{{this['slug']}}" 
-            title="">{{this['name']}}</a></h2>
-        <p>{{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
-    </div>
-    
-{% raw %}
-{% include 'ecommerce/cart_add' -%}
-    <label for="quantity">Quantity</label>
-    <input type="number" min="1" value="1" data-quantity-control id="quantity" />
-    {% comment %}-----The following liquid code block loops over all attributes on this Product
-                 ----{% endcomment %}
-    {% for attribute in this.product_attributes %}
-      {% if attribute.properties.enabled == true %}
-        {% include 'ecommerce/product_attributes'
-                    name: attribute.properties.name
-                    layout: 'demo_site_attributes' 
-        -%} 
-      {% endif %}
-    {% endfor %}
-    <div class="card-footer">
-        <p class="tag">
-            {% for category in this.category_array %}
-                <a class="btn btn-primary" 
-                href="{{context.exports.categories.items[category].full_slug}}" 
-                title=""><i class="fas fa-tag">
-                    </i>{{context.exports.categories.items[category].name}}
-                </a>
-            {% endfor %}
-{% endraw %}
-        </p>
-    </div>
+  <div class="card-img">
+    <a href="/{{this['module_slug']}}/{{this['slug']}}" title="">
+    <img src="{{this['Image'] | asset_url}}" alt="{{this['name']}}"></a>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href="/{{this['module_slug']}}/{{this['slug']}}" title="">{{this['name']}}</a>
+    </h2>
+    <p>{{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
+  </div>
+  {% include 'ecommerce/cart_add' -%}
+  <label for="quantity">Quantity</label>
+  <input type="number" min="1" value="1" data-quantity-control id="quantity" />
+  {% comment %}-----The following liquid code block loops over all attributes on this Product----{% endcomment %}
+  {% for attribute in this.product_attributes %}
+    {% if attribute.properties.enabled == true %}
+      {% include 'ecommerce/product_attributes' name: attribute.properties.name layout: 'demo_site_attributes' -%} 
+    {% endif %}
+  {% endfor %}
+  <div class="card-footer">
+    <p class="tag">
+      {% for category in this.category_array %}
+        <a class="btn btn-primary" href="{{context.exports.categories.items[category].full_slug}}" title="">
+          <i class="fas fa-tag"></i>{{context.exports.categories.items[category].name}}
+        </a>
+      {% endfor %}
+    </p>
+  </div>
 </div>  
 {% endraw %}
 ```

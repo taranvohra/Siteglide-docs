@@ -43,14 +43,11 @@ Include the following liquid to dynamically get a list of available Event Hosts 
 
 ```liquid
 {% raw %}
-{% raw %}
 {%- include 'modules/siteglide_authors/get/get_authors'
     author_layout: 'design_system/1/author'
     author_layout_type: 'list'
     author_field: 'module_field_12_4' 
 -%}
-
-{% endraw %}
 {% endraw %}
 ```
 
