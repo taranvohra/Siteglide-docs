@@ -37,7 +37,7 @@ We'll give you an example of how this JavaScript may work here. You can adapt th
 
 The following example allows the User to enter an amount of their choice into an input in the Form. Our function changes the format, then sets the value of the hidden field.
 
-####Liquid
+#### Liquid
 
 ```liquid
 {% raw %}
@@ -56,7 +56,7 @@ The following example allows the User to enter an amount of their choice into an
 </div>
 {% endraw }
 ```
-####JavaScript
+#### JavaScript
 
 ```javascript
 function changeAmountToPay() {

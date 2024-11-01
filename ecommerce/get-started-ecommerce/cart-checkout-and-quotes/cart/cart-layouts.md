@@ -97,7 +97,7 @@ If the cart has several lines containing the same product, but with different at
 
 In this example, the function is called when a button is clicked and Liquid is used to pass the cart ID into the function:
 
-####item.liquid 
+#### item.liquid 
 ```liquid
 <button onclick="s_e_cart_remove(true,{{this.cart_data.cart_id}})">
   Remove Item from Cart
@@ -106,14 +106,14 @@ In this example, the function is called when a button is clicked and Liquid is u
 
 You can optionally pass in a callback function to the third argument to be called after the row has been removed from the cart. In order for this to work, you need to set `reload` (the first argument) to `false`.
 
-####item.liquid
+#### item.liquid
 ```liquid
 <button onclick="s_e_cart_remove(false,{{this.cart_data.cart_id}},removeCallback)">
   Remove Item from Cart
 </button>
 ```
 
-####JavaScript
+#### JavaScript
 ```javascript
 function removeCallback() {
   //Do something
@@ -138,7 +138,7 @@ See the full Article on [updating Product quantities here](https://developers.si
 {% endraw %}
 ```
 
-####wrapper.liquid
+#### wrapper.liquid
 ```liquid
 {% raw %}
 <!-- Step 2 -->
