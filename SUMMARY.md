@@ -134,6 +134,7 @@
     * [🏗️ Tailwind CSS Themes - Choosing a Build Method](sitebuilder/setup-sitebuilder/about-sitebuilder/tailwind-css-themes-choosing-a-build-method.md)
     * [🏗️ Tailwind CSS - Preview Mode](sitebuilder/setup-sitebuilder/styling/tailwind-css-preview-mode.md)
     * [🏗️ Tailwind's JIT Compiler Via CDN (deprecated)](sitebuilder/setup-sitebuilder/about-sitebuilder/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
+    * [🏗️ Theme Presets - Coming Soon](sitebuilder/setup-sitebuilder/styling/theme-presets-coming-soon.md)
   * [Layouts](sitebuilder/setup-sitebuilder/layouts/README.md)
     * [🏗️ Insert Static Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/static-layouts.md)
     * [🏗️ Installing Dynamic Layouts](sitebuilder/setup-sitebuilder/installing-layouts.md)
