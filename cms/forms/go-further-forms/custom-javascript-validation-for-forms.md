@@ -45,7 +45,7 @@ A class of `.input-error` gets added to fields if they fail to validate, which y
 }
 ```
 
-![](https://downloads.intercomcdn.com/i/o/253713156/c017c7f36c95b360e72aa1e8/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/253713156/c017c7f36c95b360e72aa1e8/image.png) -->
 
 ## Passing your Custom Function in as an Argument
 
