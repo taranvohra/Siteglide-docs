@@ -2,7 +2,7 @@
 
 The Events Module List View can be filtered by Category, Host, or by finding Events which are happening between given dates.
 
-![](https://downloads.intercomcdn.com/i/o/203092694/4319734f3d1f785dfcf1cf0e/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203092694/4319734f3d1f785dfcf1cf0e/image.png) -->
 
 ## Introduction
 
@@ -17,7 +17,7 @@ You may be familiar with many of these if you've used the [Blog Module Navigatio
 
 ## Using the Navigation Options to Filter the Map and Calendar Views
 
-![](https://downloads.intercomcdn.com/i/o/203094035/263a4b74debb30ba8b902ed5/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203094035/263a4b74debb30ba8b902ed5/image.png) -->
 
 You can use the Navigation Options on the Map and Calendar Layouts- these are List Layouts too!
 

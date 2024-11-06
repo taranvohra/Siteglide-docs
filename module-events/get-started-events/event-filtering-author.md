@@ -2,7 +2,7 @@
 
 This Option Lets you filter Events by Host
 
-![](https://downloads.intercomcdn.com/i/o/203113631/71658f1f3e7c25f78cc26d27/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203113631/71658f1f3e7c25f78cc26d27/image.png) -->
 
 ## Prerequisites
 
@@ -92,7 +92,7 @@ To filter the Blog List View, you need a link to the Blog List View slug, follow
 
 ## User Feedback - Displaying the currently applied filter
 
-![](https://downloads.intercomcdn.com/i/o/203114241/3ac8c19e758992cd83ca0b89/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203114241/3ac8c19e758992cd83ca0b89/image.png) -->
 
 To make it easier to give feedback to the User, you can optionally include the Host's name in the URL:
 

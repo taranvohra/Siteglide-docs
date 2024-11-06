@@ -6,7 +6,7 @@ This article shows a different use-case for the skills you've already learned- u
 
 So far, we've written GraphQL queries which run on Page Load. This is powerful, but wouldn't it be even more useful if you could fetch data after Page load when a User interacts with a Site- e.g. changing page on a list without refreshing the Page? Using XHR (sometimes called Ajax) requests, you can run GraphQL at any time.
 
-![](https://downloads.intercomcdn.com/i/o/236017911/05ef09fa35ae1e4949279531/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/236017911/05ef09fa35ae1e4949279531/image.png) -->
 
 This approach can take a little bit of time to set up, but can allow you to create much faster interactive experiences for your Users and opens up a huge range of possible solutions you can build.
 
@@ -15,15 +15,13 @@ We cannot document every way in which you can build this kind of Page, but we wi
 ## Glossary
 
 * An API - (Application Program Interface) is a form of communication between two services on the internet. Communication takes place between 2 or more endpoints.
-* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](https://help.siteglide.com/collection/21-public-api-integrations), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
+* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](/developer-tools/public-api), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
 * A method defines the role of the API + Endpoint e.g. a GET method is for "getting" or "fetching" data.
 * JSON (JavaScript Object Notation) is a common file format for exchanging data which is efficient and human-readable. We'll use it in some of our examples. (It's also the default format in which GraphQL results are outputted on the Page.)
 
 ## Steps for Building your First Liquid Endpoint Page powered by GraphQL
 
 ### Step 1) Create a Page to serve as an Endpoint
-
-![](https://downloads.intercomcdn.com/i/o/235725952/1d4d8bea5fee6e5efd522102/image.png)
 
 The first step is to create a Page on the Siteglide Admin which will become your API endpoint.
 
@@ -34,8 +32,6 @@ The slug you choose will be the URL via which you'll eventually access the data.
 In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](./../../cli/README.md).
 
 Using the Siteglide-CLI, pull down your Site's files to your machine and open them up in a Code Editor of your choice. Set up Siteglide-CLI sync so that changes you make will be pushed to the Site.
-
-![](https://downloads.intercomcdn.com/i/o/235728435/228f0d8dafb3db030ac99c47/pullandsync.png)
 
 Open up the Page you've created in a Code Editor of your choice.
 
@@ -107,7 +103,7 @@ format: json
 
 ### Step 3) Add a GraphQL query with variables
 
-Add a query of your choice using the Liquid `graphql` tag from [tutorial 5](https://developers.siteglide.com/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site) and variables from [tutorial 6.](https://developers.siteglide.com/tutorial-6-variables)
+Add a query of your choice using the Liquid `graphql` tag from [tutorial 5](/developer-tools/graphql/tutorials/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md) and variables from [tutorial 6.](/developer-tools/graphql/tutorials/tutorial-6-variables.md)
 
 In this example, I'll use the following query to fetch data from webapp\_1 and change page with the `page` variable:
 
@@ -161,7 +157,7 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 
 ### Step 5) Use Liquid to feed variables into the Query (and make sure they are the correct type)
 
-Accessing these values via the above method tends to set them as String values in the variable. For this example we'll need to change the type to integer- as that's what the query expects. You can refresh your knowledge on changing the type of variable in Liquid in [tutorial 6.](https://developers.siteglide.com/tutorial-6-variables)
+Accessing these values via the above method tends to set them as String values in the variable. For this example we'll need to change the type to integer- as that's what the query expects. You can refresh your knowledge on changing the type of variable in Liquid in [tutorial 6.](/developer-tools/graphql/tutorials/tutorial-6-variables.md)
 
 ```liquid
 {% raw %}
@@ -289,19 +285,13 @@ A successful JSON endpoint will return valid JSON in the body, as in the example
 }
 ```
 
-Changing the URL parameters should allow you to return different responses:
-
-![](https://downloads.intercomcdn.com/i/o/235744297/f001a8c7d5fbdb302d79adb8/image.png)
+Changing the URL parameters should allow you to return different responses
 
 Common issues:
 
 * Your URL should include the relevant file extension e.g. `.json` for json format, `.csv` for CSV format. If you are using `HTML` format, no extension is needed. Below is an example of a 404 response from using the incorrect extension:
 
-![](https://downloads.intercomcdn.com/i/o/235732298/b86fe18d0bb36978ca084b14/image.png)
-
 * Your URL should contain any query parameters you need for your query. E.g. in my example, `page` and `per_page` are mandatory. Below is an invalid response body resulting from missing URL parameters:
-
-![](https://downloads.intercomcdn.com/i/o/235731724/dbc7b7cd91a0234b6efeb161/image.png)
 
 Congratulations! You've built a working GET endpoint using GraphQL and Liquid!
 
@@ -318,8 +308,6 @@ This step shows you some different ways to make sure your data is secure, but yo
 Adding a Secure Zone to your endpoint Page is a simple way to protect it from Users and bots who should not be accessing it.
 
 A failed access will still generate a successful 2xx response code, because it will succeed in returning HTML body (the 404 message that displays to Users). This is only a problem if you're not using HTML format for your endpoint as it will cause any JavaScript which relies on parsing JSON to fail like so:
-
-![](https://downloads.intercomcdn.com/i/o/236001797/0b94fcfa67f25f060e9bcc39/image.png)
 
 In step 9, you'll need to find a way to adapt your JavaScript logic to handle this kind of error which does not rely on the response code, but instead checks the response for the HTML tag `<h1>401 - Unauthorised</h1>`. See step 9) a) i) and 9) a) ii) for examples of this logic.
 
@@ -515,8 +503,8 @@ Your Liquid endpoint Page will be acting as an extra Layer between your request 
 
 ## Related Articles
 
-* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [https://www.sitegurus.io/documentation/sitebuilder/live\_updates/introduction](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/introduction)
-* The [Siteglide Support Policy](https://help.siteglide.com/article/62-siteglide-support-policy) explains how you can get support with planning projects and writing custom code.
+* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](/sitebuilder/using-sitebuilder/live-updates-api)
+* The [Siteglide Support Policy](/get-started/support-and-faqs/siteglide-support-policy) explains how you can get support with planning projects and writing custom code.
 * MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: [https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) You can also use the modern [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API) as an alternative.
 * Those developers who prefer to use jQuery when writing JavaScript can read more about Ajax Requests here: [https://api.jquery.com/jquery.ajax/](https://api.jquery.com/jquery.ajax/)
 * platformOS's documentation on Pages includes lots of information about setting up Pages using the yaml configuration: [https://documentation.platformos.com/developer-guide/pages/pages](https://documentation.platformos.com/developer-guide/pages/pages)

@@ -43,7 +43,7 @@ mutation(
 
 After running the mutation, you will see an ID returned in the output window of the GraphiQL editor. The ID returning means that the mutation was successful and your new Secure Zone can now be used.
 
-![](https://downloads.intercomcdn.com/i/o/253866153/ddefa467bdf9f6fd434eba6e/Screen+Shot+2020-10-08+at+16.12.25.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/253866153/ddefa467bdf9f6fd434eba6e/Screen+Shot+2020-10-08+at+16.12.25.png) -->
 
 {% hint style="warning" %}
 **Note**

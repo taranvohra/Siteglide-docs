@@ -56,7 +56,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/213365154/e71b1872daa311c2f4b2376b/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/213365154/e71b1872daa311c2f4b2376b/image.png) -->
 
 ## Step 2) Next, you can add a sort method.
 
@@ -88,7 +88,7 @@ query sorted_categories {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/213366703/cd9dc582ba4bd8cbf2c0de3e/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/213366703/cd9dc582ba4bd8cbf2c0de3e/image.png) -->
 
 &#x20;
 
@@ -122,7 +122,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/213367555/4bfc9b8c5cdb438b0ae0a568/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/213367555/4bfc9b8c5cdb438b0ae0a568/image.png) -->
 
 &#x20;
 
@@ -154,7 +154,7 @@ query sorted_categories {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/213369158/2aa128cce3b9bb8de24b141d/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/213369158/2aa128cce3b9bb8de24b141d/image.png) -->
 
 &#x20;
 

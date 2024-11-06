@@ -2,7 +2,7 @@
 
 You can dynamically output a navigation menu of Categories which have Events assigned to them. The User can then filter the Events.
 
-![](https://downloads.intercomcdn.com/i/o/203115638/62461125fd4b22a5eaec9122/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203115638/62461125fd4b22a5eaec9122/image.png) -->
 
 ## Prerequisites
 
@@ -76,7 +76,7 @@ The link should be the slug of your Events List view followed by `?category={{th
 
 ## User Feedback - Displaying the currently applied filter
 
-![](https://downloads.intercomcdn.com/i/o/203115813/0fcae6ac1683fbd1c91597f4/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203115813/0fcae6ac1683fbd1c91597f4/image.png) -->
 
 You may wish to give the User some feedback about the current filter/ search terms that are applied on the Events List. For Categories, you can use `{{context.exports}}` object to get the name of the category you are filtering by:
 

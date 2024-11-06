@@ -47,7 +47,7 @@ query get_webapp_1 {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206703771/4fc28e56aa305cc7246b14b5/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/206703771/4fc28e56aa305cc7246b14b5/image.png) --> 
 
 Step 2: Add the filter argument
 -------------------------------
@@ -85,7 +85,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206704320/bd8b3ad94a46a5ef7d75a6e1/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/206704320/bd8b3ad94a46a5ef7d75a6e1/image.png) --> 
 
 
 ## Step 3: Filter by the table
@@ -123,7 +123,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206704959/c902a03c3f1130a8e7d42bb5/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/206704959/c902a03c3f1130a8e7d42bb5/image.png) --> 
 
 
 ## Step 4: Define the filtering rule
@@ -164,14 +164,14 @@ Documentation panel:
 
 *   Selecting RecordsFilterInput gives you options for different filtering rules you can apply:
 
-![](https://downloads.intercomcdn.com/i/o/185824786/90063b3476c0dc3f64e16b89/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/185824786/90063b3476c0dc3f64e16b89/image.png) -->
 
 *   After the colons `:` you can see the type of value expected for each of these keys. They are mostly strings `String` or arrays of strings `[String]`. This topic will be covered in more detail in later tutorials. Keep an eye out for the different data types expected by GraphQL in the meantime.
 
 Explorer:
 When implementing this using the Explorer, the wizard will help you get the type of value correct. In this case, it provides you with quotes so that you can enter the value as a String:
 
-![](https://downloads.intercomcdn.com/i/o/206706642/0d3b707603b34f1728386700/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206706642/0d3b707603b34f1728386700/image.png) -->
 
 &#x20;
 
@@ -205,7 +205,7 @@ query get_blog_module {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206707131/e9fa3f76d39f4cd030187682/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206707131/e9fa3f76d39f4cd030187682/image.png) -->
 
 This should return Blog Posts from the Blog Module. 
 
@@ -237,7 +237,7 @@ query get_newsletter_signups {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206707418/074e81dd0ed77fc4e300216f/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/206707418/074e81dd0ed77fc4e300216f/image.png) --> 
 
 
 # Challenge!

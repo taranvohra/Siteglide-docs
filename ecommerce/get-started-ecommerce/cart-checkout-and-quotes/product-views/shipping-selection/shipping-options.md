@@ -28,7 +28,7 @@ You can add, edit and remove Shipping Options in the Admin. Go to ECOMMERCE/Ship
 
 The Options are designed to be included in an HTML Select box in the Cart.
 
-![](https://downloads.intercomcdn.com/i/o/171837620/31235fa143bf9f5c05a01e15/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/171837620/31235fa143bf9f5c05a01e15/image.png) -->
 
 ### Syntax
 

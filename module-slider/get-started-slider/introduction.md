@@ -73,7 +73,7 @@ Once you've installed the Slider Module on your Site, you'll be able to find Sli
 
 You can find all our Slider Layouts on [Layout Libary](https://studio.siteglide.com/layouts), to copy these onto your Site first create a folder in Code Editor, learn more [here](https://help.siteglide.com/article/214-code-editor-getting-started). Make sure your new Slider Layout has a List View folder within it, should look like this:
 
-![](https://downloads.intercomcdn.com/i/o/229068073/48df7e0feff380586d9f59ac/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/229068073/48df7e0feff380586d9f59ac/image.png) -->
 
 Now copy the item/wrapper code into the List folder. Make sure to specify the Layout name when including the Module.
 

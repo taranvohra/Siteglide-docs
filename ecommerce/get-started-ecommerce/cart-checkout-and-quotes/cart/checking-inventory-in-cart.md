@@ -9,7 +9,7 @@ updatedAt: 2023-03-03T08:09:58.000Z
 
 Use the s\_e\_cart\_inventory\_check function to check the stock levels of items in the Cart and take appropriate action before Checkout.
 
-![](https://downloads.intercomcdn.com/i/o/265736581/3daa8d263ca4120032453e6f/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/265736581/3daa8d263ca4120032453e6f/image.png) -->
 
 ## Introduction
 

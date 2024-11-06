@@ -2,7 +2,7 @@
 
 Users can "add" or "remove" their favourite WebApp and Module items. You can display them to the User in Lists.
 
-![](https://downloads.intercomcdn.com/i/o/255725150/fbf51e897d5cab0a9284ec7b/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/255725150/fbf51e897d5cab0a9284ec7b/image.png) -->
 
 ## Prerequisites
 

@@ -21,7 +21,7 @@ The most common place where Detail Views are displayed is on the automatically g
 
 Heading to ECOMMERCE > Settings will allow you to select the Subscriptions tab.
 
-![](https://downloads.intercomcdn.com/i/o/223781939/f343dc96b5b8ec49d55ea67c/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/223781939/f343dc96b5b8ec49d55ea67c/image.png) -->
 
 Here you can set up Detail Pages by:
 
@@ -60,7 +60,7 @@ To output the Layout here, you need to add a Detail Layout name to the Liquid as
 
 Subscription Layouts can be found at the path: `layouts/modules/module_14/subscription` Within this folder, you can create a folder for each Layout. Each Layout folder can contain a further "detail" folder containing the `wrapper` and `item` files it needs.
 
-![](https://downloads.intercomcdn.com/i/o/223783980/3767a4b64dc4f4a28e327a37/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/223783980/3767a4b64dc4f4a28e327a37/image.png) -->
 
 ## Developing the Detail Layout
 

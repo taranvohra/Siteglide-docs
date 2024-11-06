@@ -26,13 +26,13 @@ For these tutorials, we strongly suggest you use a Starter Site- because then yo
 
 Change directory into your project folder (create a folder first if you don't have one).
 
-![Using CLI to create a Siteglide-CLI environment](https://downloads.intercomcdn.com/i/o/180527221/658e6017e583bc2048313a4a/image.png)
+<!-- ![Using CLI to create a Siteglide-CLI environment](https://downloads.intercomcdn.com/i/o/180527221/658e6017e583bc2048313a4a/image.png) -->
 
 Then add your Site as an environment - the quickest way to do this is to copy the CLI command from your site in the Portal- or you can replace the --url and --email flags with your own. Add your Siteglide Admin password when prompted:
 
 ![Finding the CLI add command in Portal](../../../.gitbook/assets/archbee\_uploads/5EeZeVWyDatmSDbw3m\_QE\_image.png)
 
-![Entering the add environment command in CLI](https://downloads.intercomcdn.com/i/o/180528133/86e344294e3ff1476b8b463d/image.png)
+<!-- ![Entering the add environment command in CLI](https://downloads.intercomcdn.com/i/o/180528133/86e344294e3ff1476b8b463d/image.png) -->
 
 ### Run the Sandbox
 
@@ -42,7 +42,7 @@ The command for running the sandbox is (replace the `staging`placeholder with th
 
 Success should look like this:
 
-![](https://downloads.intercomcdn.com/i/o/180528856/ad832e1c427625dbd6224359/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/180528856/ad832e1c427625dbd6224359/image.png) -->
 
 Click, Ctrl+click (if your machine allows), or copy the "GraphQL Browser" link into a browser. This will open the sandbox.
 
@@ -52,39 +52,39 @@ _Short Method:_ If you want to save time and skip the step of opening the link, 
 
 Your First Look at the GraphiQL Sandbox
 
-![](https://downloads.intercomcdn.com/i/o/180529609/798287616944808153c596e5/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/180529609/798287616944808153c596e5/image.png) -->
 
 To start with a few important features are hidden. Click and drag up the `QUERY VARIABLES` panel from the bottom left and click the `< Docs` button in the top right. We'll come back to these later.
 
 Click the "Toggle Explorer" button to open the Explorer wizard. This is a new tool which will make writing (non-deprecated) queries even easier.
 
-![](https://downloads.intercomcdn.com/i/o/206666077/558d3a0137150f0d820d1adf/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206666077/558d3a0137150f0d820d1adf/image.png) -->
 
 You've now set up your GraphiQL sandbox!
 
-![](https://downloads.intercomcdn.com/i/o/206666353/08fadb604e7db05b329b2cd1/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206666353/08fadb604e7db05b329b2cd1/image.png) -->
 
 ## What does each panel in the GraphiQL Sandbox do?
 
 _The Central Panel_
 
-![](https://downloads.intercomcdn.com/i/o/206677522/30673d53393dcc6953fca87a/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206677522/30673d53393dcc6953fca87a/image.png) -->
 
 This is where you write your Query
 
 _The Results Panel_ This is where the data will be displayed in JSON format after your query fetches it.
 
-![](https://downloads.intercomcdn.com/i/o/206679435/ae277c726ef088060ea11dd6/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206679435/ae277c726ef088060ea11dd6/image.png) -->
 
 _Query Variables Panel_ This is where you'll be able to simulate dynamic variable inputs when testing variables in your Query.
 
-![](https://downloads.intercomcdn.com/i/o/206678240/23bcd258b16236c49f884999/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206678240/23bcd258b16236c49f884999/image.png) -->
 
 We'll cover this in a later Article.
 
 _Explorer Panel \*NEW\*_ This displays the GraphQL schema in the form of a "wizard". Tick the options you want to include and they will automatically be added to your query. This is the most user-friendly way to write queries for beginners (and possibly for the experienced GraphQL developers as well!). Note the explorer user-interface can't handle arrays of query language very well e.g. when filtering by multiple properties, even though it's valid GraphQL; when you hit a limitation like this, it's time to leave the explorer behind and write the code manually.
 
-![](https://downloads.intercomcdn.com/i/o/206678384/19a4ae63a807d44821e24d15/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206678384/19a4ae63a807d44821e24d15/image.png) -->
 
 The other limitation is that it doesn't currently support older deprecated query and mutation types, if you have a need to use those.
 
@@ -92,7 +92,7 @@ _Documentation Explorer Panel_
 
 This displays the available GraphQL schema as documentation. It works with nested levels, so each time you choose an option you can "click through" to the next level of options you can include.
 
-![](https://downloads.intercomcdn.com/i/o/206678616/6d8d4808512c16632f1e3d17/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206678616/6d8d4808512c16632f1e3d17/image.png) -->
 
 This is less user-friendly than the new "Explorer" panel above, but can still be useful:
 
@@ -135,17 +135,17 @@ Notes:
 
 Explorer: The "Explorer" wizard will add this for you if you type out a name here:
 
-![](https://downloads.intercomcdn.com/i/o/206685851/f4715210070ca6c376035e98/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206685851/f4715210070ca6c376035e98/image.png) -->
 
 ### Step 2) Choose a Query type
 
 The documentation panel on the right shows you the full range of query types available. Click `RootQuery` to see the options on this level.
 
-![](https://downloads.intercomcdn.com/i/o/180532971/1f893ad2f59ceeba82e0af09/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/180532971/1f893ad2f59ceeba82e0af09/image.png) -->
 
 You can also see a list of non-deprecated query types in the Explorer panel:
 
-![](https://downloads.intercomcdn.com/i/o/206687020/3f7ebee19c41be1a1c9cece6/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206687020/3f7ebee19c41be1a1c9cece6/image.png) -->
 
 We'll be choosing `records`for our first query. This will get us a list of `records` in the database.
 
@@ -166,7 +166,7 @@ Notes:
 
 Explorer: Quickly implement this level in the Explorer Panel by selecting the `records` query type. This will also open the next level of options in the explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206693175/2940a78487ccc5a202762525/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206693175/2940a78487ccc5a202762525/image.png) -->
 
 ### Step 3) Ask for results
 
@@ -195,13 +195,13 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206688864/bef388f233371ecd64de1f20/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206688864/bef388f233371ecd64de1f20/image.png) -->
 
 ### Step 4) Add Arguments
 
 You can press the "play" button to test your query:
 
-![](https://downloads.intercomcdn.com/i/o/180538499/48ea0d31c60849777af1abb8/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/180538499/48ea0d31c60849777af1abb8/image.png) -->
 
 Ours is not quite ready, and the error message in the middle-right Results Panel will tell us why:
 
@@ -238,7 +238,7 @@ Notes:
 
 Explorer: You can set a value for `per_page` in Explorer.
 
-![](https://downloads.intercomcdn.com/i/o/206689789/d61d40ec36686623288e3f22/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206689789/d61d40ec36686623288e3f22/image.png) -->
 
 Notice that the asterisk by the option in Explorer lets you know the property is mandatory.
 
@@ -251,7 +251,7 @@ In Explorer, there is a subtle colour scheme to help you differentiate between s
 
 If successful, you should see an object named "data" containing a tree of your results. Well done, you've written your first query! You've returned all `records`, or, in other words: WebApp and Module items.
 
-![](https://downloads.intercomcdn.com/i/o/206691423/9e94964deda4cac212327fb6/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206691423/9e94964deda4cac212327fb6/image.png) -->
 
 You'll see there are actually more `total_entries` than the 20 results shown. That's because we're only viewing the first Page of the Results. We'll look at Pagination in the next Article.
 

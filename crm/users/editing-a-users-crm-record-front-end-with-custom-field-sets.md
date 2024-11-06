@@ -26,7 +26,7 @@ This Article will:
 
 The flowchart diagram below demonstrates an abbreviated summary of what happens when a Form is submitted on Siteglide. Where the diagram mentions Custom Field Sets, the newer CRM Custom Fields feature is applicable as well.
 
-![](https://downloads.intercomcdn.com/i/o/261827207/c8420c087d77e73314a8faeb/Updating+CRM+Records+%282%29.png)
+<!-- <!-- ![](https://downloads.intercomcdn.com/i/o/261827207/c8420c087d77e73314a8faeb/Updating+CRM+Records+%282%29.png) --> -->
 
 The most important points to draw from this are:
 

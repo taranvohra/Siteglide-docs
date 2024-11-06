@@ -94,7 +94,7 @@ We'd recommend when parsing JSON using third party tools that you do not use sen
 
 Here is an example of a tree-view. It's the JSON data with extra whitespace and newlines added for readability (colours too).
 
-![](https://downloads.intercomcdn.com/i/o/170900129/70897663e71f69098f379221/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170900129/70897663e71f69098f379221/image.png) -->
 
 From this view you can make the same observations we made when using the \<pre> tag, but it is easier because each level of the tree is indented and all keys are coloured light blue:
 
@@ -104,7 +104,7 @@ From this view you can make the same observations we made when using the \<pre> 
 
 Here is a chart view from the same tool. It shows more clearly how some objects are nested within others. You can use this to help you chain dot-notation to get the values you need.
 
-![](https://downloads.intercomcdn.com/i/o/170899985/1ff54ab397ab0f29e7404df0/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170899985/1ff54ab397ab0f29e7404df0/image.png) -->
 
 ## A Special Case - Arrays
 

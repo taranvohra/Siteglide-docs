@@ -25,7 +25,7 @@ If you're not sure, check the schema for the field you're looking for. If you ca
 
 For example, `release_date` is not a custom field in the Siteglide Admin, but it's not in the list of available fields to filter by in the schema- so we'll need to use properties.
 
-![](https://downloads.intercomcdn.com/i/o/186027288/55e5c1b79332537d80ed35ba/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/186027288/55e5c1b79332537d80ed35ba/image.png) -->
 
 A brief note on `name` . You'll see the term `name` available in the schema- but this is a deprecated way of referring to the `table`e.g. `webapp_1`. To fetch the name of the item in the Siteglide Admin, you'll need `properties.name`.
 
@@ -105,7 +105,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206726728/089ee0ed0941f44bbce81df1/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206726728/089ee0ed0941f44bbce81df1/image.png) -->
 
 ### Filtering by Integers and Epoch Timestamp Dates
 
@@ -142,7 +142,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206727192/ef1365e490c66dc4547aed03/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206727192/ef1365e490c66dc4547aed03/image.png) -->
 
 #### Filtering for integer properties which fall inside a range
 
@@ -182,11 +182,11 @@ Documentation Panel:
 
 * Available operators can be seen under `RangeFilter`. They are short for `Greater Than` , `Greater Than or Equal` , `Less Than` and `Less Than or Equal`.
 
-![](https://downloads.intercomcdn.com/i/o/186051482/cfe3b246861b0fd38042dd11/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/186051482/cfe3b246861b0fd38042dd11/image.png) -->
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206727637/d7f7d52145a417d5ecca1bb8/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206727637/d7f7d52145a417d5ecca1bb8/image.png) -->
 
 ### Filtering by Arrays
 
@@ -223,7 +223,7 @@ Explorer: Only _partial support_ is currently available in Explorer for this. It
 
 So firstly, implement with the wizard:
 
-![](https://downloads.intercomcdn.com/i/o/206729672/26e3eab0e3daf66d9b63c44f/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206729672/26e3eab0e3daf66d9b63c44f/image.png) -->
 
 Secondly, change the value manually in the code from:
 
@@ -301,7 +301,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206731347/d274318e212e7e35fa949042/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206731347/d274318e212e7e35fa949042/image.png) -->
 
 ## \*New\* Filtering with OR logic
 

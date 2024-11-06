@@ -46,7 +46,7 @@ Notes:
 
 * The most difficult part here might have been working out the type. Here the query expects Page to be an integer. The documentation panel confirms this:
 
-![](https://downloads.intercomcdn.com/i/o/197815161/3120ec7c1c630f3645da989c/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/197815161/3120ec7c1c630f3645da989c/image.png) -->
 
 * From the documentation panel, you can also see "= 1" after the type. This is a default, which means if no variable is passed through, the variable will be given a default value of 1. Not all variables will have defaults.
 * The type here does not have an exclamation mark ! so the query won't deliberately fail if no value is passed in.
@@ -54,7 +54,7 @@ Notes:
 
 ## Step 2) Sync the Query to the Site using Siteglide-CLI
 
-![](https://downloads.intercomcdn.com/i/o/197830041/be89a156810c40342c29058b/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/197830041/be89a156810c40342c29058b/image.png) -->
 
 Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site) to refresh these steps.
 
@@ -202,7 +202,7 @@ You'll want to target fields in this Layout with syntax like:`{{this.properties.
 
 You can view the database IDs for fields in the Admin using the toggle in the top-right of the screenshot, or you can look at the keys in the JSON results.
 
-![](https://downloads.intercomcdn.com/i/o/197826607/d1079262249385ba316bfb6a/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/197826607/d1079262249385ba316bfb6a/image.png) -->
 
 ### Step 8) Use the Results of the Query to only show buttons you need. (Optional)
 

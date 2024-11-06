@@ -46,7 +46,7 @@ If you will also have some non-grouped Products, you may wish to create a "Produ
 
 Here's how I've structured my Categories, "Chocolate" and "Crisps" each represent separate groups of Products, the parent Category "Product-group" will be used to identify them as Product grouping Categories, allowing you to keep them separate from the other Categories your Products may have:
 
-![](https://downloads.intercomcdn.com/i/o/239878128/fcf47d6afc3bd3ef9d0a84f2/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/239878128/fcf47d6afc3bd3ef9d0a84f2/image.png) -->
 
 Now let's look at how we can ensure only the Categories within "Product-group" are used when outputting our related Products. First I assign an object containing all the Categories on my Site (this gives us access to all the Categories fields, rather than just the ID): `<div data-gb-custom-block data-tag="assign"></div>`
 
@@ -89,7 +89,7 @@ This will check all of the parameters, make sure you replace "product-group" wit
 
 Now add all the related Products to this Category. You can do this in the Categories tab when editing your Product. In this example- we'll be selecting the "Crisps" Category to add to our "Ready Salted" flavour Product.
 
-![](https://downloads.intercomcdn.com/i/o/239864153/c9ebbbdf8f83ec171201a5dc/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/239864153/c9ebbbdf8f83ec171201a5dc/image.png) -->
 
 Repeat step 2 for all the Products you'd like to be linked together.
 
@@ -262,4 +262,4 @@ As above, you'll need to include a JavaScript function to make the dropdown func
 
 Alright, that's everything we need to link our Products. Here is a screenshot of the solution:
 
-![](https://downloads.intercomcdn.com/i/o/237300815/a8e99e81b9971fe19e0e6823/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/237300815/a8e99e81b9971fe19e0e6823/image.png) -->

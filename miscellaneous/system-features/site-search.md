@@ -73,7 +73,7 @@ When selecting "Site Search Results" from the toolbox, you have the option of se
 
 To get results from WebApps or Modules, you must turn on Detail Pages in their configuration in Admin.
 
-![](https://downloads.intercomcdn.com/i/o/163878328/498f53d9d4af441aac212718/Screen+Shot+2019-11-18+at+10.14.51.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/163878328/498f53d9d4af441aac212718/Screen+Shot+2019-11-18+at+10.14.51.png) -->
 
 ## WebApps
 

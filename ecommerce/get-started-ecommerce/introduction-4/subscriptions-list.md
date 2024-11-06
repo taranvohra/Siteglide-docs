@@ -32,7 +32,7 @@ This is slightly different from the `user_subscriptions` List view in the Secure
 Subscription Layouts can be found at the path: `layouts/modules/module_14/subscription`
 Within this folder, you can create a folder for each Layout. Each Layout folder can contain a further "list" folder containing the `wrapper` and `item` files it needs.&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/224826419/38930a154d559d6c0445b9c9/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/224826419/38930a154d559d6c0445b9c9/image.png) -->
 
 # Developing the List Layout
 

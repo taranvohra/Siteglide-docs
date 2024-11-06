@@ -2,7 +2,7 @@
 
 This option allows you to provide the User with links to months when Events are happening - or let them Search between any two dates.
 
-![](https://downloads.intercomcdn.com/i/o/203114561/8fa65fd9be84c2ac669c0020/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203114561/8fa65fd9be84c2ac669c0020/image.png) -->
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
 
 ## Past Events and Future Events
 
-![](https://downloads.intercomcdn.com/i/o/203096167/dac797858dbe8ef904390967/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203096167/dac797858dbe8ef904390967/image.png) -->
 
 By default, the List View will show all Events that are enabled, released and not yet expired.
 
@@ -47,7 +47,7 @@ If you just want to filter the List so it either shows Events that have already 
 
 ### Filter by Past Events
 
-![](https://downloads.intercomcdn.com/i/o/203096602/7b027cbd23e44d9032958ec0/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203096602/7b027cbd23e44d9032958ec0/image.png) -->
 
 ```liquid
 {% raw %}
@@ -61,7 +61,7 @@ If you just want to filter the List so it either shows Events that have already 
 
 ### Filter by Future Events
 
-![](https://downloads.intercomcdn.com/i/o/203096442/877bf46b3b86c72c84d360df/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203096442/877bf46b3b86c72c84d360df/image.png) -->
 
 ```liquid
 {% raw %}
@@ -155,7 +155,7 @@ The following examples will take you through the different options:
 
 ### Browse by Month
 
-![](https://downloads.intercomcdn.com/i/o/203097728/66141d6f7f41130389f473fc/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203097728/66141d6f7f41130389f473fc/image.png) -->
 
 ```liquid
 {% raw %}
@@ -180,7 +180,7 @@ In this example, we use the `events_archive_months` object and loop over the arr
 
 ### Browse by Months, organised into Years
 
-![](https://downloads.intercomcdn.com/i/o/203098785/9d029c33b1e04b3305d93909/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203098785/9d029c33b1e04b3305d93909/image.png) -->
 
 This Layout does not just organise the Months available under the relevant Year Headers, it also will skip any Years without an Event.
 
@@ -218,7 +218,7 @@ This example uses the same links as the previous one. However, it also organises
 
 ### Search Events between two dates
 
-![](https://downloads.intercomcdn.com/i/o/203099049/74ee8f39c26894cc9782e4a2/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203099049/74ee8f39c26894cc9782e4a2/image.png) -->
 
 In the Default Layout, this Option also includes the Previous "Browse by Months Organised into Years" Option for convenience- though the code can be simply removed if you prefer. We have removed it in this article's example.
 
@@ -349,7 +349,7 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 
 ## Feedback for the User - Displaying the currently applied filter
 
-![](https://downloads.intercomcdn.com/i/o/203114980/bde87f47b0da6f9f530dca49/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203114980/bde87f47b0da6f9f530dca49/image.png) -->
 
 In the examples, you may notice another URL parameter is used: `range_type`. The `s_events_date_search` Siteglide function for filtering Events by user-inputted dates adds the parameter `range_type="between"`. This would allow the following liquid on the List Layout to identify that this search is between two dates:
 

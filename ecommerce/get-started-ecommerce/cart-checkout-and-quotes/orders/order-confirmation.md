@@ -36,7 +36,7 @@ You can use an existing Layout, or create a new one in this File Structure: `lay
 
 * An `item.liquid` and a `wrapper.liquid` file
 
-![](https://downloads.intercomcdn.com/i/o/207046919/6f3478468c19f5938db25079/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/207046919/6f3478468c19f5938db25079/image.png) -->
 
 ### Developing the Layout
 

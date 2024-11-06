@@ -64,7 +64,7 @@ Inside a user\_details Layout, you can access custom CRM fields by using:
 
 Accessing Custom Field Sets will depend on the Custom Field Set data you have set up on your Site. Each Custom Field Set has a unique ID number assigned to it, and data is organised based on this number.&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/227269090/9c6af9c06a6f7546ca3e6253/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/227269090/9c6af9c06a6f7546ca3e6253/image.png) -->
 
 ### Accessing data from a Custom Field Set by a specific Custom Field Set ID
 
@@ -80,5 +80,5 @@ You may find it more helpful to output your available fields as JSON and use thi
 
 Outputting `{{this}}` will fetch the data as JSON, e.g.
 
-![](https://downloads.intercomcdn.com/i/o/227273759/92c84c54244ab1b07bc88455/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/227273759/92c84c54244ab1b07bc88455/image.png) --> 
 

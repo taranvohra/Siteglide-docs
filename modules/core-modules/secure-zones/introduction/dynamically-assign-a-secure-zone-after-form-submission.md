@@ -55,7 +55,7 @@ In the configuration for the "Public Sign Up Form" in the Siteglide Admin, we ca
 
 By default, the Form will assign Users to both these Secure Zones, but we'll change that later.
 
-![](https://downloads.intercomcdn.com/i/o/260749877/3fd79df2e2edc237e78eb489/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/260749877/3fd79df2e2edc237e78eb489/image.png) -->
 
 ### A Note on Security
 
@@ -71,19 +71,19 @@ It is the responsibility of Partner and Client to make sure that if a User has a
 
 In this example, we'll use a Form Field to provide User Input which will change the active Secure Zone dynamically. This is optional, as you may have other reasons for assigning a particular Secure Zone.
 
-![](https://downloads.intercomcdn.com/i/o/260753908/3a71c01de3d8a11f231bf0f9/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/260753908/3a71c01de3d8a11f231bf0f9/image.png) -->
 
 ## Step 3) Creating a Custom Form Layout
 
 In order to dynamically assign Users to the correct public Secure Zone, we'll need to create a custom Form layout.
 
-![](https://downloads.intercomcdn.com/i/o/260752059/b500b2ef82a11d495ebeb876/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/260752059/b500b2ef82a11d495ebeb876/image.png) -->
 
 A quick tip for setting up the Custom Layout quickly is to start by copying and pasting the content of the default Layout.
 
 ## Step 4) Add the Form to a Page
 
-![](https://downloads.intercomcdn.com/i/o/260769080/abe61451d48841f3548bae61/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/260769080/abe61451d48841f3548bae61/image.png) -->
 
 ## Step 5) Adding JavaScript to the Custom Form Layout
 

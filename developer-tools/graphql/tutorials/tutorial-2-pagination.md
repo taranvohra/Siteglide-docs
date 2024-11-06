@@ -91,7 +91,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206698566/8c116463b7435ba381babb1f/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206698566/8c116463b7435ba381babb1f/image.png) -->
 
 # Changing the Page
 
@@ -117,7 +117,7 @@ query get_all_records {
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206699176/03286bbcbeb9f976c1d615b5/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206699176/03286bbcbeb9f976c1d615b5/image.png) -->
 
 # Next time
 

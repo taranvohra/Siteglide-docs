@@ -26,7 +26,7 @@ To ensure that the Media Download can only be accessed after the Product has bee
 
 Firstly, let's create our downloadable Product, to do this we'll create a new Media Download Item, you'll need to repeat this step for every product that can be downloaded. We'll be using an image for this example, but you can use any file type that the Media Download Module supports:
 
-![](https://downloads.intercomcdn.com/i/o/281987312/276f86517ceb3702cacb4cf4/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/281987312/276f86517ceb3702cacb4cf4/image.png) -->
 
 ## Add Datasource Field to your Products
 
@@ -34,11 +34,11 @@ Now we've added our downloadable product, let's Datasource it to the Product it 
 
 Then add a new field and set the type to 'Datasource (Single item)':
 
-![](https://downloads.intercomcdn.com/i/o/281989245/440105b971b7e66ded883fcf/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/281989245/440105b971b7e66ded883fcf/image.png) -->
 
 Finally, let's link each of our Media Download items to the Products they're associated with, to do this head to eCommerce > Products > Your product > Custom Fields. You should see a dropdown containing all the Media Download items, select the one that matches your Product:
 
-![](https://downloads.intercomcdn.com/i/o/281991245/b8d68e41e393253eb192b2d2/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/281991245/b8d68e41e393253eb192b2d2/image.png) -->
 
 ## Output the Media Download link within your User Orders layout
 

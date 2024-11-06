@@ -91,15 +91,15 @@ The following behaviour was chosen by us for convenience and demonstration purpo
 
 If any markers are too close to each other, they will be "clustered" under a clustering marker, which will display a number for the number of Events in that location:
 
-![](https://downloads.intercomcdn.com/i/o/203124873/6cfa1a2c995d75ba6d1562b6/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203124873/6cfa1a2c995d75ba6d1562b6/image.png) -->
 
 Clicking on the clustering marker will zoom in by an increment of 1, unless the User is at maximum zoom. As soon as we have zoomed in enough to display more of the markers without causing confusion, we will do so:
 
-![](https://downloads.intercomcdn.com/i/o/203125088/f1e69150b898efc233334f60/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203125088/f1e69150b898efc233334f60/image.png) -->
 
 If we reach maximum zoom and some Events are still clustered (perhaps at the same location), the next click on the clustering marker will reveal an "infowindow" containing details on all Events at that location:
 
-![](https://downloads.intercomcdn.com/i/o/203125404/117159b8479150d8c5d07eea/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/203125404/117159b8479150d8c5d07eea/image.png) -->
 
 ## Customising the Map
 

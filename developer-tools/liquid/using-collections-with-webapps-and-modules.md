@@ -65,7 +65,7 @@ In the following example, we show the difference between a WebApp list which doe
 
 This outputs:
 
-![](https://downloads.intercomcdn.com/i/o/170957349/28a44da8e57c6c597c0fa956/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170957349/28a44da8e57c6c597c0fa956/image.png) -->
 
 To break it down further, setting collection to `true` exports the data to `{{context.exports}}` Under that, you can access it by the id of the WebApp in the original `include` tag. In this example, it's `1` so we can access `{{context.exports.webapp_1.data | json}}`.
 
@@ -108,7 +108,7 @@ Alternatively, you could include the webapp just once as a collection, then use 
 
 This outputs:
 
-![](https://downloads.intercomcdn.com/i/o/170961170/0dbe4c889cb38d1ea6abd650/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170961170/0dbe4c889cb38d1ea6abd650/image.png) -->
 
 Great! Only one query needed behind the scenes and we've nearly met the objective, but there's one problem. The item "A Special Guest Appearance" has been included twice!
 
@@ -154,7 +154,7 @@ You can do a lot with loops. Offset is just one of your options. Head to the pOS
 
 Hang on, wasn't the point of Collections to avoid Layouts? Not quite! The idea was to give you control over the loop- layouts are still possible. I can still include my `portfolio_2` layout, but I need to work out its path from SITE MANAGER / Code Editor in Admin.
 
-![](https://downloads.intercomcdn.com/i/o/170964104/c1f3d4727c38bf6864313c84/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170964104/c1f3d4727c38bf6864313c84/image.png) -->
 
 I can now include the Layout at this Path: \`
 
@@ -162,4 +162,4 @@ I can now include the Layout at this Path: \`
 
 The Layout is expecting an object called `this` containing the data, but as in the example above we already assigned variables called `this` containing the right data, the Layout works without further modification:
 
-![](https://downloads.intercomcdn.com/i/o/170964628/57c17615b319870fae403c96/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/170964628/57c17615b319870fae403c96/image.png) -->

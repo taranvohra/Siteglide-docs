@@ -1,6 +1,6 @@
 These features allow users to change the key information that identifies them on your site.
 
-![](https://downloads.intercomcdn.com/i/o/258038314/977e8edb09dd8197a452d6d8/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/258038314/977e8edb09dd8197a452d6d8/image.png) -->
 
 # Prerequisites
 
@@ -18,7 +18,7 @@ This Article shows how Users who remember their Email address and Password can c
 
 Create a Form which will be used to update Users' email address or password.&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/258319499/5f68c4e7d61e63062ad8c247/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/258319499/5f68c4e7d61e63062ad8c247/image.png) -->
 
 This Form should have a Secure Zone attached- but this can be an existing Secure Zone that you use for Accounts e.g. "My Account" or an equivalent.&#x20;
 
@@ -30,13 +30,13 @@ You may wish to use one Form for updating an email and a separate Form for updat
 
 We'll need to modify the Form Layout, so head to Code Editor and create a new Form Layout liquid file. This should be in the same folder as the Form you created in step 1.
 
-![](https://downloads.intercomcdn.com/i/o/258320889/1dc7f7aa68ef97197c627c62/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/258320889/1dc7f7aa68ef97197c627c62/image.png) -->
 
 # Step 3 - Add your Form to a Page
 
 You can add your Form to any Page.
 
-![](https://downloads.intercomcdn.com/i/o/258319926/fb64165aa155854d73c9e3b3/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/258319926/fb64165aa155854d73c9e3b3/image.png) -->
 
 Select your Custom Form Layout you made in step 2.
 

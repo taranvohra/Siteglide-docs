@@ -144,7 +144,7 @@ A variable's type is really important and an error will be thrown if you use the
 
 We can use the error message to find the type we need- in this case it's `[String!]` not `String`. This indicates that an array of Strings is expected, which makes sense because "value\_in" is for filtering array fields. You can also check in the documentation panel:
 
-![](https://downloads.intercomcdn.com/i/o/192692496/e316ecda9146088bebaa92e7/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/192692496/e316ecda9146088bebaa92e7/image.png) -->
 
 We'll fix this in our query:
 
@@ -289,7 +289,7 @@ You can test by entering values in JSON format in the panel in the bottom left. 
 
 Firstly, open a new JSON object:
 
-![](https://downloads.intercomcdn.com/i/o/192693848/483dd48261816ba9ae39177b/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/192693848/483dd48261816ba9ae39177b/image.png) -->
 
 Next, define the key of your property:
 
@@ -321,7 +321,7 @@ Notes:
 
 Our query is now finished:
 
-![](https://downloads.intercomcdn.com/i/o/192699146/9dc9b224fd52317d98011629/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/192699146/9dc9b224fd52317d98011629/image.png) -->
 
 Explorer: Sorry, explorer does not currently support arrays or variables, so no demo is available this time.
 

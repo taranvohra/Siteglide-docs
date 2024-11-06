@@ -55,7 +55,7 @@ Notes:
 
 Explorer:
 
-![](https://downloads.intercomcdn.com/i/o/206709413/5f5a3592d2e2a3911903ec4f/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/206709413/5f5a3592d2e2a3911903ec4f/image.png) -->
 
 This is just one possible answer, you may have found a different method. 
 

@@ -66,7 +66,7 @@ Like with other Modules, you will use a Liquid Tag to output a list of Module It
 
 Layouts can be created at the following path: `layouts/modules/module_17/my_layout_name/ `
 
-![](https://downloads.intercomcdn.com/i/o/201119735/c417f312d2c0f4cde259a3ef/image.png)
+<!-- ![](https://downloads.intercomcdn.com/i/o/201119735/c417f312d2c0f4cde259a3ef/image.png) -->
 
 ## Developing a List Layout
 

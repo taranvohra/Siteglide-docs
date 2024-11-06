@@ -31,7 +31,7 @@ This challenge required you to modify and combine the queries we'd already looke
 
 To find the category\_id for the `posters` Category. One way to do it would have been to go to the Siteglide Admin:&#x20;
 
-![](https://downloads.intercomcdn.com/i/o/186111084/6f18c1efb54bd90ef6715a24/image.png) 
+<!-- ![](https://downloads.intercomcdn.com/i/o/186111084/6f18c1efb54bd90ef6715a24/image.png) --> 
 
 After that, it was a case of combining what you'd learned so far to add multiple filters to a query:
 
