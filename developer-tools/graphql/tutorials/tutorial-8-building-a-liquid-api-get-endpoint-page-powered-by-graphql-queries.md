@@ -477,13 +477,12 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   
 {% raw %}
 {% for this in fetch_webapp_1_by_page.records.results %}
-    <div class="col-4">
-       <h3>{{this.properties.name}}</h3>
-    </div>
-  {% endfor %}
+  <div class="col-4">
+    <h3>{{this.properties.name}}</h3>
+  </div>
+{% endfor %}
 {% endraw %}
 </div>
-
 {% endraw %}
 ```
 
