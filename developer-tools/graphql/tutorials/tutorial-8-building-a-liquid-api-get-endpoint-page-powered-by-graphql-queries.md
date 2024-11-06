@@ -31,7 +31,7 @@ The slug you choose will be the URL via which you'll eventually access the data.
 
 ### Step 2) Use CLI to apply advanced settings to the Liquid Page
 
-In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](https://developers.siteglide.com/introducing-siteglide-cli).
+In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](./../../cli/README.md).
 
 Using the Siteglide-CLI, pull down your Site's files to your machine and open them up in a Code Editor of your choice. Set up Siteglide-CLI sync so that changes you make will be pushed to the Site.
 
@@ -128,9 +128,13 @@ query fetch_webapp_1_by_page($page: Int!, $per_page: Int!) {
 } 
 ```
 
-I'll use the following Liquid to run this query when the endpoint Page is accessed: \`
+I'll use the following Liquid to run this query when the endpoint Page is accessed:
 
-\`
+```liquid
+{% raw %}
+{%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page" -%}
+{% endraw %}
+```
 
 Note- I'll be using - before and after my closing Liquid tags to remove unnecessary whitespace from the results- this is optional.
 
@@ -153,9 +157,6 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 {%- assign page = context.params.page -%}
 {%- assign per_page = context.params.per_page -%}
 {% endraw %}
-
-
-
 ```
 
 ### Step 5) Use Liquid to feed variables into the Query (and make sure they are the correct type)
@@ -167,9 +168,6 @@ Accessing these values via the above method tends to set them as String values i
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
 {% endraw %}
-
-
-
 ```
 
 We can then add them to the query.
@@ -180,7 +178,6 @@ We can then add them to the query.
   page: page,
   per_page: per_page
 -%}
-
 {% endraw %}
 ```
 
@@ -192,7 +189,6 @@ If the query expects variables to be Strings you can actually add them straight 
   page: context.params.page,
   per_page: context.params.per_page
 -%}
-
 {% endraw %}
 ```
 
@@ -205,24 +201,19 @@ Results are accessible via the variable name you defined in the `graphql` tag, b
 If you decided in step 2 that you didn't want to change the Page format, you should now build the required HTML structure you'd like to send back (this would probably be inserted as it is into a Page via JavaScript).
 
 ```liquid
+{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
 -%}
-
 <div class="row">
-  
-{% raw %}
-{%- for item in fetch_webapp_1_by_page.records.results -%}
+  {%- for item in fetch_webapp_1_by_page.records.results -%}
     <div class="col">
       <h2>{{item.properties.name}}</h2>
     </div>
   {%- endfor -%}
-{% endraw %}
-
-
 </div>
-
+{% endraw %}
 ```
 
 #### Option 6) b) JSON format
@@ -239,7 +230,6 @@ As GraphQL already outputs in JSON format, this is easy:
 -%}
 
 {{fetch_webapp_1_by_page}}
-
 {% endraw %}
 ```
 
@@ -269,26 +259,34 @@ In your browser, visit the endpoint Page URL and see if the data displays as exp
 A successful JSON endpoint will return valid JSON in the body, as in the example here (other formats should also be checked for valid formats).
 
 ```json
-{"records":{"results":[
-    {"id":"220","properties":
-    {"name":"We know guitar music"
-     "slug":"we-know-guitar-music"
-     "enabled":true
-     "og_desc":null
-     "og_type":null
-     "og_title":null
-     "meta_desc":null
-     "weighting":null
-     "meta_title":null
-     "expiry_date":2145916800
-     "release_date":1570797009
-     "twitter_type":null
-     "category_array":[]
-     "webapp_field_1_1":"images/about/about-5.jpg"
-     "webapp_field_1_2":"Man playing guitar"
-     "webapp_field_1_3":"We know guitar music"
-     "webapp_field_1_4":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}}]}}
-
+{
+  "records":{
+    "results":[
+      {
+        "id":"220",
+        "properties": {
+          "name":"We know guitar music"
+          "slug":"we-know-guitar-music"
+          "enabled":true
+          "og_desc":null
+          "og_type":null
+          "og_title":null
+          "meta_desc":null
+          "weighting":null
+          "meta_title":null
+          "expiry_date":2145916800
+          "release_date":1570797009
+          "twitter_type":null
+          "category_array":[]
+          "webapp_field_1_1":"images/about/about-5.jpg"
+          "webapp_field_1_2":"Man playing guitar"
+          "webapp_field_1_3":"We know guitar music"
+          "webapp_field_1_4":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      }
+    ]
+  }
+}
 ```
 
 Changing the URL parameters should allow you to return different responses:
@@ -343,9 +341,6 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
-
-
-
 ```
 
 * To check that the request comes from an authorized Page/ Site, you can check this with context:
@@ -356,9 +351,6 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
-
-
-
 ```
 
 ### Step 9) Optional - Get the Data and use it
@@ -399,57 +391,73 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 
 **Add HTML and JavaScript**
 
+{% hint style="warning" %}
+**Consider using Live Updates**
+The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md). 
+{% endhint %}
+
 * An event listener targets the Form and watches for a click event
 * When the Form is submitted, the event triggers the function "getWebappOne".
 * The if statement logic checks if a 2xx response code is received (meaning any authorization policies have passed) and that there is no HTML tag containing a 401 code from a Secure Zone check failure. See Step 8) for more details.
 * The function requests the data from our new endpoint.
 * It then loops over the Items and appends each WebApp Name to the HTML DOM.
 
-\`\`\`liquid
+#### HTML
 
-### Get WebApp Names
+```html
+<section class="form form-01">
+  <div class="container">
+    <form>
+      <h2>Get WebApp Names</h2>
+      <div class="input-group">
+        <label for="page">Page</label>
+        <input id="page" type="number" step="1">
+      </div>
+      <div class="input-group">
+        <label for="per_page">Per Page</label>
+        <input id="per_page" type="number" step="1">
+      </div>
+      <button id="submit" class="btn btn-primary">Get WebApp 1</button>
+    </form>
+  </div>
+</section>
+<section class="form form-01">
+  <div class="container">
+    <h2>List of WebApps</h2>
+    <div class="row" id="output"></div>
+  </div>
+</section>
+```
 
-Page Per Page Get WebApp 1
-
-### List of WebApps
-
-````
-
-</div>
-
-<div data-gb-custom-block data-tag="tab" data-title='JS'>
+#### JavaScript
 
 ```javascript
-<script>
-  var page = document.querySelector('#page');
-  var per_page = document.querySelector("#per_page");
-  var submit = document.querySelector("#submit");
-  var output = document.querySelector("#output");
-  
-  function getWebappOne() {
-    event.preventDefault();
-    var xReq = new XMLHttpRequest();
-    xReq.onload = function () {
-      const checkForSecureZone = /401 - Unauthorised/g;
-      if (xReq.status >= 200 && xReq.status < 300 && xReq.response.search(checkForSecureZone) == -1 ) {
-        output.innerHTML = "";
-        var jsonParsed = JSON.parse(xReq.response).models.results;
-        for(i=0;i<jsonParsed.length;i++) {
-          console.log(jsonParsed[i].properties.name)
-          output.insertAdjacentHTML('beforeend', '<div class="col">'+jsonParsed[i].properties.name+'</div>');
-        }
-      } else {
-        console.log('error', xReq.responseText);
+var page = document.querySelector('#page');
+var per_page = document.querySelector("#per_page");
+var submit = document.querySelector("#submit");
+var output = document.querySelector("#output");
+
+function getWebappOne() {
+  event.preventDefault();
+  var xReq = new XMLHttpRequest();
+  xReq.onload = function () {
+    const checkForSecureZone = /401 - Unauthorised/g;
+    if (xReq.status >= 200 && xReq.status < 300 && xReq.response.search(checkForSecureZone) == -1 ) {
+      output.innerHTML = "";
+      var jsonParsed = JSON.parse(xReq.response).models.results;
+      for(i=0;i<jsonParsed.length;i++) {
+        console.log(jsonParsed[i].properties.name)
+        output.insertAdjacentHTML('beforeend', '<div class="col">'+jsonParsed[i].properties.name+'</div>');
       }
+    } else {
+      console.log('error', xReq.responseText);
     }
-    xReq.open('GET', '/api/webapp-1.json?page='+page.value+'&per_page='+per_page.value);
-    xReq.send();
-  };
-  
-  submit.addEventListener('click', getWebappOne);
-  
-</script>
-````
+  }
+  xReq.open('GET', '/api/webapp-1.json?page='+page.value+'&per_page='+per_page.value);
+  xReq.send();
+};
+submit.addEventListener('click', getWebappOne);
+```
 
 #### Example 9) b) Requesting Data From an HTML Page
 
