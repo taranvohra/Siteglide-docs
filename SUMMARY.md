@@ -61,6 +61,7 @@
   * [Using Collections with WebApps and Modules](developer-tools/liquid/using-collections-with-webapps-and-modules.md)
   * [Accessing Data from the Global Context Variable](developer-tools/liquid/accessing-data-from-the-global-context-variable.md)
   * [Truthiness - Using Liquid to determine if a field is empty or blank](developer-tools/liquid/using-liquid-logic-to-check-if-a-field-exists-or-is-empty-on-the-front-end.md)
+  * [📋 Alternatives to Storing and Executing Liquid from Database Items](webapps/go-further-webapps/webapps-alternatives-to-storing-server-side-code-in-webapp-fields.md) 
 * [GraphQL](developer-tools/graphql/README.md)
   * [ℹ️ About GraphQL](developer-tools/graphql/about-graphql.md)
   * [📋 Tutorials](developer-tools/graphql/tutorials/README.md)
@@ -310,6 +311,10 @@
   * [ℹ️ WebApp Detail Layouts](webapps/layouts/webapp-detail-layouts.md)
   * [📋 Searching by Location](webapps/layouts/searching-by-location.md)
   * [📋 Searching - Advanced Filtering](webapps/layouts/searching-advanced-filtering.md)
+* [Go Further: WebApps](/webapps/go-further-webapps/README.md)
+  * [📋 Front End Create Forms](webapps/go-further-webapps/webapp-front-end-submit-forms-create.md)
+  * [📋 Front End Update Forms](webapps/go-further-webapps/webapp-front-end-submit-forms-update.md)
+  * [📋 Front End Delete](webapps/go-further-webapps/webapp-front-end-submit-forms-delete.md)
 
 ## eCommerce
 
