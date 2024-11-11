@@ -38,6 +38,21 @@ _Outputting multiple payment gateway options_
 
 This will output the Payment Gateway with the ID you select. When outputting by ID, you should select which is the default option.
 
+#### Payment Method Options
+
+When using Stripe as your Payment Gateway, the default payment method option is locked to 'Card Only' (`type: 'card_only'`).
+
+Alternatively you can show other payment method options such as Klarna or Apple Pay.
+You can control exactly which options show by configuring them in your Stripe Dashboard here -> https://dashboard.stripe.com/settings/payment_methods
+Then you need to update your code to include the 'type' parameter with a value of 'payment' as follows:
+
+```liquid
+{%- include 'ecommerce/checkout_standard'
+  id: '123'
+  type: 'payment'
+-%}
+```
+
 #### Switching active Payment Gateway from Multiple Options
 
 Once you've added multiple Payment Gateways to your form using the include above, you can add JavaScript to switch between them on the client side:
