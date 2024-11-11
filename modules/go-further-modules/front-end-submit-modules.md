@@ -4,7 +4,36 @@ When you install a Module, a front-end form file is automatically generated with
 
 ## Syntax
 
-Output your Module form on a page: `<div data-gb-custom-block data-tag="-" data-0='module_form' data-1=', id: ' data-2='1' data-3='1'></div>`
+### Creating New Items
+
+Output your Module form on a page to create new items: 
+
+```
+{% raw %}
+{%- include 'module_form', id: '3', layout: layout, enabled: 'true'-%}
+{% endraw %}
+```
+
+### Editing Existing Items 
+
+Edit forms should be outputted inside a standard Module layout's item.liquid file, to make sure it has access to the {{this.id}} variable. It will need this to load the form with the correct resource_id.
+
+#### item.liquid file
+```
+{% raw %}
+{%- include 'module_form_edit', id: '3', layout: layout, enabled: 'true'-%}
+{% endraw %}
+```
+
+Note when developing a layout for an edit form, be sure to use the HTML value attribute to give the fields their current values from the database. 
+
+```
+<input name="{{form_builder.fields.properties.module_field_3_1.name}}" value="{{form_builder.fields.properties.module_field_3_1.value}}">
+```
+
+Using a SiteBuilder form layout will save you this step.
+
+#### Options 
 
 Toolbox has support for Module input forms, and the following options will be given in the modal, or you can set them yourself:
 
