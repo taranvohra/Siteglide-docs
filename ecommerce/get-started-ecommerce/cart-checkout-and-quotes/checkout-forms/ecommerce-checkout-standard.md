@@ -30,10 +30,12 @@ This will output the Payment Gateway that you most recently updated in Siteglide
 _Outputting multiple payment gateway options_
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/checkout_standard'
   id: '123'
   default: 'true'
 -%}
+{% endraw %}
 ```
 
 This will output the Payment Gateway with the ID you select. When outputting by ID, you should select which is the default option.
@@ -47,10 +49,12 @@ You can control exactly which options show by configuring them in your Stripe Da
 Then you need to update your code to include the 'type' parameter with a value of 'payment' as follows:
 
 ```liquid
+{% raw %}
 {%- include 'ecommerce/checkout_standard'
   id: '123'
   type: 'payment'
 -%}
+{% endraw %}
 ```
 
 #### Switching active Payment Gateway from Multiple Options
