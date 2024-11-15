@@ -3,10 +3,9 @@ description: >-
   Theme Presets are a Way to change a Theme's CSS variables, like colour and
   font, giving your site an interesting new look without needing to make big
   changes to HTML or CSS classes.
-hidden: true
 ---
 
-# 🏗️ Theme Presets - Coming Soon
+# 🏗️ Theme Presets
 
 ## Pre-Requisites
 
