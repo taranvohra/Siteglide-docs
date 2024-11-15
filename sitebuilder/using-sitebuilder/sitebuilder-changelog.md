@@ -20,6 +20,17 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ## Releases <a href="#releases" id="releases"></a>
 
+### 4.18.0 - Released November 15th 2024
+
+* Theme Presets released for the Flowbite Theme - we'll talk about these a lot more in the coming days. In short, presets are a set of defaults for your Tailwind Config which set default colour, font and much more! You can switch preset to completely change the look of your site while keeping the HTML untouched. To start with we're releasing the following:
+  * Gardening Preset
+  * MNTNs Preset
+* New layouts to be released alongside the presets which are fully compatible with the Flowbite Theme but have come from other designers' open-source work. These make a more generous use of both primary and secondary colour variables.
+* Structured Data added to the following Detail layouts for better SEO:
+  * Authors
+  * FAQs&#x20;
+  * Events
+
 ### 4.17.2 - Released October 25th 2024
 
 \+ Flowbite Pro Version 1.9.4
@@ -36,7 +47,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
   * Support for visiting URL with ?edit=true at end of URL to display edit form (after permission checks). This goes nicely with the Admin Tables which can link to it.
 * Updated many modals to be "static" to prevent accidental closing
 
-### 4.17.1 - Released October 2024&#x20;
+### 4.17.1 - Released October 2024
 
 * Support for new Pro layouts in Preview Mode
 * Removed console errors for Live Updates which were unnecessary (logs not errors).
@@ -55,9 +66,10 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 {% raw %}
 {% include 'modules/module_86/tailwind/head', template_build_method: 'cli', template_build_me optional_path_to_cli_css: '' %}
 {% endraw %}
+
 ```
 
-* New Preview build method for Tailwind. This is a replacement for the now deprecated JIT option, which should provide faster development times.&#x20;
+* New Preview build method for Tailwind. This is a replacement for the now deprecated JIT option, which should provide faster development times.
   * Preview mode is designed to load CSS fallbacks so that any Flowbite blocks added to the site will be supported out-of-the-box, using Flowbite default variables.
   * It can be used alongside a CLI build. The CLI build will override any classes you've used, with branded versions of the variables you've set in your Tailwind Config file, while continuing to fallback to Flowbite defaults when brand new blocks are added.
 * New Static Layouts for Flowbite:
@@ -72,7 +84,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ### 4.15.1 - Released 5th August 2024
 
-* Patch to fix Flowbite WebApp Edit Form layout not installing properly in "static" mode.&#x20;
+* Patch to fix Flowbite WebApp Edit Form layout not installing properly in "static" mode.
 
 ### 4.15.0 - Released 3rd August 2024
 
@@ -192,9 +204,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 * Live Updates API now has a new version of its JavaScript file, with added functionality. This will be included in many new SiteBuilder layouts by default, or you can optionally upgrade your existing layouts with the tag:
 
 ```liquid
-{% raw %}
 <script async src="{{'modules/module_86/js/v1-1/sitegurus_live_update_javascript_api.js' | asset_url }}"></script>
-{% endraw %}
 ```
 
 * Live Updates API now adds a click listener to text input fields. This helps to cover an edge-case where a cancel button is nested inside the text area to clear the field. Non-breaking change.
