@@ -22,7 +22,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ### 4.18.0 - Released November 15th 2024
 
-* Theme Presets released for the Flowbite Theme - we'll talk about these a lot more in the coming days. In short, presets are a set of defaults for your Tailwind Config which set default colour, font and much more! You can switch preset to completely change the look of your site while keeping the HTML untouched. To start with we're releasing the following:
+* [Theme Presets](../setup-sitebuilder/styling/theme-presets-coming-soon.md) released for the Flowbite Theme - we'll talk about these a lot more in the coming days. In short, presets are a set of defaults for your Tailwind Config which set default colour, font and much more! You can switch preset to completely change the look of your site while keeping the HTML untouched. To start with we're releasing the following:
   * Gardening Preset
   * MNTNs Preset
 * New layouts to be released alongside the presets which are fully compatible with the Flowbite Theme but have come from other designers' open-source work. These make a more generous use of both primary and secondary colour variables.
