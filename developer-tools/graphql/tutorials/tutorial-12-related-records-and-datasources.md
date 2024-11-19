@@ -61,15 +61,24 @@ query blogsWithAuthors {
 
 Since these two modules - the Blog and Authors Module - are both created by Siteglide, they already store the information needed to join them inside their properties. We only need to look at the existing properties in detail to get the information we need to build our query.
 
-There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](../../../Siteglide%20Developer%20Documentation/Introducing%20Siteglide%20CLI.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations:
-
-> ├───forms │ form\_1.liquid │ form\_2.liquid │ form\_3.liquid │ ├───modules │ │ module\_17.liquid │ │ module\_3.liquid │ │ module\_6.liquid │ │ │ └───module\_14
+There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](../../../Siteglide%20Developer%20Documentation/Introducing%20Siteglide%20CLI.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations e.g. 'marketplace\_builder/form\_configurations/forms/form_1.liquid' or 'marketplace\_builder/form\_configurations/modules/module_3.liquid':
 
 For this exercise, we'd be looking at `module_3` for blog and `module_6` for authors.
 
 In Blog, scroll down or use ctrl-f to search for `author` The form configuration will contain both the human-friendly name and the Siteglide ID for each field:
 
-> module\_field\_3\_4: name: Author type: datasource live: true hidden: false order: 0 editable: true datasource\_id: module\_6 required: false validation: {}
+```yaml
+module_field_3_4:
+      name: Author
+      type: datasource
+      live: true
+      hidden: false
+      order: 0
+      editable: true
+      datasource_id: module_6
+      required: false
+      validation: {}
+```
 
 Great! It's a datasource field, which is pefect, because it will already be set up to contain IDs of Author records related to each Blog record. We don't need to look at the Author record now to know that the `module_field_3_4` property of the Blog and the `id` of the Author should match. Sometimes, you'll need to look at both.
 
@@ -245,34 +254,37 @@ That's the query itself done!
 ### Step 9 - Working with the Results
 
 The results in JSON may look like the below (we've minimised Blog properties which aren't useful to the example):
-
-> { "data": { "records": { "results": \[ { "id": "97", "properties": {...}, # note - this record 97 did NOT have a match with an author. Maybe the Author has been deleted or maybe the ID has not been stored in the field we're joining on.
->
-> ```
->       "author": null 
->     },
->     {
->       "id": "8",
->       "properties": {...},
->       \# note this blog item with ID of 8 DID match with an author- the author's fields we asked for are below!
->       "author": { 
->         "name": "Jese Leos",
->         "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/jese-leos.png"
->       }
->     },
->     {
->       "id": "10",
->       "properties": {...},
->       "author": {
->         "name": "Karen Nelson",
->         "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/karen-nelson.png"
->       }
->     }
->   ]
-> }
-> ```
->
-> } }
+ ```graphql
+{ 
+  "data": {
+    "records": {
+      "results": [
+        {
+          "id": "97",
+          "properties": {...}, # note - this record 97 did NOT have a match with an author. Maybe the Author has been deleted or maybe the ID has not been stored in the field we're joining on.
+          "author": null 
+        },
+        {
+          "id": "8",
+          "properties": {...}, # note this blog item with ID of 8 DID match with an author- the author's fields we asked for are below!
+          "author": { 
+            "name": "Jese Leos",
+            "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/jese-leos.png"
+          }
+        },
+        {
+          "id": "10",
+          "properties": {...},
+          "author": {
+            "name": "Karen Nelson",
+            "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/karen-nelson.png"
+          }
+        }
+      ]
+    }
+  }
+}
+```
 
 As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot Notation](../../../Siteglide%20Developer%20Documentation/Liquid%20Dot%20Notation.md) or [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](docId:2Sc1gj360B5yVDj22V4pK)) to access the results, until you get to an array. Since we only asked for a single author, we can use dot notation inside the blog record to access the author. We still need to loop over the blog results as always:
 
