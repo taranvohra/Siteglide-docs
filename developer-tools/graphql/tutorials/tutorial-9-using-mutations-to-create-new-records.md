@@ -272,13 +272,12 @@ mutation createBlogItem($title: String!, $description: String!, $categories: [St
 
 
 
-\`\`\`liquid \{% assign description = "Lorem Ipsum" %\} \{% graphql createBlogItem = "create\_blog\_item", title: "The newest Blog Post", description: description %\}
-
+```liquid
+{% raw %}
+{% assign description = "Lorem Ipsum" %}
+{% graphql createBlogItem = "create_blog_item", title: "The newest Blog Post", description: description %}
+{% endraw %}
 ````
-
-</div>
-
-</div>
 
 ### Advanced - Using variables to pass in entire objects in GraphQL rather than single properties
 
@@ -288,9 +287,6 @@ If you like, you can use a variable to represent the entire properties object an
 
 Note how the `parse_json `tag is used with literal square brackets to create a JSON array with nested objects defined by curly braces. The `category_array `property is an example of how you can pull in Liquid from different sources into these properies, though `this.id` would only contain a category ID in for example a category detail layout.
 
-<div data-gb-custom-block data-tag="tabs"></div>
-
-<div data-gb-custom-block data-tag="tab" data-title='GraphQL'>
 
 ```graphql
 mutation createBlogItem($properties: [PropertyInputType!]!) {
@@ -299,17 +295,29 @@ mutation createBlogItem($properties: [PropertyInputType!]!) {
     properties
   }
 }
-````
-
-
-
-\`\`\`liquid \{% parse\_json properties %\} \[ { "name": "webapp\_field\_3\_1", "value": "Blog Title" }, { "name": "webapp\_field\_3\_3", "value": "Lorem Ipsum" }, { "name": "category\_array", "value\_array": \[\{{this.id\}}] } ] \{% endparse\_json %\} \{% graphql createBlogItem = "create\_blog\_item", properties: properties %\}
-
 ```
 
-</div>
-
-</div>
+```liquid
+{% raw %}
+{% parse_json properties %}
+[
+  {
+    "name": "webapp_field_3_1",
+    "value": "Blog Title" 
+  },
+  {
+    "name": "webapp_field_3_3",
+    "value": "Lorem Ipsum"
+  },
+  {
+    "name": "category_array",
+    "value_array": [{{this.id}}]
+  }
+] 
+{% endparse_json %}
+{% graphql createBlogItem = "create_blog_item", properties: properties %}
+{% endraw %}
+```
 
 Note, the structure of the JSON we are passing in the previous example is similar to the structure of properties in the mutation, but it is necessary in JSON to use double quotes around the keys like `name`:, while the GraphQL syntax needs no quotes.
 
