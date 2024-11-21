@@ -20,8 +20,8 @@ Other Modules, Templates, Themes and Integrations have been built by the Sitegli
 
 Sitegurus have built SiteBuilder, a tool to speed up development of web projects while ensuring best practice and quality. Check out the Marketplace Templates that leverage SiteBuilder:
 
-{% content-ref url="../sitebuilder/setup-sitebuilder/about-sitebuilder/marketplace-themes-and-templates.md" %}
-[marketplace-themes-and-templates.md](../sitebuilder/setup-sitebuilder/about-sitebuilder/marketplace-themes-and-templates.md)
+{% content-ref url="../sitebuilder/setup-sitebuilder/site-setup/marketplace-themes-and-templates.md" %}
+[marketplace-themes-and-templates.md](../sitebuilder/setup-sitebuilder/site-setup/marketplace-themes-and-templates.md)
 {% endcontent-ref %}
 
 <figure><img src="../.gitbook/assets/Siteglide-Marketplace-Themes-and-Templates.png" alt=""><figcaption></figcaption></figure>

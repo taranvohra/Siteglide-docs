@@ -39,7 +39,7 @@ Users will need to see your products in order to access their Product Detail Pag
 ```
 
 {% hint style="success" %}
-[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder/) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Product List design ready for you in a Bootstrap 5 or Tailwind version.
 
 <img src="../../../.gitbook/assets/image (2) (1).png" alt="" data-size="original">
 {% endhint %}
@@ -55,7 +55,7 @@ Select the Detail Page Template and Layout:
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder/) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Product Detail design ready for you in a Bootstrap 5 or Tailwind version.
 
 <img src="../../../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
 {% endhint %}
@@ -105,7 +105,7 @@ Use the `layout` parameter to select the folder which contains the wrapper.liqui
 Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layouts)
 
 {% hint style="success" %}
-[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder/) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\
+[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\
 <img src="../../../.gitbook/assets/image (7).png" alt="" data-size="original">
 {% endhint %}
 
@@ -147,7 +147,7 @@ The layout parameter should refer to the folder which contains your form layout 
 For now, you can use the "default" layout that is included with the eCommerce module.
 
 {% hint style="success" %}
-[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder/) has an out-of-the-box Checkout Form Layout design ready for you in a Bootstrap 5 or Tailwind version.
+[SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Checkout Form Layout design ready for you in a Bootstrap 5 or Tailwind version.
 
 <img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original">
 {% endhint %}

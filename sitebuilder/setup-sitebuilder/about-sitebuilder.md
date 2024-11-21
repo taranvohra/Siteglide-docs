@@ -31,36 +31,36 @@ When you choose one of our Layouts, all you have to do is give it a name and we'
 
 ## Marketplace Themes & Templates
 
-{% content-ref url="marketplace-themes-and-templates.md" %}
-[marketplace-themes-and-templates.md](marketplace-themes-and-templates.md)
+{% content-ref url="site-setup/marketplace-themes-and-templates.md" %}
+[marketplace-themes-and-templates.md](site-setup/marketplace-themes-and-templates.md)
 {% endcontent-ref %}
 
 ## Page Templates
 
-{% content-ref url="../create-a-page-template.md" %}
-[create-a-page-template.md](../create-a-page-template.md)
+{% content-ref url="create-a-page-template.md" %}
+[create-a-page-template.md](create-a-page-template.md)
 {% endcontent-ref %}
 
 ## Pages <a href="#how-does-it-work" id="how-does-it-work"></a>
 
 ## Layouts
 
-{% content-ref url="static-layouts.md" %}
-[static-layouts.md](static-layouts.md)
+{% content-ref url="about-sitebuilder/static-layouts.md" %}
+[static-layouts.md](about-sitebuilder/static-layouts.md)
 {% endcontent-ref %}
 
-{% content-ref url="../layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
-[dynamic-layouts-in-sitebuilder.md](../layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
+{% content-ref url="layouts/about-layouts/dynamic-layouts-in-sitebuilder.md" %}
+[dynamic-layouts-in-sitebuilder.md](layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="../layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
-[static-and-dynamic-form-layouts.md](../layouts/about-layouts/static-and-dynamic-form-layouts.md)
+{% content-ref url="layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
+[static-and-dynamic-form-layouts.md](layouts/about-layouts/static-and-dynamic-form-layouts.md)
 {% endcontent-ref %}
 
 ## Live Updates API
 
-{% content-ref url="../../using-sitebuilder/live-updates-api/" %}
-[live-updates-api](../../using-sitebuilder/live-updates-api/)
+{% content-ref url="../using-sitebuilder/live-updates-api/" %}
+[live-updates-api](../using-sitebuilder/live-updates-api/)
 {% endcontent-ref %}
 
 ## Licence <a href="#licence" id="licence"></a>
@@ -69,6 +69,6 @@ By using SiteBuilder you are bound by the terms detailed in our [EULA](https://w
 
 ## Where Should I Start? <a href="#where-should-i-start" id="where-should-i-start"></a>
 
-{% content-ref url="../quickstart-sitebuilder.md" %}
-[quickstart-sitebuilder.md](../quickstart-sitebuilder.md)
+{% content-ref url="quickstart-sitebuilder.md" %}
+[quickstart-sitebuilder.md](quickstart-sitebuilder.md)
 {% endcontent-ref %}
