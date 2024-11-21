@@ -46,8 +46,6 @@ If you will also have some non-grouped Products, you may wish to create a "Produ
 
 Here's how I've structured my Categories, "Chocolate" and "Crisps" each represent separate groups of Products, the parent Category "Product-group" will be used to identify them as Product grouping Categories, allowing you to keep them separate from the other Categories your Products may have:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/239878128/fcf47d6afc3bd3ef9d0a84f2/image.png) -->
-
 Now let's look at how we can ensure only the Categories within "Product-group" are used when outputting our related Products. First I assign an object containing all the Categories on my Site (this gives us access to all the Categories fields, rather than just the ID): `<div data-gb-custom-block data-tag="assign"></div>`
 
 Next loop over all of our Products categories, at each iteration we'll store the "full\_slug" of the Category (this will include the parent Categories slug, which we can use to check the Category is being used for Product grouping).
@@ -60,6 +58,7 @@ Note: "this" contains one of the Category IDs assigned to our Product, we then u
   {% assign full_slug = categories[category].full_slug | split: '/' %}
 {% endfor %}
 {% endraw %}
+
 
 
 
@@ -81,6 +80,7 @@ We've now created an array of all the individual "parameters" in our "full\_slug
 
 
 
+
 ```
 
 This will check all of the parameters, make sure you replace "product-group" with whichever slug your wrapping Category is using. If it is a Product grouping Category, we store the ID in the variable "group\_category". We'll use this ID later to output our Related Products.
@@ -88,8 +88,6 @@ This will check all of the parameters, make sure you replace "product-group" wit
 ### Step 2) Add the Group Category to all Products in the Group
 
 Now add all the related Products to this Category. You can do this in the Categories tab when editing your Product. In this example- we'll be selecting the "Crisps" Category to add to our "Ready Salted" flavour Product.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/239864153/c9ebbbdf8f83ec171201a5dc/image.png) -->
 
 Repeat step 2 for all the Products you'd like to be linked together.
 
@@ -121,6 +119,7 @@ If you'd like to use a separate Layout to output your products, add this include
 {% endraw %}
 
 
+
 {%- include 'ecommerce/products'
     layout: 'custom_layout'
     per_page: '20'
@@ -142,7 +141,6 @@ Now we know which Products are related to one another, we can output them. For t
 To do this we'll use a Collection (read more here: [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial)) which will be filtered by the parameter "category\_id", meaning only items within the specified category are included (please follow step 1 for instructions on how we can do this dynamically).
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products'
     layout: 'default'
     per_page: '20'
@@ -155,7 +153,7 @@ To do this we'll use a Collection (read more here: [Collections](https://develop
 -%}
 
 
-{% endraw %}
+
 ```
 
 If you're in a Detail layout, make sure to include the `type: 'list'` parameter. Also, ensure `collection: 'true'` is added to the include, along with your Category ID.
@@ -261,5 +259,3 @@ As above, you'll need to include a JavaScript function to make the dropdown func
 ## The Solution
 
 Alright, that's everything we need to link our Products. Here is a screenshot of the solution:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/237300815/a8e99e81b9971fe19e0e6823/image.png) -->

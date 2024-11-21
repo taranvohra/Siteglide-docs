@@ -27,6 +27,7 @@ In any Page, output your form and select the custom layout with the layout param
 {% endraw %}
 
 
+
 ```
 
 For Basic Payment forms:
@@ -37,6 +38,7 @@ For Basic Payment forms:
 {% endraw %}
 
 
+
 ```
 
 ## Step 3
@@ -44,7 +46,6 @@ For Basic Payment forms:
 For Checkout Forms, use the ecommerce/checkout\_standard include to output multiple payment gateways inside your checkout form Liquid layout file.
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/checkout_standard'
   id: '123',
   default: 'true'
@@ -53,13 +54,12 @@ For Checkout Forms, use the ecommerce/checkout\_standard include to output multi
   id: '456',
   default: 'false'
 -%}
-{% endraw %}
+
 ```
 
 For Basic Payment Forms:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/basic_payment'
   id: '123',
   default: 'true'
@@ -68,7 +68,8 @@ For Basic Payment Forms:
   id: '456',
   default: 'false'
 -%}
-{% endraw %}
+
+
 ```
 
 ## Step 4
@@ -87,27 +88,16 @@ Pass in the name of the Payment Gateway you wish to switch to as the only argume
 
 This can be applied as a callback to any JS event you like, such as clicking a radio button, or opening an accordion. e.g.
 
-{% tabs %}
-{% tab title="Liquid" %}
-```liquid
-{% raw %}
 
-<fieldset>
-  <legend>Select a payment gateway:</legend>
-  <div>
-    <input type="radio" id="123" name="paymentGateway" value="123" checked />
-    <label for="123">Stripe</label>
-  </div>
-  <div>
-    <input type="radio" id="456" name="paymentGateway" value="456" />
-    <label for="456">PayPal</label>
-  </div>
-</fieldset>
-{% endraw %}
-```
-{% endtab %}
 
-{% tab title="JavaScript" %}
+\`\`\`liquidSelect a payment gateway: Stripe PayPal
+
+````
+
+</div>
+
+<div data-gb-custom-block data-tag="tab" data-title='JavaScript'>
+
 ```javascript
 
 const paymentGatewayCheckboxes = document.querySelectorAll('[name="paymentGateway"]');
@@ -117,8 +107,6 @@ paymentGatewayCheckboxes.forEach(function(item) {
     s_e_set_payment_gateway(radio.value);
   });
 })
-```
-{% endtab %}
-{% endtabs %}
+````
 
 If the JS function is not called, the default payment gateway from the multiple available gteways will be used.

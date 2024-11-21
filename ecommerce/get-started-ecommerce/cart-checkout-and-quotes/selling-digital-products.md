@@ -26,19 +26,13 @@ To ensure that the Media Download can only be accessed after the Product has bee
 
 Firstly, let's create our downloadable Product, to do this we'll create a new Media Download Item, you'll need to repeat this step for every product that can be downloaded. We'll be using an image for this example, but you can use any file type that the Media Download Module supports:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/281987312/276f86517ceb3702cacb4cf4/image.png) -->
-
 ## Add Datasource Field to your Products
 
 Now we've added our downloadable product, let's Datasource it to the Product it is related to, we'll need to add a new Custom Field to our Products- to do this go to: eCommerce > Products > Edit Module Structure.
 
 Then add a new field and set the type to 'Datasource (Single item)':
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/281989245/440105b971b7e66ded883fcf/image.png) -->
-
 Finally, let's link each of our Media Download items to the Products they're associated with, to do this head to eCommerce > Products > Your product > Custom Fields. You should see a dropdown containing all the Media Download items, select the one that matches your Product:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/281991245/b8d68e41e393253eb192b2d2/image.png) -->
 
 ## Output the Media Download link within your User Orders layout
 
@@ -61,6 +55,7 @@ We can output the Products data like so
 
 
 
+
 ```
 
 However, we just need the Media Download Item ID which can be outputted like so, if you have other Custom Fields you'll need to replace 'product\_1' with the field name
@@ -73,6 +68,7 @@ However, we just need the Media Download Item ID which can be outputted like so,
 
 {%- endfor -%}
 {% endraw %}
+
 
 
 
@@ -97,19 +93,19 @@ If there are multiple Products in one Order, we'll need to create an array of th
 {%- endfor -%}
 {% endraw %}
 
+
 ```
 
 So no we've assigned all of our Media Download IDs to '`media_download_id`'- we'll use this within the 'item\_ids' parameter on our Media Download Layout include:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '17'
     layout: 'my-layout'
     item_ids: media_download_id 
 -%}
 
-{% endraw %}
+
 ```
 
 Now, locate your Media Download layouts- these can be found under: Code Editor > Modules > Module\_17 (Media Downloads).
@@ -119,11 +115,9 @@ From here you can either use an existing layout or copy the default layout struc
 We'll only need to include the Media Download Items within the 'wrapper' file, here's how this looks:
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_media_downloads/get/get_items'
     item_layout: 'item' 
 -%}
-{% endraw %}
 ```
 
 Then within the 'item' layout, we'll add an anchor to allow the items to be downloaded- we'll also output the name of the Media Download Item as the anchor's text: `<p><a href="{{this['url']}}">{{this['name']}}</a></p>`

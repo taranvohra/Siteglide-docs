@@ -21,8 +21,6 @@ The most common place where Detail Views are displayed is on the automatically g
 
 Heading to ECOMMERCE > Settings will allow you to select the Subscriptions tab.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/223781939/f343dc96b5b8ec49d55ea67c/image.png) -->
-
 Here you can set up Detail Pages by:
 
 * Choosing the slug which will begin the URL to Subscription Detail Pages
@@ -34,13 +32,12 @@ Here you can set up Detail Pages by:
 You can use the `type` parameter to output a Detail Layout in most Liquid files:
 
 ```liquid
-{% raw %}
 {% include "module", id: "14/subscription"
    item_ids: subscription_id
    type: "detail", layout: 'my_layout'
 %}
 
-{% endraw %}
+
 ```
 
 Parameters:
@@ -59,8 +56,6 @@ To output the Layout here, you need to add a Detail Layout name to the Liquid as
 ## File Structure
 
 Subscription Layouts can be found at the path: `layouts/modules/module_14/subscription` Within this folder, you can create a folder for each Layout. Each Layout folder can contain a further "detail" folder containing the `wrapper` and `item` files it needs.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/223783980/3767a4b64dc4f4a28e327a37/image.png) -->
 
 ## Developing the Detail Layout
 
@@ -88,6 +83,7 @@ We provide an example of some logic you can use to explain to logged in Users wh
 				
 {%- endif -%}
 {% endraw %}
+
 
 
 
@@ -126,12 +122,11 @@ The `wrapper.liquid` file could be used to add any HTML structure you may requir
 You must include the following Liquid, which will output the `item.liquid` file for the Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
 
-{% endraw %}
+
 ```
 
 #### Step 5 - Available Fields
@@ -169,6 +164,7 @@ To determine this, you can use Liquid Logic to hide an entire block of code in w
   or will be hidden if none is available.{% endcomment %}
 {% endif %}
 {% endraw %}
+
 
 
 
@@ -211,15 +207,15 @@ You can use logic to display a different price to Users in this situation.
 
 
 
+
 ```
 
 Or alternatively, you can use the default filter:
 
 ```liquid
-{% raw %}
 <p>{{subscription_order['Plan Chargeable Price'] | default: this.price.price_charge}}</p>
 
-{% endraw %}
+
 ```
 
 _Tip: Working with the interval_ As you can see above, there are multiple fields involved in storing the interval of charges, which you can use to display the interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:

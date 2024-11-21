@@ -15,7 +15,6 @@ This Article will show:
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Blog Posts, this can be added to the include for Blog List like so:
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '3'
     layout: 'default'
@@ -26,7 +25,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     use_adv_search: 'true' 
 -%}
 
-{% endraw %}
+
 ```
 
 ## To Include this Option
@@ -34,13 +33,12 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
 Include the following liquid to dynamically get a list of available Blog Categories for the User to select:
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_system/get/get_categories'
     categories_layout: 'default/categories'
     categories_layout_type: 'sidebar' 
 -%}
 
-{% endraw %}
+
 ```
 
 The parameters refers to layout which will be used to display the Category links. \<code>categories\_layout\</code>should be the root layout folder where your blog layout is contained.
@@ -52,28 +50,28 @@ The `category_layout_type` is the sub-folder where the wrapper and item files ar
 ### wrapper.liquid
 
 ```liquid
-{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Categories</h2>
     <ul>
-      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+      {% raw %}
+{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+{% endraw %}
     </ul>
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 ### item.liquid
 
 ```liquid
-{% raw %}
 <li>
     <a href="{{context.location.pathname}}?category={{this.id}}">{{this.properties.name}}</a>
 </li>
 
-{% endraw %}
+
 ```
 
 The link should be the slug of your Blog List view followed by `?category={{this.id}}`. Siteglide will be able to read the Category id from the URL and populate the List View on refresh. In this example we use the context object to automatically get the slug of the current Blog Page.

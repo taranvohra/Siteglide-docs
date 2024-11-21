@@ -53,10 +53,10 @@ For the next steps (3 - 6), we'll be navigating to Code Editor to develop custom
 Inside the item.liquid file, we can access the Custom Field by name:
 
 ```liquid
-{% raw %}
 <h2>Related Products</h2><br><br>
 {{this['Related products']}}<br><br>
-{% endraw %}
+
+
 ```
 
 {% hint style="info" %}
@@ -78,6 +78,7 @@ We can change the type by assigning a new variable:
 
 
 
+
 ```
 
 ### Step 5) Add a Product List Layout which Datasources to the Related Products
@@ -85,7 +86,6 @@ We can change the type by assigning a new variable:
 Next, we need to output a Product List, nested within our existing Product Detail Layout.
 
 ```liquid
-{% raw %}
 <h2>Related Products</h2>
 
 
@@ -100,7 +100,7 @@ Next, we need to output a Product List, nested within our existing Product Detai
     item_ids: related_products_str
 -%} 
 
-{% endraw %}
+
 ```
 
 _**Item Ids Parameter**_

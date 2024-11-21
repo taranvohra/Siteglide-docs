@@ -178,9 +178,9 @@ The following example is from a module creator's layout\_config file.
 Perhaps the most complex and important part of the configuration to pay attention to is the files array. When SiteBuilder installs a layout, it takes a copy of the layout source code you've stored in the private folder and adds those copied files to the marketplace\_builder folder where they can be freely read and edited by the module user. It is therefore important to note the difference between the src property which points at the files you add and the dest property that points to where you wish the files to be installed.
 
 ```liquid
-{% raw %}
 
 { 
+{% raw %}
 {% comment %}Object. Required.{% endcomment %}
   "module_<module_vanity_id>": { {% comment %}Object. Required.{% endcomment %}
     "1": { {% comment %}Object (key matches the numbered folder containing the layout files). Required.{% endcomment %}
@@ -221,6 +221,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
         {
           "src": "testimonials/list/wrapper", {% comment %}Note this is an example of an embedded layout. We're still inside the same layout folder as the other files, but add another folder to keep the embedded layout files distinct and organised.{% endcomment %}
           "dest": "layouts/modules/module_8" {% comment %}Note this is an example of an embedded layout. The destination folder is actually in a completely different module folder. However, the name of the layout will remain the same. E.g. If the module user installs a layout and calls it "Gallery 2", both the Gallery Layout and the embedded Testimonials layout will have the folder names "module_<module_vanity_id>/gallery-2" and "module_8/gallery-2" respectively. See the embedded layouts section for more tips.{% endcomment %}
+{% endraw %}
         },
         {
           "src": "testimonials/list/item",
@@ -232,7 +233,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
   }
 }
 
-{% endraw %}
+
 ```
 
 #### Step 4 - Adding the Content to Layout Source Files <a href="#step-4-adding-the-content-to-layout-source-files" id="step-4-adding-the-content-to-layout-source-files"></a>
@@ -263,6 +264,7 @@ The recommendation is that you use the following code to position custom paginat
   {%- include 'modules/siteglide_system/get/get_pagination', pagination_layout: _pagination_layout -%}
 {%- endif -%}
 {% endraw %}
+
 ```
 
 To use it, the module\_user must both set `show_pagination: 'false'` on the include tag to remove the default pagination and then set a custom `pagination_layout`.
@@ -286,6 +288,7 @@ Here is an example of settings being implemented in a SiteBuilder Layout:
 {% assign login_url = "/login" %}
 {% comment %} ---End Settings--- {% endcomment %}
 {% endraw %}
+
 ```
 
 Notes:
@@ -310,6 +313,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
 {% comment %}---Settings---{% endcomment %}
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
+{% endraw %}
 <div id="slider_{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 <div id="toggle_{{sitebuilder_uniq_component_id}}" class="js-toggle-button"></div>
 <script>
@@ -319,7 +323,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
     // Run JS for initialising your components here.
   })();
 </script>
-{% endraw %}
+
 ```
 
 Instead of including JS within the layout to capture these variables, it is possible to store the ID in data-attributes and target all the elements at once. This allows your JS to run asynchronously for better performance.
@@ -331,8 +335,9 @@ _Liquid_
 {% comment %}---Settings---{% endcomment %}
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
-<div data-slider="{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 {% endraw %}
+<div data-slider="{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
+
 ```
 
 _JS_
@@ -377,6 +382,7 @@ In this example, the layout\_config files array contains a file with the dest: `
 {% capture testimonials_layout -%}{{layout}}/testimonials{%- endcapture %}
 {% include 'module', id: '8', layout: testimonials_layout, type: 'list', item_ids: item_ids, _top_model: nil %}
 {% endraw %}
+
 ```
 
 _Resetting `_top_model` for consistent layout paths_
@@ -393,6 +399,7 @@ If you're nesting layouts in more than two layers, you may experience a difficul
 {% raw %}
 {% assign original_layout = _layout %}
 {% endraw %}
+
 ```
 
 _Datasources_

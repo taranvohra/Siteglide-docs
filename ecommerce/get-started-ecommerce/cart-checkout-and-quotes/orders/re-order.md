@@ -51,6 +51,7 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
 
 
 
+
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
@@ -64,6 +65,7 @@ The button will only work if the User is logged in, so you may wish to add the f
 
 
 
+
 ```
 
 ### The Button Layout
@@ -73,7 +75,6 @@ Adding the button will load a small button layout. You can find the default Layo
 \*\*\*Adding the function \*\*\*The styling of the button is completely up to you. To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
 
 ```liquid
-{% raw %}
 onclick="s_e_reorder({ order_id: '{{order_id}}'
                         token: '{{token}}'
                         cart_url: '/cart'
@@ -81,7 +82,7 @@ onclick="s_e_reorder({ order_id: '{{order_id}}'
                         success_cb: success})"
 
 
-{% endraw %}
+
 ```
 
 The function takes a single argument containing an options object. The available arguments are as follows:

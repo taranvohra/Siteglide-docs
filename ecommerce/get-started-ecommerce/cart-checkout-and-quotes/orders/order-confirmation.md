@@ -36,8 +36,6 @@ You can use an existing Layout, or create a new one in this File Structure: `lay
 
 * An `item.liquid` and a `wrapper.liquid` file
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/207046919/6f3478468c19f5938db25079/image.png) -->
-
 ### Developing the Layout
 
 Inside your email notification file, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here:\*\* \*\*[Dynamic Content in Workflow and Autoresponder Emails](https://developers.siteglide.com/dynamic-content-in-workflow-and-autoresponder-emails) You'll still have access to these fields throughout the Order Details Layouts.
@@ -49,12 +47,11 @@ Inside your `order_details` layout you'll find an `item.liquid` and `wrapper.liq
 You can use the `wrapper.liquid` file to build the main HTML structure of your Layout. When you're ready to include the Order Details, use the following Liquid to include the `item.liquid` file:
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_order_details'
     item_layout: 'item' 
 -%}
 
-{% endraw %}
+
 ```
 
 #### Item
@@ -73,6 +70,7 @@ _Looping over Products_ This loop will find any Products in the Order and loop o
     <!-- Output {{product}} -->
 {% endfor %}
 {% endraw %}
+
 
 
 
@@ -97,6 +95,7 @@ _Looping over Products, then looping over Attributes_
     {% endfor %}
 {% endfor %}
 {% endraw %}
+
 
 
 

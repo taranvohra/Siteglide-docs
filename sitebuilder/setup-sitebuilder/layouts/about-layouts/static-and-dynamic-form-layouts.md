@@ -118,6 +118,7 @@ A dynamic wrapper does not include components directly; instead it includes this
 
 
 
+
 ```
 
 This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide \`
@@ -141,9 +142,8 @@ The available field groups are:
 This contains all Siteglide and all Custom Fields in the Form:
 
 ```liquid
-{% raw %}
 {{context.exports.sitegurus_ui.form_fields | html_safe: raw_text: true }}
-{% endraw %}
+
 ```
 
 **Hidden Fields**
@@ -151,9 +151,8 @@ This contains all Siteglide and all Custom Fields in the Form:
 This contains hidden fields needed to run the form:
 
 ```liquid
-{% raw %}
 {{context.exports.sitegurus_ui.form_hidden | html_safe: raw_text: true }}
-{% endraw %}
+
 ```
 
 **Address Fields**
@@ -173,6 +172,7 @@ This is an array which contains all CRM addresses added to the form, if any are 
 
 
 
+
 ```
 
 The code here will loop over them all and output them all, but you can edit this if you want to display Billing and Shipping addresses separately.
@@ -182,9 +182,8 @@ The code here will loop over them all and output them all, but you can edit this
 This contains the hCaptcha or reCaptcha, if present:
 
 ```liquid
-{% raw %}
 {{context.exports.sitegurus_ui.form_recaptcha | html_safe: raw_text: true }}
-{% endraw %}
+
 ```
 
 Note that Siteglide recommends using hCaptcha with forms. This file however, continues to be named reCaptcha for backwards-compatibility reasons.
@@ -194,9 +193,8 @@ Note that Siteglide recommends using hCaptcha with forms. This file however, con
 This contains the payment gateway and payment fields, if present:
 
 ```liquid
-{% raw %}
 {{context.exports.sitegurus_ui.form_payment | html_safe: raw_text: true }}
-{% endraw %}
+
 ```
 
 #### The `disable_fields` Parameter <a href="#the-disable_fields-parameter" id="the-disable_fields-parameter"></a>
@@ -214,17 +212,15 @@ To do this, first add the fields' names to a comma separated list in the `defer_
 Then, you can output the individual field where you would like it using the following code:
 
 ```liquid
-{% raw %}
 {{context.exports.module_86.form_fields_deferred | detect: name: 'Example Field Name' | dig: 'html' | html_safe: raw_text: true }}
-{% endraw %}
+
 ```
 
 In fact, the full range of deferred fields are available as an array here:
 
 ```liquid
-{% raw %}
 {{context.exports.module_86.form_fields_deferred}}
-{% endraw %}
+
 ```
 
 Developers can use this to loop over the fields if they wish. The additional filters in the example above help to find the item in the array with the field name you need, access the HTML needed to output the field and finally bypass platformOS's sanitization so that the HTML is output as intended (see `Form Layout Sanitization` section for details).
@@ -246,6 +242,7 @@ For both parameters, the default is `'false'` and turning on the feature is `'tr
 
 
 
+
 ```
 
 If the user is not logged in, the fields will show as normal, as they are awaiting user input.
@@ -253,20 +250,25 @@ If the user is not logged in, the fields will show as normal, as they are awaiti
 Important note: this functionality relies on the `name_field` and `email` components to contain code which will hide these fields, because the fields need to output, but hidden. If your component does not contain this code, you can add the example from below:
 
 ```liquid
-{% raw %}
-<div class="{% if context.current_user.id != blank and hide_email_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}" >
+<div class="{% raw %}
+{% if context.current_user.id != blank and hide_email_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
+{% endraw %}" >
   <!-- Add rest of email component here. -->
 </div>
-{% endraw %}
+
 ```
 
 ```liquid
-{% raw %}
-<div class="{% if context.current_user.id != blank and hide_name_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
-{% endraw %}">
+<div class="{% raw %}
+{% if context.current_user.id != blank and hide_name_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
+{% endraw %}
+
+
+">
   <!-- Add rest of name_field component here. -->
 </div>
-{% endraw %}
+
+</div>
 ```
 
 #### Parameters for editing email and password <a href="#parameters-for-editing-email-and-password" id="parameters-for-editing-email-and-password"></a>
@@ -309,6 +311,7 @@ Prior to v. 4.6.3 this was already possible in hidden fields, so this parameter 
 {% raw %}
 {% include 'form_layout_fields', custom_form_redirect: context.location.href %}
 {% endraw %}
+
 ```
 
 ### Components <a href="#components" id="components"></a>
@@ -316,14 +319,12 @@ Prior to v. 4.6.3 this was already possible in hidden fields, so this parameter 
 Components are files within the layout which are re-usable. This helps speed up development and achieve consistency as a string component need only have classes added once to re-style all `<input type="text">` elements in the form. Components are used by both Static and Dynamic forms of each layout. Below is an example `string.liquid` component (the classList for the `<input>` has been simplified for the sake of readability!):
 
 ```liquid
-{% raw %}
 <div class="col-span-6 sm:col-span-3">
   <div class="">
     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="{{name}}">{{label}}</label>
     <input {{attributes}} {{validation}} id="{{name}}" name="{{name}}" class="..." type="text" value="{{value}}">
   </div>
 </div>
-{% endraw %}
 ```
 
 There is a component for each Siteglide field type that is available on standard forms. There are also components for additional features such as Secure Zones or eCommerce which can be used if required. Most layouts will include these extra fields as an option even if the layout design might not appear to need it, in case these are required in future. Once installed, the layout is yours and you can delete any components which are not needed.

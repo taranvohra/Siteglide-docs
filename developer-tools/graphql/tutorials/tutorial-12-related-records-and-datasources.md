@@ -61,7 +61,7 @@ query blogsWithAuthors {
 
 Since these two modules - the Blog and Authors Module - are both created by Siteglide, they already store the information needed to join them inside their properties. We only need to look at the existing properties in detail to get the information we need to build our query.
 
-There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](../../../Siteglide%20Developer%20Documentation/Introducing%20Siteglide%20CLI.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations e.g. 'marketplace\_builder/form\_configurations/forms/form_1.liquid' or 'marketplace\_builder/form\_configurations/modules/module_3.liquid':
+There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](../../../Siteglide%20Developer%20Documentation/Introducing%20Siteglide%20CLI.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations e.g. 'marketplace\_builder/form\_configurations/forms/form\_1.liquid' or 'marketplace\_builder/form\_configurations/modules/module\_3.liquid':
 
 For this exercise, we'd be looking at `module_3` for blog and `module_6` for authors.
 
@@ -254,35 +254,36 @@ That's the query itself done!
 ### Step 9 - Working with the Results
 
 The results in JSON may look like the below (we've minimised Blog properties which aren't useful to the example):
- ```graphql
+
+```graphql
 { 
-  "data": {
-    "records": {
-      "results": [
-        {
-          "id": "97",
-          "properties": {...}, # note - this record 97 did NOT have a match with an author. Maybe the Author has been deleted or maybe the ID has not been stored in the field we're joining on.
-          "author": null 
-        },
-        {
-          "id": "8",
-          "properties": {...}, # note this blog item with ID of 8 DID match with an author- the author's fields we asked for are below!
-          "author": { 
-            "name": "Jese Leos",
-            "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/jese-leos.png"
-          }
-        },
-        {
-          "id": "10",
-          "properties": {...},
-          "author": {
-            "name": "Karen Nelson",
-            "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/karen-nelson.png"
-          }
-        }
-      ]
-    }
-  }
+ "data": {
+   "records": {
+     "results": [
+       {
+         "id": "97",
+         "properties": {...}, # note - this record 97 did NOT have a match with an author. Maybe the Author has been deleted or maybe the ID has not been stored in the field we're joining on.
+         "author": null 
+       },
+       {
+         "id": "8",
+         "properties": {...}, # note this blog item with ID of 8 DID match with an author- the author's fields we asked for are below!
+         "author": { 
+           "name": "Jese Leos",
+           "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/jese-leos.png"
+         }
+       },
+       {
+         "id": "10",
+         "properties": {...},
+         "author": {
+           "name": "Karen Nelson",
+           "image": "https://cdn.staging.oregon.platform-os.com/instances/10093/assets/karen-nelson.png"
+         }
+       }
+     ]
+   }
+ }
 }
 ```
 
@@ -299,6 +300,7 @@ As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot 
   </div>
 {% endfor %}
 {% endraw %}
+
 
 
 

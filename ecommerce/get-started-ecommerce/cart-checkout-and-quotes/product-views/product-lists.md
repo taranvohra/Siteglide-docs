@@ -26,7 +26,6 @@ It will cover how to:
 ## Add a List of Products to a Site
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products'
     layout: "products"
     category_ids: current_category_id
@@ -34,7 +33,8 @@ It will cover how to:
     show_pagination: 'true'
 -%}
 
-{% endraw %}
+
+
 ```
 
 ### Parameters:
@@ -75,7 +75,6 @@ A list view for products is made up of two parts.
 #### wrapper.liquid
 
 ```liquid
-{% raw %}
 <div class="row">
   <div class="card-deck"> 
     {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products'
@@ -84,7 +83,7 @@ A list view for products is made up of two parts.
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 The wrapper contains the code for the main part of the section you are building. For example, the section title or some margin or padding that separates your list from other sections.
@@ -104,7 +103,6 @@ The item\_layout parameter should be the name of a liquid file in the same folde
 item.liquid -- list view example
 
 ```liquid
-{% raw %}
 <div class="card">
   <div class="card-img">
     <a href="/{{this.module_slug}}/{{this.slug}}">
@@ -119,7 +117,7 @@ item.liquid -- list view example
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 This file contains the code for each iteration of the loop that displays the Products. You should expect this code to be rendered multiple times; once for each product displayed in the list. (Hint: Try not to run any GraphQL calls inside a loop or item.liquid file, as they would have an impact on performance. It is better to run these inside the wrapper.)
@@ -137,7 +135,6 @@ In order to help the JavaScript understand which Quantity and Attribute Control 
 In this example, the highest level element in the file is a `<div>` element which is wrapped around the rest of the content in the file, but yours could be any element. The important thing is that this element is wrapped around any controls in the File.
 
 ```liquid
-{% raw %}
 <div class="card" data-product-group>
   <div class="card-img">
     <a href="/{{this.module_slug}}/{{this.slug}}">
@@ -153,7 +150,8 @@ In this example, the highest level element in the file is a `<div>` element whic
 </div>
 
 
-{% endraw %}
+
+
 ```
 
 For old sites which do upgrade the eCommerce Module, but do not add this data-attribute, we'll add a console log in dev-tools to act as a reminder, but any functionality which worked previously will continue to work.
@@ -173,26 +171,24 @@ For more on developing the Add to Cart Button:
 _**The Quantity Control**_
 
 ```liquid
-{% raw %}
 <input type="number" 
        min="1" 
        max="{{this.inventory.quantity}}" 
        data-quantity-control id="quantity" />  
 
-{% endraw %}
+
 ```
 
 This is mandatory, but can be hidden and hard-coded to have a value of 1, if you want to simplify the UI:
 
 ```liquid
-{% raw %}
 <input readonly hidden type="number" 
        min="1" 
        max="1" 
        value="1"  
        data-quantity-control id="quantity" />
 
-{% endraw %}
+
 ```
 
 _**Attribute Control**_
@@ -202,7 +198,6 @@ As this code can be complex, so please refer to the [Attributes Layout ](https:/
 _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which supports Adding to Cart:
 
 ```liquid
-{% raw %}
 <div class="card" data-product-group>
   <div class="card-img">
     <a href="/{{this['module_slug']}}/{{this['slug']}}" title="">
@@ -214,7 +209,8 @@ _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which s
     </h2>
     <p>{{this.price.currency_symbol}}{{this.price.price_charge_formatted}}</p>
   </div>
-  {% include 'ecommerce/cart_add' -%}
+  {% raw %}
+{% include 'ecommerce/cart_add' -%}
   <label for="quantity">Quantity</label>
   <input type="number" min="1" value="1" data-quantity-control id="quantity" />
   {% comment %}-----The following liquid code block loops over all attributes on this Product----{% endcomment %}
@@ -230,8 +226,8 @@ _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which s
           <i class="fas fa-tag"></i>{{context.exports.categories.items[category].name}}
         </a>
       {% endfor %}
+{% endraw %}
     </p>
   </div>
 </div>  
-{% endraw %}
 ```

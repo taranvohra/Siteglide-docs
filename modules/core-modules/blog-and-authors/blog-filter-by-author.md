@@ -15,7 +15,6 @@ This article explains:
 The "use\_adv\_search" parameter is needed to allow filtering from the URL to apply to your Blog Posts, this can be added to the include for Blog List like so:
 
 ```liquid
-{% raw %}
 {%- include 'module' 
     id: '3'
     layout: 'default'
@@ -26,7 +25,7 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
     use_adv_search: 'true' 
 -%}
 
-{% endraw %}
+
 ```
 
 ## To Include this Option
@@ -34,14 +33,13 @@ The "use\_adv\_search" parameter is needed to allow filtering from the URL to ap
 Include the following liquid to dynamically get a list of available Blog Authors for the User to select.
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_authors/get/get_authors'
     author_layout: 'default/author'
     author_layout_type: 'sidebar'
     author_field: 'module_field_3_4' 
 -%}
 
-{% endraw %}
+
 ```
 
 The `author_field` will be `module_field_3_4` if you are using Siteglide's Authors Module. The layouts are structured in the same way as Category Layouts in the previous section.
@@ -51,31 +49,33 @@ The `author_field` will be `module_field_3_4` if you are using Siteglide's Autho
 ### wrapper.liquid
 
 ```liquid
-{% raw %}
 <div class="row no-gutters">
   <div class="col-12">
     <h2>Authors</h2>
     <ul>
-      {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+      {% raw %}
+{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+{% endraw %}
     </ul>
   </div>
 </div>
 
-{% endraw %}
+
 ```
 
 ### item.liquid
 
 ```liquid
-{% raw %}
 <a class="authorAnchorSidebar" href="{{context.location.pathname}}?module_field_3_4={{this.id}}&author_name={{this.name | url_encode}}">
+{% raw %}
 {% if this['Image'] -%}
     <img src="{% if this['Image'] contains 'http' -%}{{this['Image']}}{% else -%}{{this['Image'] | asset_url}}{% endif -%}" alt="{{this['Image Alt']}}">
   {% endif -%}
+{% endraw %}
   <li>{{this['name']}}</li>
 </a>
 
-{% endraw %}
+
 ```
 
 To filter the Blog List View, you need a link to the Blog List View slug, followed by `"?module_field_3_4={{this.id}}"`. Siteglide will be able to read the URL and filter the list.
@@ -85,10 +85,9 @@ To filter the Blog List View, you need a link to the Blog List View slug, follow
 To make it easier to give feedback to the User, you can optionally include the Author's name in the url:
 
 ```liquid
-{% raw %}
 <a href="{{context.location.pathname}}?module_field_3_4={{this.id}}&author_name={{this.name | url_encode}}"></a>
 
-{% endraw %}
+
 ```
 
 On the List view, you can then include the following liquid to read the URL and decode the Author name you are currently filtering by:

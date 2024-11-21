@@ -48,6 +48,7 @@ If you wish to display all the Categories on the Site, you can loop over them al
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
 {% endraw %}
+
 ```
 
 If you want to skip any Categories, you can use Liquid if statements and the `continue` tag to do this:
@@ -62,6 +63,8 @@ If you want to skip any Categories, you can use Liquid if statements and the `co
   {{category[1].name}} <!-- Accessing current Category's field e.g. name -->
 {% endfor %}
 {% endraw %}
+
+
 ```
 
 ### Filtering WebApps and Modules
@@ -111,37 +114,41 @@ Category Detail Pages give you additional features including Breadcrumbs, Parent
 
 Output breadcrumb of Categories to the current Category page using the defined layout:
 
-<pre class="language-liquid"><code class="lang-liquid"><strong>{%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
-</strong></code></pre>
+```liquid
+
+
+
+```
 
 ### Parent Category List
 
 Output parent Categories using the defined layout:
 
 ```liquid
-{% raw %}
 {%- include 'category_parent', layout: 'parent' -%
-{% endraw %}
+
 ```
 
 ### Child Category List
 
-Output child Categories using the defined layout:&#x20;
+Output child Categories using the defined layout:
 
 ```liquid
 {% raw %}
 {%- include 'category_children', layout: 'children' -%}
 {% endraw %}
+
 ```
 
 ### Items in this Category
 
-Output all items categorised to the current Category Page using the defined layout:&#x20;
+Output all items categorised to the current Category Page using the defined layout:
 
 ```liquid
 {% raw %}
 {%- include 'category_items', layout: 'items' -%}
 {% endraw %}
+
 ```
 
 Note that this will only output items in this specific Category. To output all items that belong to sub-Categories, then add another parameter of `show_all_sub_items: 'true'`.
@@ -157,14 +164,13 @@ We'll include some examples here of how the `{{this.id}}` variable can be used s
 For example, the following code will output Products on the Category Detail Page, filtered by that Category:
 
 ```liquid
-{% raw %}
 {%- include 'ecommerce/products'
     layout: "my_layout"
     category_ids: this.id
     type: 'list' 
 -%}
 
-{% endraw %}
+
 ```
 
 ### WebApps
@@ -172,7 +178,6 @@ For example, the following code will output Products on the Category Detail Page
 Change the ID to fetch different WebApps.
 
 ```liquid
-{% raw %}
 {%- include 'webapp'
     id: '1'
     layout: "my_layout"
@@ -180,7 +185,7 @@ Change the ID to fetch different WebApps.
     type: 'list' 
 -%}
 
-{% endraw %}
+
 ```
 
 ### Modules
@@ -188,14 +193,13 @@ Change the ID to fetch different WebApps.
 Module 3 refers to the Blog; you can change the ID to fetch different Modules.
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '3'
     layout: "my_layout"
     category_ids: this.id
     type: 'list' 
 -%}
-{% endraw %}
+
 ```
 
 ## WebApp and Module Layouts
@@ -203,9 +207,9 @@ Module 3 refers to the Blog; you can change the ID to fetch different Modules.
 To access the category which belongs to the item currently being outputted in a WebApp layout or a Module layout's item.liquid layout, access the category\_array field in:
 
 ```liquid
-{% raw %}
 {{this.properties.category_array}}
-{% endraw %}
+
+
 ```
 
 See more:

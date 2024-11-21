@@ -45,16 +45,11 @@ query gallery_by_page($page: Int) {
 Notes:
 
 * The most difficult part here might have been working out the type. Here the query expects Page to be an integer. The documentation panel confirms this:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/197815161/3120ec7c1c630f3645da989c/image.png) -->
-
 * From the documentation panel, you can also see "= 1" after the type. This is a default, which means if no variable is passed through, the variable will be given a default value of 1. Not all variables will have defaults.
 * The type here does not have an exclamation mark ! so the query won't deliberately fail if no value is passed in.
 * We set `per_page` to 3
 
 ## Step 2) Sync the Query to the Site using Siteglide-CLI
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/197830041/be89a156810c40342c29058b/image.png) -->
 
 Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site) to refresh these steps.
 
@@ -63,7 +58,6 @@ Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liq
 We gave you these in the tips. You'll have needed to add them on a Page of your choice.
 
 ```liquid
-{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
@@ -71,7 +65,7 @@ We gave you these in the tips. You'll have needed to add them on a Page of your 
 </ul>
 
 
-{% endraw %}
+
 ```
 
 Pressing one of the buttons will redirect us to the same Page, but will be adding a `page` query parameter to the URL. This is the easiest way to pass variables to Liquid- because Liquid runs before the Page loads, and the URL is one of the only available sources of dynamic information at this point.
@@ -105,6 +99,7 @@ c) Let's add the `graphql` tag with the variable parameter.
 
 
 
+
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -119,6 +114,7 @@ We can output the results using the variable name we defined in the `graphql` ta
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
 {% endraw %}
+
 
 
 
@@ -139,7 +135,6 @@ If you're having difficulty with any of these steps still, please don't hesitate
 _Liquid_
 
 ```liquid
-{% raw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
@@ -152,7 +147,7 @@ page: current_page
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
 
-{% endraw %}
+
 ```
 
 _GraphQL_
@@ -194,6 +189,7 @@ page: current_page
 
 
 
+
 ```
 
 However, you won't have access to the user-friendly names for fields in that Layout, because GraphQL will output the raw database IDs for fields.
@@ -201,8 +197,6 @@ However, you won't have access to the user-friendly names for fields in that Lay
 You'll want to target fields in this Layout with syntax like:`{{this.properties.webapp_field_1_2}}`
 
 You can view the database IDs for fields in the Admin using the toggle in the top-right of the screenshot, or you can look at the keys in the JSON results.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/197826607/d1079262249385ba316bfb6a/image.png) -->
 
 ### Step 8) Use the Results of the Query to only show buttons you need. (Optional)
 
@@ -224,13 +218,13 @@ query gallery_by_page($page: Int) {
 You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
-{% raw %}
 <ul>
-  {% for page in (1..my_result.records.total_pages) %}
+  {% raw %}
+{% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}
-</ul>
 {% endraw %}
+</ul>
 ```
 
 ## Next Time

@@ -33,7 +33,6 @@ Setting collection to `'true'` makes the data from the behind-the-scenes query a
 In the following example, we show the difference between a WebApp list which does use Collection and one which doesn't:
 
 ```liquid
-{% raw %}
 <div class="container">
 
   <h2>Here we have an ordinary WebApp</h2>
@@ -60,12 +59,10 @@ In the following example, we show the difference between a WebApp list which doe
   {{context.exports.webapp_1.data | json}}
   
 </div>
-{% endraw %}
+
 ```
 
 This outputs:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/170957349/28a44da8e57c6c597c0fa956/image.png) -->
 
 To break it down further, setting collection to `true` exports the data to `{{context.exports}}` Under that, you can access it by the id of the WebApp in the original `include` tag. In this example, it's `1` so we can access `{{context.exports.webapp_1.data | json}}`.
 
@@ -86,7 +83,6 @@ You could use the \`
 Alternatively, you could include the webapp just once as a collection, then use Liquid to display the items you want in the way you want:
 
 ```liquid
-{% raw %}
 <div class="container">
   {%- include 'webapp'
       id: '1'
@@ -96,19 +92,19 @@ Alternatively, you could include the webapp just once as a collection, then use 
       collection: 'true' 
   -%}
   <h2>Featured Item</h2>
-  {% assign this = context.exports.webapp_1.data.result.items[0] %}
+  {% raw %}
+{% assign this = context.exports.webapp_1.data.result.items[0] %}
   {{this.Title}}
   <h2>Other Items</h2>
   {% for this in context.exports.webapp_1.data.result.items %}
     {{this.Title}}
   {% endfor %}
-</div>
 {% endraw %}
+</div>
+
 ```
 
 This outputs:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/170961170/0dbe4c889cb38d1ea6abd650/image.png) -->
 
 Great! Only one query needed behind the scenes and we've nearly met the objective, but there's one problem. The item "A Special Guest Appearance" has been included twice!
 
@@ -117,7 +113,6 @@ Great! Only one query needed behind the scenes and we've nearly met the objectiv
 We can use the `offset` parameter on our loop tag to start the loop at a different index. Let's skip the first index when we loop, as this item has already been displayed.
 
 ```liquid
-{% raw %}
 <div class="container">
 
   {%- include 'webapp'
@@ -141,11 +136,12 @@ We can use the `offset` parameter on our loop tag to start the loop at a differe
     {{this.Title}}
   {% endfor %}
 {% endraw %}
+
+
   
 </div>
 
-
-{% endraw %}
+</div>
 ```
 
 You can do a lot with loops. Offset is just one of your options. Head to the pOS documentation to learn more about loops in Liquid: [https://documentation.platformos.com/api-reference/liquid/loops](https://documentation.platformos.com/api-reference/liquid/loops)
@@ -154,12 +150,8 @@ You can do a lot with loops. Offset is just one of your options. Head to the pOS
 
 Hang on, wasn't the point of Collections to avoid Layouts? Not quite! The idea was to give you control over the loop- layouts are still possible. I can still include my `portfolio_2` layout, but I need to work out its path from SITE MANAGER / Code Editor in Admin.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/170964104/c1f3d4727c38bf6864313c84/image.png) -->
-
 I can now include the Layout at this Path: \`
 
 \`
 
 The Layout is expecting an object called `this` containing the data, but as in the example above we already assigned variables called `this` containing the right data, the Layout works without further modification:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/170964628/57c17615b319870fae403c96/image.png) -->

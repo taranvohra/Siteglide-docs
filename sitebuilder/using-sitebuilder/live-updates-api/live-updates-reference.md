@@ -33,15 +33,17 @@ In order to make the process of dynamically modifying the output simpler, we are
 
 
 
+
 ```
 
 ...and others via URL e.g. `page`:
 
 ```liquid
-{% raw %}
 <!-- URL: /webapp_1?page=2 -->
+{% raw %}
 {% include 'webapp', id: '1', layout: 'default' %}
 {% endraw %}
+
 ```
 
 ...when using the Live Updates API, you can set any parameter via our URL parameters alone, giving you direct and consistent control.
@@ -76,7 +78,6 @@ Any HTML Form elements with a name attribute (including hidden inputs) inside th
 For example, the following markup can be used to add the parameters `&per_page=20` to the request URL, changing that parameter in the endpoint Liquid tag and live-updating the content with the parameter applied. The name attribute provides the parameter key and the value property provides the value:
 
 ```liquid
-{% raw %}
 <form sg-live-update-controls="results_per_page">
   <select name="per_page">
     <option value="10">10</option>
@@ -84,7 +85,7 @@ For example, the following markup can be used to add the parameters `&per_page=2
     <option value="50">50</option>
   </select>
 </form>
-{% endraw %}
+
 ```
 
 Using the data-attributes and our automatic event listeners allows the user to modify multiple parameters at the same time. If you have filters for both category and colour, when the category filter changes, it will trigger a live-update of the content, but both the current values of the category and the colour inputs will be included in the request. Once the color filter is changed, it will in turn also include the category filter's current value in the request.
@@ -102,9 +103,8 @@ One common use-case for these is to use as "default" settings that will be neede
 _Markup_
 
 ```liquid
-{% raw %}
 <button data-sg-live-update-control-params="/blog?range_gte={{month.start}}&range_lt={{month.end}}&range_type=month" data-sg-live-update-control-group="month">{{month.start | date: "%b" }}</button>
-{% endraw %}
+
 ```
 
 _What Problems do our custom toggle buttons solve?_
@@ -137,14 +137,13 @@ At the time of writing, the newest version of Tailwind supports the variant `ari
 If using Flowbite, you can place a toggle component inside your button and modify it to use `group-aria-pressed:`; it can then show the toggled state of the parent button very clearly, using CSS only.
 
 ```liquid
-{% raw %}
 <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 group" aria-pressed="true">
   <span class="mr-2">{{month.start | date: "%B" }}</span>
   <div class="relative inline-flex items-center cursor-pointer">
     <div class="w-11 h-6 bg-gray-200 group-focus:outline-none group-focus:ring-4 group-focus:ring-blue-300 dark:group-focus:ring-blue-800 rounded-full dark:bg-gray-700 group-aria-pressed:after:translate-x-full group-aria-pressed:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 group-aria-pressed:bg-blue-600"></div>
   </div>
 </button>
-{% endraw %}
+
 ```
 
 The special group `data-sg-live-update-control-group="page"` behaves uniquely, as the page will always reset to "1" when another change is made to the parameters elsewhere. For example, if you are currently on page 2, but a filter change means there is now only one result, staying on page 2 would mean the result was hidden- the special group behaviour avoids this problem. If there is no available page 1 button, all page buttons will be unpressed.
@@ -156,7 +155,6 @@ Controls to handle the sorting of module or webapp data require a slightly diffe
 We've therefore provided specific markup for a sort button.
 
 ```liquid
-{% raw %}
 <div>
   Weighting
   <button data-sg-live-update-sort-order="unsorted" data-sg-live-update-sort-type="properties.weighting" type="button" class="ml-1">
@@ -165,7 +163,7 @@ We've therefore provided specific markup for a sort button.
     </svg>
   </button>
 </div>
-{% endraw %}
+
 ```
 
 Markup rules:
@@ -231,14 +229,12 @@ instance.changeStateTrailingDebounce(undefined,false,{
 ```
 
 ```liquid
-{% raw %}
 <div data-sg-live-update-component="a">
   //Will re-render this time
 </div>
 <div data-sg-live-update-component="b">
   //Will not re-render this time
 </div>
-{% endraw %}
 ```
 
 ***

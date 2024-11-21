@@ -144,8 +144,6 @@ A variable's type is really important and an error will be thrown if you use the
 
 We can use the error message to find the type we need- in this case it's `[String!]` not `String`. This indicates that an array of Strings is expected, which makes sense because "value\_in" is for filtering array fields. You can also check in the documentation panel:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/192692496/e316ecda9146088bebaa92e7/image.png) -->
-
 We'll fix this in our query:
 
 ```graphql
@@ -193,6 +191,7 @@ If you require any other conversions, please request them on Intercom and we'll 
 
 
 
+
 ```
 
 _String to Float_
@@ -205,6 +204,7 @@ _String to Float_
 
 
 
+
 ```
 
 _String to \[String]_
@@ -214,6 +214,7 @@ _String to \[String]_
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
 {% endraw %}
+
 
 
 
@@ -233,6 +234,7 @@ _String to Boolean_
 
 
 
+
 ```
 
 _Boolean to String_
@@ -242,6 +244,7 @@ _Boolean to String_
 {% assign original_boolean = true %}
 {% assign new_string = original_boolean | downcase %}
 {% endraw %}
+
 
 
 
@@ -281,6 +284,7 @@ _Literal JSON object to HASH object_ (Needed for advanced variables only- like p
 
 
 
+
 ```
 
 ## Passing in Variables using the Sandbox (Testing)
@@ -288,8 +292,6 @@ _Literal JSON object to HASH object_ (Needed for advanced variables only- like p
 You can test by entering values in JSON format in the panel in the bottom left. The panel may be hidden, in which case you'll need to click and drag it up.
 
 Firstly, open a new JSON object:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/192693848/483dd48261816ba9ae39177b/image.png) -->
 
 Next, define the key of your property:
 
@@ -321,8 +323,6 @@ Notes:
 
 Our query is now finished:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/192699146/9dc9b224fd52317d98011629/image.png) -->
-
 Explorer: Sorry, explorer does not currently support arrays or variables, so no demo is available this time.
 
 ## Passing in Variables using Liquid
@@ -332,11 +332,10 @@ Okay, so now you can use the GraphiQL Sandbox to test your queries with variable
 Step 1) Add parameters to the graphql tag for each variable you've defined in the Query. Here, we'll continue with our example and add `category`
 
 ```liquid
-{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: 
  %}
-{% endraw %}
+
 ```
 
 Notes:
@@ -350,40 +349,39 @@ Step 2) Next, add the value of the parameter.
 You can either hardcode the value:
 
 ```liquid
-{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: "98486"
  %}
 
-{% endraw %}
+
 ```
 
 Or, you can use a Liquid variable which you defined earlier:
 
 ```liquid
-{% raw %}
 <!-- Create an empty array -->
+{% raw %}
 {% assign current_category_array = "" | split: "," %}
 <!-- Add Strings to the Array -->
 {% assign current_category_array = current_category_array | add_to_array: "98486" | add_to_array: "98487" %}
+{% endraw %}
 
 <!-- Feed the Liquid Array into the query by its variable name. No quotes are needed around a variable name when you set it as a parameter- it's dynamic data. -->
 
 {% graphql my_results = "find_items_with_category",
  category: current_category_array
  %}
-{% endraw %}
+
 ```
 
 Or, you can use data from Siteglide that's already stored in a Liquid variable. In this case, let's say we're in an item.liquid file for a Product. We already have access to the Categories that this Product is assigned to - luckily, the data is already a Liquid Array. Let's use that data to find other records in the same Category.
 
 ```liquid
-{% raw %}
 {% graphql my_results = "find_items_with_category",
  category: this.category_array
  %}
 
-{% endraw %}
+
 ```
 
 ## Challenge - Using Page as a Variable
@@ -405,15 +403,11 @@ Here are some snippets of code you can use to help you:
 \*User Interaction \*You can use anchors to allow the User to refresh the Page and change the Page Parameter in the URL.
 
 ```liquid
-{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
-
-
-{% endraw %}
 ```
 
 \*Reading URL parameters \*You can use Liquid to read the Page parameter in the URL. You'll then need to work out how to feed this variable into your GraphQL query: \`

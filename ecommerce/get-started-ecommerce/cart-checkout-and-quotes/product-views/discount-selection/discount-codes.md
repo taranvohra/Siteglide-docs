@@ -32,19 +32,16 @@ When a customer completes a Payment Form, the Server-side checks will apply the 
 
 The screenshot below shows how the Discount Code Layout can be nested inside the Cart. However, step 1 also applies in all kinds of Layout.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/199477696/a362c3c7c59e264ce4041584/image.png) -->
-
 ### 1a - Add your Layout
 
 The following Liquid will add the Layout:
 
 ```liquid
-{% raw %}
 {% include 'ecommerce/discount_code'
    layout: "cart/default" 
 %}
 
-{% endraw %}
+
 ```
 
 The only parameter you'll need will be `layout` which refers to the file name of the Layout. We'll look at where to create the Layout files in Step 2.
@@ -56,11 +53,12 @@ In order to better support adding Discount Code Layouts on Forms, we've added th
 For now, you can add the data-attribute `data-s-e-refresh-layout-discount-code` to the element which serves as a wrapper for your Layout e.g.
 
 ```liquid
-{% raw %}
 <div data-s-e-refresh-layout-discount-code>
+{% raw %}
 {% include 'ecommerce/discount_code', layout: "cart/default" %}
-</div>
 {% endraw %}
+</div>
+
 ```
 
 In a Cart Layout, you may also wish to set prices to automatically update when the discount code is added.
@@ -73,14 +71,13 @@ You can add the following data-attributes:
 e.g.
 
 ```liquid
-{% raw %}
 <p class="text-uppercase"><strong>TOTAL PRICE:</strong> 
 <span data-s-e-live-cart-currency></span>
 <span data-s-e-live-cart-total>
 {% include 'ecommerce/price_total'
             format_type: 'formatted' -%}</span></p>
 
-{% endraw %}
+
 ```
 
 ### Related Layout Development Docs
@@ -105,8 +102,6 @@ Discount Code Layouts will be stored here, inside: `layouts/modules/module_14/di
 
 You'll just need a single Liquid file with the same name as your Layout. Optionally, you can use folders to organise Layouts of different types.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/275360458/ce153269ea626984e773d50f/image.png) -->
-
 If you haven't already, make sure your layout parameter in the Liquid tag matches the name of your Layout File. Any custom folders like 'cart/' should also be added to the layout parameter path.
 
 As there are subtle differences in implementation depending on the type of payment, we've created three different default layouts to help you get started:
@@ -119,21 +114,21 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
 
 ## Step 3 - Add HTML and Liquid to allow a Customer to enter a Discount Code
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/275363970/4d7bd514586bd8af7a6a810a/image.png) -->
-
 ### 3a - Add an \<input> element and \<label>
 
 ```liquid
-{% raw %}
 <label class="mb-3" for="s_e_discount_code">Discount Code</label>
 <input class="form-control" 
        id="s_e_discount_code" 
        data-s-e-discount-code 
 
+{% raw %}
 {% if discount_code != blank %} 
        value="{{discount_code}}" 
        readonly="true"{%- endif -%}
 {% endraw %}
+
+
 ```
 
 _HTML Attributes Explained:_
@@ -279,8 +274,6 @@ You cannot remove a Subscription Discount Code after the Subscription Order has 
 
 ## Step 5 - Add HTML and Liquid to give the customer feedback
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/275390532/8012bc29bd3d48d929009382/image.png) -->
-
 ### 5a - Displaying the Discount Amount
 
 On Page refresh (or if you've chosen `reload: false` on Layout refresh), after a successful Code is applied, the following Liquid will explain the minimum spend needed and the discount available.
@@ -304,6 +297,7 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
 
 
 
+
 ```
 
 #### On Basic Payment Layouts:
@@ -321,6 +315,7 @@ Depending on where your Layout is, different syntax may be needed to fetch the c
                                   </p>
 {%- endif -%}
 {% endraw %}
+
 
 
 
@@ -361,6 +356,7 @@ For both situations, we can use the fields inside the discount variable to acces
 
 
 
+
 ```
 
 \*After the Subscription Order is Created and the Discount Redeemed \*At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
@@ -397,6 +393,7 @@ For both situations, we can use the fields inside the discount variable to acces
 
 
 
+
 ```
 
 ### 5b - Displaying the Minimum Spend
@@ -415,6 +412,7 @@ The following code can be used to display the minimum spend needed to keep using
                  price_data: discount_minimum -%}</p>
 {%- endif -%}
 {% endraw %}
+
 
 
 
@@ -439,6 +437,7 @@ The following code can be used to display the minimum spend needed to keep using
 
 
 
+
 ```
 
 #### On Subscription Layouts
@@ -456,6 +455,7 @@ It's probably only really necessary to display the minimum spend before the Subs
                  </p>
 {%- endif -%}
 {% endraw %}
+
 
 
 
@@ -502,8 +502,6 @@ Read more about the [Discount Maximum requirement](https://help.siteglide.com/ar
 ## Step 6 - Optional - Add JavaScript to handle errors
 
 There are lots of reasons why the customer may enter a code but be refused a discount. For example, the code may have expired, or the Cart's value may not be above the minimum spend.
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/200379256/5e95bdc674c1504fae6edbfb/image.png) -->
 
 You can start with the JavaScript function below and make your own changes to decide how these errors are displayed to the customer:
 
@@ -621,6 +619,7 @@ At this point it's not possible to apply or change the Discount Code, only displ
 <!-- Insert code here - the Discount has already been redeemed against the Subscription Order-->
 {% endif %}
 {% endraw %}
+
 
 
 

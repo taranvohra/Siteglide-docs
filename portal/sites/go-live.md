@@ -40,6 +40,16 @@ The button will not turn blue until you've selected a Plan:
 
 It will then confirm the last 4 digits of the card that will be used and that you will be charged pro-rata for the remainder of the month based on the selected plan. When ready click Start Subscription. Please contact us if you are unsure about any of these steps, we cannot make changes once the site is Live.
 
+## Step 4: Site Copy to Production
+
+You don't need to do anything but once you click Start Subscription the site will automatically be copied from Staging to Production. You will need to wait until this has been completed before you can work with the site or add domains.
+
+{% hint style="warning" %}
+If you use CLI you will need to ensure you no longer connect to the Staging site and instead connect to the Production site, see screenshot below (note 'production' not 'staging'):
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/Siteglide-Production-CLI-Command.png" alt=""><figcaption></figcaption></figure>
+
 ## Next Steps:
 
 Ready to add your domain?
