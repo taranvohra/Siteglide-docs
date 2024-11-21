@@ -34,6 +34,10 @@ A really powerful part of SiteBuilder is the Dynamic Form Layouts that automatic
 
 <figure><img src="../../.gitbook/assets/Siteglide-SiteBuilder-Dynamic-Form-Layout-Install.png" alt=""><figcaption></figcaption></figure>
 
+Here's a video that walks through the basics:
+
+{% embed url="https://youtu.be/7UTrHOdt1Lk?feature=shared" %}
+
 More information on Form Layout options with SiteBuilder:
 
 {% content-ref url="layouts/about-layouts/static-and-dynamic-form-layouts.md" %}
