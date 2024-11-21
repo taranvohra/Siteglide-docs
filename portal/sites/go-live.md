@@ -57,3 +57,10 @@ Ready to add your domain?
 {% content-ref url="domains/" %}
 [domains](domains/)
 {% endcontent-ref %}
+
+Ensure email deliverability via Sendgrid:
+
+{% content-ref url="../../cms/automations/guides-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md" %}
+[steps-to-authenticating-sendgrid-emails-on-live-sites.md](../../cms/automations/guides-automations/steps-to-authenticating-sendgrid-emails-on-live-sites.md)
+{% endcontent-ref %}
+
