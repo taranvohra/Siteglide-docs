@@ -11,8 +11,8 @@ description: >-
 
 * You have [set up the Siteglide CLI](../site-setup/) ready for use on a Site
 * You understand Siteglide-CLI [Pull](https://docs.siteglide.com/en/developer-tools/cli/reference#pull) and [Sync ](https://docs.siteglide.com/en/developer-tools/cli/reference#sync)commands&#x20;
-* You have [created a Flowbite\* Page Template](https://docs.siteglide.com/en/sitebuilder/setup-sitebuilder/site-setup/create-a-page-template) from the SiteBuilder Module
-* You have set up your project [ready to use Tailwind CSS via CLI](../set-up-tailwind-css.md) with the SiteBuilder module's recommended file structure
+* You have [created a Flowbite\* Page Template](https://docs.siteglide.com/en/sitebuilder/setup-sitebuilder/site-setup/create-a-page-template) from the SiteBuilder Module (or are using a Site Template where this has been done already)
+* You have set up your project [ready to use Tailwind CSS via CLI](../set-up-tailwind-css.md) with the SiteBuilder module's recommended file structure [example-tailwind-project-setup.md](example-tailwind-project-setup.md "mention")
 
 ## About Presets
 
@@ -37,7 +37,16 @@ Small Plugins are included within Presets in order to enable them to set global 
 
 ## Getting Started - Coming Soon
 
-The easiest way to get started with a Theme Preset will be to install a site from one of our Site Templates which will come with a specific Preset already set up. We are currently working on these, so watch this space.
+The easiest way to get started with a Theme Preset will be to install a site from one of our Site Templates:
+
+* [https://admin.siteglide.com/#/portal/community/marketplace?module\_id=951980](https://admin.siteglide.com/#/portal/community/marketplace?module_id=951980)
+* [https://admin.siteglide.com/#/portal/community/marketplace?module\_id=951981](https://admin.siteglide.com/#/portal/community/marketplace?module_id=951981)
+
+Existing layouts will already have the preset applied. \
+\
+Newly added layouts may usually have the majority of classes applied, though to get your site looking perfect, we recommend you rebuild Tailwind reguarly.&#x20;
+
+Before going live, we also recommend you remove the "safelist" in the configuration file, for much better client-side performance.&#x20;
 
 ## Usage - Via SiteBuilder Settings
 
