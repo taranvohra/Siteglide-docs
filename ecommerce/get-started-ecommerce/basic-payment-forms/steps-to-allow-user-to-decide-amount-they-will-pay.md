@@ -21,9 +21,37 @@ Both use-cases will require you to write a JavaScript function which will update
 
 You may find the following Liquid tags helpful while developing:
 
-| **Liquid** | **Role**                                   | **Example** |
-| ---------- | ------------------------------------------ | ----------- |
-|            | The currency for the Form defined in Admin |             |
+```liquid
+{% raw %}
+{% include 'ecommerce/basic_payment_currency' %}
+{% endraw %}
+```
+
+The currency for the Form defined in Admin e.g. `gdp`.
+
+```liquid
+{% raw %}
+{% include 'ecommerce/basic_payment_currency', format: 'symbol' %}
+{% endraw %}
+```
+
+The symbol for the currency for the Form defined in Admin e.g. `£`.
+
+```liquid
+{% raw %}
+{% include 'ecommerce/basic_payment_min_amount' %}
+{% endraw %}
+```
+
+The minimum payment value defined in Admin, in the lowest denomination of that currency e.g. for £1, `100`.
+
+```liquid
+{% raw %}
+{% include 'ecommerce/basic_payment_min_amount', format: 'decimal' %}
+{% endraw %}
+```
+
+The minimum payment value defined in Admin, formatted e.g. for £1, `1.00`.
 
 ## Step 2) Writing the function
 
