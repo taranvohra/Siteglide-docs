@@ -21,11 +21,9 @@ Both use-cases will require you to write a JavaScript function which will update
 
 You may find the following Liquid tags helpful while developing:
 
-| **Liquid** | **Role** | **Example** |
-| ---------- | -------- | ----------- |
-| \`         |          |             |
-
-\` | The currency for the Form defined in Admin | gbp | | \`\` | The symbol for the currency for the Form defined in Admin | £ | | \`\` | The \`minimum payment\` value defined in Admin, in the lowest denomination of that currency | 100 | | \`\` | The \`minimum payment\` value defined in Admin, formatted | 1.00 |
+| **Liquid** | **Role**                                   | **Example** |
+| ---------- | ------------------------------------------ | ----------- |
+|            | The currency for the Form defined in Admin |             |
 
 ## Step 2) Writing the function
 
@@ -40,7 +38,6 @@ The following example allows the User to enter an amount of their choice into an
 #### Liquid
 
 ```liquid
-{% raw %}
 <div class="">
   <label for="user_chooses_amount_to_pay">
     How much can you afford to donate (pounds and pence e.g. 10.00)?
@@ -56,6 +53,7 @@ The following example allows the User to enter an amount of their choice into an
 </div>
 {% endraw }
 ```
+
 #### JavaScript
 
 ```javascript
