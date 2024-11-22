@@ -66,6 +66,7 @@ The following example allows the User to enter an amount of their choice into an
 #### Liquid
 
 ```liquid
+{% raw %}
 <div class="">
   <label for="user_chooses_amount_to_pay">
     How much can you afford to donate (pounds and pence e.g. 10.00)?
@@ -79,7 +80,7 @@ The following example allows the User to enter an amount of their choice into an
     >
   </div>
 </div>
-{% endraw }
+{% endraw %}
 ```
 
 #### JavaScript
