@@ -7,6 +7,7 @@
 * Always install updates to the main SiteBuilder Module before any Themes
 * SiteBuilder updates won't overwrite your site code
 * Uninstalling the SiteBuilder module may cause some code to stop working.
+* Presets (for Tailwind Themes), JavaScript files and Liquid functions will use a folder based versioning system, so you can choose whether to continue or upgrade.
 
 ### In Detail <a href="#in-detail" id="in-detail"></a>
 
@@ -16,9 +17,23 @@ Therefore, we never change the layouts on your site during an update. We only up
 
 There are exceptions to this rule, for example Liquid includes which power functionality like dynamic forms. In these cases, we will only modify these files with non-breaking changes. For breaking changes, a new version of the file will be created and linked to new layouts, leaving the old version continuing to function with existing layouts.
 
+Another exception of sorts is the contents of the `marketplace_builder/assets/modules/module_86/src/open_me_to_set_up_tailwind_1st_time` folder. This will not receive updates since this is only meant to be a template to get you setup and we don't want to encourage different developers on a project to set up differently. Instead, we will add documentation for the recommended setup, which you can use to update if you choose- it may be important to update to get access to certain features like presets, but not for everyday use.
+
 For the optimum compatibility, we recommend always making sure the main SiteBuilder module is up to date before updating any SiteBuilder Theme modules. Some Theme module updates may rely on the latest version of SiteBuilder.
 
 ## Releases <a href="#releases" id="releases"></a>
+
+### 4.18.1-5 - Released November 22nd 2024
+
+* Patches for Theme Presets. Thanks for the feedback so far, we have patched several issues. The major patch addresses a known issue in the Flowbite plugin, where it was impossible for a preset to override any existing colours defined by the Flowbite plugin. This has been addressed by a temporary fork of the Flowbite plugin, which will receive a permanent fix by Flowbite in the next major version, co-inciding with Tailwind version 4.&#x20;
+  * In order to receive this update, after updating the module, make sure to update a tailwind.config.js file's `require('flowbite/plugin')` to `require('flowbite/../../modules/module_86/public/assets/css/presets/flowbite_plugin_fork_colors_disabled')`
+* We've also added a range of static and dynamic layouts to Flowbite with a more generous use of primary and secondary background and text colour utility classes. This will allow them to make better use of the preset you select and override with your own colour scheme:
+  * New Form Layout with floating labels
+  * New Testimonials Layout
+  * New FAQ layout
+  * New Menu Layouts
+  * New Webapp Layouts
+  * Hero, pricing, feature static layouts
 
 ### 4.18.0 - Released November 15th 2024
 
@@ -146,7 +161,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 ### 4.9.2 - Released 20th March 2024 <a href="#id-492-released-20th-march-2024" id="id-492-released-20th-march-2024"></a>
 
-* Live Updates 1-4 hotfix - [changelog](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/changelog)
+* Live Updates 1-4 hotfix - [changelog](https://www.sitegurus.io/documentation/sitebuilder/live_updates/changelog)
 
 #### 4.9.1 - Released 15th February 2024 <a href="#id-491-released-15th-february-2024" id="id-491-released-15th-february-2024"></a>
 
@@ -154,7 +169,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 #### 4.9.0 - Released 21st December 2023 <a href="#id-490-released-21st-december-2023" id="id-490-released-21st-december-2023"></a>
 
-* Support for upcoming eCommerce features- including new version of [Live Updates 1.4](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/changelog).
+* Support for upcoming eCommerce features- including new version of [Live Updates 1.4](https://www.sitegurus.io/documentation/sitebuilder/live_updates/changelog).
 
 #### 4.8.12 + 4.8.13 - Released 11th December 2023 <a href="#id-4812-4813-released-11th-december-2023" id="id-4812-4813-released-11th-december-2023"></a>
 
@@ -171,7 +186,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 #### 4.8.8 - Released 14th September 2023 <a href="#id-488-released-14th-september-2023" id="id-488-released-14th-september-2023"></a>
 
 * Live Updates v1-3
-  * New version of [Live Updates 1.3](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/changelog). Existing layouts can be updated by manually changing the `<script>`. New layouts will use the new version.
+  * New version of [Live Updates 1.3](https://www.sitegurus.io/documentation/sitebuilder/live_updates/changelog). Existing layouts can be updated by manually changing the `<script>`. New layouts will use the new version.
 * Performance
   * All SiteBuilder JS, including Live Updates, now has a minified version of the same file in the same folder. Simply replace `.js` with `.min.js` extensions for a performance boost. This will be applied to new installs of layouts going forwards. If you're experiencing unhandled JS errors and want to report a bug, you may find it helpful to switch back to the unminified version temporarily.
   * Performance boost to the SiteBuilder module UI
@@ -183,11 +198,11 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 * Cookie Popup Layouts
   * Fixed bug preventing some layouts from hiding scripts when cookies rejected. Remember changes will only apply to freshly installed layouts. If you need to fix an existing layout manually, replace: `<div data-gb-custom-block data-tag="if" data-0='all' data-1='all' data-2='all' data-3='all' data-4='all' data-5='all' data-6='all' data-7='all' data-8='all' data-9='all' data-10='all' data-11='all' data-12='all' data-13='all' data-14='all' data-15='all' data-16='all' data-17='all' data-18='all' data-19='all' data-20='all' data-21='all' data-22='all'></div>` with `<div data-gb-custom-block data-tag="if" data-0='sg-cookie-policy-settings' data-1='sg-cookie-policy-settings' data-2='sg-cookie-policy-settings' data-3='sg-cookie-policy-settings' data-4='] == ' data-5='] == ' data-6='] == '></div>`
 * Live Updates
-  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_getting\_started#2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key)
+  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](https://www.sitegurus.io/documentation/sitebuilder/live_updates/guide_-_getting_started#2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key)
 
 #### 4.8.6 - Released 9th August 2023 <a href="#id-486-released-9th-august-2023" id="id-486-released-9th-august-2023"></a>
 
-* New version of [Live Updates 1.2](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/changelog)
+* New version of [Live Updates 1.2](https://www.sitegurus.io/documentation/sitebuilder/live_updates/changelog)
 
 #### 4.8.5 - Released 3rd August 2023 <a href="#id-485-released-3rd-august-2023" id="id-485-released-3rd-august-2023"></a>
 
@@ -229,7 +244,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 * Added layouts to Flowbite and Bootstrap Themes for:
   * Cookie Policy Popups
   * Cookie Policy Settings Pages
-* These are examples of a brand new type of layout for SiteBuilder, as installing them creates a Siteglide code\_snippet with a unique ID. More [code\_snippet layouts are now possible for SiteBuilder developers](https://www.sitegurus.io/documentation/sitebuilder/developers\_-\_adding\_SiteBuilder\_content/adding\_layouts#code-snippets). Currently, these are not supported in PageBuilder.
+* These are examples of a brand new type of layout for SiteBuilder, as installing them creates a Siteglide code\_snippet with a unique ID. More [code\_snippet layouts are now possible for SiteBuilder developers](https://www.sitegurus.io/documentation/sitebuilder/developers_-_adding_SiteBuilder_content/adding_layouts#code-snippets). Currently, these are not supported in PageBuilder.
 * Page Template creation now gives you an option to install a cookie popup layout directly into your new Page Template. If chosen, this replaces the Google Analytics script which would normally be entered by default. The cookie popup layout contains the same Google Analytics script, but wraps it in logic which allows it to be toggled on and off by the end-user. Cookies settings page layouts are not designed to be entered in the Page Template and must be installed via the layouts tab instead.
 
 ***
