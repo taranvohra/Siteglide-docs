@@ -17,7 +17,7 @@ Therefore, we never change the layouts on your site during an update. We only up
 
 There are exceptions to this rule, for example Liquid includes which power functionality like dynamic forms. In these cases, we will only modify these files with non-breaking changes. For breaking changes, a new version of the file will be created and linked to new layouts, leaving the old version continuing to function with existing layouts.
 
-Another exception of sorts is the contents of the `marketplace_builder/assets/modules/module_86/src/open_me_to_set_up_tailwind_1st_time` folder. This will not receive updates since this is only meant to be a template to get you setup and we don't want to encourage different developers on a project to set up differently. Instead, we will add documentation for the recommended setup, which you can use to update if you choose- it may be important to update to get access to certain features like presets, but not for everyday use.
+Another exception of sorts is the contents of the `marketplace_builder/assets/modules/module_86/src/open_me_to_set_up_tailwind_1st_time` folder. This will not receive updates since this is only meant to be a template to get you setup and we don't want to encourage different developers on a project to set up differently. Instead, see [example-tailwind-project-setup.md](../setup-sitebuilder/styling/example-tailwind-project-setup.md "mention") for the recommended setup, which you can use to update if you choose- it may be important to update to get access to certain features like presets, but not for everyday use.
 
 For the optimum compatibility, we recommend always making sure the main SiteBuilder module is up to date before updating any SiteBuilder Theme modules. Some Theme module updates may rely on the latest version of SiteBuilder.
 
@@ -27,6 +27,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 * Patches for Theme Presets. Thanks for the feedback so far, we have patched several issues. The major patch addresses a known issue in the Flowbite plugin, where it was impossible for a preset to override any existing colours defined by the Flowbite plugin. This has been addressed by a temporary fork of the Flowbite plugin, which will receive a permanent fix by Flowbite in the next major version, co-inciding with Tailwind version 4.&#x20;
   * In order to receive this update, after updating the module, make sure to update a tailwind.config.js file's `require('flowbite/plugin')` to `require('flowbite/../../modules/module_86/public/assets/css/presets/flowbite_plugin_fork_colors_disabled')`
+  * Added new documentation [example-tailwind-project-setup.md](../setup-sitebuilder/styling/example-tailwind-project-setup.md "mention")
 * We've also added a range of static and dynamic layouts to Flowbite with a more generous use of primary and secondary background and text colour utility classes. This will allow them to make better use of the preset you select and override with your own colour scheme:
   * New Form Layout with floating labels
   * New Testimonials Layout

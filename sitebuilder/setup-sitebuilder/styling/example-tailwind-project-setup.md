@@ -5,7 +5,7 @@ description: >-
   when there is a breaking change.
 ---
 
-# Example Tailwind Project Setup
+# 🏗️ Example Tailwind Project Setup
 
 ## About
 

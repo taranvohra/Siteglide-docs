@@ -136,7 +136,7 @@
     * [🏗️ Tailwind CSS - Preview Mode](sitebuilder/setup-sitebuilder/styling/tailwind-css-preview-mode.md)
     * [🏗️ Tailwind's JIT Compiler Via CDN (deprecated)](sitebuilder/setup-sitebuilder/about-sitebuilder/tailwinds-jit-compiler-via-cdn-beta-not-recommended-for-production.md)
     * [🏗️ Theme Presets](sitebuilder/setup-sitebuilder/styling/theme-presets-coming-soon.md)
-    * [Example Tailwind Project Setup](sitebuilder/setup-sitebuilder/styling/example-tailwind-project-setup.md)
+    * [🏗️ Example Tailwind Project Setup](sitebuilder/setup-sitebuilder/styling/example-tailwind-project-setup.md)
   * [Layouts](sitebuilder/setup-sitebuilder/layouts/README.md)
     * [🏗️ Insert Static Layouts](sitebuilder/setup-sitebuilder/about-sitebuilder/static-layouts.md)
     * [🏗️ Installing Dynamic Layouts](sitebuilder/setup-sitebuilder/installing-layouts.md)
