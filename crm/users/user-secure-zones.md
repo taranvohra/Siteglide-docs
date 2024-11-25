@@ -18,7 +18,11 @@ Outputting a User's Secure Zones can help them to keep track of services they're
 
 ## Syntax
 
-`<div data-gb-custom-block data-tag="include" data-0='user_secure_zones' data-1='default' data-2='default'></div>`
+```liquid
+{% raw %}
+{% include 'user_secure_zones', layout: 'default' %}
+{% endraw %}
+```
 
 Parameters:
 

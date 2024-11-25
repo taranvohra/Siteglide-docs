@@ -141,7 +141,13 @@ You may want to hide the add/ remove buttons from the User if they aren't logged
 
 Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](https://developers.siteglide.com/user-details)
 
-You can include the user\_details Layout like so: `<div data-gb-custom-block data-tag="include" data-0='user_details' data-1='my_layout'></div>`
+You can include the user\_details Layout like so:
+
+```liquid
+{% raw %}
+{% include 'user_details', layout: 'my_layout' -%}
+{% endraw %}
+```
 
 Layouts for user\_details are stored under the following path: `site Manager/code Editor/layouts/modules>module_5/user_details/my_layout.liquid`
 
@@ -152,12 +158,24 @@ Next within the "user\_details" Layout, you can use the following Liquid variabl
 
 #### Outputting Webapp favourite items
 
-`<div data-gb-custom-block data-tag="-" data-0='webapp' data-1=', id: ' data-2='1' data-3='1' data-4='my_layout'></div>`
+```liquid
+{% raw %}
+{%- include 'webapp', id: '1', layout: 'my_layout', item_ids: favourite_items_string -%}
+{% endraw %}
+```
 
 #### Outputting favourite Products
 
-`<div data-gb-custom-block data-tag="-" data-0='ecommerce/products' data-1=', layout: ' data-2='default'></div>`
+```liquid
+{% raw %}
+{%- include 'ecommerce/products', layout: 'default', item_ids: favourite_items_string -%}
+{% endraw %}
+```
 
 #### Outputting favourite Blog Posts (Modules)
 
-`<div data-gb-custom-block data-tag="-" data-0='module' data-1=', id: ' data-2='3' data-3='3' data-4='my_layout'></div>`
+```liquid
+{% raw %}
+{%- include 'module', id: '3', layout: 'my_layout', item_ids: favourite_items_string -%}
+{% endraw %}
+```

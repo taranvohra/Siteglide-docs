@@ -18,15 +18,19 @@ This example will redirect the user to `/home` no matter what the redirect says 
 
 ## Step 2) Add JavaScript Logic to Adjust the value of the field based on some event
 
+#### Liquid
 
+```liquid
+{% raw %}
+<select id="choose_office">
+ <option selected value="1">London Office (Default)</option>
+ <option value="2">New York Office</option>
+</select>
+<input id="s_redirect" value="/confirm-office-1">
+{% endraw %}
+```
 
-\`\`\`liquid Office 1Office 2&#x20;
-
-````
-
-</div>
-
-<div data-gb-custom-block data-tag="tab" data-title='JavaScript'>
+#### JavaScript
 
 ```javascript
 const select = document.querySelector('#choose_office');

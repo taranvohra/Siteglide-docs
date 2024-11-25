@@ -311,45 +311,30 @@ Here's an example from the pOS team of how you can use the "or" option when filt
 
 ```graphql
 query {
-
-  records(per_page: 2000, filter: {
-
-    or: [
-
-      { 
-
-        properties: [
-
-          { name: "webapp_field_1_1", exists: true } 
-      	]
-
-      },
-
-      {
-
-        properties: [
-
-          {name: "parent", exists: true}
-
-        ]
-
-      } 
-    ] 
-  }) { 
-    results {
-
-      id
-
-      table
-
-      properties
-
+  records(
+    per_page: 2000,
+    filter: {
+      or: [
+        { 
+          properties: [
+            { name: "webapp_field_1_1", exists: true } 
+          ]
+        },
+        {
+          properties: [
+            {name: "parent", exists: true}
+          ]
+        } 
+      ] 
     }
-
+  ) { 
+    results {
+      id
+      table
+      properties
+    }
   }
-
 }
-
 ```
 
 Notes:

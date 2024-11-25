@@ -65,9 +65,12 @@ If you wanted to check if the file has synced correctly, you can turn off `sync`
 
 ## Adding the GraphQL Liquid Tag
 
-We'll use the `graphql` Liquid tag provided by platformOS. You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: \`
-
-\`
+We'll use the `graphql` Liquid tag provided by platformOS. You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: 
+```liquid
+{%- raw -%}
+  {%- graphql my_results = "get_items_with_musical_names" -%}
+{%- endraw -%}
+```
 
 Notes:
 
@@ -82,9 +85,8 @@ You can output all of your results on the Page, using Liquid output syntax `{{ }
 ```liquid
 {% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{% endraw %}
 {{my_results}}
-
+{% endraw %}
 ```
 
 Notes:
@@ -140,9 +142,8 @@ The dot notation to reach the results is:
 ```liquid
 {% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{% endraw %}
 {{my_results.records.results}}
-
+{% endraw %}
 ```
 
 Alternatively, you can always run your query in the GraphiQL Playground and work out the dot notation needed from the results shown in the middle-right panel. You'll just need to ignore the very top key in the results `data`: and use the variable from your `graphql` tag instead e.g. `my_results` :
@@ -155,7 +156,6 @@ Alternatively, you can always run your query in the GraphiQL Playground and work
 {% for this in my_results.records.results %}
 {% endfor %}
 {% endraw %}
-
 ```
 
 We loop over every item in the Results array. We create a variable called `this` with a scope which allows it to be accessed only inside each loop iteration. `this` contains all the data for that result.

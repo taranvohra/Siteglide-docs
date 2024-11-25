@@ -40,25 +40,25 @@ The `response_headers` YML allows Siteglide Admin to view the content of the fil
 
 As well as the YAML, any links within your Custom UI has to include a Liquid tag to apply the authencation string on the link. For example if you are linking from your Custom UI's index page to the add new item page, your link would be as follows:
 
-```html
-<a href="/add?<div data-gb-custom-block data-tag="include" data-0='modules/siteglide_system/modules/auth'></div>
+```liquid
+{% raw %}
+<a href="/add?{% include "modules/siteglide_system/modules/auth" -%}">Add new item</a>
 
 ">Add new item</a>
+{% endraw %}
 ```
 
 This include will create a hash onto the end of the URL that is then used in the above authorization policy to decide whether to show the page. If the include is missing then following the link will throw an error within Siteglide Admin.
 
 You can also control access to certain areas of a page with the `module_is_in_admin` function:
 
-```html
-
-<div data-gb-custom-block data-tag="-" data-access_allowed='module_is_in_admin'></div>
-
-<div data-gb-custom-block data-tag="-"></div>
-
+```liquid
+{% raw %}
+{%- function access_allowed = 'module_is_in_admin' -%}
+{%- if access_allowed -%}
     <p>Content to show if loaded via Admin</p>
-
-<div data-gb-custom-block data-tag="-"></div>
+{%- endif -%}
+{% endraw %}
 ```
 
 ### Module Details

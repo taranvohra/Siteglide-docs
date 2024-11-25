@@ -3,14 +3,14 @@ You can change the type and order of sorting. You can also sort by multiple prop
 
 # Introduction
 
-&#x20;In this Article, we'll look at how you can instruct the query to return items in an order of your choice.&#x20;
+In this Article, we'll look at how you can instruct the query to return items in an order of your choice.
 
 Using sort along with pagination means you can make sure the first pagen of results shows you the items you're interested in.
-Using sort along with variables allows you to let your end-User customise the sort order themselves. &#x20;
+Using sort along with variables allows you to let your end-User customise the sort order themselves. 
 
 # Sorting by a Single Property
 
-&#x20;In this example, we'll start with a query which fetches the Categories.
+In this example, we'll start with a query which fetches the Categories.
 
 Code:
 
@@ -32,21 +32,13 @@ Code:
 
 ```graphql
 query sorted_categories {
-
   records(per_page: 2000, sort: {}) {
-
     results {
-
       table
-
       id
-
       properties
-
     }
-
   }
-
 }
 ```
 
@@ -60,7 +52,7 @@ Explorer:
 
 ## Step 2) Next, you can add a sort method.
 
-&#x20;You can either use:
+You can either use:
 
 ### 2) a) A field from the main options
 
@@ -68,29 +60,19 @@ Code:
 
 ```graphql
 query sorted_categories {
-
   records(per_page: 2000, sort: {created_at: {}}) {
-
     results {
-
       table
-
       id
-
       properties
-
     }
-
   }
-
 }
 ```
 
 Explorer:
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/213366703/cd9dc582ba4bd8cbf2c0de3e/image.png) -->
-
-&#x20;
 
 ### 2) b) a property from properties
 
@@ -100,19 +82,12 @@ Code:
 query sorted_categories {
 
   records(per_page: 2000, sort: {properties: {name: "weighting"}}) {
-
     results {
-
       table
-
       id
-
       properties
-
     }
-
   }
-
 }
 ```
 
@@ -124,8 +99,6 @@ Explorer:
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/213367555/4bfc9b8c5cdb438b0ae0a568/image.png) -->
 
-&#x20;
-
 ## Step 3) Select a sort order
 
 You can choose between the keywords DESC (descending) and ASC (ascending).
@@ -134,29 +107,19 @@ Code:
 
 ```graphql
 query sorted_categories {
-
   records(per_page: 2000, sort: {properties: {name: "weighting", order: DESC}}) {
-
     results {
-
       table
-
       id
-
       properties
-
     }
-
   }
-
 }
 ```
 
 Explorer:
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/213369158/2aa128cce3b9bb8de24b141d/image.png) -->
-
-&#x20;
 
 # Sorting by Multiple Properties
 
@@ -168,38 +131,26 @@ Code:
 
 ```graphql
 query sorted_categories {
-
   records(per_page: 2000, sort: {
-
     properties: [
-
       {name: "weighting", order: DESC}, 
       {name: "release_date", order: DESC}
-
     ]
-
   }) {
-
     results {
-
       table
-
       id
-
       properties
-
     }
-
   }
-
 }
 ```
 
-Notes:&#x20;
+Notes:
 
 *   Here we use an array with square brackets `[]` to add multiple sorting objects with curly braces `{}`
 
-*   Unfortunately, arrays are not yet supported by the Explorer, so you'll need to add this code manually.&#x20;
+*   Unfortunately, arrays are not yet supported by the Explorer, so you'll need to add this code manually.
 
 *   You can use different sort orders for each condition
 

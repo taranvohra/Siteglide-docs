@@ -58,14 +58,13 @@ Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liq
 We gave you these in the tips. You'll have needed to add them on a Page of your choice.
 
 ```liquid
+{% raw %}
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
-
-
-
+{% endraw %}
 ```
 
 Pressing one of the buttons will redirect us to the same Page, but will be adding a `page` query parameter to the URL. This is the easiest way to pass variables to Liquid- because Liquid runs before the Page loads, and the URL is one of the only available sources of dynamic information at this point.
@@ -78,32 +77,43 @@ Let's say we pressed the second button, our relative URL will now be:`/my-page-s
 
 As we showed you in the tips, Liquid can read this parameter at the following dot-notation path. This will output the value on the Page: `{{context.params.page}}`
 
-Or you can store this in a variable, which we'll need to do here: \`
+Or you can store this in a variable, which we'll need to do here:
 
-\`
+```liquid
+{% raw %}
+{% assign current_page = context.params.page %}
+{% endraw %}
+```
 
 By the way, the keys in `context.params` are dynamically generated for any query parameter in the URL, so you can pass through any variable you like with this method.
 
 ## Step 5) Feeding the Variables into the Query
 
-a) First, let's set a default value, just in case a User arrives at the Page without setting the Parameter: `<div data-gb-custom-block data-tag="assign" data-0='1' data-1='1' data-2='1' data-3='1' data-4='1' data-5='1' data-6='1' data-7='1' data-8='1' data-9='1' data-10='1' data-11='1' data-12='1' data-13='1' data-14='1' data-15='1' data-16='1' data-17='1' data-18='1' data-19='1' data-20='1' data-21='1' data-22='1' data-23='1'></div>`
+a) First, let's set a default value, just in case a User arrives at the Page without setting the Parameter:
 
-b) The query is expecting an integer, so let's apply an Integer filter that will change the type to an `Int` without changing the value: `<div data-gb-custom-block data-tag="assign" data-0='1' data-1='1' data-2='1' data-3='1' data-4='1' data-5='1' data-6='1' data-7='1' data-8='1' data-9='1' data-10='1' data-11='1' data-12='1' data-13='1' data-14='1' data-15='1' data-16='1' data-17='1' data-18='1' data-19='1' data-20='1' data-21='1' data-22='1' data-23='1' data-24='0' data-25='0' data-26='0' data-27='0' data-28='0'></div>`
+```liquid
+{% raw %}
+{% assign current_page = context.params.page | default: 1 %}
+{% endraw %}
+```
+
+b) The query is expecting an integer, so let's apply an Integer filter that will change the type to an `Int` without changing the value: 
+
+```liquid
+{% raw %}
+{% assign current_page = context.params.page | default: 1 | plus: 0 %}
+{% endraw %}
+```
 
 c) Let's add the `graphql` tag with the variable parameter.
 
 ```liquid
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-{% endraw %}
-
-
-
-
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
-
+{% endraw %}
 ```
 
 ## Step 6) Output the Results
@@ -113,17 +123,11 @@ We can output the results using the variable name we defined in the `graphql` ta
 ```liquid
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-{% endraw %}
-
-
-
-
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
-
 {{my_result}}
-
+{% endraw %}
 ```
 
 If pressing the HTML anchors changes the results by fetching different "pages" of JSON results, you've been successful. Congratulations.
@@ -135,19 +139,17 @@ If you're having difficulty with any of these steps still, please don't hesitate
 _Liquid_
 
 ```liquid
+{% raw %}
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
-
 <pre>{{my_result}}</pre>
-
 <ul>
   <li><a href="{{context.headers.PATH_NAME}}?page=1">1</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=2">2</a></li>
   <li><a href="{{context.headers.PATH_NAME}}?page=3">3</a></li>
 </ul>
-
-
+{% endraw %}
 ```
 
 _GraphQL_
@@ -175,21 +177,14 @@ These JSON results don't look great. Remember, you can use Liquid to pass the re
 ```liquid
 {% raw %}
 {% assign current_page = context.params.page | default: 1 | plus: 0 %}
-
 {% graphql my_result = "gallery_by_page",
 page: current_page
 %}
-
 {% assign result_array = my_result.records.results %}
-
 {% for this in result_array %}
   {% include 'layouts/webapps/webapp_1/list/my_layout_name', this: this %}
 {% endfor %}
 {% endraw %}
-
-
-
-
 ```
 
 However, you won't have access to the user-friendly names for fields in that Layout, because GraphQL will output the raw database IDs for fields.
@@ -218,13 +213,13 @@ query gallery_by_page($page: Int) {
 You can then use this to manipulate the HTML pagination controls:
 
 ```liquid
+{% raw %}
 <ul>
-  {% raw %}
-{% for page in (1..my_result.records.total_pages) %}
+  {% for page in (1..my_result.records.total_pages) %}
     <li><a href="{{context.headers.PATH_NAME}}?page={{page}}">1</a></li>
   {% endfor %}
-{% endraw %}
 </ul>
+{% endraw %}
 ```
 
 ## Next Time

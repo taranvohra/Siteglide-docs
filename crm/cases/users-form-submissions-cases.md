@@ -18,7 +18,11 @@ Allow Users to keep track of their communication history with your Client by out
 
 ### Syntax
 
-`<div data-gb-custom-block data-tag="include" data-0='user_form_submissions' data-1='default' data-2='default'></div>`
+```liquid
+{% raw %}
+{% include 'user_form_submissions', layout: 'default' %}
+{% endraw %}
+```
 
 Parameters:
 
@@ -44,8 +48,6 @@ One of the benefits of this is that you can rename the variable under which your
   <p>Form name: {{this.name}}</p>
 {% endfor %}
 {% endraw %}
-
-
 ```
 
 Or, if you want to output the `form_submissions` layout inside a `user_details` Layout for example, you can store the variables under a different namespace e.g. `case` and continue to use `this` to refer to the `user_details` (Liquid variables are always inherited by Layouts included within them).

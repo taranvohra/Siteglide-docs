@@ -17,13 +17,22 @@ These Fields are available to all standard modules:
 
 ### List Layouts
 
-`<div data-gb-custom-block data-tag="-" data-0='module' data-1=', id: ' data-2='3' data-3='3' data-4='default' data-5='default' data-6='1' data-7='1' data-8='1' data-9='1' data-10='1' data-11='1' data-12='1' data-13='properties.release_date' data-14=', sort_order: ' data-15='asc' data-16='asc'></div>`
+```liquid
+{% raw %}
+{% include 'module', id: '3', layout: 'default' %}
+{% endraw %}
+```
 
 ### Detail Layouts
 
-\`
-
-\`
+```liquid
+{% raw %}
+{% include 'module', id: '3', layout: 'default', type: 'detail', item_ids: insert_item_id %}
+{% endraw %}
+```
+{% hint style="info" %}
+Usually this is not outputted directly. Instead, a detail page is dynamically generated for you by the Siteglide Admin at the chosen slug, however, it can be useful in some situations to output manually!
+{% endhint %}
 
 #### Liquid Include Parameters
 
@@ -44,6 +53,7 @@ These Fields are available to all standard modules:
 * `collection` - default is 'false' - If you set it as collection: 'true' then any layout is suppressed.Data is accessible via \{{context.exports.webapp\_1.data\}}. For Example, name would be: \{{context.exports.webapp\_1.data.result.items\[0]\['name']\}}
 * `use_search` - Allows the Module to be searched by keyword parameter in URL
 * `use_adv_search` - Allows the Module to be filtered by core/custom field IDs in URL parameters
+* `datasource` - `true`/`false` - When outputting a "nested" module inside another, the inner module tag can be given this parameter to prevent it from inheriting parameters which would change its page etc.
 
 {% hint style="info" %}
 If you nest any more Module or WebApp layouts inside this Module Layout, they will inherit the type parameter. This means if you want to input a nested list layout, you may need to reset the type parameter back to list with `type: 'list'`.
