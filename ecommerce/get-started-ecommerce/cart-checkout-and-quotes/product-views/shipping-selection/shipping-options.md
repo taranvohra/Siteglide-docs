@@ -32,7 +32,13 @@ The Options are designed to be included in an HTML Select box in the Cart.
 
 ### Syntax
 
-You'll need to add the following Liquid where in your Cart you want to include your Shipping sub-layout: `<div data-gb-custom-block data-tag="include" data-0='ecommerce/shipping_option' data-1='siteglide_example'></div>`
+You'll need to add the following Liquid where in your Cart you want to include your Shipping sub-layout:
+
+```liquid
+{% raw %}
+{% include 'ecommerce/shipping_option', layout: "siteglide_example" %}
+{% endraw %}
+```
 
 The only parameter you'll need to include is your Layout.
 

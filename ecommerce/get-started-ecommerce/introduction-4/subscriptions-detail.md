@@ -104,11 +104,19 @@ If you've already created your Form, you can skip this step.
 
 Once you've created a Form and made a note of its ID, you'll be able to add it to your Detail Layout.
 
-As a guide, we've added a Liquid comment to remind you to add your Subscription Sign Up Form to this Layout: \`
+```liquid
+{% raw %}
+{% comment %} INSERT YOUR PAYMENT FORM HERE {% endcomment %}
+{% endraw %}
+```
 
-\`
+This is just a suggestion, you can actually include your Form anywhere you like in the Layout. Use the following Liquid:
 
-This is just a suggestion, you can actually include your Form anywhere you like in the Layout. Use the following Liquid: `<div data-gb-custom-block data-tag="include" data-0='form' data-1='1' data-2='1' data-3=', layout: '></div>`
+```liquid
+{% raw %}
+{% include 'form', id: '1', layout: 'my_form_layout' %}
+{% endraw %}
+```
 
 Parameters:
 
@@ -122,11 +130,11 @@ The `wrapper.liquid` file could be used to add any HTML structure you may requir
 You must include the following Liquid, which will output the `item.liquid` file for the Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.
 
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
-
-
+{% endraw %}
 ```
 
 #### Step 5 - Available Fields

@@ -233,20 +233,18 @@ Note also that the value of `spend` will be different for Basic Payment Forms:
 
 You can optionally add a button to the Layout which will allow the customer to remove a Discount Code that has already been applied.
 
-```javascript
-
-<div data-gb-custom-block data-tag="-"></div>
-
-<button class="btn btn-danger" 
-        id="s_e_discount_remove" 
-        onclick="s_e_cart_discount_code_remove(
-{
-reload: false
-}
-)">Remove Code</button>
-
-</div>
-
+```liquid
+{% raw %}
+{%- if discount_code != blank -%}
+  <button class="btn btn-danger" id="s_e_discount_remove" onclick="s_e_cart_discount_code_remove(
+    {
+      reload: false
+    }
+  )">
+    Remove Code
+  </button>
+{% endif %}
+{% endraw %}
 ```
 
 The Liquid IF statement helps make sure the button is only displayed if there is a code present to be removed.

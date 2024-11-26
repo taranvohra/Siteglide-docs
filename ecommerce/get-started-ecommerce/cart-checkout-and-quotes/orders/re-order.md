@@ -26,7 +26,13 @@ A message can also be displayed to the User to detail any Products from that pre
 
 ### Including the Button
 
-The following Liquid will output the reorder button:`<div data-gb-custom-block data-tag="include" data-0='ecommerce/reorder_button' data-1='default' data-2='default'></div>`
+The following Liquid will output the reorder button:
+
+```liquid
+{% raw %}
+{% include 'ecommerce/reorder_button', layout: 'default', order_id: this.id %}
+{% endraw %}
+```
 
 Parameters:
 

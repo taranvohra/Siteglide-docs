@@ -19,7 +19,15 @@ When a User "cancels" a Subscription front-end, we send an API call to Stripe, i
 
 Subscription Orders marked for cancellation will have the field "cancel\_at\_period\_end" ("module\_field\_14/subscription\_order\_9") marked as "true". This corresponds to the equivalent property on Stripe.
 
-The following Liquid can be added within a `user_subscriptions` List Layout:`<div data-gb-custom-block data-tag="-" data-0='ecommerce/subscription_cancel'></div>` You may wish to use logic to only show the button when it can be used.
+The following Liquid can be added within a `user_subscriptions` List Layout:
+
+```liquid
+{% raw %}
+{%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
+{% endraw %}
+```
+
+You may wish to use logic to only show the button when it can be used.
 
 ```liquid
 {% raw %}
@@ -27,10 +35,6 @@ The following Liquid can be added within a `user_subscriptions` List Layout:`<di
   {%- include 'ecommerce/subscription_cancel', orderID: this.id -%}
 {%- endif -%}
 {% endraw %}
-
-
-
-
 ```
 
 ## Un-scheduling the Cancellation before it happens

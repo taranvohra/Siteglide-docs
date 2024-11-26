@@ -253,21 +253,20 @@ _Boolean to String_
 
 _Int to String_
 
-```javascript
-
-<div data-gb-custom-block data-tag="assign" data-original_int='123'></div>
-
-<div data-gb-custom-block data-tag="assign"></div>
-
+```liquid
+{% raw %}
+{% assign original_int = 123 %}
+{% assign new_string = original_int | downcase %}
+{% endraw %}
 ```
 
 _Float to String_
 
-```javascript
-
-<div data-gb-custom-block data-tag="assign" data-original_float='123'></div>
-
-<div data-gb-custom-block data-tag="assign"></div>
+```liquid
+{% raw %}
+{% assign original_float = 123 %}
+{% assign new_string = original_float | downcase %}
+{% endraw %}
 ```
 
 _Literal JSON object to HASH object_ (Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value.

@@ -46,7 +46,13 @@ If you will also have some non-grouped Products, you may wish to create a "Produ
 
 Here's how I've structured my Categories, "Chocolate" and "Crisps" each represent separate groups of Products, the parent Category "Product-group" will be used to identify them as Product grouping Categories, allowing you to keep them separate from the other Categories your Products may have:
 
-Now let's look at how we can ensure only the Categories within "Product-group" are used when outputting our related Products. First I assign an object containing all the Categories on my Site (this gives us access to all the Categories fields, rather than just the ID): `<div data-gb-custom-block data-tag="assign"></div>`
+Now let's look at how we can ensure only the Categories within "Product-group" are used when outputting our related Products. First I assign an object containing all the Categories on my Site (this gives us access to all the Categories fields, rather than just the ID):
+
+```liquid
+{% raw %}
+{% assign categories = context.exports.categories.items %}
+{% endraw %}
+```
 
 Next loop over all of our Products categories, at each iteration we'll store the "full\_slug" of the Category (this will include the parent Categories slug, which we can use to check the Category is being used for Product grouping).
 
@@ -58,10 +64,6 @@ Note: "this" contains one of the Category IDs assigned to our Product, we then u
   {% assign full_slug = categories[category].full_slug | split: '/' %}
 {% endfor %}
 {% endraw %}
-
-
-
-
 ```
 
 We've now created an array of all the individual "parameters" in our "full\_slug" field, next we'll loop over this and check none of the parameters equal "product-group"- if they do then we know that Category is being used for Product Grouping and store its ID. Add this code to the for loop above:
@@ -188,28 +190,19 @@ As always when using custom JavaScript, you may wish to adjust the simplified ex
 
 For this demo, I've chosen to output my Related Products using `<select> & <option>`, and some Javascript that will redirect the Page.
 
-```javascript
+```liquid
+{% raw %}
 <label for="options">Related Products</label>                          
 <select name="options" class="form-control" onChange="handleOption(this)">
   <option>---Select alternative Product---</option>  
-  
-
-<div data-gb-custom-block data-tag="for">
-
-    
-
-<div data-gb-custom-block data-tag="if">
-
+  {% for item in items %}
+    {% if item.id != this.id %}
       <option value="/{{item['module_slug']}}/{{item['slug']}}"> 
       {{item.name}}</option>
-    
-
-</div>
-
-  
-
-</div>                          
+    {% endif %}
+  {% endfor %}                          
 </select>
+{% endraw %}
 ```
 
 This will output `---Select alternative Product---` as the placeholder for the options, then will loop over all the items in the Object we've just created, each iteration will output another `<option>` where the value contains a relative link to that Products Detail Page.
@@ -232,12 +225,14 @@ If you used the method 3) b) above, you'll need to move some of the code from 4)
 
 Make sure your Wrapper still includes the items inside the `<select>` element:
 
-```javascript
+```liquid
+{% raw %}
 <label for="options">Related Products</label> 
 <select name="options" class="form-control" onChange="handleOption(this)">
   <option>---Select alternative Product---</option>  
-  <div data-gb-custom-block data-tag="-" data-0='modules/siteglide_ecommerce/ecommerce/get/get_products' data-1=', item_layout: ' data-2='item'></div>
+  {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_products', item_layout: 'item' -%}
 </select>
+{% endraw %}
 ```
 
 #### Item
