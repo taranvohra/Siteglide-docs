@@ -14,7 +14,13 @@ This is slightly different from a Subscriptions List view, as this lists all ava
 
 # Outputting the user\_subscriptions List
 
-The following Liquid can be outputted on any Page protected by a Secure Zone:`{%- include 'user_subscriptions', layout: 'default' -%}`
+The following Liquid can be outputted on any Page protected by a Secure Zone:
+
+```liquid
+{% raw %}
+{%- include 'user_subscriptions', layout: 'default' -%}
+{% endraw %}
+```
 
 Parameters:
 
