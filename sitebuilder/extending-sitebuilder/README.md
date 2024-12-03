@@ -11,10 +11,15 @@ Developers will need to have a good understanding of:
 
 #### Theme or Module? <a href="#theme-or-module" id="theme-or-module"></a>
 
-There are two main pathways to extending SiteBuilder with content and a good starting point is to work out which one matches your needs best. The two approaches are aimed at different use-cases.
+There are two main pathways to extending SiteBuilder with content and a good starting point is to work out which one matches your needs best:
 
-1. Create a Theme [Developers - Creating SiteBuilder Themes](https://www.sitegurus.io/documentation/sitebuilder/developers\_-\_adding\_SiteBuilder\_content/adding\_themes)
-2. Create a Module [Developers - Support for Marketplace Modules](https://www.sitegurus.io/documentation/sitebuilder/developers\_-\_adding\_SiteBuilder\_content/adding\_modules)
+{% content-ref url="creating-sitebuilder-themes.md" %}
+[creating-sitebuilder-themes.md](creating-sitebuilder-themes.md)
+{% endcontent-ref %}
+
+{% content-ref url="support-for-marketplace-modules.md" %}
+[support-for-marketplace-modules.md](support-for-marketplace-modules.md)
+{% endcontent-ref %}
 
 #### Using Content from 3rd Parties <a href="#using-content-from-3rd-parties" id="using-content-from-3rd-parties"></a>
 
