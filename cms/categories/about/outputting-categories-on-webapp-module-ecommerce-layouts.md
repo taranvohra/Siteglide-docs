@@ -72,18 +72,11 @@ You can use the following to only output the name of the last category assigned 
 You can use the following to only output the name of a specifc category assigned to the Item, by its zeroed-index, where 0 is the first and 1 is the second:
 
 ```liquid
-<!-- Fetch second Category name -->
 {% raw %}
+<!-- Fetch second Category name -->
 {% assign categoryID == this.category_array[1] %}
-{% endraw %}
-
-
-
-
-
 {{context.exports.categories.data[categoryID].name}}
-
-</div>
+{% endraw %}
 ```
 
 ## Check if an Item has an Nth Category assigned to it

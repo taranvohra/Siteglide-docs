@@ -157,7 +157,7 @@ Note that this will only output items in this specific Category. To output all i
 
 You can use the Category ID `{{this.id}}` to filter WebApp, Module or Product Lists and display the Items with this Category assigned (and those belonging to Categories which are children of this Category).
 
-We'll include some examples here of how the `{{this.id}}` variable can be used specifically on the Category Detail Page to filter by that Detail Page's Category dynamically:[ Learn more about filtering WebApps and Modules by Category](https://developers.siteglide.com/filtering-webapps-and-modules-by-categories)
+We'll include some examples here of how the `{{this.id}}` variable can be used specifically on the Category Detail Page to filter by that Detail Page's Category dynamically:[ Learn more about filtering WebApps and Modules by Category](/cms/categories/about/filtering-webapps-and-modules-by-categories.md)
 
 ### Products
 
