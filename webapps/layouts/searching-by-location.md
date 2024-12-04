@@ -35,7 +35,12 @@ To display results from these parameters you will need the new `use_location_sea
 
 `use_location_search` - 'true' or 'false' - default: 'false'
 
-Example - `{%- include 'webapp', id: '1', use_location_search: 'true' -%}`
+Example - 
+```liquid
+{% raw %}
+{%- include 'webapp', id: '1', use_location_search: 'true' -%}
+{% endraw %}
+```
 
 _Note - Location Search \`(use_location_search`) and Text Search`(use_search\`) will **not** work together at the same time\_
 

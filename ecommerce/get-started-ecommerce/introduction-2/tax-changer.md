@@ -19,7 +19,11 @@ The JS function must be sent a valid Tax Code ID. See the layout named `default`
 
 You can add a Tax Code Changer to your site using the following include:
 
-`{%- include 'ecommerce/tax_code_changer', layout: 'default' -%}`
+```
+{% raw %}
+{%- include 'ecommerce/tax_code_changer', layout: 'default' -%}
+{% endraw %}
+```
 
 ***
 

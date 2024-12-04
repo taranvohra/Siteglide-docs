@@ -21,7 +21,11 @@ When changing currency, then default Tax Code for that currency is also automati
 
 You can add a Currency Changer to your site using the following include:
 
-`{%- include 'ecommerce/currency_changer', layout: 'default' -%}`
+```liquid
+{% raw %}
+{%- include 'ecommerce/currency_changer', layout: 'default' -%}
+{% endraw %}
+```
 
 ***
 

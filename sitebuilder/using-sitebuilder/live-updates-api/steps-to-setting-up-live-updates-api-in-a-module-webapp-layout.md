@@ -26,7 +26,33 @@ Firstly, make sure the SiteBuilder Module is installed on your site. Then, inclu
 
 Secondly, choose which section of code you'd like the API to be ready to live-update.
 
-* This must be some Liquid code which can be rendered using a single Liquid `{% include %}` tag. E.g. `{% include 'module' %}` or `{% include 'webapp' %}`. \* The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via `{{context.params}}`.
+* This must be some Liquid code which can be rendered using a single Liquid
+```liquid
+{% raw %}
+{% include %}
+{% endraw %}
+```
+tag. E.g. 
+
+```liquid
+{% raw %}
+{% include 'module' %}
+{% endraw %}
+```
+or
+
+```liquid
+{% raw %}
+{% include 'webapp' %}
+{% endraw %}
+
+* The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via:
+
+```liquid
+{% raw %}
+{{context.params}}
+{% endraw %}
+```
 
 At the top of this layout, in the wrapper file if it has one, you need to include the following Liquid. This generates a public\_key you need to use the API. See "Thinking about Security" for why we use this. If you're using a WebApp or Module tag and layout from Siteglide, these variables will be available automatically.
 

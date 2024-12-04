@@ -52,11 +52,21 @@ platformOS uses a single cookie to identify a visitor- whether signed in or not.
 ***Adding Session Fields
 ***You can add fields to session and exports objects only. 
 
-The easiest way to add session fields is to use the `{% session %}` tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
+The easiest way to add session fields is to use the 
+```liquid
+{% raw %}
+{% session %}
+{% endraw %}
+``` tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
 
 **Compatibility**: To avoid conflicting with future Siteglide features, we recommend that if you use this feature, you prefix any new fields with the initials or name of your Agency.
 
-e.g. Let's say a User has decided to opt-in to a particular non-essential feature or cookie. You could remember this: `{% session agency_optional_features = 'true' %}`
+e.g. Let's say a User has decided to opt-in to a particular non-essential feature or cookie. You could remember this: 
+```liquid
+{% raw %}
+{% session agency_optional_features = 'true' %}
+{% endraw %}
+```
 
 You can then use logic to only show these features to Users who have opted-in.
 
@@ -71,7 +81,12 @@ You can then use logic to only show these features to Users who have opted-in.
 ```
 
 ***Removing Session Fields
-***To continue our previous example, if the User chooses to change their preferences and opt out, you can forget the setting by setting it to an empty String: `{% session optional_features = '' %}`
+***To continue our previous example, if the User chooses to change their preferences and opt out, you can forget the setting by setting it to an empty String: 
+```liquid
+{% raw %}
+{% session optional_features = '' %}
+{% endraw %}
+```
 
 ***Ending a Session***- Advanced only
 &#x20;You can use custom GraphQL to completely forget a visitor and end their session. Use at your own risk as we cannot support Secure Zones with Users who have had their Session ended in this way: <https://documentation.platformos.com/api-reference/graphql/mutations#user_session_destroy>

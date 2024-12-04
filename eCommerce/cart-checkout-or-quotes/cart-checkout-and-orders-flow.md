@@ -104,7 +104,12 @@ Inside this loop, you can access the following fields. (If you have renamed the 
 
 ## 6) Add Orders layout to the Orders Page
 
-Add the following liquid to your Orders page to output a list of the current logged-in User’s Orders:`{%- include 'user_orders', layout: 'my_orders_list_layout', sort_type: 'id', sort_order: 'asc', show_pagination: 'false' %}`
+Add the following liquid to your Orders page to output a list of the current logged-in User’s Orders:
+```
+{% raw %}
+{%- include 'user_orders', layout: 'my_orders_list_layout', sort_type: 'id', sort_order: 'asc', show_pagination: 'false' %}
+{% endraw %}
+```
 
 The layout parameter should take the name of the list layout you created.
 

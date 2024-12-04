@@ -20,13 +20,21 @@ This allows you to include a JS file only when it becomes relevant to a particul
 
 `siteglide_head_scripts` moves the contained assets into the `<head>` of your page when it renders. You must include `,,` on the end of each line within this liquid tag.
 
-`{% content_for 'siteglide_head_scripts' %} <link rel="stylesheet" href="{{'css/modules/module_3/design_system/1/sidebar.min.css' | asset_url}}" />,,{% endcontent_for %}`
+```liquid
+{% raw %}
+{% content_for 'siteglide_head_scripts' %} <link rel="stylesheet" href="{{'css/modules/module_3/design_system/1/sidebar.min.css' | asset_url}}" />,,{% endcontent_for %}
+{% endraw %}
+```
 
 #### Footer Scripts
 
 `siteglide_footer_scripts` moves the contained assets to the bottom of the body tag on your page when it renders. You must include `,,` on the end of each line within this liquid tag.
 
-`{%- content_for 'siteglide_footer_scripts' %} <link rel="stylesheet" href="{{ 'css/modules/module_9/custom.css' | asset_url}}" />,,{%- endcontent_for %}`
+```liquid
+{% raw %}
+{%- content_for 'siteglide_footer_scripts' %} <link rel="stylesheet" href="{{ 'css/modules/module_9/custom.css' | asset_url}}" />,,{%- endcontent_for %}
+{% endraw %}
+```
 
 #### Troubleshooting
 

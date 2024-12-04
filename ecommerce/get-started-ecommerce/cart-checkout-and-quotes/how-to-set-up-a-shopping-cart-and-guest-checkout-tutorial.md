@@ -34,7 +34,11 @@ Learn more about Product Detail pages [here](https://developers.siteglide.com/de
 
 This liquid include tag will add the "Add to Cart" Button:
 
-`{% include 'ecommerce/cart_add' -%}`
+```liquid
+{% raw %}
+{% include 'ecommerce/cart_add' -%}
+{% endraw %}
+```
 
 This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product.
 
@@ -46,7 +50,11 @@ Create a new Page for your Cart and use liquid to include the Cart.
 
 Use this liquid to include the Cart layout in your page.
 
-`{%- include 'ecommerce/cart', layout: 'cart', remove_default_css: 'false' -%}`
+```liquid
+{% raw %}
+{%- include 'ecommerce/cart', layout: 'cart', remove_default_css: 'false' -%}
+{% endraw %}
+```
 
 Use the `layout` parameter to select the folder which contains the wrapper.liquid and the item.liquid file you would like to use for your layout. For now, you can use the "cart" layout which is included in the Ecommerce Module.
 
@@ -79,7 +87,11 @@ Learn more about pages [here](https://help.siteglide.com/article/100-pages-getti
 
 Include the Checkout Layout in your page:
 
-`{% include 'ecommerce/checkout', form_id: '2', layout: 'default' -%}`
+```liquid
+{% raw %}
+{% include 'ecommerce/checkout', form_id: '2', layout: 'default' -%}
+{% endraw %}
+```
 
 The form\_id parameter should be the id of your Checkout Form. If you use the Toolbox to add this code, you can lookup your form by name.
 
