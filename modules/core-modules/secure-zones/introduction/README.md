@@ -17,11 +17,19 @@ In this Article we'll provide the Liquid which can be used to manage access to [
 
 ### Log In
 
-`<div data-gb-custom-block data-tag="-" data-0='login_form' data-1=', layout: ' data-2='default' data-3=', redirect: ' data-4='/'></div>`
+```liquid
+{% raw %}
+{%- include 'login_form', layout: 'default', redirect: '/' -%}
+{% endraw %}
+```
 
 ### Log In / Sign Up
 
-`<div data-gb-custom-block data-tag="-" data-0='form' data-1='form' data-2='1' data-3='1' data-4=', layout: '></div>`
+```liquid
+{% raw %}
+{%- include 'form', id: '1', layout: 'default' -%}
+{% endraw %}
+```
 
 This is the same syntax for inserting a custom Form, where the id parameter should be the id of your Form. See the section [Creating a Sign Up Form](https://help.siteglide.com/article/138-secure-zones-getting-started#2-adding-a-sign-up-form) to learn more.
 
@@ -29,7 +37,11 @@ Once you have created a Form, you can select the Form from Toolbox and it will d
 
 ### Log Out
 
-`<div data-gb-custom-block data-tag="-" data-0='logout_button' data-1=', layout: ' data-2='default'></div>`
+```liquid
+{% raw %}
+{%- include 'logout_button', layout: 'default' -%}
+{% endraw %}
+```
 
 ### Recover Password Flow
 

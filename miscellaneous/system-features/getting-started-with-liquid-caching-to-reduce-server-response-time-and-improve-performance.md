@@ -64,13 +64,23 @@ What if you want the Cache to last from a long time normally, but you want conte
 
 To do this, you want to change the Cache key.
 
-Let's say the Cache key is just the URL of the Site.:
+Let's say the Cache key is just the URL of the Site:
 
-`<div data-gb-custom-block data-tag="capture">{{context.headers.PATH_INFO}}</div>`
+```liquid
+{% raw %}
+{% capture category_cache_key %}{{context.headers.PATH_INFO}}{% endcapture %}
+{% endraw %}
+```
 
 To bust the Cache manually, you can either:
 
 * Add a parameter to the URL - `?test=test`
 * Change the Cache key e.g. add a number at the end.
 
-`<div data-gb-custom-block data-tag="capture">{{context.headers.PATH_INFO}}-1</div>` To change the Cache Key dynamically, add dynamic Liquid to the Cache Key, e.g. from a custom GraphQL query, a WebApp or a Module.
+```liquid
+{% raw %}
+{% capture category_cache_key %}{{context.headers.PATH_INFO}}-1{% endcapture %}
+{% endraw %}
+```
+
+To change the Cache Key dynamically, add dynamic Liquid to the Cache Key, e.g. from a custom GraphQL query, a WebApp or a Module.

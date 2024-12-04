@@ -49,17 +49,18 @@ You can also use URL parameters to carry out advanced filtering.
 
 You'll notice in the `wrapper.liquid` file that the ordinary Liquid which fetches the `item.liquid` files is outputted inside a JavaScript `<script>` element. This is very important as it allows the Liquid data to be converted to the JavaScript array that Google Maps needs.
 
-```javascript
-//---Events Module Map View Options--- 
-//--- The Events Module Items should be loaded into a JavaScript Array- 
-//--- this allows them to be used by Google Maps. Changing the format in the item.liquid 
-//--- file may cause errors.
-var locations = [	
-	
-
-<div data-gb-custom-block data-tag="-" data-0='modules/siteglide_system/get/get_items' data-1=', item_layout: ' data-2='item'></div>
-];
-
+```liquid
+{% raw %}
+<script>
+    //---Events Module Map View Options--- 
+    //--- The Events Module Items should be loaded into a JavaScript Array- 
+    //--- this allows them to be used by Google Maps. Changing the format in the item.liquid 
+    //--- file may cause errors.
+    var locations = [
+        {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+    ];
+</script>
+{% endraw %}
 ```
 
 The `item.liquid` file should be left in the format of a JSON object, but you may choose to add more variables:

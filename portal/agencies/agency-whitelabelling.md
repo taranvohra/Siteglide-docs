@@ -20,15 +20,20 @@ Below is an Endpoint and example snippets of code you can use to enable your Cli
 
 You'll need the code below as a minimum. You can then add your own HTML/CSS/JS designs and branding on top.
 
-### HTML and JavaScript
+### HTML
 
-\`\`\`liquidEmail Password
+```liquid
+{% raw %}
+<script src="{{ 'js/s_login.js' | asset_url }}"></script>
+<form onsubmit="s_login(this)">
+	Email <input type="text" name="email" />
+	Password <input type="password" name="password" />
+	<input type="submit" value="Login" />
+</form>
+{% endraw %}
+```
 
-````
-
-</div>
-
-<div data-gb-custom-block data-tag="tab" data-title='JavaScript'>
+### JavaScript
 
 ```javascript
 function s_login(el){
@@ -53,4 +58,6 @@ function s_login(el){
 	}
 	xReq.send(JSON.stringify(data));
 }
-````
+```
+
+

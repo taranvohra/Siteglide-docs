@@ -22,7 +22,13 @@ Set the parameter  `show_pagination: 'false'` to remove pagination controls.
 
 ### How to move Pagination Controls
 
-Firstly remove the default Pagination controls, as above.  Secondly, add the following Liquid where you'd like the controls to sit within your HTML structure: `<div data-gb-custom-block data-tag="-" data-0='modules/siteglide_system/get/get_pagination'></div>`
+Firstly remove the default Pagination controls, as above.  Secondly, add the following Liquid where you'd like the controls to sit within your HTML structure:
+
+```liquid
+{% raw %}
+{%- include 'modules/siteglide_system/get/get_pagination' -%}
+{% endraw %}
+```
 
 ## Specifying a Pagination Layout
 

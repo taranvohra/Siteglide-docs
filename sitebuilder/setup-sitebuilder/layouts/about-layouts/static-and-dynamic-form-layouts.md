@@ -102,7 +102,13 @@ This file structure will be exactly the same whether you opt for a static or dyn
 
 ### Static Wrapper <a href="#static-wrapper" id="static-wrapper"></a>
 
-A static wrapper contains `<div data-gb-custom-block data-tag="include"></div>` liquid tags for each component in your form and passes them the data they need via parameters. These parameters may appear to be hardcoded, however, it was dynamically generated at the time the layout was created by SiteBuilder- it will just need editing if there are any subsequent changes in Admin.
+A static wrapper contains
+```liquid
+{% raw %}
+{% include %}
+{% endraw %}
+```
+liquid tags for each component in your form and passes them the data they need via parameters. These parameters may appear to be hardcoded, however, it was dynamically generated at the time the layout was created by SiteBuilder- it will just need editing if there are any subsequent changes in Admin.
 
 Alternatively, after making changes to the form configuration, you can always use SiteBuilder to re-generate a new version of the layout with a new name and new parameters.
 
@@ -127,7 +133,13 @@ This tag can be passed parameters to modify its behaviour. Any of the parameters
 
 #### The `collection` Parameter <a href="#the-collection-parameter" id="the-collection-parameter"></a>
 
-Setting `collection: 'false'` means the fields will be outputted in the HTML exactly in the place of the `<div data-gb-custom-block data-tag="include" data-0='form_layout_fields'></div>` tag.
+Setting `collection: 'false'` means the fields will be outputted in the HTML exactly in the place of the
+```liquid
+{% raw %}
+{% include 'form_layout_fields' %}
+{% endraw %}
+```
+tag.
 
 Setting `collection: 'true'` allows you to re-position key groups of fields within your wrapper.
 

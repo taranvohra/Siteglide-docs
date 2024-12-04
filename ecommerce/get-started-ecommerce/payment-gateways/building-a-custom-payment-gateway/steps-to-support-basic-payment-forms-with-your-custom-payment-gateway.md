@@ -16,7 +16,15 @@ The payment flow will look for code in your set Custom Payment Gateway Partial P
 
 Your code will be included inside the Form - where in the Form Layout you see the tag
 
-`<div data-gb-custom-block data-tag="-" data-0='ecommerce/basic_payment' data-1=', amount: ' data-2='500' data-3='500' data-4=', currency: '></div>`
+```liquid
+{% raw %}
+{% include "ecommerce/basic_payment",
+  amount: '500',
+  currency: 'usd',
+  id: '10' 
+%}
+{% endraw %}
+```
 
 To access information about your custom Payment Gateway such as the API Keys, you can output `{{payment_gateway}}` into the layout.
 

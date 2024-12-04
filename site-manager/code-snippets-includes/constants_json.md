@@ -14,22 +14,7 @@ Instead, we've provided a similar alternative constants\_json which you can use 
 
 ```liquid
 {% raw %}
-
-<div data-gb-custom-block data-tag="function" data-constants='constants_json'></div>
-
-<!-- company_information -->
-
-{{constants.company_information}}
-
-<!-- integrations -->
-
-{{constants.integrations }}
-
-<!-- currency_map -->
-
-{{constants.currency_map}}
-
-<div data-gb-custom-block data-tag="function" data-constants='constants_json'></div>
+{% function constants = "constants_json" %}
 
 <!-- company_information -->
 

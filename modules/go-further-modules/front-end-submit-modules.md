@@ -29,8 +29,10 @@ Edit forms should be outputted inside a standard Module layout's item.liquid fil
 
 Note when developing a layout for an edit form, be sure to use the HTML value attribute to give the fields their current values from the database.
 
-```
+```liquid
+{% raw %}
 <input name="{{form_builder.fields.properties.module_field_3_1.name}}" value="{{form_builder.fields.properties.module_field_3_1.value}}">
+{% endraw %}
 ```
 
 Using a SiteBuilder form layout will save you this step.
@@ -79,7 +81,13 @@ Some fields are required for the form to be able to set up the Module items corr
 
 ```
 
-All forms should be wrapped in a Liquid form tag: `<div data-gb-custom-block data-tag="form"></div>` All forms need a submission button:`<button onClick="s_form_submit_v2(this,'module_1')">Submit</button>`
+All forms should be wrapped in a Liquid form tag:
+
+```liquid
+{% raw %}
+{% form -%}{% endform -%}
+{% endraw %}
+```
 
 ## Category Field (optional)
 

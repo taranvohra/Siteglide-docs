@@ -60,7 +60,7 @@ For example, you might have a button which will take Users to the next Page, but
 
 ```liquid
 {% raw %}
-<li class="page-item <div data-gb-custom-block data-tag="if" data-0='false' data-1='false' data-2='false'>disabled</div>">
+<li class="page-item {% if next_page == false %}disabled{% endif %}">
  <a class="page-link" href="{{next_path}}">Next</a>
 </li>
 {% endraw %}

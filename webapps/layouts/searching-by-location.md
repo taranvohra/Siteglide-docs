@@ -117,10 +117,9 @@ Add HTML + Liquid
 
 The Liquid makes sure the map is only outputted after the Page has been refreshed by the JavaScript and the correct parameters are available in the URL for filtering the results.
 
-```html
-
-<div data-gb-custom-block data-tag="-"></div>
-
+```liquid
+{% raw %}
+{%- if context.params.distance and context.params.longlat -%}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
 	<div id="map" class="map" style="height:400px;width:100%"></div>
@@ -131,9 +130,8 @@ The Liquid makes sure the map is only outputted after the Page has been refreshe
       type: 'list'
     -%}
   </span>
-
-<div data-gb-custom-block data-tag="-"></div>
-
+{%- endif -%}
+{% endraw %}
 ```
 
 Add JavaScript
@@ -177,7 +175,8 @@ Layout 'json':
 
 ### Full example
 
-```javascript
+```liquid
+{% raw %}
 <div class="container text-center">
   <h1 class="mb-3 h2 sg-h2">Search for Stores within your area</h1>
   <div class="row">
@@ -213,34 +212,25 @@ Layout 'json':
 	}
 </script>
 
-<div data-gb-custom-block data-tag="-"></div>
-
+{%- if context.params.distance and context.params.longlat -%}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
 	<div id="map" class="map" style="height:400px;width:100%"></div>
-	<span id="map_content" style="display:none">
-
-<div data-gb-custom-block data-tag="-" data-0='webapp' data-1=', id: ' data-2='1' data-3='1' data-4='true' data-5='true' data-6='true' data-7='true' data-8=', type: '></div>
-
-</span>
+	<span id="map_content" style="display:none">{%- include 'webapp', id: '1', use_location_search: 'true', type: 'list' -%}</span>
 	<script>
 		var distance = {{context.params.distance | default: 10 }};
 		var center = "{{context.params.longlat}}".split(',');
-
 		var map = L.map('map').setView([parseFloat(center[1]), parseFloat(center[0])], 8);
-
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
-
 		L.circle([parseFloat(center[1]), parseFloat(center[0])], {radius: distance*1000}).addTo(map);
-
 		var locations = "{"+document.querySelector('#map_content').innerText.trim().slice(0, -1)+"}";
 		locations = JSON.parse(locations);
 		Object.keys(locations).forEach(function(k){
 			L.marker([locations[k].latlong.coordinates[1], locations[k].latlong.coordinates[0]]).addTo(map).bindPopup(locations[k].name);
 		});
 	</script>
-
-<div data-gb-custom-block data-tag="-"></div>
+{%- endif -%}
 ```
+{% endraw %}

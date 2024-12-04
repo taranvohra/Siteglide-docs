@@ -76,9 +76,58 @@ We use the "date" filter here to format the "raw" date integer to a humanized da
 
 We'll use "%B", as this will store the Month as a String.
 
-Now specify which language in "month\_map" you're using, I've chosen French: `<div data-gb-custom-block data-tag="assign" data-language='fre'></div>`
+Now specify which language in "month\_map" you're using, I've chosen French:
 
-Next, we'll use these two variables to search the "month\_map" and return the translated Month: `<div data-gb-custom-block data-tag="assign"></div>`
+```liquid
+{% raw %}
+{% parse_json month_map %}  { 
+
+  "fre": {
+
+    "January": "Januar",
+
+    "February": "Février", 
+
+    "March": "Mars",
+
+    "April": "Avril",
+
+    "May": "Mai",
+
+    "June": "Juin",
+
+    "July": "Juillet",
+
+    "August": "Août",
+
+    "September": "Septembre",
+
+    "October": "Octobre",
+
+    "November": "Novembre",
+
+    "December": "Décembre"
+
+  },
+
+  "ger": {
+
+    "January": "Januar"
+
+  }
+
+
+}  {% endparse_json %}
+{% endraw %}
+```
+
+Next, we'll use these two variables to search the "month\_map" and return the translated Month:
+
+```liquid
+{% raw %}
+{% assign translated_month = month_map[language][current_month] %}
+{% endraw %}
+```
 
 ### Format the translated Month and store in a variable:
 
