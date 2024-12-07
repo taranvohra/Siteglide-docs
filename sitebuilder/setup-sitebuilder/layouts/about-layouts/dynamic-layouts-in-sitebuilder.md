@@ -28,4 +28,4 @@ Head to the layouts tab in the Module navigation to find a wide range of layouts
 
 Keep an eye out for new SiteBuilder compatible Modules and Themes which you can download from the Siteglide Marketplace. Once you install a module from the Marketplace, its layouts should appear.
 
-It will now be possible for developers to create SiteBuilder-compatible layouts when they add a new module to the Siteglide marketplace. Module creators can [create module layouts for any theme](https://www.sitegurus.io/documentation/sitebuilder/adding\_sitebuilder\_content\_using\_modules/adding\_modules). Theme creators can also [create layouts for existing modules](https://www.sitegurus.io/documentation/sitebuilder/adding\_sitebuilder\_content\_using\_modules/adding\_themes).
+It will now be possible for developers to create SiteBuilder-compatible layouts when they add a new module to the Siteglide marketplace. Module creators can [create module layouts for any theme](/sitebuilder/extending-sitebuilder/support-for-marketplace-modules.md). Theme creators can also [create layouts for existing modules](/sitebuilder/extending-sitebuilder/creating-sitebuilder-themes.md).

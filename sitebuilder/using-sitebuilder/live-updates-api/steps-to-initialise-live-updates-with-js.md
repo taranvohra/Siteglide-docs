@@ -70,7 +70,7 @@ Inline Script Tag example:
 {% endraw %}
 ```
 
-Refer to the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference) for the full range of available options which can be used while initialising with JS.
+Refer to the [API Reference](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md) for the full range of available options which can be used while initialising with JS.
 
 #### 4) Add an HTML control and attach an Event Listener <a href="#id-4-add-an-html-control-and-attach-an-event-listener" id="id-4-add-an-html-control-and-attach-an-event-listener"></a>
 

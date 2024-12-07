@@ -401,7 +401,7 @@
   * [User Details](crm/users/user-details.md)
   * [User Secure Zones](crm/users/user-secure-zones.md)
   * [How Users Edit their Email and Password Front End](crm/users/how-users-edit-their-email-and-password-front-end.md)
-  * [Editing a User's CRM record Front End with Custom Field Sets](crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
+  * [Custom Field Sets & CRM Custom Fields](crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
   * [Storing User's Favourite WebApp / Module Items](crm/users/storing-users-favourite-webapp-module-items.md)
 * [Companies](crm2/companies.md)
 * [Cases](crm/cases/README.md)

@@ -148,8 +148,8 @@ To add a form, we need another data-attribute. You can add as many forms as you 
 
 The simplest way to add controls to your form is to use standard HTML form elements. The element's name should correspond to the URL parameter you wish the user to be able to change, while the value of the element obviously will set the parameter's value. Check the full example at the beginning along with the API Reference to see other kinds of supported controls and buttons:
 
-* [Toggle Buttons](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference#live-updates-toggle-buttons)
-* [Sort Buttons](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference#live-updates-sort-buttons)
+* [Toggle Buttons](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#live-updates-toggle-buttons)
+* [Sort Buttons](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#live-updates-sort-buttons)
 
 Note ordinary HTML elements don't need any additional data-attributes. The API will watch for changes within the form area.
 
@@ -213,7 +213,7 @@ That's the basics of the Live Update API.
 
 Learn more:
 
-* Check out the [API Reference Guide](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference) each time you want to look something up.
+* Check out the [API Reference Guide](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md) each time you want to look something up.
 * How to add sort buttons
 * How to add custom toggle buttons
 * How to set up pagination

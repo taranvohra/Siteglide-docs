@@ -179,7 +179,7 @@ When a sort button changes state to either 'asc' or 'desc', all other sort butto
 
 _Changing default HTML for each button state_
 
-See the [Methods section](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference#methods) for `.setSortHTML();` and the instructions for using methods with data-attributes.
+See the [Methods section](#methods) for `.setSortHTML();` and the instructions for using methods with data-attributes.
 
 #### Live-Updating the Interactive Form Areas <a href="#liveupdating-the-interactive-form-areas" id="liveupdating-the-interactive-form-areas"></a>
 
@@ -199,10 +199,11 @@ When live-updating controls, here are a few general principals to improve the ex
 
 #### Methods <a href="#methods" id="methods"></a>
 
-The following guides show you how methods can be used, depending on your method of initialisation:
+The following guide shows how methods can be used:
 
-* [Using methods after data-attribute initialisation](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_getting\_started)
-* [Using methods after JS initialisation](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_initialising\_with\_JS#5-trigger-a-live-update-when-the-event-callback-runs)
+* [Using Live Updates Methods](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-use-live-updates-methods.md)
+
+The table shows available methods:
 
 <table data-full-width="true"><thead><tr><th>Method</th><th>Parameters</th><th>Notes</th></tr></thead><tbody><tr><td><code>instance.liveUpdate(params,onBeforeLiveUpdate,onAfterLiveUpdate,changeStateOptions)</code></td><td>1) <code>params</code> - Object - Pass in an object containing the key value pairs you'd like to be added to the GET request. 2) <code>onBeforeLiveUpdate</code> - Function - optional - callback function to run before update 3) <code>onAfterLiveUpdate</code> - Function - optional - Callback function to run after update. 4) See below for changeStateOptions</td><td>Params will override any default params, if they have the same key. The callback functions are especially suitable if you need any one-time side effects. If you need a callback function for every update, we recommend using events instead.</td></tr><tr><td><code>instance.setSuspenseHTML('&#x3C;div>loading&#x3C;/div>')</code></td><td>1) Pass in an HTML String.</td><td>We recommend using template literals. When live-updating begins, this HTML will be inserted into the area which is being live-updated. When the live-updating ends, the HTML will be replaced with the live-updated component HTML. This can also be set when using the constructor.</td></tr><tr><td><code>instance.setSuspenseCSSClassList('class1 class2')</code></td><td>1) ClassList space-separated</td><td>Sets CSS classes on each live-updating component and then removes them once the live-updating is complete. If no components are used, the classes are toggled on the main initiated element. As well as allowing you to change style directly, you can also use it to position suspense HTML within the container. This can also be set when using the constructor.</td></tr><tr><td><code>instance.setModifyHistory({enabled: true, includeHiddenFields: false})</code></td><td>1) Object</td><td>Pass in an object with an <code>enabled</code> boolean and <code>includehiddenFields</code> boolean. This changes the behaviour of each following liveUpdate so that it will update the URL query parameters without reloading the page. Useful for creating shareable links.</td></tr><tr><td><code>instance.setSortHTML({unsorted: '', asc: '', desc: ''})</code></td><td>1) object</td><td>Pass in an object containing an HTML string (recommend template literals) for each of the three button states.</td></tr><tr><td><code>deprecated instance.setDefaultParams(object)</code></td><td>1) object</td><td>Pass in an object containing the key: value pairs of parameters you wish to use as default params to fully replace existing defaultParams. Use of this is not encouraged. Use <code>mergeUpdateParams</code> instead.</td></tr><tr><td><code>instance.mergeDefaultParams(object)</code></td><td>1) object</td><td>Pass in an object containing the key: value pairs of parameters you wish to use as default params. This preserves any existing defaultParams, unless one of your properties matches them, in which case your property will be set.</td></tr><tr><td><code>instance.changeStateTrailingDebounce(event,resetPages = false,changeStateOptions)</code></td><td>1) Normally accepts an event, but when not applicable pass in <code>undefined</code>. 2) pass <code>true</code> if pages should reset to page 1 e.g. if items have been deleted or filtered and pagination has changed (or pass <code>false</code>) 3) See below for <code>changeStateOptions</code></td><td>This queues a debounced live update. If other events in a short period of time also queue an update, only the last will run. This function can be useful in a situation where a user-interaction changes the data in the database but does not alter any filters, and you wish to show the updated data e.g. as a callback function to a Siteglide eCommerce function.</td></tr></tbody></table>
 
@@ -247,7 +248,7 @@ The module JavaScript defines and dispatches the following custom Events. You ca
 
 #### Liquid Includes and Functions <a href="#liquid-includes-and-functions" id="liquid-includes-and-functions"></a>
 
-* See [Pagination Include](https://www.sitegurus.io/documentation/sitebuilder/includes/pagination) for settings specific to live-update data-attributes.
+* See [Pagination Include](/sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination) for settings specific to live-update data-attributes.
 
 #### Endpoint Logic Reference <a href="#endpoint-logic-reference" id="endpoint-logic-reference"></a>
 

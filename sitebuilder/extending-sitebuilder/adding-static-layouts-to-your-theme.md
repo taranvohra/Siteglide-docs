@@ -1,6 +1,6 @@
 # ℹ️ Adding Static Layouts to your Theme
 
-This documentation is aimed at those following the [theme-creator](https://www.sitegurus.io/D:/git/Sitegurus%20Modules/SiteGurus-Documentation/modules/sitegurus\_documentation/public/views/pages/documentation/sitebuilder/adding\_sitebuilder\_content\_using\_modules/adding\_themes.liquid) route. It's not currently supported to include static layouts within the module-creator route.
+This documentation is aimed at those following the [theme-creator](/sitebuilder/extending-sitebuilder/creating-sitebuilder-themes.md) route. It's not currently supported to include static layouts within the module-creator route.
 
 Static layouts are HTML layouts which can be included in a theme. They won't directly interface with the database in the same way as a dynamic layout and are likely to have their content edited by the module-user, either in the code, or in the Siteglide Admin's Studio tab.
 

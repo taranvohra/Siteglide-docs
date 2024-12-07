@@ -1,6 +1,6 @@
 # 📋 Steps to Use Live Updates Methods
 
-This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_initialising\_with\_js).
+This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference#using-the-javascript-initialisation.md).
 
 ### What are Methods? <a href="#what-are-methods" id="what-are-methods"></a>
 
@@ -10,7 +10,7 @@ The Live Updates API builds an object we call an instance for each of the sectio
 
 ### Available Methods <a href="#available-methods" id="available-methods"></a>
 
-You can see the full list of available methods in the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference)
+You can see the full list of available methods in the [API Reference](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md)
 
 ***
 
@@ -88,4 +88,4 @@ You can access a specific instance via this key, or loop over them all and run y
 {% endraw %}
 ```
 
-More methods can be found in the [API Reference](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference)
+More methods can be found in the [API Reference](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md)

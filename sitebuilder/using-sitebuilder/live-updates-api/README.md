@@ -40,6 +40,6 @@ Note that this API currently uses GET requests only to fetch/read HTML and/or da
 
 #### Specialised Use Cases <a href="#specialised-use-cases" id="specialised-use-cases"></a>
 
-Some parameters that we consider non-sensitive normally, like those which might be used to filter data could in some use cases be something you do not wish users to be able to modify. In this case, you can use our [Enforcing Filters](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/guide\_-\_enforcing\_filters) Guide to solve this problem.
+Some parameters that we consider non-sensitive normally, like those which might be used to filter data could in some use cases be something you do not wish users to be able to modify. In this case, you can use our [Enforcing Filters](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-example-enforcing-filters.md) Guide to solve this problem.
 
-See the `collection` and `creator_id` [URL parameters](https://www.sitegurus.io/documentation/sitebuilder/live\_updates/API\_reference) for security considerations regarding JSON data and filtering items by their owner respectively.
+See the `collection` and `creator_id` [URL parameters](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#get-url-parameters) for security considerations regarding JSON data and filtering items by their owner respectively.

@@ -4,9 +4,9 @@
 
 Form Layouts are designed to supercharge your experience of setting up forms in Siteglide with these key objectives:
 
-* **Get started quicker.** No need to copy and paste fields from the default layout into a custom layout anymore in order to add styling. With a click, you can have a styled form layout ready to go.
-* **Get consistent styles across your forms** - Form layouts are modular, using component layouts to style individual UI-controls. This makes it easier to apply consistent styles between your contact form and secure zone signup form without editing every line individually. Just add the code for each component to that form's layout once.
-* **Low Maintenance** - No need to change your form layout every time a new field is added or removed in the Admin. By choosing the dynamic option, your layout will automatically adapt to any changes in the Admin and display them in the form.
+* ##### Get started quicker. No need to copy and paste fields from the default layout into a custom layout anymore in order to add styling. With a click, you can have a styled form layout ready to go.
+* ##### Get consistent styles across your forms - Form layouts are modular, using component layouts to style individual UI-controls. This makes it easier to apply consistent styles between your contact form and secure zone signup form without editing every line individually. Just add the code for each component to that form's layout once.
+* ##### Low Maintenance - No need to change your form layout every time a new field is added or removed in the Admin. By choosing the dynamic option, your layout will automatically adapt to any changes in the Admin and display them in the form.
 
 <figure><img src="https://res.cloudinary.com/sitegurus/image/upload/v1658236824/modules/module_86/admin/libraries/5/Contact-Form1.png" alt=""><figcaption></figcaption></figure>
 
@@ -143,13 +143,13 @@ tag.
 
 Setting `collection: 'true'` allows you to re-position key groups of fields within your wrapper.
 
-See [available field groups](https://www.sitegurus.io/documentation/sitebuilder/modules\_and\_more/forms#outputting-field-groups-on-the-page-while-using-collectiontrue) below.
+See [available field groups](/sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts#available-field-groups) below.
 
-**Outputting field groups on the page while using `collection='true'`**
+##### Outputting field groups on the page while using `collection='true'`
 
 The available field groups are:
 
-**Siteglide and Custom Form Fields**
+##### Siteglide and Custom Form Fields
 
 This contains all Siteglide and all Custom Fields in the Form:
 
@@ -158,7 +158,7 @@ This contains all Siteglide and all Custom Fields in the Form:
 
 ```
 
-**Hidden Fields**
+##### Hidden Fields
 
 This contains hidden fields needed to run the form:
 
@@ -167,7 +167,7 @@ This contains hidden fields needed to run the form:
 
 ```
 
-**Address Fields**
+##### Address Fields
 
 This is an array which contains all CRM addresses added to the form, if any are present:
 
@@ -189,7 +189,7 @@ This is an array which contains all CRM addresses added to the form, if any are 
 
 The code here will loop over them all and output them all, but you can edit this if you want to display Billing and Shipping addresses separately.
 
-**reCaptcha**
+##### reCaptcha
 
 This contains the hCaptcha or reCaptcha, if present:
 
@@ -200,7 +200,7 @@ This contains the hCaptcha or reCaptcha, if present:
 
 Note that Siteglide recommends using hCaptcha with forms. This file however, continues to be named reCaptcha for backwards-compatibility reasons.
 
-**Payment Gateway**
+##### Payment Gateway
 
 This contains the payment gateway and payment fields, if present:
 
@@ -291,25 +291,25 @@ Set `include_email_editor` to `'true'` to include the `edit_email` component in 
 
 Set `include_password_editor` to `'true'` to include the `edit_password` component in the form.
 
-**Authorizing the Change**
+##### Authorizing the Change
 
 Including either of these parameters will also cause the current `password` component to display, as this is needed to authorise the change.
 
-**Validation**
+##### Validation
 
 Siteglide provides server-side validation to ensure the security of this functionality.
 
 On most form layouts we provide, the default behaviour for client-side validation is that if an edit\_email or edit\_password component is displayed on the form, it is required. This is the simplest behaviour to implement and makes sense if you have an account area with separate small forms for each possible action. If you have one large form and you want editing email/password to be optional, it might be sensible to add JavaScript to remove the required classes from the fields if they are empty, or to change this directly in the component layouts. You would also need to remove the required class from the `password` field in the situation that neither an attempt to change email, nor password was attempted.
 
-**Adding Confirmation Validation**
+##### Adding Confirmation Validation
 
 Set `confirm_email_password` to `'true'` and any email or password edit field will come along with a confirmation field for validation. This comes with client-side and server-side validation.
 
-**Troubleshooting Edit Email & Password**
+##### Troubleshooting Edit Email & Password
 
 A form must have a secure zone set against it for this feature to work properly.
 
-**Editing Email & Password on Static Form Layouts**
+##### Editing Email & Password on Static Form Layouts
 
 For Static Layouts, follow the Siteglide Documentation for [editing emails & passwords](https://developers.siteglide.com/how-users-edit-their-email-and-password-front-end). You can include the relevant components and pass the components the paramters above if you like.
 

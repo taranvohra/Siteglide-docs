@@ -20,14 +20,19 @@ If you want the community to collaborate with you on what you build, we suggest 
 | ----------------- | ---------- | ------------------------------------------------------------------------------------ | ---------------- |
 | Menu              | module\_2  | Headers, Footers, Sidebars                                                           | 1, 2, 3          |
 | Blog              | module\_3  | Default                                                                              | 0                |
-| Events            | module\_12 | Default                                                                              | 0                |
 | Slider            | module\_4  | Default                                                                              | 0                |
-| FAQ               | module\_10 | Default                                                                              | 0                |
+| Secure Zones      | module\_5  | Login Forms, Logout Buttons, User Form Submissions                                   | 1, 2, 3          |
+| Authors / Team    | module\_6  | Standard                                                                             | 1                |
 | Testimonials      | module\_8  | Default                                                                              | 0                |
+| FAQ               | module\_10 | Default                                                                              | 0                |
+| Events            | module\_12 | Default                                                                              | 0                |
 | eCommerce         | module\_14 | Product List, Product Detail, Cart, Order Detail, Currency Changer, Tax Code Changer | 1, 2, 3, 4, 5, 6 |
 | Forms             | module\_s1 | Default                                                                              | 0                |
-| Secure Zones      | module\_5  | Login Forms, Logout Buttons, User Form Submissions                                   | 1, 2, 3          |
 | Pagination        | module\_s2 | Default                                                                              | 0                |
 | Form Confirmation | module\_s3 | Default                                                                              | 0                |
+| Cookie Preferences| module\_s4 | Cookie Popup, Cookie Settings Page Section                                           | 1, 2             |
+| Categories        | module\_s5 | Full Categories List, Category Detail Layouts                                        | 1, 2             |
+| WebApp            | webapp     | Standard, Swiper, Tables, WebApp with Update and Delete                              | 1, 2, 4, 5       |
+
 
 If a module that has no sub-modules is given a sub-module in an update, the sub\_module 0 which was previously default will be renamed to miscellaneous. Layouts referencing that sub\_module will be displayed in the miscellaneous group until they are updated to reference one of the new sub\_modules.
