@@ -1,5 +1,15 @@
 # 🛳️ Module - eCommerce - Changelog
 
+### 1.14.5 - 11th December 2024
+
+* Add more logging to Form Submissions to support debugging
+* Fix for sessions not tracking correctly on first time visit to a site
+* Fix for an issue with inventory not calculating correctly in some rare cases
+* Turn off PayPal item breakdown if it throws an error, and just send over the total price, rather than blocking payment entirely
+* Improved process of Discount Code checker on Cart pages
+
+***
+
 ### 1.14.4 - 16th July 2024
 
 * Discounts - New option to choose when a percentage discount is applied - before, or after tax calculations - Default is 'after'

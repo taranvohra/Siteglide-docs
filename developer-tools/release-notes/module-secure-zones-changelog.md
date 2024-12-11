@@ -1,5 +1,12 @@
 # 🛳️ Module - Secure Zones - Changelog
 
+### 1.3.3 - 11th December 2024
+
+* Add more logging to Form Submissions to support debugging
+* User Form Submissions - Expose human-friendly names for fields - [Roadmap](https://roadmap.siteglide.com/core-platform/p/secure-zones-form-submissions-expose-human-friendly-names-of-fields)
+
+***
+
 ### 1.3.2 - 25th June 2024
 
 * Updated security as outlined in [System Files update v2.8.2.4](https://docs.siteglide.com/en/developer-tools/changelogs/module-system-files-changelog#id-2.8.2.4-25th-june-2024)

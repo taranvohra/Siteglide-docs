@@ -1,5 +1,12 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.2.6 - 11th December 2024
+
+* Add more logging to Form Submissions to support debugging
+* Add an alert box warning when a user tries to navigate off the page during a Form Submission
+
+***
+
 ### 2.8.2.5 - 10th July 2024
 
 * WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](https://developers.siteglide.com/webapp-list-layouts) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
