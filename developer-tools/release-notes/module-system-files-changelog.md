@@ -1,5 +1,11 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.3.0 - 20th December 2024
+
+* Added support for Rollout front-end Automations (Form submissions, and WebApp item create/update/delete)
+
+***
+
 ### 2.8.2.6 - 11th December 2024
 
 * Add more logging to Form Submissions to support debugging
