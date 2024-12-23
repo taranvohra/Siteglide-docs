@@ -14,7 +14,7 @@ Create a new staging site within your agency to build your module on. Ideally yo
 
 ![](../../assets/f3N39NCDMxKmbG19AT-JK\_custom-module-create-staging-1.png)
 
-Once you have successfully created your staging site, create a project folder on your machine to work within, [connect to your site via CLI](https://developers.siteglide.com/introducing-siteglide-cli#uo-add) and then [pull the site](https://developers.siteglide.com/introducing-siteglide-cli#mf-pull) down onto your local machine so that you are ready to begin building your module.
+Once you have successfully created your staging site, create a project folder on your machine to work within, [connect to your site via CLI](/developer-tools/cli/site-setup.md) and then [pull the site](/developer-tools/cli/reference.md#pull) down onto your local machine so that you are ready to begin building your module.
 
 ## Top Level Folders
 
@@ -102,7 +102,7 @@ Files generated from this JSON file:
 * Form Configuration - `<module_name>.liquid` stored at `modules/<module_name>/public/form_configurations/modules/<module_name>.liquid`
 * Detail Page (if applicable) - `<module_name>.liquid` stored at `modules/<module_name>/public/views/pages/modules/<module_name>.liquid`
 
-You can find details on field types in [this document](https://developers.siteglide.com/field-types)
+You can find details on field types in [this document](/developer-tools/configuration/field-types.md)
 
 ### ignore-on-update.json
 
