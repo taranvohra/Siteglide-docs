@@ -381,7 +381,7 @@
     * [Formatting Currency](ecommerce/get-started-ecommerce/introduction-2/formatting-currencies.md)
   * [📂 Subscriptions](ecommerce/get-started-ecommerce/introduction-4/README.md)
     * [💡 About Subscriptions](ecommerce/get-started-ecommerce/introduction-4/about-subscriptions.md)
-    * [📋 Subscriptions Payment Gateway Setup](ecommerce/go-further-ecommerce/subscriptions/setting-up.md)
+    * [📋 Subscriptions Payment Gateway Setup](eCommerce/go-further-ecommerce/subscriptions/setting-up.md)
     * [Subscriptions List Layout](ecommerce/get-started-ecommerce/introduction-4/subscriptions-list.md)
     * [Subscriptions Detail Layout](ecommerce/get-started-ecommerce/introduction-4/subscriptions-detail.md)
     * [User's Active Subscriptions](ecommerce/get-started-ecommerce/introduction-4/user-subscriptions.md)
