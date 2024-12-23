@@ -1,10 +1,3 @@
----
-title: List View
-slug: 3iPV-
-createdAt: 2021-02-19T12:24:11.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
-
 This view allows you to display available Subscription products for customers to browse through.
 
 # Introduction

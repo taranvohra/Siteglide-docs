@@ -1,9 +1,3 @@
----
-title: User Subscriptions - List the logged in User's Subscription Orders
-slug: B58S-
-createdAt: 2021-02-19T12:06:57.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
 This Article shows you how to use the Secure Zones Layout user\_subscriptions to List Subscription Orders belonging to a User.
 
 # Introduction

@@ -1,10 +1,3 @@
----
-title: Editing the "Subscription User Action Required" System Page and Email
-slug: Mfrr-
-createdAt: 2021-02-19T12:15:19.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
-
 Customise the Email and Landing Page used to take updated payment methods and authorisation from Subscription customers.
 
 # Introduction

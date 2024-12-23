@@ -1,10 +1,3 @@
----
-title: Cancelling Subscriptions
-slug: jkQN-
-createdAt: 2021-02-19T12:03:28.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
-
 # Cancelling Subscriptions
 
 The customer can schedule their Subscription to end, while continuing to use services until the end date.

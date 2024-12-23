@@ -1,10 +1,3 @@
----
-title: Detail Layout
-slug: 1fIp-
-createdAt: 2021-02-19T13:41:30.000Z
-updatedAt: 2023-03-03T08:09:58.000Z
----
-
 # Subscriptions Detail Layout
 
 The Detail Layout for Subscriptions displays details of the Subscription Product and also a Form for creating/editing Subscription Orders
