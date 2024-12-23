@@ -18,7 +18,7 @@ A module with a Custom UI will securely load a page within a frame in Siteglide 
 
 A Custom UI Modules will follow the same folder setup as other Modules, except when you come to build the UI itself to display in Siteglide Admin. The UI will be kept in the `private` folder of the module as we do not want it to be discoverable outside of the frame within Siteglide Admin.
 
-Within our `private` folder we can store any files that Siteglide natively supports, such as GraphQL, Liquid, Assets etc. More information about folder structure can be found at [Top Level Folders](https://developers.siteglide.com/2-create-folder-structure#9x-top-level-folders).
+Within our `private` folder we can store any files that Siteglide natively supports, such as GraphQL, Liquid, Assets etc. More information about folder structure can be found at [Top Level Folders](/developer-tools/building-for-marketplace/create-folder-structure.md#top-level-folders).
 
 ### Authentication
 
