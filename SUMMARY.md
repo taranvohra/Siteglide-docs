@@ -379,7 +379,7 @@
     * [Currency Changer](ecommerce/get-started-ecommerce/introduction-2/currency-changer.md)
     * [Tax Code Changer](ecommerce/get-started-ecommerce/introduction-2/tax-changer.md)
     * [Formatting Currency](ecommerce/get-started-ecommerce/introduction-2/formatting-currencies.md)
-  * [📂 Subscriptions new](eCommerce/get-started-ecommerce/subscriptions/README.md)
+  * [📂 Subscriptions](eCommerce/get-started-ecommerce/subscriptions/README.md)
     * [💡 About Subscriptions](eCommerce/get-started-ecommerce/subscriptions/about-subscriptions.md)
     * [📋 Subscriptions Payment Gateway Setup](eCommerce/go-further-ecommerce/subscriptions/setting-up.md)
     * [Subscriptions List Layout](eCommerce/get-started-ecommerce/subscriptions/subscriptions-list.md)
