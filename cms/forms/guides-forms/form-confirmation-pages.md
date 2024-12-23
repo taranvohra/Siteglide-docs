@@ -21,7 +21,7 @@ After a User submits a Form, you can redirect them to a Confirmation Page.
 Including a Form Confirmation message on the Page they land on allows you to develop a customisable message which can:
 
 * Give Users peace of mind that they submitted the correct information, and allow them to contact you (via a new submission) if they have made any mistakes.
-* Include a nested [Order Confirmation](https://developers.siteglide.com/order-confirmation-emails) Layout (previously only available in Emails), which can give full details of any eCommerce Products ordered in the Form submission
+* Include a nested [Order Confirmation](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/orders/order-confirmation.md) Layout (previously only available in Emails), which can give full details of any eCommerce Products ordered in the Form submission
 * Give a personal touch by including details like the User's name in the message.
 
 ## Refresher- How to set up a redirect to a confirmation Page
