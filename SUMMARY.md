@@ -286,6 +286,7 @@
     * [ℹ️ Filter by Event Dates](module-events/go-further-events/event-host-datasource/event-filtering-dates.md)
     * [ℹ️ Search](module-events/go-further-events/event-search.md)
     * [ℹ️ Map List View](module-events/go-further-events/event-list-map.md)
+    * [ℹ️ Calendar List View](/module-events/go-further-events/events-calendar.md)
   * [FAQ](modules2/faq.md)
     * [🚀 Quickstart: FAQ](modules/core-modules/faq/quickstart-faqs.md)
     * [💻 Reference](module-faqs/get-started-faqs/reference.md)

@@ -66,7 +66,7 @@ Select the Detail Page Template and Layout:
 
 Make sure your Product Detail pages have an add to Cart Button in their layout’s item.liquid file.
 
-Learn more about Product Detail pages [here](https://developers.siteglide.com/detail-layouts).
+Learn more about Product Detail pages [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md).
 
 ![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699\_dv7ljb.png)
 

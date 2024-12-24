@@ -13,7 +13,7 @@ The Events Module includes the following optional features for helping Users nav
 * Browse by Month/Date - Finds Events which are happening during this month
 * Search Events which are happening between two Dates
 
-You may be familiar with many of these if you've used the [Blog Module Navigation](https://developers.siteglide.com/blog), however the main difference between them is how they handle dates; navigating the Blog Module by date would use the post's `Release Date`, whereas the Events Module will check to see if a given date falls between the `Event Start` and `Event End` dates.
+You may be familiar with many of these if you've used the [Blog Module Navigation](/modules/core-modules/blog-and-authors/blog-and-authors-reference.md#blog-navigation-and-filtering), however the main difference between them is how they handle dates; navigating the Blog Module by date would use the post's `Release Date`, whereas the Events Module will check to see if a given date falls between the `Event Start` and `Event End` dates.
 
 ## Using the Navigation Options to Filter the Map and Calendar Views
 
@@ -65,8 +65,3 @@ Each Events Navigation Article will explain how you can use Liquid Logic to dyna
 ```
 
 Of course, you can use this for inspiration and edit as you wish.
-
-## Related Documents
-
-* [Searching - Keyword](https://developers.siteglide.com/searching-keyword)
-* [Searching - Advanced Filtering](https://developers.siteglide.com/searching-advanced-filtering)
