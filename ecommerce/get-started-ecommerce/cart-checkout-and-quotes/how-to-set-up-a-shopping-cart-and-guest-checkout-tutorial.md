@@ -7,7 +7,7 @@
 * You have added Products to the database
 * You have set up a Product List View
 * You have set up Product Detail Pages
-* _Using PayPal as a Payment Gateway?_ There are additional setup instructions [here](https://help.siteglide.com/article/161-ecommerce-subscriptions-setting-up-your-payment-gateway-and-settings).
+* _Using PayPal as a Payment Gateway?_ There are additional setup instructions [here](/ecommerce/get-started-ecommerce/payment-gateways/paypal-custom-params.md).
 
 ### Introduction
 
@@ -66,7 +66,7 @@ Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-check
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms [here](https://help.siteglide.com/en/articles/3835888-forms-create-a-form).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms [here](/cms/forms/quickstart-forms.md).
 
 You will need to add the following information when creating your form:
 
@@ -79,7 +79,7 @@ Save your changes.
 
 #### Step 4- Create a new Page for your Checkout.
 
-Learn more about pages [here](https://help.siteglide.com/article/100-pages-getting-started)
+Learn more about pages [here](/cms/pages/quickstart-pages.md)
 
 #### Step 5- Add the Checkout form to your Checkout Page
 
@@ -107,7 +107,7 @@ If you create a custom layout, you should also create an empty.liquid file, rena
 
 #### Step 6: Test your eCommerce flow.
 
-Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](https://help.siteglide.com/article/165-payment-gateways)
+Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](/ecommerce/get-started-ecommerce/payment-gateways.md)
 
 Users will be added to the CRM in Admin.
 
@@ -123,6 +123,4 @@ Click on the name of the order for more information.
 
 As a user buys a Product, the Inventory decreases accordingly.
 
-A User cannot buy a Product if its Inventory is 0, but you can also hide Products that have sold out from the Product List Views. See [Products](https://help.siteglide.com/article/196-products-introduction) to learn more.
-
-\
+A User cannot buy a Product if its Inventory is 0, but you can also hide Products that have sold out from the Product List Views.

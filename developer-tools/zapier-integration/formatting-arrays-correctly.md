@@ -2,7 +2,7 @@
 
 ## Background
 
-When working with [Zapier](https://help.siteglide.com/article/292-zapier-getting-started), adding data to arrays needs some extra JavaScript to convert the data. Zapier calls arrays "Line Items" and formats them like so, `[123,456,789]` whereas Siteglide API expects a JavaScript formatted array such as, `["123","456","789"]`
+When working with [Zapier](/developer-tools/zapier-integration.md), adding data to arrays needs some extra JavaScript to convert the data. Zapier calls arrays "Line Items" and formats them like so, `[123,456,789]` whereas Siteglide API expects a JavaScript formatted array such as, `["123","456","789"]`
 
 To convert these two data types, use the screenshots and code below. In this example we are getting a pre-existing user and their Secure Zones, then adding in a new item.
 

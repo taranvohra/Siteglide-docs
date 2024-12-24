@@ -350,6 +350,7 @@
       * [🔹 Cart Layouts](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
       * [Checking Inventory in Cart](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/checking-inventory-in-cart.md)
       * [Updating Quantity in Cart](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart.md)
+      * [Updating Displayed Cart Quantity](/eCommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md)
     * [📋 How to Set Up a Shopping Cart and Guest Checkout - Tutorial](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md)
     * [📂 Checkout Forms](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/checkout-forms/README.md)
       * [🔹 Checkout Form Layouts](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/checkout-forms/ecommerce-checkout-standard.md)
@@ -448,3 +449,4 @@
   * [Site Search](miscellaneous/system-features/get-started-site-search.md)
   * [About Site Search](miscellaneous/system-features/site-search.md)
   * [AI Tools for the Rich Text Editor](miscellaneous/system-features/ai-tools-for-the-rich-text-editor.md)
+  * [Cookies on Siteglide Sites](/miscellaneous/system-features/cookies-on-siteglide-sites.md)

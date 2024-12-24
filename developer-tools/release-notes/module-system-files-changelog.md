@@ -229,7 +229,7 @@ Minor patch to add support for Module caching
 
 ### 2.7.0.1 - 23rd November 2021
 
-Minor patch to add support for [eCommerce v1.10.0](https://help.siteglide.com/article/246-module-ecommerce-changelog)
+Minor patch to add support for [eCommerce v1.10.0](/developer-tools/release-notes/module-ecommerce-changelog.md)
 
 ***
 
@@ -453,7 +453,7 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.9.2 - 4th September 2020
 
-* Support for structural changes introduced in [Secure Zones 1.1.0](https://help.siteglide.com/article/250-module-secure-zones-changelog)
+* Support for structural changes introduced in [Secure Zones 1.1.0](/developer-tools/release-notes/module-secure-zones-changelog.md)
 
 ***
 
@@ -496,20 +496,20 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.7.0 - 7th May 2020
 
-* [Support for eCommerce Update 0.12.0](https://help.siteglide.com/article/246-module-ecommerce-changelog)
+* [Support for eCommerce Update 0.12.0](/developer-tools/release-notes/module-secure-zones-changelog)
 * Sitemap generation
 
 ***
 
 ### 2.4.5.0 - 27th April 2020
 
-* [Support for eCommerce Update 0.11.0](https://help.siteglide.com/article/246-module-ecommerce-changelog)
+* [Support for eCommerce Update 0.11.0](/developer-tools/release-notes/module-secure-zones-changelog)
 
 ***
 
 ### 2.4.4.0 - 22nd April 2020
 
-* [Support for Events Module](https://help.siteglide.com/article/252-module-events-changelog)
+* [Support for Events Module](/developer-tools/release-notes/module-events-changelog.md)
 * Fix for multiple reCAPTCHA Forms on a Page
 
 ***
@@ -588,10 +588,81 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.1.1 - 11th December 2019
 
-* **reCAPTCHA Security upgrade** - [Dec-11-2019-release-notes](https://help.siteglide.com/article/262-dec-11-2019-release-notes)
+* **reCAPTCHA Security upgrade**
+
+#### Introduction
+
+This week, we are releasing updates to the following:
+
+A more secure reCAPTCHA validation for Forms.
+Site Search now allows you to specify a combination of Pages, WebApp and Module Detail Pages to search.
+We've also made brand new features available for Beta testing:
+
+eCommerce Quotes- eCommerce customers select items in their Cart and submit a Form to request a Quote for those items without making a Payment.
+White-labelling Phase One - Allow Clients to see your Agency Logo in the top-left hand corner of Admin.
+
+#### Improvements
+
+CMS Improvements
+
+reCAPTCHA Security upgrade
+
+Thanks to the Community for feedback on our reCAPTCHA integration , we've made a range of improvements this week.
+
+What's changing?
+
+All Forms now use XHR requests for submitting their data. This allows us to do extra checks on Forms which use reCAPTCHA.
+
+XHR submission is a requirement for forms with reCAPTCHA
+Bots which try to submit Forms directly via JavaScript with the .submit() method will fail at the first hurdle regardless of reCAPTCHA.
+If you're not using reCAPTCHA, then you can manually alter our code to stop using XHR.
+How to get the update?
+
+Update System Files to version 2.4.1.1
+
+To see this update on your form you'll need to simply hit 'Save' on the Form in Siteglide. It will work with both default and custom Layouts.
+Site Search- More control over the scope of what is searched
+
+#### What's Changing?
+
+You can now choose any combination of Pages, WebApp Detail Pages and Module Detail Pages to include in your Site Search Results. Use the type parameter.
+
+If you include WebApps in the parameter, Toolbox will also prompt you to select which WebApps you'd like to search.
+
+Also, for searches which include WebApps, you can include the parameter single_field, to only search for WebApp Detail Pages with that specific field e.g. properties.webapp_field_2_1 matching the keyword terms. Note- this will be the real database name of the field- not the user-friendly field name.
+
+How to get this Update?
+
+Visit Admin for your Site and System Files will be updated.
+You will then find the Toolbox updated with the new Parameters you can use.
+Learn more:
+
+New Features
+Admin Features
+Whitelabelling - (Beta)
+
+We want to give Partners the ability to show their Clients a white-labelled version of Admin. The first step allows you to replace the logo your Clients see in the Admin with your own. We will release full documentation for this soon when the next feature is ready.
+
+How to use?
+
+In Portal, click your Agency name in left side menu
+Upload your logo there, and toggle the 'Whitelabel logo?' switch to on.
+Save, and refresh to see your logo in the top left.
+This feature is in Beta, so Clients using admin.siteglide.com will not see your agency logo. You can view your agency logo from beta.siteglide.com.
+Module Features
+
+eCommerce Quotes- (Beta)
+
+This community-requested feature allows Users to use the Cart as Normal, but complete a Quote Form instead of a Checkout Form.
+
+Features
+
+A new kind of eCommerce Form is now available: Quote Only.
+When the Form is completed, it generates an Order using the items in the User's Cart- but does not prompt them to complete any Payment information. The Order appears in the Admin with the status: "Quote Only".
+Generating a "Quote Only" order does not decrease the number of items in the Product's Inventory. However, a Product will need to be in stock before it is added to a Cart.
 
 ***
 
 ### 2.4.1.0 - 3rd December 2019
 
-* **Support for Blog Archive feature** - [Dec-3-2019-release-notes](https://help.siteglide.com/article/261-dec-3-2019-release-notes)
+* **Support for Blog Archive feature**

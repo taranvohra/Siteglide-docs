@@ -22,7 +22,7 @@ Often in eCommerce, you will have Products that are similar to one another. e.g.
 
 ### What are Product Attributes?
 
-On Siteglide, we provide the Attributes feature- which allows you to merge these multiple varieties into a single Product with options. Users choose which Attributes to select as they add the Product to the Cart, and the Price can be adjusted accordingly. Follow these links to find out more about [managing Attributes in the Admin](https://help.siteglide.com/article/188-products-attributes), or [outputting them as options Front End](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md).
+On Siteglide, we provide the Attributes feature- which allows you to merge these multiple varieties into a single Product with options. Users choose which Attributes to select as they add the Product to the Cart, and the Price can be adjusted accordingly. [outputting them as options Front End](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md).
 
 ### What was Product Grouping?
 
@@ -32,7 +32,7 @@ There are several ways to achieve this:
 
 * Use Categories to group the Products
 * Use Datasources to build a relationship between a Product and similar Products in the Group
-* Convert an existing Product Grouping setup to use single Products with [Attributes](https://help.siteglide.com/article/188-products-attributes) instead.
+* Convert an existing Product Grouping setup to use single Products with [Attributes](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md) instead.
 
 In this Article, we'll demonstrate how to group the products using Categories.
 

@@ -132,7 +132,7 @@ When passing in a `false` reload argument, you will need to follow additional st
 
 ## Live Updating Total Quantity
 
-You can use our [Live Cart Update feature](https://help.siteglide.com/article/174-cart-live-quantity) to get the new total quantity of items in the Cart.&#x20;
+You can use our [Live Cart Update feature](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-live-updates.md) to get the new total quantity of items in the Cart.
 
 The `s_e_cart_update()` function will automatically call the `s_e_live_cart_update()` function for you- but you'll need to wrap your displayed total in a \<span> class with the following data-attribute: `<span data-s-e-live-cart-quantity>{{items_in_cart}}</span> `
 

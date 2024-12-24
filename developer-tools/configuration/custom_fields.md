@@ -60,4 +60,4 @@ The main difference is in the format:
 
 `module_field_x_y` instead of `webapp_field_x_y`.
 
-[Custom Field Sets](https://help.siteglide.com/article/207-custom-field-sets) also have `Custom Field IDs` which are commonly used when accessing them.
+[Custom Field Sets](/crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md) also have `Custom Field IDs` which are commonly used when accessing them.

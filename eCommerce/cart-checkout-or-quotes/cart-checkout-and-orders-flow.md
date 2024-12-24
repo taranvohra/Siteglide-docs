@@ -9,13 +9,13 @@ This Tutorial shows you how to use the eCommerce and Secure Zones Modules togeth
 
 ## Prerequisites:
 
-*   You have read [How to Set Up a Shopping Cart and Guest Checkout](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial)
+*   You have read [How to Set Up a Shopping Cart and Guest Checkout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
 
-*   You have installed the [eCommerce Module](https://help.siteglide.com/article/200-getting-started-with-siteglide-ecommerce)
+*   You have installed the [eCommerce Module](/ecommerce/quickstart-ecommerce.md)
 
 *   You have installed the [Secure Zone Module](/crm/quickstart-crm.md)
 
-*   *Using PayPal as a Payment Gateway?* There are additional setup instructions [here](https://help.siteglide.com/article/165-payment-gateways).
+*   *Using PayPal as a Payment Gateway?* There are additional setup instructions [here](/ecommerce/get-started-ecommerce/payment-gateways/paypal-custom-params.md).
 
 ## Introduction
 

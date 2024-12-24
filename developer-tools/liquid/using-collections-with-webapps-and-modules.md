@@ -18,7 +18,7 @@ In this Tutorial, we'll be using dot notation, so if you're not familiar with it
 
 You'll also need to be familiar with WebApps:
 
-* [Creating and Editing WebApps](https://help.siteglide.com/article/126-webapps-getting-started#2-creating-and-editing-items)
+* [Creating and Editing WebApps](/webapps/quickstart-webapps.md)
 * [WebApp List Layouts](/webapps/layouts/webapp-list-layout.md)
 * [WebApp Detail Layouts](/webapps/layouts/webapp-detail-layouts.md)
 

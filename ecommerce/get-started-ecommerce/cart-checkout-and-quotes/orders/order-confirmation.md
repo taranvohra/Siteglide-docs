@@ -11,7 +11,7 @@ Use Workflow and Autoresponder Emails to send confirmation messages to customers
 
 ## Prerequisites
 
-* You have installed eCommerce Module v0.12.0 or later. Checkout [Modules Overview](https://help.siteglide.com/article/131-modules-getting-started) to find out how you can install the latest version.
+* You have installed eCommerce Module v0.12.0 or later. Checkout [Modules Overview](/portal/sites#want-to-install-or-manage-modules.md) to find out how you can install the latest version.
 * You have set up a Checkout or Quote-only Form. Learn more about Checkout here: [How to Set Up a Shopping Cart and Guest Checkout](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial) or learn more about the Quote-only feature here: [eCommerce - Quote Only](https://help.siteglide.com/article/172-ecommerce-quote-only-how-to-let-users-select-products-for-a-quote-instead-of-paying-immediately)
 
 ## Introduction

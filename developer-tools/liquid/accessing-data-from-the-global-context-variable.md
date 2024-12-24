@@ -23,7 +23,7 @@ Here are some of the most useful places to look for data:
 
 *   `{{context}}` The platformOS object `context` contains a huge tree of information about your Site- often including variables you didn't know you wanted until you discovered them.
 
-*   `{{context.exports}}` The object `exports` sits on the root level of `context` and its role is to allow a global storage location for any custom variables not already included in `context`. You'll mostly use it as a place to access Siteglide specific data, for example, it is the home of data relating to Siteglide categories and will contain WebApp or module data when you use the `collection` parameter in the `include` tag. `exports` will also contain any keys that you have entered within the [Integrations](https://help.siteglide.com/article/213-integrations) area in Siteglide Admin. You can also add your own data to a namespace in `exports` - see the [platformOS docs](https://documentation.platformos.com/api-reference/liquid/platformos-tags#export) to see how. This is especially useful if you want to include some data in a Content Section, Code Snippet or Layout- but access it in on a higher level e.g. the Page Template.
+*   `{{context.exports}}` The object `exports` sits on the root level of `context` and its role is to allow a global storage location for any custom variables not already included in `context`. You'll mostly use it as a place to access Siteglide specific data, for example, it is the home of data relating to Siteglide categories and will contain WebApp or module data when you use the `collection` parameter in the `include` tag. `exports` will also contain any keys that you have entered within the [Integrations](/cms/automations/quickstart-automations.md) area in Siteglide Admin. You can also add your own data to a namespace in `exports` - see the [platformOS docs](https://documentation.platformos.com/api-reference/liquid/platformos-tags#export) to see how. This is especially useful if you want to include some data in a Content Section, Code Snippet or Layout- but access it in on a higher level e.g. the Page Template.
 
 *   `{{this}}` - This is a Siteglide variable containing data specific to a Layout- you'll only be able to use if within a Layout file. The data will completely change depending on the type of content, so it's a good place to use Dot Notation to explore each time you try a new feature.
 
@@ -47,7 +47,7 @@ If a property is marked *advanced only*, it is because we haven't found a use-ca
 
 ## session (object)
 
-platformOS uses a single cookie to identify a visitor- whether signed in or not. The `session` object holds information in the database which relates to the visitor with that cookie. This is used in Siteglide eCommerce to allow us to identify someone who has added items to a Cart, without requiring them to Sign In. Learn more about how we use this essential cookie [here](https://help.siteglide.com/article/229-the-cookies-we-use-on-a-site-you-build-with-siteglide).
+platformOS uses a single cookie to identify a visitor- whether signed in or not. The `session` object holds information in the database which relates to the visitor with that cookie. This is used in Siteglide eCommerce to allow us to identify someone who has added items to a Cart, without requiring them to Sign In. Learn more about how we use this essential cookie [here](/miscellaneous/system-features/cookies-on-siteglide-sites.md).
 
 ***Adding Session Fields
 ***You can add fields to session and exports objects only. 
@@ -169,7 +169,7 @@ Device should give you information about your visitor's device, operating system
 
 This lists the cookies currently used by the Site. 
 
-Siteglide only uses the session cookie directly which you can learn more about here: <https://help.siteglide.com/en/article/the-cookies-we-use-on-a-site-you-build-with-siteglide-yjurtu/>
+Siteglide only uses the session cookie directly which you can learn more about [here](/miscellaneous/system-features/cookies-on-siteglide-sites.md)
 
 Any payment gateways you are using as part of Siteglide eCommerce e.g. Stripe may also have a cookie listed here. 
 
