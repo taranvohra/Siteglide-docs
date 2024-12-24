@@ -121,7 +121,7 @@ item.liquid -- detail view example
 
 ```
 
-Unlike the List View, the code in the item.liquid file in the Detail folder will only be displayed once instead of looped. Inside the `item.liquid` file, you'll have access to the "this" object, which contains the fields you'll need. See [reference](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts) for available fields or output `{{this | json}}` in the item.liquid file to see the exact data available to you.
+Unlike the List View, the code in the item.liquid file in the Detail folder will only be displayed once instead of looped. Inside the `item.liquid` file, you'll have access to the "this" object, which contains the fields you'll need. See [reference](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md) for available fields or output `{{this | json}}` in the item.liquid file to see the exact data available to you.
 
 #### Add to Cart
 

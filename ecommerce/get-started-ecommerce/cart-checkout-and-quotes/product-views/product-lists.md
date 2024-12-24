@@ -43,7 +43,8 @@ It will cover how to:
 * `category_ids` - filter the List by these category ids
 * `sort_type` - the field you wish the sort by
 * `sort_order` - 'asc' or 'desc' - the order you wish to sort by.
-* `use_search` - See [WebApp Search On The Front](https://developers.siteglide.com/search-and-filtering)
+* `use_search` - See [WebApp Search](/webapps/layouts/searching-by-keyword.md)
+* `use_adv_search` - See [WebApp Adv Search](/webapps/layouts/searching-advanced-filtering.md)
 * `type` - Should be `list`, for a List View layout. This can also be used to display different types of layouts, like a Cart in a different context.
 * `show_pagination` - if pagination should be displayed after the products. Default is `'true'`
 
@@ -122,7 +123,7 @@ item.liquid -- list view example
 
 This file contains the code for each iteration of the loop that displays the Products. You should expect this code to be rendered multiple times; once for each product displayed in the list. (Hint: Try not to run any GraphQL calls inside a loop or item.liquid file, as they would have an impact on performance. It is better to run these inside the wrapper.)
 
-As it is inside the loop, the item.liquid file has access to the "this" object and dynamic information specific to an individual product. A full reference for the fields you can use can be found [here](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts) or you may find it convenient to output the "this" object on the page you are developing:
+As it is inside the loop, the item.liquid file has access to the "this" object and dynamic information specific to an individual product. A full reference for the fields you can use can be found [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md) or you may find it convenient to output the "this" object on the page you are developing:
 
 Output all data available in the "this" object: `{{this | json}}`
 
@@ -193,7 +194,7 @@ This is mandatory, but can be hidden and hard-coded to have a value of 1, if you
 
 _**Attribute Control**_
 
-As this code can be complex, so please refer to the [Attributes Layout ](https://developers.siteglide.com/attribute-layouts)doc for further information, or take a look at the full example below.
+As this code can be complex, so please refer to the [Attributes Layout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md) doc for further information, or take a look at the full example below.
 
 _**Full Example:**_ Example of an `item.liquid` file in a Product Layout which supports Adding to Cart:
 

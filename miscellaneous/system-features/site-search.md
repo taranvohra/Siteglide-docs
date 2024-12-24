@@ -205,5 +205,5 @@ platformOS [automatically sanitize](https://documentation.platformos.com/api-ref
 
 ## Related Documents
 
-* [Searching - Keyword](https://developers.siteglide.com/searching-keyword)
-* [Searching - Advanced Filtering](https://developers.siteglide.com/searching-advanced-filtering)
+* [Searching - Keyword](/webapps/layouts/searching-by-keyword.md)
+* [Searching - Advanced Filtering](/webapps/layouts/searching-advanced-filtering.md)

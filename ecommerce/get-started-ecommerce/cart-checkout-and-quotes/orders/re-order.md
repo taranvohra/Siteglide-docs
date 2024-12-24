@@ -11,7 +11,7 @@ Help customers find regular purchases and favourite products with the reorder bu
 
 ## Introduction
 
-Help customers find regular purchases and favourite products with the reorder button. The button can be added to a [`user_orders`](https://developers.siteglide.com/cart-checkout-and-orders-flow-with-secure-zones-module-tutorial) Layout or any other Layout where you have access to an Order ID.
+Help customers find regular purchases and favourite products with the reorder button. The button can be added to a [`user_orders`](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or any other Layout where you have access to an Order ID.
 
 For this reorder feature to work, the User:
 
@@ -39,7 +39,7 @@ Parameters:
 * `layout`
 * `order_id`
 
-The button can be added in any Liquid Layout, but you'll need to have access to the ID for an Order belonging to that User- which is most easily available in the [User Orders](https://developers.siteglide.com/cart-checkout-and-orders-flow-with-secure-zones-module-tutorial) Layout or the [Order Details](https://developers.siteglide.com/order-confirmation-emails) Layout (note that a User can't be logged in when reading an email, so this feature will not work from an Order Details Layout in an email).
+The button can be added in any Liquid Layout, but you'll need to have access to the ID for an Order belonging to that User- which is most easily available in the [User Orders](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or the [Order Details](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/orders/order-confirmation.md) Layout (note that a User can't be logged in when reading an email, so this feature will not work from an Order Details Layout in an email).
 
 In the User Orders Layout, the exact Liquid for the ID will depend on the variable you've set in the loop. In the following example, the variable assigned to each iteration of the loop is this. so the Order ID is available inside the loop as this.id.
 

@@ -2,13 +2,13 @@ This view allows you to display available Subscription products for customers to
 
 # Introduction
 
-&#x20;The Subscriptions List View displays a list of Subscription products. Like other List Views, it can be sorted and filtered via Liquid.&#x20;
+The Subscriptions List View displays a list of Subscription products. Like other List Views, it can be sorted and filtered via Liquid.
 
-This is slightly different from the `user_subscriptions` List view in the Secure Zones Module. This can be used to display a List of Subscription Orders belonging to a User. [Learn more here](https://developers.siteglide.com/user-subscriptions-list-the-logged-in-users-subscription-orders).
+This is slightly different from the `user_subscriptions` List view in the Secure Zones Module. This can be used to display a List of Subscription Orders belonging to a User. [Learn more here](/ecommerce/get-started-ecommerce/subscriptions/user-subscriptions.md).
 
 # Outputting a List View
 
-&#x20;You can use the type parameter to output a List Layout in most Liquid files:
+You can use the type parameter to output a List Layout in most Liquid files:
 
 ```liquid
 {% raw %}
@@ -23,7 +23,7 @@ This is slightly different from the `user_subscriptions` List view in the Secure
 # File Structure
 
 Subscription Layouts can be found at the path: `layouts/modules/module_14/subscription`
-Within this folder, you can create a folder for each Layout. Each Layout folder can contain a further "list" folder containing the `wrapper` and `item` files it needs.&#x20;
+Within this folder, you can create a folder for each Layout. Each Layout folder can contain a further "list" folder containing the `wrapper` and `item` files it needs.
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/224826419/38930a154d559d6c0445b9c9/image.png) -->
 
@@ -31,9 +31,9 @@ Within this folder, you can create a folder for each Layout. Each Layout folder 
 
 ## The Wrapper
 
-&#x20;The `wrapper.liquid` file should be used to add any HTML structure you may require around your main list.
+The `wrapper.liquid` file should be used to add any HTML structure you may require around your main list.
 
-You must include the following Liquid, which will in turn loop over the Items and output the `item.liquid` file for each Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.&#x20;
+You must include the following Liquid, which will in turn loop over the Items and output the `item.liquid` file for each Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.
 
 ```liquid
 {% raw %}
@@ -55,7 +55,7 @@ You must include the following Liquid, which will in turn loop over the Items an
 
 *   `{{this.release_date}}`
 
-*   `{{this.expiry_date}}`&#x20;
+*   `{{this.expiry_date}}`
 
 *   `{{this['Description']}}`
 
@@ -82,6 +82,6 @@ You must include the following Liquid, which will in turn loop over the Items an
 *   `{{this.price.price_display_formatted}}` - A field for displaying a secondary price of your choice, e.g. recommended retail price. This is not used by the integration. Currency format.
 
 *Subscription Order Fields
-*You'll see when developing a [Subscription Detail Page](https://developers.siteglide.com/detail-layout) that when the User is logged in, it is also possible to access fields relating to a subscription\_order the User has made for that Subscription product already.&#x20;
+*You'll see when developing a [Subscription Detail Page](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md) that when the User is logged in, it is also possible to access fields relating to a subscription\_order the User has made for that Subscription product already.
 
-This is not currently available on the List view- as the List view is designed as a way to browse Subscription products. To allow the user to view and manage their Subscription Orders, we recommend the [User Subscriptions view](https://developers.siteglide.com/user-subscriptions-list-the-logged-in-users-subscription-orders).
+This is not currently available on the List view- as the List view is designed as a way to browse Subscription products. To allow the user to view and manage their Subscription Orders, we recommend the [User Subscriptions view](/ecommerce/get-started-ecommerce/subscriptions/user-subscriptions.md).

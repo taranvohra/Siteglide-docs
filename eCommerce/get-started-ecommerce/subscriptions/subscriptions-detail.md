@@ -44,7 +44,7 @@ Bear in mind that Forms will not work properly inside Emails, so if displaying a
 
 ### Outputting on the Subscription Action Required System Page
 
-To output the Layout here, you need to add a Detail Layout name to the Liquid as a parameter. Read more [here](https://developers.siteglide.com/editing-the-subscription-user-action-required-system-page-and-email).
+To output the Layout here, you need to add a Detail Layout name to the Liquid as a parameter. Read more [here](/ecommerce/get-started-ecommerce/subscriptions/subscription-action-required.md).
 
 ## File Structure
 

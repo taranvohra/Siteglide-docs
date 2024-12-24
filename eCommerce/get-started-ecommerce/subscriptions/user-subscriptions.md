@@ -4,7 +4,7 @@ This Article shows you how to use the Secure Zones Layout user\_subscriptions to
 
 This article shows you how to use the Secure Zones Layout user\_subscriptions to List Subscription Orders belonging to a User. As this is a Secure user-specific List, the Layout is found in the Secure Zones Module.
 
-This is slightly different from a Subscriptions List view, as this lists all available Subscription products- you can <a href="https://developers.siteglide.com/list-view" target="_blank">learn more about this here</a>.
+This is slightly different from a Subscriptions List view, as this lists all available Subscription products- you can [learn more here](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-list.md).
 
 # Outputting the user\_subscriptions List
 
@@ -112,7 +112,7 @@ It's possible to change the price and billing interval of a Subscription. This c
 
 When outputting fields in the `user_subscriptions` view, Subscription Order fields beginning with the word "Plan" will normally be the appropriate choice. These will show the price that these Users will be paying- the original plan when they signed up.&#x20;
 
-The other Price and Interval fields stored against the Subscription, could be used to show how much the User is saving on their current plan compared to the current price. In the different context of the <a href="https://developers.siteglide.com/detail-layout" target="_blank">Subscription Detail Page</a>- we give a different recommendation as here it may not always be possible to identify immediately if the User is subscribed to a different plan.&#x20;
+The other Price and Interval fields stored against the Subscription, could be used to show how much the User is saving on their current plan compared to the current price. In the different context of the [Subscription Detail Page](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md)- we give a different recommendation as here it may not always be possible to identify immediately if the User is subscribed to a different plan.&#x20;
 
 *Tip: Working with the Interval Fields*
 As you can see below, there are multiple fields involved in storing the Interval of charges, which you can use to display the Interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:

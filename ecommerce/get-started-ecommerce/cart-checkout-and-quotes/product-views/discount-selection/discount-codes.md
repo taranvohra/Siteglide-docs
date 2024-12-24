@@ -83,8 +83,8 @@ e.g.
 ### Related Layout Development Docs
 
 * [Developing Cart Layouts](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
-* [Checkout Tutorial](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial)
-* [Basic Payment Form Tutorial](https://developers.siteglide.com/basic-payment-forms-tutorial)
+* [Checkout Tutorial](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
+* [Basic Payment Form Tutorial](/ecommerce/get-started-ecommerce/basic-payment-forms.md)
 
 ## Step 2 - Create Layout Files or Choose the Discount Code Layout
 
@@ -495,7 +495,7 @@ Read more about the [Discount Maximum requirement](https://help.siteglide.com/ar
 `You can use this Liquid tag to format any Liquid price variable with the correct decimalisation. To use, set the`price\_data\` parameter to the variable you wish to format.
 
 * `discount_saving_maximum_reached` - if `true`, the Minimum Amount for the Discount Code has not been set strictly enough and the total Payment Due is below that allowed by the Payment Gateway. You can use this to display a warning message that it has not been possible to apply the full discount.
-* For Subscriptions, your Layout will inherit the variables of the Layouts it's nested within- meaning it will inherit variables from the Subscription Detail Page, then the Subscription Form. See details of these objects [here](https://developers.siteglide.com/detail-layout#jo-step-5-available-fields). e.g. \{{this.price.currency\_symbol\}}
+* For Subscriptions, your Layout will inherit the variables of the Layouts it's nested within- meaning it will inherit variables from the Subscription Detail Page, then the Subscription Form. See details of these objects [here](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md#step-5-available-fields). e.g. \{{this.price.currency\_symbol\}}
 
 ## Step 6 - Optional - Add JavaScript to handle errors
 
@@ -504,14 +504,12 @@ There are lots of reasons why the customer may enter a code but be refused a dis
 You can start with the JavaScript function below and make your own changes to decide how these errors are displayed to the customer:
 
 ```javascript
-<script>
 function s_e_discount_error(error) {
 console.log(error.type); 
 /* an error code which you can use in your logic. */
 console.log(error.message); /* A ready-drafted error message */
 alert(error.message);
 }
-</script>
 ```
 
 As the comments in the example mention, each error returned from a failed discount code will give both a code and a default message. You can choose which one you will use.
