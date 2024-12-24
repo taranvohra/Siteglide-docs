@@ -12,7 +12,7 @@ After a User submits a Form and you redirect them to a Confirmation Page, you ca
 
 ## Prerequisites
 
-* You have set up a [Form](https://help.siteglide.com/article/99-forms-getting-started)
+* You have set up a [Form](/cms/forms/quickstart-forms.md)
 
 ## Introduction
 

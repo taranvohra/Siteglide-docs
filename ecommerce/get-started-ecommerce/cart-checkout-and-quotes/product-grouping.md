@@ -13,7 +13,7 @@ updatedAt: 2023-04-11T07:38:27.000Z
 
 In this tutorial we'll be using both Categories and Collections, if you're unfamiliar with either of these we'd recommend refreshing your memory:
 
-* [Categories - Introduction](https://help.siteglide.com/article/123-categories-getting-started)
+* [Categories - Introduction](/cms/categories/quickstart-categories.md)
 * [Webapp Collections](/developer-tools/liquid/using-collections-with-webapps-and-modules.md)
 
 ## Introduction

@@ -131,4 +131,4 @@ Despite this, you can use the link exactly like a normal URL to an asset, except
 A secure link is only as secure as the Page you output it on.&#x20;
 By outputting your Layout on [a Page which is protected by a Secure Zone](https://help.siteglide.com/article/138-secure-zones-getting-started#3-securing-pages), you have full control over who will have access to your links. 
 
-You could also use [Categories](https://help.siteglide.com/article/123-categories-getting-started) to manage which Media Downloads are available on each Secure Zone. A Category could be created to correspond to each Secure Zone and on the Secure Page, you could output a List of Media Download Items assigned to that Category.   
+You could also use [Categories](/cms/categories/quickstart-categories.md) to manage which Media Downloads are available on each Secure Zone. A Category could be created to correspond to each Secure Zone and on the Secure Page, you could output a List of Media Download Items assigned to that Category.   

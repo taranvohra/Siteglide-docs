@@ -4,7 +4,7 @@ When a Form submits, it can take a moment to make the requests it needs. Here's 
 
 ## Introduction
 
-When a [Form](https://help.siteglide.com/article/99-forms-getting-started) submits, it can take a moment to make the requests it needs. This is especially true with eCommerce Forms which need to make multiple requests for security reasons.
+When a [Form](/cms/forms/quickstart-forms.md) submits, it can take a moment to make the requests it needs. This is especially true with eCommerce Forms which need to make multiple requests for security reasons.
 
 This Article will explain how you can use CSS to show submission progress and let the User know your Form is still submitting without errors.
 

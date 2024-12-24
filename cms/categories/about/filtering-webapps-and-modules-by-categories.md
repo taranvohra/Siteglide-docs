@@ -4,7 +4,7 @@ This Article shows how to filter WebApp and Module Items using their category\_i
 
 ## Introduction
 
-In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](https://help.siteglide.com/article/123-categories-getting-started) on the Front End.
+In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](/cms/categories/quickstart-categories.md.md) on the Front End.
 
 You can use Category IDs to filter WebApp, Module or eCommerce Product Items when including a List View in the Page.
 

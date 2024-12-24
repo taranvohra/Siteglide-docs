@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](https://help.siteglide.com/article/123-categories-getting-started) on the Front End.
+In this set of Articles, we'll show you the Liquid syntax needed to get the most out of [Categories](/cms/categories/quickstart-categories.md) on the Front End.
 
 The following features are available in WebApp and Module Layouts only, as they require access to a particular Item's `category_array` field. In Module Layouts, they'll only be available in the `item.liquid` file.
 

@@ -10,7 +10,7 @@ Currently a form needs a value of "s\_name" to submit properly. Lets take a look
 
 ## Introduction
 
-When a [Form is created](https://help.siteglide.com/article/99-forms-getting-started) you'll notice two standard field that are always required; Name and Email. These two fields must have a value when a user submits the Form or it will fail (as the required fields haven't been given). If two separate fields are required for both first name and last name there is a way of getting round this!
+When a [Form is created](/cms/forms/quickstart-forms.md) you'll notice two standard field that are always required; Name and Email. These two fields must have a value when a user submits the Form or it will fail (as the required fields haven't been given). If two separate fields are required for both first name and last name there is a way of getting round this!
 
 ## Step 1) Create Separate Name Fields in the Form in the Siteglide Admin
 

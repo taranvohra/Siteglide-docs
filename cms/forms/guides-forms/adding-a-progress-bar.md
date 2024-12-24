@@ -2,7 +2,7 @@
 
 ### Introduction
 
-When a [Form](https://help.siteglide.com/article/99-forms-getting-started) is submitted on Siteglide, it may have a wide range of tasks to complete e.g. signing a User into a Secure Zone or making a Payment. Sometimes Users may have an improved experience if they know the submission is still making progress and has not frozen.
+When a [Form](/cms/forms/quickstart-forms.md) is submitted on Siteglide, it may have a wide range of tasks to complete e.g. signing a User into a Secure Zone or making a Payment. Sometimes Users may have an improved experience if they know the submission is still making progress and has not frozen.
 
 That's why we've added data-attributes to the Form which will let you know each time a process is complete. You can use these to optimise your User Experience. They won't tell you how much time the submission will take to complete- but they will give the User a sense of continuation and progress.
 

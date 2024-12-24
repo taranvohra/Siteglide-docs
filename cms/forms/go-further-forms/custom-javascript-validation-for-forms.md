@@ -4,7 +4,7 @@ This article gives some examples for different ways to validate Siteglide forms 
 
 ## Introduction
 
-When a User submits a [Form](https://help.siteglide.com/article/99-forms-getting-started), we'll check:
+When a User submits a [Form](/cms/forms/quickstart-forms.md), we'll check:
 
 * That the User has filled in the fields correctly
 * That additional processes like reCaptcha, payment and Secure Zone sign up were successful
@@ -171,5 +171,5 @@ function error(error) {
 
 ## Related Articles
 
-* [Forms](https://help.siteglide.com/article/99-forms-getting-started)
-* [reCAPTCHA](https://help.siteglide.com/article/99-forms-getting-started#2-spam-protection)
+* [Forms](/cms/forms/quickstart-forms.md)
+* [reCAPTCHA](/cms/forms/quickstart-forms.md#2-spam-protection)

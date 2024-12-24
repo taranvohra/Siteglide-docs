@@ -64,7 +64,7 @@ You can choose to add an item to any parent or child category.
 
 **No categories showing?** Use ‘Manage Categories’: where you can create, edit and remove any.
 
-**Find out more:** [Create a Category](https://help.siteglide.com/article/123-categories-getting-started)
+**Find out more:** [Create a Category](/cms/categories/quickstart-categories.md)
 
 <figure><img src="../../.gitbook/assets/Siteglide-WebApps-Categories.png" alt=""><figcaption></figcaption></figure>
 
