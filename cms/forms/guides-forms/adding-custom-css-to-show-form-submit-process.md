@@ -8,7 +8,7 @@ When a [Form](https://help.siteglide.com/article/99-forms-getting-started) submi
 
 This Article will explain how you can use CSS to show submission progress and let the User know your Form is still submitting without errors.
 
-You may also be interested to read about how you can use a custom validation function to change the way the Form behaves when validation errors are found: [Custom JavaScript Validation for Forms](cms/forms/go-further-forms/custom-javascript-validation-for-forms.md)
+You may also be interested to read about how you can use a custom validation function to change the way the Form behaves when validation errors are found: [Custom JavaScript Validation for Forms](/cms/forms/go-further-forms/custom-javascript-validation-for-forms.md)
 
 ## Step 1) Inspect The CSS Class
 
