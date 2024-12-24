@@ -75,7 +75,7 @@ CRM Custom Fields work in a similar way to Custom Field Sets, but instead of ope
 
 See here for a more detailed explanation of creating CRM fields:
 
-[https://help.siteglide.com/article/205-crm-getting-started](https://help.siteglide.com/article/205-crm-getting-started)
+[/crm/quickstart-crm.md)
 
 In summary:
 
@@ -103,7 +103,7 @@ Note the `data-crm` attribute which gives you a clue this is a Custom Field Set 
 
 #### Prerequisites:
 
-* The User must already be Signed Up to any [Secure Zone](https://help.siteglide.com/en/article/secure-zones-getting-started-15nnl5f/)
+* The User must already be Signed Up to any [Secure Zone](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
 * The User must be logged in
 
 #### Why is pre-filling fields useful?

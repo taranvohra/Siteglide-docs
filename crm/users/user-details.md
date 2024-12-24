@@ -8,9 +8,9 @@ The user\_details Layout contains the User's name, email and Custom Field Set Da
 
 You can use the following links to learn how to set up a Secure Page and the means to access it:
 
-* [Create a Secure Zone](https://help.siteglide.com/article/138-secure-zones-getting-started#2-creating-and-editing-a-secure-zone)
-* [Create a Secure Zone Sign Up Form](https://help.siteglide.com/article/138-secure-zones-getting-started#2-adding-a-sign-up-form)
-* [Add a Secure Zone to a Page](https://help.siteglide.com/article/138-secure-zones-getting-started#3-securing-pages)
+* [Create a Secure Zone](/crm/quickstart-crm.md#2-creating-and-editing-a-secure-zone)
+* [Create a Secure Zone Sign Up Form](/crm/quickstart-crm.md#2-adding-a-sign-up-form)
+* [Add a Secure Zone to a Page](/crm/quickstart-crm.md#3-securing-pages)
 
 ## Introduction
 
@@ -59,7 +59,7 @@ Accessing Custom Field Sets will depend on the Custom Field Set data you have se
 
 #### Accessing data from a Custom Field Set by a specific Custom Field Set ID
 
-Custom Field Sets allow you to store custom fields directly against a Module Item. In the case of the CRM, they are used to store fields against a User which can be kept up-to-date. You can learn more about [Custom Field Sets](https://help.siteglide.com/en/article/custom-field-sets-euhsos/) here.
+Custom Field Sets allow you to store custom fields directly against a Module Item. In the case of the CRM, they are used to store fields against a User which can be kept up-to-date. You can learn more about [Custom Field Sets](/crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md) here.
 
 In the following example, I'll be accessing data from the Custom Field Set 3 (Profile). You can use this example and replace the ID 3 for the ID of your Custom Field Set.
 

@@ -8,9 +8,10 @@ Allow Users to keep track of their communication history with your Client by out
 
 You can use the following links to learn how to set up a Secure Page and the means to access it:
 
-* [Create a Secure Zone](https://help.siteglide.com/article/138-secure-zones-getting-started#2-creating-and-editing-a-secure-zone)
-* [Create a Secure Zone Sign Up Form](https://help.siteglide.com/article/138-secure-zones-getting-started#2-adding-a-sign-up-form)
-* [Add a Secure Zone to a Page](https://help.siteglide.com/article/138-secure-zones-getting-started#3-securing-pages)
+* [Create a Secure Zone](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
+* [Create a Secure Zone Sign Up Form](/modules/core-modules/secure-zones/introduction#log-in-sign-up.md)
+* [Adding a Secure Zone to a Form Advanced](/modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission.md)
+* [Add a Secure Zone to a Page](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
 
 ## Introduction
 

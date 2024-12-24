@@ -4,7 +4,7 @@ These features allow users to change the key information that identifies them on
 
 # Prerequisites
 
-*   Install the [Secure Zones Module](https://help.siteglide.com/article/138-secure-zones-getting-started)
+*   Install the [Secure Zones Module](/crm/quickstart-crm.md)
 
 *   Users must remember their existing password
 
@@ -12,7 +12,7 @@ These features allow users to change the key information that identifies them on
 
 # Introduction
 
-This Article shows how Users who remember their Email address and Password can change these using a Form. If you need a feature for Users who have forgotten their password, try the [Password Reset](https://help.siteglide.com/article/138-secure-zones-getting-started#2-adding-a-password-recovery-page) feature.&#x20;
+This Article shows how Users who remember their Email address and Password can change these using a Form. If you need a feature for Users who have forgotten their password, try the [Password Reset](/crm/quickstart-crm.md#2-adding-a-password-recovery-page) feature.&#x20;
 
 # Step 1 - Set up a Form&#x20;
 

@@ -31,7 +31,7 @@ In this Article we'll provide the Liquid which can be used to manage access to [
 {% endraw %}
 ```
 
-This is the same syntax for inserting a custom Form, where the id parameter should be the id of your Form. See the section [Creating a Sign Up Form](https://help.siteglide.com/article/138-secure-zones-getting-started#2-adding-a-sign-up-form) to learn more.
+This is the same syntax for inserting a custom Form, where the id parameter should be the id of your Form. See the section [Creating a Sign Up Form](/crm/quickstart-crm.md#2-adding-a-sign-up-form) to learn more.
 
 Once you have created a Form, you can select the Form from Toolbox and it will dynamically fill in the ID for you.
 

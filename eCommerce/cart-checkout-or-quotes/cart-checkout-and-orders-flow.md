@@ -13,7 +13,7 @@ This Tutorial shows you how to use the eCommerce and Secure Zones Modules togeth
 
 *   You have installed the [eCommerce Module](https://help.siteglide.com/article/200-getting-started-with-siteglide-ecommerce)
 
-*   You have installed the [Secure Zone Module](https://help.siteglide.com/article/138-secure-zones-getting-started)
+*   You have installed the [Secure Zone Module](/crm/quickstart-crm.md)
 
 *   *Using PayPal as a Payment Gateway?* There are additional setup instructions [here](https://help.siteglide.com/article/165-payment-gateways).
 
@@ -23,7 +23,7 @@ Siteglide eCommerce is even more powerful with Secure Zones. With the security o
 
 ## 1) Create a Secure Zone
 
-Create a Secure Zone which will used by shoppers on your eCommerce site. Alternatively, you can use a Secure Zone that you have created already. Find out more about the Secure Zones Module [here](https://help.siteglide.com/article/138-secure-zones-getting-started#2-creating-and-editing-a-secure-zone).
+Create a Secure Zone which will used by shoppers on your eCommerce site. Alternatively, you can use a Secure Zone that you have created already. Find out more about the Secure Zones Module [here](/crm/quickstart-crm.md#2-creating-and-editing-a-secure-zone).
 
 ## 2) Create a "My Orders" Page in a Secure Zone
 
@@ -117,4 +117,4 @@ The layout parameter should take the name of the list layout you created.
 
 You could add a Secure Zone to other pages related to your eCommerce flow, for example the Cart, in the same way you did with the Orders page. You could redirect the users to a login page when they visit the Cart page and are not logged in.
 
-&#x20;Learn more about Secure Zones [here](https://help.siteglide.com/article/138-secure-zones-getting-started).
+&#x20;Learn more about Secure Zones [here](/crm/quickstart-crm.md).

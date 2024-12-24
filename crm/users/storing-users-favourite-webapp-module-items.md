@@ -6,7 +6,7 @@ Users can "add" or "remove" their favourite WebApp and Module items. You can dis
 
 ## Prerequisites
 
-* You have installed the [Secure Zones Module](https://help.siteglide.com/article/138-secure-zones-getting-started)
+* You have installed the [Secure Zones Module](/crm/quickstart-crm.md)
 * You have added a User Sign Up Form
 * A User has logged in
 
