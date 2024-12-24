@@ -17,8 +17,9 @@ The Live Updates API, at its core, sends requests to the server to fetch a new v
 Before reading this section, it will help to be familiar with the Siteglide documentation relating to the kind of Liquid tag you are intending to live-update- here are a few useful links, but you may need to browse further to find the feature you're working with:
 
 * [WebApp List Layouts Parameters](/webapps/layouts/webapp-list-layout.md)
-* [Parameters for Search and Filtering](https://developers.siteglide.com/search-and-filtering)
-* [Blog Archive](https://developers.siteglide.com/blog-archive)
+* [Parameters for Filtering](/webapps/go-further-webapps/searching-advanced-filtering.md)
+* [Parameters for Search](/webapps/layouts/searching-by-keyword.md)
+* [Blog Archive](/modules/siteglide-modules/blog-and-author/blog-filter-by-date/README.md)
 
 On the endpoint page we provide, the Liquid tag being live-updated is output.
 
@@ -257,7 +258,7 @@ _This Section is included to provide useful information to advanced users and as
 After the GET Request is sent with all of your chosen parameters, the context in which the new re-render of the Liquid is output is modified in the following ways:
 
 1. The Siteglide Constants Liquid tag is run, unless the special `sg_skip_siteglide_constants` URL parameter is passed in. You can optionally experiment with this to improve server response time if the content you use does not require it.
-2. The tag is given the Siteglide `use_search` and `use_adv_search` parameters set to 'true' automatically. This means that any URL parameters described in this set of documents will be allowed to manipulate the filtering [Search and Filtering](https://developers.siteglide.com/search-and-filtering).
+2. The tag is given the Siteglide `use_search` and `use_adv_search` parameters set to 'true' automatically. This means that any URL parameters described in this set of documents will be allowed to manipulate the filtering [Filtering](/webapps/go-further-webapps/searching-advanced-filtering.md) & [Searching](/webapps/go-further-webapps/searching-by-keyword.md).
 3. The `{{context.params}}` variables relating to the URL of the endpoint page are overwritten with those of the referring Page. This is to prevent any discrepancies in Layouts using them. Note we do not currently overwrite the `{{context.location}}` or `{{context.headers}}` objects, though future versions of this API might add an option to do this if requested.
 4. There is no way to dynamically change the `layout` or the module/webapp `id` parameter- these are ignored. See "Thinking about Security".
 5. The following params `range_lt`, `range_lte`, `range_gt` and `range_gte` are inspected. If they contain a date format which includes a dash `-` we convert them to the Unix timestamp which Siteglide expects and context.params is overwritten to reflect the new format. This allows you to skip the step of converting them in JavaScript from the value of a standard HTML field.

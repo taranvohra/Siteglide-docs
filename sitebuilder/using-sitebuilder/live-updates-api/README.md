@@ -36,7 +36,7 @@ PlatformOS cookies and user sessions are preserved by the requests, so secure zo
 
 #### Mutating/ Editing Data <a href="#mutating-editing-data" id="mutating-editing-data"></a>
 
-Note that this API currently uses GET requests only to fetch/read HTML and/or data. While it is possible for the agency developer to write server-side Liquid on the rendered layout which will write to the database, the API does not provide any of its own functionality for writing to the database (if you do need this kind of functionality- see Siteglide's [WebApp](https://developers.siteglide.com/front-end-submit-webapps) and [Module](https://developers.siteglide.com/front-end-submit-modules) Forms). This is a very similar situation to visiting Siteglide pages via the browser.
+Note that this API currently uses GET requests only to fetch/read HTML and/or data. While it is possible for the agency developer to write server-side Liquid on the rendered layout which will write to the database, the API does not provide any of its own functionality for writing to the database (if you do need this kind of functionality- see Siteglide's [WebApp](/webapps/go-further-webapps/webapp-front-end-submit-forms-create.md) and [Module](/modules/go-further-modules/front-end-submit-modules.md) Forms). This is a very similar situation to visiting Siteglide pages via the browser.
 
 #### Specialised Use Cases <a href="#specialised-use-cases" id="specialised-use-cases"></a>
 

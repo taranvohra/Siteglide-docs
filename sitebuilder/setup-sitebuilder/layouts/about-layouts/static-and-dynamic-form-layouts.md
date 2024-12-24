@@ -28,7 +28,7 @@ The Form Layouts are organised into sections based on the Siteglide feature they
 * Module Item Update Forms\
   etc.
 
-Click to learn more about [WebApp CRUD Forms](https://developers.siteglide.com/front-end-submit-webapps) and [Module CRUD Forms](https://developers.siteglide.com/front-end-submit-modules).
+Click to learn more about [WebApp CRUD Forms](/webapps/go-further-webapps/webapp-front-end-submit-forms-create.md) and [Module CRUD Forms](/modules/go-further-modules/front-end-submit-modules.md).
 
 ### Layout Installation <a href="#layout-installation" id="layout-installation"></a>
 
@@ -311,7 +311,7 @@ A form must have a secure zone set against it for this feature to work properly.
 
 ##### Editing Email & Password on Static Form Layouts
 
-For Static Layouts, follow the Siteglide Documentation for [editing emails & passwords](https://developers.siteglide.com/how-users-edit-their-email-and-password-front-end). You can include the relevant components and pass the components the paramters above if you like.
+For Static Layouts, follow the Siteglide Documentation for [editing emails & passwords](/crm/users/how-users-edit-their-email-and-password-front-end.md). You can include the relevant components and pass the components the paramters above if you like.
 
 ### The `custom_form_redirect` parameter <a href="#the-custom_form_redirect-parameter" id="the-custom_form_redirect-parameter"></a>
 
@@ -357,7 +357,7 @@ The main Liquid parameters passed into form layout components are as follows:
 
 Using Siteglide-CLI, it is possible to give your Form's custom fields an order property. This will affect the order they appear in the Siteglide Admin, default form layout and SiteBuilder Form Layouts. For dynamic SiteBuilder form layouts, changes in order will appear immediately, however for static form layouts, the order will only affect the initial install of the layout.
 
-1. Firstly, pull the site using [Siteglide CLI](https://developers.siteglide.com/introducing-siteglide-cli).
+1. Firstly, pull the site using [Siteglide CLI](/developer-tools/cli.md).
 2. Next find the table's JSON file. The tables directory is at `marketplace_builder/views/partials/tables/`. Within that, you can find directories for forms, webapps and modules, with each one containing files numbered by IDs.
 3. (Optional) Convert the minified JSON into human-readable JSON. If using VSCode, you can use an extension like [JSON tools](https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools) or a similar equivalent for your IDE.\
    4.Inside the JSON file, find your custom field under `custom_fields`, e.g. `form_field_1_1`. If the `order` property already exists, edit it to a new number. Fields are ordered in ascending order, so the higher the number, the earlier in the form it will appear. Negative and decimal numbers are allowed.

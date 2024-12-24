@@ -35,7 +35,7 @@ When placed onto a page or a template, this liquid displays the WebApp items usi
 
 When sorting by Custom fields, you'll need to refer to the field by its `Custom Field ID`. e.g. to sort by the 2nd Custom Field created on `webapp_1`, you should set the Sort Type to: `sort_type: "properties.webapp_1_2"` We use this syntax to access the field directly in the database, in order to help increase Page Load performance.
 
-Learn more about Custom Field IDs here: [Understanding Custom Field Names and IDs - and when to use them](https://developers.siteglide.com/understanding-custom-field-names-and-ids)
+Learn more about Custom Field IDs here: [Understanding Custom Field Names and IDs - and when to use them](/developer-tools/configuration/custom_fields.md)
 
 ## Default Fields
 

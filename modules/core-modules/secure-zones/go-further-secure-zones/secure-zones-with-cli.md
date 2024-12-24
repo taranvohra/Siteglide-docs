@@ -14,7 +14,7 @@ Secure Zones are simply a Model object within Siteglide, with this in mind, we c
 ### Prerequisites
 
 * You have installed the Secure Zone module on the instance
-* You have [setup CLI and connected to your Site](https://developers.siteglide.com/introducing-siteglide-cli)
+* You have [setup CLI and connected to your Site](/developer-tools/cli.md)
 * You know how to use the GraphiQL editor
 
 ### Example

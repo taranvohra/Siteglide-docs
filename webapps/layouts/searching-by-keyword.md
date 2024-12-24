@@ -1,10 +1,3 @@
----
-title: Searching - Keyword
-slug: s71i-searching-keyword
-createdAt: 2021-01-29T13:27:19.000Z
-updatedAt: 2023-04-11T10:12:53.000Z
----
-
 How to use the `use_search` parameter in the WebApp include tag, along with a keyword parameter in the URL, to search for items.
 
 ## Prerequisites

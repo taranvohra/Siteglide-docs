@@ -6,7 +6,7 @@ This include was designed to keep SiteBuilder layouts tidy by abstracting common
 
 It can be used to determine where in the layout the pagination layout should be displayed. Just move the tag to where you need it.
 
-The include is an alternative to the documented Siteglide feature [How to Move Pagination](https://developers.siteglide.com/pagination-layouts#VgKjd); it just adds a few extra SiteBuilder features.
+The include is an alternative to the documented Siteglide feature [How to Move Pagination](/miscellaneous/system-features/why-pagination.md#how-to-move-pagination-controls); it just adds a few extra SiteBuilder features.
 
 _Important_ The include will only output pagination if the main Liquid tag has the parameters `use_pagination: 'true'` and `pagination_layout` set. Otherwise, it will do nothing.
 
