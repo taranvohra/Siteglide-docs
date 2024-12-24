@@ -11,7 +11,7 @@ Customise the way Products look on their automatically generated Detail Pages an
 
 ## Prerequisites
 
-* You have [created Products](https://help.siteglide.com/article/196-products-introduction) in the Admin
+* You have [created Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md) in the Admin
 
 ## Getting Started
 

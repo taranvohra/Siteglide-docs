@@ -36,7 +36,7 @@ Any Custom Field Sets that have been associated with the product will be stored 
 
 You can output the above liquid in the item.liquid file to see all of Custom Field Sets associated with the Product. Each of these will have the key "cfs\_1", "cfs\_2" etc. For example, a developer has created just one Custom Field Set to store information about the Guarantee on the Product. The field can be accessed via: `{{this.cfs_data.cfs_1.Guarantee}}`
 
-See more information about Custom Field Sets [here](https://help.siteglide.com/article/207-custom-field-sets).
+See more information about Custom Field Sets [here](/crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md).
 
 ## The Price Object
 

@@ -13,7 +13,7 @@ Product Attribute Layouts allow you to customise the way that you present users 
 
 ## Prerequisites
 
-* You have [created Products](https://help.siteglide.com/article/196-products-introduction) in the Admin
+* You have [created Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md) in the Admin
 * You have [created a Product Detail View](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md)
 
 ## Introduction
