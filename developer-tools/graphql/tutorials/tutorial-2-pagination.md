@@ -3,9 +3,9 @@ Turning the Page! In tutorial 2, we'll control how many items Graph returns on e
 
 # Prerequisites
 
-*   You have completed the [first Learning GraphQL tutorial](https://developers.siteglide.com/tutorial-1-your-first-query).
+*   You have completed the [first Learning GraphQL tutorial](/developer-tools/liquid/accessing-data-from-liquid-objects.md-1-your-first-query).
 
-*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+*   [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 # Introduction
 

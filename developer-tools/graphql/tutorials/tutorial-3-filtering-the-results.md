@@ -9,9 +9,9 @@ You shall not pass! This time, we'll look at how you can use filters to only ret
 
 # Prerequisites
 
-*   You have completed the Learning GraphQL tutorials 1 - 2. You can find the previous tutorial [here](https://developers.siteglide.com/tutorial-2-pagination)
+*   You have completed the Learning GraphQL tutorials 1 - 2. You can find the previous tutorial [here](/developer-tools/liquid/accessing-data-from-liquid-objects.md-2-pagination)
 
-*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+*   [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 # Introduction
 

@@ -415,7 +415,7 @@ Here are some snippets of code you can use to help you:
 
 By the way- we're using the filters `| default` and `| plus: 0` to make sure the page defaults to 1 if no parameter exists, and that the data is converted to an integer.
 
-\*Remembering Pagination in GraphQL \*You may need to refer to [Tutorial 2](https://developers.siteglide.com/tutorial-2-pagination), to refresh your understanding of Pagination.
+\*Remembering Pagination in GraphQL \* You may need to refer to [Tutorial 2](/developer-tools/graphql/tutorials/tutorial-2-pagination.md), to refresh your understanding of Pagination.
 
 ## Next Time
 

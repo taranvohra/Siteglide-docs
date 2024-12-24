@@ -20,7 +20,7 @@ You can now add details of a customer's eCommerce Order to Workflow and Autoresp
 
 eCommerce Orders are created by Checkout and Quote-only Forms.
 
-Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](https://developers.siteglide.com/dynamic-content-in-workflow-and-autoresponder-emails)
+Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md)
 
 ## Syntax
 
@@ -44,7 +44,7 @@ You can use an existing Layout, or create a new one in this File Structure: `lay
 
 ### Developing the Layout
 
-Inside your email notification file, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here:\*\* \*\*[Dynamic Content in Workflow and Autoresponder Emails](https://developers.siteglide.com/dynamic-content-in-workflow-and-autoresponder-emails) You'll still have access to these fields throughout the Order Details Layouts.
+Inside your email notification file, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here:\*\* \*\*[Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md) You'll still have access to these fields throughout the Order Details Layouts.
 
 Inside your `order_details` layout you'll find an `item.liquid` and `wrapper.liquid` file.
 

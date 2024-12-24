@@ -33,8 +33,8 @@ You will come across the following terms which might be new:
 
 This Article is intended to be the starting point for a Series of Articles involving dot notation.
 
-* [Advanced Dot Notation- Arrays and Key Maps](https://developers.siteglide.com/advanced-arrays-and-key-maps-tutorial)
-* [Using WebApp Collections- Tutorial](https://developers.siteglide.com/using-webapp-collections-tutorial)
+* [Advanced Dot Notation- Arrays and Key Maps](/developer-tools/liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
+* [Using WebApp Collections- Tutorial](/developer-tools/liquid/using-collections-with-webapps-and-modules.md)
 
 ## What is dot notation?
 

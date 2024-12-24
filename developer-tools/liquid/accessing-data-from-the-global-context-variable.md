@@ -11,9 +11,9 @@ Want to use Liquid Dot Notation to find dynamic data on your Site? The context v
 
 In this Article, we'll be using dot notation, so if you're not familiar with it, you may want to brush up here:
 
-*   [Getting Started with Dot Notation](https://developers.siteglide.com/tutorial)
+*   [Getting Started with Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md)
 
-*   [Advanced Dot Notation - Arrays and Key Maps](https://developers.siteglide.com/advanced-arrays-and-key-maps-tutorial) - You might not need to fully understand this topic- but a first read of it will be very useful in helping you to recognise the more difficult to handle types of data structure- even if you're not ready to tackle them yet.
+*   [Advanced Dot Notation - Arrays and Key Maps](/developer-tools/liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md) - You might not need to fully understand this topic- but a first read of it will be very useful in helping you to recognise the more difficult to handle types of data structure- even if you're not ready to tackle them yet.
 
 # Introduction
 
@@ -95,13 +95,13 @@ You can then use logic to only show these features to Users who have opted-in.
 
 Unlike `session`, this only holds information relating to a User if they are currently logged in to a Secure Zone. It is more sensitive than `` `session` `` and will include a name and email address. If there is no current\_user, it will hold the value `null`.&#x20;
 
-## headers (object)
+## headers (object) 
 
 Headers are information sent and received when a browser sends a request to a server for an HTML Page. This is a technical area which can be nevertheless useful on some every-day use cases. 
 
-For example, in this Article, we show you how to set up canonical URLs. We use the `headers` object to grab a useful version of the URL: <https://developers.siteglide.com/preventing-duplicate-content-with-query-parameters-canonical-url-and-robotstxt>
+For example, in this Article, we show you how to set up canonical URLs. We use the `headers` object to grab a useful version of the URL: [Preventing Duplicate Content](/cms/pages/page-templates/page-templates-seo-prevent-duplicate-content.md).
 
-Another helpful property is `HTTP_REFERER`. This tells you the URL of the Page that the User was visited before the current one- assuming this was not deliberately hidden. This can be really useful for redirecting a User back to a particular Page after carrying out an Action.
+Another helpful request header is `HTTP_REFERER`. This tells you the URL of the Page that the User was visited before the current one- assuming this was not deliberately hidden. This can be really useful for redirecting a User back to a particular Page after carrying out an Action.
 
 ## params (object)
 

@@ -28,7 +28,7 @@ In future tutorials we will show how to extend this with the following features:
 
 Make sure your Product Detail pages have an add to Cart Button in their layout’s item.liquid file.
 
-Learn more about Product Detail pages [here](https://developers.siteglide.com/detail-layouts).
+Learn more about Product Detail pages [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md).
 
 ![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699\_dv7ljb.png)
 
@@ -60,7 +60,7 @@ Use the `layout` parameter to select the folder which contains the wrapper.liqui
 
 Use the `remove_default_css` parameter to choose if you want to remove `siteglide_example.css` from output or not.
 
-Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layouts)
+Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 
 #### Step 3 - Create a Form for your Checkout Page
 
@@ -74,8 +74,6 @@ You will need to add the following information when creating your form:
 * Redirect URL - This is the relative URL you want a user to be redirected to after submission of payment details e.g. a confirmation page.
 * In the payments tab, toggle "Use as a payment form?" to on
 * Payment Form Type will appear under the payments tab. Select "Standard Checkout".
-
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/a17fbd69d63e44fcee58b5dbeb3afacab3e6c8abe0c2470fa2066850e3ee5a72c5a45c5f-3246-4bc0-b8b0-d50706\_7erjvv.png)
 
 Save your changes.
 

@@ -13,14 +13,14 @@ Take control over your WebApp Layouts by exposing the Data and making your own F
 
 In this Tutorial, we'll be using dot notation, so if you're not familiar with it, you may want to brush up here:
 
-* [Getting Started with Dot Notation](https://developers.siteglide.com/tutorial)
-* [Advanced Dot Notation - Arrays and Key Maps](https://developers.siteglide.com/advanced-arrays-and-key-maps-tutorial)
+* [Getting Started with Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md)
+* [Advanced Dot Notation - Arrays and Key Maps](/developer-tools/liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
 
 You'll also need to be familiar with WebApps:
 
 * [Creating and Editing WebApps](https://help.siteglide.com/article/126-webapps-getting-started#2-creating-and-editing-items)
-* [WebApp List Layouts](https://developers.siteglide.com/webapp-list-layouts)
-* [WebApp Detail Layouts](https://developers.siteglide.com/webapp-detail-layouts)
+* [WebApp List Layouts](/webapps/layouts/webapp-list-layout.md)
+* [WebApp Detail Layouts](/webapps/layouts/webapp-detail-layouts.md)
 
 ## Introduction
 

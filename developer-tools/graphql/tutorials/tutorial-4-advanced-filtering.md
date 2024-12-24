@@ -5,7 +5,7 @@ Following on from the previous tutorial, we'll look at more advanced filtering o
 ## Prerequisites
 
 * You have completed the Learning GraphQL tutorials 1 - 3
-* [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+* [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 ## Introduction
 

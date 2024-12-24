@@ -102,7 +102,7 @@ If you are using SiteBuilder, or have already added your own CSS for the Cart, w
 
 Use the `layout` parameter to select the folder which contains the wrapper.liquid and the item.liquid file you would like to use for your layout. For now, you can use the "cart" layout which is included in the eCommerce Module.
 
-Learn more about Cart Layouts [here](https://developers.siteglide.com/cart-layouts)
+Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 
 {% hint style="success" %}
 [SiteBuilder](../../../sitebuilder/setup-sitebuilder/about-sitebuilder.md) has an out-of-the-box Cart design ready for you in a Bootstrap 5 or Tailwind version.\

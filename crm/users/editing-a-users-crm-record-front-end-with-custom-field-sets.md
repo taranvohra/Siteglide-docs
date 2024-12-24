@@ -112,7 +112,7 @@ It's extremely useful to display the current values in the fields on Page load. 
 
 #### An alternative - Using GraphQL to fetch CRM data
 
-Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [https://developers.siteglide.com/tutorial-overview](https://developers.siteglide.com/tutorial-overview)
+Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview](/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview)
 
 #### Using User Details to fetch CRM data- steps
 

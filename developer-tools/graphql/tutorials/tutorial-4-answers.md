@@ -3,9 +3,9 @@ In our Tutorial 4 challenge, we asked you to write a query which returned items 
 
 # Prerequisites
 
-*   This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first.](https://developers.siteglide.com/tutorial-4-advanced-filtering)
+*   This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first.](/developer-tools/graphql/tutorials/tutorial-4-advanced-filtering.md)
 
-*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+*   [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 # Introduction
 

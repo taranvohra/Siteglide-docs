@@ -13,7 +13,7 @@ How to use Liquid For Loops and Indexing to handle arrays. Also, how to use a ke
 
 This Article is the second in a series on using Dot Notation in Siteglide. We strongly recommend reading the Article below first:
 
-* [Getting Started with Dot Notation](https://developers.siteglide.com/tutorial)
+* [Getting Started with Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md)
 
 ## Introduction
 

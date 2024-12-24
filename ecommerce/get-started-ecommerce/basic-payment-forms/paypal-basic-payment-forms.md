@@ -29,4 +29,4 @@ window.s_e_paypal_error = error_function;
 
 We recommend using a Custom Error Notification with PayPal. JavaScript alert messages are sometimes covered by the secure PayPal browser window- meaning the User Experience can become impaired. We'd recommend outputting error messages directly on the Page instead or using a library like [Sweet Alert 2](https://sweetalert2.github.io/).
 
-You can see an example which does this in our updated [Custom Error Function](https://developers.siteglide.com/custom-javascript-validation-for-forms) Article.
+You can see an example which does this in our updated [Custom Error Function](/cms/forms/go-further-forms/custom-javascript-validation-for-forms.md) Article.

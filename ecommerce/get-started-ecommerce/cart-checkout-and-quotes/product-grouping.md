@@ -14,7 +14,7 @@ updatedAt: 2023-04-11T07:38:27.000Z
 In this tutorial we'll be using both Categories and Collections, if you're unfamiliar with either of these we'd recommend refreshing your memory:
 
 * [Categories - Introduction](https://help.siteglide.com/article/123-categories-getting-started)
-* [Webapp Collections](https://developers.siteglide.com/using-webapp-collections-tutorial)
+* [Webapp Collections](/developer-tools/liquid/using-collections-with-webapps-and-modules.md)
 
 ## Introduction
 
@@ -22,7 +22,7 @@ Often in eCommerce, you will have Products that are similar to one another. e.g.
 
 ### What are Product Attributes?
 
-On Siteglide, we provide the Attributes feature- which allows you to merge these multiple varieties into a single Product with options. Users choose which Attributes to select as they add the Product to the Cart, and the Price can be adjusted accordingly. Follow these links to find out more about [managing Attributes in the Admin](https://help.siteglide.com/article/188-products-attributes), or [outputting them as options Front End](https://developers.siteglide.com/attribute-layouts).
+On Siteglide, we provide the Attributes feature- which allows you to merge these multiple varieties into a single Product with options. Users choose which Attributes to select as they add the Product to the Cart, and the Price can be adjusted accordingly. Follow these links to find out more about [managing Attributes in the Admin](https://help.siteglide.com/article/188-products-attributes), or [outputting them as options Front End](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md).
 
 ### What was Product Grouping?
 
@@ -140,7 +140,7 @@ If you'd like to use a separate Layout to output your products, add this include
 
 Now we know which Products are related to one another, we can output them. For this demo, I'll be outputting them within the Detail Layout.
 
-To do this we'll use a Collection (read more here: [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial)) which will be filtered by the parameter "category\_id", meaning only items within the specified category are included (please follow step 1 for instructions on how we can do this dynamically).
+To do this we'll use a Collection (read more here: [Collections](/developer-tools/liquid/using-collections-with-webapps-and-modules.md)) which will be filtered by the parameter "category\_id", meaning only items within the specified category are included (please follow step 1 for instructions on how we can do this dynamically).
 
 ```liquid
 {%- include 'ecommerce/products'

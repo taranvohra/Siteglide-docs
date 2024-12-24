@@ -15,7 +15,7 @@
 
 ### 2.8.2.5 - 10th July 2024
 
-* WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](https://developers.siteglide.com/webapp-list-layouts) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
+* WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](/webapps/layouts/webapp-list-layout.md) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
 
 ***
 

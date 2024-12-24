@@ -5,15 +5,15 @@ You've now used the GraphQL playground to write queries which fetch data. Now yo
 ## Prerequisites
 
 * You've completed the "Learning GraphQL" tutorials 1 - 4.
-* In order to use GraphQL results on your Page, you'll need to be familiar with Dot Notation Liquid syntax. You can get started with learning to use [Dot Notation here](https://developers.siteglide.com/tutorial). You may find that you want to refer back and forth between articles on Dot Notation and GraphQL as you continue with your learning.
+* In order to use GraphQL results on your Page, you'll need to be familiar with Dot Notation Liquid syntax. You can get started with learning to use [Dot Notation here](/developer-tools/liquid/accessing-data-from-liquid-objects.md). You may find that you want to refer back and forth between articles on Dot Notation and GraphQL as you continue with your learning.
 * You'll need to be familiar with Siteglide-CLI. In this tutorial we'll be using Siteglide-CLI to add a GraphQL folder and sync our new queries up to the Site.
-* [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+* [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 ## Introduction
 
 Last time, we looked at how to use `filter` to refine your queries so that they only return results matching particular criteria.
 
-So far we've been working in GraphiQL, the interative playground. This time, we'll run a GraphQL query on your Starter Site. We'll also take a quick look at how to handle the results- but you can learn more about this by following our Documentation on [Dot Notation](https://developers.siteglide.com/liquid-dot-notation) and [Collections](https://developers.siteglide.com/using-webapp-collections-tutorial).
+So far we've been working in GraphiQL, the interative playground. This time, we'll run a GraphQL query on your Starter Site. We'll also take a quick look at how to handle the results- but you can learn more about this by following our Documentation on [Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md) and [Collections](/developer-tools/liquid/using-collections-with-webapps-and-modules.md).
 
 ## Saving your GraphQL File
 
@@ -187,7 +187,7 @@ This gets me the following Results on the Page:
 
 You can use a Liquid `include` tag to output a Layout to display your results. The trick is to make sure that the data fits the same format as the layout is expecting.
 
-You can learn more about this topic [here](https://developers.siteglide.com/using-webapp-collections-tutorial), as it works in the same way as displaying Collection Results in a Layout.
+You can learn more about this topic [here](/developer-tools/liquid/using-collections-with-webapps-and-modules.md), as it works in the same way as displaying Collection Results in a Layout.
 
 ## Congratulations
 

@@ -3,9 +3,9 @@ We look at a possible answer to Tutorial 3's challenge. This shows how to write 
 
 # Prerequisites
 
-*   This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first](https://developers.siteglide.com/tutorial-3-filtering-the-results).
+*   This Article shows the Answers to a Challenge. If you've not had a go at the challenge yet, we'd recommend you [head there first](/developer-tools/liquid/accessing-data-from-liquid-objects.md-3-filtering-the-results).
 
-*   [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+*   [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 # Challenge Answers
 

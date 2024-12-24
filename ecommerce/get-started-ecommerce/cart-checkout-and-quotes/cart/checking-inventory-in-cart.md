@@ -190,7 +190,7 @@ This can be useful so that as soon as the User arrives at the Cart they can be u
 
 ### On Change
 
-This is useful if you want the Inventory checked immediately after the User changes the desired quantity. In the example we want to time this function straight after the [updated quantity is saved to the Cart](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart). Instead of running the function directly then, we'll set the `check_inventory_after` option against the `s_e_cart_update_quantity` function.
+This is useful if you want the Inventory checked immediately after the User changes the desired quantity. In the example we want to time this function straight after the [updated quantity is saved to the Cart](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart.md). Instead of running the function directly then, we'll set the `check_inventory_after` option against the `s_e_cart_update_quantity` function.
 
 \*\*\*Example \*\*\*To be added to the item.liquid file:
 

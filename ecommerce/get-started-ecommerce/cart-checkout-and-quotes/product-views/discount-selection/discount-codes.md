@@ -82,7 +82,7 @@ e.g.
 
 ### Related Layout Development Docs
 
-* [Developing Cart Layouts](https://developers.siteglide.com/cart-layouts)
+* [Developing Cart Layouts](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 * [Checkout Tutorial](https://help.siteglide.com/article/163-how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial)
 * [Basic Payment Form Tutorial](https://developers.siteglide.com/basic-payment-forms-tutorial)
 

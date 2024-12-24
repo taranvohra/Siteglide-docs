@@ -188,6 +188,7 @@
     * [ℹ️ Pages with Siteglide CLI](cms/pages/about-pages/pages-with-siteglide-cli.md)
   * [ℹ️ About Page Templates](cms/pages/page-templates/README.md)
     * [ℹ️ Page Templates with Siteglide CLI](cms/pages/page-templates/page-templates-with-cli.md)
+    * [Prevening Duplicate Content](/cms/pages/page-templates/page-templates-seo-prevent-duplicate-content.md)
   * [ℹ️ System Pages](pages-and-page-templates/get-started-pages/system-pages.md)
   * [💻 Reference](cms/pages/accessing-page-data.md)
   * [🌳 File Structure](cms/pages/pages-and-page-templates-file-structure.md)

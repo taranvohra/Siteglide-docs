@@ -51,7 +51,7 @@ Notes:
 
 ## Step 2) Sync the Query to the Site using Siteglide-CLI
 
-Refer back to [Tutorial 5](https://developers.siteglide.com/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site) to refresh these steps.
+Refer back to [Tutorial 5](/developer-tools/graphql/tutorials/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md) to refresh these steps.
 
 ## Step 3) Adding the HTML Controls
 

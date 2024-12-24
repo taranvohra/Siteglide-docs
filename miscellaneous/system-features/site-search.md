@@ -155,7 +155,7 @@ The following output is available for Pages.
 
 ### WebApp Results - Liquid Reference
 
-This will depend on the WebApp. [Use Liquid Dot Notation](https://developers.siteglide.com/tutorial) to see the results for your WebApps. Here is an example of a typical WebApp.
+This will depend on the WebApp. [Use Liquid Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md) to see the results for your WebApps. Here is an example of a typical WebApp.
 
 * `{{this.id}}` - ID of the WebApp Item
 * `{{this.name}}` - Name of WebApp Item
@@ -177,7 +177,7 @@ This will depend on the WebApp. [Use Liquid Dot Notation](https://developers.sit
 
 ### Module Results - Liquid Reference
 
-This will depend on the Module. [Use Liquid Dot Notation](https://developers.siteglide.com/tutorial) to see the results for your Modules. Here is an example of a typical Module.
+This will depend on the Module. [Use Liquid Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md) to see the results for your Modules. Here is an example of a typical Module.
 
 * `{{this.id}}` -ID of the Module Item
 * `{{this.name}}` - Name of Module Item

@@ -6,7 +6,7 @@ Hello WebApp! In Tutorial 1, we'll use Siteglide CLI to open the GraphQL sandbox
 
 * Create a new Site from the Flowbite Portal Site Template. We'll use this in the examples
 * [Siteglide-CLI ](https://developers.siteglide.com/introducing-siteglide-cli)- You'll need to understand how to open terminal on your machine and navigate to your Project's root folder. You'll need to have installed Siteglide-CLI and its dependency Node.js. You can't use GraphQL without Siteglide-CLI.
-* [About GraphQL](https://developers.siteglide.com/about-graphql)- optional- Read more about GraphQL and when it might be best used.
+* [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 ## Introduction
 

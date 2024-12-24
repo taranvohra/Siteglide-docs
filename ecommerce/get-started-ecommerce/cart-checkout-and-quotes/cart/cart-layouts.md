@@ -87,7 +87,7 @@ When modifying the cart with JS, this `cart_id` will be needed.\
 Multiple lines in the cart may refer to the same product if a different combination of attributes is selected.
 {% endhint %}
 
-Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](https://developers.siteglide.com/liquid-reference-for-product-and-attribute-layouts).
+Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md).
 
 There are some additional points to bear in mind when creating a cart layout's item.liquid file:
 
@@ -127,7 +127,7 @@ function removeCallback() {
 
 #### Increasing the Quantity of a Product in the Cart:
 
-See the full Article on [updating Product quantities here](https://developers.siteglide.com/updating-the-quantity-of-items-in-the-cart).
+See the full Article on [updating Product quantities here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart.md).
 
 #### item.liquid
 

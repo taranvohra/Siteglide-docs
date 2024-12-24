@@ -42,9 +42,9 @@ GraphQL can be tricky to get started with, but most of our Developers report tha
 
 We'll provide a series of Tutorials, starting off simple and becoming progressively more challenging. As part of this, we'll aim to give you the skills you need to carry out further learning yourself- often this will mean learning to read the platformOS schema- finding the type of query you need, and experimenting with how to make it work.
 
-Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](https://developers.siteglide.com/tutorial-overview)
+Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview)
 
-In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](https://developers.siteglide.com/tutorial-1-your-first-query)
+In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](/developer-tools/liquid/accessing-data-from-liquid-objects.md-1-your-first-query)
 
 ## I'm stuck. Can you help me build a Site with Custom GraphQL?
 

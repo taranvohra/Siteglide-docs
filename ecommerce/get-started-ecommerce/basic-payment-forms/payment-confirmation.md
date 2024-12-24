@@ -12,11 +12,11 @@ Use Emails to send confirmation messages to customers, including a detailed brea
 ## Prerequisites
 
 * You have installed eCommerce Module v1.1.4 or later. Check out [Modules Overview](https://help.siteglide.com/article/131-modules-getting-started) to find out how you can install the latest version.
-* You have set up a [Basic Payment Form](https://developers.siteglide.com/basic-payment-forms-tutorial) using the Stripe Payment Gateway
+* You have set up a [Basic Payment Form](/ecommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md) using the Stripe Payment Gateway
 
 ## Introduction
 
-You can now add details of a customer's Basic Payment Form to Workflow and Autoresponder transactional emails. Give your Client and the customer peace of mind, as well as valuable records for their safekeeping. Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](https://developers.siteglide.com/dynamic-content-in-workflow-and-autoresponder-emails)
+You can now add details of a customer's Basic Payment Form to Workflow and Autoresponder transactional emails. Give your Client and the customer peace of mind, as well as valuable records for their safekeeping. Within the email, you can also access any fields that were submitted along with the original Form. Learn more here: [Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md)
 
 ## Step 1) Include the Payment Summary Feature
 

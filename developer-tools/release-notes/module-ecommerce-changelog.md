@@ -240,7 +240,7 @@ Added support for output of more tax breakdowns:
 * Final Total Tax Amount - price_total_tax\_amount - The total Tax amount applied to any Products or Shipping Option
 * Final Total Price Before Tax - price_total_before\_tax - The total price of Products and the selected Shipping Option, before any Tax has been applied
 
-Find the full list [here](https://developers.siteglide.com/cart-layouts#bb-link-to-the-checkout-page)
+Find the full list [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
 
 ***
 
@@ -335,7 +335,7 @@ Patch to support inventory checking against Attributes on Cart.
 
 ### 1.4.0 - 16th February 2021
 
-* Volume Pricing - You can now set prices to change depending on how many items are purchased by the user. For example, you might say "buy 1 for $10, or 3 for $8 each" - [Docs](https://developers.siteglide.com/volume-pricing)
+* Volume Pricing - You can now set prices to change depending on how many items are purchased by the user. For example, you might say "buy 1 for $10, or 3 for $8 each" - [Docs](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/volume-pricing.md)
 * Discount Codes on Subscriptions - You can now set up Discount Codes to be used with Subscriptions. For example, you can say "50% off for 3 months" or even use it as a free-trial type code of "100% off for 1 month"
 * XML Product Feed - A new System Page that outputs Product data in XML format for RSS feeds
 * Sorting and Filtering by Price

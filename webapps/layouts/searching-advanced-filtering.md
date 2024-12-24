@@ -5,7 +5,7 @@ How to use the `use_adv_search` parameter in the WebApp include tag, along with 
 ### Prerequisites
 
 * You have [created a WebApp](https://help.siteglide.com/article/126-webapps-getting-started#2-creating-your-webapp)
-* You have [added a WebApp List View to a Page](https://developers.siteglide.com/webapp-list-layouts)
+* You have [added a WebApp List View to a Page](/webapps/layouts/webapp-list-layout.md)
 
 ### Introduction
 

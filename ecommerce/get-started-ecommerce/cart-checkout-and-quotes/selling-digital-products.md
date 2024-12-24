@@ -14,7 +14,7 @@ Prerequisites
 * You have installed the [Secure Zone](https://help.siteglide.com/article/138-secure-zones-getting-started) Module's latest version
 * You have installed the [Media Downloads](https://help.siteglide.com/article/131-modules-getting-started#2-introduction) and [eCommerce Modules](https://help.siteglide.com/article/200-getting-started-with-siteglide-ecommerce)
 * You have created [Products](https://help.siteglide.com/article/196-products-introduction).
-* You have followed our document on [Cart, Checkout and Orders Flow with the Secure Zone Module](https://developers.siteglide.com/cart-checkout-and-orders-flow-with-secure-zones-module-tutorial)
+* You have followed our document on [Cart, Checkout and Orders Flow with the Secure Zone Module](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md)
 
 ## Introduction
 
