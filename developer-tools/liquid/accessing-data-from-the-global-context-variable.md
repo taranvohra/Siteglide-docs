@@ -49,11 +49,13 @@ If a property is marked *advanced only*, it is because we haven't found a use-ca
 
 platformOS uses a single cookie to identify a visitor- whether signed in or not. The `session` object holds information in the database which relates to the visitor with that cookie. This is used in Siteglide eCommerce to allow us to identify someone who has added items to a Cart, without requiring them to Sign In. Learn more about how we use this essential cookie [here](/miscellaneous/system-features/cookies-on-siteglide-sites.md).
 
-***Adding Session Fields
-***You can add fields to session and exports objects only. 
+**Adding Session Fields**: You can add fields to session and exports objects only. 
 
 The easiest way to add session fields is to use the 
-`{% session %}` tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
+```liquid
+{% session %}
+``` 
+tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
 
 **Compatibility**: To avoid conflicting with future Siteglide features, we recommend that if you use this feature, you prefix any new fields with the initials or name of your Agency.
 

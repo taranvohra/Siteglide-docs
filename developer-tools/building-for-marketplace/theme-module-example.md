@@ -16,7 +16,7 @@ Remember to note down your newly generated Vanity ID.
 
 ## Create Your Folder Structure
 
-First, create a fresh staging site for your module. Checkout [Create Your Staging Site](/developer-tools/building-for-marketplace/create-folder-structure#create-your-staging-site.md) **:** for more information on this step.
+First, create a fresh staging site for your module. Checkout [Create Your Staging Site](/developer-tools/building-for-marketplace/create-folder-structure#create-your-staging-site) **:** for more information on this step.
 
 Second, create a folder for your project on your local machine. Working within your new project folder, connect to your new staging site via CLI to pull the initial site files down onto your computer.
 
