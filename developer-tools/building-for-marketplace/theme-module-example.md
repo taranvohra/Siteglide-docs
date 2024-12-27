@@ -47,7 +47,7 @@ First, within your `modules/<module_name>/public` folder, create a new folder ca
 * `partials/includes/header` - Page Header file used to store the Header including main navigation.
 * `partials/includes/footer` - Page Footer file used to store the Footer including secondary navigation.
 
-Setting Pages up with appropriate Template, Header & Footer files allows us to only write the code once and apply it consistently across all of our theme pages. It also makes it easier to update later if we’d like to. For more information on page structure checkout: [Templates - Getting Started](https://help.siteglide.com/en/article/templates-getting-started-jbynlb/).
+Setting Pages up with appropriate Template, Header & Footer files allows us to only write the code once and apply it consistently across all of our theme pages. It also makes it easier to update later if we’d like to. For more information on page structure checkout: [Templates - Getting Started](/en/site-manager/templates.md).
 
 ![](../../assets/1m1nO4GayNeKDrW66UBjw\_theme-module-layouts-1.png)
 
