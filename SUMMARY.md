@@ -345,6 +345,7 @@
         * [🔹 Attributes - Changing Product Price after Change](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/changing-price-as-attrs-are-selected.md)
       * [📂 Discount Selection](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/README.md)
         * [Discount Codes Layout](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md)
+        * [Minimum Payments](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/minimum-payments.md)
       * [📂 Shipping Selection](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/README.md)
         * [Shipping Options Layout](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md)
     * [Managing Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md)

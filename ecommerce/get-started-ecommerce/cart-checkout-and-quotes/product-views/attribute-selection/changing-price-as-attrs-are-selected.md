@@ -12,7 +12,7 @@ This Article will look in detail at the JavaScript function which updates the Pr
 ## Prerequisites
 
 * Your [eCommerce Module](/ecommerce/quickstart-ecommerce.md) should be updated to version 1.0.5 to get the latest version of this feature described by this Article. Earlier versions of the Module will have limited support for this feature on Product List views.
-* You have [created Attributes](https://help.siteglide.com/article/188-products-attributes) on some of your Products and [included an Attributes sub-Layout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md) nested inside your Product Layout.
+* You have [created Attributes](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) on some of your Products and [included an Attributes sub-Layout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/attribute-selection/attribute-layouts.md) nested inside your Product Layout.
 
 ## Introduction
 

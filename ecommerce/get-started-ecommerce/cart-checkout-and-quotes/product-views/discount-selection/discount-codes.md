@@ -1,10 +1,3 @@
----
-title: Discount Codes Layout
-slug: whi0-
-createdAt: 2021-02-19T10:55:07.000Z
-updatedAt: 2024-03-18T16:01:47.001Z
----
-
 # Discount Codes Layout
 
 This Article explains how to output a Discount Codes Layout in either Basic Payment Form, Cart, Checkout or Subscription Layouts
@@ -13,7 +6,7 @@ This Article explains how to output a Discount Codes Layout in either Basic Paym
 
 Discount Codes allow your Client to provide special offers to their customers.
 
-You can learn how to [set up Discount Codes in the Admin](https://help.siteglide.com/article/188-products-attributes) here.
+You can learn how to [set up Discount Codes in the Admin](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) here.
 
 The role of a Discount Code Layout is to give the customer an opportunity to enter and apply a Discount Code on your Site. Additionally, once a code is applied, the Layout will give the customer information about how their code has been applied along with any terms and conditions, and the opportunity to remove the code.
 
@@ -478,7 +471,7 @@ This code will display a message if the minimum spend is not set strictly enough
 
 `discount_saving_maximum_reached` will always return false for Subscriptions and these allow any size of Discount (controlled only by the Partner and Client setting Minimum Spend values on each Discount Code in the Admin.) Therefore, it's not necessary to add this code to a Discount Code Layout for a Subscription.
 
-Read more about the [Discount Maximum requirement](https://help.siteglide.com/article/168-faq-ecommerce-discount-codes-what-if-the-discount-is-100-or-more-of-the-total-order-price)
+Read more about the [Discount Maximum requirement](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/minimum-payments.md)
 
 ### Summary of Available fields when building your Discount Code Layout:
 
@@ -632,7 +625,3 @@ You can also add the statement to check if the Discount will apply to the next i
 {% endraw %}
 ```
 
-### Related Articles
-
-* [eCommerce - Discount Codes](https://help.siteglide.com/article/177-ecommerce-discount-codes) - Adding and editing Discount Codes in the Siteglide Admin
-* [eCommerce - Discount Codes - How to avoid low prices which cost Payment Gateway Charges](https://help.siteglide.com/article/168-faq-ecommerce-discount-codes-what-if-the-discount-is-100-or-more-of-the-total-order-price)
