@@ -12,7 +12,7 @@ Users can "add" or "remove" their favourite WebApp and Module items. You can dis
 
 ## Introduction
 
-We've added the ability for User's to store their favourite Module items within a "favourite\_items" array, they'll be able to "add" and "remove" items from the list which will be stored alongside the rest of the CRM data available to that User in [user\_details](https://developers.siteglide.com/user-details).
+We've added the ability for User's to store their favourite Module items within a "favourite\_items" array, they'll be able to "add" and "remove" items from the list which will be stored alongside the rest of the CRM data available to that User in [user\_details](/crm/users/user-details.md).
 
 Possible Use Cases for this feature include:
 
@@ -28,9 +28,13 @@ This Layout will allow the User to add or remove an Item from their favourites.
 The User Favourites Toggle Layout will only work within an item.liquid file (for Modules) or a WebApp Layout file that has access to \{{this.id\}}.
 {% endhint %}
 
-Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: \`
+Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: 
 
-\`
+```liquid
+{% raw %}
+{% include 'user_favourites_toggle', layout: 'default' -%}
+{% endraw %}
+```
 
 `is_favourite` - you can use this within `user_favourites_toggle` layouts to determine if the Module/ Webapp item is already added to the Users favourites like so:
 
@@ -133,13 +137,17 @@ Add to favourites
 
 ### Hiding add/ remove buttons if User isn't logged into Secure Zone
 
-You may want to hide the add/ remove buttons from the User if they aren't logged into a Secure Zone you could do so by wrapping your user\_favourites Layout within this IF statement: \`
+You may want to hide the add/ remove buttons from the User if they aren't logged into a Secure Zone you could do so by wrapping your user\_favourites Layout within this IF statement:
 
-\`
+```liquid
+{% raw %}
+{% if context.current_user %} {% endif %}
+{% endraw %}
+```
 
 ## Syntax - Outputting User's Favourite Module/ Webapp items
 
-Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](https://developers.siteglide.com/user-details)
+Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](/crm/users/user-details.md)
 
 You can include the user\_details Layout like so:
 

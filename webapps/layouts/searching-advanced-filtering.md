@@ -26,7 +26,7 @@ If you are looking to search for WebApp items which match any of your search ter
 
 In the database, each field has an ID that is different from their user-friendly name. In order to use the advanced search, you will need to know the ID of the field.
 
-You can learn more about why we use Custom Field IDs and how to find the one you need for a WebApp or Module here: [Custom Field IDs](developer-tools/configuration/custom_fields.md)
+You can learn more about why we use Custom Field IDs and how to find the one you need for a WebApp or Module here: [Custom Field IDs](/developer-tools/configuration/custom_fields.md)
 
 Once you've checked that Article and found the ID of the Custom Field you need, you can move on to Step 2.
 

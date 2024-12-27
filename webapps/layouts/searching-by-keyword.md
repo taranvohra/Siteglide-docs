@@ -11,7 +11,7 @@ This is the easiest way to allow users to search for WebApp items on the Front E
 
 You can use a string of words to search all fields in the WebApp. Using OR logic, Siteglide will return all results where at least one keyword matches in one of the item's fields. The number of results will still be limited by pagination.
 
-If you want to control which fields are searched, see <a href="https://developers.siteglide.com/searching-advanced-filtering" target="_blank">Searching - Advanced Filtering</a>.
+If you want to control which fields are searched, see <a href="https://docs.siteglide.com/en/webapps/go-further-webapps/searching-advanced-filtering" target="_blank">Searching - Advanced Filtering</a>.
 
 ### Steps
 

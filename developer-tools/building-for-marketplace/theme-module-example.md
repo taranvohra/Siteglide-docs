@@ -20,7 +20,7 @@ First, create a fresh staging site for your module. Checkout [Create Your Stagin
 
 Second, create a folder for your project on your local machine. Working within your new project folder, connect to your new staging site via CLI to pull the initial site files down onto your computer.
 
-Next, create a top level folder called `modules/<module_name>/public` within your project folder. Because we are creating a basic theme Module, we don’t need to create the private top level folder. Checkout [Top Level Folders](https://developers.siteglide.com/2-create-folder-structure#9x-top-level-folders) for more info.
+Next, create a top level folder called `modules/<module_name>/public` within your project folder. Because we are creating a basic theme Module, we don’t need to create the private top level folder. Checkout [Top Level Folders](/developer-tools/building-for-marketplace/create-folder-structure#top-level-folders) for more info.
 
 ![](../../assets/OSlgyzgpAqML1M1TXp\_T0\_create-top-level-folder-1.png)
 
@@ -61,7 +61,7 @@ As we’ve been copying files from the Theme Demo Module, we’ll need to update
 
 Next, we want to create one of the setup file options available: install-process.json.
 
-Create a file called install-process.json on the root folder of your Module Project (alongside /modules/). Checkout [Module Setup Files](https://developers.siteglide.com/2-create-folder-structure#vp-module-setup-files) for more info.
+Create a file called install-process.json on the root folder of your Module Project (alongside /modules/). Checkout [Module Setup Files](/developer-tools/building-for-marketplace/create-folder-structure#module-setup-files) for more info.
 
 Add the following Code Snippet to your newly created Install Process file:
 
@@ -77,7 +77,7 @@ Adding this line of code to the install-process.json file will ensure that when 
 
 Now that we have added all of the core assets and views to our module, let’s see it in action!
 
-Using CLI run the [deploy command](https://developers.siteglide.com/introducing-siteglide-cli#tq-deploy) to send all of the files within your project folder up to your staging site.
+Using CLI run the [deploy command](/developer-tools/cli/reference#deploy) to send all of the files within your project folder up to your staging site.
 
 ![](../../assets/nBrvK3QRxl04hiWbB\_\_sv\_theme-module-deploy-1.png)
 
@@ -114,10 +114,10 @@ Please ensure:
 
 ### Sending your Module to Siteglide
 
-Next we will need to update the Module item that you made in Admin earlier to include some extra information. Checkout the [Sending your Module to Siteglide](https://developers.siteglide.com/3-submit-module-for-approval#wy-sending-your-module-to-siteglide) doc for more information.
+Next we will need to update the Module item that you made in Admin earlier to include some extra information. Checkout the [Sending your Module to Siteglide](/developer-tools/building-for-marketplace/submit-module-for-approval#sending-your-module-to-siteglide) doc for more information.
 
-Once you’ve submitted your Module for approval you’ll need to give us access to see the Module. This is needed for the initial approval, but also for ongoing access to be able to install the latest version of the Module. To provide us with access you need to invite Siteglide API ( [api@siteglide.com](mailto:api@siteglide.com) ) as a collaborator for the GitHub Repository. Checkout the [After Submitting your Module](https://developers.siteglide.com/3-submit-module-for-approval#xg-after-submitting-your-module) doc for more information.
+Once you’ve submitted your Module for approval you’ll need to give us access to see the Module. This is needed for the initial approval, but also for ongoing access to be able to install the latest version of the Module. To provide us with access you need to invite Siteglide API ( [api@siteglide.com](mailto:api@siteglide.com) ) as a collaborator for the GitHub Repository. Checkout the [After Submitting your Module](/developer-tools/building-for-marketplace/submit-module-for-approval#after-submitting-your-module) doc for more information.
 
 ## Updating & Maintaining Your Module
 
-There are a couple of key things you should be aware of when managing and updating your module moving forward. Checkout this doc for more info: [Updating Existing Modules](https://developers.siteglide.com/4-updating-existing-modules).
+There are a couple of key things you should be aware of when managing and updating your module moving forward. Checkout this doc for more info: [Updating Existing Modules](/developer-tools/building-for-marketplace/updating-existing-modules).

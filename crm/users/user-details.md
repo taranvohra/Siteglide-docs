@@ -20,9 +20,11 @@ As such, it can be useful (though it is optional) to use this Layout as the cont
 
 ## Syntax
 
-\`
-
-\`
+```liquid
+{% raw %}
+{% include 'user_details', layout: 'default' %}
+{% endraw %}
+```
 
 Parameters:
 

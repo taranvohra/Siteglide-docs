@@ -10,7 +10,7 @@ This includes:
 
 * Name
 * Any Custom Field Sets attached to the Form. Use these to store information that you want to keep up to date.
-* [Learn more about editing email and password here](https://developers.siteglide.com/how-users-edit-their-email-and-password-front-end).
+* [Learn more about editing email and password here](/crm/users/how-users-edit-their-email-and-password-front-end.md).
 
 Standard Form Fields are stored against the Case only and are not stored against the CRM record.
 
@@ -34,12 +34,12 @@ The most important points to draw from this are:
   * CRM Custom Fields
   * The user's "name" field
   * The email field (on first submission only) - this is used as a unique identifier in the CRM.
-  * The "edit email" and "edit password" fields [learn more about editing email and password here.](https://developers.siteglide.com/how-users-edit-their-email-and-password-front-end)
+  * The "edit email" and "edit password" fields [learn more about editing email and password here.](/crm/users/how-users-edit-their-email-and-password-front-end.md)
 * When using Custom Field Sets and CRM custom fields to update the CRM, it doesn't matter whether or not the User already exists in the CRM, or whether or not the User is already logged in.
 
 ## Adding Custom Field Set Fields to a Form
 
-See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](https://developers.siteglide.com/how-to-output-custom-field-set-fields-in-a-forms-custom-layout)
+See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](/cms/forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 
 In summary, to add Custom Field Set fields to a Form, you'll need to:
 
@@ -75,7 +75,7 @@ CRM Custom Fields work in a similar way to Custom Field Sets, but instead of ope
 
 See here for a more detailed explanation of creating CRM fields:
 
-[/crm/quickstart-crm.md)
+[https://docs.siteglide.com/en/crm/quickstart-crm](/crm/quickstart-crm.md)
 
 In summary:
 
@@ -112,7 +112,7 @@ It's extremely useful to display the current values in the fields on Page load. 
 
 #### An alternative - Using GraphQL to fetch CRM data
 
-Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview](/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview)
+Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [https://docs.siteglide.com/en/developer-tools/graphql/tutorials](/developer-tools/graphql/tutorials/README.md)
 
 #### Using User Details to fetch CRM data- steps
 
@@ -120,9 +120,13 @@ In Order to fetch the existing Custom Field Set data for the current User, they'
 
 To achieve this, you can combine two Siteglide Features by nesting a Siteglide Form inside a User Details Layout.
 
-**Step 1) User Details Contain the existing CFS Data** To fetch the existing CFS and CRM data for the Current User, you'll need a [User Details](https://developers.siteglide.com/user-details) Layout. \`
+**Step 1) User Details Contain the existing CFS Data** To fetch the existing CFS and CRM data for the Current User, you'll need a [User Details](/crm/users/user-details.md) Layout.
 
-\`
+```liquid
+{% raw %}
+{% include 'user_details', layout: 'user_details_edit_form_container' %}
+{% endraw %}
+```
 
 Parameters:
 
@@ -155,7 +159,7 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
 {% endraw %}
 ```
 
-See [https://developers.siteglide.com/user-details#squS1](https://developers.siteglide.com/user-details#squS1) to see how to access data from CRM custom fields within the User Details Layout.
+See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](/crm/users/user-details#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
 
 As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
 
@@ -224,7 +228,7 @@ This adds the value to the field, but for the Profile Picture, I may also want t
 Attributes:
 
 * `style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');"` - This Liquid would allow the existing image to be displayed on Page Load.
-* `data-file-preview="form_field_10_1_file"` - This sets up the element to preview the next image a User uploads to this field. Read more here: [File Upload Previews](https://developers.siteglide.com/file-upload-previews).
+* `data-file-preview="form_field_10_1_file"` - This sets up the element to preview the next image a User uploads to this field. Read more here: [File Upload Previews](/cms/forms/go-further-forms/file-upload-previews).
 
 ## Multiple parts to the Form
 
