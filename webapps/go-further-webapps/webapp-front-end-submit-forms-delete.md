@@ -107,7 +107,7 @@ Here's an example of custom functions defined and then passed into the 3rd and 4
 
 ```
 
-Note that the [Siteglide Footer Scripts](https://help.siteglide.com/article/224-siteglide-scripts) feature is a helpful tool to make sure your function definitions are only included in the Page once, avoiding duplicates as multiple iterations of the WebApp Layout are included on the Page. Just be aware that inline comments are not supported by this feature!
+Note that the [Siteglide Footer Scripts](/cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md) feature is a helpful tool to make sure your function definitions are only included in the Page once, avoiding duplicates as multiple iterations of the WebApp Layout are included on the Page. Just be aware that inline comments are not supported by this feature!
 
 Additionally, you could add in custom behaviour before the main delete function runs, for example to provide a confirmation message to Users to check they really want to delete the WebApp item:
 

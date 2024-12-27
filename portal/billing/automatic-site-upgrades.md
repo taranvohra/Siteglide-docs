@@ -14,7 +14,7 @@ Site owners and agencies have granular control over automatic upgrades via Siteg
 
 ### **Agency Global Preferences**
 
-Within your [Agency Account Details](https://help.siteglide.com/article/36-agency-getting-started#2-account-details) in Portal, you can choose for the default setting to enable or disable automatic upgrades for all sites within your Agency and Clients.
+Within your [Agency Account Details](/portal/agencies/agency-account.md) in Portal, you can choose for the default setting to enable or disable automatic upgrades for all sites within your Agency and Clients.
 
 <figure><img src="../../.gitbook/assets/Siteglide-Billing-Automatic-Upgrades.png" alt=""><figcaption></figcaption></figure>
 
@@ -31,7 +31,7 @@ Once you have chosen a state, make sure to save.
 
 ## **Site Preferences Override**
 
-Within the [Subscriptions tab](https://help.siteglide.com/article/31-sites-getting-started#2-subscription) for a site, you can choose to override the global preferences and control each site separately.
+Within the [Subscriptions tab](/portal/billing/subscriptions-and-changes.md) for a site, you can choose to override the global preferences and control each site separately.
 
 Above the peak usage table, you'll see the current state for this site and an option to change this.
 

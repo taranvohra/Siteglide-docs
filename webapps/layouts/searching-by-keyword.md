@@ -2,7 +2,7 @@ How to use the `use_search` parameter in the WebApp include tag, along with a ke
 
 ## Prerequisites
 
-- You have <a href="https://help.siteglide.com/article/126-webapps-getting-started#2-creating-your-webapp" target="_blank">created a WebApp</a>
+- You have <a href="/webapps/quickstart-webapps.md" target="_blank">created a WebApp</a>
 - You have [added a WebApp List View to a Page](/webapps/layouts/webapp-list-layout)
 
 ## Introduction

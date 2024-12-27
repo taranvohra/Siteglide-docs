@@ -6,7 +6,7 @@ When enabled, WebApps have automatically generated Detail Pages, which use your 
 
 To output a WebApp list within a detail layout you must include the following parameter: `type: 'list'`
 
-See more about nesting dynamic content inside your WebApp Layouts in the [Nested Content and Datasources](https://help.siteglide.com/article/201-datasources-and-nested-dynamic-content-introduction) section of the documentation. See more about list output parameters on the [List Layouts](/webapps/layouts/webapp-list-layout.md) doc.
+<!-- See more about nesting dynamic content inside your WebApp Layouts in the [Nested Content and Datasources](https://help.siteglide.com/article/201-datasources-and-nested-dynamic-content-introduction) section of the documentation. See more about list output parameters on the [List Layouts](/webapps/layouts/webapp-list-layout.md) doc. -->
 
 ## Folder Structure
 

@@ -6,7 +6,7 @@ This Article will show how to use custom fields to fetch dynamic content in a We
 
 Partners often ask us about outputting Liquid from a Rich Text Editor in their WebApps. Unfortunately it's not currently possible to do this- but here we'll explain a little about why- and a technique you can use to achieve the same effects.
 
-If you want to include content from another WebApp or Module Item, we'd recommend checking out Datasources instead: [Nested Content and Datasources](https://help.siteglide.com/article/201-datasources-and-nested-dynamic-content-introduction). Datasource fields allow the Client to search and select the WebApp / Module Items they want to include from a dropdown.
+<!-- If you want to include content from another WebApp or Module Item, we'd recommend checking out Datasources instead: [Nested Content and Datasources](https://help.siteglide.com/article/201-datasources-and-nested-dynamic-content-introduction). Datasource fields allow the Client to search and select the WebApp / Module Items they want to include from a dropdown. -->
 
 ## Answer
 

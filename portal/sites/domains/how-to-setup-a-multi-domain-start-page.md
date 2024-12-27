@@ -37,7 +37,7 @@ Next, we open a `case` to check the result of `domain` .
 
 For each of the alternate domains we would like to check for, we create a `when` within the `case` . We include two versions of the domain to catch the majority of users. One that includes the [www](how-to-setup-a-multi-domain-start-page.md). and another that does not.
 
-Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](https://help.siteglide.com/article/224-siteglide-scripts)).
+Inside each `when` we call in a content section that should contain all of the page content. We also define an SEO page title to match our page and wrap that in `siteglide_head_scripts` to automatically move it to the head on page load (Check out this document to find out more: [Siteglide Scripts](/cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md)).
 
 We then add an `else` at the end of the `case` to cover the default domain e.g. "if neither of these alternate domains are used, then do this" which acts somewhat like a catch all.
 
