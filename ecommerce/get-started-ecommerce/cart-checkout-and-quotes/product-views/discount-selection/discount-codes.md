@@ -76,8 +76,8 @@ e.g.
 ### Related Layout Development Docs
 
 * [Developing Cart Layouts](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
-* [Checkout Tutorial](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
-* [Basic Payment Form Tutorial](/ecommerce/get-started-ecommerce/basic-payment-forms.md)
+* [Checkout Tutorial](/module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
+* [Basic Payment Form Tutorial](/module-ecommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md)
 
 ## Step 2 - Create Layout Files or Choose the Discount Code Layout
 

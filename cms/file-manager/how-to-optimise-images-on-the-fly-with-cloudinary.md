@@ -16,7 +16,7 @@ Go to [https://cloudinary.com/](https://cloudinary.com/) and follow the steps to
 
 This will be an essential part of the URLs.
 
-[https://cloudinary.com/documentation/cloudinary\_credentials\_tutorial](https://cloudinary.com/documentation/cloudinary\_credentials\_tutorial)
+[https://cloudinary.com/documentation/finding_your_credentials_tutorial](https://cloudinary.com/documentation/finding_your_credentials_tutorial)
 
 ## Step 3 - Generate your first URL inside your code
 

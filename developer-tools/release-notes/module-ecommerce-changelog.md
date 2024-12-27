@@ -486,7 +486,7 @@ Any custom extensions of the existing database structure will require you to cha
 
 *   With the addition of Subscriptions, we complete the first release of Siteglide eCommerce.
 
-    You can learn more about the new features and how to implement Subscriptions on your sites here: [Subscriptions Overview](../../ecommerce/get-started-ecommerce/introduction-4/)
+    You can learn more about the new features and how to implement Subscriptions on your sites here: [Subscriptions Overview](/eCommerce/get-started-ecommerce/subscriptions/README.md)
 
 **Upgrading from 0.14.1 for Sites which use Subscriptions**
 

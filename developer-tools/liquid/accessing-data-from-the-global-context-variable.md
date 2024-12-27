@@ -53,11 +53,7 @@ platformOS uses a single cookie to identify a visitor- whether signed in or not.
 ***You can add fields to session and exports objects only. 
 
 The easiest way to add session fields is to use the 
-```liquid
-{% raw %}
-{% session %}
-{% endraw %}
-``` tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
+`{% session %}` tag. <https://documentation.platformos.com/api-reference/liquid/platformos-tags#session>
 
 **Compatibility**: To avoid conflicting with future Siteglide features, we recommend that if you use this feature, you prefix any new fields with the initials or name of your Agency.
 
@@ -89,7 +85,7 @@ You can then use logic to only show these features to Users who have opted-in.
 ```
 
 ***Ending a Session***- Advanced only
-&#x20;You can use custom GraphQL to completely forget a visitor and end their session. Use at your own risk as we cannot support Secure Zones with Users who have had their Session ended in this way: <https://documentation.platformos.com/api-reference/graphql/mutations#user_session_destroy>
+&#x20;You can use custom GraphQL to completely forget a visitor and end their session. Use at your own risk as we cannot support Secure Zones with Users who have had their Session ended in this way: <https://documentation.platformos.com/api-reference/graphql/deprecated/mutations/user-session-destroy>
 
 ## current\_user (object)
 

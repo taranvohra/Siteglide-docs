@@ -16,7 +16,7 @@ Keeping these types of operations separate is helpful, as it means you can be co
 * When learning and testing GraphQL mutations, we strongly recommend you do so on a staging site.
 * If you need to test with real data, we recommend using the Siteglide Portal's Site Copy feature to create a staging site clone of a production site with a copy of the database.
 * Siteglide may not be able to recover the exact state of data as it was before running a mutation which modifies that data.
-* See [Tutorial 11 - Using Mutations to Delete an Item](../../../Siteglide%20Developer%20Documentation/Tutorial%2011%20-%20Using%20Mutations%20to%20Delete%20an%20Item.md) for more tips on what to do if you accidentally delete data you didn't mean to. (This won't help if you accidentally _change the properties!)_
+* See [Tutorial 11 - Using Mutations to Delete an Item](/developer-tools/graphql/tutorials/tutorial-11-using-mutations-to-delete-an-item.md) for more tips on what to do if you accidentally delete data you didn't mean to. (This won't help if you accidentally _change the properties!)_
 
 ## Steps for Creating a New Record
 
@@ -108,7 +108,7 @@ As with queries, the explorer UI cannot handle multiple properties in a mutation
 
 Each property must have a name which matches the ID of the field or custom field in Siteglide. When setting a value, you need to select a property value, value\_array, value\_boolean etc. depending on the platformOS type of data the field expects.
 
-To figure out the correct one, you can reference this page [Field Types](../../../Siteglide%20Developer%20Documentation/Field%20Types.md) which will show which platformOS types are used by each Siteglide type.
+To figure out the correct one, you can reference this page [Field Types](/developer-tools/configuration/field-types.md) which will show which platformOS types are used by each Siteglide type.
 
 To find out which Siteglide types your table uses for each field, go to the corresponding WebApp or Module in the Siteglide Admin, or you can use this query to see each field's ID and Siteglide types together (you can also change the filter and properties to see which other tables are available):
 
@@ -240,7 +240,7 @@ If you have an error, the error information will display instead of the results.
 
 ## Step 5 - Pass in variables
 
-We covered variables in more detail in [Tutorial 6 - Variables](../../../Siteglide%20Developer%20Documentation/Tutorial%206%20-%20Variables.md) but they are just as useful in mutations!
+We covered variables in more detail in [Tutorial 6 - Variables](/developer-tools/graphql/tutorials/tutorial-6-variables.md) but they are just as useful in mutations!
 
 In the following example, variables are added to pass in data programatically to create the new Blog post:
 
@@ -333,7 +333,7 @@ You could experiment with the `user_create` mutation to create users. Instead of
 
 # Related Articles
 
-*   [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](<../Siteglide Developer Documentation/Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries.md>) - combining what you've learned in Tutorial 8 and 9, you should be able to create an API where the Liquid endpoint runs a mutation to create items. You could use this alongside a custom form to allow the user to enter properties which are then passed to the endpoint in the URL and then finally into the mutation via variables.
+*   [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](/developer-tools/graphql/tutorials/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md) - combining what you've learned in Tutorial 8 and 9, you should be able to create an API where the Liquid endpoint runs a mutation to create items. You could use this alongside a custom form to allow the user to enter properties which are then passed to the endpoint in the URL and then finally into the mutation via variables.
 
 # Next Time
 

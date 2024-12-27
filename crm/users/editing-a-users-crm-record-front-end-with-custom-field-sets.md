@@ -132,7 +132,7 @@ Parameters:
 
 * `layout` - Choose a Layout from the following folder in Code Editor: `layouts/modules/module_5/user_details/`
 
-\*\*Step 2) Place the Form inside User Details \*\*The User Details Layout has direct access to Custom Field Set data, but normally the Form does not. In order to achieve this, we place the Form inside the `user_details` Layout. Due to Liquid inheritance, the Custom Field Set data will then be available inside the Form.
+**Step 2) Place the Form inside User Details** The User Details Layout has direct access to Custom Field Set data, but normally the Form does not. In order to achieve this, we place the Form inside the `user_details` Layout. Due to Liquid inheritance, the Custom Field Set data will then be available inside the Form.
 
 Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g. 
 
@@ -144,7 +144,7 @@ Output your Form by writing the code for the Form inside this `user_details` Lay
 
 Remember to replace the example form ID with your own.
 
-\*\*Step 3) Use Liquid to prefill the HTML values \*\*This will allow you to access the existing User data and their related Custom Field Sets within the Form.
+**Step 3) Use Liquid to prefill the HTML values** This will allow you to access the existing User data and their related Custom Field Sets within the Form.
 
 In this example, we have a Custom Field Set "Checkout Address" with a "Profile Picture", a Favourite Colour and a Country field:
 

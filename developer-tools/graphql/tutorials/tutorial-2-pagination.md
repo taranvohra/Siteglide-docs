@@ -3,7 +3,7 @@ Turning the Page! In tutorial 2, we'll control how many items Graph returns on e
 
 # Prerequisites
 
-*   You have completed the [first Learning GraphQL tutorial](/developer-tools/liquid/accessing-data-from-liquid-objects.md-1-your-first-query).
+*   You have completed the [first Learning GraphQL tutorial](/developer-tools/graphql/tutorials/tutorial-1-your-first-query.md).
 
 *   [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
@@ -45,7 +45,7 @@ Let's consider a few situations:
 
 *   If you want the user to be able to change `per_page` dynamically, we'll cover this when we look at variables in a future tutorial.
 
-*   If you think you need to display more than 2000 items at a time (perhaps to provide data to a JavaScript plugin), consider using GET requests to a custom Liquid endpoint page to fetch each page of results asynchronously. You can learn more in [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](docId\:Xve0gN5JFAAu9XO9FH5Rv) but we recommend working through the other tutorials first.
+*   If you think you need to display more than 2000 items at a time (perhaps to provide data to a JavaScript plugin), consider using GET requests to a custom Liquid endpoint page to fetch each page of results asynchronously. You can learn more in [Tutorial 8 - Building a Liquid API GET Endpoint Page powered by GraphQL queries](/developer-tools/graphql/tutorials/tutorial-8-building-a-liquid-api-get-endpoint-page-powered-by-graphql-queries.md) but we recommend working through the other tutorials first.
 
 # Returning Pagination Metadata
 

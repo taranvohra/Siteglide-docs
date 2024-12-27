@@ -49,7 +49,7 @@ If no custom CLI build can be found and no path is provided, preview mode will b
 
 The Preview mode starts by adding two CSS files from CDNs to your Page Template's `<head>:`
 
-1. A CSS file distributed by Flowbite containing Tailwind classes to support the vast majority of their blocks and components [https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css](https://cdnjs.cloudflare.com/ajax/libs/flowbite/flowbite.min.css) (will always load latest version of Flowbite)
+1. A CSS file distributed by Flowbite containing Tailwind classes to support the vast majority of their blocks and components [https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css](https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css)
 2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbite's as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".&#x20;
 
 Together these CSS files create a set of fallbacks which allow Flowbite Layouts to look how Flowbite and SiteBuilder intended out of the box, should these classes not be included elsewhere. However, they won't have any of your branded variables set, like colours or fonts. The extra load time for these CSS files is also the reason why it's not generally recommended to use Preview Page for pages in Production.

@@ -19,7 +19,7 @@ but search engines have incorrectly identified other URLS:&#x20;
 
 In your Page Template in the \<head> you can set a recommendation that where query parameters are used, the Canonical URL should be treated as the most important version of the Page to index, whereas other variations are subsidiary and should not be ranked unfavourably for being similar to the Canonical "main" version .
 
-You can do this by setting the main part of the URL as the canonical URL. In this example, this will be applied to every Page which uses this [Page Template](/cms/pages/page-templates.md), but you may wish to use an if statement to only apply it on certain Pages.
+You can do this by setting the main part of the URL as the canonical URL. In this example, this will be applied to every Page which uses this [Page Template](/cms/pages/page-templates/README.md), but you may wish to use an if statement to only apply it on certain Pages.
 
 ```liquid
 {% raw %}

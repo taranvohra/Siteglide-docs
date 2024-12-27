@@ -13,7 +13,7 @@ We cannot document every way in which you can build this kind of Page, but we wi
 ## Glossary
 
 * An API - (Application Program Interface) is a form of communication between two services on the internet. Communication takes place between 2 or more endpoints.
-* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](../../public-api/), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
+* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](/developer-tools/public-api/README.md), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
 * A method defines the role of the API + Endpoint e.g. a GET method is for "getting" or "fetching" data.
 * JSON (JavaScript Object Notation) is a common file format for exchanging data which is efficient and human-readable. We'll use it in some of our examples. (It's also the default format in which GraphQL results are outputted on the Page.)
 
@@ -27,7 +27,7 @@ The slug you choose will be the URL via which you'll eventually access the data.
 
 ### Step 2) Use CLI to apply advanced settings to the Liquid Page
 
-In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](../../cli/).
+In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](/developer-tools/cli/README.md).
 
 Using the Siteglide-CLI, pull down your Site's files to your machine and open them up in a Code Editor of your choice. Set up Siteglide-CLI sync so that changes you make will be pushed to the Site.
 
@@ -370,7 +370,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 **Add HTML and JavaScript**
 
 {% hint style="warning" %}
-**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](../../../sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
+**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
 {% endhint %}
 
 * An event listener targets the Form and watches for a click event
@@ -489,8 +489,8 @@ Your Liquid endpoint Page will be acting as an extra Layer between your request 
 
 ## Related Articles
 
-* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](../../../sitebuilder/using-sitebuilder/live-updates-api/)
-* The [Siteglide Support Policy](../../../get-started/support-and-faqs/siteglide-support-policy/) explains how you can get support with planning projects and writing custom code.
+* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](/sitebuilder/using-sitebuilder/live-updates-api/README.md)
+* The [Siteglide Support Policy](/get-started/support-and-faqs/siteglide-support-policy.md) explains how you can get support with planning projects and writing custom code.
 * MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: [https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) You can also use the modern [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API) as an alternative.
 * Those developers who prefer to use jQuery when writing JavaScript can read more about Ajax Requests here: [https://api.jquery.com/jquery.ajax/](https://api.jquery.com/jquery.ajax/)
 * platformOS's documentation on Pages includes lots of information about setting up Pages using the yaml configuration: [https://documentation.platformos.com/developer-guide/pages/pages](https://documentation.platformos.com/developer-guide/pages/pages)

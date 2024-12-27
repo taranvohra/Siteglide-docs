@@ -6,7 +6,7 @@
 This is a deprecated feature - not recommended for Production
 {% endhint %}
 
-* Check [Choosing a Build Method](/sitebuilder/setup-sitebuilder/styling/tailwind-css-themes-choosing-a-build-method.md) first to choose which option suits you best.
+* Check [Choosing a Build Method](/sitebuilder/setup-sitebuilder/about-sitebuilder/tailwind-css-themes-choosing-a-build-method.md) first to choose which option suits you best.
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -27,7 +27,7 @@ With special thanks to the folks at Beyond Code, we’ve adapted their [open-sou
     ![JIT](https://res.cloudinary.com/sitegurus/image/upload/v1658919641/modules/module\_86/documentation/jit-cache-off.jpg)
 2.  Create a Page Template
 
-    [Create a Page Template](/sitebuilder/setup-sitebuilder/site-setup/create-a-page-template.md) for your Library using SiteBuilder and add it to the Pages you're working on in the Siteglide Admin.
+    [Create a Page Template](/sitebuilder/setup-sitebuilder/create-a-page-template.md) for your Library using SiteBuilder and add it to the Pages you're working on in the Siteglide Admin.
 
     And that's it; you're ready to start work! When your Page is loaded in the browser a new inline `<style>` tag will be created including all the Tailwind classes your page needs.
 
@@ -93,6 +93,6 @@ One option is to add classes to the safelist in your Tailwind Congfig file: [htt
 
 ![Safelisting](https://res.cloudinary.com/sitegurus/image/upload/v1658919643/modules/module\_86/documentation/safelist.jpg)
 
-Another possibility, if you find that your site has a lot of user-interaction and your safelist is getting quite long, might be that your site is better suited to a [Using the Tailwind CLI with Siteglide](/sitebuilder/setup-sitebuilder/site-setup/set-up-tailwind-css.md) instead!
+Another possibility, if you find that your site has a lot of user-interaction and your safelist is getting quite long, might be that your site is better suited to a [Using the Tailwind CLI with Siteglide](/sitebuilder/setup-sitebuilder/set-up-tailwind-css.md) instead!
 
 Alternatively, you may wish to consider using the JIT mode for quick development now for convenience and then switching to a CLI build when the site goes live for reliability.

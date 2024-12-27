@@ -17,7 +17,7 @@ The Live Updates API, at its core, sends requests to the server to fetch a new v
 Before reading this section, it will help to be familiar with the Siteglide documentation relating to the kind of Liquid tag you are intending to live-update- here are a few useful links, but you may need to browse further to find the feature you're working with:
 
 * [WebApp List Layouts Parameters](/webapps/layouts/webapp-list-layout.md)
-* [Parameters for Filtering](/webapps/go-further-webapps/searching-advanced-filtering.md)
+* [Parameters for Filtering](/webapps/layouts/searching-advanced-filtering.md)
 * [Parameters for Search](/webapps/layouts/searching-by-keyword.md)
 * [Blog Archive](/modules/siteglide-modules/blog-and-author/blog-filter-by-date/README.md)
 
@@ -249,7 +249,7 @@ The module JavaScript defines and dispatches the following custom Events. You ca
 
 #### Liquid Includes and Functions <a href="#liquid-includes-and-functions" id="liquid-includes-and-functions"></a>
 
-* See [Pagination Include](/sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination) for settings specific to live-update data-attributes.
+* See [Pagination Include](/sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination.md) for settings specific to live-update data-attributes.
 
 #### Endpoint Logic Reference <a href="#endpoint-logic-reference" id="endpoint-logic-reference"></a>
 

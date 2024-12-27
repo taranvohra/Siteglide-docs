@@ -11,7 +11,7 @@ How to use the `use_adv_search` parameter in the WebApp include tag, along with 
 
 Advanced search allows you to use AND or OR logic to filter WebApp items by specific fields.
 
-If you are looking to search for WebApp items which match any of your search terms in any of their fields using OR logic, see [Searching - Keyword](/webapps/go-further-webapps/searching-by-keyword.md).
+If you are looking to search for WebApp items which match any of your search terms in any of their fields using OR logic, see [Searching - Keyword](/webapps/layouts/searching-by-keyword.md).
 
 #### Steps
 

@@ -2,7 +2,7 @@
 
 ### Introduction and Use Cases <a href="#introduction-and-use-cases" id="introduction-and-use-cases"></a>
 
-This example is useful if you want to use [Siteglide filters](/webapps/go-further-webapps/searching-advanced-filtering.md) on a WebApp or Module, but don't want to give your end-user the option of altering the filters by modifying the URL.
+This example is useful if you want to use [Siteglide filters](/webapps/layouts/searching-advanced-filtering.md) on a WebApp or Module, but don't want to give your end-user the option of altering the filters by modifying the URL.
 
 In this example, we set the filter as if we have a WebApp 1 with a custom field which can be filtered. We imagine there is a variable `{{any_variable}}` which might come from a datasource in a parent layout, or be hardcoded. These variables of webapp, field and filter value you can change depending on your use-case.
 

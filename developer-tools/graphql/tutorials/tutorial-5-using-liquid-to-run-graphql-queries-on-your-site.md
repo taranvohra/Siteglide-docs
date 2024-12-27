@@ -68,7 +68,7 @@ If you wanted to check if the file has synced correctly, you can turn off `sync`
 We'll use the `graphql` Liquid tag provided by platformOS. You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: 
 ```liquid
 {%- raw -%}
-  {%- graphql my_results = "get_items_with_musical_names" -%}
+{%- graphql my_results = "get_items_with_musical_names" -%}
 {%- endraw -%}
 ```
 

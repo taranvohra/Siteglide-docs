@@ -42,9 +42,9 @@ GraphQL can be tricky to get started with, but most of our Developers report tha
 
 We'll provide a series of Tutorials, starting off simple and becoming progressively more challenging. As part of this, we'll aim to give you the skills you need to carry out further learning yourself- often this will mean learning to read the platformOS schema- finding the type of query you need, and experimenting with how to make it work.
 
-Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](/developer-tools/liquid/accessing-data-from-liquid-objects.md-overview)
+Every time we add a new GraphQL Tutorial, you'll be able to access increased support on that topic via the Forum. You can see an overview of the topics we've covered so far [here](/developer-tools/graphql/tutorials/README.md)
 
-In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](/developer-tools/liquid/accessing-data-from-liquid-objects.md-1-your-first-query)
+In the next Tutorial, we'll show you how to use the GraphQL sandbox to test out Queries. [Let's go](/developer-tools/graphql/tutorials/tutorial-1-your-first-query.md)
 
 ## I'm stuck. Can you help me build a Site with Custom GraphQL?
 
@@ -67,7 +67,7 @@ Here are some examples of where some custom GraphQL could open some doors for yo
 * **Reporting**- Your Client wants several bespoke, complex queries of data, all organised into tables and charts? GraphQL can help you be this **flexible** and if implemented well, can maintain **page speed.**
 * **GraphQL works inside workflow and autoresponder emails**. With mutations, it can also send transactional notifications and API calls from anywhere in your Site.
 * **Performance optimisation**- We do our best to make sure all Siteglide features are delivered to you with the maximum flexibility and performance, but for very bespoke Sites we couldn't possibly make the Platform guess your priorities. Understanding GraphQL could help you **optimise** your most complex features for faster Page load time, while using ready-built features to save development time in other areas.
-* \*\*Front End Mutations- \*\*_**Use at your own risk!**_ With mutations, you can change data in the database and trigger this with Liquid. This can make a lot of complex projects possible- see the platformOS GraphQL schema for a full list: [https://documentation.platformos.com/api-reference/graphql/mutations](https://documentation.platformos.com/api-reference/graphql/mutations)
+* **Front End Mutations**- _**Use at your own risk!**_ With mutations, you can change data in the database and trigger this with Liquid. This can make a lot of complex projects possible- see the platformOS GraphQL schema for a full list: [https://documentation.platformos.com/api-reference/graphql/glossary#mutation](https://documentation.platformos.com/api-reference/graphql/glossary#mutation)
 * **Update data without loading the Page**- When changing Page in WebApp results, you currently have to wait for the Page to reload. Using Siteglide-CLI and GraphQL you can build an XHR endpoint to get updated data after the Page has loaded. (Note: you can do this with CLI, without GraphQL- GraphQL just gives you more flexibility.)
 * **Jump ahead of the Roadmap**- We're always updating our Roadmap with new functionality and Community requests. But what if you have that one Client that cannot wait? It'll take more time to Develop and may not be as re-usable as a fully tested official feature, but with GraphQL and Liquid understanding, you've got the power to build your own solutions.
 

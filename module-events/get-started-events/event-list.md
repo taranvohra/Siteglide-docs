@@ -7,10 +7,10 @@ We'll explain how to output a List View of Events and link you to the docs on ad
 The Events Module comes with a wide range of options for your List View. You can output Events as:
 
 * A standard List
-* [A Map](/modules/core-modules/events/event-list-map.md)
+* [A Map](/module-events/go-further-events/event-list-map.md)
 * [A Calendar](/module-events/go-further-events/events-calendar.md)
 
-You can also use our [Navigation options](/modules/core-modules/events/event-filtering.md) with any of these views.
+You can also use our [Navigation options](/module-events/get-started-events/event-filtering.md) with any of these views.
 
 ## Outputting a List View
 

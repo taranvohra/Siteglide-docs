@@ -170,7 +170,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 
 #### 4.9.0 - Released 21st December 2023 <a href="#id-490-released-21st-december-2023" id="id-490-released-21st-december-2023"></a>
 
-* Support for upcoming eCommerce features- including new version of [Live Updates 1.4](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog).
+* Support for upcoming eCommerce features- including new version of [Live Updates 1.4](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog.md).
 
 #### 4.8.12 + 4.8.13 - Released 11th December 2023 <a href="#id-4812-4813-released-11th-december-2023" id="id-4812-4813-released-11th-december-2023"></a>
 
@@ -187,7 +187,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
 #### 4.8.8 - Released 14th September 2023 <a href="#id-488-released-14th-september-2023" id="id-488-released-14th-september-2023"></a>
 
 * Live Updates v1-3
-  * New version of [Live Updates 1.3](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog). Existing layouts can be updated by manually changing the `<script>`. New layouts will use the new version.
+  * New version of [Live Updates 1.3](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog.md). Existing layouts can be updated by manually changing the `<script>`. New layouts will use the new version.
 * Performance
   * All SiteBuilder JS, including Live Updates, now has a minified version of the same file in the same folder. Simply replace `.js` with `.min.js` extensions for a performance boost. This will be applied to new installs of layouts going forwards. If you're experiencing unhandled JS errors and want to report a bug, you may find it helpful to switch back to the unminified version temporarily.
   * Performance boost to the SiteBuilder module UI
@@ -214,11 +214,11 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
   {% endraw  %}
   ```
 * Live Updates
-  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key)
+  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key.md)
 
 #### 4.8.6 - Released 9th August 2023 <a href="#id-486-released-9th-august-2023" id="id-486-released-9th-august-2023"></a>
 
-* New version of [Live Updates 1.2](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog)
+* New version of [Live Updates 1.2](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-changelog.md)
 
 #### 4.8.5 - Released 3rd August 2023 <a href="#id-485-released-3rd-august-2023" id="id-485-released-3rd-august-2023"></a>
 
