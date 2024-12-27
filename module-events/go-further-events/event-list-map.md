@@ -6,7 +6,7 @@ The Map Layout is a List Layout which demonstrates how you can use the Google Ma
 
 * You've Installed the Events Module
 * You've added Events in the Admin
-* You've [added a Location to at least one Event](https://help.siteglide.com/article/131-modules-getting-started#2-adding-a-location)
+* You've added a Location to at least one Event
 
 ## Introduction
 

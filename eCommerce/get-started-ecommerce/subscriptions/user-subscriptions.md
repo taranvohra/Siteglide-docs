@@ -108,7 +108,7 @@ You can use the following Liquid to include a button to either cancel a Subscrip
 - `{{this.subscription.price.price_display_formatted}}` - a display-only price per interval as a decimal currency format e.g. recommended retail price.&#x20;
 
 *Tip: Changes in the Pricing Plan*
-It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: <a href="https://help.siteglide.com/en/article/ecommerce-subscriptions-changing-the-price-and-billing-interval-egzyvo/" target="_blank">eCommerce Subscriptions - Changing the Price and Billing Interval</a>
+It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](/eCommerce/get-started-ecommerce/subscriptions/managing-subscriptions/changing-price-and-billing-interval.md)
 
 When outputting fields in the `user_subscriptions` view, Subscription Order fields beginning with the word "Plan" will normally be the appropriate choice. These will show the price that these Users will be paying- the original plan when they signed up.&#x20;
 

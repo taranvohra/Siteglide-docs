@@ -9,7 +9,7 @@ updatedAt: 2023-04-11T09:58:24.000Z
 
 Create a nested Menu Structure using the Pages you've built and customise its layout
 
-[Menu Builder](https://help.siteglide.com/article/156-menus-getting-started) automatically displays existing pages on the left-hand side for you to add to the menu, which is on the right hand side. To add menu items that link to WebApp items, or to external links; add an existing page and click on the link icon to edit the fields. You can fully customise all fields from here.
+[Menu Builder](/modules/core-modules/menubuilder/get-started-menu-builder.md) automatically displays existing pages on the left-hand side for you to add to the menu, which is on the right hand side. To add menu items that link to WebApp items, or to external links; add an existing page and click on the link icon to edit the fields. You can fully customise all fields from here.
 
 ### Syntax
 

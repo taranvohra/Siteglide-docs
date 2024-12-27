@@ -12,8 +12,8 @@ Basic Payments are a way to take a payment when a form is submitted. They may be
 ## Prerequisites
 
 * You have installed the eCommerce Module in Site Settings
-* You have set up a [Payment Gateway](https://help.siteglide.com/article/161-ecommerce-subscriptions-setting-up-your-payment-gateway-and-settings)
-* Using PayPal as a Payment Gateway? There are additional setup instructions [here](https://help.siteglide.com/article/165-payment-gateways).
+* You have set up a [Payment Gateway](/eCommerce/get-started-ecommerce/payment-gateways/README.md)
+* Using PayPal as a Payment Gateway? There are additional setup instructions [here](/eCommerce/get-started-ecommerce/payment-gateways/paypal-custom-params.md).
 
 ## Introduction
 

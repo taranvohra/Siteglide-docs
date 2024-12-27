@@ -12,13 +12,13 @@ Add images and content to your Slides in Admin and display on a Site either usin
 ### Prerequisites
 
 * You've Installed the Slider Module
-* You've [added Slides in the Admin](https://help.siteglide.com/article/131-modules-getting-started#2-creating-and-editing-an-item)
+* You've [added Slides in the Admin](/modules/core-modules/slider/quickstart-slider.md)
 
 ### Introduction
 
 Our Slider Module allows you to add images/content to Slides within the Admin, which can then be outputted as List Views either using our pre-built layouts or creating your own! We've chosen to use GlideJS for our layouts, but you can use any plugin you prefer.
 
-Once you've installed the Slider Module on your Site, you'll be able to find Sliders in the left-hand menu under Modules/Slider. For a recap of how to install Modules on a Site, [see here](https://help.siteglide.com/article/131-modules-getting-started#2-installing-modules).
+Once you've installed the Slider Module on your Site, you'll be able to find Sliders in the left-hand menu under Modules/Slider. For a recap of how to install Modules on a Site, [see here](/portal/sites/install-and-manage-modules.md).
 
 ### Syntax
 
@@ -71,7 +71,7 @@ Once you've installed the Slider Module on your Site, you'll be able to find Sli
 
 ### Layouts
 
-You can find all our Slider Layouts on [Layout Libary](https://studio.siteglide.com/layouts), to copy these onto your Site first create a folder in Code Editor, learn more [here](https://help.siteglide.com/article/214-code-editor-getting-started). Make sure your new Slider Layout has a List View folder within it, should look like this:
+You can find all our Slider Layouts on [Layout Libary](https://studio.siteglide.com/layouts), to copy these onto your Site first create a folder in Code Editor, learn more [here](/site-manager/code-editor.md). Make sure your new Slider Layout has a List View folder within it, should look like this:
 
 <!-- ![](https://downloads.intercomcdn.com/i/o/229068073/48df7e0feff380586d9f59ac/image.png) -->
 

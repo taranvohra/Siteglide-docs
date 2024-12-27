@@ -11,7 +11,7 @@ We provide the Liquid for Sign Up, Login and Password Reset Forms and for checki
 
 ## Introduction
 
-In this Article we'll provide the Liquid which can be used to manage access to [Secure Zones](https://help.siteglide.com/en/article/secure-zones-getting-started-15nnl5f/). It can be used across most Liquid Files (excluding emails).
+In this Article we'll provide the Liquid which can be used to manage access to [Secure Zones](/modules/core-modules/secure-zones/quickstart-secure-zones.md). It can be used across most Liquid Files (excluding emails).
 
 ## Syntax
 

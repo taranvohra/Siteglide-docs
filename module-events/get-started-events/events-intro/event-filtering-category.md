@@ -7,7 +7,7 @@ You can dynamically output a navigation menu of Categories which have Events ass
 ## Prerequisites
 
 * You have Installed Events Module
-* You have [added at least one Category to an Event](https://help.siteglide.com/article/131-modules-getting-started#2-adding-items-to-categories)
+* You have added at least one Category to an Event
 
 ## Introduction
 

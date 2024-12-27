@@ -9,7 +9,7 @@ The Media Downloads Module allows you to upload files securely. You have control
 
 # Introduction
 
-The [Media Downloads Module](https://help.siteglide.com/article/131-modules-getting-started#2-introduction) is similar to File Manager, but is designed to handle files which need to be handled more securely. Some examples might include:
+The Media Downloads Module is similar to File Manager, but is designed to handle files which need to be handled more securely. Some examples might include:
 
 *   Files which exist behind a Secure Zone
 

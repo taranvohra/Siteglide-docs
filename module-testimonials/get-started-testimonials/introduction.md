@@ -7,7 +7,7 @@ updatedAt: 2023-04-11T10:07:59.000Z
 
 # 💻 Reference
 
-This Module lets you add [Testimonials](https://help.siteglide.com/article/131-modules-getting-started#2-introduction) to your Site dynamically, so you can keep them updated in the Admin.
+This Module lets you add [Testimonials](/modules/core-modules/testimonials/quickstart-testimonials.md) to your Site dynamically, so you can keep them updated in the Admin.
 
 ### Syntax
 

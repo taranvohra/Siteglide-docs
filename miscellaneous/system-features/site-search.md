@@ -11,7 +11,7 @@ There are two parts of Site Search which you'll need to include in a Site:
 * Search Input
 * Search Results
 
-Both are available in [Toolbox](https://help.siteglide.com/article/100-pages-getting-started) and it is up to you whether you put them on the same Page or different Pages.
+Both are available in [Toolbox](/cms/pages/code-view-and-toolbox.md) and it is up to you whether you put them on the same Page or different Pages.
 
 ## Including the Search Input
 

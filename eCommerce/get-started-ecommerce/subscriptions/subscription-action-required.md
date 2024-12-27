@@ -95,7 +95,7 @@ Parameters:
 *   `{{data.subscription_order.related_user.email}}`
 
 *Tip: Changes in the Pricing Plan
-*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](https://help.siteglide.com/en/article/ecommerce-subscriptions-changing-the-price-and-billing-interval-egzyvo/)
+*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](/eCommerce/get-started-ecommerce/subscriptions/managing-subscriptions/changing-price-and-billing-interval.md)
 
 When outputting fields in the email, Subscription Order fields beginning with the word "Plan" will normally be the appropriate choice. These will show the price that these Users will be paying- the original plan when they signed up.
 

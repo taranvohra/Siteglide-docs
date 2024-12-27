@@ -72,7 +72,7 @@ Now we've translated the Months we'll need to check which one needs to be output
 
 \`
 
-We use the "date" filter here to format the "raw" date integer to a humanized date. This follows Ruby's STRF format, read [here](https://help.siteglide.com/en/article/faq-formatting-dates-with-ruby-strf-ge2clo/) for more info on formatting dates.
+We use the "date" filter here to format the "raw" date integer to a humanized date. This follows Ruby's STRF format, read [here](https://apidock.com/ruby/DateTime/strftime) for more info on formatting dates.
 
 We'll use "%B", as this will store the Month as a String.
 
