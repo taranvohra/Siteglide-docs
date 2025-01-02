@@ -159,7 +159,7 @@ In this example, we have a Custom Field Set "Checkout Address" with a "Profile P
 {% endraw %}
 ```
 
-See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](/crm/users/user-details#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
+See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](/crm/users/user-details.md#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
 
 As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
 

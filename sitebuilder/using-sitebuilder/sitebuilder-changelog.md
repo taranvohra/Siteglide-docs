@@ -214,7 +214,7 @@ For the optimum compatibility, we recommend always making sure the main SiteBuil
   {% endraw  %}
   ```
 * Live Updates
-  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key.md)
+  * Added support for using a code\_snippet or content\_section as your layout. A new parameter of `include_id` has been added to the `live_updates_params_encode` include to store the ID of the `code_snippet` or `content_section`. See: [Defining a Live Update Layout](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key)
 
 #### 4.8.6 - Released 9th August 2023 <a href="#id-486-released-9th-august-2023" id="id-486-released-9th-august-2023"></a>
 
