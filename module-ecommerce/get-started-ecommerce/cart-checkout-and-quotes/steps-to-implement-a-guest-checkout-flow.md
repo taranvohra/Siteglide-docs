@@ -113,7 +113,7 @@ Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-check
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](broken-reference/).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms here: [About Forms](/cms/forms/about-forms.md).
 
 You will need to add the following information when creating your form:
 

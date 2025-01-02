@@ -19,7 +19,7 @@ You're now ready to add some simple code.
 It is probably simplest to choose Custom Action as the Automation type, or you could add the code on Step 3 to an existing email or API automation.
 
 {% hint style="info" %}
-See the [broken-reference](../../../module-crm-sync/get-started-crm-sync/broken-reference/ "mention") and [automations](../../../cms/automations/ "mention") sections.
+See the [forms](/cms/forms/README.md "mention") and [automations](/cms/automations/README.md "mention") sections.
 {% endhint %}
 
 ## Step 3) Include a Line of Liquid to Sync the Sumitted User Data to your CRM <a href="#the-liquid-include" id="the-liquid-include"></a>

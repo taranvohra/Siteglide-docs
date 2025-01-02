@@ -34,8 +34,8 @@ Next optionally add transformations to automatically transform to next-gen image
 
 then use Liquid to get the path to the original image on Siteglide's CDN. See
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="linking-to-assets-front-end.md" %}
+[linking-to-assets-front-end.md](linking-to-assets-front-end.md)
 {% endcontent-ref %}
 
 For example:
