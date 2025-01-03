@@ -1,2 +1,0 @@
-# 🔧 Tags for Events
-

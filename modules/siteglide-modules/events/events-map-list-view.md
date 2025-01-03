@@ -1,2 +1,0 @@
-# Events - Map List View
-
