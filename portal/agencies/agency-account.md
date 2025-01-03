@@ -1,7 +1,7 @@
 # 👩‍💻 Agency Account
 
 {% hint style="info" %}
-If you're not an Agency and have a Business account visit: [account.md](../../portal2/account.md "mention")
+If you're not an Agency and have a Business account visit: [account.md](../../portal/account.md "mention")
 {% endhint %}
 
 If you are an approved Siteglide Agency you will have additional features accessible from the tabs across the top:&#x20;

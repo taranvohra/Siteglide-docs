@@ -13,7 +13,7 @@
 
 ## Portal
 
-* [Account](portal2/account.md)
+* [Account](portal/account.md)
 * [Sites](portal/sites/README.md)
   * [🚀 Quickstart: Create a Site](portal/sites/steps-to-create-your-first-site.md)
   * [ℹ️ Site Details](portal/sites/site-details.md)
@@ -34,7 +34,7 @@
   * [💳 Subscriptions and Changes](portal/billing/subscriptions-and-changes.md)
   * [💳 Automatic Site Upgrades](portal/billing/automatic-site-upgrades.md)
   * [💳 Invoices](portal/billing/invoices.md)
-* [Tickets](portal2/tickets.md)
+* [Tickets](portal/tickets.md)
 * [Marketplace](portal/marketplace.md)
 * [Agencies](portal/agencies/README.md)
   * [👩‍💻 Agency Account](portal/agencies/agency-account.md)
