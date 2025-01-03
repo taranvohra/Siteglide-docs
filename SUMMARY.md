@@ -195,12 +195,12 @@
   * [🌳 File Structure](cms/pages/pages-and-page-templates-file-structure.md)
 * [Content Sections](cms/content-sections.md)
 * [File Manager](cms/file-manager/README.md)
-  * [🔹 About Assets](/cms/file-manager/introduction/about-assets.md)
-  * [🔹 Linking to Assets Explained](cms/file-manager/introduction/linking-to-assets-front-end.md)
-  * [🔧 Assets Troubleshooting](cms/file-manager/introduction/assets-troubleshooting.md)
-  * [🔹 Siteglide Scripts Explained](cms/file-manager/introduction/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
+  * [🔹 About Assets](/cms/file-manager/about-assets.md)
+  * [🔹 Linking to Assets Explained](cms/file-manager/linking-to-assets-front-end.md)
+  * [🔧 Assets Troubleshooting](cms/file-manager/assets-troubleshooting.md)
+  * [🔹 Siteglide Scripts Explained](cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
   * [💻 Assets with CLI](cms/file-manager/assets-with-cli.md)
-  * [🔼 Migrating Assets](cms/file-manager/introduction/migrating-assets.md)
+  * [🔼 Migrating Assets](cms/file-manager/migrating-assets.md)
   * [📋 Steps to Optimise Images on the Fly with Cloudinary](cms/file-manager/how-to-optimise-images-on-the-fly-with-cloudinary.md)
   * [🔹 siteglide\_head\_scripts and siteglide\_footer\_scripts Explained](/cms/file-manager/fetching-assets-only-when-needed-and-avoiding-duplicates.md)
   * [🌳 Assets File Structure](cms/file-manager/file-structure.md)
@@ -251,7 +251,7 @@
   * [ℹ️ About](cms/company-information/about.md)
   * [💻 Reference](cms/company-information/company-information.md)
   * [❔ Troubleshooting](cms/company-information/troubleshooting-company-information.md)
-* [URL Redirects](cms2/url-redirects.md)
+* [URL Redirects](cms/url-redirects.md)
 
 ## Modules
 
@@ -432,7 +432,7 @@
   * [How Users Edit their Email and Password Front End](crm/users/how-users-edit-their-email-and-password-front-end.md)
   * [Custom Field Sets & CRM Custom Fields](crm/users/editing-a-users-crm-record-front-end-with-custom-field-sets.md)
   * [Storing User's Favourite WebApp / Module Items](crm/users/storing-users-favourite-webapp-module-items.md)
-* [Companies](crm2/companies.md)
+* [Companies](crm/companies.md)
 * [Cases](crm/cases/README.md)
   * [User's Form Submissions (Cases)](crm/cases/users-form-submissions-cases.md)
 
