@@ -19,7 +19,7 @@ Before reading this section, it will help to be familiar with the Siteglide docu
 * [WebApp List Layouts Parameters](/webapps/layouts/webapp-list-layout.md)
 * [Parameters for Filtering](/webapps/layouts/searching-advanced-filtering.md)
 * [Parameters for Search](/webapps/layouts/searching-by-keyword.md)
-* [Blog Archive](/modules/siteglide-modules/blog-and-author/blog-filter-by-date/README.md)
+* [Blog Archive](/modules/core-modules/blog-and-authors/blog-filter-by-date.md)
 
 On the endpoint page we provide, the Liquid tag being live-updated is output.
 

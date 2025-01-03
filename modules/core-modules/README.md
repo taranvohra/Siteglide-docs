@@ -12,8 +12,8 @@
 
 These can all be installed from Marketplace ( ) or the Modules tab on a Site ( [#want-to-install-or-manage-modules](../../portal/sites/#want-to-install-or-manage-modules "mention")) :&#x20;
 
-{% content-ref url="../../modules2/menubuilder.md" %}
-[menubuilder.md](../../modules2/menubuilder.md)
+{% content-ref url="/modules/core-modules/menubuilder/README.md" %}
+[menubuilder.md](/modules/core-modules/menubuilder/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="secure-zones/" %}

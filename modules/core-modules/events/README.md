@@ -10,36 +10,36 @@ The Events Module is linked to eCommerce Module, to give you full functionality 
 
 ## Want to Filter Items?
 
-{% content-ref url="../../../module-events/get-started-events/event-filtering.md" %}
-[event-filtering.md](../../../module-events/get-started-events/event-filtering.md)
+{% content-ref url="/modules/core-modules/events/get-started-event-filtering.md" %}
+[event-filtering.md](/modules/core-modules/events/get-started-event-filtering.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/get-started-events/events-intro/event-filtering-category.md" %}
-[event-filtering-category.md](../../../module-events/get-started-events/events-intro/event-filtering-category.md)
+{% content-ref url="/modules/core-modules/events/event-filtering-category.md" %}
+[event-filtering-category.md](/modules/core-modules/events/event-filtering-category.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/get-started-events/event-filtering-author.md" %}
-[event-filtering-author.md](../../../module-events/get-started-events/event-filtering-author.md)
+{% content-ref url="/modules/core-modules/events/event-filtering-author.md" %}
+[event-filtering-author.md](/modules/core-modules/events/event-filtering-author.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/go-further-events/event-host-datasource/event-filtering-dates.md" %}
-[event-filtering-dates.md](../../../module-events/go-further-events/event-host-datasource/event-filtering-dates.md)
+{% content-ref url="/modules/core-modules/events/event-filtering-dates.md" %}
+[event-filtering-dates.md](/modules/core-modules/events/event-filtering-dates.md)
 {% endcontent-ref %}
 
 ## Want to Customise the Module Further?
 
-{% content-ref url="../../../module-events/go-further-events/event-search.md" %}
-[event-search.md](../../../module-events/go-further-events/event-search.md)
+{% content-ref url="/modules/core-modules/events/event-search.md" %}
+[event-search.md](/modules/core-modules/events/event-search.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/go-further-events/event-list-map.md" %}
-[event-list-map.md](../../../module-events/go-further-events/event-list-map.md)
+{% content-ref url="/modules/core-modules/events/event-list-map.md" %}
+[event-list-map.md](/modules/core-modules/events/event-list-map.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/get-started-events/event-list.md" %}
-[event-list.md](../../../module-events/get-started-events/event-list.md)
+{% content-ref url="/modules/core-modules/events/event-list-map.md" %}
+[event-list.md](/modules/core-modules/events/event-list-map.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-events/go-further-events/event-host-datasource/" %}
-[event-host-datasource](../../../module-events/go-further-events/event-host-datasource/)
+{% content-ref url="/modules/core-modules/events/event-host-datasource.md" %}
+[event-host-datasource](/modules/core-modules/events/event-host-datasource.md)
 {% endcontent-ref %}

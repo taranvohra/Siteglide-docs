@@ -22,8 +22,8 @@ We'd then recommend getting familiar with the following sections:
 [file-manager](file-manager/)
 {% endcontent-ref %}
 
-{% content-ref url="../modules2/menubuilder.md" %}
-[menubuilder.md](../modules2/menubuilder.md)
+{% content-ref url="/modules/core-modules/menubuilder/README.md" %}
+[menubuilder.md](/modules/core-modules/menubuilder/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="forms/" %}
