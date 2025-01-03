@@ -36,10 +36,10 @@ These can all be installed from Marketplace ( ) or the Modules tab on a Site ( [
 [faq.md](faq/)
 {% endcontent-ref %}
 
-{% content-ref url="faq/" %}
-[testimonials.md](faq/)
+{% content-ref url="testimonials/" %}
+[testimonials.md](testimonials/)
 {% endcontent-ref %}
 
-{% content-ref url="../../modules2/slider.md" %}
-[slider.md](../../modules2/slider.md)
+{% content-ref url="slider/" %}
+[slider.md](slider/)
 {% endcontent-ref %}

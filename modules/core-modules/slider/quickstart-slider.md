@@ -36,6 +36,6 @@ Your Slider Module will work out of the box but Siteglide is all about flexibili
 [dynamic-layouts-in-sitebuilder.md](../../../sitebuilder/setup-sitebuilder/layouts/about-layouts/dynamic-layouts-in-sitebuilder.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../module-slider/get-started-slider/introduction.md" %}
-[introduction.md](../../../module-slider/get-started-slider/introduction.md)
+{% content-ref url="/modules/core-modules/slider/slider-reference.md" %}
+[introduction.md](/modules/core-modules/slider/slider-reference.md)
 {% endcontent-ref %}
