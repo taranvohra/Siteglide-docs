@@ -32,12 +32,12 @@ These can all be installed from Marketplace ( ) or the Modules tab on a Site ( [
 [events](events/)
 {% endcontent-ref %}
 
-{% content-ref url="../../modules2/faq.md" %}
-[faq.md](../../modules2/faq.md)
+{% content-ref url="faq/" %}
+[faq.md](faq/)
 {% endcontent-ref %}
 
-{% content-ref url="../../modules2/testimonials.md" %}
-[testimonials.md](../../modules2/testimonials.md)
+{% content-ref url="faq/" %}
+[testimonials.md](faq/)
 {% endcontent-ref %}
 
 {% content-ref url="../../modules2/slider.md" %}
