@@ -1,5 +1,14 @@
 # 🛳️ Module - eCommerce - Changelog
 
+### 1.15.0 - 22nd January 2024
+
+* Allow Discounts to apply to specific Products and Categories - [Roadmap](https://feedback.siteglide.com/p/apply-discount-codes-to-specific-products)
+* Added a flag to turn off the success alert box on Discounts - [Roadmap](https://feedback.siteglide.com/p/ecommerce-module-discount-code-added-alert)
+* Fix for re-order feature when multiple items are in the Order
+* Added forloop object to product output
+
+***
+
 ### 1.14.5 - 11th December 2024
 
 * Add more logging to Form Submissions to support debugging
