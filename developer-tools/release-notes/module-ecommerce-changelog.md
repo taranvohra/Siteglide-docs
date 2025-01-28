@@ -1,5 +1,11 @@
 # 🛳️ Module - eCommerce - Changelog
 
+### 1.15.1 - 28th January 2024
+
+* Fix for Inventory where it was failing to update correctly
+
+***
+
 ### 1.15.0 - 22nd January 2024
 
 * Allow Discounts to apply to specific Products and Categories - [Roadmap](https://feedback.siteglide.com/p/apply-discount-codes-to-specific-products)
