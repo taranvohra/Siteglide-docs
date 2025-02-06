@@ -451,8 +451,9 @@
 * [System Pages](site-manager2/system-pages/README.md)
   * [Automatic Site Maps](/site-manager2/system-pages/automatic-sitemap-generation.md)
 * [System Emails](site-manager2/system-emails.md)
-* [Integrations](site-manager2/integrations.md)
 * [Data Management](site-manager2/data-management.md)
+* [Admin Menu Editor](site-manager/admin-menu-editor.md)
+* [Integrations](site-manager2/integrations.md)
 
 ## Reporting
 
