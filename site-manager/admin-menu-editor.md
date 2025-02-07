@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Admin Menu Editor
 
 With this feature you can change what shows in the left hand menu in Admin when viewing a Site.
