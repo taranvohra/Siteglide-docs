@@ -197,6 +197,17 @@ This will depend on the Module. [Use Liquid Dot Notation](/developer-tools/liqui
 * `{{this.properties.twitter_type}}` - SEO Twitter Type
 * `{{this.properties.module_field_1_1}}` - Custom Fields where the first number is the ID of the Module and the Second number the ID of the Field. The Module IDs are fixed for all Sites, for example, the Blog Module always has the ID of 3.
 
+### Outputting Pagination in Results Page
+
+To display the default pagination layout on the results page, add the following line of code to your custom results layout:
+```liquid
+{%- include 'modules/siteglide_system/get/get_site_search_result_pagination' -%}
+```
+This specific include is required for site search pagination to function correctly.
+
+Currently, it is not possible to replace the pagination layout with one installed through SiteBuilder. However, you can customize the default pagination layout by applying custom CSS targeted at the default pagination layout.
+
+
 ## Outputting the Search Keyword
 
 You can output the value of any URL parameter using platformOS's `context.params` object, including the search term in the "keyword" parameter: `<p>Search results for: {{context.params.keyword}}</p>`
