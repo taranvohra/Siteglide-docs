@@ -201,7 +201,9 @@ This will depend on the Module. [Use Liquid Dot Notation](/developer-tools/liqui
 
 To display the default pagination layout on the results page, add the following line of code to your custom results layout:
 ```liquid
+{% raw %}
 {%- include 'modules/siteglide_system/get/get_site_search_result_pagination' -%}
+{% endraw %}
 ```
 This specific include is required for site search pagination to function correctly.
 
