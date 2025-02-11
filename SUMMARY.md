@@ -327,10 +327,10 @@
 ## eCommerce
 
 * [🚀 Quickstart: eCommerce](ecommerce/quickstart-ecommerce.md)
-* [Get Started](module-ecommerce/get-started-ecommerce/README.md)
-  * [💡 About the eCommerce Module](module-ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
+* [Get Started](ecommerce/get-started-ecommerce/README.md)
+  * [💡 About the eCommerce Module](ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
   * [Settings](eCommerce/get-started-ecommerce/settings.md)
-  * [📂 Cart, Checkout and Quotes](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/README.md)
+  * [📂 Cart, Checkout and Quotes](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/README.md)
     * [💡 About Cart, Checkout and Quotes](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
     * [📋 Steps to Implement a Guest Checkout Flow](module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
     * [📂 Product Views](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/README.md)
@@ -413,9 +413,10 @@
     * [User's Active Subscriptions](eCommerce/get-started-ecommerce/subscriptions/user-subscriptions.md)
     * [Subscription Action Required](eCommerce/get-started-ecommerce/subscriptions/subscription-action-required.md)
     * [Cancelling Subscriptions](eCommerce/get-started-ecommerce/subscriptions/cancelling-subscriptions.md)
+  * [📂 Products](ecommerce/get-started-ecommerce/products/README.md)
   * [🌳 Basic Payment Forms Folder Structure](ecommerce/get-started-ecommerce/basic-payment-forms-folder-structure.md)
   * [🌳 Cart and Checkout Folder Structure](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-displayed-cart-quantity.md)
-* [Products](ecommerce2/products.md)
+
 * [Orders](ecommerce2/orders.md)
 * [Shipping Options](ecommerce2/shipping-options.md)
 * [Discount Codes](ecommerce2/discount-codes.md)

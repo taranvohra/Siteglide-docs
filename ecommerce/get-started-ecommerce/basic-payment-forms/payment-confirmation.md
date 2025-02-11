@@ -12,7 +12,7 @@ Use Emails to send confirmation messages to customers, including a detailed brea
 ## Prerequisites
 
 * You have installed eCommerce Module v1.1.4 or later. Check out [Install or Manage Modules](/portal/sites/install-and-manage-modules) to find out how you can install the latest version.
-* You have set up a [Basic Payment Form](/module-ecommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md) using the Stripe Payment Gateway
+* You have set up a [Basic Payment Form](/ecommerce/get-started-ecommerce/basic-payment-forms/basic-payments.md) using the Stripe Payment Gateway
 
 ## Introduction
 

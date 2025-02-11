@@ -11,7 +11,7 @@ How to customise the Shopping Cart Layout
 
 ## Prerequisites
 
-* You have completed [How to Create a Shopping Cart and Guest Checkout](../../../../module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
+* You have completed [How to Create a Shopping Cart and Guest Checkout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
 
 ## :deciduous\_tree: Folder Structure
 

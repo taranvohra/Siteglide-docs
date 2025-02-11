@@ -4,8 +4,8 @@
 
 First, set up a Basic Payment Form with a minimum payment amount by following the steps here:
 
-{% content-ref url="../../../module-ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md" %}
-[steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md](../../../module-ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md)
+{% content-ref url="/ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md" %}
+[steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md](/ecommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md)
 {% endcontent-ref %}
 
 ## When is this Useful?

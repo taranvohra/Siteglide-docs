@@ -6,8 +6,8 @@
 [.](./)
 {% endcontent-ref %}
 
-{% content-ref url="../../../../module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
-[about-cart-checkout-and-quotes.md](../../../../module-ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
+{% content-ref url="/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md" %}
+[about-cart-checkout-and-quotes.md](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/about-cart-checkout-and-quotes.md)
 {% endcontent-ref %}
 
 ## Checkout Support
