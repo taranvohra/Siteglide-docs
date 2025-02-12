@@ -125,8 +125,9 @@ Output breadcrumb of Categories to the current Category page using the defined l
 Output parent Categories using the defined layout:
 
 ```liquid
+{% raw %}
 {%- include 'category_parent', layout: 'parent' -%
-
+{% endraw %}
 ```
 
 ### Child Category List

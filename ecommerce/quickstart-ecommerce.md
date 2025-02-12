@@ -117,5 +117,5 @@ You can totally customise how your eCommerce store works in Siteglide. Here are 
 {% endcontent-ref %}
 
 {% content-ref url="../ecommerce/get-started-ecommerce/about-the-ecommerce-module.md" %}
-[about-the-ecommerce-module.md](../ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
+[about-the-ecommerce-module.md](../eCommerce/get-started-ecommerce/about-the-ecommerce-module.md)
 {% endcontent-ref %}

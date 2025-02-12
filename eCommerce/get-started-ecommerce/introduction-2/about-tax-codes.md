@@ -56,5 +56,5 @@ We take the 'Chargeable Price' value and calculate the Tax value to 4 decimal pl
 - If you want to use this Tax Code system then your 'Chargeable Price' values should be excluding Tax, and then Tax Codes set up to apply the correct percentages.
 - The Cart value is a total of all Products and Attributes with any relevant Tax applied. Any Discounts are then applied to this 1 total, rather than per item. This can cause reported 'Tax Amount' values to appear inaccurate
 - Tax Codes can only be applied to eCommerce Products; not Subscriptions, or WebApp/Module items
-- Before [v1.14.1](/developer-tools/release-notes/module-ecommerce-changelog.md#1141---15th-march-2024) - All Tax values are displayed and stored to 2 decimal places
-- Before [v1.14.1](/developer-tools/release-notes/module-ecommerce-changelog.md#1141---15th-march-2024) - You can only have 1 Tax Code active in a session, so if 2 Products have 2 different Tax Codes, then only 1 can be applied.
+- Before [v1.14.1](/developer-tools/release-notes/module-ecommerce-changelog.md#id-1.14.1-15th-march-2024) - All Tax values are displayed and stored to 2 decimal places
+- Before [v1.14.1](/developer-tools/release-notes/module-ecommerce-changelog.md#id-1.14.1-15th-march-2024) - You can only have 1 Tax Code active in a session, so if 2 Products have 2 different Tax Codes, then only 1 can be applied.
