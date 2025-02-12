@@ -2,7 +2,7 @@
 
 ## Pre-Requisites
 
-* You have read [How to Set Up a Shopping Cart and Guest Checkout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
+* You have read [How to Set Up a Shopping Cart and Guest Checkout](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
 * You have Installed the eCommerce Module
 * You have installed the Secure Zones Module
 
@@ -40,7 +40,7 @@ Click in this to open a drop-down list of your Secure Zones and select the one y
 
 Make sure your Checkout Form is still in "Test Mode" unless the Site is Live.
 
-The [previous article](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md) explained how to create a Checkout Form. Here we will modify this form so that it also either signs in a User or logs them in, depending on their current status.
+The [previous article](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md) explained how to create a Checkout Form. Here we will modify this form so that it also either signs in a User or logs them in, depending on their current status.
 
 Find Forms in the Siteglide Admin’s left-hand side menu under CMS / Forms. Select your checkout Form in the list:
 

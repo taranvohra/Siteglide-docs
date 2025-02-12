@@ -12,7 +12,7 @@ Use Workflow and Autoresponder Emails to send confirmation messages to customers
 ## Prerequisites
 
 * You have installed eCommerce Module v0.12.0 or later. Checkout [Modules Overview](/portal/sites#want-to-install-or-manage-modules.md) to find out how you can install the latest version.
-* You have set up a Checkout or Quote-only Form. Learn more about Checkout here: [How to Set Up a Shopping Cart and Guest Checkout](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md) or learn more about the Quote-only feature here: [eCommerce - Quote Only](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/quotes.md)
+* You have set up a Checkout or Quote-only Form. Learn more about Checkout here: [How to Set Up a Shopping Cart and Guest Checkout](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md) or learn more about the Quote-only feature here: [eCommerce - Quote Only](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/quotes.md)
 
 ## Introduction
 
