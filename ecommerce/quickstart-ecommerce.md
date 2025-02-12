@@ -107,15 +107,15 @@ You simply need to add your Live and Test Public Keys/Secret Keys. We recommend 
 ## Next Steps
 
 You can totally customise how your eCommerce store works in Siteglide. Here are a few features you might want to look at next:
-
-{% content-ref url="../ecommerce2/shipping-options.md" %}
-[shipping-options.md](../ecommerce2/shipping-options.md)
+/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options
+{% content-ref url="../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md" %}
+[shipping-options.md](../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md)
 {% endcontent-ref %}
 
-{% content-ref url="../ecommerce2/discount-codes.md" %}
-[discount-codes.md](../ecommerce2/discount-codes.md)
+{% content-ref url="../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md" %}
+[discount-codes.md](../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md)
 {% endcontent-ref %}
 
-{% content-ref url="get-started-ecommerce/introduction-4/" %}
-[introduction-4](get-started-ecommerce/introduction-4/)
+{% content-ref url="../ecommerce/get-started-ecommerce/about-the-ecommerce-module.md" %}
+[about-the-ecommerce-module.md](../ecommerce/get-started-ecommerce/about-the-ecommerce-module.md)
 {% endcontent-ref %}

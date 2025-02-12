@@ -1,6 +1,0 @@
----
-hidden: true
----
-
-# Shipping Options
-

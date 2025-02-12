@@ -400,6 +400,7 @@
     * [📋 Steps to Switching Payment Gateway](ecommerce/get-started-ecommerce/payment-gateways/switching-gateway.md)
     * [🔹 Test Cards](ecommerce/get-started-ecommerce/payment-gateways/test-cards.md)
   * [📂 Currency and Tax](ecommerce/get-started-ecommerce/introduction-2/README.md)
+    * [💡 About Tax Codes](eCommerce/get-started-ecommerce/introduction-2/about-tax-codes.md)
     * [Currency Changer](ecommerce/get-started-ecommerce/introduction-2/currency-changer.md)
     * [Tax Code Changer](ecommerce/get-started-ecommerce/introduction-2/tax-changer.md)
     * [Formatting Currency](ecommerce/get-started-ecommerce/introduction-2/formatting-currencies.md)
@@ -415,13 +416,6 @@
     * [Cancelling Subscriptions](eCommerce/get-started-ecommerce/subscriptions/cancelling-subscriptions.md)
   * [🌳 Basic Payment Forms Folder Structure](ecommerce/get-started-ecommerce/basic-payment-forms-folder-structure.md)
   * [🌳 Cart and Checkout Folder Structure](ecommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md)
-* [Products](ecommerce2/products.md)
-* [Orders](ecommerce2/orders.md)
-* [Shipping Options](ecommerce2/shipping-options.md)
-* [Discount Codes](ecommerce2/discount-codes.md)
-* [Subscriptions](ecommerce2/subscriptions.md)
-* [Tax Codes](ecommerce2/tax-codes.md)
-* [eCommerce Settings](ecommerce2/ecommerce-settings.md)
 
 ## CRM
 

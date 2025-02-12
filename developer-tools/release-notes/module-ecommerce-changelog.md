@@ -332,7 +332,7 @@ Patch to support inventory checking against Attributes on Cart.
 
 ### 1.5.0 - 16th March 2021
 
-* Tax Code system - [Docs](../../ecommerce2/tax-codes.md)
+* Tax Code system - [Docs](/eCommerce/get-started-ecommerce/introduction-2/about-tax-codes.md)
 
 ***
 
