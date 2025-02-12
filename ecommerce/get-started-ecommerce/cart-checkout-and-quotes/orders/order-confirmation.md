@@ -44,7 +44,7 @@ You can use an existing Layout, or create a new one in this File Structure: `lay
 
 ### Developing the Layout
 
-Inside your email notification file, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here:\*\* \*\*[Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md) You'll still have access to these fields throughout the Order Details Layouts.
+Inside your email notification file, you'll have access to the Form object: `{{form.properties}}` This contains the fields submitted with the Form. Learn more here: **[Dynamic Content in Workflow and Autoresponder Emails](/cms/automations/dynamic-content-in-workflow-and-autoresponder-emails.md)** You'll still have access to these fields throughout the Order Details Layouts.
 
 Inside your `order_details` layout you'll find an `item.liquid` and `wrapper.liquid` file.
 
@@ -68,7 +68,8 @@ Orders involve several different types of models and can be complex. When develo
 
 When developing a custom layout, it may be helpful to refer to the default Layout.
 
-_Looping over Products_ This loop will find any Products in the Order and loop over them.
+_Looping over Products_  
+This loop will find any Products in the Order and loop over them.
 
 ```liquid
 {% raw %}
@@ -76,13 +77,10 @@ _Looping over Products_ This loop will find any Products in the Order and loop o
     <!-- Output {{product}} -->
 {% endfor %}
 {% endraw %}
-
-
-
-
 ```
 
-\*Looping over Products and accessing Fields \*Within a Product Loop, you can access the fields associated with that Product.
+_Looping over Products and accessing Fields_  
+Within a Product Loop, you can access the fields associated with that Product.
 
 * `{{ product.product_name }}`
 * `{{ product.quantity }}`
@@ -101,21 +99,15 @@ _Looping over Products, then looping over Attributes_
     {% endfor %}
 {% endfor %}
 {% endraw %}
-
-
-
-
-
 ```
 
-_Outputting Shipping Method_ The following fields are available relating to the Shipping Method:
+_Outputting Shipping Method_  
+The following fields are available relating to the Shipping Method:
 
 * `this['Shipping Method Name']`
 * `this['Currency Symbol']`
 * `this['Shipping Method Price']`
-* \`
-
-\` - a formatted Shipping Price
+* `{% raw %}{%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter', price_data: this['Shipping Method Price'] -%}{% endraw %}` - a formatted Shipping Price
 
 Example of only including Shipping Information if it was set:
 
@@ -128,14 +120,10 @@ Example of only including Shipping Information if it was set:
                  price_data: this['Shipping Method Price'] -%}
 {% endif %}
 {% endraw %}
-
-
 ```
 
 _Outputting Totals_
 
 * `{{ this['Currency Symbol'] }}`
 * `this['Total Price']`
-* \`
-
-\` - A formatted total price
+* {% raw %}{%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter', price_data: this['Total Price'] -%}{% endraw %} - A formatted total price

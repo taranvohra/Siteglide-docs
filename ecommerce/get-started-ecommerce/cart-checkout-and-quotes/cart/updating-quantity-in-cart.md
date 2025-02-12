@@ -13,10 +13,10 @@ In this Article we'll take an in depth look at the JavaScript needed to update t
 
 There are two main flows you can implement:
 
-| **Use Case**                                                                   | **Step 1) **                                                                     | **Step 2) **                                    |
-| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ----------------------------------------------- |
-| Change Cart Quantity with a single action                                      | Run the `s_e_cart_update_quantity()` function with the 4th argument set to true  |                                                 |
-| Change Cart Quantity by:&#xA;1\) Making a change&#xA;2\) Confirming the change | Run the `s_e_cart_update_quantity()` function with the 4th argument set to false | Run the `s_e_cart_update()` function to confirm |
+| **Use Case**                                                | **Step 1)**                             | **Step 2)**                                    |
+| ----------------------------------------------------------- | --------------------------------------- | ---------------------------------------------- |
+| Change Cart Quantity with a single action                   | Run the `s_e_cart_update_quantity()` function with the 4th argument set to true  |       |
+| Change Cart Quantity by: 1\) Making a change 2\) Confirming the change | Run the `s_e_cart_update_quantity()` function with the 4th argument set to false | Run the `s_e_cart_update()` function to confirm |
 
 A second choice is between whether you want to reload the Page to get new values or have our JavaScript function live update them for you.&#x20;
 
@@ -114,15 +114,11 @@ s_e_cart_update(false,  '{{context.authenticity_token}}', false, function(reload
 
 ```
 
-``
-
-# Live Updating Cart Values when Reload is set to
-
-# `false`
+# Live Updating Cart Values when Reload is set to `false`
 
 When passing in a `false` reload argument, you will need to follow additional steps to update the following:
 
-*   The total quantity&#x20;
+*   The total quantity
 
 *   The total price
 
