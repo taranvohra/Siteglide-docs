@@ -414,7 +414,7 @@
     * [Subscription Action Required](eCommerce/get-started-ecommerce/subscriptions/subscription-action-required.md)
     * [Cancelling Subscriptions](eCommerce/get-started-ecommerce/subscriptions/cancelling-subscriptions.md)
   * [🌳 Basic Payment Forms Folder Structure](ecommerce/get-started-ecommerce/basic-payment-forms-folder-structure.md)
-  * [🌳 Cart and Checkout Folder Structure](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-displayed-cart-quantity.md)
+  * [🌳 Cart and Checkout Folder Structure](ecommerce/get-started-ecommerce/cart-and-checkout-folder-structure.md)
 * [Products](ecommerce2/products.md)
 * [Orders](ecommerce2/orders.md)
 * [Shipping Options](ecommerce2/shipping-options.md)

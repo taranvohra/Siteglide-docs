@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 🌳 Cart and Checkout Folder Structure
 
 Some layouts have a wrapper and an item file, while other layouts have a single Liquid file.
