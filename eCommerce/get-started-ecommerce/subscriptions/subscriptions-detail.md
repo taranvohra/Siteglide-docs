@@ -186,7 +186,7 @@ Fields:
 * `{{subscription_order['Plan Interval']}}` - A snapshot of the Interval of this Subscription Order's plan. This may be an older plan than the current plan used by the Subscription product.
 * `{{subscription_order['Plan Interval Count']}}` - A snapshot of the Interval Count of this Subscription Order's plan. This may be an older plan than the current plan used by the Subscription product.
 
-\*Tip: Changes in the Pricing Plan \*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](/eCommerce/get-started-ecommerce/subscriptions/changing-price-and-billing-interval.md)
+\*Tip: Changes in the Pricing Plan \*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](/eCommerce/get-started-ecommerce/subscriptions/managing-subscriptions/changing-price-and-billing-interval.md)
 
 When outputting fields, be aware that the Price might have changed globally for a Subscription, while a User may already have an existing Subscription with a different price. When changing their payment Details on the Subscription Detail View, these Users may be reassured to see the price displayed they are paying currently.
 

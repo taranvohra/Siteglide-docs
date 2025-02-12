@@ -81,6 +81,7 @@ The following reference shows how to output useful data about your Cart as a who
 | Final Total Tax Amount                   | `{% raw %}{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}{% endraw %}`      |
 | Final Total Price                        | `{% raw %}{% include 'ecommerce/price_total', format_type: 'formatted' -%}{% endraw %}`                 |
 
+
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
 Normally though, Attributes will be handled in the next step- the item.liquid file.
