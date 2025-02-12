@@ -1,7 +1,7 @@
 # Prerequisites
 
 {% hint style="info" %}
-The Subscriptions feature is currently only supported if you have a Stripe Payment Gateway, and you will need to define which Payment Gateway set up to use for your Subscriptions. If you have not yet set up a Stripe Account and associated Payment Gateway on Siteglide, you can learn how here: [Payment Gateways](/eCommerce/get-started-ecommerce/payment-gateways/README.md)
+The Subscriptions feature is currently only supported if you have a Stripe Payment Gateway, and you will need to define which Payment Gateway set up to use for your Subscriptions. If you have not yet set up a Stripe Account and associated Payment Gateway on Siteglide, you can learn how here: [Payment Gateways](/ecommerce/get-started-ecommerce/payment-gateways/README.md)
 {% endhint %}
 
 # Introduction

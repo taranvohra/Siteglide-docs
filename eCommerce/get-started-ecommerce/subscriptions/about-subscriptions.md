@@ -10,7 +10,7 @@
 
 If you were using the Beta version of eCommerce Subscriptions (versions 0.14.1 and lower) and you have not yet upgraded your eCommerce Module, your Sites will continue to work as normal.
 
-However, after upgrading to the eCommerce Module 1.0.0, Stripe webhooks must be set up. You can follow steps [3 + 4](/eCommerce/go-further-ecommerce/subscriptions/setting-up.md) here to do this.
+However, after upgrading to the eCommerce Module 1.0.0, Stripe webhooks must be set up. You can follow steps [3 + 4](/eCommerce/go-further-ecommerce/subscriptions/setting-up.md#step-3-set-up-the-webhook-endpoints-in-your-stripe-account) here to do this.
 
 ## Introduction
 

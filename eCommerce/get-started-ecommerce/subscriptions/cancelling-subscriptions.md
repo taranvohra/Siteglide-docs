@@ -32,9 +32,7 @@ You may wish to use logic to only show the button when it can be used.
 
 ## Un-scheduling the Cancellation before it happens
 
-Until that time, we'll allow Users to change their mind and choose not to cancel the Subscription after all. This removes the property from the Stripe subscription `cancel_at_period_end` and the Subscription will remain in its current state: \`
-
-\`
+Until that time, we'll allow Users to change their mind and choose not to cancel the Subscription after all. This removes the property from the Stripe subscription `cancel_at_period_end` and the Subscription will remain in its current state: `{% raw %}{%- include 'ecommerce/subscription_reactivate_cancelled', orderID: this.id -%}{% endraw %}`
 
 You may wish to use logic to only show the button when it can be used.
 

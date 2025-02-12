@@ -17,7 +17,7 @@ We'll be adding additional features in later releases which will expand your opt
 
 You can view a list of existing Subscription products and add new ones under `ECOMMERCE > Subscriptions`
 
-![Image](/.gitbook/assets/Siteglide-Subscriptions-Creating-Subscription-Products-1.png)
+![](/.gitbook/assets/Siteglide-Subscriptions-Creating-Subscription-Products-1.png)
 
 ### Step 1 - Add Details
 
@@ -48,7 +48,7 @@ The chargeable price is the price your customers will pay each interval.
 
 The display-only price is available if you need to display the price without sales tax, a recommended retail price- etc.
 
-![Image](/.gitbook/assets/Siteglide-Subscriptions-Creating-Subscription-Products-2.png)
+![](/.gitbook/assets/Siteglide-Subscriptions-Creating-Subscription-Products-2.png)
 
 ### Step 5 - Secure Zones
 

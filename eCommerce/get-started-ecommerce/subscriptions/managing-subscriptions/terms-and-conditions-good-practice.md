@@ -8,7 +8,11 @@ When adding eCommerce functionality to their Site, your Client will want to be c
 
 The following Articles from Stripe are well worth a read if you are adding Subscriptions functionality to your Site. You may wish to use the advice within to help you word a consent Checkbox to your Subscription Sign Up Form for example.
 
-### [Updating your terms and conditions to make sure customers have been given a mandate to collect recurring payments for Strong Customer Authentication (SCA) purposes](https://support.stripe.com/questions/updating-your-terms-and-conditions-to-make-sure-customers-have-been-given-a-mandate-to-collect-recurring-payments-for-strong-customer-authentication-sca-purposes)
+### Updating your terms and conditions to make sure customers have been given a mandate to collect recurring payments for Strong Customer Authentication (SCA) purposes
 
-### [Merchant Initiated Transactions](https://support.stripe.com/questions/merchant-initiated-transactions-mits-when-to-categorize-a-transaction-as-mit)
+https://support.stripe.com/questions/updating-your-terms-and-conditions-to-make-sure-customers-have-been-given-a-mandate-to-collect-recurring-payments-for-strong-customer-authentication-sca-purposes
+
+### Merchant Initiated Transactions
+
+https://support.stripe.com/questions/merchant-initiated-transactions-mits-when-to-categorize-a-transaction-as-mit
 

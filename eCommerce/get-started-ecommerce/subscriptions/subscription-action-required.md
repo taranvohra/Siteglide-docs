@@ -99,7 +99,7 @@ Parameters:
 
 When outputting fields in the email, Subscription Order fields beginning with the word "Plan" will normally be the appropriate choice. These will show the price that these Users will be paying- the original plan when they signed up.
 
-The other Price and Interval fields stored against the Subscription, could be used to show how much the User is saving on their current plan compared to the current price. In the different context of the [Subscription Detail Page](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md)- we give a different recommendation as here it may not always be possible to identify immediately if the User is subscribed to a different plan.
+The other Price and Interval fields stored against the Subscription, could be used to show how much the User is saving on their current plan compared to the current price. In the different context of the [Subscription Detail Page](/eCommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md)- we give a different recommendation as here it may not always be possible to identify immediately if the User is subscribed to a different plan.
 
 *Tip: Working with the Interval Fields*
 As you can see below, there are multiple fields involved in storing the Interval of charges, which you can use to display the Interval in a user-friendly way. Here's one example of using Liquid to programmatically decide the format to display the Interval:

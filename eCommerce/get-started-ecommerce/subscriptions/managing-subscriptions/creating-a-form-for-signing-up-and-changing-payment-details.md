@@ -17,7 +17,7 @@ You'll also be able to use the same form for any Subscription Product. You can s
 
 Firstly, navigate to CMS > Forms and select the "Add New Form" button:
 
-![Image](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-1.png)
+![](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-1.png)
 
 Add details to the Form as you normally would. (To recap standard Form creation in Siteglide - [see here](/cms/forms/quickstart-forms.md).)
 
@@ -27,7 +27,7 @@ When setting the name, remember this can be a Form for all Subscriptions, so you
 
 Next, in the payments tab, toggle Payments on and select Subscription from the Payment form type options.
 
-![Image](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-2.png)
+![](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-2.png)
 
 ## Adding Secure Zones
 
@@ -39,7 +39,7 @@ The easiest way to do this is to set a Secure Zone to this Subscription Form to 
 
 You can do this by adding any Secure Zone to the Form in the Secure Zones tab:
 
-![Image](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-3.png)
+![](/.gitbook/assets/Siteglide-Subscriptions-Creating-a-Form-Payment-Details-3.png)
 
 If you already have a Secure Zone which serves this purpose on your Site, you can of course use it here. We'd recommend not using a Secure Zone directly associated with a Subscription, as this could be removed from a User if they cancel their Subscription.
 
