@@ -6,7 +6,7 @@ This Article explains how to output a Discount Codes Layout in either Basic Paym
 
 Discount Codes allow your Client to provide special offers to their customers.
 
-You can learn how to [set up Discount Codes in the Admin](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) here.
+You can learn how to [set up Discount Codes in the Admin](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) here.
 
 The role of a Discount Code Layout is to give the customer an opportunity to enter and apply a Discount Code on your Site. Additionally, once a code is applied, the Layout will give the customer information about how their code has been applied along with any terms and conditions, and the opportunity to remove the code.
 
@@ -129,7 +129,7 @@ _HTML Attributes Explained:_
 | **Code**                             | **Purpose**                              | **Required** |
 | ------------------------------------ | ---------------------------------------- | ------------ |
 | data-s-e-discount-code               | Attribute should be added to input field | Yes          |
-| value="{% raw %}{%- if discount_code != blank -%}{{discount_code}}{%- endif -%}{% endraw %}" <br> <br> or <br> <br> {%raw %}{% if discount_code != blank %}value="{{discount_code}}" readonly{% endif -%}{% endraw %}  | If a code is already successfully added, it will be autofilled. <br> <br> or <br> <br> Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these |
+| value="{% raw %}{%- if discount_code != blank -%}{{discount_code}}{%- endif -%}{% endraw %}" <br> <br> or <br> <br> {%raw %}{% if discount_code != blank %}value="{{discount_code}}" readonly{% endif -%}{% endraw %} | If a code is already successfully added, it will be autofilled. <br> <br> or <br> <br> Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these |
 
 
 ### 3b - Add an "Apply" button

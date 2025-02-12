@@ -356,7 +356,7 @@
       * [Edit Module Structure](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/edit-module-structure.md)
       * [Product Custom Field Sets](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/custom-field-sets.md)
       * [Inventory](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/inventory.md)
-      * [Managing Attributes](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md)
+      * [Managing Attributes](ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md)
       * [Pricing](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/pricing.md)
       * [Product Categories](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/product-categories.md)
       * [Open Graph Fields](eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/open-graph-fields.md)
