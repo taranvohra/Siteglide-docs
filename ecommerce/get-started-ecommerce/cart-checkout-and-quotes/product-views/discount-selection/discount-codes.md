@@ -6,7 +6,7 @@ This Article explains how to output a Discount Codes Layout in either Basic Paym
 
 Discount Codes allow your Client to provide special offers to their customers.
 
-You can learn how to [set up Discount Codes in the Admin](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) here.
+You can learn how to [set up Discount Codes in the Admin](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/managing-attributes.md) here.
 
 The role of a Discount Code Layout is to give the customer an opportunity to enter and apply a Discount Code on your Site. Additionally, once a code is applied, the Layout will give the customer information about how their code has been applied along with any terms and conditions, and the opportunity to remove the code.
 
@@ -30,11 +30,11 @@ The screenshot below shows how the Discount Code Layout can be nested inside the
 The following Liquid will add the Layout:
 
 ```liquid
+{% raw %}
 {% include 'ecommerce/discount_code'
    layout: "cart/default" 
 %}
-
-
+{% endraw %}
 ```
 
 The only parameter you'll need will be `layout` which refers to the file name of the Layout. We'll look at where to create the Layout files in Step 2.
@@ -126,14 +126,11 @@ For steps 3 and onwards, you may find it easier to copy and edit the code from t
 
 _HTML Attributes Explained:_
 
-| **Code**               | **Purpose**                              | **Required** |
-| ---------------------- | ---------------------------------------- | ------------ |
-| data-s-e-discount-code | Attribute should be added to input field | Yes          |
-| value="                |                                          |              |
+| **Code**                             | **Purpose**                              | **Required** |
+| ------------------------------------ | ---------------------------------------- | ------------ |
+| data-s-e-discount-code               | Attribute should be added to input field | Yes          |
+| value="{% raw %}{%- if discount_code != blank -%}{{discount_code}}{%- endif -%}{% endraw %}" <br> <br> or <br> <br> {%raw %}{% if discount_code != blank %}value="{{discount_code}}" readonly{% endif -%}{% endraw %}  | If a code is already successfully added, it will be autofilled. <br> <br> or <br> <br> Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these |
 
-\{{discount\\\_code\}}" or
-
-\| If a code is already successfully added, it will be autofilled. or Any successful code is autofilled and the current field value is readonly until removed in step b) | One of these |
 
 ### 3b - Add an "Apply" button
 
@@ -208,19 +205,15 @@ At this stage, you have a choice about whether you'd like the whole Page to relo
 We'd strongly recommend that for Layouts on Forms that you set `reload: false` as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form.
 
 Note also that the value of `spend` will be different for Basic Payment Forms:
-
 * Basic Payment Forms store the `spend` value in `document.querySelector('#s_e_amount').value` - as this can be dynamically changed by JavaScript, there is no Liquid value for it.
 * Cart and Checkout Forms can use the Liquid value: `'{{context.exports.cart_base_price.data | json}}'`
 * Subscriptions store the spend in `{{spend}}`
 
 | **Option**                                              | **Required / Default** | **Notes** |
 | ------------------------------------------------------- | ---------------------- | --------- |
-| spend: \* document.querySelector('#s\_e\_amount').value |                        |           |
-
-* '\{{context.exports.cart\_base\_price.data | json\}}'
-* '\{{spend\}}' | Required - no default | Basic Payment Forms use spend: document.querySelector('#s\_e\_amount').value - as this can be dynamically changed by JavaScript, there is no Liquid value for it. Cart and Checkout Forms can use the Liquid value:spend: '\{{context.exports.cart\_base\_price.data | json\}}' | | reload: \* true
-* false | default: true | Setting true will refresh the entire Page. Setting false will refresh the Discount Code Layout only. We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form. **If you select `false`, you must add the data-attribute data-s-e-refresh-layout-discount-code to the element which wraps around the Layout see Step 1) b)** | | error\_cb: \* custom JavaScript function name (don't call the function yet!) error\_cb: myErrorFunction | default: \* A JavaScript alert message will display the error. | For arguments and how to customise your own function, head to step 6. | | success\_cb: \* custom JavaScript function name (don't call the function yet!) success\_cb: mySuccessFunction | default: \* Depending on the reload option, will reload the Page or Layout
-* If reload is false and the Payment Type is Checkout, will update the total Price by running the s\_e\_cart\_update\_prices(); | For arguments and how to customise your own function, head to step 7. |
+| spend: <br> - `document.querySelector('#s\_e\_amount').value` <br> - `{% raw %}{{context.exports.cart_base_price.data \| json}}{% endraw %}` <br> - `{% raw %}{{spend}}{% endraw %}`  | Required - no default  | Basic Payment Forms use spend: `document.querySelector('#s_e_amount').value` <br> - as this can be dynamically changed by JavaScript, there is no Liquid value for it. <br> <br> Cart and Checkout Forms can use the Liquid value: <br> <br> spend: `{% raw %}{{context.exports.cart_base_price.data \| json}}{% endraw %}` |
+| reload: <br> - true <br> - false | default: true | Setting true will refresh the entire Page. <br> <br> Setting false will refresh the Discount Code Layout only. <br> <br> We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form. <br> <br> If you select `false`, you must add the data-attribute `data-s-e-refresh-layout-discount-code` to the element which wraps around the Layout <br> see Step 1) b) |
+| error_cb: <br> - custom JavaScript function name (don't call the function yet!) <br> - success_cb: mySuccessFunction | default: <br> <br> - Depending on the reload option, will reload the Page or Layout <br> - If reload is false and the Payment Type is Checkout, will update the total Price by running the `s_e_cart_update_prices()`; | For arguments and how to customise your own function, head to step 7. |
 
 ## Step 4 - Add HTML and Liquid to allow a Customer to Remove a Discount Code
 
@@ -246,9 +239,9 @@ The JavaScript function will make the button functional.
 
 | **Option**      | **Required / Default** | **Notes** |
 | --------------- | ---------------------- | --------- |
-| reload: \* true |                        |           |
+| reload: <br> - true <br> - false | default: true | Setting true will refresh the entire Page. <br> <br> Setting false will refresh the Discount Code Layout only. <br> <br> We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form. <br> <br> If you select `false`, you must add the data-attribute `data-s-e-refresh-layout-discount-code` to the element which wraps around the Layout <br> see Step 1) b) |
+| success_cb: | Default: <br> <br> Depending on how you set the refresh setting, will refresh the Page or the Layout. | For arguments and how to customise your own function, head to step 8. |
 
-* false | default: true | Setting true will refresh the entire Page. Setting false will refresh the Discount Code Layout only. We'd strongly recommend that for Layouts on Forms that you set reload: false as this will prevent the User having to re-enter their Form data, and will preserve any custom amount chosen on the Basic Payment Form. If you select false, you must add the data-attribute data-s-e-refresh-layout-discount-code to the element which wraps around the Layout see Step 1) b) ---------------------------------------------------------------------------------------------------------------------------------------------------------- | | success\_cb: | Default: Depending on how you set the refresh setting, will refresh the Page or the Layout. | For arguments and how to customise your own function, head to step 8. |
 
 _Why is this helpful?_ Although we check Discount Codes are valid when they are added, there are cases where the code is no longer valid by the time the customer reaches the Checkout, for example:
 
@@ -318,7 +311,8 @@ On Subscription Layouts it is important to know whether or not the Subscription 
 
 For both situations, we can use the fields inside the discount variable to access details on the Discount.
 
-\*Before the Subscription Order is Created \*At this stage, we can use general details of the discount which is applied, but not yet redeemed, from the `this` object.
+_Before the Subscription Order is Created_  
+At this stage, we can use general details of the discount which is applied, but not yet redeemed, from the `this` object.
 
 ```liquid
 {% raw %}
@@ -350,7 +344,8 @@ For both situations, we can use the fields inside the discount variable to acces
 
 ```
 
-\*After the Subscription Order is Created and the Discount Redeemed \*At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
+_After the Subscription Order is Created and the Discount Redeemed_  
+At this stage, we can use details of the actual discount code stored against the Subscription Order. As this is time limited, we may also wish to give details of how much longer the Discount will be active for and the specific Subscription Order will provide these details.
 
 ```liquid
 {% raw %}
@@ -479,16 +474,10 @@ Read more about the [Discount Maximum requirement](/eCommerce/get-started-ecomme
 * `discount_minimum` is a variable which contains the minimum spend needed for this Discount Code to be valid.
 * `discount_amount` is a variable which stores the calculated saving on the current Cart value.
 * `{{context.exports.cart_currency.data}}` will output the currency symbol on Cart and Checkout Layouts
-* \`
-
-\` will output the currency symbol on Basic Payment Layouts
-
-* \`
-
-`You can use this Liquid tag to format any Liquid price variable with the correct decimalisation. To use, set the`price\_data\` parameter to the variable you wish to format.
-
+* `{% raw %}{% include 'ecommerce/basic_payment_currency', format: 'symbol' %}{% endraw %}` will output the currency symbol on Basic Payment Layouts
+* `{% raw %}{%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter', price_data: discount_minimum -%}{% endraw %}` You can use this Liquid tag to format any Liquid price variable with the correct decimalisation. To use, set the `price_data` parameter to the variable you wish to format.
 * `discount_saving_maximum_reached` - if `true`, the Minimum Amount for the Discount Code has not been set strictly enough and the total Payment Due is below that allowed by the Payment Gateway. You can use this to display a warning message that it has not been possible to apply the full discount.
-* For Subscriptions, your Layout will inherit the variables of the Layouts it's nested within- meaning it will inherit variables from the Subscription Detail Page, then the Subscription Form. See details of these objects [here](/ecommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md#step-5-available-fields). e.g. \{{this.price.currency\_symbol\}}
+* For Subscriptions, your Layout will inherit the variables of the Layouts it's nested within- meaning it will inherit variables from the Subscription Detail Page, then the Subscription Form. See details of these objects [here](/eCommerce/get-started-ecommerce/subscriptions/subscriptions-detail.md#step-5-available-fields). e.g. `{{this.price.currency_symbol}}`
 
 ## Step 6 - Optional - Add JavaScript to handle errors
 

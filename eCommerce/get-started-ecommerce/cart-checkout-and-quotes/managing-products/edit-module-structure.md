@@ -4,7 +4,7 @@ Manage and edit your Products to enable detail views, secure this module, and ad
 
 Above your list of Products, you have the option to "Edit Module Structure".
 
-![Adding Custom Fields to a Product](/.gitbook/assets/getgist/migrating-assets/products/editModule.png)
+![Adding Custom Fields to a Product](/.gitbook/assets/getgist/migrating-assets/products/editmodule.png)
 
 Here, you can manage and edit information about this Module, such as:
 

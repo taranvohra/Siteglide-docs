@@ -8,7 +8,7 @@ From your Standard Fields, navigate to the 'Categories' tab.
 
 Within this tab, you see a list of your Categories.
 
-![Adding Categories to products](/.gitbook/assets/getgist/migrating-assets/products/cat2.png)
+![Adding Categories to products](/.gitbook/assets/getgist/migrating-assets/products/cat2.gif)
 
 To assign a Product to a Category, click the checkbox next to the Category that you'd like to assign it to and click save.
 
