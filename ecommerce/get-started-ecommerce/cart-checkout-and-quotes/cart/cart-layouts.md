@@ -67,7 +67,60 @@ Of course, this is just an ordinary link. It will need updating with the slug of
 
 The following reference shows how to output useful data about your Cart as a whole:
 
-<table data-full-width="true"><thead><tr><th>Field Name</th><th>Liquid Tag</th></tr></thead><tbody><tr><td>Total Quantity</td><td><code>{{context.exports.cart_total_quantity.data}}</code></td></tr><tr><td>Shipping Price</td><td></td></tr><tr><td>Shipping Price Before Tax</td><td></td></tr><tr><td>Shipping Price Tax Amount</td><td></td></tr><tr><td>Total Item Price</td><td></td></tr><tr><td>Total Item Price before Tax</td><td></td></tr><tr><td>Total Item Tax Amount</td><td></td></tr><tr><td>Total Price Reduction (due to discounts)</td><td></td></tr><tr><td>Final Total Price before Tax</td><td></td></tr><tr><td>Final Total Tax Amount</td><td></td></tr><tr><td>Final Total Price</td><td></td></tr></tbody></table>
+<table data-full-width="true">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Liquid Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Quantity</td>
+      <td><code>{% raw %}{{context.exports.cart_total_quantity.data}}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Shipping Price</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Shipping Price Before Tax</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Shipping Price Tax Amount</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Total Item Price</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Total Item Price before Tax</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Total Item Tax Amount</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Total Price Reduction (due to discounts)</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Final Total Price before Tax</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Final Total Tax Amount</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+    <tr>
+      <td>Final Total Price</td>
+      <td><code>{% raw %}{% include 'ecommerce/price_total', format_type: 'formatted' -%}{% endraw %}</code></td>
+    </tr>
+  </tbody>
+</table>
 
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
