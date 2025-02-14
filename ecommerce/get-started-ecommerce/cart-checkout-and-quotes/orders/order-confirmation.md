@@ -126,4 +126,4 @@ _Outputting Totals_
 
 * `{{ this['Currency Symbol'] }}`
 * `this['Total Price']`
-* {% raw %}{%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter', price_data: this['Total Price'] -%}{% endraw %} - A formatted total price
+* `{% raw %}{%- include 'modules/siteglide_ecommerce/ecommerce/price_formatter', price_data: this['Total Price'] -%}{% endraw %}` - A formatted total price

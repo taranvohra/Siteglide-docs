@@ -54,10 +54,6 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
 
 {% endfor %}
 {% endraw %}
-
-
-
-
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
@@ -68,17 +64,14 @@ The button will only work if the User is logged in, so you may wish to add the f
 <!-- Code only runs if User is logged in -->
 {% endif %}
 {% endraw %}
-
-
-
-
 ```
 
 ### The Button Layout
 
 Adding the button will load a small button layout. You can find the default Layout or create a custom Layout at the following path: `layouts/modules/module_14/components/reorder_button/my_layout_name.liquid`
 
-\*\*\*Adding the function \*\*\*The styling of the button is completely up to you. To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
+**Adding the function**  
+The styling of the button is completely up to you. To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
 
 ```liquid
 onclick="s_e_reorder({ order_id: '{{order_id}}'
@@ -86,9 +79,6 @@ onclick="s_e_reorder({ order_id: '{{order_id}}'
                         cart_url: '/cart'
                         error_cb: error
                         success_cb: success})"
-
-
-
 ```
 
 The function takes a single argument containing an options object. The available arguments are as follows:
@@ -101,7 +91,8 @@ The function takes a single argument containing an options object. The available
 | error\_cb:  | Custom Error Function Name                       | error                | Optional      |
 | success\_cb | Custom Success Function Name                     | success              | Optional      |
 
-\*\*\*Adding a Custom Error Function \*\*\*The Custom Error function will be called in the following circumstances (the table also shows the value of the "error" parameter passed back when this occurs):
+**Adding a Custom Error Function**  
+The Custom Error function will be called in the following circumstances (the table also shows the value of the "error" parameter passed back when this occurs):
 
 | **Error**                                                               | `error`\*\* parameter value\*\*                    |
 | ----------------------------------------------------------------------- | -------------------------------------------------- |
@@ -117,7 +108,8 @@ Parameters returned:
 
 The default error behaviour is to display an "alert" containing the error message.
 
-\*\*\*Adding a Custom Success Function \*\*\*If you add a Custom Success Function, you must add a Custom Error Function.
+**Adding a Custom Success Function**  
+If you add a Custom Success Function, you must add a Custom Error Function.
 
 The custom success function will run if an Order was successfully found and at least one Product was successfully added to the Cart. Not all Products related to the Order may have been available.
 
@@ -137,18 +129,15 @@ Successfully added Products are automatically added to the User's Cart. When the
 
 The following Liquid tags can be used to either confirm the Order ID which has been added to the Cart, or present a detailed breakdown of the Products which were not successfully added; this is an alternative to showing this information in the Custom Success Function.
 
-| **Liquid Tag**                                       | **Purpose**                                                                                                                                                                                    | **Example Output**                                                                         |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| \{{context.session.reorder\_added\_to\_cart\}}       | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder. | "345"                                                                                      |
+| **Liquid Tag**                                       | **Purpose**           | **Example Output**                                |
+| ---------------------------------------------------- | --------------------- | ------------------------------------------------- |
+| \{{context.session.reorder\_added\_to\_cart\}}       | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder. | "345" |
 | \{{context.session.reorder\_unavailable\_products\}} | An Object containing details on unsuccessful Products- if there were any. This contains the same information returned to the Custom JavaScript Callback Functions.                             | {"173":{"product\_id":"173","name":"Classical Summer Album","expiry\_date":"2145916800"\}} |
-|                                                      |                                                                                                                                                                                                |                                                                                            |
+| {% raw %}{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[0]}}<br><br>{% endfor %}{% endraw %} | By looping over the unavailable Products and accessing the [0] index, you can access their key:<br><br>- the Product ID. | "123" |
+| {% raw %}{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[1].name}}<br>{{this[1].expiry_date}}<br>{{this[1].expiry_date \| date: "%d/%m/%Y" }}<br><br>{% endfor %}{% endraw %} | By looping over the unavailable Products and accessing the [1] index, you can access their fields:<br><br>- the Name<br>- the expiry date of the Product<br>- the expiry date of the Product (formatted) | - "Classical Summer"<br>- "2145916800"<br>- "01/11/2020" |
+| {% raw %}{% session reorder_unavailable_products = null %}{% endraw %} | Clear the reorder_unavailable_products data from the session <br><br> This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. |  |
+| {% raw %}{% session reorder_added_to_cart = null %}{% endraw %} | Clear the reorder_added_to_cart data from the session. <br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. |  |
 
-\| By looping over the unavailable Products and accessing the \\\[0] index, you can access their key: - the Product ID. | "123" | || By looping over the unavailable Products and accessing the \\\[1] index, you can access their fields: - the Name- the expiry date of the Product- the expiry date of the Product (formatted) | \* "Classical Summer"
-
-* "2145916800"
-*   "01/11/2020" | |
-
-    \| Clear the reorder\_unavailable\_products data from the session This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. | | || Clear the reorder\_added\_to\_cart data from the session.This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. | |
 
 The above Liquid tags are accessing the User's session. This means they are temporary messages for that User. Each time an order is reordered the old message will be replaced.
 

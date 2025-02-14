@@ -79,10 +79,6 @@ We've now created an array of all the individual "parameters" in our "full\_slug
   {% endfor %}
 {% endfor %}
 {% endraw %}
-
-
-
-
 ```
 
 This will check all of the parameters, make sure you replace "product-group" with whichever slug your wrapping Category is using. If it is a Product grouping Category, we store the ID in the variable "group\_category". We'll use this ID later to output our Related Products.
@@ -162,9 +158,8 @@ If you're in a Detail layout, make sure to include the `type: 'list'` parameter.
 
 ### Create an object containing the included Products
 
-The Collection will call all the specified items into `{{context.exports}}`, to save us writing the whole path to the item each time we output something, we'll store them in an Object: \`
-
-\`
+The Collection will call all the specified items into `{{context.exports}}`, to save us writing the whole path to the item each time we output something, we'll store them in an Object:  
+`{% raw %}{% assign items = context.exports['module_14/product'].data.result.items %}{% endraw %}`
 
 Now loop over the object, at each iteration we'll check that the ID doesn't equal the ID of the Product being displayed on the Detail Page (this will stop the Product on the Detail page being displayed as related). We'll use `{{this.id}}` to do this:
 

@@ -67,9 +67,8 @@ Meanwhile you can use the following Liquid to fetch the same message. This is us
 {% endraw %}
 ```
 
-You can clear the message from the session when you believe the User has had a chance to read it and it will no longer be relevant. (In most cases, you'd display this straight after the Liquid version of the message). We'll clear this automatically if the function is run again without removing any products. \`
-
-\`
+You can clear the message from the session when you believe the User has had a chance to read it and it will no longer be relevant. (In most cases, you'd display this straight after the Liquid version of the message). We'll clear this automatically if the function is run again without removing any products.  
+`{% raw %}{% session cart_has_removed_products = null %}{% endraw %}`
 
 We'll explain how you can customize the message itself later in the function options.
 

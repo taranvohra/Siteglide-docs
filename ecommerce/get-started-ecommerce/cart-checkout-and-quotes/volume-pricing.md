@@ -37,7 +37,11 @@ You may wish Front End to dynamically display the available prices for a product
 
 Inside the Product List/ Detail Page item.liquid file, you'll have access to the following fields:
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name / Liquid Tag</strong></td><td><strong>Example</strong></td><td><strong>Notes</strong></td></tr><tr><td>{{this['Volume pricing Enabled']}}</td><td>true</td><td>Contains a boolean. If false, normal pricing will be used.</td></tr><tr><td>{{this['Volume Pricing']}}</td><td>{ "100": 400, "1000": 350}</td><td>Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you.</td></tr></tbody></table>
+| **Field Name / Liquid Tag** | **Example** | **Notes** |
+| --------------------------- | ----------- | --------- |
+| `{% raw %}{{this['Volume pricing Enabled']}}{% endraw %}` | true | Contains a boolean. If false, normal pricing will be used. |
+| `{% raw %}{{this['Volume Pricing']}}{% endraw %}` | { "100": 400, "1000": 350} | Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you. |
+
 
 When looping over an object like `this['Volume Pricing']`, `.first` allows you to access the key (here the quantity threshold) and `.last` allows you to access the value (here the price).
 
@@ -67,7 +71,13 @@ First though, we use logic in the first line to check if the pricing has been en
 
 Inside the Order Confirmation Email, you'll have access to the following relevant fields.
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name / Liquid Tag</strong></td><td><strong>Example</strong></td><td><strong>Notes</strong></td></tr><tr><td>{{product.volume_pricing_original_price}}</td><td>60.00</td><td>A formatted price representing the price of the row, had the better volume price not been applied.</td></tr><tr><td>{{product.volume_pricing_threshold_reached}}</td><td>4</td><td>The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below.</td></tr><tr><td>{{product.currency_symbol}}</td><td>£</td><td></td></tr><tr><td>{{product.price}}</td><td>19.00</td><td>This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available.</td></tr></tbody></table>
+| **Field Name / Liquid Tag** | **Example** | **Notes** | 
+| --------------------------- | ----------- | --------- |
+| `{% raw %}{{product.volume_pricing_original_price}}{% endraw %}` | 60.00 | A formatted price representing the price of the row, had the better volume price not been applied. |
+| `{% raw %}{{product.volume_pricing_threshold_reached}}{% endraw %}` | 4 | The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below. |
+| `{% raw %}{{product.currency_symbol}}{% endraw %}` | £ |  |
+| `{% raw %}{{product.price}}{% endraw %}` | 19.00 | This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available. |
+
 
 The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
 
