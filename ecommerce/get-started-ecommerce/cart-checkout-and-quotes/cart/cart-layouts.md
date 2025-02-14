@@ -38,10 +38,6 @@ See the full Cart & Checkout folder structure here:
 [cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
-{% endcontent-ref %}
-
 ## wrapper.liquid
 
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
