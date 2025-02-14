@@ -56,10 +56,6 @@ If you need to refer to the folder structure for where layout files should go, r
 [cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../cart-and-checkout-folder-structure.md" %}
-[cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
-{% endcontent-ref %}
-
 ### Creating a new set of Product Layouts
 
 To create a new set of Product layouts- create a new folder bearing the name of your layout, and create within it:
