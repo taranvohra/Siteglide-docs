@@ -11,7 +11,7 @@ How to customise the Shopping Cart Layout
 
 ## Prerequisites
 
-* You have completed [How to Create a Shopping Cart and Guest Checkout](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
+* You have completed [How to Create a Shopping Cart and Guest Checkout](../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/steps-to-implement-a-guest-checkout-flow.md)
 
 ## :deciduous\_tree: Folder Structure
 
@@ -38,6 +38,10 @@ See the full Cart & Checkout folder structure here:
 [cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
 {% endcontent-ref %}
 
+{% content-ref url="../../cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
+
 ## wrapper.liquid
 
 The wrapper.liquid file should contain the code for the main section of code that wraps around the loop of Products in the Cart. It should include the following liquid to insert the loop of Products:
@@ -51,6 +55,7 @@ The wrapper.liquid file should contain the code for the main section of code tha
   Sorry, your cart is empty.
 {% endif %}
 {% endraw %}
+
 
 
 ```
@@ -67,20 +72,21 @@ Of course, this is just an ordinary link. It will need updating with the slug of
 
 The following reference shows how to output useful data about your Cart as a whole:
 
-| **Field Name**                           | **Liquid Tag**                                                                                          |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Total Quantity                           | `{% raw %}{{context.exports.cart_total_quantity.data}}{% endraw %}`                                     |
-| Shipping Price                           | `{% raw %}{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}{% endraw %}`              |
-| Shipping Price Before Tax                | `{% raw %}{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}{% endraw %}`   |
-| Shipping Price Tax Amount                | `{% raw %}{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}{% endraw %}`   |
-| Total Item Price                         | `{% raw %}{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}{% endraw %}`       |
-| Total Item Price Before Tax              | `{% raw %}{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}{% endraw %}` |
-| Total Item Tax Amount                    | `{% raw %}{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}{% endraw %}` |
-| Total Price Reduction (due to Discounts) | `{% raw %}{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}{% endraw %}`       |
-| Final Total Price Before Tax             | `{% raw %}{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}{% endraw %}`      |
-| Final Total Tax Amount                   | `{% raw %}{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}{% endraw %}`      |
-| Final Total Price                        | `{% raw %}{% include 'ecommerce/price_total', format_type: 'formatted' -%}{% endraw %}`                 |
+| **Field Name**                           | **Liquid Tag**                                                                     |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- |
+| Total Quantity                           | `{{context.exports.cart_total_quantity.data}}`                                     |
+| Shipping Price                           | `{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}`              |
+| Shipping Price Before Tax                | `{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}`   |
+| Shipping Price Tax Amount                | `{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}`   |
+| Total Item Price                         | `{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}`       |
+| Total Item Price Before Tax              | `{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}` |
+| Total Item Tax Amount                    | `{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}` |
+| Total Price Reduction (due to Discounts) | `{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}`       |
+| Final Total Price Before Tax             | `{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}`      |
+| Final Total Tax Amount                   | `{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}`      |
+| Final Total Price                        | \`\{% include 'ecommerce/price\_total', format\_type: 'formatted' -%\}             |
 
+\` |
 
 If you have added Product Attributes to the Products in the Siteglide Admin, you can also access the `cart_product_attributes` with the following liquid: `{{ context.exports.cart_product_attributes }}`
 
@@ -100,7 +106,7 @@ When modifying the cart with JS, this `cart_id` will be needed.\
 Multiple lines in the cart may refer to the same product if a different combination of attributes is selected.
 {% endhint %}
 
-Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md).
+Building the Cart's item.liquid file is similar to building an item.liquid layout file for a Product List View. Learn more about the available fields [here](../product-views/product-liquid-reference.md).
 
 There are some additional points to bear in mind when creating a cart layout's item.liquid file:
 
@@ -140,7 +146,7 @@ function removeCallback() {
 
 #### Increasing the Quantity of a Product in the Cart:
 
-See the full Article on [updating Product quantities here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart.md).
+See the full Article on [updating Product quantities here](updating-quantity-in-cart.md).
 
 #### item.liquid
 
@@ -174,6 +180,7 @@ Note that, after updating this input field, the User will also have to click the
 {% raw %}
 {% include 'ecommerce/cart_product_attributes' %}
 {% endraw %}
+
 
 ```
 
