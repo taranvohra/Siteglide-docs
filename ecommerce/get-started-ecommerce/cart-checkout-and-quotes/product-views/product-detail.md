@@ -11,7 +11,7 @@ Customise the way Products look on their automatically generated Detail Pages an
 
 ## Prerequisites
 
-* You have [created Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md) in the Admin
+* You have [created Products](../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/) in the Admin
 
 ## Getting Started
 
@@ -43,6 +43,10 @@ In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as 
         * `my_attribute_layout.liquid`
 
 See more:
+
+{% content-ref url="../../cart-and-checkout-folder-structure.md" %}
+[cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
+{% endcontent-ref %}
 
 {% content-ref url="../../cart-and-checkout-folder-structure.md" %}
 [cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
@@ -105,13 +109,15 @@ item.liquid -- detail view example
     </div>
   </div>
   <hr class="mt-4 mb-4">
-  {% raw %}
+  
+{% raw %}
 {% if this['Description'] %} <h4>Product Description</h4> {{this['Description']}} {% endif %}
   <hr class="mt-4 mb-4">
   <div class="row product-detail-buttons">
     <div class="col-12 col-md-6">
       {% include 'ecommerce/cart_add' -%}
 {% endraw %}
+
     </div>
     <div class="col-12 col-md-6">
       <a class="btn btn-primary" href="/cart">View my Cart</a>
@@ -121,7 +127,7 @@ item.liquid -- detail view example
 
 ```
 
-Unlike the List View, the code in the item.liquid file in the Detail folder will only be displayed once instead of looped. Inside the `item.liquid` file, you'll have access to the "this" object, which contains the fields you'll need. See [reference](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md) for available fields or output `{{this | json}}` in the item.liquid file to see the exact data available to you.
+Unlike the List View, the code in the item.liquid file in the Detail folder will only be displayed once instead of looped. Inside the `item.liquid` file, you'll have access to the "this" object, which contains the fields you'll need. See [reference](product-liquid-reference.md) for available fields or output `{{this | json}}` in the item.liquid file to see the exact data available to you.
 
 #### Add to Cart
 
