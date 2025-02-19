@@ -1,5 +1,17 @@
 # 🛳️ CLI Changelog
 
+### 1.10.1 - 19th February 2025
+
+* Add support for new London server stack
+
+***
+
+### 1.9.8 - 20th August 2024
+
+* Add support for Node LTS (v20.16.0)
+
+***
+
 ### 1.9.6 - 3rd August 2022
 
 * Allow `.md` and `.htm` file extensions
