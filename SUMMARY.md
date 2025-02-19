@@ -50,6 +50,7 @@
   * [📋 Site Setup](developer-tools/cli/site-setup.md)
   * [❔ Troubleshooting](developer-tools/cli/troubleshooting.md)
   * [💻 Reference](developer-tools/cli/reference.md)
+  * [💻 Changelog](developer-tools/cli/changelog.md)
   * [🧙‍♂️ Go Further: CLI](developer-tools/cli/go-further-cli/README.md)
     * [Creating WebApps via CLI](developer-tools/cli/go-further-cli/creating-webapps-via-cli.md)
 * [Liquid](developer-tools/liquid/README.md)
