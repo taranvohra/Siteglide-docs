@@ -30,7 +30,7 @@ You can see what Role a User has by clicking the Roles tab on a User:
 
 ## Access limits based on 'User Level'
 
-A user either has a 'User Level' of 'Agency' or 'Client'. This is independent of their precise roles, and inflicts some limitations that are permanent and cannot be overcome by editing User Roles.
+A user has a 'User Level' of either 'Agency' or 'Client'. This is independent of their precise roles, and inflicts some limitations that are permanent and cannot be overcome by editing User Roles.
 
 If the User Level is set to 'Client', then the Portal view is limited to:
 
