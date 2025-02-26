@@ -1,5 +1,11 @@
 # 🛳️ Module - System Files - Changelog
 
+### 2.8.3.1 - 26th February 2025
+
+* Patch to fix Front-End Rollout Automations
+
+***
+
 ### 2.8.3.0 - 20th December 2024
 
 * Added support for Rollout front-end Automations (Form submissions, and WebApp item create/update/delete)
