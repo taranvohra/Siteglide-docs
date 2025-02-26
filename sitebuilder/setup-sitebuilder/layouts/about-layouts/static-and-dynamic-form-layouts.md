@@ -4,9 +4,9 @@
 
 Form Layouts are designed to supercharge your experience of setting up forms in Siteglide with these key objectives:
 
-* ##### Get started quicker. No need to copy and paste fields from the default layout into a custom layout anymore in order to add styling. With a click, you can have a styled form layout ready to go.
-* ##### Get consistent styles across your forms - Form layouts are modular, using component layouts to style individual UI-controls. This makes it easier to apply consistent styles between your contact form and secure zone signup form without editing every line individually. Just add the code for each component to that form's layout once.
-* ##### Low Maintenance - No need to change your form layout every time a new field is added or removed in the Admin. By choosing the dynamic option, your layout will automatically adapt to any changes in the Admin and display them in the form.
+* **Get started quicker. No need to copy and paste fields from the default layout into a custom layout anymore in order to add styling. With a click, you can have a styled form layout ready to go.**
+* **Get consistent styles across your forms - Form layouts are modular, using component layouts to style individual UI-controls. This makes it easier to apply consistent styles between your contact form and secure zone signup form without editing every line individually. Just add the code for each component to that form's layout once.**
+* **Low Maintenance - No need to change your form layout every time a new field is added or removed in the Admin. By choosing the dynamic option, your layout will automatically adapt to any changes in the Admin and display them in the form.**
 
 <figure><img src="https://res.cloudinary.com/sitegurus/image/upload/v1658236824/modules/module_86/admin/libraries/5/Contact-Form1.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,13 +28,13 @@ The Form Layouts are organised into sections based on the Siteglide feature they
 * Module Item Update Forms\
   etc.
 
-Click to learn more about [WebApp CRUD Forms](/webapps/go-further-webapps/webapp-front-end-submit-forms-create.md) and [Module CRUD Forms](/modules/go-further-modules/front-end-submit-modules.md).
+Click to learn more about [WebApp CRUD Forms](../../../../webapps/go-further-webapps/webapp-front-end-submit-forms-create.md) and [Module CRUD Forms](../../../../modules/go-further-modules/front-end-submit-modules.md).
 
 ### Layout Installation <a href="#layout-installation" id="layout-installation"></a>
 
 The Form layouts can be installed in the same way as other SiteBuilder layouts, but with a few differences:
 
-![Installing a Form Layout](https://res.cloudinary.com/sitegurus/image/upload/v1658919641/modules/module\_86/documentation/form\_options.jpg)
+![Installing a Form Layout](https://res.cloudinary.com/sitegurus/image/upload/v1658919641/modules/module_86/documentation/form_options.jpg)
 
 Note that it's recommended to output Update and Delete Forms for WebApps and Modules inside a WebApp Layout so that they inherit the correct ID and other data. This is why these layouts are not available directly on PageBuilder yet.
 
@@ -103,11 +103,14 @@ This file structure will be exactly the same whether you opt for a static or dyn
 ### Static Wrapper <a href="#static-wrapper" id="static-wrapper"></a>
 
 A static wrapper contains
+
 ```liquid
 {% raw %}
 {% include %}
 {% endraw %}
+
 ```
+
 liquid tags for each component in your form and passes them the data they need via parameters. These parameters may appear to be hardcoded, however, it was dynamically generated at the time the layout was created by SiteBuilder- it will just need editing if there are any subsequent changes in Admin.
 
 Alternatively, after making changes to the form configuration, you can always use SiteBuilder to re-generate a new version of the layout with a new name and new parameters.
@@ -125,6 +128,7 @@ A dynamic wrapper does not include components directly; instead it includes this
 
 
 
+
 ```
 
 This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide \`
@@ -134,22 +138,25 @@ This tag can be passed parameters to modify its behaviour. Any of the parameters
 #### The `collection` Parameter <a href="#the-collection-parameter" id="the-collection-parameter"></a>
 
 Setting `collection: 'false'` means the fields will be outputted in the HTML exactly in the place of the
+
 ```liquid
 {% raw %}
 {% include 'form_layout_fields' %}
 {% endraw %}
+
 ```
+
 tag.
 
 Setting `collection: 'true'` allows you to re-position key groups of fields within your wrapper.
 
-See [available field groups](/sitebuilder/setup-sitebuilder/layouts/about-layouts/static-and-dynamic-form-layouts#available-field-groups) below.
+See [available field groups](static-and-dynamic-form-layouts/#available-field-groups) below.
 
-##### Outputting field groups on the page while using `collection='true'`
+**Outputting field groups on the page while using `collection='true'`**
 
 The available field groups are:
 
-##### Siteglide and Custom Form Fields
+**Siteglide and Custom Form Fields**
 
 This contains all Siteglide and all Custom Fields in the Form:
 
@@ -158,7 +165,7 @@ This contains all Siteglide and all Custom Fields in the Form:
 
 ```
 
-##### Hidden Fields
+**Hidden Fields**
 
 This contains hidden fields needed to run the form:
 
@@ -167,7 +174,7 @@ This contains hidden fields needed to run the form:
 
 ```
 
-##### Address Fields
+**Address Fields**
 
 This is an array which contains all CRM addresses added to the form, if any are present:
 
@@ -185,11 +192,12 @@ This is an array which contains all CRM addresses added to the form, if any are 
 
 
 
+
 ```
 
 The code here will loop over them all and output them all, but you can edit this if you want to display Billing and Shipping addresses separately.
 
-##### reCaptcha
+**reCaptcha**
 
 This contains the hCaptcha or reCaptcha, if present:
 
@@ -200,7 +208,7 @@ This contains the hCaptcha or reCaptcha, if present:
 
 Note that Siteglide recommends using hCaptcha with forms. This file however, continues to be named reCaptcha for backwards-compatibility reasons.
 
-##### Payment Gateway
+**Payment Gateway**
 
 This contains the payment gateway and payment fields, if present:
 
@@ -243,7 +251,7 @@ This feature could also be useful if you wish to hide and show some fields condi
 
 These parameters exist primarily for the use-case of implementing a form with multiple parts or sections, where each section is actually a form in its own right. Siteglide mandates the inclusion of the name and email fields in every form that outputs, but this solution allows you to hide these fields on the 2nd, 3rd etc. sections of the form while the user is logged in and their values are auto-filled behind the scenes (and is still submitted along with the form). This use-case is demonstrated on the Flowbite Demo Site:
 
-![Multi Part Forms on Demo Site](https://res.cloudinary.com/sitegurus/image/upload/v1658936046/modules/module\_86/documentation/multi-section-forms.jpg)
+![Multi Part Forms on Demo Site](https://res.cloudinary.com/sitegurus/image/upload/v1658936046/modules/module_86/documentation/multi-section-forms.jpg)
 
 For both parameters, the default is `'false'` and turning on the feature is `'true'`.
 
@@ -255,6 +263,7 @@ For both parameters, the default is `'false'` and turning on the feature is `'tr
 
 
 
+
 ```
 
 If the user is not logged in, the fields will show as normal, as they are awaiting user input.
@@ -262,18 +271,22 @@ If the user is not logged in, the fields will show as normal, as they are awaiti
 Important note: this functionality relies on the `name_field` and `email` components to contain code which will hide these fields, because the fields need to output, but hidden. If your component does not contain this code, you can add the example from below:
 
 ```liquid
-<div class="{% raw %}
+<div class="
+{% raw %}
 {% if context.current_user.id != blank and hide_email_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
-{% endraw %}" >
+{% endraw %}
+" >
   <!-- Add rest of email component here. -->
 </div>
 
 ```
 
 ```liquid
-<div class="{% raw %}
+<div class="
+{% raw %}
 {% if context.current_user.id != blank and hide_name_while_logged_in == 'true' %} absolute w-0 h-0 invisible  {% endif %}
 {% endraw %}
+
 
 
 ">
@@ -291,27 +304,27 @@ Set `include_email_editor` to `'true'` to include the `edit_email` component in 
 
 Set `include_password_editor` to `'true'` to include the `edit_password` component in the form.
 
-##### Authorizing the Change
+**Authorizing the Change**
 
 Including either of these parameters will also cause the current `password` component to display, as this is needed to authorise the change.
 
-##### Validation
+**Validation**
 
 Siteglide provides server-side validation to ensure the security of this functionality.
 
 On most form layouts we provide, the default behaviour for client-side validation is that if an edit\_email or edit\_password component is displayed on the form, it is required. This is the simplest behaviour to implement and makes sense if you have an account area with separate small forms for each possible action. If you have one large form and you want editing email/password to be optional, it might be sensible to add JavaScript to remove the required classes from the fields if they are empty, or to change this directly in the component layouts. You would also need to remove the required class from the `password` field in the situation that neither an attempt to change email, nor password was attempted.
 
-##### Adding Confirmation Validation
+**Adding Confirmation Validation**
 
 Set `confirm_email_password` to `'true'` and any email or password edit field will come along with a confirmation field for validation. This comes with client-side and server-side validation.
 
-##### Troubleshooting Edit Email & Password
+**Troubleshooting Edit Email & Password**
 
 A form must have a secure zone set against it for this feature to work properly.
 
-##### Editing Email & Password on Static Form Layouts
+**Editing Email & Password on Static Form Layouts**
 
-For Static Layouts, follow the Siteglide Documentation for [editing emails & passwords](/crm/users/how-users-edit-their-email-and-password-front-end.md). You can include the relevant components and pass the components the paramters above if you like.
+For Static Layouts, follow the Siteglide Documentation for [editing emails & passwords](../../../../crm/users/how-users-edit-their-email-and-password-front-end.md). You can include the relevant components and pass the components the paramters above if you like.
 
 ### The `custom_form_redirect` parameter <a href="#the-custom_form_redirect-parameter" id="the-custom_form_redirect-parameter"></a>
 
@@ -357,13 +370,14 @@ The main Liquid parameters passed into form layout components are as follows:
 
 Using Siteglide-CLI, it is possible to give your Form's custom fields an order property. This will affect the order they appear in the Siteglide Admin, default form layout and SiteBuilder Form Layouts. For dynamic SiteBuilder form layouts, changes in order will appear immediately, however for static form layouts, the order will only affect the initial install of the layout.
 
-1. Firstly, pull the site using [Siteglide CLI](/developer-tools/cli/README.md).
+1. Firstly, pull the site using [Siteglide CLI](../../../../developer-tools/cli/).
 2. Next find the table's JSON file. The tables directory is at `marketplace_builder/views/partials/tables/`. Within that, you can find directories for forms, webapps and modules, with each one containing files numbered by IDs.
 3. (Optional) Convert the minified JSON into human-readable JSON. If using VSCode, you can use an extension like [JSON tools](https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools) or a similar equivalent for your IDE.\
    4.Inside the JSON file, find your custom field under `custom_fields`, e.g. `form_field_1_1`. If the `order` property already exists, edit it to a new number. Fields are ordered in ascending order, so the higher the number, the earlier in the form it will appear. Negative and decimal numbers are allowed.
 4. (Optional) If you carried out step 3, minify your JSON file.
 5. Sync the JSON file to the site.
 6. Save the form in the Siteglide Admin. This copies the changes from the JSON file into the Form Configuration automatically. (Previously we recomended making changes to order in the form configuration directly, however, the method stated above is now the only reliable method.)
+7. Find the form\_configuration file for your form at `marketplace_builder/form_configurations` find the same custom fields there and add the same order properties. (This is actually the most important step. Previous steps are mainly to avoid the table overwriting your changes in form\_configurations in the future).
 
 #### Default system field order <a href="#default-system-field-order" id="default-system-field-order"></a>
 
