@@ -11,7 +11,14 @@ description: >-
 
 These Fields are available to all standard modules:
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Name</strong></td><td><strong>Liquid Tag</strong></td><td><strong>Description</strong></td></tr><tr><td>Item Name</td><td>{{ this['name'] }}</td><td>name of the Blog Post</td></tr><tr><td>Item Slug</td><td>{{ this['slug'] }}</td><td>item URL</td></tr><tr><td>Weighting</td><td>{{ this['weighting'] }}</td><td>weight of item, used for sorting</td></tr><tr><td>Release Date</td><td>{{ this['release_date'] }}</td><td>release date of the item</td></tr><tr><td>Expiry Date</td><td>{{ this['expiry_date'] }}</td><td>expiry date of the item</td></tr><tr><td>Enabled</td><td>{{ this['enabled'] }}</td><td>enable/disable the item</td></tr></tbody></table>
+| **Field Name**  | **Liquid Tag**              | **Description**                                       |
+| --------------- | --------------------------- | ----------------------------------------------------- | 
+| Item Name       | {% raw %}{{ this['name'] }}{% endraw %}          | name of the Blog Post           |
+| Item Slug       | {% raw %}{{ this['slug'] }}{% endraw %}          | item URL                         |
+| Weighting       | {% raw %}{{ this['weighting'] }}{% endraw %}     | weight of item, used for sorting |
+| Release Date    | {% raw %}{{ this['release_date'] }}{% endraw %}  | release date of the item         |
+| Expiry Date     | {% raw %}{{ this['expiry_date'] }}{% endraw %}   | expiry date of the item          |
+| Enabled         | {% raw %}{{ this['enabled'] }}{% endraw %}       | enable/disable the item          |
 
 ## Output a Module Layout
 
@@ -63,9 +70,11 @@ If you nest any more Module or WebApp layouts inside this Module Layout, they wi
 
 To get the most recently "released" item, you can use the `sort_type` parameter to sort by `properties.release_date`. You can alternatively use `created_at` to sort by the Item you most recently added to the Admin.
 
-\`
-
-\`
+```liquid
+{% raw %}
+{% include 'module', id: '3', layout: 'default', sort_type: 'properties.release_date', sort_order: 'desc', per_page: '1' %}
+{% endraw %}
+```
 
 Then just output one post- to get the first Item. To do this, set `per_page` to `1`.
 

@@ -39,3 +39,23 @@ Use the following Liquid Syntax to output an Events List view:
 -%}
 {% endraw %}
 ```
+
+Additionally, the events list can also be sorted by core event module fields using the `sort_type` parameter and passing a module field such as event start date (`properties.module_field_12_2`), end date (`properties.module_field_12_3`), or event host (`properties.module_field_12_3`). 
+
+The following Liquid Syntax can be used to output an Events List view sorted by event start dates in descending order:
+
+```liquid
+{% raw %}
+{%- include 'module'
+    id: '12'
+    layout: 'design_system/1/list'
+    per_page: '2000'
+    sort_type: 'properties.module_field_12_2'
+    sort_order: 'desc'
+    show_pagination: 'false'
+    sub_model: 'true' 
+-%}
+{% endraw %}
+```
+
+More information on module fields can be found [here](/developer-tools/building-for-marketplace/modules-reference.md).
