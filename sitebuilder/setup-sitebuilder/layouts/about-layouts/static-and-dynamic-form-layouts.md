@@ -14,7 +14,21 @@ Form Layouts are designed to supercharge your experience of setting up forms in 
 
 These are the currently supported form features out of the box. Feel free to add more to your Static Layouts (see more about static vs. dynamic layouts below) and we may add more if there is popular demand.
 
-<table data-full-width="true"><thead><tr><th>Feature</th><th>Supported?</th></tr></thead><tbody><tr><td>User CRM fields</td><td>✔️</td></tr><tr><td>CRM Address Book - Add Addresses and if applicable store against a checkout order.</td><td>✔️</td></tr><tr><td>Secure Zones Signup</td><td>✔️</td></tr><tr><td>eCommerce Checkout Form</td><td>✔️</td></tr><tr><td>eCommerce Basic Payment Form</td><td>✔️</td></tr><tr><td>eCommerce Quote Form</td><td>✔️</td></tr><tr><td>reCaptcha or hCaptcha</td><td>✔️</td></tr><tr><td>eCommerce Subscription Form</td><td>✔️ Partial Support</td></tr><tr><td>CRM Address Book - Choose an existing Address</td><td>❌ Not yet. Awaiting: https://roadmap.siteglide.com/core-platform/p/crm-update-existing-addresses</td></tr><tr><td>CRM Companies</td><td>❌</td></tr><tr><td>Change Email / Change Password</td><td>✔️</td></tr><tr><td>Custom Field Sets</td><td>❌</td></tr><tr><td>WebApp &#x26; Module Front End Item Create/Edit/Delete Forms</td><td>✔️</td></tr></tbody></table>
+| **Feature**                                                                          | **Supported?**                                   |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| User CRM fields                                                                      | ✔️                                               | 
+| CRM Address Book - Add Addresses and if applicable store against a checkout order.   | ✔️                                               | 
+| Secure Zones Signup                                                                  | ✔️                                               |
+| eCommerce Checkout Form                                                              | ✔️                                               |
+| eCommerce Basic Payment Form                                                         | ✔️                                               |
+| eCommerce Quote Form                                                                 | ✔️                                               |
+| reCaptcha or hCaptcha                                                                | ✔️                                               |
+| eCommerce Subscription Form                                                          | ✔️ Partial Support                               |
+| CRM Address Book - Choose an existing Address                                        | ❌ Not yet. Awaiting: https://roadmap.siteglide.com/core-platform/p/crm-update-existing-addresses                                                                                                             |
+| CRM Companies                                                                        | ❌                                               |
+| Change Email / Change Password                                                       | ✔️                                               |
+| Custom Field Sets                                                                    | ❌                                               |
+| WebApp & Module Front End Item Create/Edit/Delete Forms                              |      ✔️                                          |  
 
 ### Types of Layout <a href="#types-of-layout" id="types-of-layout"></a>
 
@@ -48,7 +62,15 @@ With dynamic layouts though, the form is not restricted to working on a single o
 
 When you install a SiteBuilder form layout, you must choose whether you need a static or a dynamic layout.
 
-<table data-full-width="true"><thead><tr><th></th><th>Static Layout</th><th>Dynamic Layout</th></tr></thead><tbody><tr><td>Modular, component-based layouts for editing markup and styles consistently.</td><td>✔️</td><td>✔️</td></tr><tr><td>Quickly get started with a ready styled layout for your form.</td><td>✔️</td><td>✔️</td></tr><tr><td>Form layout files will work on any form without needing code changes.</td><td><p>❌</p><p>Re-install the layout from SiteBuilder to create a version which will work on the new form.</p></td><td>✔️ Note- they will need to be copied and pasted (or installed) into each form's layouts folder, but no changes in code needed!</td></tr><tr><td><p>No need to change your layout code when a new field or feature is added to the form in Admin.</p><p>The liquid code dynamically updates the HTML when the page is loaded by reading the fields defined in the Siteglide Admin form configuration.</p></td><td><p>❌</p><p>Re-install the layout from SiteBuilder to create a version which will work with the new features.</p></td><td>✔️</td></tr><tr><td>Full control over re-ordering fields in the Layout Code.</td><td>✔️</td><td>❌See the `defer_fields` parameter for options.</td></tr><tr><td>Can re-order fields in the file `marketplace_builder/views/partials/tables/forms/.liquid` in Siteglide-CLI using the `order` property for weighting.</td><td>❌</td><td>✔️</td></tr></tbody></table>
+|                                                                              | **Static Layout**                                | **Dynamic Layout** |
+| ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------ |
+| Modular, component-based layouts for editing markup and styles consistently. | ✔️                                               | ✔️                 |
+| Quickly get started with a ready styled layout for your form.                | ✔️                                               | ✔️                 |
+| Form layout files will work on any form without needing code changes.        | ❌ Re-install the layout from SiteBuilder to create a version which will work on the new form. | ✔️ |
+| No need to change your layout code when a new field or feature is added to the form in Admin. <br> <br> The liquid code dynamically updates the HTML when the page is loaded by reading the fields defined in the Siteglide Admin form configuration. | ❌ Re-install the layout from SiteBuilder to create a version which will work with the new features. | ✔️ |
+| Full control over re-ordering fields in the Layout Code. | ✔️                                               | ❌See the `defer_fields` parameter for options. | 
+| Can re-order fields in the file `marketplace_builder/views/partials/tables/forms/.liquid` in Siteglide-CLI using the `order` property for weighting. | ❌ | ✔️ |
+
 
 In summary, the main benefit of dynamic layouts is that they take very little code maintenance compared to traditional Siteglide form layouts. All features are controlled via the Siteglide Admin.
 
@@ -123,17 +145,9 @@ A dynamic wrapper does not include components directly; instead it includes this
 {% raw %}
 {% include "modules/module_86/form_layout_fields", collection: 'true' %}
 {% endraw %}
-
-
-
-
-
-
 ```
 
-This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide \`
-
-\` tag and the \`form\_layout\_fields\` include will inherit their values.
+This tag can be passed parameters to modify its behaviour. Any of the parameters below can alternatively be added directly to the Siteglide `{% raw %}{% include %}{% endraw %}` tag and the `form_layout_fields` include will inherit their values.
 
 #### The `collection` Parameter <a href="#the-collection-parameter" id="the-collection-parameter"></a>
 
@@ -150,7 +164,7 @@ tag.
 
 Setting `collection: 'true'` allows you to re-position key groups of fields within your wrapper.
 
-See [available field groups](static-and-dynamic-form-layouts/#available-field-groups) below.
+See [available field groups](/static-and-dynamic-form-layouts/#available-field-groups) below.
 
 **Outputting field groups on the page while using `collection='true'`**
 
@@ -188,10 +202,6 @@ This is an array which contains all CRM addresses added to the form, if any are 
   </div>
 {% endfor %}
 {% endraw %}
-
-
-
-
 
 ```
 
@@ -259,10 +269,6 @@ For both parameters, the default is `'false'` and turning on the feature is `'tr
 {% raw %}
 {% include "modules/module_86/form_layout_fields", collection: 'true', hide_name_while_logged_in: 'false', hide_email_while_logged_in: 'true' %}
 {% endraw %}
-
-
-
-
 
 ```
 
@@ -358,13 +364,52 @@ Some Siteglide field types are available only for CRM fields at the moment. We w
 
 The main components available are as follows:
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Field Type Components</strong></td><td></td></tr><tr><td>string.liquid</td><td></td></tr><tr><td>boolean.liquid</td><td></td></tr><tr><td>input_checkbox.liquid</td><td></td></tr><tr><td>input_radio.liquid</td><td></td></tr><tr><td>datasource_multi.liquid</td><td></td></tr><tr><td>datasource.liquid</td><td></td></tr><tr><td>date.liquid</td><td></td></tr><tr><td>textarea.liquid</td><td></td></tr><tr><td>select_multi.liquid</td><td></td></tr><tr><td>select.liquid</td><td></td></tr><tr><td>file.liquid</td><td></td></tr><tr><td><strong>Components with Unique Functionality</strong></td><td></td></tr><tr><td>hidden_fields.liquid</td><td>This contains hidden fields which are most likely to be edited, e.g. to override the form redirect.</td></tr><tr><td>email.liquid</td><td>Mandatory.</td></tr><tr><td>name_field.liquid</td><td>Mandatory.</td></tr><tr><td>password.liquid</td><td>Appears if Secure Zones are activated for the Form and right conditions are met.</td></tr><tr><td>recaptcha.liquid</td><td>Appears if reCaptcha is enabled for the form.</td></tr><tr><td>subheading.liquid</td><td>Only used if `collection` is set to false.</td></tr><tr><td>basic_payment.liquid</td><td>For eCommerce forms, the correct component will be included depending on the form's payment settings.</td></tr><tr><td>checkout_standard.liquid</td><td></td></tr><tr><td>quote_only.liquid</td><td></td></tr><tr><td>subscription_detail.liquid</td><td></td></tr></tbody></table>
+| **Field Type Components**                |                                                                                                       | 
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------- | 
+| string.liquid                            |                                                                                                       | 
+| boolean.liquid                           |                                                                                                       | 
+| input_checkbox.liquid                    |                                                                                                       | 
+| input_radio.liquid                       |                                                                                                       | 
+| datasource_multi.liquid                  |                                                                                                       | 
+| datasource.liquid                        |                                                                                                       | 
+| date.liquid                              |                                                                                                       | 
+| textarea.liquid                          |                                                                                                       | 
+| select_multi.liquid                      |                                                                                                       | 
+| select.liquid                            |                                                                                                       | 
+| file.liquid                              |                                                                                                       | 
+| **Components with Unique Functionality** |                                                                                                       | 
+| hidden_fields.liquid                     | This contains hidden fields which are most likely to be edited, e.g. to override the form redirect.   | 
+| email.liquid                             | Mandatory.                                                                                            | 
+| name_field.liquid                        | Mandatory.                                                                                            | 
+| password.liquid                          | Appears if Secure Zones are activated for the Form and right conditions are met.                      | 
+| recaptcha.liquid                         | Appears if reCaptcha is enabled for the form.                                                         | 
+| subheading.liquid                        | Only used if `collection` is set to false.                                                            | 
+| basic_payment.liquid                     | For eCommerce forms, the correct component will be included depending on the form's payment settings. | 
+| checkout_standard.liquid                 |                                                                                                       | 
+| quote_only.liquid                        |                                                                                                       | 
+| subscription_detail.liquid               |                                                                                                       |  
 
 More components may be added in future.
 
 The main Liquid parameters passed into form layout components are as follows:
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><code>{{name}}</code></td><td>The name attribute's value.</td></tr><tr><td><code>{{value}}</code></td><td>The value attribute's value.</td></tr><tr><td><code>{{attributes}}</code></td><td>This normally adds the data-attributes needed to allow the Siteglide CRM to work correctly, where appropriate.</td></tr><tr><td><code>{{validation}}</code></td><td><p>Normally contains either `` or <code>required</code> as required. For Siteglide, this needs to be included within the class list of the element (or in some cases e.g. checkbox groups, within the parent element's classList).</p><p>For libraries which use Bootstrap (or another library which relies on native HTML validation to some extent), it can also be useful to add the {{validation}} inside the element so that it also adds the required attribute to the element where required.</p></td></tr><tr><td><code>{{field_id}}</code></td><td>The field's ID.</td></tr><tr><td><code>{{label}}</code></td><td>The human-readable name of the field. Useful for labels.</td></tr><tr><td><code>{{options}}</code></td><td>An array of options for this component, where needed. For example for a &#x3C;select> component.</td></tr><tr><td><code>{{form_redirect}}</code></td><td>Pulls in the default form redirect URL.</td></tr><tr><td><code>{{form_payment_amount}}</code></td><td>Pulls in the default amount for Basic Payment Forms.</td></tr><tr><td><code>{{form_payment_currency}}</code></td><td>Pulls in the default currency for Basic Payment Forms.</td></tr><tr><td><code>{{include_email_editor}}</code></td><td>If `'true'`, the `password` component should display in order to allow the user to confirm their current password. This is necessary to confirm they have the required permissions to change their email address in another component. Inherited value.</td></tr><tr><td><code>{{include_password_editor}}</code></td><td>If `'true'`, the `password` component should display in order to allow the user to confirm their current password. This is necessary to confirm they have the required permissions to change their email password in another component. Inherited value.</td></tr><tr><td><code>{{confirm_email_password}}</code></td><td>If `'true'`, the `edit_password` and `edit_email` components should also display an additional confirmation field. Inherited value.</td></tr><tr><td><code>{{hide_email_while_logged_in}}</code></td><td>This value is inherited from: [hide_email_while_logged_in](#the-hide_name_while_logged_in-and-hide_email_while_logged_in-parameters)</td></tr><tr><td><code>{{hide_name_while_logged_in}}</code></td><td>This value is inherited from: [hide_name_while_logged_in](#the-hide_name_while_logged_in-and-hide_email_while_logged_in-parameters)</td></tr></tbody></table>
+| **Parameters**        |                     |
+| --------------------- | ----------------------- |
+| `{{name}}` | The name attribute's value. |
+| `{{value}}` | The value attribute's value. |
+| `{{attributes}}` | This normally adds the data-attributes needed to allow the Siteglide CRM to work correctly, where appropriate. |
+| `{{validation}}` | Normally contains either `.` or `required` as required. For Siteglide, this needs to be included within the class list of the element (or in some cases e.g. checkbox groups, within the parent element's classList). <br> <br> For libraries which use Bootstrap (or another library which relies on native HTML validation to some extent), it can also be useful to add the {{validation}} inside the element so that it also adds the required attribute to the element where required.  |
+| `{{field_id}}` | The field's ID. |
+| `{{label}}` | The human-readable name of the field. Useful for labels. |
+| `{{options}}` | An array of options for this component, where needed. For example for a <select> component. |
+| `{{form_redirect}}` | Pulls in the default form redirect URL. |
+| `{{form_payment_amount}}` | Pulls in the default amount for Basic Payment Forms. |
+| `{{form_payment_currency}}` | Pulls in the default currency for Basic Payment Forms. |
+| `{{include_email_editor}}` | If `true`, the `password` component should display in order to allow the user to confirm their current password. This is necessary to confirm they have the required permissions to change their email address in another component. Inherited value. |
+| `{{include_password_editor}}` | If `true`, the `password` component should display in order to allow the user to confirm their current password. This is necessary to confirm they have the required permissions to change their email password in another component. Inherited value. |
+| `{{confirm_email_password}}` | If `true`, the `edit_password` and `edit_email` components should also display an additional confirmation field. Inherited value. |
+| `{{hide_email_while_logged_in}}` | This value is inherited from: [hide_email_while_logged_in](#the-hide_name_while_logged_in-and-hide_email_while_logged_in-parameters) |
+| `{{hide_name_while_logged_in}}` | This value is inherited from: [hide_name_while_logged_in](#the-hide_name_while_logged_in-and-hide_email_while_logged_in-parameters) |
 
 ### Re-ordering fields in a Dynamic Form Layout using Siteglide CLI <a href="#reordering-fields-in-a-dynamic-form-layout-using-siteglide-cli" id="reordering-fields-in-a-dynamic-form-layout-using-siteglide-cli"></a>
 
