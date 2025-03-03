@@ -45,7 +45,7 @@ A class of `.input-error` gets added to fields if they fail to validate, which y
 }
 ```
 
-<!-- <!-- ![](https://downloads.intercomcdn.com/i/o/253713156/c017c7f36c95b360e72aa1e8/image.png) --> -->
+<!-- ![](https://downloads.intercomcdn.com/i/o/253713156/c017c7f36c95b360e72aa1e8/image.png) -->
 
 ## Passing your Custom Function in as an Argument
 
@@ -84,7 +84,8 @@ The example below demonstrates the following:
 * Does not use alert messages
 * Allows you to change the field validation message on a field by field basis in the HTML
 
-\*\*\*Step 1) Add HTML before closing tag \*\*\*`<div id="errorSummary" class="alert alert-danger d-none"></div>`
+_**Step 1) Add HTML before closing tag**_  
+`<div id="errorSummary" class="alert alert-danger d-none"></div>`
 
 _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for this example, let's invent a data-attribute `data-custom-msg` to store custom error messages against the field we want to display them for:
 
@@ -100,7 +101,7 @@ _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for
 {% endraw %}
 ```
 
-\*\*\* Step 3) Add CSS\*\*\* The CSS plays a visual role here, but also a functional one- as the boxes displaying the errors should be hidden when the Form is submitting and the Siteglide class can be used to select for this.
+_**Step 3) Add CSS**_ The CSS plays a visual role here, but also a functional one- as the boxes displaying the errors should be hidden when the Form is submitting and the Siteglide class can be used to select for this.
 
 ```css
   #errorSummary {
@@ -117,7 +118,7 @@ _**Step 2) Add custom error messages to fields in HTML**_ In our custom code for
   }
 ```
 
-\*\*\*Step 4) Add JavaScript \*\*\*The first part of the function:
+_**Step 4) Add JavaScript**_ The first part of the function:
 
 1. Formats the main error message
 2. Selects the Form elements it needs

@@ -34,7 +34,7 @@ In the example, we use the "context.headers" object to read the URL of the page,
 
 # Using Robots.txt
 
-Adding the following to your robots.txt file (see [System Pages](/cms/pages/system-pages.md)) would stop Search Engines from crawling any Pages using URL parameters: `Disallow: /*?*`
+Adding the following to your robots.txt file (see [System Pages](/pages-and-page-templates/get-started-pages/system-pages.md)) would stop Search Engines from crawling any Pages using URL parameters: `Disallow: /*?*`
 
 You could be more specific and just make sure the variant Pages created by Pagination are not included: `Disallow: /*?*page=*`
 

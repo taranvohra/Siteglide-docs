@@ -121,9 +121,7 @@ If you're interested to read more about using Liquid to loop over the properties
 
 You output Details about any eCommerce Order that was made using the Form Submission. You may be familiar doing this already within an email automation.
 
-We've included an \`
-
-\` statement in the example, because this will only work properly if a \`form.properties.\`order\\\_id field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
+We've included an `{% raw %}{% if form.properties.order_id %}{% endraw %}` statement in the example, because this will only work properly if a `form.properties.order_id` field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
 
 ```liquid
 {% raw %}
