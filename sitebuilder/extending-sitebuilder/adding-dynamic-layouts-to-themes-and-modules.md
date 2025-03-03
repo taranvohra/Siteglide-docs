@@ -244,13 +244,13 @@ In step 1, you created the folder structure for the layouts, but this section sh
 
 It's up to you what kind of Liquid code to add to layouts, but there is one important rule:
 
-Where your layout contains any Liquid code which you wish to render at runtime, you need to wrap it in the \`\` liquid tags, see [https://documentation.platformos.com/api-reference/liquid/introduction#raw](https://documentation.platformos.com/api-reference/liquid/introduction#raw). In almost all cases, you can just wrap this tag around your entire layout. Without this tag, Liquid will run at build-time while SiteBuilder is creating your layout, which would most likely mean the Liquid would be rendered to nothing, or to something unexpected.
+Where your layout contains any Liquid code which you wish to render at runtime, you need to wrap it in the `{% raw %}{% raw %}{% endraw %}` liquid tags, see [https://documentation.platformos.com/api-reference/liquid/introduction#raw](https://documentation.platformos.com/api-reference/liquid/introduction#raw). In almost all cases, you can just wrap this tag around your entire layout. Without this tag, Liquid will run at build-time while SiteBuilder is creating your layout, which would most likely mean the Liquid would be rendered to nothing, or to something unexpected.
 
 Important! Once you put raw tags into a layout, the Siteglide-CLI will ignore any errors in your code. So if you have an unexplained file in your layout that is not installing properly, try taking out the raw tags, syncing, then putting them back in. You may discover the error in the CLI.
 
 If you're using VSCode, you can use find & replace to add raw tags to all files in a folder.
 
-!\[VSCode regex find and replace ((.|\n)\*) with $1.][https://res.cloudinary.com/sitegurus/image/upload/v1667563298/modules/module\_86/documentation/adding\_raw\_tags.png](https://res.cloudinary.com/sitegurus/image/upload/v1667563298/modules/module\_86/documentation/adding\_raw\_tags.png)
+<figure><img src="https://res.cloudinary.com/sitegurus/image/upload/v1667563298/modules/module\_86/documentation/adding\_raw\_tags.png" alt="VSCode regex find and replace ((.|\n)\*) with $1."><figcaption></figcaption></figure>
 
 ##### Pagination
 

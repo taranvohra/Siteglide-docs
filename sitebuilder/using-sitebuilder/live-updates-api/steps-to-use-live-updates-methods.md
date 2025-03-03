@@ -1,6 +1,6 @@
 # 📋 Steps to Use Live Updates Methods
 
-This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference#using-the-javascript-initialisation.md).
+This guide will show you how to use methods after data-attributes initialisation. If you want to use the object constructor, look [here](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#using-the-javascript-initialisation).
 
 ### What are Methods? <a href="#what-are-methods" id="what-are-methods"></a>
 

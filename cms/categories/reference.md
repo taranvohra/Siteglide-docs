@@ -115,9 +115,9 @@ Category Detail Pages give you additional features including Breadcrumbs, Parent
 Output breadcrumb of Categories to the current Category page using the defined layout:
 
 ```liquid
-
-
-
+{% raw %}
+{%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
+{% endraw %}
 ```
 
 ### Parent Category List
