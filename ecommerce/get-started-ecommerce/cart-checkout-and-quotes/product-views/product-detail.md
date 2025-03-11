@@ -42,7 +42,7 @@ In `SITE MANAGER/Code Editor`, the folder structure for eCommerce layouts is as 
       * `product_attributes`
         * `my_attribute_layout.liquid`
 
-See more:
+See more ->
 
 {% content-ref url="../../cart-and-checkout-folder-structure.md" %}
 [cart-and-checkout-folder-structure.md](../../cart-and-checkout-folder-structure.md)
