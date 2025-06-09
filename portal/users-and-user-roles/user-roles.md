@@ -34,18 +34,11 @@ A user has a 'User Level' of either 'Agency' or 'Client'. This is independent of
 
 If the User Level is set to 'Client', then the Portal view is limited to:
 
-Site List
-Site Details
-Client Profile
-User Profile
-Billing Setup, Plans, and Invoices (only shows if paying Siteglide directly)
+Site List Site Details Client Profile User Profile Billing Setup, Plans, and Invoices (only shows if paying Siteglide directly)
 
 Other restrictions:
 
-Gist/Live Chat - Cannot access, so they have no direct line of communication with Siteglide and must instead to their agency
-Sites - Cannot see status, so they're not informed of any billing issues (Payment Failed)
-Billing - Cannot see anything related to Reseller Programme
-Client - Cannot edit 'Payee' to set to themselves as paying Siteglide directly
+Gist/Live Chat - Cannot access, so they have no direct line of communication with Siteglide and must instead to their agency Sites - Cannot see status, so they're not informed of any billing issues (Payment Failed) Billing - Cannot see anything related to Reseller Programme Client - Cannot edit 'Payee' to set to themselves as paying Siteglide directly
 
 Site view has no limitations, and a client user has the same feature access as an agency user (unless limited via User Roles)
 

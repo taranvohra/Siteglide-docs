@@ -13,7 +13,7 @@ How to use Liquid For Loops and Indexing to handle arrays. Also, how to use a ke
 
 This Article is the second in a series on using Dot Notation in Siteglide. We strongly recommend reading the Article below first:
 
-* [Getting Started with Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md)
+* [Getting Started with Dot Notation](accessing-data-from-liquid-objects.md)
 
 ## Introduction
 
@@ -57,6 +57,7 @@ We can access all values in the Array using a Liquid For Loop:
 
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -132,6 +133,7 @@ This sounds odd, but it's the name of the eCommerce Category we wanted! You can 
 {% raw %}
 {% assign my_example_category_id = 98490 %}
 {% endraw %}
+
 {{context.exports.categories.items[my_example_category_id].name}}
 
 ```

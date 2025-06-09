@@ -1,4 +1,4 @@
-# Custom Field Sets and CRM Custom Fields
+# Custom Field Sets & CRM Custom Fields
 
 All Forms allow Users to edit their details in the CRM. This includes all standard fields like "name" and Custom Field Sets.
 
@@ -10,7 +10,7 @@ This includes:
 
 * Name
 * Any Custom Field Sets attached to the Form. Use these to store information that you want to keep up to date.
-* [Learn more about editing email and password here](/crm/users/how-users-edit-their-email-and-password-front-end.md).
+* [Learn more about editing email and password here](how-users-edit-their-email-and-password-front-end.md).
 
 Standard Form Fields are stored against the Case only and are not stored against the CRM record.
 
@@ -34,12 +34,12 @@ The most important points to draw from this are:
   * CRM Custom Fields
   * The user's "name" field
   * The email field (on first submission only) - this is used as a unique identifier in the CRM.
-  * The "edit email" and "edit password" fields [learn more about editing email and password here.](/crm/users/how-users-edit-their-email-and-password-front-end.md)
+  * The "edit email" and "edit password" fields [learn more about editing email and password here.](how-users-edit-their-email-and-password-front-end.md)
 * When using Custom Field Sets and CRM custom fields to update the CRM, it doesn't matter whether or not the User already exists in the CRM, or whether or not the User is already logged in.
 
 ## Adding Custom Field Set Fields to a Form
 
-See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](/cms/forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
+See here for a more detailed explanation of [Adding Custom Field Set Fields to a Form](../../cms/forms/guides-forms/how-to-output-custom-field-set-fields-in-a-forms-custom-layout.md)
 
 In summary, to add Custom Field Set fields to a Form, you'll need to:
 
@@ -75,7 +75,7 @@ CRM Custom Fields work in a similar way to Custom Field Sets, but instead of ope
 
 See here for a more detailed explanation of creating CRM fields:
 
-[https://docs.siteglide.com/en/crm/quickstart-crm](/crm/quickstart-crm.md)
+[https://docs.siteglide.com/en/crm/quickstart-crm](../quickstart-crm.md)
 
 In summary:
 
@@ -103,7 +103,7 @@ Note the `data-crm` attribute which gives you a clue this is a Custom Field Set 
 
 #### Prerequisites:
 
-* The User must already be Signed Up to any [Secure Zone](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
+* The User must already be Signed Up to any [Secure Zone](../../modules/core-modules/secure-zones/quickstart-secure-zones.md)
 * The User must be logged in
 
 #### Why is pre-filling fields useful?
@@ -112,7 +112,7 @@ It's extremely useful to display the current values in the fields on Page load. 
 
 #### An alternative - Using GraphQL to fetch CRM data
 
-Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [https://docs.siteglide.com/en/developer-tools/graphql/tutorials](/developer-tools/graphql/tutorials/README.md)
+Before we show you the User Details method which uses a low-code approach, we should note that the GraphQL `users`query provides a more flexible approach to fetching user data, including fetching details of users who are not logged in. You can learn more about how to use GraphQL queries here: [https://docs.siteglide.com/en/developer-tools/graphql/tutorials](../../developer-tools/graphql/tutorials/)
 
 #### Using User Details to fetch CRM data- steps
 
@@ -120,12 +120,13 @@ In Order to fetch the existing Custom Field Set data for the current User, they'
 
 To achieve this, you can combine two Siteglide Features by nesting a Siteglide Form inside a User Details Layout.
 
-**Step 1) User Details Contain the existing CFS Data** To fetch the existing CFS and CRM data for the Current User, you'll need a [User Details](/crm/users/user-details.md) Layout.
+**Step 1) User Details Contain the existing CFS Data** To fetch the existing CFS and CRM data for the Current User, you'll need a [User Details](user-details.md) Layout.
 
 ```liquid
 {% raw %}
 {% include 'user_details', layout: 'user_details_edit_form_container' %}
 {% endraw %}
+
 ```
 
 Parameters:
@@ -134,12 +135,13 @@ Parameters:
 
 **Step 2) Place the Form inside User Details** The User Details Layout has direct access to Custom Field Set data, but normally the Form does not. In order to achieve this, we place the Form inside the `user_details` Layout. Due to Liquid inheritance, the Custom Field Set data will then be available inside the Form.
 
-Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g. 
+Output your Form by writing the code for the Form inside this `user_details` Layout instead of directly in the Page e.g.
 
 ```liquid
 {% raw %}
 {% include 'form', id: '10', layout: 'custom' %}
 {% endraw %}
+
 ```
 
 Remember to replace the example form ID with your own.
@@ -149,22 +151,20 @@ Remember to replace the example form ID with your own.
 In this example, we have a Custom Field Set "Checkout Address" with a "Profile Picture", a Favourite Colour and a Country field:
 
 ```liquid
-{% raw %}
 {{this.custom_field_sets['Checkout Address']['Favourite Colour']}} 
 <!-- Red-->
 {{this.custom_field_sets['Checkout Address']['Country']}} 
 <!-- UK -->
 {{this.custom_field_sets['Checkout Address']['Profile Picture']}} 
 <!-- documents/form_uploads/form_3/profile-1603989579828.png -->
-{% endraw %}
+
 ```
 
-See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](/crm/users/user-details.md#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
+See [https://docs.siteglide.com/en/crm/users/user-details#accessing-custom-crm-fields](user-details.md#accessing-custom-crm-fields) to see how to access data from CRM custom fields within the User Details Layout.
 
 As the `value` attribute in HTML determines the pre-filled value of a field, we can use Liquid to add it. In most cases, there is an \<input> element which can be given a value, eg. in the "Favourite Colour" field:
 
 ```liquid
-{% raw %}
 <input 
   class="form-control" 
   name="{{ form_builder.fields.properties.form_field_13_3.name }}" 
@@ -172,13 +172,12 @@ As the `value` attribute in HTML determines the pre-filled value of a field, we 
   type="text" 
   value=""
 >
-{% endraw %}
+
 ```
 
 Values can also be added to \<select> elements:
 
 ```liquid
-{% raw %}
 <div class="row mt-4 select">
   <div class="col">
     <label for="form_field_13_1">Country</label>
@@ -196,13 +195,12 @@ Values can also be added to \<select> elements:
     </select>
   </div>
 </div>
-{% endraw %}
+
 ```
 
 File and Image fields are more complex, each has two elements- a `type="file"` and a `type="hidden"` field. If you wish the File upload to have validation, both the `value` attribute and `.required` class should be added to the `type="hidden"` input. This is because this is the field that actually has a `name` attribute and sends to the database.
 
 ```liquid
-{% raw %}
 <label for="form_field_3_6">Profile Picture</label> 
 <input 
   class="form-control required" 
@@ -212,23 +210,21 @@ File and Image fields are more complex, each has two elements- a `type="file"` a
   value="{{this.custom_field_sets['Checkout Address']['Profile Picture']}}"
 >
 <input class="form-control" id="form_field_3_6_file" type="file">
-{% endraw %}
+
 ```
 
 This adds the value to the field, but for the Profile Picture, I may also want to show a larger preview of the image outside the field. You can use the same Liquid to display the image, using the `asset_url` filter to complete the path:
 
 ```liquid
-{% raw %}
 <div id="profile_pic" data-file-preview="form_field_10_1_file" style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');">
 
 </div>
-{% endraw %}
 ```
 
 Attributes:
 
 * `style="background-image: url('{{this.custom_field_sets.cfs_3.properties.cfs_field_3_1 | asset_url}}');"` - This Liquid would allow the existing image to be displayed on Page Load.
-* `data-file-preview="form_field_10_1_file"` - This sets up the element to preview the next image a User uploads to this field. Read more here: [File Upload Previews](/cms/forms/go-further-forms/file-upload-previews).
+* `data-file-preview="form_field_10_1_file"` - This sets up the element to preview the next image a User uploads to this field. Read more here: [File Upload Previews](../../cms/forms/go-further-forms/file-upload-previews/).
 
 ## Multiple parts to the Form
 

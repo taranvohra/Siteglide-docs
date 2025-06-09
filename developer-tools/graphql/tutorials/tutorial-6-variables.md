@@ -192,6 +192,7 @@ If you require any other conversions, please request them on Intercom and we'll 
 
 
 
+
 ```
 
 _String to Float_
@@ -205,6 +206,7 @@ _String to Float_
 
 
 
+
 ```
 
 _String to \[String]_
@@ -214,6 +216,7 @@ _String to \[String]_
 {% assign original_string = "123,456" %}
 {% assign new_array = original_string | split: "," %}
 {% endraw %}
+
 
 
 
@@ -235,6 +238,7 @@ _String to Boolean_
 
 
 
+
 ```
 
 _Boolean to String_
@@ -249,6 +253,7 @@ _Boolean to String_
 
 
 
+
 ```
 
 _Int to String_
@@ -258,6 +263,7 @@ _Int to String_
 {% assign original_int = 123 %}
 {% assign new_string = original_int | downcase %}
 {% endraw %}
+
 ```
 
 _Float to String_
@@ -267,6 +273,7 @@ _Float to String_
 {% assign original_float = 123 %}
 {% assign new_string = original_float | downcase %}
 {% endraw %}
+
 ```
 
 _Literal JSON object to HASH object_ (Needed for advanced variables only- like passing an array of properties objects into a filter). You can also use the parse\_json tag to create any of the above types; if you can write the variable in a type that's supported by JSON, the tag will convert that to a variable in the hash format that can be passed into Graph as a variable value.
@@ -280,6 +287,7 @@ _Literal JSON object to HASH object_ (Needed for advanced variables only- like p
   ]
 {% endparse_json %}
 {% endraw %}
+
 
 
 
@@ -415,7 +423,7 @@ Here are some snippets of code you can use to help you:
 
 By the way- we're using the filters `| default` and `| plus: 0` to make sure the page defaults to 1 if no parameter exists, and that the data is converted to an integer.
 
-\*Remembering Pagination in GraphQL \* You may need to refer to [Tutorial 2](/developer-tools/graphql/tutorials/tutorial-2-pagination.md), to refresh your understanding of Pagination.
+\*Remembering Pagination in GraphQL \* You may need to refer to [Tutorial 2](tutorial-2-pagination.md), to refresh your understanding of Pagination.
 
 ## Next Time
 

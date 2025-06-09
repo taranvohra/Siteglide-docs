@@ -11,7 +11,7 @@ We provide the Liquid for Sign Up, Login and Password Reset Forms and for checki
 
 ## Introduction
 
-In this Article we'll provide the Liquid which can be used to manage access to [Secure Zones](/modules/core-modules/secure-zones/quickstart-secure-zones.md). It can be used across most Liquid Files (excluding emails).
+In this Article we'll provide the Liquid which can be used to manage access to [Secure Zones](../quickstart-secure-zones.md). It can be used across most Liquid Files (excluding emails).
 
 ## Syntax
 
@@ -21,6 +21,7 @@ In this Article we'll provide the Liquid which can be used to manage access to [
 {% raw %}
 {%- include 'login_form', layout: 'default', redirect: '/' -%}
 {% endraw %}
+
 ```
 
 ### Log In / Sign Up
@@ -29,9 +30,10 @@ In this Article we'll provide the Liquid which can be used to manage access to [
 {% raw %}
 {%- include 'form', id: '1', layout: 'default' -%}
 {% endraw %}
+
 ```
 
-This is the same syntax for inserting a custom Form, where the id parameter should be the id of your Form. See the section [Creating a Sign Up Form](/crm/quickstart-crm.md#2-adding-a-sign-up-form) to learn more.
+This is the same syntax for inserting a custom Form, where the id parameter should be the id of your Form. See the section [Creating a Sign Up Form](../../../../crm/quickstart-crm.md#2-adding-a-sign-up-form) to learn more.
 
 Once you have created a Form, you can select the Form from Toolbox and it will dynamically fill in the ID for you.
 
@@ -41,6 +43,7 @@ Once you have created a Form, you can select the Form from Toolbox and it will d
 {% raw %}
 {%- include 'logout_button', layout: 'default' -%}
 {% endraw %}
+
 ```
 
 ### Recover Password Flow
@@ -52,13 +55,12 @@ The recover password form is the first step in recover password flow. Users shou
 By default, a system page will already be created on your site at `/system/recover-password`, which can be found in Admin under `Site Manager/System Pages` . You can edit that page, or add the form to a new page with the tag:
 
 ```liquid
-{% raw %}
 {% include 'recover_password',
 	buttonText: 'Submit',
 	redirect: '/'
 -%}
 
-{% endraw %}
+
 ```
 
 #### Password Reset Email
@@ -76,13 +78,11 @@ This is the last step in the recover password flow where the user has already cl
 This form should normally be outputted on the `/system/reset-password` System Page, as this is where the dynamic link from the email will point. You can optionally redirect users back to the page where they can sign in with their new password.
 
 ```liquid
-{% raw %}
 {% include 'reset_password'
 	failContent: 'The provided token is no longer valid. Please request password instructions again.',
 	buttonText: 'Submit',
 	redirect: '/'
 -%}
-{% endraw %}
 ```
 
 ## Liquid Tags

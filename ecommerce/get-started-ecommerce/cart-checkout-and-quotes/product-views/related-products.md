@@ -11,8 +11,8 @@ How to use Module Custom Fields to output similar, related products
 
 ## Pre-requisites
 
-* Your [eCommerce Module](/ecommerce/quickstart-ecommerce.md) is updated to at least version 1.2.0
-* You have already [created eCommerce Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md) and outputted them in List or Detail Layouts on the Site
+* Your [eCommerce Module](../../../quickstart-ecommerce.md) is updated to at least version 1.2.0
+* You have already [created eCommerce Products](../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/) and outputted them in List or Detail Layouts on the Site
 
 ## Introduction
 
@@ -75,6 +75,7 @@ We can change the type by assigning a new variable:
 {% raw %}
 {% assign related_products_str = this['Related products'] | join: ',' %}
 {% endraw %}
+
 
 
 

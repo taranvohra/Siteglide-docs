@@ -62,6 +62,7 @@ First, we will need to create an object of Months converted from English to whic
 
 
 
+
 ```
 
 Now we have an object called "months" storing all the translated Months, simply change "FRE" and the translation to whichever language you'd like.
@@ -119,6 +120,7 @@ Now specify which language in "month\_map" you're using, I've chosen French:
 
 }  {% endparse_json %}
 {% endraw %}
+
 ```
 
 Next, we'll use these two variables to search the "month\_map" and return the translated Month:
@@ -127,6 +129,7 @@ Next, we'll use these two variables to search the "month\_map" and return the tr
 {% raw %}
 {% assign translated_month = month_map[language][current_month] %}
 {% endraw %}
+
 ```
 
 ### Format the translated Month and store in a variable:

@@ -49,6 +49,7 @@ If you wish to display all the Categories on the Site, you can loop over them al
 {% endfor %}
 {% endraw %}
 
+
 ```
 
 If you want to skip any Categories, you can use Liquid if statements and the `continue` tag to do this:
@@ -118,6 +119,7 @@ Output breadcrumb of Categories to the current Category page using the defined l
 {% raw %}
 {%- include 'category_breadcrumbs', layout: 'breadcrumb' -%}
 {% endraw %}
+
 ```
 
 ### Parent Category List
@@ -125,9 +127,8 @@ Output breadcrumb of Categories to the current Category page using the defined l
 Output parent Categories using the defined layout:
 
 ```liquid
-{% raw %}
 {%- include 'category_parent', layout: 'parent' -%
-{% endraw %}
+
 ```
 
 ### Child Category List
@@ -138,6 +139,7 @@ Output child Categories using the defined layout:
 {% raw %}
 {%- include 'category_children', layout: 'children' -%}
 {% endraw %}
+
 
 ```
 
@@ -150,6 +152,7 @@ Output all items categorised to the current Category Page using the defined layo
 {%- include 'category_items', layout: 'items' -%}
 {% endraw %}
 
+
 ```
 
 Note that this will only output items in this specific Category. To output all items that belong to sub-Categories, then add another parameter of `show_all_sub_items: 'true'`.
@@ -158,7 +161,7 @@ Note that this will only output items in this specific Category. To output all i
 
 You can use the Category ID `{{this.id}}` to filter WebApp, Module or Product Lists and display the Items with this Category assigned (and those belonging to Categories which are children of this Category).
 
-We'll include some examples here of how the `{{this.id}}` variable can be used specifically on the Category Detail Page to filter by that Detail Page's Category dynamically:[ Learn more about filtering WebApps and Modules by Category](/cms/categories/about/filtering-webapps-and-modules-by-categories.md)
+We'll include some examples here of how the `{{this.id}}` variable can be used specifically on the Category Detail Page to filter by that Detail Page's Category dynamically:[ Learn more about filtering WebApps and Modules by Category](about/filtering-webapps-and-modules-by-categories.md)
 
 ### Products
 

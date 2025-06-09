@@ -13,8 +13,8 @@ Product Attribute Layouts allow you to customise the way that you present users 
 
 ## Prerequisites
 
-* You have [created Products](/eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/README.md) in the Admin
-* You have [created a Product Detail View](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md)
+* You have [created Products](../../../../../eCommerce/get-started-ecommerce/cart-checkout-and-quotes/managing-products/) in the Admin
+* You have [created a Product Detail View](../product-detail.md)
 
 ## Introduction
 
@@ -103,6 +103,7 @@ If your Products have multiple Attributes, or you want to write code which can d
 
 
 
+
 ```
 
 ## Attribute Layout Development
@@ -125,6 +126,7 @@ You can loop over this array with the following liquid code, (where the example 
 
 
 
+
 ```
 
 To get the full benefits of Attribute functionality, including the user's choice of Attribute affecting what is added to the Cart, the data-attributes and function calls in the example should be included:
@@ -142,4 +144,4 @@ To get the full benefits of Attribute functionality, including the user's choice
 </select>
 ```
 
-As you can see in the example, inside the loop it is possible to access the specific Attribute Option in this iteration via the "option" variable you created when setting up the loop, but you can also still access the "this" object specific to the Detail Layout that wraps around and includes the Attribute Layout. See the [Product Layout Liquid Reference](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-liquid-reference.md) to see the fields available in the "this" object and those specific to Attributes and Attribute Options.
+As you can see in the example, inside the loop it is possible to access the specific Attribute Option in this iteration via the "option" variable you created when setting up the loop, but you can also still access the "this" object specific to the Detail Layout that wraps around and includes the Attribute Layout. See the [Product Layout Liquid Reference](../product-liquid-reference.md) to see the fields available in the "this" object and those specific to Attributes and Attribute Options.

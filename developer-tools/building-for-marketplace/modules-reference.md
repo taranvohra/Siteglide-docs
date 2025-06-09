@@ -11,14 +11,14 @@ description: >-
 
 These Fields are available to all standard modules:
 
-| **Field Name**  | **Liquid Tag**              | **Description**                                       |
-| --------------- | --------------------------- | ----------------------------------------------------- | 
-| Item Name       | {% raw %}{{ this['name'] }}{% endraw %}          | name of the Blog Post           |
-| Item Slug       | {% raw %}{{ this['slug'] }}{% endraw %}          | item URL                         |
-| Weighting       | {% raw %}{{ this['weighting'] }}{% endraw %}     | weight of item, used for sorting |
-| Release Date    | {% raw %}{{ this['release_date'] }}{% endraw %}  | release date of the item         |
-| Expiry Date     | {% raw %}{{ this['expiry_date'] }}{% endraw %}   | expiry date of the item          |
-| Enabled         | {% raw %}{{ this['enabled'] }}{% endraw %}       | enable/disable the item          |
+| **Field Name** | **Liquid Tag**                 | **Description**                  |
+| -------------- | ------------------------------ | -------------------------------- |
+| Item Name      | \{{ this\['name'] \}}          | name of the Blog Post            |
+| Item Slug      | \{{ this\['slug'] \}}          | item URL                         |
+| Weighting      | \{{ this\['weighting'] \}}     | weight of item, used for sorting |
+| Release Date   | \{{ this\['release\_date'] \}} | release date of the item         |
+| Expiry Date    | \{{ this\['expiry\_date'] \}}  | expiry date of the item          |
+| Enabled        | \{{ this\['enabled'] \}}       | enable/disable the item          |
 
 ## Output a Module Layout
 
@@ -28,6 +28,7 @@ These Fields are available to all standard modules:
 {% raw %}
 {% include 'module', id: '3', layout: 'default' %}
 {% endraw %}
+
 ```
 
 ### Detail Layouts
@@ -36,7 +37,10 @@ These Fields are available to all standard modules:
 {% raw %}
 {% include 'module', id: '3', layout: 'default', type: 'detail', item_ids: insert_item_id %}
 {% endraw %}
+
+
 ```
+
 {% hint style="info" %}
 Usually this is not outputted directly. Instead, a detail page is dynamically generated for you by the Siteglide Admin at the chosen slug, however, it can be useful in some situations to output manually!
 {% endhint %}

@@ -4,7 +4,7 @@ description: >-
   siteglide_footer_scripts or using context.exports to avoid duplicates
 ---
 
-# 🔹 siteglide\_head\_scripts and siteglide\_footer\_scripts Explained
+# 🔹 Siteglide Scripts Explained
 
 ### Introduction
 
@@ -24,6 +24,7 @@ This allows you to include a JS file only when it becomes relevant to a particul
 {% raw %}
 {% content_for 'siteglide_head_scripts' %} <link rel="stylesheet" href="{{'css/modules/module_3/design_system/1/sidebar.min.css' | asset_url}}" />,,{% endcontent_for %}
 {% endraw %}
+
 ```
 
 #### Footer Scripts
@@ -34,6 +35,7 @@ This allows you to include a JS file only when it becomes relevant to a particul
 {% raw %}
 {%- content_for 'siteglide_footer_scripts' %} <link rel="stylesheet" href="{{ 'css/modules/module_9/custom.css' | asset_url}}" />,,{%- endcontent_for %}
 {% endraw %}
+
 ```
 
 #### Troubleshooting
@@ -62,7 +64,7 @@ Duplicate checking checks for duplicate tags, it doesn't follow the links and ch
 
 The platformOS docs explain how you can add any namespace to the `content_for` tag and use it in conjunction with the yield tag to send any variable from the Page to the Page Template.
 
-Content For: [https://documentation.platformos.com/api-reference/liquid/platformos-tags#content\_for](https://documentation.platformos.com/api-reference/liquid/platformos-tags#content\_for)
+Content For: [https://documentation.platformos.com/api-reference/liquid/platformos-tags#content\_for](https://documentation.platformos.com/api-reference/liquid/platformos-tags#content_for)
 
 Yield: [https://documentation.platformos.com/api-reference/liquid/platformos-tags#yield](https://documentation.platformos.com/api-reference/liquid/platformos-tags#yield)
 

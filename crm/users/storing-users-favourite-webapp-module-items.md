@@ -2,17 +2,15 @@
 
 Users can "add" or "remove" their favourite WebApp and Module items. You can display them to the User in Lists.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/255725150/fbf51e897d5cab0a9284ec7b/image.png) -->
-
 ## Prerequisites
 
-* You have installed the [Secure Zones Module](/crm/quickstart-crm.md)
+* You have installed the [Secure Zones Module](../quickstart-crm.md)
 * You have added a User Sign Up Form
 * A User has logged in
 
 ## Introduction
 
-We've added the ability for User's to store their favourite Module items within a "favourite\_items" array, they'll be able to "add" and "remove" items from the list which will be stored alongside the rest of the CRM data available to that User in [user\_details](/crm/users/user-details.md).
+We've added the ability for User's to store their favourite Module items within a "favourite\_items" array, they'll be able to "add" and "remove" items from the list which will be stored alongside the rest of the CRM data available to that User in [user\_details](user-details.md).
 
 Possible Use Cases for this feature include:
 
@@ -28,12 +26,13 @@ This Layout will allow the User to add or remove an Item from their favourites.
 The User Favourites Toggle Layout will only work within an item.liquid file (for Modules) or a WebApp Layout file that has access to \{{this.id\}}.
 {% endhint %}
 
-Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout: 
+Use this Liquid to include your User Favourites Layout, the only parameter that'll differ for this is the "layout", here you can specify a custom layout:
 
 ```liquid
 {% raw %}
 {% include 'user_favourites_toggle', layout: 'default' -%}
 {% endraw %}
+
 ```
 
 `is_favourite` - you can use this within `user_favourites_toggle` layouts to determine if the Module/ Webapp item is already added to the Users favourites like so:
@@ -90,7 +89,7 @@ If you need to modify them, you can split this into following the 4 items in the
 ```
 
 {% hint style="warning" %}
-#### A note on security
+**A note on security**
 
 Even if a malicious User submits a fraudulent User ID argument, we will double check on the server-side, so it won't be possible for them to change the favourites of other Users.
 {% endhint %}
@@ -143,11 +142,12 @@ You may want to hide the add/ remove buttons from the User if they aren't logged
 {% raw %}
 {% if context.current_user %} {% endif %}
 {% endraw %}
+
 ```
 
 ## Syntax - Outputting User's Favourite Module/ Webapp items
 
-Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](/crm/users/user-details.md)
+Now let's look at how we can output all of the User's Favourite items. The favourite\_items object is stored within the [User Details Layout.](user-details.md)
 
 You can include the user\_details Layout like so:
 
@@ -155,6 +155,7 @@ You can include the user\_details Layout like so:
 {% raw %}
 {% include 'user_details', layout: 'my_layout' -%}
 {% endraw %}
+
 ```
 
 Layouts for user\_details are stored under the following path: `site Manager/code Editor/layouts/modules>module_5/user_details/my_layout.liquid`
@@ -170,6 +171,7 @@ Next within the "user\_details" Layout, you can use the following Liquid variabl
 {% raw %}
 {%- include 'webapp', id: '1', layout: 'my_layout', item_ids: favourite_items_string -%}
 {% endraw %}
+
 ```
 
 #### Outputting favourite Products
@@ -178,6 +180,7 @@ Next within the "user\_details" Layout, you can use the following Liquid variabl
 {% raw %}
 {%- include 'ecommerce/products', layout: 'default', item_ids: favourite_items_string -%}
 {% endraw %}
+
 ```
 
 #### Outputting favourite Blog Posts (Modules)

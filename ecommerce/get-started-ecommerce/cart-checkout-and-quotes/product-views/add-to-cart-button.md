@@ -38,6 +38,7 @@ You can add a Layout to the Cart Add Button by adding a `component_layout` param
 {% raw %}
 {% include 'ecommerce/cart_add', component_layout: 'custom_layout' -%}
 {% endraw %}
+
 ```
 
 This feature is backwards compatible, so if you have a Site which does not specify a Layout for these buttons, the default Layout will be chosen automatically- and this will be identical to the style and behaviour you are used to.

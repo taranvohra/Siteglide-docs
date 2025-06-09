@@ -21,7 +21,6 @@ The Events Module Map Layout is an example of a List Layout. Like all List Layou
 To output the map, output the List Layout as normal, and choose a Map Layout in the `layout` parameter.
 
 ```liquid
-{% raw %}
 {%- include 'module'
     id: '12'
     layout: 'design_system/1/map'
@@ -30,7 +29,7 @@ To output the map, output the List Layout as normal, and choose a Map Layout in 
 -%}
 
 
-{% endraw %}
+
 ```
 
 There are a few parameters which work particularly well on the Map Layout, because we will want to disable Pagination and show all enabled and released Events at once:
@@ -50,23 +49,23 @@ You can also use URL parameters to carry out advanced filtering.
 You'll notice in the `wrapper.liquid` file that the ordinary Liquid which fetches the `item.liquid` files is outputted inside a JavaScript `<script>` element. This is very important as it allows the Liquid data to be converted to the JavaScript array that Google Maps needs.
 
 ```liquid
-{% raw %}
 <script>
     //---Events Module Map View Options--- 
     //--- The Events Module Items should be loaded into a JavaScript Array- 
     //--- this allows them to be used by Google Maps. Changing the format in the item.liquid 
     //--- file may cause errors.
     var locations = [
-        {%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+        {% raw %}
+{%- include 'modules/siteglide_system/get/get_items', item_layout: 'item' -%}
+{% endraw %}
     ];
 </script>
-{% endraw %}
+
 ```
 
 The `item.liquid` file should be left in the format of a JSON object, but you may choose to add more variables:
 
 ```liquid
-{% raw %}
 {	
     id: "{{this.id}}",
 	lat: {{this.properties.module_field_12_7 | split: ',' | first | times: 1 | default: "invalid" }},
@@ -77,6 +76,7 @@ The `item.liquid` file should be left in the format of a JSON object, but you ma
     event_start: "{{this.properties.module_field_12_2 | date: "%d/%m/%Y %H:%M T%z"}}",	
     event_end: "{{this.properties.module_field_12_3 | date: "%d/%m/%Y %H:%M T%z"}}",	
     valid: "
+{% raw %}
 {% if this.properties.module_field_12_7 == blank %}invalid{% else %}valid{% endif %}"
 }{% unless forloop.last %},{% endunless %}
 {% endraw %}
@@ -92,15 +92,9 @@ The following behaviour was chosen by us for convenience and demonstration purpo
 
 If any markers are too close to each other, they will be "clustered" under a clustering marker, which will display a number for the number of Events in that location:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/203124873/6cfa1a2c995d75ba6d1562b6/image.png) -->
-
 Clicking on the clustering marker will zoom in by an increment of 1, unless the User is at maximum zoom. As soon as we have zoomed in enough to display more of the markers without causing confusion, we will do so:
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/203125088/f1e69150b898efc233334f60/image.png) -->
-
 If we reach maximum zoom and some Events are still clustered (perhaps at the same location), the next click on the clustering marker will reveal an "infowindow" containing details on all Events at that location:
-
-<!-- ![](https://downloads.intercomcdn.com/i/o/203125404/117159b8479150d8c5d07eea/image.png) -->
 
 ## Customising the Map
 

@@ -20,6 +20,7 @@ Firstly, make sure the SiteBuilder Module is installed on your site. Then, inclu
 
 
 
+
 ```
 
 ## 2) Defining a Layout which will live-update and automatically generating a public API key <a href="#id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key" id="id-2-defining-a-layout-which-will-liveupdate-and-automatically-generating-a-public-api-key"></a>
@@ -27,32 +28,37 @@ Firstly, make sure the SiteBuilder Module is installed on your site. Then, inclu
 Secondly, choose which section of code you'd like the API to be ready to live-update.
 
 * This must be some Liquid code which can be rendered using a single Liquid
+
 ```liquid
 {% raw %}
 {% include %}
 {% endraw %}
+
 ```
-tag. E.g. 
+
+tag. E.g.
 
 ```liquid
 {% raw %}
 {% include 'module' %}
 {% endraw %}
+
 ```
+
 or
 
-```liquid
+````liquid
 {% raw %}
 {% include 'webapp' %}
 {% endraw %}
 
+
 * The code must not rely on inheriting any variables from higher up in the Page because those variables will not be available on the API endpoint Page. If you need to pass in more variables, this must be done via URL Params and read via:
 
 ```liquid
-{% raw %}
 {{context.params}}
-{% endraw %}
-```
+
+````
 
 At the top of this layout, in the wrapper file if it has one, you need to include the following Liquid. This generates a public\_key you need to use the API. See "Thinking about Security" for why we use this. If you're using a WebApp or Module tag and layout from Siteglide, these variables will be available automatically.
 
@@ -61,6 +67,7 @@ At the top of this layout, in the wrapper file if it has one, you need to includ
 {% comment %}model will in this normal case be something like "module_3" or "webapp_1". Using _model will automatically get the current layout's model value without needing to specify manually - if you want to re-render the current layout!{% endcomment %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: layout, model: _model, collection: 'false', creator_id: nil %}
 {% endraw %}
+
 
 ```
 
@@ -71,6 +78,7 @@ However, if you're using a Liquid tag which has a value other than `module` or `
 {%- include 'ecommerce/cart', layout: 'c1' -%}
 {% endraw %}
 
+
 ```
 
 ...then your public key function should look like this:
@@ -79,6 +87,7 @@ However, if you're using a Liquid tag which has a value other than `module` or `
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", layout: 'c1', model_type: 'ecommerce/cart', collection: 'false' %}
 {% endraw %}
+
 
 ```
 
@@ -90,6 +99,7 @@ To use Live Updates with a `content_section` or `code_snippet`, you need to add 
 {% raw %}
 {% function public_key = "modules/module_86/front_end/functions/v1/live_update_params_encode", model_type: 'code_snippet', include_id: '1' %}
 {% endraw %}
+
 
 ```
 
@@ -124,6 +134,7 @@ At this point in our guide, your code should look something like this:
 
 
 
+
 <section data-sg-live-update-key="{{public_key}}" class="bg-white dark:bg-gray-900">
   <!-- rest of layout markup goes here -->
 </section>
@@ -148,8 +159,8 @@ To add a form, we need another data-attribute. You can add as many forms as you 
 
 The simplest way to add controls to your form is to use standard HTML form elements. The element's name should correspond to the URL parameter you wish the user to be able to change, while the value of the element obviously will set the parameter's value. Check the full example at the beginning along with the API Reference to see other kinds of supported controls and buttons:
 
-* [Toggle Buttons](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#live-updates-toggle-buttons)
-* [Sort Buttons](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md#live-updates-sort-buttons)
+* [Toggle Buttons](live-updates-reference.md#live-updates-toggle-buttons)
+* [Sort Buttons](live-updates-reference.md#live-updates-sort-buttons)
 
 Note ordinary HTML elements don't need any additional data-attributes. The API will watch for changes within the form area.
 
@@ -167,6 +178,7 @@ Note ordinary HTML elements don't need any additional data-attributes. The API w
       </label>
     {% endfor %}
 {% endraw %}
+
   </form>
 </section>
 
@@ -190,7 +202,8 @@ Let's add the important Siteglide tag \`
     <input name="keyword" placeholder="Search">
   </form>
   <form data-sg-live-update-controls="filters">
-    {% raw %}
+    
+{% raw %}
 {% for category in context.exports.categories.items %}
       <label>
         <input type="checkbox" name="category" value="{{category[0]}}">
@@ -213,7 +226,7 @@ That's the basics of the Live Update API.
 
 Learn more:
 
-* Check out the [API Reference Guide](/sitebuilder/using-sitebuilder/live-updates-api/live-updates-reference.md) each time you want to look something up.
+* Check out the [API Reference Guide](live-updates-reference.md) each time you want to look something up.
 * How to add sort buttons
 * How to add custom toggle buttons
 * How to set up pagination

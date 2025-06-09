@@ -13,14 +13,14 @@ Take control over your WebApp Layouts by exposing the Data and making your own F
 
 In this Tutorial, we'll be using dot notation, so if you're not familiar with it, you may want to brush up here:
 
-* [Getting Started with Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md)
-* [Advanced Dot Notation - Arrays and Key Maps](/developer-tools/liquid/accessing-data-by-looping-or-iterating-arrays-or-objects.md)
+* [Getting Started with Dot Notation](accessing-data-from-liquid-objects.md)
+* [Advanced Dot Notation - Arrays and Key Maps](accessing-data-by-looping-or-iterating-arrays-or-objects.md)
 
 You'll also need to be familiar with WebApps:
 
-* [Creating and Editing WebApps](/webapps/quickstart-webapps.md)
-* [WebApp List Layouts](/webapps/layouts/webapp-list-layout.md)
-* [WebApp Detail Layouts](/webapps/layouts/webapp-detail-layouts.md)
+* [Creating and Editing WebApps](../../webapps/quickstart-webapps.md)
+* [WebApp List Layouts](../../webapps/layouts/webapp-list-layout.md)
+* [WebApp Detail Layouts](../../webapps/layouts/webapp-detail-layouts.md)
 
 ## Introduction
 
@@ -92,7 +92,8 @@ Alternatively, you could include the webapp just once as a collection, then use 
       collection: 'true' 
   -%}
   <h2>Featured Item</h2>
-  {% raw %}
+  
+{% raw %}
 {% assign this = context.exports.webapp_1.data.result.items[0] %}
   {{this.Title}}
   <h2>Other Items</h2>
@@ -100,6 +101,7 @@ Alternatively, you could include the webapp just once as a collection, then use 
     {{this.Title}}
   {% endfor %}
 {% endraw %}
+
 </div>
 
 ```

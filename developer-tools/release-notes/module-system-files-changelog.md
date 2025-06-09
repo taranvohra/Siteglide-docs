@@ -21,7 +21,7 @@
 
 ### 2.8.2.5 - 10th July 2024
 
-* WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](/webapps/layouts/webapp-list-layout.md) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
+* WebApps/Modules - Added a new sort type for list output - 'item\_ids'. This can be used to output items in order of IDs provided to the 'item\_ids' parameter. This is especially useful for outputting DataSource Multi fields in the same order the items were selected/ordered in Admin - [Docs](../../webapps/layouts/webapp-list-layout.md) - [Roadmap](https://roadmap.siteglide.com/core-platform/p/webapps-multi-data-source-output-order)
 
 ***
 
@@ -56,7 +56,7 @@
 ### 2.8.2.0 - 23rd January 2024
 
 * Module Forms - Added support for Marketplace Modules
-* Allow constants such as Company Information to be used in email notifications - [Docs on how to use this feature](../../site-manager/code-snippets-includes/constants\_json.md)
+* Allow constants such as Company Information to be used in email notifications - [Docs on how to use this feature](../../site-manager/code-snippets-includes/constants_json.md)
 * Added support for custom success functions to be used with Forms. Default action will remain as a redirect to your chosen URL - [Docs](../../cms/forms/go-further-forms/forms-success-callback.md)
 * Added consistency to error message format on Form submissions
 
@@ -107,7 +107,7 @@
 
 ### 2.8.1.10 - 19th January 2023
 
-* Added 'module_is_in\_admin' authorisation check as an include, where it was previously only an Authorisation Policy. This allows for more control over what shows on a page in Custom UI for Modules.
+* Added 'module\_is\_in\_admin' authorisation check as an include, where it was previously only an Authorisation Policy. This allows for more control over what shows on a page in Custom UI for Modules.
 
 ***
 
@@ -235,7 +235,7 @@ Minor patch to add support for Module caching
 
 ### 2.7.0.1 - 23rd November 2021
 
-Minor patch to add support for [eCommerce v1.10.0](/developer-tools/release-notes/module-ecommerce-changelog.md)
+Minor patch to add support for [eCommerce v1.10.0](module-ecommerce-changelog.md)
 
 ***
 
@@ -459,7 +459,7 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.9.2 - 4th September 2020
 
-* Support for structural changes introduced in [Secure Zones 1.1.0](/developer-tools/release-notes/module-secure-zones-changelog.md)
+* Support for structural changes introduced in [Secure Zones 1.1.0](module-secure-zones-changelog.md)
 
 ***
 
@@ -502,20 +502,20 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 ### 2.4.7.0 - 7th May 2020
 
-* [Support for eCommerce Update 0.12.0](/developer-tools/release-notes/module-secure-zones-changelog)
+* [Support for eCommerce Update 0.12.0](module-secure-zones-changelog/)
 * Sitemap generation
 
 ***
 
 ### 2.4.5.0 - 27th April 2020
 
-* [Support for eCommerce Update 0.11.0](/developer-tools/release-notes/module-secure-zones-changelog)
+* [Support for eCommerce Update 0.11.0](module-secure-zones-changelog/)
 
 ***
 
 ### 2.4.4.0 - 22nd April 2020
 
-* [Support for Events Module](/developer-tools/release-notes/module-events-changelog.md)
+* [Support for Events Module](module-events-changelog.md)
 * Fix for multiple reCAPTCHA Forms on a Page
 
 ***
@@ -600,12 +600,9 @@ You will need to update all WebApp items to this new format. Simply re-search fo
 
 This week, we are releasing updates to the following:
 
-A more secure reCAPTCHA validation for Forms.
-Site Search now allows you to specify a combination of Pages, WebApp and Module Detail Pages to search.
-We've also made brand new features available for Beta testing:
+A more secure reCAPTCHA validation for Forms. Site Search now allows you to specify a combination of Pages, WebApp and Module Detail Pages to search. We've also made brand new features available for Beta testing:
 
-eCommerce Quotes- eCommerce customers select items in their Cart and submit a Form to request a Quote for those items without making a Payment.
-White-labelling Phase One - Allow Clients to see your Agency Logo in the top-left hand corner of Admin.
+eCommerce Quotes- eCommerce customers select items in their Cart and submit a Form to request a Quote for those items without making a Payment. White-labelling Phase One - Allow Clients to see your Agency Logo in the top-left hand corner of Admin.
 
 #### Improvements
 
@@ -619,15 +616,11 @@ What's changing?
 
 All Forms now use XHR requests for submitting their data. This allows us to do extra checks on Forms which use reCAPTCHA.
 
-XHR submission is a requirement for forms with reCAPTCHA
-Bots which try to submit Forms directly via JavaScript with the .submit() method will fail at the first hurdle regardless of reCAPTCHA.
-If you're not using reCAPTCHA, then you can manually alter our code to stop using XHR.
-How to get the update?
+XHR submission is a requirement for forms with reCAPTCHA Bots which try to submit Forms directly via JavaScript with the .submit() method will fail at the first hurdle regardless of reCAPTCHA. If you're not using reCAPTCHA, then you can manually alter our code to stop using XHR. How to get the update?
 
 Update System Files to version 2.4.1.1
 
-To see this update on your form you'll need to simply hit 'Save' on the Form in Siteglide. It will work with both default and custom Layouts.
-Site Search- More control over the scope of what is searched
+To see this update on your form you'll need to simply hit 'Save' on the Form in Siteglide. It will work with both default and custom Layouts. Site Search- More control over the scope of what is searched
 
 #### What's Changing?
 
@@ -635,27 +628,19 @@ You can now choose any combination of Pages, WebApp Detail Pages and Module Deta
 
 If you include WebApps in the parameter, Toolbox will also prompt you to select which WebApps you'd like to search.
 
-Also, for searches which include WebApps, you can include the parameter single_field, to only search for WebApp Detail Pages with that specific field e.g. properties.webapp_field_2_1 matching the keyword terms. Note- this will be the real database name of the field- not the user-friendly field name.
+Also, for searches which include WebApps, you can include the parameter single\_field, to only search for WebApp Detail Pages with that specific field e.g. properties.webapp\_field\_2\_1 matching the keyword terms. Note- this will be the real database name of the field- not the user-friendly field name.
 
 How to get this Update?
 
-Visit Admin for your Site and System Files will be updated.
-You will then find the Toolbox updated with the new Parameters you can use.
-Learn more:
+Visit Admin for your Site and System Files will be updated. You will then find the Toolbox updated with the new Parameters you can use. Learn more:
 
-New Features
-Admin Features
-Whitelabelling - (Beta)
+New Features Admin Features Whitelabelling - (Beta)
 
 We want to give Partners the ability to show their Clients a white-labelled version of Admin. The first step allows you to replace the logo your Clients see in the Admin with your own. We will release full documentation for this soon when the next feature is ready.
 
 How to use?
 
-In Portal, click your Agency name in left side menu
-Upload your logo there, and toggle the 'Whitelabel logo?' switch to on.
-Save, and refresh to see your logo in the top left.
-This feature is in Beta, so Clients using admin.siteglide.com will not see your agency logo. You can view your agency logo from beta.siteglide.com.
-Module Features
+In Portal, click your Agency name in left side menu Upload your logo there, and toggle the 'Whitelabel logo?' switch to on. Save, and refresh to see your logo in the top left. This feature is in Beta, so Clients using admin.siteglide.com will not see your agency logo. You can view your agency logo from beta.siteglide.com. Module Features
 
 eCommerce Quotes- (Beta)
 
@@ -663,9 +648,7 @@ This community-requested feature allows Users to use the Cart as Normal, but com
 
 Features
 
-A new kind of eCommerce Form is now available: Quote Only.
-When the Form is completed, it generates an Order using the items in the User's Cart- but does not prompt them to complete any Payment information. The Order appears in the Admin with the status: "Quote Only".
-Generating a "Quote Only" order does not decrease the number of items in the Product's Inventory. However, a Product will need to be in stock before it is added to a Cart.
+A new kind of eCommerce Form is now available: Quote Only. When the Form is completed, it generates an Order using the items in the User's Cart- but does not prompt them to complete any Payment information. The Order appears in the Admin with the status: "Quote Only". Generating a "Quote Only" order does not decrease the number of items in the Product's Inventory. However, a Product will need to be in stock before it is added to a Cart.
 
 ***
 

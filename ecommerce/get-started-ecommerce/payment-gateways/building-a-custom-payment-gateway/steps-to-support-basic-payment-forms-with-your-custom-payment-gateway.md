@@ -17,13 +17,12 @@ The payment flow will look for code in your set Custom Payment Gateway Partial P
 Your code will be included inside the Form - where in the Form Layout you see the tag
 
 ```liquid
-{% raw %}
 {% include "ecommerce/basic_payment",
   amount: '500',
   currency: 'usd',
   id: '10' 
 %}
-{% endraw %}
+
 ```
 
 To access information about your custom Payment Gateway such as the API Keys, you can output `{{payment_gateway}}` into the layout.
@@ -40,7 +39,7 @@ Define a JavaScript function which will set up and carry out the payment transac
 
 You should assign this function to `window.s_e_payment = my_payment_function`. The Siteglide Form will call this function when validation is complete and it is ready to begin the payment.
 
-The function definition should return a [JavaScript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise) - this will allow the Siteglide Form Submit function to wait for the payment to finish, before it continues submitting the Form.
+The function definition should return a [JavaScript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - this will allow the Siteglide Form Submit function to wait for the payment to finish, before it continues submitting the Form.
 
 Your function definition can use the parameter `form` - this contains the DOM element for the Form which has been submitted. This will be used in the JS selectors in the next step to make sure we target the DOM in the correct Form where more than one Form is present on the Page.
 
@@ -101,6 +100,7 @@ In the results of this query, you'll be able to verify the true minimum amount a
 {% raw %}
 {%- assign currency = form_configuration_data.result.items[0].configuration.properties.form_payment_currency.value | downcase -%}
 {% endraw %}
+
 
 
 

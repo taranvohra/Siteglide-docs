@@ -8,10 +8,10 @@ Allow Users to keep track of their communication history with your Client by out
 
 You can use the following links to learn how to set up a Secure Page and the means to access it:
 
-* [Create a Secure Zone](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
-* [Create a Secure Zone Sign Up Form](/modules/core-modules/secure-zones/introduction#log-in-sign-up.md)
-* [Adding a Secure Zone to a Form Advanced](/modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission.md)
-* [Add a Secure Zone to a Page](/modules/core-modules/secure-zones/quickstart-secure-zones.md)
+* [Create a Secure Zone](../../modules/core-modules/secure-zones/quickstart-secure-zones.md)
+* [Create a Secure Zone Sign Up Form](../../modules/core-modules/secure-zones/introduction/#log-in-sign-up.md)
+* [Adding a Secure Zone to a Form Advanced](../../modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission.md)
+* [Add a Secure Zone to a Page](../../modules/core-modules/secure-zones/quickstart-secure-zones.md)
 
 ## Introduction
 
@@ -23,6 +23,7 @@ Allow Users to keep track of their communication history with your Client by out
 {% raw %}
 {% include 'user_form_submissions', layout: 'default' %}
 {% endraw %}
+
 ```
 
 Parameters:
@@ -49,6 +50,7 @@ One of the benefits of this is that you can rename the variable under which your
   <p>Form name: {{this.name}}</p>
 {% endfor %}
 {% endraw %}
+
 ```
 
 Or, if you want to output the `form_submissions` layout inside a `user_details` Layout for example, you can store the variables under a different namespace e.g. `case` and continue to use `this` to refer to the `user_details` (Liquid variables are always inherited by Layouts included within them).

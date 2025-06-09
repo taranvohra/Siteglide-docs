@@ -44,7 +44,7 @@ Bear in mind that Forms will not work properly inside Emails, so if displaying a
 
 ### Outputting on the Subscription Action Required System Page
 
-To output the Layout here, you need to add a Detail Layout name to the Liquid as a parameter. Read more [here](/eCommerce/get-started-ecommerce/subscriptions/subscription-action-required.md).
+To output the Layout here, you need to add a Detail Layout name to the Liquid as a parameter. Read more [here](subscription-action-required.md).
 
 ## File Structure
 
@@ -81,6 +81,7 @@ We provide an example of some logic you can use to explain to logged in Users wh
 
 
 
+
 ```
 
 In the case where the User is not currently logged in and is not responding to an email, the logic won't be able to determine the exact status straight away.
@@ -89,7 +90,7 @@ Instead, if a non-logged in User tries to Sign up for a Subscription, Siteglide 
 
 #### Step 2 - Create your Form
 
-Adding a Form to the Detail Layout allows users to Sign Up to this Subscription product. You can read more about creating this Form [here](/cms/forms/quickstart-forms.md).
+Adding a Form to the Detail Layout allows users to Sign Up to this Subscription product. You can read more about creating this Form [here](../../../cms/forms/quickstart-forms.md).
 
 If you've already created your Form, you can skip this step.
 
@@ -101,6 +102,7 @@ Once you've created a Form and made a note of its ID, you'll be able to add it t
 {% raw %}
 {% comment %} INSERT YOUR PAYMENT FORM HERE {% endcomment %}
 {% endraw %}
+
 ```
 
 This is just a suggestion, you can actually include your Form anywhere you like in the Layout. Use the following Liquid:
@@ -109,6 +111,7 @@ This is just a suggestion, you can actually include your Form anywhere you like 
 {% raw %}
 {% include 'form', id: '1', layout: 'my_form_layout' %}
 {% endraw %}
+
 ```
 
 Parameters:
@@ -123,11 +126,10 @@ The `wrapper.liquid` file could be used to add any HTML structure you may requir
 You must include the following Liquid, which will output the `item.liquid` file for the Subscription Item. Most fields are specific to the Item and will only be available inside the `item.liquid` file.
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_ecommerce/ecommerce/get/get_subscriptions'
     item_layout: 'item' 
 -%}
-{% endraw %}
+
 ```
 
 #### Step 5 - Available Fields
@@ -169,6 +171,7 @@ To determine this, you can use Liquid Logic to hide an entire block of code in w
 
 
 
+
 ```
 
 Fields:
@@ -186,7 +189,7 @@ Fields:
 * `{{subscription_order['Plan Interval']}}` - A snapshot of the Interval of this Subscription Order's plan. This may be an older plan than the current plan used by the Subscription product.
 * `{{subscription_order['Plan Interval Count']}}` - A snapshot of the Interval Count of this Subscription Order's plan. This may be an older plan than the current plan used by the Subscription product.
 
-\*Tip: Changes in the Pricing Plan \*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](/eCommerce/get-started-ecommerce/subscriptions/managing-subscriptions/changing-price-and-billing-interval.md)
+\*Tip: Changes in the Pricing Plan \*It's possible to change the price and billing interval of a Subscription. This change will only affect new subscribers and existing customers will continue on the plan they signed up for originally. You can read more about this here: [eCommerce Subscriptions - Changing the Price and Billing Interval](managing-subscriptions/changing-price-and-billing-interval.md)
 
 When outputting fields, be aware that the Price might have changed globally for a Subscription, while a User may already have an existing Subscription with a different price. When changing their payment Details on the Subscription Detail View, these Users may be reassured to see the price displayed they are paying currently.
 
@@ -205,6 +208,7 @@ You can use logic to display a different price to Users in this situation.
   <p>{{this.price.price_charge}}</p>
 {% endif %}
 {% endraw %}
+
 
 
 

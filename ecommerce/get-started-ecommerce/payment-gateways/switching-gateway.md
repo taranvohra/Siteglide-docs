@@ -25,6 +25,7 @@ In any Page, output your form and select the custom layout with the layout param
 {% raw %}
 {%- include 'ecommerce/checkout', form_id: '1', layout: 'my-custom-layout' -%}
 {% endraw %}
+
 ```
 
 For Basic Payment forms:
@@ -33,6 +34,7 @@ For Basic Payment forms:
 {% raw %}
 {% include 'form', id: '2', layout: 'my-custom-layout' %}
 {% endraw %}
+
 ```
 
 ## Step 3
@@ -80,12 +82,9 @@ Pass in the name of the Payment Gateway you wish to switch to as the only argume
 
 This can be applied as a callback to any JS event you like, such as clicking a radio button, or opening an accordion. e.g.
 
-
-
 #### Liquid
 
 ```liquid
-{% raw %}
   <div>
     <input id="paymentGateway1" type="radio" name="paymentGateway" value="123"></option>
     <label for="paymentGateway1">Payment Gateway 1</label>
@@ -94,7 +93,6 @@ This can be applied as a callback to any JS event you like, such as clicking a r
     <input id="paymentGateway2" type="radio" name="paymentGateway" value="456"></option>
     <label for="paymentGateway2">Payment Gateway 2</label>
   </div>
-{% endraw %}
 ```
 
 #### JavaScript
@@ -109,6 +107,6 @@ paymentGatewayCheckboxes.forEach(function(item) {
     }
   });
 })
-````
+```
 
 If the JS function is not called, the default payment gateway from the multiple available gteways will be used.

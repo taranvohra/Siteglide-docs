@@ -5,7 +5,7 @@
 First, set up a Basic Payment Form with a minimum payment amount by following the steps here:
 
 {% content-ref url="../../../eCommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md" %}
-[steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md](/eCommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md)
+[steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md](../../../eCommerce/get-started-ecommerce/basic-payment-forms/steps-to-set-up-a-basic-payment-form-with-a-fixed-payment-amount.md)
 {% endcontent-ref %}
 
 ## When is this Useful?
@@ -25,6 +25,7 @@ You may find the following Liquid tags helpful while developing:
 {% raw %}
 {% include 'ecommerce/basic_payment_currency' %}
 {% endraw %}
+
 ```
 
 The currency for the Form defined in Admin e.g. `gdp`.
@@ -33,6 +34,7 @@ The currency for the Form defined in Admin e.g. `gdp`.
 {% raw %}
 {% include 'ecommerce/basic_payment_currency', format: 'symbol' %}
 {% endraw %}
+
 ```
 
 The symbol for the currency for the Form defined in Admin e.g. `£`.
@@ -41,6 +43,7 @@ The symbol for the currency for the Form defined in Admin e.g. `£`.
 {% raw %}
 {% include 'ecommerce/basic_payment_min_amount' %}
 {% endraw %}
+
 ```
 
 The minimum payment value defined in Admin, in the lowest denomination of that currency e.g. for £1, `100`.
@@ -49,6 +52,7 @@ The minimum payment value defined in Admin, in the lowest denomination of that c
 {% raw %}
 {% include 'ecommerce/basic_payment_min_amount', format: 'decimal' %}
 {% endraw %}
+
 ```
 
 The minimum payment value defined in Admin, formatted e.g. for £1, `1.00`.
@@ -66,7 +70,6 @@ The following example allows the User to enter an amount of their choice into an
 #### Liquid
 
 ```liquid
-{% raw %}
 <div class="">
   <label for="user_chooses_amount_to_pay">
     How much can you afford to donate (pounds and pence e.g. 10.00)?
@@ -80,7 +83,6 @@ The following example allows the User to enter an amount of their choice into an
     >
   </div>
 </div>
-{% endraw %}
 ```
 
 #### JavaScript

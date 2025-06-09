@@ -11,7 +11,7 @@ Help customers find regular purchases and favourite products with the reorder bu
 
 ## Introduction
 
-Help customers find regular purchases and favourite products with the reorder button. The button can be added to a [`user_orders`](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or any other Layout where you have access to an Order ID.
+Help customers find regular purchases and favourite products with the reorder button. The button can be added to a [`user_orders`](../how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or any other Layout where you have access to an Order ID.
 
 For this reorder feature to work, the User:
 
@@ -32,6 +32,7 @@ The following Liquid will output the reorder button:
 {% raw %}
 {% include 'ecommerce/reorder_button', layout: 'default', order_id: this.id %}
 {% endraw %}
+
 ```
 
 Parameters:
@@ -39,7 +40,7 @@ Parameters:
 * `layout`
 * `order_id`
 
-The button can be added in any Liquid Layout, but you'll need to have access to the ID for an Order belonging to that User- which is most easily available in the [User Orders](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or the [Order Details](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/orders/order-confirmation.md) Layout (note that a User can't be logged in when reading an email, so this feature will not work from an Order Details Layout in an email).
+The button can be added in any Liquid Layout, but you'll need to have access to the ID for an Order belonging to that User- which is most easily available in the [User Orders](../how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md) Layout or the [Order Details](order-confirmation.md) Layout (note that a User can't be logged in when reading an email, so this feature will not work from an Order Details Layout in an email).
 
 In the User Orders Layout, the exact Liquid for the ID will depend on the variable you've set in the loop. In the following example, the variable assigned to each iteration of the loop is this. so the Order ID is available inside the loop as this.id.
 
@@ -54,6 +55,7 @@ In the User Orders Layout, the exact Liquid for the ID will depend on the variab
 
 {% endfor %}
 {% endraw %}
+
 ```
 
 The button will only work if the User is logged in, so you may wish to add the following logic to an Order Details Layout to make sure the User is logged in before displaying:
@@ -64,13 +66,14 @@ The button will only work if the User is logged in, so you may wish to add the f
 <!-- Code only runs if User is logged in -->
 {% endif %}
 {% endraw %}
+
 ```
 
 ### The Button Layout
 
 Adding the button will load a small button layout. You can find the default Layout or create a custom Layout at the following path: `layouts/modules/module_14/components/reorder_button/my_layout_name.liquid`
 
-**Adding the function**  
+**Adding the function**\
 The styling of the button is completely up to you. To carry out its main functionality, the button requires an event to be attached to it which will run a JavaScript function:
 
 ```liquid
@@ -91,7 +94,7 @@ The function takes a single argument containing an options object. The available
 | error\_cb:  | Custom Error Function Name                       | error                | Optional      |
 | success\_cb | Custom Success Function Name                     | success              | Optional      |
 
-**Adding a Custom Error Function**  
+**Adding a Custom Error Function**\
 The Custom Error function will be called in the following circumstances (the table also shows the value of the "error" parameter passed back when this occurs):
 
 | **Error**                                                               | `error`\*\* parameter value\*\*                    |
@@ -108,7 +111,7 @@ Parameters returned:
 
 The default error behaviour is to display an "alert" containing the error message.
 
-**Adding a Custom Success Function**  
+**Adding a Custom Success Function**\
 If you add a Custom Success Function, you must add a Custom Error Function.
 
 The custom success function will run if an Order was successfully found and at least one Product was successfully added to the Cart. Not all Products related to the Order may have been available.
@@ -129,15 +132,14 @@ Successfully added Products are automatically added to the User's Cart. When the
 
 The following Liquid tags can be used to either confirm the Order ID which has been added to the Cart, or present a detailed breakdown of the Products which were not successfully added; this is an alternative to showing this information in the Custom Success Function.
 
-| **Liquid Tag**                                       | **Purpose**           | **Example Output**                                |
-| ---------------------------------------------------- | --------------------- | ------------------------------------------------- |
-| \{{context.session.reorder\_added\_to\_cart\}}       | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder. | "345" |
-| \{{context.session.reorder\_unavailable\_products\}} | An Object containing details on unsuccessful Products- if there were any. This contains the same information returned to the Custom JavaScript Callback Functions.                             | {"173":{"product\_id":"173","name":"Classical Summer Album","expiry\_date":"2145916800"\}} |
-| {% raw %}{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[0]}}<br><br>{% endfor %}{% endraw %} | By looping over the unavailable Products and accessing the [0] index, you can access their key:<br><br>- the Product ID. | "123" |
-| {% raw %}{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[1].name}}<br>{{this[1].expiry_date}}<br>{{this[1].expiry_date \| date: "%d/%m/%Y" }}<br><br>{% endfor %}{% endraw %} | By looping over the unavailable Products and accessing the [1] index, you can access their fields:<br><br>- the Name<br>- the expiry date of the Product<br>- the expiry date of the Product (formatted) | - "Classical Summer"<br>- "2145916800"<br>- "01/11/2020" |
-| {% raw %}{% session reorder_unavailable_products = null %}{% endraw %} | Clear the reorder_unavailable_products data from the session <br><br> This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. |  |
-| {% raw %}{% session reorder_added_to_cart = null %}{% endraw %} | Clear the reorder_added_to_cart data from the session. <br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed. |  |
-
+| **Liquid Tag**                                                                                                                                                                              | **Purpose**                                                                                                                                                                                                     | **Example Output**                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| \{{context.session.reorder\_added\_to\_cart\}}                                                                                                                                              | The ID of the ( at least partially ) successfully added Order. This can be used in Logic to decide whether to display feedback at all- as if it equals blank, there will be no recent reorder.                  | "345"                                                                                      |
+| \{{context.session.reorder\_unavailable\_products\}}                                                                                                                                        | An Object containing details on unsuccessful Products- if there were any. This contains the same information returned to the Custom JavaScript Callback Functions.                                              | {"173":{"product\_id":"173","name":"Classical Summer Album","expiry\_date":"2145916800"\}} |
+| <p>{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[0]}}<br><br>{% endfor %}</p>                                                                                | <p>By looping over the unavailable Products and accessing the [0] index, you can access their key:<br><br>- the Product ID.</p>                                                                                 | "123"                                                                                      |
+| <p>{% for this in context.session.reorder_unavailable_products %}<br><br>{{this[1].name}}<br>{{this[1].expiry_date}}<br>{{this[1].expiry_date | date: "%d/%m/%Y" }}<br><br>{% endfor %}</p> | <p>By looping over the unavailable Products and accessing the [1] index, you can access their fields:<br><br>- the Name<br>- the expiry date of the Product<br>- the expiry date of the Product (formatted)</p> | <p>- "Classical Summer"<br>- "2145916800"<br>- "01/11/2020"</p>                            |
+| \{% session reorder\_unavailable\_products = null %\}                                                                                                                                       | <p>Clear the reorder_unavailable_products data from the session<br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.</p>                   |                                                                                            |
+| \{% session reorder\_added\_to\_cart = null %\}                                                                                                                                             | <p>Clear the reorder_added_to_cart data from the session.<br><br>This would only happen automatically if another Order is reordered, the Cart is emptied, or Checkout is completed.</p>                         |                                                                                            |
 
 The above Liquid tags are accessing the User's session. This means they are temporary messages for that User. Each time an order is reordered the old message will be replaced.
 

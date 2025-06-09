@@ -12,7 +12,7 @@ After a User submits a Form and you redirect them to a Confirmation Page, you ca
 
 ## Prerequisites
 
-* You have set up a [Form](/cms/forms/quickstart-forms.md)
+* You have set up a [Form](../quickstart-forms.md)
 
 ## Introduction
 
@@ -21,7 +21,7 @@ After a User submits a Form, you can redirect them to a Confirmation Page.
 Including a Form Confirmation message on the Page they land on allows you to develop a customisable message which can:
 
 * Give Users peace of mind that they submitted the correct information, and allow them to contact you (via a new submission) if they have made any mistakes.
-* Include a nested [Order Confirmation](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/orders/order-confirmation.md) Layout (previously only available in Emails), which can give full details of any eCommerce Products ordered in the Form submission
+* Include a nested [Order Confirmation](../../../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/orders/order-confirmation.md) Layout (previously only available in Emails), which can give full details of any eCommerce Products ordered in the Form submission
 * Give a personal touch by including details like the User's name in the message.
 
 ## Refresher- How to set up a redirect to a confirmation Page
@@ -98,7 +98,8 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
 <div class="responsive-table-container">
   <table>
     <tbody>
-      {% raw %}
+      
+{% raw %}
 {% for field in this %}
         {% comment %}Use the following unless condition to List fields you'd like to leave out of the message.{% endcomment %}
         {% unless field[0] == "properties" or field[0] == "user_id" or field[1] == blank %}
@@ -109,6 +110,7 @@ You can choose to re-use the same confirmation message for multiple Forms. Here 
         {% endunless %} 
       {% endfor %}
 {% endraw %}
+
     </tbody>
   </table>
 </div>
@@ -121,7 +123,7 @@ If you're interested to read more about using Liquid to loop over the properties
 
 You output Details about any eCommerce Order that was made using the Form Submission. You may be familiar doing this already within an email automation.
 
-We've included an `{% raw %}{% if form.properties.order_id %}{% endraw %}` statement in the example, because this will only work properly if a `form.properties.order_id` field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
+We've included an `{% if form.properties.order_id %}` statement in the example, because this will only work properly if a `form.properties.order_id` field is available on the Page. Otherwise it may be that the Form was submitted without the User making an Order.
 
 ```liquid
 {% raw %}
@@ -131,6 +133,7 @@ We've included an `{% raw %}{% if form.properties.order_id %}{% endraw %}` state
   <p>Looks like you've not ordered anything with us this time. We hope to see you again soon!</p>
 {% endif %}
 {% endraw %}
+
 
 
 

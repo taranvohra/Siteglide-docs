@@ -1,4 +1,4 @@
-# 🏗️ Tailwind CSS - Preview Build
+# 🏗️ Tailwind CSS - Preview Mode
 
 {% hint style="info" %}
 Preview Mode is not recommended for Live Sites. We recommend only using CLI to compile Tailwind which will load the minimum CSS possible and maximise performance.
@@ -29,6 +29,7 @@ Or, by editing the Page Template code:
 {% raw %}
 {% include 'modules/module_86/tailwind/head', template_build_method: 'preview', optional_path_to_cli_css: 'css/tailwind.min.css' %}
 {% endraw %}
+
 ```
 
 ### CLI build only
@@ -37,6 +38,8 @@ Or, by editing the Page Template code:
 {% raw %}
 {% include 'modules/module_86/tailwind/head', optional_path_to_cli_css: 'css/tailwind.min.css' %}
 {% endraw %}
+
+
 ```
 
 {% hint style="info" %}
@@ -50,11 +53,11 @@ If no custom CLI build can be found and no path is provided, preview mode will b
 The Preview mode starts by adding two CSS files from CDNs to your Page Template's `<head>:`
 
 1. A CSS file distributed by Flowbite containing Tailwind classes to support the vast majority of their blocks and components [https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css](https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css)
-2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbite's as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".&#x20;
+2. A CSS file from the SiteBuilder Module containing Tailwind classes used by our version of the Tailwind blocks - this may differ slightly from Flowbite's as we support Liquid logic, meaning we may need to support both a login button's logged in and logged out states for example. This also supports "primary" colour variables which we use instead of "blue".
 
 Together these CSS files create a set of fallbacks which allow Flowbite Layouts to look how Flowbite and SiteBuilder intended out of the box, should these classes not be included elsewhere. However, they won't have any of your branded variables set, like colours or fonts. The extra load time for these CSS files is also the reason why it's not generally recommended to use Preview Page for pages in Production.
 
-3. To get a more consistent look and to apply your brand variables, Preview mode can also pull in a custom CLI Tailwind build underneath the other two. Where this 3rd CSS file contains the same class as one of the other 2 files, e.g. \`bg-blue-700\` it will overwrite it with the correct variables e.g. the correct shade of blue. Where the custom build does not yet support a class, the original Flowbite variables will be used as a fallback.  Unlike a purely CLI-based approach, you don't need to spin up the CLI every time you make a change to the HTML, as you can use the fallbacks while developing and rebuild the custom CSS later, e.g. when you finish a page.&#x20;
+3. To get a more consistent look and to apply your brand variables, Preview mode can also pull in a custom CLI Tailwind build underneath the other two. Where this 3rd CSS file contains the same class as one of the other 2 files, e.g. \`bg-blue-700\` it will overwrite it with the correct variables e.g. the correct shade of blue. Where the custom build does not yet support a class, the original Flowbite variables will be used as a fallback. Unlike a purely CLI-based approach, you don't need to spin up the CLI every time you make a change to the HTML, as you can use the fallbacks while developing and rebuild the custom CSS later, e.g. when you finish a page.
 
 ### Safelist
 
@@ -64,13 +67,13 @@ If you know you wish to support more classes using your brand variables in futur
 
 ### Clients working in Studio
 
-If you are building a site where you want clients to be able to build out Pages themselves using the Studio tab, you could consider creating a Page Template for them with Preview Mode enabled. \
+If you are building a site where you want clients to be able to build out Pages themselves using the Studio tab, you could consider creating a Page Template for them with Preview Mode enabled.\
 \
-This allows clients to drag in blocks from SiteBuilder and to use them out of the box.&#x20;
+This allows clients to drag in blocks from SiteBuilder and to use them out of the box.
 
 However, you can support them by running a CLI Tailwind build as well, either:
 
-1. At the end of each day or week, to tidy up inconsistencies and add brand variables to Pages still using Preview Mode which may be missing them. Clients can continue using Preview mode but every time you rebuild the Tailwind, more and more common classes are covered by consistent variables.&#x20;
+1. At the end of each day or week, to tidy up inconsistencies and add brand variables to Pages still using Preview Mode which may be missing them. Clients can continue using Preview mode but every time you rebuild the Tailwind, more and more common classes are covered by consistent variables.
 2. When the Client finishes a Page or set of Pages and are ready to put them live and they let you know they are ready to "publish". You run a Tailwind CLI build and switch the Page Template to one with preview mode turned off, giving site visitors a faster experience. Note that by default preview mode templates are **still visible to site visitors.** If using this workflow, you may wish to add Liquid logic to the Page Template which either requires a visitor to be viewing in the Studio tab or to enter a \`?preview=true\` at the end of the URL in the browser:
 
 ```liquid

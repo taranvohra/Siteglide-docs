@@ -27,7 +27,7 @@ Here are a few of the terms you may come across in this topic:
 | records                                      | In platformOS, as in many other databases, a record is a single entry of data in a database.                                                                                                                                                                                                                                                                                            |
 | related\_records                             | In platformOS, records which share a relationship. It can be single:single, many:many or single:many. This is effectively the same concept as a datasource.                                                                                                                                                                                                                             |
 | datasource                                   | In Siteglide, a datasource is where there is a relationship between records in the same table or in a different table, and data can be "sourced" from that other table. It can be single:single, many:many or single:many. This is effectively the same concept as platformOS's related\_records.                                                                                       |
-| datasource and datasource\_multi field types | In Siteglide, some fields can be given the datasource and datasource\_multi field types: [Field Types](/developer-tools/configuration/field-types.md) These are designed to store IDs of other records to make joining easy. However, you can also in GraphQL join other types of fields.                                                                             |
+| datasource and datasource\_multi field types | In Siteglide, some fields can be given the datasource and datasource\_multi field types: [Field Types](../../configuration/field-types.md) These are designed to store IDs of other records to make joining easy. However, you can also in GraphQL join other types of fields.                                                                                                          |
 | foreign                                      | In platformOS, a foreign property refers to a property outside of the current record. The foreign property is matched with the join on property in order to fetch related records which share a relationship.                                                                                                                                                                           |
 | data graph                                   | In computing a data graph describes the relationships between different nodes of data. Think of a node like a city and the relationships like roads. One of the reasons GraphQL is called GraphQL is that it is trying to give queries an intuitive graph-like structure- we define the relationships in the query itself, and the results return with the same relationship structure. |
 
@@ -61,7 +61,7 @@ query blogsWithAuthors {
 
 Since these two modules - the Blog and Authors Module - are both created by Siteglide, they already store the information needed to join them inside their properties. We only need to look at the existing properties in detail to get the information we need to build our query.
 
-There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](/developer-tools/cli/quickstart.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations e.g. 'marketplace\_builder/form\_configurations/forms/form\_1.liquid' or 'marketplace\_builder/form\_configurations/modules/module\_3.liquid':
+There are several ways to do this. One of the easiest to do on an everyday basis is to use [Introducing Siteglide CLI](../../cli/quickstart.md) to `pull` your site, then to look in marketplace\_builder/form\_configurations e.g. 'marketplace\_builder/form\_configurations/forms/form\_1.liquid' or 'marketplace\_builder/form\_configurations/modules/module\_3.liquid':
 
 For this exercise, we'd be looking at `module_3` for blog and `module_6` for authors.
 
@@ -96,13 +96,13 @@ query findBlogAndAuthorProperties {
 
 In the Siteglide Admin, we can check that some of the Blogs already have authors set in the `datasource` field, in this case this Blog item has an Author ID of `100` in the field:
 
-![](../../../.gitbook/assets/archbee\_uploads/evgRNmT8\_vPrVj3LFkRMj\_image.png)
+![](../../../.gitbook/assets/archbee_uploads/evgRNmT8_vPrVj3LFkRMj_image.png)
 
 ### Step 3) Add related\_records inside results
 
 To start with, look inside results in explorer: `related_record` and `related_records` appear as possible results. By including these special objects inside the results object, we can define a branching tree of related results.
 
-![](../../../.gitbook/assets/archbee\_uploads/XS1E-AqyXEMjjg9DITVoo\_image.png)
+![](../../../.gitbook/assets/archbee_uploads/XS1E-AqyXEMjjg9DITVoo_image.png)
 
 The two options are similar but have one key difference:
 
@@ -286,7 +286,7 @@ The results in JSON may look like the below (we've minimised Blog properties whi
 }
 ```
 
-As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md) or [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](/developer-tools/graphql/tutorials/tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)) to access the results, until you get to an array. Since we only asked for a single author, we can use dot notation inside the blog record to access the author. We still need to loop over the blog results as always:
+As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot Notation](../../liquid/accessing-data-from-liquid-objects.md) or [Tutorial 5 - Using Liquid to run GraphQL queries on your Site](tutorial-5-using-liquid-to-run-graphql-queries-on-your-site.md)) to access the results, until you get to an array. Since we only asked for a single author, we can use dot notation inside the blog record to access the author. We still need to loop over the blog results as always:
 
 ```liquid
 {% raw %}
@@ -299,6 +299,7 @@ As always, when outputting in Liquid, you can use dot notation (see [Liquid Dot 
   </div>
 {% endfor %}
 {% endraw %}
+
 ```
 
 ## A many:1 alternative

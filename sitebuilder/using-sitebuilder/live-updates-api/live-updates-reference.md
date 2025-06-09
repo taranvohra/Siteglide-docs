@@ -16,10 +16,10 @@ The Live Updates API, at its core, sends requests to the server to fetch a new v
 
 Before reading this section, it will help to be familiar with the Siteglide documentation relating to the kind of Liquid tag you are intending to live-update- here are a few useful links, but you may need to browse further to find the feature you're working with:
 
-* [WebApp List Layouts Parameters](/webapps/layouts/webapp-list-layout.md)
-* [Parameters for Filtering](/webapps/layouts/searching-advanced-filtering.md)
-* [Parameters for Search](/webapps/layouts/searching-by-keyword.md)
-* [Blog Archive](/modules/core-modules/blog-and-authors/blog-filter-by-date.md)
+* [WebApp List Layouts Parameters](../../../webapps/layouts/webapp-list-layout.md)
+* [Parameters for Filtering](../../../webapps/layouts/searching-advanced-filtering.md)
+* [Parameters for Search](../../../webapps/layouts/searching-by-keyword.md)
+* [Blog Archive](../../../modules/core-modules/blog-and-authors/blog-filter-by-date.md)
 
 On the endpoint page we provide, the Liquid tag being live-updated is output.
 
@@ -31,6 +31,7 @@ In order to make the process of dynamically modifying the output simpler, we are
 {% raw %}
 {% include 'webapp', id: '1', layout: 'default', item_ids: '1,2' %}
 {% endraw %}
+
 
 
 
@@ -180,7 +181,7 @@ When a sort button changes state to either 'asc' or 'desc', all other sort butto
 
 _Changing default HTML for each button state_
 
-See the [Methods section](#methods) for `.setSortHTML();` and the instructions for using methods with data-attributes.
+See the [Methods section](live-updates-reference.md#methods) for `.setSortHTML();` and the instructions for using methods with data-attributes.
 
 #### Live-Updating the Interactive Form Areas <a href="#liveupdating-the-interactive-form-areas" id="liveupdating-the-interactive-form-areas"></a>
 
@@ -202,7 +203,7 @@ When live-updating controls, here are a few general principals to improve the ex
 
 The following guide shows how methods can be used:
 
-* [Using Live Updates Methods](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-use-live-updates-methods.md)
+* [Using Live Updates Methods](steps-to-use-live-updates-methods.md)
 
 The table shows available methods:
 
@@ -249,7 +250,7 @@ The module JavaScript defines and dispatches the following custom Events. You ca
 
 #### Liquid Includes and Functions <a href="#liquid-includes-and-functions" id="liquid-includes-and-functions"></a>
 
-* See [Pagination Include](/sitebuilder/using-sitebuilder/sitebuilder-liquid-includes/pagination.md) for settings specific to live-update data-attributes.
+* See [Pagination Include](../sitebuilder-liquid-includes/pagination.md) for settings specific to live-update data-attributes.
 
 #### Endpoint Logic Reference <a href="#endpoint-logic-reference" id="endpoint-logic-reference"></a>
 
@@ -258,11 +259,11 @@ _This Section is included to provide useful information to advanced users and as
 After the GET Request is sent with all of your chosen parameters, the context in which the new re-render of the Liquid is output is modified in the following ways:
 
 1. The Siteglide Constants Liquid tag is run, unless the special `sg_skip_siteglide_constants` URL parameter is passed in. You can optionally experiment with this to improve server response time if the content you use does not require it.
-2. The tag is given the Siteglide `use_search` and `use_adv_search` parameters set to 'true' automatically. This means that any URL parameters described in this set of documents will be allowed to manipulate the filtering [Filtering](/webapps/layouts/searching-advanced-filtering.md) & [Searching](/webapps/layouts/searching-by-keyword.md).
+2. The tag is given the Siteglide `use_search` and `use_adv_search` parameters set to 'true' automatically. This means that any URL parameters described in this set of documents will be allowed to manipulate the filtering [Filtering](../../../webapps/layouts/searching-advanced-filtering.md) & [Searching](../../../webapps/layouts/searching-by-keyword.md).
 3. The `{{context.params}}` variables relating to the URL of the endpoint page are overwritten with those of the referring Page. This is to prevent any discrepancies in Layouts using them. Note we do not currently overwrite the `{{context.location}}` or `{{context.headers}}` objects, though future versions of this API might add an option to do this if requested.
 4. There is no way to dynamically change the `layout` or the module/webapp `id` parameter- these are ignored. See "Thinking about Security".
 5. The following params `range_lt`, `range_lte`, `range_gt` and `range_gte` are inspected. If they contain a date format which includes a dash `-` we convert them to the Unix timestamp which Siteglide expects and context.params is overwritten to reflect the new format. This allows you to skip the step of converting them in JavaScript from the value of a standard HTML field.
-6. If the layout is a webapp layout and the `type` param is not set to "detail", we will add the `use_wrapper: 'true'` parameter to the Liquid tag. This means we only support WebApp list layouts with wrappers, as this allows them to be output self-contained. If you need to migrate an existing WebApp Layout to use a wrapper, you can see the differences here: [WebApp List Layouts](/webapps/layouts/webapp-list-layout.md#nNjER)
+6. If the layout is a webapp layout and the `type` param is not set to "detail", we will add the `use_wrapper: 'true'` parameter to the Liquid tag. This means we only support WebApp list layouts with wrappers, as this allows them to be output self-contained. If you need to migrate an existing WebApp Layout to use a wrapper, you can see the differences here: [WebApp List Layouts](../../../webapps/layouts/webapp-list-layout.md#nNjER)
 7. Any custom parameters you wish to send over you can. These can of course be accessed in the logic of the layout itself under `{{context.params}}`.
 8. The URL parameters in the table above are read and, if necessary, turned into variables which are passed directly into the Liquid tag as Siteglide parameters.
 

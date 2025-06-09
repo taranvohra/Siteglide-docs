@@ -26,44 +26,44 @@ This can help you build more advanced designs which adapt dynamically depending 
 
 ### Introduction to Pagination Layouts
 
-Developing a Pagination Layout can start simple, but many designs will involve complex elements.  We'd recommend checking out our Design System examples when they become available on Layout Library. You could alter these, or use them for inspiration and start from scratch.&#x20;
+Developing a Pagination Layout can start simple, but many designs will involve complex elements. We'd recommend checking out our Design System examples when they become available on Layout Library. You could alter these, or use them for inspiration and start from scratch.
 
 ### How to Change Page
 
-In order to make a Pagination control button functional, you need to refresh the current Page with a modified URL query parameter.&#x20;
+In order to make a Pagination control button functional, you need to refresh the current Page with a modified URL query parameter.
 
 For example, if I'm on the "About" Page of my site, the URL will be: `/about`, by default, this will show page 1.
 
 If I want to send the User to Page 11, you'll need to add a page query parameter on the URL so that it looks like this: `/about?page=11`
 
-You can do this with HTML, using the \<a> tag: `<a href="/about?page=11">11</a>`&#x20;
+You can do this with HTML, using the \<a> tag: `<a href="/about?page=11">11</a>`
 
-Or, you can use JavaScript to achieve the same effect.&#x20;
+Or, you can use JavaScript to achieve the same effect.
 
-This will change page for all Pagination controls on the Page, so currently it's best practice to only display one WebApp/ Module List  with Pagination on the Page.
+This will change page for all Pagination controls on the Page, so currently it's best practice to only display one WebApp/ Module List with Pagination on the Page.
 
 #### Liquid Variables
 
-Within Pagination Layouts, the following variables will be available to give you contextual information.&#x20;
+Within Pagination Layouts, the following variables will be available to give you contextual information.
 
-* `current_page`  -The current page (integer) &#x20;
+* `current_page` -The current page (integer)
 * `previous_page` - Designed to be used with a Prev button, its value is the previous page number (integer), or false (Boolean) if there is no previous page.
-* `prev_path` -  href for previous button
+* `prev_path` - href for previous button
 * `next_page` - Designed to be used with a Next button, its value is the next page number (integer), or false (Boolean) if there is no next page.
 * `next_path` - href for next button
 * `first_path`: href for first button
 * `last_path`: href for last button
 * `total_pages`: The total number of pages (integer)
-* `page_search_params`: The preserved search terms in URL format- starts with & so can be added at the end of URL to new Page (`?page=x` will already be added at the end of a URL, so a prevailing & is appropriate).&#x20;
+* `page_search_params`: The preserved search terms in URL format- starts with & so can be added at the end of URL to new Page (`?page=x` will already be added at the end of a URL, so a prevailing & is appropriate).
 
 For example, you might have a button which will take Users to the next Page, but it might be helpful to know whether or not a next page exists (otherwise, the User will see an error when they navigate). Using these variables and a Liquid if statement, you can disable the button when the user is on page 1. In this example, we also use a variable from the above list to set the button's `href`.
 
 ```liquid
-{% raw %}
-<li class="page-item {% if next_page == false %}disabled{% endif %}">
+<li class="page-item {% raw %}
+{% if next_page == false %}disabled{% endif %}
+{% endraw %}">
  <a class="page-link" href="{{next_path}}">Next</a>
 </li>
-{% endraw %}
 ```
 
 #### Looping

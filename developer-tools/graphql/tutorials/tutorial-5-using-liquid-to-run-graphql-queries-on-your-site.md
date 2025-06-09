@@ -5,15 +5,15 @@ You've now used the GraphQL playground to write queries which fetch data. Now yo
 ## Prerequisites
 
 * You've completed the "Learning GraphQL" tutorials 1 - 4.
-* In order to use GraphQL results on your Page, you'll need to be familiar with Dot Notation Liquid syntax. You can get started with learning to use [Dot Notation here](/developer-tools/liquid/accessing-data-from-liquid-objects.md). You may find that you want to refer back and forth between articles on Dot Notation and GraphQL as you continue with your learning.
+* In order to use GraphQL results on your Page, you'll need to be familiar with Dot Notation Liquid syntax. You can get started with learning to use [Dot Notation here](../../liquid/accessing-data-from-liquid-objects.md). You may find that you want to refer back and forth between articles on Dot Notation and GraphQL as you continue with your learning.
 * You'll need to be familiar with Siteglide-CLI. In this tutorial we'll be using Siteglide-CLI to add a GraphQL folder and sync our new queries up to the Site.
-* [About GraphQL](/developer-tools/graphql/about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
+* [About GraphQL](../about-graphql.md)- optional- Read more about GraphQL and when it might be best used.
 
 ## Introduction
 
 Last time, we looked at how to use `filter` to refine your queries so that they only return results matching particular criteria.
 
-So far we've been working in GraphiQL, the interative playground. This time, we'll run a GraphQL query on your Starter Site. We'll also take a quick look at how to handle the results- but you can learn more about this by following our Documentation on [Dot Notation](/developer-tools/liquid/accessing-data-from-liquid-objects.md) and [Collections](/developer-tools/liquid/using-collections-with-webapps-and-modules.md).
+So far we've been working in GraphiQL, the interative playground. This time, we'll run a GraphQL query on your Starter Site. We'll also take a quick look at how to handle the results- but you can learn more about this by following our Documentation on [Dot Notation](../../liquid/accessing-data-from-liquid-objects.md) and [Collections](../../liquid/using-collections-with-webapps-and-modules.md).
 
 ## Saving your GraphQL File
 
@@ -65,11 +65,15 @@ If you wanted to check if the file has synced correctly, you can turn off `sync`
 
 ## Adding the GraphQL Liquid Tag
 
-We'll use the `graphql` Liquid tag provided by platformOS. You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date: 
+We'll use the `graphql` Liquid tag provided by platformOS. You may see other developers familiar with platformOS using tags like `query_graph` or `execute_query`, but `graphql` is the most up-to-date:
+
 ```liquid
-{%- raw -%}
-{%- graphql my_results = "get_items_with_musical_names" -%}
-{%- endraw -%}
+
+<div data-gb-custom-block data-tag="-"></div>
+
+<div data-gb-custom-block data-tag="-" data-my_results='get_items_with_musical_names'></div>
+
+<div data-gb-custom-block data-tag="-"></div>
 ```
 
 Notes:
@@ -85,8 +89,9 @@ You can output all of your results on the Page, using Liquid output syntax `{{ }
 ```liquid
 {% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{{my_results}}
 {% endraw %}
+{{my_results}}
+
 ```
 
 Notes:
@@ -142,8 +147,9 @@ The dot notation to reach the results is:
 ```liquid
 {% raw %}
 {% graphql my_results = "get_items_with_musical_names" %}
-{{my_results.records.results}}
 {% endraw %}
+{{my_results.records.results}}
+
 ```
 
 Alternatively, you can always run your query in the GraphiQL Playground and work out the dot notation needed from the results shown in the middle-right panel. You'll just need to ignore the very top key in the results `data`: and use the variable from your `graphql` tag instead e.g. `my_results` :
@@ -156,6 +162,7 @@ Alternatively, you can always run your query in the GraphiQL Playground and work
 {% for this in my_results.records.results %}
 {% endfor %}
 {% endraw %}
+
 ```
 
 We loop over every item in the Results array. We create a variable called `this` with a scope which allows it to be accessed only inside each loop iteration. `this` contains all the data for that result.
@@ -187,7 +194,7 @@ This gets me the following Results on the Page:
 
 You can use a Liquid `include` tag to output a Layout to display your results. The trick is to make sure that the data fits the same format as the layout is expecting.
 
-You can learn more about this topic [here](/developer-tools/liquid/using-collections-with-webapps-and-modules.md), as it works in the same way as displaying Collection Results in a Layout.
+You can learn more about this topic [here](../../liquid/using-collections-with-webapps-and-modules.md), as it works in the same way as displaying Collection Results in a Layout.
 
 ## Congratulations
 

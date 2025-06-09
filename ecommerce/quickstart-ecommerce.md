@@ -32,7 +32,7 @@ You can create and edit items as well as manage them via CSV using the Import/Ex
 
 ## Step 3: Product List Layout
 
-To display the Products on the website you will need to setup the Product List Layout.&#x20;
+To display the Products on the website you will need to setup the Product List Layout.
 
 {% hint style="info" %}
 This will already be done for you if you use our eCommerce Template.
@@ -106,16 +106,16 @@ You simply need to add your Live and Test Public Keys/Secret Keys. We recommend 
 
 ## Next Steps
 
-You can totally customise how your eCommerce store works in Siteglide. Here are a few features you might want to look at next:
-/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options
-{% content-ref url="../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md" %}
-[shipping-options.md](../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md)
+You can totally customise how your eCommerce store works in Siteglide. Here are a few features you might want to look at next: /ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options
+
+{% content-ref url="get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md" %}
+[shipping-options.md](get-started-ecommerce/cart-checkout-and-quotes/product-views/shipping-selection/shipping-options.md)
 {% endcontent-ref %}
 
-{% content-ref url="../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md" %}
-[discount-codes.md](../ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md)
+{% content-ref url="get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md" %}
+[discount-codes.md](get-started-ecommerce/cart-checkout-and-quotes/product-views/discount-selection/discount-codes.md)
 {% endcontent-ref %}
 
-{% content-ref url="../ecommerce/get-started-ecommerce/about-the-ecommerce-module.md" %}
-[about-the-ecommerce-module.md](../eCommerce/get-started-ecommerce/about-the-ecommerce-module.md)
+{% content-ref url="get-started-ecommerce/about-the-ecommerce-module.md" %}
+[about-the-ecommerce-module.md](get-started-ecommerce/about-the-ecommerce-module.md)
 {% endcontent-ref %}

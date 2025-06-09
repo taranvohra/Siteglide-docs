@@ -13,6 +13,7 @@ Output your Module form on a page to create new items:
 {%- include 'module_form', id: '3', layout: layout, enabled: 'true'-%}
 {% endraw %}
 
+
 ```
 
 ### Editing Existing Items
@@ -25,14 +26,14 @@ Edit forms should be outputted inside a standard Module layout's item.liquid fil
 {% raw %}
 {%- include 'module_form_edit', id: '3', layout: layout, enabled: 'true'-%}
 {% endraw %}
+
 ```
 
 Note when developing a layout for an edit form, be sure to use the HTML value attribute to give the fields their current values from the database.
 
 ```liquid
-{% raw %}
 <input name="{{form_builder.fields.properties.module_field_3_1.name}}" value="{{form_builder.fields.properties.module_field_3_1.value}}">
-{% endraw %}
+
 ```
 
 Using a SiteBuilder form layout will save you this step.

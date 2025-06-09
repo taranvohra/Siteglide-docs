@@ -1,4 +1,4 @@
-# 🔹 Blog Filter by Date
+# 🔹 Blog Archive & Date Filtering
 
 Browse by Month and/or Search Blog Posts Between Two Dates
 
@@ -40,37 +40,34 @@ In the `default/archive/` folder we have 3 different optional `types` of Archive
 _**Include: Browse By Months**_
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_blog/get/get_blog_archive'
     archive_layout: "default/archive"
     archive_layout_type: "sidebar" 
 -%}
 
-{% endraw %}
+
 ```
 
 _**Include: Browse By Months Under Years Header**_
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_blog/get/get_blog_archive'
     archive_layout: "default/archive"
     archive_layout_type: "sidebar_years" 
 -%}
 
-{% endraw %}
+
 ```
 
 _**Include: Search Blog Between Two Dates**_
 
 ```liquid
-{% raw %}
 {%- include 'modules/siteglide_blog/get/get_blog_archive'
     archive_layout: "default/archive"
     archive_layout_type: "sidebar_years_and_date_search" 
 -%}
 
-{% endraw %}
+
 ```
 
 ## Blog Archive Layouts
@@ -80,15 +77,16 @@ The following examples will take you through the different options:
 ### Browse by Month
 
 ```liquid
-{% raw %}
 <h2>Archive</h2>
 <ul>
+{% raw %}
 {% for month in blog_archive_months %}
     <li><a href="{{context.location.pathname}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month">
       {{month.start | date: "%b-%y" }}</a></li>
   {% endfor %}
-</ul>
 {% endraw %}
+</ul>
+
 ```
 
 In this example, we use the `blog_archive_months` object and loop over the array. For each iteration, a link is outputted which has two range parameters:
@@ -101,10 +99,10 @@ In this example, we use the `blog_archive_months` object and loop over the array
 This Layout does not just organise the Months available under the relevant Year Headers, it also will skip any Years without a Blog Post.
 
 ```liquid
-{% raw %}
 <h2>Archive by Years</h2>
 <ul>
   
+{% raw %}
 {% for year in blog_archive_years %}
     <li>{{year.start | date: "%Y"}}</li>
     <ul>
@@ -115,15 +113,16 @@ This Layout does not just organise the Months available under the relevant Year 
       {% endfor %}
     </ul>
   {% endfor %}
+{% endraw %}
 
 </ul>
 
-{% endraw %}
+
 ```
 
 This example uses the same links as the previous one. However, it also organises the links into the years in which they belong by first looping over the years in the `blog_archive_years` and then using the `group_by` liquid filter and another loop to output the month links grouped under the current iteration's year. Learn more about this Liquid at the pOS docs:
 
-* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group\_by)
+* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group_by)
 * [for loop](https://documentation.platformos.com/api-reference/liquid/loops)
 
 ### Search Blog Posts between two dates
@@ -133,7 +132,6 @@ In the Default Layout, this Option also includes the Previous "Browse by Months 
 It also adds a Form for directly manipulating the URL parameters to find the exact dates the User is interested in.
 
 ```liquid
-{% raw %}
 <h2>Search by Date</h2>
 <form title="Search Blog by Date" id="blog-archive-search">
   <div class="form-group">
@@ -148,9 +146,11 @@ It also adds a Form for directly manipulating the URL parameters to find the exa
     <input value="Search" class="btn btn-primary" type="submit" onclick="s_blog_date_search(s_blog_date_search_error)">
   </div>
 </form>
+{% raw %}
 {% comment %}
 Add your custom error message here - it can be renamed by changing its name in the argument for the s_blog_date_search function and in the definition below.
 {% endcomment %}
+{% endraw %}
 
 <script>
   function s_blog_date_search_error() {
@@ -158,7 +158,7 @@ Add your custom error message here - it can be renamed by changing its name in t
   }
 </script>
 
-{% endraw %}
+
 ```
 
 In this example a form is used to take user input. The Siteglide function automatically adds the dates to the URL parameters in the correct format. You can rewrite the error function to customise the way the form handles invalid dates entered.
@@ -182,6 +182,7 @@ _**blog\_archive\_years**_
 {% endraw %}
 
 
+
 ```
 
 _**blog\_archive\_months**_
@@ -194,6 +195,7 @@ _**blog\_archive\_months**_
   {{month.year}} <!-- Outputs Epoch time for the beginning of the Year in which this month falls. -->
 {% endfor %}
 {% endraw %}
+
 
 
 ```
@@ -213,7 +215,7 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 
 * [localize](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
 * [date](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
-* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add\_to\_time)
+* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add_to_time)
 
 ### Feedback for the User
 
@@ -229,6 +231,7 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
   {{context.params.range_lte | date: "%d-%b-%y"}}
 {% endif %}
 {% endraw %}
+
 
 
 ```

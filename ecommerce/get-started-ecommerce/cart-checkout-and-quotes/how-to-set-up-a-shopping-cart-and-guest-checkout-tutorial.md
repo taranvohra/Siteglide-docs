@@ -7,7 +7,7 @@
 * You have added Products to the database
 * You have set up a Product List View
 * You have set up Product Detail Pages
-* _Using PayPal as a Payment Gateway?_ There are additional setup instructions [here](/ecommerce/get-started-ecommerce/payment-gateways/paypal-custom-params.md).
+* _Using PayPal as a Payment Gateway?_ There are additional setup instructions [here](../payment-gateways/paypal-custom-params.md).
 
 ### Introduction
 
@@ -28,9 +28,9 @@ In future tutorials we will show how to extend this with the following features:
 
 Make sure your Product Detail pages have an add to Cart Button in their layout’s item.liquid file.
 
-Learn more about Product Detail pages [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/product-views/product-detail.md).
+Learn more about Product Detail pages [here](product-views/product-detail.md).
 
-![](https://d258lu9myqkejp.cloudfront.net/attachment\_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699\_dv7ljb.png)
+![](https://d258lu9myqkejp.cloudfront.net/attachment_images/09bec6936a6d6b6df748b7b4d793a9bd3e35619c1a44369f1508ff70eabc0bd679bbc6c1-f720-4782-a09c-c66699_dv7ljb.png)
 
 This liquid include tag will add the "Add to Cart" Button:
 
@@ -38,6 +38,7 @@ This liquid include tag will add the "Add to Cart" Button:
 {% raw %}
 {% include 'ecommerce/cart_add' -%}
 {% endraw %}
+
 ```
 
 This needs to be in the item.liquid file to work, because this will have access to the correct data for this Product.
@@ -54,19 +55,20 @@ Use this liquid to include the Cart layout in your page.
 {% raw %}
 {%- include 'ecommerce/cart', layout: 'cart', remove_default_css: 'false' -%}
 {% endraw %}
+
 ```
 
 Use the `layout` parameter to select the folder which contains the wrapper.liquid and the item.liquid file you would like to use for your layout. For now, you can use the "cart" layout which is included in the Ecommerce Module.
 
 Use the `remove_default_css` parameter to choose if you want to remove `siteglide_example.css` from output or not.
 
-Learn more about Cart Layouts [here](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/cart-layouts.md)
+Learn more about Cart Layouts [here](cart/cart-layouts.md)
 
 #### Step 3 - Create a Form for your Checkout Page
 
 This will store a paying User against the CRM and submit their payment details securely via your chosen Payment Gateway.
 
-You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms [here](/cms/forms/quickstart-forms.md).
+You can add a form by navigating to `CMS/Forms` in the left hand Menu and then clicking the "+ Add New Form" button in the top right of the page. Learn more about forms [here](../../../cms/forms/quickstart-forms.md).
 
 You will need to add the following information when creating your form:
 
@@ -79,7 +81,7 @@ Save your changes.
 
 #### Step 4- Create a new Page for your Checkout.
 
-Learn more about pages [here](/cms/pages/quickstart-pages.md)
+Learn more about pages [here](../../../cms/pages/quickstart-pages.md)
 
 #### Step 5- Add the Checkout form to your Checkout Page
 
@@ -107,7 +109,7 @@ If you create a custom layout, you should also create an empty.liquid file, rena
 
 #### Step 6: Test your eCommerce flow.
 
-Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](/ecommerce/get-started-ecommerce/payment-gateways/README.md)
+Remember, you will need to use the test cards from your chosen Payment Gateway. Find more information [here](../payment-gateways/)
 
 Users will be added to the CRM in Admin.
 

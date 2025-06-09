@@ -13,7 +13,7 @@ We cannot document every way in which you can build this kind of Page, but we wi
 ## Glossary
 
 * An API - (Application Program Interface) is a form of communication between two services on the internet. Communication takes place between 2 or more endpoints.
-* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](/developer-tools/public-api/README.md), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
+* An endpoint in its simplest form is a URL which allows an API access to a server or application. On Siteglide, we provide you with API endpoints we've built with our [public API](../../public-api/), but now you've learned GraphQL, you also have the ability to build your own endpoints when you need them.
 * A method defines the role of the API + Endpoint e.g. a GET method is for "getting" or "fetching" data.
 * JSON (JavaScript Object Notation) is a common file format for exchanging data which is efficient and human-readable. We'll use it in some of our examples. (It's also the default format in which GraphQL results are outputted on the Page.)
 
@@ -27,7 +27,7 @@ The slug you choose will be the URL via which you'll eventually access the data.
 
 ### Step 2) Use CLI to apply advanced settings to the Liquid Page
 
-In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](/developer-tools/cli/README.md).
+In this step, we'll be changing the settings of the Page in CLI, as there are available settings here that are not yet editable from Admin. You can learn more about pages in platformOS here: [https://documentation.platformos.com/developer-guide/pages/pages#content](https://documentation.platformos.com/developer-guide/pages/pages#content) and more about the [Siteglide-CLI here](../../cli/).
 
 Using the Siteglide-CLI, pull down your Site's files to your machine and open them up in a Code Editor of your choice. Set up Siteglide-CLI sync so that changes you make will be pushed to the Site.
 
@@ -128,6 +128,8 @@ I'll use the following Liquid to run this query when the endpoint Page is access
 {% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page" -%}
 {% endraw %}
+
+
 ```
 
 Note- I'll be using - before and after my closing Liquid tags to remove unnecessary whitespace from the results- this is optional.
@@ -151,6 +153,7 @@ You can now use `context.params`\`to read the URL on the endpoint Page and dynam
 {%- assign page = context.params.page -%}
 {%- assign per_page = context.params.per_page -%}
 {% endraw %}
+
 ```
 
 ### Step 5) Use Liquid to feed variables into the Query (and make sure they are the correct type)
@@ -162,28 +165,27 @@ Accessing these values via the above method tends to set them as String values i
 {%- assign page = context.params.page | add: 0 -%}
 {%- assign per_page = context.params.per_page | add: 0 -%}
 {% endraw %}
+
 ```
 
 We can then add them to the query.
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
 -%}
-{% endraw %}
+
 ```
 
 If the query expects variables to be Strings you can actually add them straight to the query without assigning as variables first:
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
 -%}
-{% endraw %}
+
 ```
 
 ### Step 6) Output results on the Endpoint Page - These will be the response body
@@ -195,19 +197,20 @@ Results are accessible via the variable name you defined in the `graphql` tag, b
 If you decided in step 2 that you didn't want to change the Page format, you should now build the required HTML structure you'd like to send back (this would probably be inserted as it is into a Page via JavaScript).
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
 -%}
 <div class="row">
-  {%- for item in fetch_webapp_1_by_page.records.results -%}
+  {% raw %}
+{%- for item in fetch_webapp_1_by_page.records.results -%}
     <div class="col">
       <h2>{{item.properties.name}}</h2>
     </div>
   {%- endfor -%}
-</div>
 {% endraw %}
+</div>
+
 ```
 
 #### Option 6) b) JSON format
@@ -217,13 +220,12 @@ If you decided in step 2 to change the format of the Page, you'll need to use Li
 As GraphQL already outputs in JSON format, this is easy:
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: context.params.page,
   per_page: context.params.per_page
 -%}
 {{fetch_webapp_1_by_page}}
-{% endraw %}
+
 ```
 
 #### Option 6) c) CSV format
@@ -233,16 +235,17 @@ For something like CSV, you'll need to use logic to output the data in the corre
 We use `{%` rather than `{%-` in this example, because we want to preserve new lines to make sure each row of the CSV displays correctly.
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
 -%}
 Name,ID,Description
+{% raw %}
 {% for item in fetch_webapp_1_by_page.records.results %}{{item.properties.name}},{{item.id}},
   {{item.properties.webapp_field_1_1}}
 {% endfor %}
 {% endraw %}
+
 ```
 
 ### Step 7) Test the endpoint Page
@@ -325,6 +328,7 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
+
 ```
 
 * To check that the request comes from an authorized Page/ Site, you can check this with context:
@@ -335,6 +339,8 @@ These tips are intended as inspiration and do not constitute complete examples. 
   true
 {%- endif -%}
 {% endraw %}
+
+
 ```
 
 ### Step 9) Optional - Get the Data and use it
@@ -370,7 +376,7 @@ In this expanded example, we'll fetch the data and then append it to the HTML DO
 **Add HTML and JavaScript**
 
 {% hint style="warning" %}
-**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](/sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
+**Consider using Live Updates** The SiteBuilder Live Updates API, released since this doc was first written might be a quicker alternative here. You can put your GraphQL code in a Code Snippet and follow the docs to [Live Update a Code Snippet](../../../sitebuilder/using-sitebuilder/live-updates-api/steps-to-setting-up-live-updates-api-in-a-module-webapp-layout.md).
 {% endhint %}
 
 * An event listener targets the Form and watches for a click event
@@ -445,25 +451,25 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
 **Build HTML on the Endpoint Page**
 
 ```liquid
-{% raw %}
 {%- graphql fetch_webapp_1_by_page = "fetch_webapp_1_by_page",
   page: page,
   per_page: per_page
 -%}
 <div class="row"> 
-  {% for this in fetch_webapp_1_by_page.records.results %}
+  {% raw %}
+{% for this in fetch_webapp_1_by_page.records.results %}
     <div class="col-4">
       <h3>{{this.properties.name}}</h3>
     </div>
   {% endfor %}
-</div>
 {% endraw %}
+</div>
+
 ```
 
 **Fetch HTML on the Front End Page**
 
 ```liquid
-{% raw %}
 <div class="webapp_1">
 </div>
 
@@ -480,7 +486,6 @@ You may find it easier to build HTML on the endpoint and when it arrives in the 
   xReq.open('GET', '/api/webapp-1?page=1&per_page=1');
   xReq.send();
 </script>
-{% endraw %}
 ```
 
 ## A Footnote
@@ -489,8 +494,8 @@ Your Liquid endpoint Page will be acting as an extra Layer between your request 
 
 ## Related Articles
 
-* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](/sitebuilder/using-sitebuilder/live-updates-api/README.md)
-* The [Siteglide Support Policy](/get-started/support-and-faqs/siteglide-support-policy.md) explains how you can get support with planning projects and writing custom code.
-* MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: [https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) You can also use the modern [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API) as an alternative.
+* SiteGurus have created the Live Updates API as part of the SiteBuilder module- designed as an incredibly flexible API endpoint for refreshing almost any Siteglide Layout with different filters- this may save you time implementing your own API endpoint: [Live Updates](../../../sitebuilder/using-sitebuilder/live-updates-api/)
+* The [Siteglide Support Policy](../../../get-started/support-and-faqs/siteglide-support-policy.md) explains how you can get support with planning projects and writing custom code.
+* MDN have comprehensive documentation on the XML HTTP Request and how to use it in your Front End JavaScript Code: [https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) You can also use the modern [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) as an alternative.
 * Those developers who prefer to use jQuery when writing JavaScript can read more about Ajax Requests here: [https://api.jquery.com/jquery.ajax/](https://api.jquery.com/jquery.ajax/)
 * platformOS's documentation on Pages includes lots of information about setting up Pages using the yaml configuration: [https://documentation.platformos.com/developer-guide/pages/pages](https://documentation.platformos.com/developer-guide/pages/pages)

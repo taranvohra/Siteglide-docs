@@ -35,14 +35,16 @@ To display results from these parameters you will need the new `use_location_sea
 
 `use_location_search` - 'true' or 'false' - default: 'false'
 
-Example - 
+Example -
+
 ```liquid
 {% raw %}
 {%- include 'webapp', id: '1', use_location_search: 'true' -%}
 {% endraw %}
+
 ```
 
-_Note - Location Search \`(use_location_search`) and Text Search`(use_search\`) will **not** work together at the same time\_
+\_Note - Location Search \`(use\_location\_search`) and Text Search`(use\_search\`) will **not** work together at the same time\_
 
 ## Example
 
@@ -112,6 +114,7 @@ Use a Layout of your choice.
 {% raw %}
 {%- include 'webapp', id: '1', use_location_search: 'true', layout: 'default' -%}
 {% endraw %}
+
 ```
 
 ### 3 - Output the results on a map
@@ -137,6 +140,7 @@ The Liquid makes sure the map is only outputted after the Page has been refreshe
   </span>
 {%- endif -%}
 {% endraw %}
+
 ```
 
 Add JavaScript
@@ -181,7 +185,6 @@ Layout 'json':
 ### Full example
 
 ```liquid
-{% raw %}
 <div class="container text-center">
   <h1 class="mb-3 h2 sg-h2">Search for Stores within your area</h1>
   <div class="row">
@@ -217,6 +220,7 @@ Layout 'json':
 	}
 </script>
 
+{% raw %}
 {%- if context.params.distance and context.params.longlat -%}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
@@ -237,5 +241,5 @@ Layout 'json':
 		});
 	</script>
 {%- endif -%}
-```
 {% endraw %}
+```

@@ -1,5 +1,7 @@
 ---
 description: The home of Siteglide Docs - Build Limitless Digital Experiences
+cover: .gitbook/assets/japan-landscape-vector-minimalist-4k-y6.jpg
+coverY: 0
 ---
 
 # 👋 Welcome
@@ -12,7 +14,7 @@ Siteglide allows agencies to take control over code and data via API, CLI or UI.
 
 If you're new to Siteglide we recommend starting from a pre-built Template that leverages our SiteBuilder tool: [create-site-from-template.md](sitebuilder/setup-sitebuilder/create-site-from-template.md "mention").
 
-If you're looking for help with a site and not sure where to look you can check out our [tutorials.md](get-started/tutorials.md "mention").&#x20;
+If you're looking for help with a site and not sure where to look you can check out our [tutorials.md](get-started/tutorials.md "mention").
 
 If you're already working on a site and you're code savvy we strongly recommend setting up our CLI so you can get the most from Siteglide via VSCode or your preferred IDE: [quickstart.md](developer-tools/cli/quickstart.md "mention")
 

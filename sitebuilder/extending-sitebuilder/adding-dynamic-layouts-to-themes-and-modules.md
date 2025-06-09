@@ -222,6 +222,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
           "src": "testimonials/list/wrapper", {% comment %}Note this is an example of an embedded layout. We're still inside the same layout folder as the other files, but add another folder to keep the embedded layout files distinct and organised.{% endcomment %}
           "dest": "layouts/modules/module_8" {% comment %}Note this is an example of an embedded layout. The destination folder is actually in a completely different module folder. However, the name of the layout will remain the same. E.g. If the module user installs a layout and calls it "Gallery 2", both the Gallery Layout and the embedded Testimonials layout will have the folder names "module_<module_vanity_id>/gallery-2" and "module_8/gallery-2" respectively. See the embedded layouts section for more tips.{% endcomment %}
 {% endraw %}
+
         },
         {
           "src": "testimonials/list/item",
@@ -238,7 +239,7 @@ Perhaps the most complex and important part of the configuration to pay attentio
 
 #### Step 4 - Adding the Content to Layout Source Files <a href="#step-4-adding-the-content-to-layout-source-files" id="step-4-adding-the-content-to-layout-source-files"></a>
 
-##### Adding Liquid to Layouts using the Raw Tag
+**Adding Liquid to Layouts using the Raw Tag**
 
 In step 1, you created the folder structure for the layouts, but this section shows how you can format the layout code within each file.
 
@@ -252,7 +253,7 @@ If you're using VSCode, you can use find & replace to add raw tags to all files 
 
 <figure><img src="https://res.cloudinary.com/sitegurus/image/upload/v1667563298/modules/module_86/documentation/adding_raw_tags.png" alt="VSCode regex find and replace ((.|\n)\*) with $1."><figcaption></figcaption></figure>
 
-##### Pagination
+**Pagination**
 
 Layouts should aim to be self-contained. This often means that Siteglide's default pagination position is too low and it's better to move the pagination higher up in the DOM (so that it has the correct padding after it.)
 
@@ -265,13 +266,14 @@ The recommendation is that you use the following code to position custom paginat
 {%- endif -%}
 {% endraw %}
 
+
 ```
 
 To use it, the module\_user must both set `show_pagination: 'false'` on the include tag to remove the default pagination and then set a custom `pagination_layout`.
 
 Built-in module `module_s2` can be used to add new pagination layouts to a theme.
 
-##### Adding Settings (Optional)
+**Adding Settings (Optional)**
 
 As well as this rule, there are also some helpful conventions which you can follow when writing layouts. One of these is Layout settings.
 
@@ -289,6 +291,7 @@ Here is an example of settings being implemented in a SiteBuilder Layout:
 {% comment %} ---End Settings--- {% endcomment %}
 {% endraw %}
 
+
 ```
 
 Notes:
@@ -300,7 +303,7 @@ Notes:
 
 These conventions help to keep the settings consistent and readable for the module user (and the developer). Following them now will also allow your layouts to take advantage of future improvements when settings are further integrated into the SiteBuilder UI. Watch this space!
 
-##### Sitebuilder Component IDs (optional)
+**Sitebuilder Component IDs (optional)**
 
 Another convention we use when building layouts with JavaScript interactivity is the Sitebuilder component ID.
 
@@ -314,6 +317,7 @@ Using the following code, we dynamically generate a unique ID for each layout th
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 <div id="slider_{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 <div id="toggle_{{sitebuilder_uniq_component_id}}" class="js-toggle-button"></div>
 <script>
@@ -336,6 +340,7 @@ _Liquid_
 {% comment %}---End Settings---{% endcomment %}
 {% capture sitebuilder_uniq_component_id %}sitegurus_component_{% increment sitegurus_gen_uniq_component_id %}{% endcapture %}
 {% endraw %}
+
 <div data-slider="{{sitebuilder_uniq_component_id}}" class="js-slider"></div>
 
 ```
@@ -354,7 +359,7 @@ sliders.forEach(
 
 Using these conventions from the beginning should help you avoid bugs arising from conflicting IDs.
 
-##### Nesting or embedding layouts (optional)
+**Nesting or embedding layouts (optional)**
 
 In the previous sections, the documentation alluded to nested or embedded layouts. This is an advanced feature of SiteBuilder which allows layouts from one module to embed within them modules from another.
 
@@ -383,6 +388,7 @@ In this example, the layout\_config files array contains a file with the dest: `
 {% include 'module', id: '8', layout: testimonials_layout, type: 'list', item_ids: item_ids, _top_model: nil %}
 {% endraw %}
 
+
 ```
 
 _Resetting `_top_model` for consistent layout paths_
@@ -400,6 +406,7 @@ If you're nesting layouts in more than two layers, you may experience a difficul
 {% assign original_layout = _layout %}
 {% endraw %}
 
+
 ```
 
 _Datasources_
@@ -414,15 +421,16 @@ If you wish, you can also make this embedded layout into a datasource! Here we u
   {% include 'module', id: '8', layout: testimonials_layout, type: 'list', item_ids: item_ids, datasource: 'true' %}
 {% endif %}
 {% endraw %}
+
 ```
 
-##### Code Snippets
+**Code Snippets**
 
 If your layout uses a significant amount of Liquid so it's not realy a static layout, but it doesn't rely on any specific Siteglide Module or WebApp database table, you may wish to install it as a `code_snippet`.
 
-To make a layout install as a code snippet, set the `"install_type": "code_snippet"` in the layout_config file. It's only possible for these layouts to have a single file. It doesn't matter what you name the file, but the src setting in layout_config must match that name.
+To make a layout install as a code snippet, set the `"install_type": "code_snippet"` in the layout\_config file. It's only possible for these layouts to have a single file. It doesn't matter what you name the file, but the src setting in layout\_config must match that name.
 
-##### WebApp Layouts
+**WebApp Layouts**
 
 WebApp Layouts work exaclty the same way as Module Layouts, but with some key differences.
 
@@ -431,18 +439,15 @@ WebApp Layouts can output standard fields like categories as normal, however, mo
 To make field mapping possible, you need to first figure out the field slots you want in the item.liquid layout file, by adding Liquid code like so:
 
 ```liquid
-{% raw %}
 {{field_map['Example Field Slot']}}
-{% endraw %}
+
 ```
 
 This field slot can represent any potential webapp custom field. The module user will select which webapp custom field they think will best fit, based on the name and recommended type, so choose names carefully.
 
-Then, you need to add an object to the layout_config.liquid JSON, to define these field slots (note instead of module_3 etc, the folder should be webapp, but it sits alongside the other module folders):
-
+Then, you need to add an object to the layout\_config.liquid JSON, to define these field slots (note instead of module\_3 etc, the folder should be webapp, but it sits alongside the other module folders):
 
 ```liquid
-{% raw %}
 {
   "webapp": {
     "5": {
@@ -463,10 +468,12 @@ Then, you need to add an object to the layout_config.liquid JSON, to define thes
       "tags": [
         "card"
       ],
-      "field_mapping": { {% comment %}{Object. Required (for WebApps). Defines field slots for mapping.{% endcomment %}
+      "field_mapping": { {% raw %}
+{% comment %}{Object. Required (for WebApps). Defines field slots for mapping.{% endcomment %}
         "Title": { {% comment %}Object. Required. Human-readable name of the field slot. This must match the reference in the Liquid file itself.{% endcomment %}
           "required": true, {% comment %}Boolean. For very important fields which the Layout would not work without, set this to true. Otherwise, set to false and add logic within the layout to hide an element if the field is null. The user should expect the layout to work out of the box, so long as they mapped all required fields.{% endcomment %}
           "recommended_types": [ "input_text","input_radio","select" ] {% comment %}Array of Strings. Required. To help the user find a suitable field for this slot quickly, you must add an array of field types as defined by Siteglide. The UI will move fields of this type to the top of the options during field mapping. {% endcomment %}
+{% endraw %}
         },
         "Card Icon": {
           "recommended_types": ["image", "file"]
@@ -482,12 +489,13 @@ Then, you need to add an object to the layout_config.liquid JSON, to define thes
     }
   }
 }
-{% endraw %}
+
+
 ```
 
-The installation process will automatically add Liquid code to the top of your layouts. One snippet of code defines the user's chosen field mapping as JSON, where the keys are the slot names and the values are the Siteglide WebApp field IDs. The second snippet of code takes values from this and assigns them to the headings in the field_map object.
+The installation process will automatically add Liquid code to the top of your layouts. One snippet of code defines the user's chosen field mapping as JSON, where the keys are the slot names and the values are the Siteglide WebApp field IDs. The second snippet of code takes values from this and assigns them to the headings in the field\_map object.
 
-###### WebApp Layout File Structure
+**WebApp Layout File Structure**
 
 WebApp List Layouts must have a wrapper and an item file.
 
@@ -504,7 +512,7 @@ WebApp List Layouts must have a wrapper and an item file.
 ],
 ```
 
-WebApp Detail Layouts must have an item file. Since WebApp Detail views don't allow you to set the use_wrapper parameter, you need to write the layout without a wrapper. You also must set the install_type to webapp_detail which makes sure the file is renamed as the layout name given by the user.
+WebApp Detail Layouts must have an item file. Since WebApp Detail views don't allow you to set the use\_wrapper parameter, you need to write the layout without a wrapper. You also must set the install\_type to webapp\_detail which makes sure the file is renamed as the layout name given by the user.
 
 ```json
 "files": [
@@ -516,13 +524,11 @@ WebApp Detail Layouts must have an item file. Since WebApp Detail views don't al
 ],
 ```
 
-##### Front-End Access to Module / WebApp Config Data
+**Front-End Access to Module / WebApp Config Data**
 
-{% function table_config = "modules/module_86/front_end/functions/v1/get_table_config", model: _model, id: id, field_headings: field_headings %}
+You can use the table\_config function to fetch additional information about the layout which you may wish to output, e.g. the name of the WebApp and the names of the fields.
 
-You can use the table_config function to fetch additional information about the layout which you may wish to output, e.g. the name of the WebApp and the names of the fields.
-
-##### Troubleshooting Layouts
+**Troubleshooting Layouts**
 
 1. Check the JSON for each config file validates to correct JSON when you "include" and "output" the file on a test page with Liquid. A comma in the wrong place can invalidate your JSON and cause errors.
 2. If there are missing files in your layout, try temporarily removing the raw tags from that file and syncing with Siteglide-CLI. The raw tags may be causing a syntax erro to go undiscovered.

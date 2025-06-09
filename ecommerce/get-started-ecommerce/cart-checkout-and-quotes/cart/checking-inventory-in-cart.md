@@ -9,8 +9,6 @@ updatedAt: 2023-03-03T08:09:58.000Z
 
 Use the s\_e\_cart\_inventory\_check function to check the stock levels of items in the Cart and take appropriate action before Checkout.
 
-<!-- ![](https://downloads.intercomcdn.com/i/o/265736581/3daa8d263ca4120032453e6f/image.png) -->
-
 ## Introduction
 
 To give the customer the best experience and avoid disappointment, you'll want to make them aware of any problems with their Order as soon as possible.
@@ -40,13 +38,12 @@ Add the `s_e_cart_inventory_check({})` function - we'll document which Event Lis
 A common starting point would be to add the function to a button on a click event e.g.
 
 ```liquid
-{% raw %}
 <button class="btn btn-success" 
         onclick="s_e_cart_inventory_check({checkout_url: '/checkout'})">
         Confirm and Checkout
         </button>
 
-{% endraw %}
+
 ```
 
 ### Step 4) Set up an element to display a message when any Cart Items are no longer for sale
@@ -58,17 +55,18 @@ Adding the following data-attribute to an element will display a message explain
 Meanwhile you can use the following Liquid to fetch the same message. This is useful if the Page is refreshed after running the function and you wish to keep the message up:
 
 ```liquid
-{% raw %}
 <p data-s-e-cart-has-removed-products>
+{% raw %}
 {% if context.session.cart_has_removed_products == true %}
         Sorry, some Products in your Cart have been removed because they are no longer for sale.
     {% endif %}
-</p>
 {% endraw %}
+</p>
+
 ```
 
-You can clear the message from the session when you believe the User has had a chance to read it and it will no longer be relevant. (In most cases, you'd display this straight after the Liquid version of the message). We'll clear this automatically if the function is run again without removing any products.  
-`{% raw %}{% session cart_has_removed_products = null %}{% endraw %}`
+You can clear the message from the session when you believe the User has had a chance to read it and it will no longer be relevant. (In most cases, you'd display this straight after the Liquid version of the message). We'll clear this automatically if the function is run again without removing any products.\
+`{% session cart_has_removed_products = null %}`
 
 We'll explain how you can customize the message itself later in the function options.
 
@@ -133,7 +131,7 @@ _**Available Parameters**_
 | 4th        | inventory     | An Integer for the inventory available for this Product.                                                                                                                                            | 4                                                             |
 | 5th        | name          | The name of the Product in this row.                                                                                                                                                                | "T-Shirt"                                                     |
 
-_**Default Behaviour**_  
+_**Default Behaviour**_\
 For all items:
 
 * The "max" attribute of the quantity `<input>` will be adjusted to match the available inventory.
@@ -177,7 +175,7 @@ _**Default Behaviour**_
 
 This can be useful so that as soon as the User arrives at the Cart they can be updated on whether items are in stock. In this example, we don't want to refresh the Page on success because the User has just arrived on the Cart Page and will need time to review:
 
-_**Example**_  
+_**Example**_\
 To be added to the wrapper.liquid file:
 
 ```javascript
@@ -191,9 +189,9 @@ To be added to the wrapper.liquid file:
 
 ### On Change
 
-This is useful if you want the Inventory checked immediately after the User changes the desired quantity. In the example we want to time this function straight after the [updated quantity is saved to the Cart](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/cart/updating-quantity-in-cart.md). Instead of running the function directly then, we'll set the `check_inventory_after` option against the `s_e_cart_update_quantity` function.
+This is useful if you want the Inventory checked immediately after the User changes the desired quantity. In the example we want to time this function straight after the [updated quantity is saved to the Cart](updating-quantity-in-cart.md). Instead of running the function directly then, we'll set the `check_inventory_after` option against the `s_e_cart_update_quantity` function.
 
-_**Example**_  
+_**Example**_\
 To be added to the item.liquid file:
 
 ```javascript
@@ -215,7 +213,7 @@ check_inventory_after: true });
 
 This is useful if the Customer has clicked the "Checkout" button and you wish to run a final Inventory check first. Here we make use of the `checkout_url` option and the default Success function:
 
-_**Example**_  
+_**Example**_\
 To be added to the wrapper.liquid file:
 
 ```javascript

@@ -30,7 +30,6 @@ YML is very strict about spaces and tabs- always use two spaces instead of a tab
 If you wish to use Liquid in the redirect to line, you can make the line multiline: [https://documentation.platformos.com/use-cases/using-liquid-markup-yaml#using-liquid-markup-in-yaml](https://documentation.platformos.com/use-cases/using-liquid-markup-yaml#using-liquid-markup-in-yaml)
 
 ```yaml
-{% raw %}
 ---
 slug: a-site-page
 layout_name: templates/1
@@ -50,9 +49,11 @@ redirect_to: '/'
 redirect_code: 301
 searchable: true
 ---
+{% raw %}
 {% include 'modules/siteglide_system/constants' -%}
-<!-- Page Content Here -->
 {% endraw %}
+<!-- Page Content Here -->
+
 ```
 
 ### Parameters
@@ -92,6 +93,7 @@ If you are confident a Page doesn't need it e.g. an API Endpoint, you can skip i
 {% raw %}
 {% include 'modules/siteglide_system/constants' -%}
 {% endraw %}
+
 
 ```
 

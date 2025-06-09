@@ -48,6 +48,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% endraw %}
 
 
+
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=future&range_gt={{now}}">Future Events</a>
 
 
@@ -59,6 +60,7 @@ If you just want to filter the List so it either shows Events that have already 
 {% raw %}
 {% assign now = "now" | date: "%s" %}
 {% endraw %}
+
 <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 
 
@@ -80,6 +82,7 @@ If you just want to filter the List so it either shows Events that have already 
   <a href="{{context.headers.PATH_INFO}}?range_field=events&range_type=past&range_lt={{now}}">Past Events</a>
 {% endif %}
 {% endraw %}
+
 
 
 
@@ -148,7 +151,8 @@ The following examples will take you through the different options:
 ```liquid
 <h2>Archive</h2>
 <ul>
-  {% raw %}
+  
+{% raw %}
 {% for month in events_archive_months %}
     <li>
       <a href="{{context.headers.PATH_INFO}}?range_gt={{month.start}}&range_lte={{month.end}}&range_type=month&range_field=events">
@@ -157,6 +161,7 @@ The following examples will take you through the different options:
     </li>
   {% endfor %}
 {% endraw %}
+
 </ul>
 
 ```
@@ -192,6 +197,7 @@ This Layout does not just organise the Months available under the relevant Year 
 {% endraw %}
 
 
+
 </ul>
 
 </div>
@@ -199,7 +205,7 @@ This Layout does not just organise the Months available under the relevant Year 
 
 This example uses the same links as the previous one. However, it also organises the links into the years in which they belong by first looping over the years in the events\_archive\_years and then using the group\_by liquid filter and another loop to output the month links grouped under the current iteration's year. Learn more about this Liquid at the pOS docs:
 
-* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group\_by)
+* [group\_by filter](https://documentation.platformos.com/api-reference/liquid/platformos-filters#group_by)
 * [for loop](https://documentation.platformos.com/api-reference/liquid/loops)
 
 ### Search Events between two dates
@@ -266,6 +272,7 @@ Add your custom error message here- it can be renamed by changing its name in th
 {% endraw %}
 
 
+
 <script>
   function s_events_date_search_error() {
     alert("Please enter valid dates before searching.");
@@ -298,6 +305,7 @@ _**events\_archive\_years**_
 
 
 
+
 ```
 
 _**events\_archive\_months**_
@@ -309,6 +317,7 @@ _**events\_archive\_months**_
   {{year.end}} <!-- Outputs Epoch time at end of Year -->
 {% endfor %}
 {% endraw %}
+
 
 
 
@@ -330,7 +339,7 @@ The pOS documentation website has some useful tips on how to use liquid to conve
 
 * [localize](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
 * [date](https://documentation.platformos.com/api-reference/liquid/platformos-filters#localize-aliases-l)
-* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add\_to\_time)
+* [add\_to\_time](https://documentation.platformos.com/api-reference/liquid/platformos-filters#add_to_time)
 
 ## Feedback for the User - Displaying the currently applied filter
 
@@ -349,6 +358,7 @@ In the examples, you may notice another URL parameter is used: `range_type`. The
 
 {% endif %}
 {% endraw %}
+
 
 
 

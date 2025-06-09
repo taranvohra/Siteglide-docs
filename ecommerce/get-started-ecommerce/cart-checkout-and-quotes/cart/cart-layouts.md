@@ -53,7 +53,6 @@ The wrapper.liquid file should contain the code for the main section of code tha
 {% endraw %}
 
 
-
 ```
 
 #### Empty the Cart
@@ -68,19 +67,14 @@ Of course, this is just an ordinary link. It will need updating with the slug of
 
 The following reference shows how to output useful data about your Cart as a whole:
 
-| **Field Name**                           | **Liquid Tag**                                                                     |
-| ---------------------------------------- | ---------------------------------------------------------------------------------- |
-| Total Quantity                           | `{{context.exports.cart_total_quantity.data}}`                                     |
-| Shipping Price                           | `{% include 'ecommerce/price_shipping', format_type: 'formatted' -%}`              |
-| Shipping Price Before Tax                | `{% include 'ecommerce/price_shipping_before_tax', format_type: 'formatted' -%}`   |
-| Shipping Price Tax Amount                | `{% include 'ecommerce/price_shipping_tax_amount', format_type: 'formatted' -%}`   |
-| Total Item Price                         | `{% include 'ecommerce/price_total_item_cost', format_type: 'formatted' -%}`       |
-| Total Item Price Before Tax              | `{% include 'ecommerce/price_total_item_before_tax', format_type: 'formatted' -%}` |
-| Total Item Tax Amount                    | `{% include 'ecommerce/price_total_item_tax_amount', format_type: 'formatted' -%}` |
-| Total Price Reduction (due to Discounts) | `{% include 'ecommerce/price_total_reduction', format_type: 'formatted' -%}`       |
-| Final Total Price Before Tax             | `{% include 'ecommerce/price_total_before_tax', format_type: 'formatted' -%}`      |
-| Final Total Tax Amount                   | `{% include 'ecommerce/price_total_tax_amount', format_type: 'formatted' -%}`      |
-| Final Total Price                        | \`\{% include 'ecommerce/price\_total', format\_type: 'formatted' -%\}             |
+| **Field Name** | **Liquid Tag**                                 |
+| -------------- | ---------------------------------------------- |
+| Total Quantity | `{{context.exports.cart_total_quantity.data}}` |
+| Shipping Price | \`                                             |
+
+\` | | Shipping Price Before Tax | \`\` | | Shipping Price Tax Amount | \`\` | | Total Item Price | \`\` | | Total Item Price Before Tax | \`\` | | Total Item Tax Amount | \`\` | | Total Price Reduction (due to Discounts) | \`\` | | Final Total Price Before Tax | \`\` | | Final Total Tax Amount | \`
+
+`| | Final Total Price | \`\{% include 'ecommerce/price\_total', format\_type: 'formatted' -%\} |
 
 \` |
 

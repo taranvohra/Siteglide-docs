@@ -8,10 +8,10 @@ When you load a Page, a key metric is Server Response Time- the time it takes fo
 
 Caching is one way you can reduce this time for most of your users. There are a few different ways to cache Liquid, but here we will cover Fragment Caching, as it doesn't require Siteglide CLI and is the easiest to get started with.
 
-Here's how it works:&#x20;
+Here's how it works:
 
-1. The Developer implements Fragment Caching around a block of code which includes some Liquid.&#x20;
-2. When the next visitor arrives on the Page, it will load as normal, but a snapshot of that Liquid code (a cache) is taken by Siteglide. It is stored on the server with an expiry time and a "key".&#x20;
+1. The Developer implements Fragment Caching around a block of code which includes some Liquid.
+2. When the next visitor arrives on the Page, it will load as normal, but a snapshot of that Liquid code (a cache) is taken by Siteglide. It is stored on the server with an expiry time and a "key".
 3. The Cache remains in place until either the expiry time runs out or the Cache "Key" is changed. During that time, visitors to the Page will enjoy a faster experience- because instead of running the Liquid, the server will deliver the snapshot of HTML instead. This does mean that they won't receive any updates made to content while the Cache is active- we'll discuss this below.
 4. Once the Cache expires, the next User to visit will have to wait for Liquid content to load and another Cache snapshot will be taken.
 
@@ -37,6 +37,7 @@ You can use the Cache tag to wrap the block of Liquid code that is slowing your 
    <!-- code here -->
 {% endcache %}
 {% endraw %}
+
 ```
 
 #### The Expire Parameter:
@@ -49,7 +50,7 @@ Set this as a large number of seconds (e.g. a day 86400) if:
 * Content is not updated regularly
 * Lots of Liquid is used on the Page, especially several \`\` \`
 
-\`\` tags.&#x20;
+\`\` tags.
 
 * You have a low traffic rate- If only a few users visit each day, you will need a longer expiry in order for the difference to be noticed.
 
@@ -70,6 +71,7 @@ Let's say the Cache key is just the URL of the Site:
 {% raw %}
 {% capture category_cache_key %}{{context.headers.PATH_INFO}}{% endcapture %}
 {% endraw %}
+
 ```
 
 To bust the Cache manually, you can either:

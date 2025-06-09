@@ -6,8 +6,6 @@ This Article will show how to use custom fields to fetch dynamic content in a We
 
 Partners often ask us about outputting Liquid from a Rich Text Editor in their WebApps. Unfortunately it's not currently possible to do this- but here we'll explain a little about why- and a technique you can use to achieve the same effects.
 
-<!-- If you want to include content from another WebApp or Module Item, we'd recommend checking out Datasources instead: [Nested Content and Datasources](https://help.siteglide.com/article/201-datasources-and-nested-dynamic-content-introduction). Datasource fields allow the Client to search and select the WebApp / Module Items they want to include from a dropdown. -->
-
 ## Answer
 
 Currently platformOS doesn't allow Liquid code to be executed within Liquid Fields (such as a Blog's description field). This policy improves security, by making sure it's impossible for user-submitted content to inject malicious Liquid code into your Site- giving you peace of mind that any Liquid code you write is for your eyes only.
@@ -43,6 +41,7 @@ Here we can output the Form using the fields that have just been set- wrap the w
     {%- include 'form', id: this['Form ID'], layout: this['Form Layout'] -%}
 {% endif %}
 {% endraw %}
+
 
 ```
 

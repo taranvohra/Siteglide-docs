@@ -6,7 +6,7 @@ This include was designed to keep SiteBuilder layouts tidy by abstracting common
 
 It can be used to determine where in the layout the pagination layout should be displayed. Just move the tag to where you need it.
 
-The include is an alternative to the documented Siteglide feature [How to Move Pagination](/miscellaneous/system-features/why-pagination.md#how-to-move-pagination-controls); it just adds a few extra SiteBuilder features.
+The include is an alternative to the documented Siteglide feature [How to Move Pagination](../../../miscellaneous/system-features/why-pagination.md#how-to-move-pagination-controls); it just adds a few extra SiteBuilder features.
 
 _Important_ The include will only output pagination if the main Liquid tag has the parameters `use_pagination: 'true'` and `pagination_layout` set. Otherwise, it will do nothing.
 
@@ -16,19 +16,21 @@ _Important_ The include will only output pagination if the main Liquid tag has t
 <section class="p-8">
   <!-- Main Layout here -->
   <!-- Use the below Liquid tag to choose where your pagination will be outputted -->
-  {% raw %}
+  
+{% raw %}
 {% include "modules\module_86\private\views\partials\front_end\includes\v1\pagination", live_updates: 'false', lock_per_page: 'true' %}
 {% endraw %}
+
 </section>
 
 ```
 
 #### parameters <a href="#parameters" id="parameters"></a>
 
-| Parameter       | Type                      | Required                    | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| --------------- | ------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `live_updates`  | Boolean 'true' or 'false' | optional                    | This is to be used alongside the [live\_updates](/sitebuilder/using-sitebuilder/live-updates-api/README.md) feature. Setting to true will add data-attributes needed to wrap the layout in elements which have both the data-sg-live-update-controls and data-sg-live-update-component attributes. It will also include a hidden field to set `per_page` as a default parameter to that inherited from the main tag, as well as hidden fields for defaults for `show_pagination` and `pagination_layout`. |
-| `lock_per_page` | Boolean 'true' or 'false' | optional, default is 'true' | This is to be used alongside the [live\_updates](/sitebuilder/using-sitebuilder/live-updates-api/README.md) feature and the `live_updates` parameter above. Set this to 'false' if you have another control to set `per_page`, else, set to 'false' to automatically set per\_page to the same value inherited from the module tag.                                                                                                                                                                       |
+| Parameter       | Type                      | Required                    | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------- | ------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `live_updates`  | Boolean 'true' or 'false' | optional                    | This is to be used alongside the [live\_updates](../live-updates-api/) feature. Setting to true will add data-attributes needed to wrap the layout in elements which have both the data-sg-live-update-controls and data-sg-live-update-component attributes. It will also include a hidden field to set `per_page` as a default parameter to that inherited from the main tag, as well as hidden fields for defaults for `show_pagination` and `pagination_layout`. |
+| `lock_per_page` | Boolean 'true' or 'false' | optional, default is 'true' | This is to be used alongside the [live\_updates](../live-updates-api/) feature and the `live_updates` parameter above. Set this to 'false' if you have another control to set `per_page`, else, set to 'false' to automatically set per\_page to the same value inherited from the module tag.                                                                                                                                                                       |
 
 ### Versions <a href="#versions" id="versions"></a>
 

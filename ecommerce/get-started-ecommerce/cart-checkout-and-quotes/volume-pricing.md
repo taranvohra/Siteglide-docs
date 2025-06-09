@@ -37,11 +37,10 @@ You may wish Front End to dynamically display the available prices for a product
 
 Inside the Product List/ Detail Page item.liquid file, you'll have access to the following fields:
 
-| **Field Name / Liquid Tag** | **Example** | **Notes** |
-| --------------------------- | ----------- | --------- |
-| `{% raw %}{{this['Volume pricing Enabled']}}{% endraw %}` | true | Contains a boolean. If false, normal pricing will be used. |
-| `{% raw %}{{this['Volume Pricing']}}{% endraw %}` | { "100": 400, "1000": 350} | Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you. |
-
+| **Field Name / Liquid Tag**          | **Example**                | **Notes**                                                                                                                                                                                             |
+| ------------------------------------ | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{{this['Volume pricing Enabled']}}` | true                       | Contains a boolean. If false, normal pricing will be used.                                                                                                                                            |
+| `{{this['Volume Pricing']}}`         | { "100": 400, "1000": 350} | Contains a JSON object of the currency thresholds for this product set in Admin. When stored in the database, this is organised by currency, but front-end we'll fetch the relevant currency for you. |
 
 When looping over an object like `this['Volume Pricing']`, `.first` allows you to access the key (here the quantity threshold) and `.last` allows you to access the value (here the price).
 
@@ -65,25 +64,26 @@ First though, we use logic in the first line to check if the pricing has been en
 
 
 
+
 ```
 
 ## Accessing Volume Prices in the Order Confirmation Email
 
 Inside the Order Confirmation Email, you'll have access to the following relevant fields.
 
-| **Field Name / Liquid Tag** | **Example** | **Notes** | 
-| --------------------------- | ----------- | --------- |
-| `{% raw %}{{product.volume_pricing_original_price}}{% endraw %}` | 60.00 | A formatted price representing the price of the row, had the better volume price not been applied. |
-| `{% raw %}{{product.volume_pricing_threshold_reached}}{% endraw %}` | 4 | The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below. |
-| `{% raw %}{{product.currency_symbol}}{% endraw %}` | £ |  |
-| `{% raw %}{{product.price}}{% endraw %}` | 19.00 | This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available. |
-
+| **Field Name / Liquid Tag**                    | **Example** | **Notes**                                                                                                                                                                                              |
+| ---------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `{{product.volume_pricing_original_price}}`    | 60.00       | A formatted price representing the price of the row, had the better volume price not been applied.                                                                                                     |
+| `{{product.volume_pricing_threshold_reached}}` | 4           | The highest quantity threshold reached. If no volume pricing was accessed, this will have the value nil. You can use it in logic to check if Volume Pricing has been applied - see code example below. |
+| `{{product.currency_symbol}}`                  | £           |                                                                                                                                                                                                        |
+| `{{product.price}}`                            | 19.00       | This formatted price shows the actual price of the order row. This will either be the default price, or a volume price if available.                                                                   |
 
 The following example shows how the Volume Pricing can be shown inside a \<td> element in an Order Confirmation Email.
 
 ```liquid
 <td style="padding: 5px 5px 5px 15px; font-weight: 200;" align="right">
-  {% raw %}
+  
+{% raw %}
 {% if product.volume_pricing_threshold_reached != blank %}
     <span style="color: red; text-decoration: line-through;">
       {{ product.currency_symbol }}{{product.volume_pricing_original_price}}</span>

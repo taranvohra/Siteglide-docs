@@ -4,7 +4,7 @@
 
 When you first set up your Site's automation emails, you may find there is a "Via SendGrid" warning for the email in the recipient's mailbox.
 
-![](https://cdn.getgist.com/attachment\_images/5bc835fe45f7b27deebdcb3cca91376612c8d53bcb3fa4b77588eabbcfbe8f611704289927573.png)
+![](https://cdn.getgist.com/attachment_images/5bc835fe45f7b27deebdcb3cca91376612c8d53bcb3fa4b77588eabbcfbe8f611704289927573.png)
 
 This warning means you haven't authorized SendGrid to deliver emails for you, so the mailbox provider considers that sent from SendGrid instead of your brand.
 
@@ -33,7 +33,7 @@ See the [list of DNS providers](https://docs.sendgrid.com/ui/account-and-setting
 
 **Automated security is different from automatic setup**. Automated security allows SendGrid to handle the signing of your DKIM and the authentication of your SPF with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your DNS records. Find a detailed explanation of how this works on the [Sendgrid Documentation](https://docs.sendgrid.com/ui/account-and-settings/how-to-set-up-domain-authentication#twilio-sendgrids-dns-records).\
 \
-_Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn automated security off and use MX and TXT records._
+&#xNAN;_&#x41;utomated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn automated security off and use MX and TXT records._
 
 If you turn off automated security, you are responsible for managing and updating the MX and TXT records yourself.
 
@@ -58,9 +58,9 @@ Log in to the [SendGrid dashboard](https://app.sendgrid.com/login) using your cr
 
 Go to Settings/Sender Authentication/Domain Authentication, and click Get Started.
 
-![](https://cdn.getgist.com/attachment\_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)Enter the domain you want to authenticate (e.g. siteglide.info) and click the Next button.
+![](https://cdn.getgist.com/attachment_images/9e74916ad417d94a6add0374c084e4e7b9d1af6fe0b09c5ad77ba8c9fe0a26f4Sendgrid%20Authenticate%20Domain%20Screenshot%20.png)Enter the domain you want to authenticate (e.g. siteglide.info) and click the Next button.
 
-![](https://cdn.getgist.com/attachment\_images/152b1371ddfa2ec03c7d6a4967a33a035146e8dc81c4b875492a80c38eed926eFrom%20Domain%20Set%20Up.png)
+![](https://cdn.getgist.com/attachment_images/152b1371ddfa2ec03c7d6a4967a33a035146e8dc81c4b875492a80c38eed926eFrom%20Domain%20Set%20Up.png)
 
 {% hint style="info" %}
 In Advanced settings, there is an option to turn on "link branding". We strongly suggest you leave this off (unless you know what you are doing), as it can cause problems when linking to assets on our CDN from emails.
@@ -72,7 +72,7 @@ SendGrid has now created a list of records to add to your DNS including the 2 DK
 
 If you chose the Automatic setup option and your hosting partner is GoDaddy. SendGrid will automatically make the DNS changes for you.
 
-![](https://cdn.getgist.com/attachment\_images/1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install%20DNS%20Records.png)
+![](https://cdn.getgist.com/attachment_images/1cce43d4da32a3965054cbe3e01342e95aa3cde24862c5dd199eee6c0404b1a9Install%20DNS%20Records.png)
 
 #### DMARC
 

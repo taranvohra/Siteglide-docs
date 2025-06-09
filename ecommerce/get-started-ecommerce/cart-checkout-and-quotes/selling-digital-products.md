@@ -11,10 +11,10 @@ In this article I'll explain how you can use our Media Download and eCommerce Mo
 
 Prerequisites
 
-* You have installed the [Secure Zone](/crm/quickstart-crm.md) Module's latest version
-* You have installed the [Media Downloads](/modules/core-modules/media-downloads/quickstart-media-downloads.md) and [eCommerce Modules](/ecommerce/quickstart-ecommerce.md)
+* You have installed the [Secure Zone](../../../crm/quickstart-crm.md) Module's latest version
+* You have installed the [Media Downloads](../../../modules/core-modules/media-downloads/quickstart-media-downloads.md) and [eCommerce Modules](../../quickstart-ecommerce.md)
 * You have created Products
-* You have followed our document on [Cart, Checkout and Orders Flow with the Secure Zone Module](/ecommerce/get-started-ecommerce/cart-checkout-and-quotes/how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md)
+* You have followed our document on [Cart, Checkout and Orders Flow with the Secure Zone Module](how-to-set-up-a-shopping-cart-and-guest-checkout-tutorial.md)
 
 ## Introduction
 
@@ -56,6 +56,7 @@ We can output the Products data like so
 
 
 
+
 ```
 
 However, we just need the Media Download Item ID which can be outputted like so, if you have other Custom Fields you'll need to replace 'product\_1' with the field name
@@ -68,6 +69,7 @@ However, we just need the Media Download Item ID which can be outputted like so,
 
 {%- endfor -%}
 {% endraw %}
+
 
 
 

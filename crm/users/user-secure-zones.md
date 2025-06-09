@@ -8,9 +8,9 @@ Outputting a User's Secure Zones can help them to keep track of services they're
 
 You can use the following links to learn how to set up a Secure Page and the means to access it:
 
-* [Create a Secure Zone](/crm/quickstart-crm.md#step-1-create-or-edit-a-secure-zone)
-* [Create a Secure Zone Sign Up Form](/modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission)
-* [Add a Secure Zone to a Page](/crm/quickstart-crm.md#step-2-manage-items)
+* [Create a Secure Zone](../quickstart-crm.md#step-1-create-or-edit-a-secure-zone)
+* [Create a Secure Zone Sign Up Form](../../modules/core-modules/secure-zones/introduction/dynamically-assign-a-secure-zone-after-form-submission/)
+* [Add a Secure Zone to a Page](../quickstart-crm.md#step-2-manage-items)
 
 ## Introduction
 
@@ -22,6 +22,7 @@ Outputting a User's Secure Zones can help them to keep track of services they're
 {% raw %}
 {% include 'user_secure_zones', layout: 'default' %}
 {% endraw %}
+
 ```
 
 Parameters:
@@ -48,6 +49,7 @@ One of the benefits of this is that you can rename the variable under which your
   <p>Form name: {{this.name}}</p>
 {% endfor %}
 {% endraw %}
+
 
 
 ```

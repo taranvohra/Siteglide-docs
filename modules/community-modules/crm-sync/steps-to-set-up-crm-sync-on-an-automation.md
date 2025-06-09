@@ -10,7 +10,7 @@ Once you're logged in, you need to create an API key.
 
 The API key can be added to the module in the Siteglide Admin:
 
-![](https://res.cloudinary.com/sitegurus/image/upload/v1689942714/modules/module\_132/Docs/Screenshot\_2023-07-21\_133143.png)
+![](https://res.cloudinary.com/sitegurus/image/upload/v1689942714/modules/module_132/Docs/Screenshot_2023-07-21_133143.png)
 
 You're now ready to add some simple code.
 
@@ -19,7 +19,7 @@ You're now ready to add some simple code.
 It is probably simplest to choose Custom Action as the Automation type, or you could add the code on Step 3 to an existing email or API automation.
 
 {% hint style="info" %}
-See the [forms](/cms/forms/README.md "mention") and [automations](/cms/automations/README.md "mention") sections.
+See the [forms](../../../cms/forms/ "mention") and [automations](../../../cms/automations/ "mention") sections.
 {% endhint %}
 
 ## Step 3) Include a Line of Liquid to Sync the Sumitted User Data to your CRM <a href="#the-liquid-include" id="the-liquid-include"></a>
@@ -32,6 +32,7 @@ The module provides you with Liquid code which, when run, carries out a range of
 {% raw %}
 {% include 'modules/module_132/v1/crm_sync', marketing_provider: 'sendgrid', action: 'add' %}
 {% endraw %}
+
 
 
 ```
@@ -92,6 +93,7 @@ You can use the `reserved_fields` parameter to map Siteglide data into those res
 {% endparse_json %}
 {% include "modules/module_132/v1/crm_sync", marketing_provider: "sendgrid", action: 'add', reserved_fields: reserved_fields %}
 {% endraw %}
+
 
 
 ```
